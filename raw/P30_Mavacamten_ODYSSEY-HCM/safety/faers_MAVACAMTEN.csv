@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,FATIGUE,352
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,DYSPNOEA,344
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,ATRIAL FIBRILLATION,325
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,PRODUCT DOSE OMISSION ISSUE,323
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,DIZZINESS,300
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,PRODUCT USE ISSUE,240
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,EJECTION FRACTION DECREASED,181
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,OFF LABEL USE,179
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,CHEST PAIN,161
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,PALPITATIONS,153
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,HEADACHE,151
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,NASOPHARYNGITIS,143
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,THERAPY INTERRUPTED,142
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,ADVERSE EVENT,133
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,PERIPHERAL SWELLING,123
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,WEIGHT INCREASED,121
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,COUGH,106
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,CARDIAC FAILURE,104
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,URINARY TRACT INFECTION,103
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,FALL,98
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,HYPERTENSION,97
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,ADVERSE DRUG REACTION,93
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,MALAISE,93
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,HOSPITALISATION,88
+MAVACAMTEN,patient.drug.openfda.generic_name,5081,NAUSEA,87

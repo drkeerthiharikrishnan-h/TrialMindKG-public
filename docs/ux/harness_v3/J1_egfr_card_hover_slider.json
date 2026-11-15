@@ -1,0 +1,788 @@
+{
+ "page": "/",
+ "where": "",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 30,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/search?suggest=1&q=EGFR",
+  "GET /api/pharos/card/NCBIGene%3A1956",
+  "GET /api/pharos/explain/e0b6983d3fd0b0cb2",
+  "GET /api/pharos/explain/eabc65f1fa3eafe87",
+  "GET /api/pharos/explain/eb64dd7e1737b5e70",
+  "GET /api/pharos/explain/ebf0fc47fc18c06d1",
+  "GET /api/pharos/explain/e577fb71eaffd9e18",
+  "GET /api/pharos/explain/e085eb22eaf18c23b",
+  "GET /api/pharos/explain/ee005d8d2ac95a06e",
+  "GET /api/pharos/explain/e3f28e1689e4bda94",
+  "GET /api/pharos/explain/e5bb678f67f37cae7"
+ ],
+ "api_calls_last": [
+  "GET /api/pharos/card/NCBIGene%3A1956",
+  "GET /api/pharos/explain/e0b6983d3fd0b0cb2",
+  "GET /api/pharos/explain/eabc65f1fa3eafe87",
+  "GET /api/pharos/explain/eb64dd7e1737b5e70",
+  "GET /api/pharos/explain/ebf0fc47fc18c06d1",
+  "GET /api/pharos/explain/e577fb71eaffd9e18",
+  "GET /api/pharos/explain/e085eb22eaf18c23b",
+  "GET /api/pharos/explain/ee005d8d2ac95a06e",
+  "GET /api/pharos/explain/e3f28e1689e4bda94",
+  "GET /api/pharos/explain/e5bb678f67f37cae7",
+  "GET /api/pharos/explain/e763600084ae60be4",
+  "GET /api/pharos/compare/card/NCBIGene%3A1956",
+  "GET /api/trials_for?ids=NCBIGene%3A1956%2CHGNC%3A3236&names=EGFR",
+  "GET /api/pharos/explain/e8365614ec7925ddb",
+  "GET /api/pharos/explain/e8365614ec7925ddb"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "card",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 51,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "hover_node",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": false,
+    "pinned": false,
+    "text": "platelet counttype disease or phenotype (biolink:DiseaseOrPhenotypicFeature) · EFO:0004309 1 link to EGFR drawn here: human geneticsverdicts: kept click to pin; Esc closes"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 51,
+    "links": 1049,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "hover_edge",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": false,
+    "pinned": false,
+    "text": "EGFR is genetically associated with glioma source TIGA (GWAS Catalog) (Pharos 3.19.2) knowledge level statistical association · statistical verdict kept confidence 0.66 reason plausibility 0.83; 2 sources for the pair; source reliability 0.60; the source's own score 0.92 e8365614ec7925ddb click to pin; Esc closes"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 51,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "pinned_edge",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": false,
+    "pinned": true,
+    "text": "✕EGFR is genetically associated with glioma source TIGA (GWAS Catalog) (Pharos 3.19.2) knowledge level statistical association · statistical verdict kept confidence 0.66 reason plausibility 0.83; 2 sources for the pair; source reliability 0.60; the source's own score 0.92 e8365614ec7925ddb Open the full evidence record"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 53,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "side_panel_from_edge",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": "✕EGFR is genetically associated with glioma source TIGA (GWAS Catalog) (Pharos 3.19.2) knowledge level statistical association · statistical verdict kept confidence 0.66 reason plausibility 0.83; 2 sources for the pair; source reliability 0.60; the source's own score 0.92 e8365614ec7925ddb Open the full evidence record"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": true,
+    "title": "Why this link",
+    "lead": "EGFRNCBIGene:1956 is genetically associated with gliomaMONDO:0021042",
+    "raw": "/api/pharos/explain/e8365614ec7925ddb",
+    "headings": [
+     "Independent check",
+     "Where it comes from",
+     "Measured values",
+     "The same pair in other sources (2)",
+     "Timeline",
+     "Raw record"
+    ]
+   },
+   "visible": {
+    "buttons": 53,
+    "links": 1057,
+    "sections": 13,
+    "tables": 13
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "slider_0.6",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 20,
+    "cg_dimmed": 19,
+    "slider": "0.6",
+    "slider_info": "Showing 21 of 41 links; 20 below 0.60 hidden. Predicted links have no pruning confidence and always show. Prediction paths: 1 of 3 have a hop below the threshold and are greyed.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 1,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": "✕EGFR is genetically associated with glioma source TIGA (GWAS Catalog) (Pharos 3.19.2) knowledge level statistical association · statistical verdict kept confidence 0.66 reason plausibility 0.83; 2 sources for the pair; source reliability 0.60; the source's own score 0.92 e8365614ec7925ddb Open the full evidence record"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "EGFRNCBIGene:1956 is genetically associated with gliomaMONDO:0021042",
+    "raw": "/api/pharos/explain/e8365614ec7925ddb",
+    "headings": [
+     "Independent check",
+     "Where it comes from",
+     "Measured values",
+     "The same pair in other sources (2)",
+     "Timeline",
+     "Raw record"
+    ]
+   },
+   "visible": {
+    "buttons": 51,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "slider_0.9",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 40,
+    "cg_dimmed": 32,
+    "slider": "0.9",
+    "slider_info": "Showing 1 of 41 links; 40 below 0.90 hidden. Predicted links have no pruning confidence and always show. Prediction paths: 3 of 3 have a hop below the threshold and are greyed.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 3,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": "✕EGFR is genetically associated with glioma source TIGA (GWAS Catalog) (Pharos 3.19.2) knowledge level statistical association · statistical verdict kept confidence 0.66 reason plausibility 0.83; 2 sources for the pair; source reliability 0.60; the source's own score 0.92 e8365614ec7925ddb Open the full evidence record"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "EGFRNCBIGene:1956 is genetically associated with gliomaMONDO:0021042",
+    "raw": "/api/pharos/explain/e8365614ec7925ddb",
+    "headings": [
+     "Independent check",
+     "Where it comes from",
+     "Measured values",
+     "The same pair in other sources (2)",
+     "Timeline",
+     "Raw record"
+    ]
+   },
+   "visible": {
+    "buttons": 51,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "hop_card_pinned",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 40,
+    "cg_dimmed": 32,
+    "slider": "0.9",
+    "slider_info": "Showing 1 of 41 links; 40 below 0.90 hidden. Predicted links have no pruning confidence and always show. Prediction paths: 3 of 3 have a hop below the threshold and are greyed.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 3,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": false,
+    "pinned": true,
+    "text": "✕EGFR is associated with gastric cancer source CTDknowledge level curated statement · curated verdict kept confidence 0.53reason plausibility 0.53; 3 sources for the pair; source reliability 0.90; the source's own score 0.50; protected undefined e0b6983d3fd0b0cb2Open the full evidence record"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "EGFRNCBIGene:1956 is genetically associated with gliomaMONDO:0021042",
+    "raw": "/api/pharos/explain/e8365614ec7925ddb",
+    "headings": [
+     "Independent check",
+     "Where it comes from",
+     "Measured values",
+     "The same pair in other sources (2)",
+     "Timeline",
+     "Raw record"
+    ]
+   },
+   "visible": {
+    "buttons": 53,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  }
+ ]
+}

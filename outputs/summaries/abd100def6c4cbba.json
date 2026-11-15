@@ -1,0 +1,34 @@
+{
+ "bottom_line": "Semaglutide — evoke / evoke+. Stated failure: Phase III: biomarker changes did not translate into slower clinical progression. Diagnosis (claim 1.1, supported): EVOKE Plus (NCT04777409) tested semaglutide as the intervention.",
+ "checked_by": "nvidia/nemotron-3.5-lightning-30b-a3b",
+ "created": "2026-11-14T12:19:17Z",
+ "dropped": [
+  {
+   "reason": "The sentence states that biomarker changes did not translate into slower clinical progression, but the provided lines only describe trial design,…",
+   "sentence": "The stated failure is that biomarker changes did not translate into slower clinical progression."
+  }
+ ],
+ "key": "abd100def6c4cbba",
+ "lines": [
+  "[1] EVOKE Plus (NCT04777409) tested semaglutide as the intervention. (section: Failure Diagnosis; sources: ClinicalTrials.gov; record types: registry; evidence status: registry record; evidence strength: strong; check: supported by its cited records).",
+  "[2] EVOKE (NCT04777396) tested semaglutide as the intervention. (section: Failure Diagnosis; sources: ClinicalTrials.gov; record types: registry; evidence status: registry record; evidence strength: strong; check: supported by its cited records).",
+  "[3] The curated record lists the semaglutide EVOKE/EVOKE+ program as failed. (section: Failure Diagnosis; sources: curated record; record types: curated; evidence status: curated summary; evidence strength: strong; check: supported by its cited records).",
+  "[4] The prespecified primary outcome measure for EVOKE was change in CDR-SB score from baseline to week 104. (section: Failure Diagnosis; sources: ClinicalTrials.gov; record types: registry; evidence status: prespecified; evidence strength: strong; check: supported by its cited records).",
+  "[5] EVOKE (NCT04777396) tests SEMAGLUTIDE and its primary outcome measure is Change in the Clinical Dementia Rating - Sum of Boxes (CDR-SB) score from baseline (week 0) to week 104. (section: Failure Diagnosis; sources: ClinicalTrials.gov; record types: registry; evidence status: registry record; evidence strength: strong; check: supported by its cited records).",
+  "[6] Semaglutide was tested in the EVOKE/EVOKE+ clinical trial program for Alzheimer's disease. (section: Candidate Responder Population; sources: ClinicalTrials.gov, curated record; record types: registry, curated; evidence status: curated summary; evidence strength: strong; check: supported by its cited records).",
+  "[7] The primary outcome measure for EVOKE was change in CDR-SB score from baseline to week 104, a prespecified registry-recorded endpoint. (section: Candidate Responder Population; sources: ClinicalTrials.gov; record types: registry; evidence status: prespecified; evidence strength: strong; check: supported by its cited records).",
+  "[8] Semaglutide was tested in the EVOKE and EVOKE Plus clinical trial programs for Alzheimer Disease. (section: Related Indications; sources: ClinicalTrials.gov, curated record; record types: registry, curated, curator confirmed; evidence status: registry record; evidence strength: strong; check: supported by its cited records).",
+  "[9] Semaglutide interacts with the Glucagon-like peptide 1 receptor, which is the gene product of GLP1R. (section: Related Indications; sources: ChEMBL, Open Targets Platform; record types: curated, database; evidence status: curated summary; evidence strength: strong; check: supported by its cited records).",
+  "[10] Semaglutide — evoke / evoke+ is listed in curated:failed_clinical_trials_2016_2026.md. (section: Related Indications; sources: curated record; record types: curated; evidence status: curated summary; evidence strength: strong; check: supported by its cited records).",
+  "[11] Semaglutide was tested in the EVOKE/EVOKE+ clinical trial program. (section: Evidence-Supported Redesign Options; sources: ClinicalTrials.gov, curated record; record types: registry, curated; evidence status: curated summary; evidence strength: strong; check: supported by its cited records).",
+  "[12] The EVOKE trial (NCT04777396) tested semaglutide. (section: Evidence-Supported Redesign Options; sources: ClinicalTrials.gov; record types: registry; evidence status: registry record; evidence strength: strong; check: supported by its cited records).",
+  "[13] The EVOKE Plus trial (NCT04777409) tested semaglutide. (section: Evidence-Supported Redesign Options; sources: ClinicalTrials.gov; record types: registry; evidence status: registry record; evidence strength: strong; check: supported by its cited records).",
+  "[14] EVOKE included multiple secondary outcome measures including composite Z-scores, ADCOMS, MMSE, ADCS-ADL-MCI, NPI, EQ-5D-5L, hs-CRP, MACE, stroke, and CDR progression. (section: Evidence-Supported Redesign Options; sources: ClinicalTrials.gov; record types: registry; evidence status: registry record; evidence strength: strong; check: supported by its cited records)."
+ ],
+ "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+ "prompt_version": "pk4-1",
+ "question": "What does the semaglutide evoke failure imply for similar programs, and how strong is the evidence?",
+ "raw": "The semaglutide EVOKE/EVOKE+ program is curated as failed [3], with registry records confirming semaglutide was tested in both EVOKE [2] and EVOKE Plus [1]. The prespecified primary outcome was change in CDR-SB from baseline to week 104 [4][5]. The stated failure is that biomarker changes did not translate into slower clinical progression. Evidence for trial conduct and endpoints is strong and registry-supported [1][2][4][5]. The lines do not show statistical results, p-values, effect sizes, or specific biomarker data; they do not demonstrate what the failure implies for mechanistically similar GLP-1R programs [9]. No text-mined or predicted evidence is presented.",
+ "sentences": 5,
+ "text": "The semaglutide EVOKE/EVOKE+ program is curated as failed [3], with registry records confirming semaglutide was tested in both EVOKE [2] and EVOKE Plus [1]. The prespecified primary outcome was change in CDR-SB from baseline to week 104 [4][5]. Evidence for trial conduct and endpoints is strong and registry-supported [1][2][4][5]. The lines do not show statistical results, p-values, effect sizes, or specific biomarker data; they do not demonstrate what the failure implies for mechanistically similar GLP-1R programs [9]. No text-mined or predicted evidence is presented."
+}

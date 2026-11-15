@@ -1,0 +1,290 @@
+{
+ "drug": {
+  "id": "CHEMBL1888176",
+  "name": "TROSPIUM",
+  "mechanismsOfAction": {
+   "rows": [
+    {
+     "mechanismOfAction": "Muscarinic acetylcholine receptor M3 antagonist",
+     "actionType": "ANTAGONIST",
+     "targetName": "Muscarinic acetylcholine receptor M3",
+     "targets": [
+      {
+       "id": "ENSG00000133019",
+       "approvedSymbol": "CHRM3",
+       "proteinIds": [
+        {
+         "id": "P20309",
+         "source": "uniprot_swissprot"
+        },
+        {
+         "id": "A0A6Q8PG67",
+         "source": "uniprot_trembl"
+        },
+        {
+         "id": "B1AN12",
+         "source": "uniprot_trembl"
+        },
+        {
+         "id": "ENSP00000255380",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000404764",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000482377",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000502013",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000502129",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000502349",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000502667",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545896",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545897",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545898",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545899",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545900",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545901",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545902",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545903",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545904",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545905",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000545906",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598319",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598320",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598321",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598322",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598323",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598324",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598325",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598326",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000598327",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000619051",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000619052",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000619053",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000619054",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000815324",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "Q0VAJ8",
+         "source": "uniprot_obsolete"
+        },
+        {
+         "id": "Q4QRI3",
+         "source": "uniprot_obsolete"
+        },
+        {
+         "id": "Q5VXY2",
+         "source": "uniprot_obsolete"
+        },
+        {
+         "id": "Q9HB60",
+         "source": "uniprot_obsolete"
+        }
+       ]
+      }
+     ],
+     "references": [
+      {
+       "source": "PubMed",
+       "ids": [
+        "15723094",
+        "19029429",
+        "15723094",
+        "19029429"
+       ],
+       "urls": [
+        "http://europepmc.org/abstract/MED/15723094",
+        "http://europepmc.org/abstract/MED/19029429",
+        "http://europepmc.org/abstract/MED/15723094",
+        "http://europepmc.org/abstract/MED/19029429"
+       ]
+      }
+     ]
+    },
+    {
+     "mechanismOfAction": "Muscarinic acetylcholine receptor M2 antagonist",
+     "actionType": "ANTAGONIST",
+     "targetName": "Muscarinic acetylcholine receptor M2",
+     "targets": [
+      {
+       "id": "ENSG00000181072",
+       "approvedSymbol": "CHRM2",
+       "proteinIds": [
+        {
+         "id": "P08172",
+         "source": "uniprot_swissprot"
+        },
+        {
+         "id": "A4D1Q0",
+         "source": "uniprot_trembl"
+        },
+        {
+         "id": "ENSP00000319984",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000384401",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000399745",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000415386",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000505686",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000573498",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000573499",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000573500",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000634776",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000634777",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000634778",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "ENSP00000815361",
+         "source": "ensembl_PRO"
+        },
+        {
+         "id": "Q4VBK6",
+         "source": "uniprot_obsolete"
+        },
+        {
+         "id": "Q9P1X9",
+         "source": "uniprot_obsolete"
+        }
+       ]
+      }
+     ],
+     "references": [
+      {
+       "source": "PubMed",
+       "ids": [
+        "15723094",
+        "19029429",
+        "15723094",
+        "19029429"
+       ],
+       "urls": [
+        "http://europepmc.org/abstract/MED/15723094",
+        "http://europepmc.org/abstract/MED/19029429",
+        "http://europepmc.org/abstract/MED/15723094",
+        "http://europepmc.org/abstract/MED/19029429"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

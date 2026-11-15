@@ -1,0 +1,518 @@
+{
+ "by_knowledge_level": {
+  "knowledge_assertion": {
+   "n": 12789009,
+   "pruned": 245540,
+   "share": 0.019199298397553712
+  },
+  "not_provided": {
+   "n": 62427,
+   "pruned": 64,
+   "share": 0.0010251974305989396
+  },
+  "statistical_association": {
+   "n": 492603,
+   "pruned": 509,
+   "share": 0.0010332864395872538
+  },
+  "text_co_occurrence": {
+   "n": 13118763,
+   "pruned": 10526,
+   "share": 0.000802362234914984
+  }
+ },
+ "by_predicate": {
+  "biolink:actively_involved_in": {
+   "n": 359396,
+   "pruned": 2744,
+   "share": 0.00763503210942804
+  },
+  "biolink:capable_of": {
+   "n": 54547,
+   "pruned": 433,
+   "share": 0.007938108420261426
+  },
+  "biolink:directly_physically_interacts_with": {
+   "n": 475211,
+   "pruned": 3594,
+   "share": 0.007562956244699723
+  },
+  "biolink:gene_associated_with_condition": {
+   "n": 13415737,
+   "pruned": 10806,
+   "share": 0.0008054719617714629
+  },
+  "biolink:genetically_associated_with": {
+   "n": 280878,
+   "pruned": 291,
+   "share": 0.0010360369982697114
+  },
+  "biolink:has_gene_product": {
+   "n": 20190,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "biolink:has_phenotype": {
+   "n": 87311,
+   "pruned": 5,
+   "share": 5.726655289711491e-05
+  },
+  "biolink:located_in": {
+   "n": 77707,
+   "pruned": 981,
+   "share": 0.012624345297077483
+  },
+  "biolink:physically_interacts_with": {
+   "n": 11691825,
+   "pruned": 237785,
+   "share": 0.020337714599731008
+  }
+ },
+ "by_source": {
+  "BioPlex": {
+   "n": 70262,
+   "pruned": 4788,
+   "share": 0.06814494321254733
+  },
+  "BioPlex,Reactome": {
+   "n": 6,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "BioPlex,Reactome,STRINGDB": {
+   "n": 2480,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "BioPlex,STRINGDB": {
+   "n": 75080,
+   "pruned": 3264,
+   "share": 0.043473628129994675
+  },
+  "CHEMBL": {
+   "n": 2873,
+   "pruned": 66,
+   "share": 0.02297250261051166
+  },
+  "CTD": {
+   "n": 27157,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "DRUG LABEL": {
+   "n": 630,
+   "pruned": 3,
+   "share": 0.004761904761904762
+  },
+  "DisGeNET": {
+   "n": 49172,
+   "pruned": 60,
+   "share": 0.0012202066216546001
+  },
+  "DrugCentral Indication": {
+   "n": 3687,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "Expression Atlas": {
+   "n": 158707,
+   "pruned": 188,
+   "share": 0.0011845728291757767
+  },
+  "Gene Ontology annotation": {
+   "n": 258719,
+   "pruned": 3146,
+   "share": 0.01215991094585245
+  },
+  "IMPC": {
+   "n": 29427,
+   "pruned": 4,
+   "share": 0.0001359295884731709
+  },
+  "IUPHAR": {
+   "n": 237,
+   "pruned": 1,
+   "share": 0.004219409282700422
+  },
+  "JAX/MGI Human Ortholog Phenotype": {
+   "n": 57884,
+   "pruned": 1,
+   "share": 1.7275931172690207e-05
+  },
+  "JensenLab Experiment TIGA": {
+   "n": 23591,
+   "pruned": 26,
+   "share": 0.00110211521342885
+  },
+  "JensenLab Knowledge AmyCo": {
+   "n": 188,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "JensenLab Knowledge MedlinePlus": {
+   "n": 3678,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "JensenLab Knowledge UniProtKB-KW": {
+   "n": 3334,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "JensenLab Text Mining": {
+   "n": 6980,
+   "pruned": 2,
+   "share": 0.00028653295128939826
+  },
+  "KEGG": {
+   "n": 32325,
+   "pruned": 59,
+   "share": 0.0018252126836813612
+  },
+  "KEGG DRUG": {
+   "n": 25,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "Monarch": {
+   "n": 8701,
+   "pruned": 2,
+   "share": 0.00022985863693828295
+  },
+  "Pharos ligand activity": {
+   "n": 470904,
+   "pruned": 3522,
+   "share": 0.007479231435706641
+  },
+  "Pharos target-gene mapping": {
+   "n": 20190,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "Reactome": {
+   "n": 112768,
+   "pruned": 466,
+   "share": 0.004132377979568672
+  },
+  "Reactome,STRINGDB": {
+   "n": 32092,
+   "pruned": 157,
+   "share": 0.004892184968216378
+  },
+  "SCIENTIFIC LITERATURE": {
+   "n": 542,
+   "pruned": 2,
+   "share": 0.0036900369003690036
+  },
+  "STRINGDB": {
+   "n": 11490844,
+   "pruned": 210411,
+   "share": 0.018311187585524615
+  },
+  "TIGA (GWAS Catalog)": {
+   "n": 280878,
+   "pruned": 291,
+   "share": 0.0010360369982697114
+  },
+  "TIN-X": {
+   "n": 13111783,
+   "pruned": 10524,
+   "share": 0.0008026368343649373
+  },
+  "UniProt Disease": {
+   "n": 5504,
+   "pruned": 0,
+   "share": 0.0
+  },
+  "WikiPathways": {
+   "n": 89734,
+   "pruned": 487,
+   "share": 0.005427151358459447
+  },
+  "eRAM": {
+   "n": 13255,
+   "pruned": 4,
+   "share": 0.0003017729158807997
+  },
+  "mock": {
+   "n": 19165,
+   "pruned": 19165,
+   "share": 1.0
+  }
+ },
+ "confidence": {
+  "histogram": [
+   {
+    "hi": 0.1,
+    "lo": 0.0,
+    "n": 0
+   },
+   {
+    "hi": 0.2,
+    "lo": 0.1,
+    "n": 392
+   },
+   {
+    "hi": 0.30000000000000004,
+    "lo": 0.2,
+    "n": 228235
+   },
+   {
+    "hi": 0.4,
+    "lo": 0.30000000000000004,
+    "n": 1955945
+   },
+   {
+    "hi": 0.5,
+    "lo": 0.4,
+    "n": 5004914
+   },
+   {
+    "hi": 0.6000000000000001,
+    "lo": 0.5,
+    "n": 10374841
+   },
+   {
+    "hi": 0.7000000000000001,
+    "lo": 0.6000000000000001,
+    "n": 8727812
+   },
+   {
+    "hi": 0.8,
+    "lo": 0.7000000000000001,
+    "n": 170550
+   },
+   {
+    "hi": 0.9,
+    "lo": 0.8,
+    "n": 113
+   },
+   {
+    "hi": 1.0,
+    "lo": 0.9,
+    "n": 0
+   }
+  ],
+  "mean": 0.5480881816672324,
+  "quantiles": {
+   "0": 0.1248,
+   "0.01": 0.3044,
+   "0.05": 0.3695,
+   "0.1": 0.4133,
+   "0.25": 0.4919,
+   "0.5": 0.5655,
+   "0.75": 0.6182,
+   "0.9": 0.6532,
+   "0.99": 0.6915,
+   "1": 0.8137
+  }
+ },
+ "confidence_pruned": {
+  "histogram": [
+   {
+    "hi": 0.1,
+    "lo": 0.0,
+    "n": 0
+   },
+   {
+    "hi": 0.2,
+    "lo": 0.1,
+    "n": 392
+   },
+   {
+    "hi": 0.30000000000000004,
+    "lo": 0.2,
+    "n": 209176
+   },
+   {
+    "hi": 0.4,
+    "lo": 0.30000000000000004,
+    "n": 47071
+   },
+   {
+    "hi": 0.5,
+    "lo": 0.4,
+    "n": 0
+   },
+   {
+    "hi": 0.6000000000000001,
+    "lo": 0.5,
+    "n": 0
+   },
+   {
+    "hi": 0.7000000000000001,
+    "lo": 0.6000000000000001,
+    "n": 0
+   },
+   {
+    "hi": 0.8,
+    "lo": 0.7000000000000001,
+    "n": 0
+   },
+   {
+    "hi": 0.9,
+    "lo": 0.8,
+    "n": 0
+   },
+   {
+    "hi": 1.0,
+    "lo": 0.9,
+    "n": 0
+   }
+  ],
+  "mean": 0.2835105872451186,
+  "quantiles": {
+   "0": 0.1248,
+   "0.01": 0.2241,
+   "0.05": 0.2449,
+   "0.1": 0.2557,
+   "0.25": 0.2723,
+   "0.5": 0.2875,
+   "0.75": 0.2977,
+   "0.9": 0.3027,
+   "0.99": 0.3276,
+   "1": 0.349
+  }
+ },
+ "injected_errors": {
+  "row": {
+   "AUPRC (combined)": "0.005",
+   "AUPRC (learned)": "0.005",
+   "AUPRC (plausibility)": "0.004",
+   "precision": "0.009",
+   "real edges pruned": "0.014",
+   "recall": "0.075",
+   "recall gene-condition": "0.009",
+   "variant": "v1 (k 32, trust 0.2, one matrix)"
+  },
+  "source": "outputs/pharos/prune_compare.md"
+ },
+ "inputs": {
+  "edges": "data/kg/pharos/edges.tsv.gz",
+  "n_ot_pairs": 769960,
+  "ot": "data/kg/opentargets/edges.tsv.gz",
+  "verdicts": "data/kg/pharos/edge_verdicts.tsv.gz"
+ },
+ "n_edges": 26462802,
+ "n_eligible": 26407302,
+ "n_protected": 35310,
+ "n_pruned": 256639,
+ "ot_strong_score": 0.2,
+ "pruned_share": 0.009698103776009812,
+ "thresholds": [
+  {
+   "all": 256639,
+   "gd": {
+    "n": 13415737,
+    "pruned": 10806,
+    "share": 0.0008054719617714629
+   },
+   "label": "shipped verdicts (best-F1 cut on injected errors)",
+   "ot_non_text": {
+    "kept": {
+     "in_ot": 0.17945425252954222,
+     "n": 296694,
+     "ot_strong": 0.14573264036347214
+    },
+    "pruned": {
+     "in_ot": 0.007142857142857143,
+     "n": 280,
+     "ot_strong": 0.0035714285714285713
+    }
+   },
+   "ot_text": {
+    "kept": {
+     "in_ot": 0.012114977780764874,
+     "n": 13108237,
+     "ot_strong": 0.007426628004971225
+    },
+    "pruned": {
+     "in_ot": 9.500285008550257e-05,
+     "n": 10526,
+     "ot_strong": 0.0
+    }
+   },
+   "pruned": 256639,
+   "pruned_share": 0.009698103776009812,
+   "text_share_of_pruned": 0.041014810687385786,
+   "threshold": {
+    "max_pruned": 0.349,
+    "min_eligible_kept": 0.3041
+   }
+  },
+  {
+   "all": 1303533,
+   "gd": {
+    "n": 13415737,
+    "pruned": 77165,
+    "share": 0.005751827126605121
+   },
+   "label": "confidence < 5% quantile of all edges",
+   "ot_non_text": {
+    "kept": {
+     "in_ot": 0.17977512901187212,
+     "n": 295903,
+     "ot_strong": 0.14602082439177705
+    },
+    "pruned": {
+     "in_ot": 0.0457516339869281,
+     "n": 1071,
+     "ot_strong": 0.028944911297852476
+    }
+   },
+   "ot_text": {
+    "kept": {
+     "in_ot": 0.0121689816708528,
+     "n": 13042669,
+     "ot_strong": 0.00746012951796906
+    },
+    "pruned": {
+     "in_ot": 0.0011958892948195654,
+     "n": 76094,
+     "ot_strong": 0.0006570820301206403
+    }
+   },
+   "pruned": 1303533,
+   "pruned_share": 0.04925906939106448,
+   "text_share_of_pruned": 0.05837520032097385,
+   "threshold": 0.3695
+  },
+  {
+   "all": 2623656,
+   "gd": {
+    "n": 13415737,
+    "pruned": 218426,
+    "share": 0.016281326922255555
+   },
+   "label": "confidence < 10% quantile of all edges",
+   "ot_non_text": {
+    "kept": {
+     "in_ot": 0.1806493121866032,
+     "n": 293757,
+     "ot_strong": 0.14680501230608972
+    },
+    "pruned": {
+     "in_ot": 0.05533105377681069,
+     "n": 3217,
+     "ot_strong": 0.03543674230649674
+    }
+   },
+   "ot_text": {
+    "kept": {
+     "in_ot": 0.012258793197595019,
+     "n": 12903554,
+     "ot_strong": 0.007520873706577273
+    },
+    "pruned": {
+     "in_ot": 0.00290415363669735,
+     "n": 215209,
+     "ot_strong": 0.001412580328889591
+    }
+   },
+   "pruned": 2623656,
+   "pruned_share": 0.09914505652122553,
+   "text_share_of_pruned": 0.08202637845815153,
+   "threshold": 0.4133
+  }
+ ]
+}

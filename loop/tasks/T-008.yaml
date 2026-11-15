@@ -1,0 +1,34 @@
+id: T-008
+title: 'AWS: billing alarm, S3 deliverables, hosted demo with static fallback'
+owner: science
+classification: coding
+status: blocked
+closes:
+- hosted_demo_live
+objective: 'After the owner supplies AWS credentials: billing alarms first, one region, S3 bucket with the deliverables
+  (pruned KGX graph, full verdict file, predictions, frozen result JSONs), hosted app (service chosen after measuring card-index
+  size) and a static replay on S3 + CloudFront as fallback; write the URL into loop/state.yaml (hosted_url).'
+read_first:
+- aws/README.md
+- docs/archive/PLAN_2026-11-04.md section 6
+- docs/MAINTAIN.md
+editable_paths:
+- aws/
+- pipelines/make_demo_site.py
+- tests/test_aws_kit.py
+- loop/state.yaml
+- README.md
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- billing alarms exist before any other resource
+- every resource tagged and has an auto-stop or a teardown script
+- hosted_demo_live check passes
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_aws_kit.py
+stop_rule: 'No resource beyond S3 until the owner has seen a cost estimate. Blocked on: AWS credentials in Customize ->
+  Credentials.'
+handoff: Teardown script + the URL.

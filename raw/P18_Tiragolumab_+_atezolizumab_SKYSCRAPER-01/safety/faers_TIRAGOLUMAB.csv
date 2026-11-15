@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,OFF LABEL USE,74
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,HYPERTHYROIDISM,40
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,PNEUMONIA,40
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,DEATH,29
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,PNEUMONITIS,27
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,ADRENAL INSUFFICIENCY,25
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,INFUSION RELATED REACTION,25
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,INTENTIONAL PRODUCT USE ISSUE,25
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,COLITIS,23
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,TROPONIN INCREASED,23
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,SEPSIS,21
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,FEBRILE NEUTROPENIA,19
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,IMMUNE-MEDIATED MYOCARDITIS,18
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,MYOCARDITIS,17
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,GENERAL PHYSICAL HEALTH DETERIORATION,15
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,DYSPNOEA,13
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,ACUTE KIDNEY INJURY,11
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,PYREXIA,11
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,DIARRHOEA,10
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,IMMUNE-MEDIATED LUNG DISEASE,10
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,TYPE 2 DIABETES MELLITUS,10
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,CHRONIC OBSTRUCTIVE PULMONARY DISEASE,9
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,HYPERTENSION,9
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,IMMUNE-MEDIATED ADRENAL INSUFFICIENCY,9
+TIRAGOLUMAB,patient.drug.medicinalproduct,659,ANAEMIA,8

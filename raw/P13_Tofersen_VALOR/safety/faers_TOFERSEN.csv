@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+TOFERSEN,patient.drug.openfda.generic_name,503,AMYOTROPHIC LATERAL SCLEROSIS,62
+TOFERSEN,patient.drug.openfda.generic_name,503,HEADACHE,52
+TOFERSEN,patient.drug.openfda.generic_name,503,DEATH,45
+TOFERSEN,patient.drug.openfda.generic_name,503,PROCEDURAL PAIN,44
+TOFERSEN,patient.drug.openfda.generic_name,503,POST LUMBAR PUNCTURE SYNDROME,35
+TOFERSEN,patient.drug.openfda.generic_name,503,FALL,25
+TOFERSEN,patient.drug.openfda.generic_name,503,CSF PROTEIN INCREASED,23
+TOFERSEN,patient.drug.openfda.generic_name,503,BACK PAIN,20
+TOFERSEN,patient.drug.openfda.generic_name,503,FATIGUE,20
+TOFERSEN,patient.drug.openfda.generic_name,503,MUSCULAR WEAKNESS,18
+TOFERSEN,patient.drug.openfda.generic_name,503,PAIN IN EXTREMITY,18
+TOFERSEN,patient.drug.openfda.generic_name,503,PNEUMONIA,18
+TOFERSEN,patient.drug.openfda.generic_name,503,DYSPNOEA,16
+TOFERSEN,patient.drug.openfda.generic_name,503,PAIN,16
+TOFERSEN,patient.drug.openfda.generic_name,503,ASTHENIA,15
+TOFERSEN,patient.drug.openfda.generic_name,503,RESPIRATORY FAILURE,15
+TOFERSEN,patient.drug.openfda.generic_name,503,ARTHRALGIA,12
+TOFERSEN,patient.drug.openfda.generic_name,503,MENINGITIS ASEPTIC,11
+TOFERSEN,patient.drug.openfda.generic_name,503,MYELITIS,10
+TOFERSEN,patient.drug.openfda.generic_name,503,DIZZINESS,9
+TOFERSEN,patient.drug.openfda.generic_name,503,MALAISE,9
+TOFERSEN,patient.drug.openfda.generic_name,503,MOBILITY DECREASED,9
+TOFERSEN,patient.drug.openfda.generic_name,503,MUSCULOSKELETAL STIFFNESS,9
+TOFERSEN,patient.drug.openfda.generic_name,503,NEUROLOGICAL PROCEDURAL COMPLICATION,9
+TOFERSEN,patient.drug.openfda.generic_name,503,PULMONARY EMBOLISM,9

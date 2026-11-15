@@ -1,0 +1,20 @@
+order: 5          # position on the Start-here page (1 = first)
+name: Computational biologist / judge
+short: Comp. biologist
+emoji: "💻"
+color: "#6f42c1"
+description: >-
+  Wants the numbers and the files: graph counts by layer, pruning verdicts, link-prediction results, the schema, and KGX or PyG downloads. Full identifiers and BioLink terms.
+welcome: >-
+  Your view shows identifiers and BioLink terms everywhere and starts at the Numbers page: results, pruning, schema, downloads.
+facet_persona: >-
+  computational_biologist (FACET)
+start_tab: numbers
+wording: technical
+show_ids: always
+card_sections: [about, known, predicted, trials]
+questions:
+  - {tab: pharos, text: "Which genes are associated with both Alzheimer disease and type 2 diabetes mellitus?"}
+  - {tab: card, text: "PTGS2"}
+  - {tab: pharos, text: "Which diseases is the gene PTGS2 associated with, and which source says so?"}
+  - {tab: trials, text: "Why did TULIP-1 miss its primary endpoint, and what changed later?"}

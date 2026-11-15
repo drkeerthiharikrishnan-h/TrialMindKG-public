@@ -1,0 +1,981 @@
+<title>TrialMindKG: Build Status & Demo</title>
+
+<style>
+/* Design plan: Professional biotech project dashboard with clear status hierarchy,
+   card-based layout, semantic colors for status (done/todo/priority), light/dark themes */
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f8f7;
+  --fg-primary: #1a1a1a;
+  --fg-secondary: #666666;
+  --border: #e0ddd9;
+  --accent: #0066cc;
+  --success: #0d7d2b;
+  --warning: #d97706;
+  --critical: #dc2626;
+  --info: #0284c7;
+  
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #1a1a1a;
+    --fg-primary: #f5f5f5;
+    --fg-secondary: #b0b0b0;
+    --border: #3a3935;
+    --accent: #4da6ff;
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --critical: #ff6b6b;
+    --info: #38bdf8;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --fg-primary: #f5f5f5;
+  --fg-secondary: #b0b0b0;
+  --border: #3a3935;
+  --accent: #4da6ff;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --critical: #ff6b6b;
+  --info: #38bdf8;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 16px;
+  background: var(--bg-primary);
+  color: var(--fg-primary);
+  font: 16px/1.5 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: 32px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.2; }
+h2 { font-size: 20px; font-weight: 700; margin: 24px 0 12px 0; line-height: 1.3; }
+h3 { font-size: 16px; font-weight: 600; margin: 16px 0 8px 0; color: var(--fg-primary); }
+p { margin: 0 0 12px 0; color: var(--fg-secondary); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
+
+.header-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--fg-secondary);
+}
+
+.meta-item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.badge-complete {
+  background: rgba(13, 125, 43, 0.12);
+  color: var(--success);
+}
+
+.badge-todo {
+  background: rgba(217, 119, 6, 0.12);
+  color: var(--warning);
+}
+
+.badge-priority {
+  background: rgba(220, 38, 38, 0.12);
+  color: var(--critical);
+}
+
+/* Tabs */
+.tabs-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+}
+
+.tab-btn {
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--fg-secondary);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 200ms;
+}
+
+.tab-btn:hover {
+  color: var(--fg-primary);
+}
+
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-primary);
+}
+
+thead {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: var(--fg-primary);
+  text-transform: uppercase;
+}
+
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.status-done {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.status-todo {
+  color: var(--warning);
+  font-weight: 600;
+}
+
+.status-priority {
+  color: var(--critical);
+  font-weight: 600;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  transition: all 200ms;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  background: var(--bg-primary);
+}
+
+.card-header {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: rgba(0, 102, 204, 0.1);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.card-header h3 {
+  margin: 0;
+}
+
+.card-meta {
+  font-size: 13px;
+  color: var(--fg-secondary);
+  margin: 8px 0;
+}
+
+.card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--fg-secondary);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 24px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 24px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item:last-child {
+  border-left-color: transparent;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 3px solid var(--bg-primary);
+}
+
+.timeline-time {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.timeline-text {
+  font-size: 14px;
+  color: var(--fg-secondary);
+}
+
+/* Demo sections */
+.demo-section {
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+}
+
+.demo-section h3 {
+  margin-top: 0;
+}
+
+.demo-panels {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.demo-panel {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+.demo-panel-label {
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--fg-secondary);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tabs-nav {
+    gap: 4px;
+  }
+  
+  .tab-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .header-meta {
+    gap: 12px;
+    font-size: 13px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body { background: white; }
+  .tabs-nav { display: none; }
+}
+
+/* Animations */
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    transition: border-color 200ms, background-color 200ms;
+  }
+}
+</style>
+
+<div class="header">
+  <h1>TrialMindKG: Build Status & Demo</h1>
+  <div class="header-meta">
+    <div class="meta-item">
+      <span>📅 As of Oct 4, 2026</span>
+    </div>
+    <div class="meta-item">
+      <span>🎯 Kickoff: Oct 6 (2 days)</span>
+    </div>
+    <div class="meta-item">
+      <span>⏱️ Challenge: Oct 6 – Dec 15</span>
+    </div>
+    <div class="meta-item">
+      <span>🔗 <a href="https://github.com/drkeerthiharikrishnan-h/TrialMindKG">GitHub: TrialMindKG</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- Tabs Navigation -->
+<div class="tabs-nav">
+  <button class="tab-btn active" onclick="switchTab(event, 'status')">Build Status</button>
+  <button class="tab-btn" onclick="switchTab(event, 'week1')">Week 1 Priorities</button>
+  <button class="tab-btn" onclick="switchTab(event, 'demo')">The Demo</button>
+  <button class="tab-btn" onclick="switchTab(event, 'frontend')">Frontend</button>
+  <button class="tab-btn" onclick="switchTab(event, 'timeline')">Timeline</button>
+</div>
+
+<!-- TAB 1: Build Status -->
+<div id="status" class="tab-content active">
+  <h2>What's Complete</h2>
+
+  <h3>Core Infrastructure</h3>
+  <div class="stats-grid">
+    <div class="stat">
+      <div class="stat-value">✓</div>
+      <div class="stat-label">Seed Pipeline</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">✓</div>
+      <div class="stat-label">ADC Demo Pipeline</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">✓</div>
+      <div class="stat-label">Test Framework</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">✓</div>
+      <div class="stat-label">GitHub Setup</div>
+    </div>
+  </div>
+
+  <h3>Knowledge Graph Output</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>Status</th>
+          <th>Count</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Seed KG Nodes</strong></td>
+          <td><span class="status-done">✓ Complete</span></td>
+          <td>187</td>
+          <td>Trials, drugs, targets, diseases, tissues, adverse events</td>
+        </tr>
+        <tr>
+          <td><strong>Seed KG Edges</strong></td>
+          <td><span class="status-done">✓ Complete</span></td>
+          <td>245</td>
+          <td>Every edge carries provenance metadata</td>
+        </tr>
+        <tr>
+          <td><strong>ADC Demo Nodes</strong></td>
+          <td><span class="status-done">✓ Complete</span></td>
+          <td>37</td>
+          <td>TUB-040, UpRi, lifastuzumab on NaPi2b</td>
+        </tr>
+        <tr>
+          <td><strong>ADC Demo Edges</strong></td>
+          <td><span class="status-done">✓ Complete</span></td>
+          <td>54</td>
+          <td>interacts_with, expressed_in, genetically_associated_with</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Data & Curation</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Status</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Trial Mappings</strong></td>
+          <td><span class="status-done">✓ 6 curated</span></td>
+          <td>Human-confirmed NCT overrides</td>
+        </tr>
+        <tr>
+          <td><strong>Synthetic CDISC Tables</strong></td>
+          <td><span class="status-done">✓ 6 tables</span></td>
+          <td>SYN_ADSL, SYN_ADAE, SYN_ADBM, SYN_ADPC, SYN_ADRS, SYN_ADTTE</td>
+        </tr>
+        <tr>
+          <td><strong>Resolution Report</strong></td>
+          <td><span class="status-done">✓ Complete</span></td>
+          <td>All 75 entities resolved with rule & confidence</td>
+        </tr>
+        <tr>
+          <td><strong>Safety Validation</strong></td>
+          <td><span class="status-done">✓ Passed</span></td>
+          <td>No .env, no API keys, no invented identifiers</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Documentation</h3>
+  <div class="card-grid">
+    <div class="card">
+      <h3>README.md</h3>
+      <p class="card-desc">1-min overview: what it does, quick start</p>
+      <span class="badge badge-complete">✓ Complete</span>
+    </div>
+    <div class="card">
+      <h3>CLAUDE.md</h3>
+      <p class="card-desc">Non-negotiable rules for all contributors</p>
+      <span class="badge badge-complete">✓ Complete</span>
+    </div>
+    <div class="card">
+      <h3>GETTING_STARTED.md</h3>
+      <p class="card-desc">Onboarding: environment, commands, curator tasks</p>
+      <span class="badge badge-complete">✓ Complete</span>
+    </div>
+    <div class="card">
+      <h3>PITCH_TUB040</h3>
+      <p class="card-desc">Business case, use case, why this asset now</p>
+      <span class="badge badge-complete">✓ Complete</span>
+    </div>
+    <div class="card">
+      <h3>Demo Figures</h3>
+      <p class="card-desc">seed_kg_overview.png, tub040_demo_evidence.png</p>
+      <span class="badge badge-complete">✓ Complete</span>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 2: Week 1 Priorities -->
+<div id="week1" class="tab-content">
+  <h2>Week 1 (Oct 6–12): Must Do</h2>
+  <p>These are blocking. The full demo query cannot be answered without them.</p>
+
+  <div class="card-grid">
+    <div class="card" style="border-left: 3px solid var(--critical);">
+      <div class="card-header">
+        <div class="card-icon" style="background: rgba(220, 38, 38, 0.1); color: var(--critical);">1</div>
+        <div style="flex: 1;">
+          <h3>Open Targets drug→target</h3>
+          <div class="badge badge-priority">BLOCKING</div>
+        </div>
+      </div>
+      <div class="card-meta">Effort: 4–6 hours</div>
+      <div class="card-desc">
+        <strong>By Oct 9.</strong> One drug (fordadistrogene movaparvovec) has no ChEMBL mechanism. Query Open Targets API. Add edges with evidence.
+      </div>
+    </div>
+
+    <div class="card" style="border-left: 3px solid var(--critical);">
+      <div class="card-header">
+        <div class="card-icon" style="background: rgba(220, 38, 38, 0.1); color: var(--critical);">2</div>
+        <div style="flex: 1;">
+          <h3>Entity Resolver Agent</h3>
+          <div class="badge badge-priority">BLOCKING</div>
+        </div>
+      </div>
+      <div class="card-meta">Effort: 6–8 hours</div>
+      <div class="card-desc">
+        <strong>By Oct 10.</strong> Instead of failing on uncertain trial matches, propose ranked NCT candidates with evidence. Route to curated_overrides.csv review queue.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon" style="background: rgba(13, 125, 43, 0.1); color: var(--success);">3</div>
+        <div style="flex: 1;">
+          <h3>test_resolution.py</h3>
+          <div class="badge badge-todo">Should Do</div>
+        </div>
+      </div>
+      <div class="card-meta">Effort: 3–4 hours</div>
+      <div class="card-desc">
+        <strong>By Oct 11.</strong> Test Entity Resolver against ground_truth.csv. Validates matching logic before challenge.
+      </div>
+    </div>
+  </div>
+
+  <h2>Week 1–2: Should Do</h2>
+  <p>Expands the demo answer; nice to have but not blocking.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Reactome Pathways</h3>
+      <div class="card-meta">Effort: 3–4 hours | By Oct 15</div>
+      <p class="card-desc">For each resolved target, fetch Reactome pathways. Adds context for safety signals and mechanism.</p>
+    </div>
+
+    <div class="card">
+      <h3>Open Targets Diseases</h3>
+      <div class="card-meta">Effort: 2–3 hours | By Oct 15</div>
+      <p class="card-desc">Supplement existing disease edges. Show what other diseases the target is linked to in genetic research.</p>
+    </div>
+
+    <div class="card">
+      <h3>Fix demo_query() Text</h3>
+      <div class="card-meta">Effort: 1–2 hours | By Oct 15</div>
+      <p class="card-desc">Currently hard-coded "in this demo: SYNTHETIC". Make conditional on data source.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 3: The Demo -->
+<div id="demo" class="tab-content">
+  <h2>Demo Question</h2>
+  <div class="demo-section">
+    <p style="font-style: italic; margin-bottom: 0;">
+      "We are planning the registrational trial of TUB-040 in platinum-resistant ovarian cancer. 
+      Two NaPi2b ADCs failed before us. <strong>What killed them, do our phase 1b data show the same risks, 
+      and what should we change in patient selection, sample size and safety monitoring?</strong>"
+    </p>
+  </div>
+
+  <h2>The 5-Minute Live Demo Script</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-time">0:00 – 0:30</div>
+      <div class="timeline-text">
+        <strong>Show:</strong> The question, graph view (TUB-040, UpRi, lifastuzumab → NaPi2b)<br>
+        <strong>Say:</strong> "Agents built this from registries and ChEMBL this morning. Termination reasons are verbatim from the registry."
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-time">0:30 – 1:30</div>
+      <div class="timeline-text">
+        <strong>Show:</strong> Panels a–c: lung expression, FAERS ILD%, internal ILD by exposure<br>
+        <strong>Say:</strong> "Three public sources point at the lung. Internal data tell us whether it's happening in our patients."
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-time">1:30 – 2:30</div>
+      <div class="timeline-text">
+        <strong>Show:</strong> Panel d: ORR by NaPi2b TPS band, UPLIFT's cut-off marked<br>
+        <strong>Say:</strong> "The system knows our TPS ≥75% is UPLIFT's definition. This shows what that cost us."
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-time">2:30 – 3:30</div>
+      <div class="timeline-text">
+        <strong>Show:</strong> Panel e: sample-size curve for N needed<br>
+        <strong>Say:</strong> "UPLIFT would have needed N=588 to hit its true effect, not 141. Plan on the lower bound."
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-time">3:30 – 4:15</div>
+      <div class="timeline-text">
+        <strong>Show:</strong> Click any statement → provenance panel opens<br>
+        <strong>Say:</strong> "Every sentence opens to the registry record, API record, or internal table it came from."
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-time">4:15 – 4:45</div>
+      <div class="timeline-text">
+        <strong>Show:</strong> Synthetic-data disclaimer<br>
+        <strong>Say:</strong> "Plug in your real phase 1b tables. Same query runs on your data inside your AWS account."
+      </div>
+    </div>
+  </div>
+
+  <h2>The 7-Part Answer</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>① What Killed Them</h3>
+      <p class="card-desc">[EXT] Registry termination reasons, UPLIFT's ORR vs. 12% bar, phase 1b replication failures, non-enrichment at TPS ≥75%</p>
+    </div>
+
+    <div class="card">
+      <h3>② Lung Safety</h3>
+      <p class="card-desc">[EXT+KG] Expression (GTEx), genetics (Open Targets), payload-class safety (FAERS)</p>
+    </div>
+
+    <div class="card">
+      <h3>③ Internal ILD Risk</h3>
+      <p class="card-desc">[INT] ILD events by Cycle 1 exposure tertile; compared with FAERS patterns</p>
+    </div>
+
+    <div class="card">
+      <h3>④ Biomarker Enrichment</h3>
+      <p class="card-desc">[INT+EXT] Internal ORR by TPS band overlaid with UPLIFT's 15.6% and 12% bar</p>
+    </div>
+
+    <div class="card">
+      <h3>⑤ Replication Risk</h3>
+      <p class="card-desc">[INT+EXT] Internal vs. UPLIFT cohort characteristics; prior FRα-ADC exposure flagged</p>
+    </div>
+
+    <div class="card">
+      <h3>⑥ Sample Size</h3>
+      <p class="card-desc">[EXT+KG] Exact-binomial N under 3 scenarios; UPLIFT's under-power risk</p>
+    </div>
+
+    <div class="card">
+      <h3>⑦ 4 Recommendations</h3>
+      <p class="card-desc">[KG] Patient selection, safety monitoring, sample size, biomarker validation</p>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 4: Frontend -->
+<div id="frontend" class="tab-content">
+  <h2>Frontend Architecture (Post-Kickoff)</h2>
+  <p>Based on your PITCH_TUB040 and GETTING_STARTED vision.</p>
+
+  <h3>Design Principles</h3>
+  <ul style="color: var(--fg-secondary); line-height: 1.8;">
+    <li><strong>You are the architect & validator.</strong> AI assistant writes code; you decide what to show and why.</li>
+    <li><strong>Judges want the story.</strong> Public evidence → internal data → clinical recommendation.</li>
+    <li><strong>Provenance is the value.</strong> Every number clicks through to its source: registry, API, internal table, computation.</li>
+    <li><strong>Layer-aware.</strong> Statements tagged [EXT], [INT], [KG]; answers can be filtered to [EXT]-only before sharing.</li>
+    <li><strong>Synthetic-safe.</strong> Internal numbers clearly labeled SYNTHETIC; no mistaking for real findings.</li>
+  </ul>
+
+  <h3>Frontend Components</h3>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Query Input</h3>
+      <p class="card-desc">Plain-language question box. Checkboxes for layer filtering ([EXT] / [INT] / [KG]).</p>
+    </div>
+
+    <div class="card">
+      <h3>Interactive Graph</h3>
+      <p class="card-desc">D3.js force-directed layout. Clickable nodes & edges. Provenance links on hover.</p>
+    </div>
+
+    <div class="card">
+      <h3>5 Evidence Panels</h3>
+      <p class="card-desc">Lung expression (bar chart), FAERS (by payload), internal ILD (by exposure), ORR (by TPS), sample size (curve)</p>
+    </div>
+
+    <div class="card">
+      <h3>Provenance Drilling</h3>
+      <p class="card-desc">Click any statement → side panel shows source record, exact value, retrieval timestamp, external link</p>
+    </div>
+
+    <div class="card">
+      <h3>Data Badges</h3>
+      <p class="card-desc">[EXT] = public, [INT] = confidential, [KG] = inferred. Toggleable layer filtering.</p>
+    </div>
+
+    <div class="card">
+      <h3>Synthetic Disclaimer</h3>
+      <p class="card-desc">Persistent banner on all internal-data panels. Links to code & data definitions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Filter & Export</h3>
+      <p class="card-desc">Export as: full report, public-only, slides, CSV. Filter by layer & specific trials/events.</p>
+    </div>
+
+    <div class="card">
+      <h3>Recommendations</h3>
+      <p class="card-desc">4 protocol recommendations, each linked to its evidence trail. Clickable to expand.</p>
+    </div>
+  </div>
+
+  <h3>Tech Stack (Suggestion)</h3>
+  <div class="demo-section">
+    <div class="demo-panel">
+      <div class="demo-panel-label">Frontend</div>
+      React 18 + TypeScript | Plotly.js for evidence figures | Cytoscape.js for graph | TanStack Query
+    </div>
+    <div class="demo-panel">
+      <div class="demo-panel-label">Backend</div>
+      FastAPI (Python) | Neptune or Neo4j driver | Pydantic for validation
+    </div>
+    <div class="demo-panel">
+      <div class="demo-panel-label">Deployment</div>
+      Frontend: AWS S3 + CloudFront | Backend: Lambda + API Gateway | Graph: Neptune
+    </div>
+  </div>
+</div>
+
+<!-- TAB 5: Timeline -->
+<div id="timeline" class="tab-content">
+  <h2>Build Timeline</h2>
+
+  <h3>Week 1: Oct 6–12 (Blockers)</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Task</th><th>Owner</th><th>By</th><th>Deliverable</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Open Targets drug→target</td>
+          <td>You + Claude</td>
+          <td>Oct 9</td>
+          <td>New edges in kg_edges.csv</td>
+        </tr>
+        <tr>
+          <td>Entity Resolver agent</td>
+          <td>You + Claude</td>
+          <td>Oct 10</td>
+          <td>Ranked NCT candidates in code</td>
+        </tr>
+        <tr>
+          <td>test_resolution.py</td>
+          <td>You + Claude</td>
+          <td>Oct 11</td>
+          <td>Test passing, ground_truth.csv</td>
+        </tr>
+        <tr>
+          <td>Protocol recommendations (draft)</td>
+          <td>You</td>
+          <td>Oct 12</td>
+          <td>4 bullet points</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Week 2–3: Oct 13–26 (Enhancements)</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Task</th><th>Owner</th><th>By</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reactome + Open Targets edges</td>
+          <td>Claude</td>
+          <td>Oct 15</td>
+          <td>Expands safety organ story</td>
+        </tr>
+        <tr>
+          <td>Fix demo_query() text</td>
+          <td>Claude</td>
+          <td>Oct 15</td>
+          <td>Conditional on data source</td>
+        </tr>
+        <tr>
+          <td>Frontend prototype</td>
+          <td>Claude</td>
+          <td>Oct 20</td>
+          <td>Static HTML + JSON, no backend yet</td>
+        </tr>
+        <tr>
+          <td>Neo4j load script</td>
+          <td>Claude</td>
+          <td>Oct 22</td>
+          <td>Updated load_neo4j.cypher</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Week 4–6: Oct 27 – Nov 9 (Polish)</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Task</th><th>Owner</th><th>By</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Backend API (FastAPI)</td>
+          <td>Claude</td>
+          <td>Nov 1</td>
+        </tr>
+        <tr>
+          <td>Interactive frontend</td>
+          <td>Claude</td>
+          <td>Nov 5</td>
+        </tr>
+        <tr>
+          <td>Documentation refresh</td>
+          <td>You</td>
+          <td>Nov 8</td>
+        </tr>
+        <tr>
+          <td>Dry run: end-to-end demo</td>
+          <td>You + Claude</td>
+          <td>Nov 9</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Week 7–10: Nov 10 – Dec 15 (Submission)</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Phase</th><th>Owner</th><th>By</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Production Deployment</strong> (optional)</td>
+          <td>Claude</td>
+          <td>Nov 12–Dec 1</td>
+        </tr>
+        <tr>
+          <td><strong>Final Submission</strong></td>
+          <td>You</td>
+          <td>Dec 15</td>
+        </tr>
+        <tr>
+          <td><strong>Judging</strong></td>
+          <td>Judges</td>
+          <td>Dec 15+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Next Steps (Immediate)</h2>
+  <div class="card-grid">
+    <div class="card" style="border-left: 3px solid var(--success);">
+      <h3>Today (Oct 4)</h3>
+      <p class="card-desc">Review this document. Any gaps or changes to the demo vision?</p>
+    </div>
+    <div class="card" style="border-left: 3px solid var(--warning);">
+      <h3>Oct 5</h3>
+      <p class="card-desc">Get NVIDIA API key. Set up AWS account.</p>
+    </div>
+    <div class="card" style="border-left: 3px solid var(--critical);">
+      <h3>Oct 6 Onwards</h3>
+      <p class="card-desc">Kickoff! Start Week 1 blockers (Open Targets, Entity Resolver, test_resolution.py).</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchTab(e, tabName) {
+  // Hide all tabs
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(el => el.classList.remove('active'));
+
+  // Remove active from all buttons
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  // Show selected tab and mark button active
+  document.getElementById(tabName).classList.add('active');
+  e.target.classList.add('active');
+}
+</script>

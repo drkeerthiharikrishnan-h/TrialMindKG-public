@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+EPLONTERSEN,patient.drug.openfda.generic_name,168,DEATH,15
+EPLONTERSEN,patient.drug.openfda.generic_name,168,FATIGUE,13
+EPLONTERSEN,patient.drug.openfda.generic_name,168,NEUROPATHY PERIPHERAL,13
+EPLONTERSEN,patient.drug.openfda.generic_name,168,NAUSEA,12
+EPLONTERSEN,patient.drug.openfda.generic_name,168,PAIN,9
+EPLONTERSEN,patient.drug.openfda.generic_name,168,VOMITING,7
+EPLONTERSEN,patient.drug.openfda.generic_name,168,DIARRHOEA,6
+EPLONTERSEN,patient.drug.openfda.generic_name,168,HYPOAESTHESIA,6
+EPLONTERSEN,patient.drug.openfda.generic_name,168,PAIN IN EXTREMITY,6
+EPLONTERSEN,patient.drug.openfda.generic_name,168,PARAESTHESIA,6
+EPLONTERSEN,patient.drug.openfda.generic_name,168,PRODUCT DOSE OMISSION ISSUE,6
+EPLONTERSEN,patient.drug.openfda.generic_name,168,VISION BLURRED,6
+EPLONTERSEN,patient.drug.openfda.generic_name,168,CONSTIPATION,5
+EPLONTERSEN,patient.drug.openfda.generic_name,168,DRUG INEFFECTIVE,5
+EPLONTERSEN,patient.drug.openfda.generic_name,168,PRURITUS,5
+EPLONTERSEN,patient.drug.openfda.generic_name,168,VITAMIN A DECREASED,5
+EPLONTERSEN,patient.drug.openfda.generic_name,168,CARDIAC DISORDER,4
+EPLONTERSEN,patient.drug.openfda.generic_name,168,DIZZINESS,4
+EPLONTERSEN,patient.drug.openfda.generic_name,168,MALAISE,4
+EPLONTERSEN,patient.drug.openfda.generic_name,168,WEIGHT DECREASED,4
+EPLONTERSEN,patient.drug.openfda.generic_name,168,ABDOMINAL DISCOMFORT,3
+EPLONTERSEN,patient.drug.openfda.generic_name,168,AMYLOIDOSIS,3
+EPLONTERSEN,patient.drug.openfda.generic_name,168,ANAEMIA,3
+EPLONTERSEN,patient.drug.openfda.generic_name,168,ARTHRALGIA,3
+EPLONTERSEN,patient.drug.openfda.generic_name,168,ASCITES,3

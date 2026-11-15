@@ -1,0 +1,108 @@
+# Source card: Gene Ontology hierarchy, go-basic (L2 context layer on top of Pharos L0).
+# Data: data/external/go/go-basic.json (scripts/download_latest_layers.sh, Mac) ->
+#       python pipelines/ontology_prepare.py go -> data/ontologies/go/{terms,relations}.tsv.gz
+# Read by the generic builder pipelines/kgbuilder/engine.py.
+#
+# What it adds: every live GO term as a node of its aspect's BioLink class (biological_process ->
+# biolink:BiologicalProcess, molecular_function -> biolink:MolecularActivity, cellular_component ->
+# biolink:CellularComponent; the same classes Pharos's GO annotation edges use, so the ids join), the is_a tree
+# as biolink:subclass_of edges and part_of as biolink:part_of edges (child -> parent). go-basic keeps only
+# relations that stay inside one aspect, so every spec below filters on subject and object namespace; a
+# cross-aspect row (should not exist in go-basic) is simply not matched by any spec.
+# Not a claim about biology: never pruned. Release: data/ontologies/go/version.txt, outputs/go_hierarchy/prepare.md.
+name: go_hierarchy
+version: "download 2026-10-25 (release IRI in data/ontologies/go/version.txt)"
+tables_dir: data/ontologies/go
+aggregator: infores:go
+layer: L2
+
+nodes:
+  - table: terms_biological_process
+    id: {column: id}
+    category: biolink:BiologicalProcess
+    name: name
+  - table: terms_molecular_function
+    id: {column: id}
+    category: biolink:MolecularActivity
+    name: name
+  - table: terms_cellular_component
+    id: {column: id}
+    category: biolink:CellularComponent
+    name: name
+
+edges:
+  - name: go_bp_is_a
+    table: relations
+    filter: {relation: is_a, subject_namespace: biological_process, object_namespace: biological_process}
+    subject: {column: subject, category: biolink:BiologicalProcess}
+    predicate: biolink:subclass_of
+    object: {column: object, category: biolink:BiologicalProcess}
+    record_columns: [subject, object]
+    source: "GO is_a"
+    primary_knowledge_source: "infores:go"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "rdfs:subClassOf"}
+  - name: go_bp_part_of
+    table: relations
+    filter: {relation: part_of, subject_namespace: biological_process, object_namespace: biological_process}
+    subject: {column: subject, category: biolink:BiologicalProcess}
+    predicate: biolink:part_of
+    object: {column: object, category: biolink:BiologicalProcess}
+    record_columns: [subject, object]
+    source: "GO part_of"
+    primary_knowledge_source: "infores:go"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "BFO:0000050"}
+  - name: go_mf_is_a
+    table: relations
+    filter: {relation: is_a, subject_namespace: molecular_function, object_namespace: molecular_function}
+    subject: {column: subject, category: biolink:MolecularActivity}
+    predicate: biolink:subclass_of
+    object: {column: object, category: biolink:MolecularActivity}
+    record_columns: [subject, object]
+    source: "GO is_a"
+    primary_knowledge_source: "infores:go"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "rdfs:subClassOf"}
+  - name: go_mf_part_of
+    table: relations
+    filter: {relation: part_of, subject_namespace: molecular_function, object_namespace: molecular_function}
+    subject: {column: subject, category: biolink:MolecularActivity}
+    predicate: biolink:part_of
+    object: {column: object, category: biolink:MolecularActivity}
+    record_columns: [subject, object]
+    source: "GO part_of"
+    primary_knowledge_source: "infores:go"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "BFO:0000050"}
+  - name: go_cc_is_a
+    table: relations
+    filter: {relation: is_a, subject_namespace: cellular_component, object_namespace: cellular_component}
+    subject: {column: subject, category: biolink:CellularComponent}
+    predicate: biolink:subclass_of
+    object: {column: object, category: biolink:CellularComponent}
+    record_columns: [subject, object]
+    source: "GO is_a"
+    primary_knowledge_source: "infores:go"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "rdfs:subClassOf"}
+  - name: go_cc_part_of
+    table: relations
+    filter: {relation: part_of, subject_namespace: cellular_component, object_namespace: cellular_component}
+    subject: {column: subject, category: biolink:CellularComponent}
+    predicate: biolink:part_of
+    object: {column: object, category: biolink:CellularComponent}
+    record_columns: [subject, object]
+    source: "GO part_of"
+    primary_knowledge_source: "infores:go"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "BFO:0000050"}
+
+prune:
+  never_prune_predicates: [biolink:subclass_of, biolink:part_of]

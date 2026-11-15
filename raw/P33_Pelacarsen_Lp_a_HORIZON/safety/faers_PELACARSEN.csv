@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+PELACARSEN,patient.drug.medicinalproduct,38,CORONARY ARTERY DISEASE,19
+PELACARSEN,patient.drug.medicinalproduct,38,PERIPHERAL ARTERIAL OCCLUSIVE DISEASE,19
+PELACARSEN,patient.drug.medicinalproduct,38,LIPOPROTEIN (A) INCREASED,18
+PELACARSEN,patient.drug.medicinalproduct,38,ARTERIOSCLEROSIS,14
+PELACARSEN,patient.drug.medicinalproduct,38,CAROTID ARTERIOSCLEROSIS,13
+PELACARSEN,patient.drug.medicinalproduct,38,CEREBROVASCULAR DISORDER,4
+PELACARSEN,patient.drug.medicinalproduct,38,GASTRIC HAEMORRHAGE,3
+PELACARSEN,patient.drug.medicinalproduct,38,HELICOBACTER INFECTION,3
+PELACARSEN,patient.drug.medicinalproduct,38,ARRHYTHMIA,2
+PELACARSEN,patient.drug.medicinalproduct,38,CHEST DISCOMFORT,2
+PELACARSEN,patient.drug.medicinalproduct,38,DIZZINESS,2
+PELACARSEN,patient.drug.medicinalproduct,38,ABDOMINAL PAIN,1
+PELACARSEN,patient.drug.medicinalproduct,38,ANGINA PECTORIS,1
+PELACARSEN,patient.drug.medicinalproduct,38,ANGINA UNSTABLE,1
+PELACARSEN,patient.drug.medicinalproduct,38,AORTIC ANEURYSM,1
+PELACARSEN,patient.drug.medicinalproduct,38,AORTIC STENOSIS,1
+PELACARSEN,patient.drug.medicinalproduct,38,ASTHENIA,1
+PELACARSEN,patient.drug.medicinalproduct,38,ATRIAL FIBRILLATION,1
+PELACARSEN,patient.drug.medicinalproduct,38,BRADYCARDIA,1
+PELACARSEN,patient.drug.medicinalproduct,38,CARDIAC STRESS TEST ABNORMAL,1
+PELACARSEN,patient.drug.medicinalproduct,38,CARDIAC VENTRICULAR THROMBOSIS,1
+PELACARSEN,patient.drug.medicinalproduct,38,CARDIOVASCULAR DISORDER,1
+PELACARSEN,patient.drug.medicinalproduct,38,CHEST PAIN,1
+PELACARSEN,patient.drug.medicinalproduct,38,CONCOMITANT DISEASE AGGRAVATED,1
+PELACARSEN,patient.drug.medicinalproduct,38,CORONARY ARTERY STENOSIS,1

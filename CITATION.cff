@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use TrialMindKG, please cite it as below. The data it serves keep their own licences and citations (DATA_LICENSES.md)."
+title: "TrialMindKG: agents that build, prune and query a drug-target and clinical-trial knowledge graph, with provenance on every edge"
+type: software
+authors:
+  - given-names: Keerthi
+    family-names: Harikrishnan
+version: 1.0.0
+license: MIT
+keywords:
+  - knowledge graph
+  - Pharos
+  - BioLink
+  - link prediction
+  - clinical trials

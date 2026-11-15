@@ -1,0 +1,102 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "RunCommandDocumentForTheLoader",
+      "Effect": "Allow",
+      "Action": "ssm:SendCommand",
+      "Resource": "arn:aws:ssm:REGION::document/AWS-RunShellScript"
+    },
+    {
+      "Sid": "RunCommandOnlyOnTheProjectInstance",
+      "Effect": "Allow",
+      "Action": "ssm:SendCommand",
+      "Resource": "arn:aws:ec2:REGION:ACCOUNT_ID:instance/*",
+      "Condition": {
+        "StringEquals": {
+          "ssm:resourceTag/project": "TAG_VALUE"
+        }
+      }
+    },
+    {
+      "Sid": "ReadCommandResultsAndParameterMetadata",
+      "Effect": "Allow",
+      "Action": [
+        "ssm:GetCommandInvocation",
+        "ssm:ListCommandInvocations",
+        "ssm:ListCommands",
+        "ssm:DescribeInstanceInformation",
+        "ssm:DescribeParameters"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudFrontReadOnlyLookups",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:ListCachePolicies",
+        "cloudfront:ListOriginRequestPolicies",
+        "cloudfront:GetCachePolicy",
+        "cloudfront:GetOriginRequestPolicy",
+        "cloudfront:ListTagsForResource",
+        "cloudfront:GetInvalidation"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "NeptuneReadOnlyLookups",
+      "Effect": "Allow",
+      "Action": [
+        "rds:DescribeDBEngineVersions",
+        "rds:DescribeOrderableDBInstanceOptions",
+        "rds:DescribeEvents"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": "REGION"
+        }
+      }
+    },
+    {
+      "Sid": "ReadMetricsForTheIdleAlarm",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:ListMetrics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadIdleStopLambdaPolicy",
+      "Effect": "Allow",
+      "Action": "lambda:GetPolicy",
+      "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:tmkg-*"
+    },
+    {
+      "Sid": "IdleStopLambdaLogs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:DescribeLogStreams",
+        "logs:GetLogEvents",
+        "logs:FilterLogEvents",
+        "logs:DeleteLogGroup"
+      ],
+      "Resource": [
+        "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/lambda/tmkg-*",
+        "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/lambda/tmkg-*:*"
+      ]
+    },
+    {
+      "Sid": "ReadOwnDeployerPolicies",
+      "Effect": "Allow",
+      "Action": [
+        "iam:GetPolicy",
+        "iam:GetPolicyVersion",
+        "iam:ListPolicyVersions"
+      ],
+      "Resource": "arn:aws:iam::ACCOUNT_ID:policy/tmkg-deployer-policy*"
+    }
+  ]
+}

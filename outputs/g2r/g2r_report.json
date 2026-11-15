@@ -1,0 +1,234 @@
+{
+  "seed": 0,
+  "removed_total": 375850,
+  "removed_by_layer": {
+    "opentargets_layer": 59284,
+    "pharos": 242833,
+    "chembl37": 73733
+  },
+  "per_edge_type": [
+    {
+      "edge_type": "BiologicalProcess|part_of|BiologicalProcess",
+      "g2": 4461,
+      "g2r": 4461,
+      "g3": 4461
+    },
+    {
+      "edge_type": "BiologicalProcess|subclass_of|BiologicalProcess",
+      "g2": 40486,
+      "g2r": 40486,
+      "g3": 40486
+    },
+    {
+      "edge_type": "CellularComponent|part_of|CellularComponent",
+      "g2": 1800,
+      "g2r": 1800,
+      "g3": 1800
+    },
+    {
+      "edge_type": "CellularComponent|subclass_of|CellularComponent",
+      "g2": 4696,
+      "g2r": 4696,
+      "g3": 4696
+    },
+    {
+      "edge_type": "Disease|has_phenotype|Disease",
+      "g2": 15246,
+      "g2r": 14081,
+      "g3": 14081
+    },
+    {
+      "edge_type": "Disease|has_phenotype|DiseaseOrPhenotypicFeature",
+      "g2": 726,
+      "g2r": 609,
+      "g3": 609
+    },
+    {
+      "edge_type": "Disease|has_phenotype|PhenotypicFeature",
+      "g2": 142867,
+      "g2r": 141771,
+      "g3": 141771
+    },
+    {
+      "edge_type": "Disease|subclass_of|Disease",
+      "g2": 46732,
+      "g2r": 46732,
+      "g3": 46732
+    },
+    {
+      "edge_type": "DiseaseOrPhenotypicFeature|has_phenotype|Disease",
+      "g2": 405,
+      "g2r": 376,
+      "g3": 376
+    },
+    {
+      "edge_type": "DiseaseOrPhenotypicFeature|has_phenotype|DiseaseOrPhenotypicFeature",
+      "g2": 32,
+      "g2r": 27,
+      "g3": 27
+    },
+    {
+      "edge_type": "DiseaseOrPhenotypicFeature|has_phenotype|PhenotypicFeature",
+      "g2": 3996,
+      "g2r": 3976,
+      "g3": 3976
+    },
+    {
+      "edge_type": "Gene|gene_associated_with_condition|BiologicalProcess",
+      "g2": 1537,
+      "g2r": 1402,
+      "g3": 1402
+    },
+    {
+      "edge_type": "Gene|gene_associated_with_condition|Disease",
+      "g2": 13807187,
+      "g2r": 13752818,
+      "g3": 13752818
+    },
+    {
+      "edge_type": "Gene|gene_associated_with_condition|DiseaseOrPhenotypicFeature",
+      "g2": 350973,
+      "g2r": 330366,
+      "g3": 330366
+    },
+    {
+      "edge_type": "Gene|gene_associated_with_condition|PhenotypicFeature",
+      "g2": 26000,
+      "g2r": 21095,
+      "g3": 21095
+    },
+    {
+      "edge_type": "Gene|genetically_associated_with|Disease",
+      "g2": 12292,
+      "g2r": 12236,
+      "g3": 12236
+    },
+    {
+      "edge_type": "Gene|genetically_associated_with|DiseaseOrPhenotypicFeature",
+      "g2": 266529,
+      "g2r": 265980,
+      "g3": 265980
+    },
+    {
+      "edge_type": "Gene|genetically_associated_with|PhenotypicFeature",
+      "g2": 2170,
+      "g2r": 2165,
+      "g3": 2165
+    },
+    {
+      "edge_type": "Gene|has_gene_product|Protein",
+      "g2": 20190,
+      "g2r": 20190,
+      "g3": 20190
+    },
+    {
+      "edge_type": "Gene|has_phenotype|PhenotypicFeature",
+      "g2": 87311,
+      "g2r": 87296,
+      "g3": 87296
+    },
+    {
+      "edge_type": "MolecularActivity|part_of|MolecularActivity",
+      "g2": 9,
+      "g2r": 9,
+      "g3": 9
+    },
+    {
+      "edge_type": "MolecularActivity|subclass_of|MolecularActivity",
+      "g2": 12274,
+      "g2r": 12274,
+      "g3": 12274
+    },
+    {
+      "edge_type": "PhenotypicFeature|has_phenotype|Disease",
+      "g2": 21,
+      "g2r": 19,
+      "g3": 19
+    },
+    {
+      "edge_type": "PhenotypicFeature|has_phenotype|DiseaseOrPhenotypicFeature",
+      "g2": 1,
+      "g2r": 1,
+      "g3": 1
+    },
+    {
+      "edge_type": "PhenotypicFeature|has_phenotype|PhenotypicFeature",
+      "g2": 250,
+      "g2r": 246,
+      "g3": 246
+    },
+    {
+      "edge_type": "PhenotypicFeature|subclass_of|PhenotypicFeature",
+      "g2": 24436,
+      "g2r": 24436,
+      "g3": 24436
+    },
+    {
+      "edge_type": "Protein|actively_involved_in|BiologicalProcess",
+      "g2": 126465,
+      "g2r": 124859,
+      "g3": 124859
+    },
+    {
+      "edge_type": "Protein|actively_involved_in|Pathway",
+      "g2": 232931,
+      "g2r": 232008,
+      "g3": 232008
+    },
+    {
+      "edge_type": "Protein|capable_of|MolecularActivity",
+      "g2": 54547,
+      "g2r": 54146,
+      "g3": 54146
+    },
+    {
+      "edge_type": "Protein|located_in|CellularComponent",
+      "g2": 77707,
+      "g2r": 76784,
+      "g3": 76784
+    },
+    {
+      "edge_type": "Protein|physically_interacts_with|Protein",
+      "g2": 11691825,
+      "g2r": 11482313,
+      "g3": 11482313
+    },
+    {
+      "edge_type": "SmallMolecule|directly_physically_interacts_with|Gene",
+      "g2": 5416,
+      "g2r": 5343,
+      "g3": 5343
+    },
+    {
+      "edge_type": "SmallMolecule|directly_physically_interacts_with|Protein",
+      "g2": 2431192,
+      "g2r": 2357110,
+      "g3": 2357110
+    },
+    {
+      "edge_type": "SmallMolecule|treats_or_applied_or_studied_to_treat|BiologicalProcess",
+      "g2": 154,
+      "g2r": 152,
+      "g3": 152
+    },
+    {
+      "edge_type": "SmallMolecule|treats_or_applied_or_studied_to_treat|Disease",
+      "g2": 87809,
+      "g2r": 85464,
+      "g3": 85464
+    },
+    {
+      "edge_type": "SmallMolecule|treats_or_applied_or_studied_to_treat|DiseaseOrPhenotypicFeature",
+      "g2": 46873,
+      "g2r": 44551,
+      "g3": 44551
+    },
+    {
+      "edge_type": "SmallMolecule|treats_or_applied_or_studied_to_treat|PhenotypicFeature",
+      "g2": 10354,
+      "g2r": 9772,
+      "g3": 9772
+    }
+  ],
+  "note": "E009 random-pruning control; counts per (edge type, layer) equal G3"
+}

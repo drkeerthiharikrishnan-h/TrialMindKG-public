@@ -1,0 +1,177 @@
+{
+ "checked": "2026-11-08, offline model stand-in, local trial graph, card index v2",
+ "backend": "offline",
+ "results": [
+  {
+   "id": "x01",
+   "persona": "clinician",
+   "kind": "trials",
+   "question": "Why did mepolizumab fail in METREO for COPD, and which patients might respond?",
+   "ok": true,
+   "n": 7,
+   "note": "7 verified claims; seeds ['CHEMBL:CHEMBL2108429', 'NCT:NCT02105961', 'P20']"
+  },
+  {
+   "id": "x02",
+   "persona": "clinician",
+   "kind": "trials",
+   "question": "Why did tofersen miss its VALOR primary endpoint, and which patients might still benefit?",
+   "ok": true,
+   "n": 12,
+   "note": "12 verified claims; seeds ['CHEMBL:CHEMBL3833346', 'NCT:NCT02623699', 'P13']"
+  },
+  {
+   "id": "x03",
+   "persona": "clinician",
+   "kind": "trials",
+   "question": "Why did prasinezumab miss its primary endpoints in PASADENA and PADOVA, and which patients might still respond?",
+   "ok": true,
+   "n": 6,
+   "note": "6 verified claims; seeds ['CHEMBL:CHEMBL4298077', 'NCT:NCT03100149', 'NCT:NCT04777331', 'P11']"
+  },
+  {
+   "id": "x04",
+   "persona": "clinician",
+   "kind": "trials",
+   "question": "Why were aducanumab's ENGAGE and EMERGE trials stopped for futility, and what did the fuller data show?",
+   "ok": true,
+   "n": 7,
+   "note": "7 verified claims; seeds ['CHEMBL:CHEMBL3039540', 'NCT:NCT02477800', 'NCT:NCT02484547', 'P05']"
+  },
+  {
+   "id": "x05",
+   "persona": "physician_scientist",
+   "kind": "trials",
+   "question": "Why did TULIP-1 miss its primary endpoint, and what changed later?",
+   "ok": true,
+   "n": 11,
+   "note": "11 verified claims; seeds ['NCT:NCT02446912', 'P19']"
+  },
+  {
+   "id": "x06",
+   "persona": "physician_scientist",
+   "kind": "trials",
+   "question": "Did a genotype-defined population rescue dalcetrapib in dal-GenE?",
+   "ok": true,
+   "n": 7,
+   "note": "7 verified claims; seeds ['CHEMBL:CHEMBL313006', 'NCT:NCT02525939', 'P25']"
+  },
+  {
+   "id": "x07",
+   "persona": "physician_scientist",
+   "kind": "card",
+   "question": "Which diseases is BACE1, the target of verubecestat, linked to, and by what kind of evidence?",
+   "ok": true,
+   "n": 2503,
+   "note": "NCBIGene:23621: {'human genetics': 38, 'curated': 12, 'binding or activity': 4, 'expression or statistics': 227, 'annotation': 1, 'text mining': 2221}"
+  },
+  {
+   "id": "x08",
+   "persona": "physician_scientist",
+   "kind": "query",
+   "question": "What was the primary endpoint of RESOLVE-IT?",
+   "ok": true,
+   "n": 2,
+   "note": "2 rows"
+  },
+  {
+   "id": "x09",
+   "persona": "bench_scientist",
+   "kind": "card",
+   "question": "Which pathways and processes involve the IFNAR1 receptor protein that anifrolumab blocks?",
+   "ok": true,
+   "n": 148,
+   "note": "UniProtKB:P17181: {'binding or activity': 1522, 'annotation': 148}"
+  },
+  {
+   "id": "x10",
+   "persona": "bench_scientist",
+   "kind": "card",
+   "question": "Which processes and interactors does alpha-synuclein, the target of prasinezumab, have?",
+   "ok": true,
+   "n": 137,
+   "note": "UniProtKB:P37840: {'binding or activity': 6619, 'annotation': 137}"
+  },
+  {
+   "id": "x11",
+   "persona": "bench_scientist",
+   "kind": "query",
+   "question": "Which targets does selonsertib bind, and by which mechanism?",
+   "ok": true,
+   "n": 1,
+   "note": "1 rows"
+  },
+  {
+   "id": "x12",
+   "persona": "bench_scientist",
+   "kind": "card",
+   "question": "Which pathways involve the MAP3K5 kinase protein that selonsertib inhibits?",
+   "ok": true,
+   "n": 78,
+   "note": "UniProtKB:Q99683: {'binding or activity': 3676, 'annotation': 78}"
+  },
+  {
+   "id": "x13",
+   "persona": "drug_developer",
+   "kind": "card",
+   "question": "What else binds cholesteryl ester transfer protein, dalcetrapib's target, and how potent is it?",
+   "ok": true,
+   "n": 3264,
+   "note": "UniProtKB:P11597: {'binding or activity': 3264, 'annotation': 39}"
+  },
+  {
+   "id": "x14",
+   "persona": "drug_developer",
+   "kind": "card",
+   "question": "Which other compounds bind beta-secretase 1, the target of verubecestat, and how strongly?",
+   "ok": true,
+   "n": 19468,
+   "note": "UniProtKB:P56817: {'binding or activity': 19468, 'annotation': 73}"
+  },
+  {
+   "id": "x15",
+   "persona": "drug_developer",
+   "kind": "query",
+   "question": "Which failed programs share a drug target?",
+   "ok": true,
+   "n": 13,
+   "note": "13 rows"
+  },
+  {
+   "id": "x16",
+   "persona": "drug_developer",
+   "kind": "trials",
+   "question": "What does the semaglutide evoke failure imply for similar programs, and how strong is the evidence?",
+   "ok": true,
+   "n": 5,
+   "note": "5 verified claims; seeds ['CHEMBL:CHEMBL2108724', 'NCT:NCT04777396', 'NCT:NCT04777409', 'P10']"
+  },
+  {
+   "id": "x17",
+   "persona": "computational_biologist",
+   "kind": "trials",
+   "question": "How strong is the evidence that elafibranor's RESOLVE-IT missed its NASH-resolution endpoint?",
+   "ok": true,
+   "n": 8,
+   "note": "8 verified claims; seeds ['CHEMBL:CHEMBL3707395', 'NCT:NCT02704403', 'P22']"
+  },
+  {
+   "id": "x18",
+   "persona": "computational_biologist",
+   "kind": "query",
+   "question": "What was the primary endpoint of ENHANCE?",
+   "ok": true,
+   "n": 2,
+   "note": "2 rows"
+  },
+  {
+   "id": "x19",
+   "persona": "computational_biologist",
+   "kind": "card",
+   "question": "How much of what the graph says about PPARA, the target of pemafibrate, is curated, statistical or text-mined?",
+   "ok": true,
+   "n": 3389,
+   "note": "NCBIGene:5465: {'human genetics': 28, 'curated': 78, 'clinical': 3, 'binding or activity': 27, 'expression or statistics': 167, 'annotation': 1, 'text mining': 3085}"
+  }
+ ]
+}

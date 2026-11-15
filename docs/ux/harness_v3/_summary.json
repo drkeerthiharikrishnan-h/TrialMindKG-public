@@ -1,0 +1,1250 @@
+{
+ "note": "jsdom 24.1.3 + bridge.py (FastAPI TestClient against pipelines/app.py, local trial graph, card index v2, offline model stand-in); no port opened, hosted server not used. 8 Nov 2026.",
+ "total_script_errors": 0,
+ "journeys": {
+  "J1_egfr_card_hover_slider": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 22,
+   "snapshots": [
+    {
+     "snap": "card",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "hover_node",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "hovercard": "central nervous system cancertype disease or phenotype · EFO:0000326 1 link to EGFR drawn here: human geneticsverdicts: kept click to pin; Esc closes",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "hover_edge",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "hovercard": "EGFR is genetically associated with glioblastoma multiforme source TIGA (GWAS Catalog) (pharos) knowledge level statistical association · statistical verdict kept confidence 0.64 reason plausibility 0.85; 1 source for the pair; source relia",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "pinned_edge",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "hovercard": "pinned: ✕EGFR is genetically associated with glioblastoma multiforme source TIGA (GWAS Catalog) (pharos) knowledge level statistical association · statistical verdict kept confidence 0.64 reason plausibility 0.85; 1 source for the pair; source reli",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "side_panel_from_edge",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "side_panel": {
+      "title": "Why this link",
+      "lead": "EGFR is genetically associated with glioblastoma multiformeef47b393fe56bbf77",
+      "raw": "/api/pharos/explain/ef47b393fe56bbf77",
+      "headings": [
+       "Where it comes from",
+       "Measured values",
+       "The same pair in other sources (0)",
+       "Timeline",
+       "Raw record"
+      ]
+     },
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "slider_0.6",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 20,
+     "dimmed": 20,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 3,
+     "slider_info": "Showing 30 of 50 links; 20 below 0.60 hidden. Predicted links have no pruning confidence and always show. Prediction paths: 3 of 3 have a hop below the threshold and are greyed.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "slider_0.9",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 40,
+     "dimmed": 33,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 3,
+     "slider_info": "Showing 10 of 50 links; 40 below 0.90 hidden. Predicted links have no pruning confidence and always show. Prediction paths: 3 of 3 have a hop below the threshold and are greyed.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "hop_card_pinned",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 40,
+     "dimmed": 33,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 3,
+     "slider_info": "Showing 10 of 50 links; 40 below 0.90 hidden. Predicted links have no pruning confidence and always show. Prediction paths: 3 of 3 have a hop below the threshold and are greyed.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "hovercard": "pinned: ✕EGFR is associated with gastric cancer source DisGeNETknowledge level unspecified · unspecified verdict kept confidence 0.52reason plausibility 0.53; 3 sources for the pair; source reliability 0.50; the source's own score 0.77 ed4edb988edc",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "J2_ptgs2_demo_bottom_line": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 11,
+   "snapshots": [
+    {
+     "snap": "demo1_physician",
+     "persona": "physician_scientist",
+     "answer": {
+      "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+      "context": [],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "50 rows answer this question, resting on 50 links from 5 sources.",
+      "confidence": "confidence: low",
+      "confidence_reason": "40 of 50 rows rest on text mining or prediction only.",
+      "points": [
+       "First rows (ordered by disease): 46 XX gonadal dysgenesis, 46,XY complete gonadal dysgenesis and 46,XY disorder of sex development due to testicular 17,20-desmolase deficiency (rows 1-3). row 1row 2row 3e46814b0006caf8f5",
+       "2 of 50 rows rest only on curated or measured links (CTD; rows 42, 46). row 42row 46eb6afa51e87829093e7dccd930852606e4",
+       "40 of 50 rows rest on text mining or prediction only (TIN-X); the graph keeps these as context, never as proof (rows 1-14, 16-22, 24-28, 30-36, 38-41, 44, 48, 50). row 1row 2row 3row 4row 5row 6 +34e46814b0006caf8f5e1446",
+       "The pruning check kept 50 of the 50 links behind these rows and pruned 0."
+      ],
+      "rows": 50,
+      "row_evidence_chips": 50,
+      "checks": [
+       "ok: tested-question shape check: passed",
+       "ok: query validation: the query passed validation"
+      ],
+      "abstain": ""
+     },
+     "headings": [
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "chip_side_panel",
+     "persona": "physician_scientist",
+     "answer": {
+      "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+      "context": [],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "50 rows answer this question, resting on 50 links from 5 sources.",
+      "confidence": "confidence: low",
+      "confidence_reason": "40 of 50 rows rest on text mining or prediction only.",
+      "points": [
+       "First rows (ordered by disease): 46 XX gonadal dysgenesis, 46,XY complete gonadal dysgenesis and 46,XY disorder of sex development due to testicular 17,20-desmolase deficiency (rows 1-3). row 1row 2row 3e46814b0006caf8f5",
+       "2 of 50 rows rest only on curated or measured links (CTD; rows 42, 46). row 42row 46eb6afa51e87829093e7dccd930852606e4",
+       "40 of 50 rows rest on text mining or prediction only (TIN-X); the graph keeps these as context, never as proof (rows 1-14, 16-22, 24-28, 30-36, 38-41, 44, 48, 50). row 1row 2row 3row 4row 5row 6 +34e46814b0006caf8f5e1446",
+       "The pruning check kept 50 of the 50 links behind these rows and pruned 0."
+      ],
+      "rows": 50,
+      "row_evidence_chips": 50,
+      "checks": [
+       "ok: tested-question shape check: passed",
+       "ok: query validation: the query passed validation"
+      ],
+      "abstain": ""
+     },
+     "side_panel": {
+      "title": "Why this link",
+      "lead": "PTGS2 is associated with 46 XX gonadal dysgenesise46814b0006caf8f5",
+      "raw": "/api/pharos/explain/e46814b0006caf8f5",
+      "headings": [
+       "Where it comes from",
+       "Measured values",
+       "The same pair in other sources (0)",
+       "Timeline",
+       "Raw record"
+      ]
+     },
+     "headings": [
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "demo1_after_switch_to_comp_bio",
+     "persona": "computational_biologist",
+     "answer": {
+      "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+      "context": [],
+      "stages": [
+       "plan",
+       "results",
+       "evidence",
+       "final"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "50 rows answer this question, resting on 50 links from 5 sources.",
+      "confidence": "confidence: low",
+      "confidence_reason": "40 of 50 rows rest on text mining or prediction only.",
+      "points": [
+       "First rows (ordered by disease): 46 XX gonadal dysgenesis, 46,XY complete gonadal dysgenesis and 46,XY disorder of sex development due to testicular 17,20-desmolase deficiency (rows 1-3). row 1row 2row 3e46814b0006caf8f5",
+       "2 of 50 rows rest only on curated or measured links (CTD; rows 42, 46). row 42row 46eb6afa51e87829093e7dccd930852606e4",
+       "40 of 50 rows rest on text mining or prediction only (TIN-X); the graph keeps these as context, never as proof (rows 1-14, 16-22, 24-28, 30-36, 38-41, 44, 48, 50). row 1row 2row 3row 4row 5row 6 +34e46814b0006caf8f5e1446",
+       "The pruning check kept 50 of the 50 links behind these rows and pruned 0."
+      ],
+      "rows": 50,
+      "row_evidence_chips": 50,
+      "checks": [
+       "ok: tested-question shape check: passed",
+       "ok: query validation: the query passed validation"
+      ],
+      "abstain": ""
+     },
+     "headings": [
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "demo2_comp_bio",
+     "persona": "computational_biologist",
+     "answer": {
+      "user": "Which compounds bind the protein encoded by PTGS2, and how strongly?",
+      "context": [],
+      "stages": [
+       "plan",
+       "results",
+       "evidence",
+       "final"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "20 rows answer this question, resting on 21 links from 2 sources.",
+      "confidence": "confidence: high",
+      "confidence_reason": "20 of 20 rows rest on curated or measured links from 2 sources, and no cited link was pruned.",
+      "points": [
+       "First rows (highest activity first): 3-(4-fluorophenyl)-2-(4-methylsulfonylphenyl)-1H-indole, 3-(4-methoxyphenyl)-2-(4-methylsulfonylphenyl)-1H-indole and 4-(5-methyl-3-phenyl-1H-indol-2-yl)benzenesulfonamide (rows 1-3).",
+       "20 of 20 rows rest only on curated or measured links (Pharos target-gene mapping and Pharos ligand activity; rows 1-20). row 1row 2row 3row 4row 5row 6 +14e32a3b69147049203ef22062b10750c395",
+       "The pruning check kept 21 of the 21 links behind these rows and pruned 0."
+      ],
+      "rows": 20,
+      "row_evidence_chips": 40,
+      "checks": [
+       "ok: tested-question shape check: passed",
+       "ok: query validation: the query passed validation"
+      ],
+      "abstain": ""
+     },
+     "headings": [
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "J3_typed_ask_abstain": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 9,
+   "snapshots": [
+    {
+     "snap": "typed_ask_offline",
+     "persona": "physician_scientist",
+     "answer": {
+      "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+      "context": [],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "The graph returned no rows for this question.",
+      "confidence": "confidence: low",
+      "confidence_reason": "No rows came back, so there is nothing to rest an answer on.",
+      "points": [
+       "Here is why: no query returned.",
+       "Entities recognised in the question: PTGS2 and Prostaglandin G/H synthase 2."
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "no: query validation: no query returned",
+       "no: attempts: 3 attempts to write a valid query"
+      ],
+      "abstain": "The graph returned no rows for this question.confidence: low No rows came back, so there is nothing to rest an answer on. 0 rows0 links cited0 sources0 kept0 pr"
+     },
+     "headings": [
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "J4_trial_example_tulip": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 8,
+   "snapshots": [
+    {
+     "snap": "tulip_report",
+     "persona": "physician_scientist",
+     "report": {
+      "user": "Why did TULIP-1 miss its primary endpoint, and what changed later?",
+      "context": [
+       "Program",
+       "Trial",
+       "Drug",
+       "Target",
+       "Indication",
+       "Stated failure",
+       "Sponsor, year"
+      ],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "Failure Diagnosis (claim 1.1): Curated record: TULIP-1 missed SRI-4, a composite lupus response measure.",
+      "confidence": "confidence: moderate",
+      "confidence_reason": "11 of 11 claims cite strong sources; 3 rest on post-hoc or exploratory analyses (hypothesis-generating).",
+      "points": [
+       "The report keeps 11 verified claims in 3 of 4 sections; the verifier removed 0. 1.11.22.12.22.32.42.52.6 +3",
+       "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+       "Candidate Responder Population: 7 claims, 4 supported, 3 hypothesis-generating (2.2, 2.3, 2.6) (claims 2.1-2.7). 2.12.22.32.42.52.62.7",
+       "No verified claim for Related Indications: the subgraph lacks the needed evidence."
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "ok: verifier: kept 11 claims, removed 0",
+       "ok: rewrites: 0 claims rewritten once after a failed check"
+      ],
+      "abstain": "no verified claim: the subgraph lacks the needed evidence",
+      "sections": [
+       "failure_diagnostician",
+       "population_stratifier",
+       "indication_explorer",
+       "redesign_advisor"
+      ],
+      "claims": 11,
+      "claim_evidence_chips": 11,
+      "subgraphs": 4
+     },
+     "headings": [
+      "Failed drug programs",
+      "Failure Diagnosis",
+      "Candidate Responder Population",
+      "Related Indications",
+      "Evidence-Supported Redesign Options"
+     ]
+    },
+    {
+     "snap": "evidence_side_panel",
+     "persona": "physician_scientist",
+     "report": {
+      "user": "Why did TULIP-1 miss its primary endpoint, and what changed later?",
+      "context": [
+       "Program",
+       "Trial",
+       "Drug",
+       "Target",
+       "Indication",
+       "Stated failure",
+       "Sponsor, year"
+      ],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "Failure Diagnosis (claim 1.1): Curated record: TULIP-1 missed SRI-4, a composite lupus response measure.",
+      "confidence": "confidence: moderate",
+      "confidence_reason": "11 of 11 claims cite strong sources; 3 rest on post-hoc or exploratory analyses (hypothesis-generating).",
+      "points": [
+       "The report keeps 11 verified claims in 3 of 4 sections; the verifier removed 0. 1.11.22.12.22.32.42.52.6 +3",
+       "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+       "Candidate Responder Population: 7 claims, 4 supported, 3 hypothesis-generating (2.2, 2.3, 2.6) (claims 2.1-2.7). 2.12.22.32.42.52.62.7",
+       "No verified claim for Related Indications: the subgraph lacks the needed evidence."
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "ok: verifier: kept 11 claims, removed 0",
+       "ok: rewrites: 0 claims rewritten once after a failed check"
+      ],
+      "abstain": "no verified claim: the subgraph lacks the needed evidence",
+      "sections": [
+       "failure_diagnostician",
+       "population_stratifier",
+       "indication_explorer",
+       "redesign_advisor"
+      ],
+      "claims": 11,
+      "claim_evidence_chips": 11,
+      "subgraphs": 4
+     },
+     "side_panel": {
+      "title": "Evidence record",
+      "lead": "Anifrolumab — TULIP-1 -tmkg:has_post_failure_analysis-> Anifrolumab",
+      "raw": "/api/evidence/ea1720c666f66cedf",
+      "headings": [
+       "Raw record"
+      ]
+     },
+     "headings": [
+      "Failed drug programs",
+      "Failure Diagnosis",
+      "Candidate Responder Population",
+      "Related Indications",
+      "Evidence-Supported Redesign Options"
+     ]
+    },
+    {
+     "snap": "trial_graph_hover_edge",
+     "persona": "physician_scientist",
+     "hovercard": "TULIP-1 (NCT02446912) has outcome measure Number of Participants Who Achieved and Maintained an Oral Corticosteroid (OCS) Dose of ≤7 source ClinicalTrials.gov knowledge level registry verdict no pruning verdict in the trial layer reason loa",
+     "report": {
+      "user": "Why did TULIP-1 miss its primary endpoint, and what changed later?",
+      "context": [
+       "Program",
+       "Trial",
+       "Drug",
+       "Target",
+       "Indication",
+       "Stated failure",
+       "Sponsor, year"
+      ],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "Failure Diagnosis (claim 1.1): Curated record: TULIP-1 missed SRI-4, a composite lupus response measure.",
+      "confidence": "confidence: moderate",
+      "confidence_reason": "11 of 11 claims cite strong sources; 3 rest on post-hoc or exploratory analyses (hypothesis-generating).",
+      "points": [
+       "The report keeps 11 verified claims in 3 of 4 sections; the verifier removed 0. 1.11.22.12.22.32.42.52.6 +3",
+       "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+       "Candidate Responder Population: 7 claims, 4 supported, 3 hypothesis-generating (2.2, 2.3, 2.6) (claims 2.1-2.7). 2.12.22.32.42.52.62.7",
+       "No verified claim for Related Indications: the subgraph lacks the needed evidence."
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "ok: verifier: kept 11 claims, removed 0",
+       "ok: rewrites: 0 claims rewritten once after a failed check"
+      ],
+      "abstain": "no verified claim: the subgraph lacks the needed evidence",
+      "sections": [
+       "failure_diagnostician",
+       "population_stratifier",
+       "indication_explorer",
+       "redesign_advisor"
+      ],
+      "claims": 11,
+      "claim_evidence_chips": 11,
+      "subgraphs": 4
+     },
+     "headings": [
+      "Failed drug programs",
+      "Failure Diagnosis",
+      "Candidate Responder Population",
+      "Related Indications",
+      "Evidence-Supported Redesign Options"
+     ]
+    },
+    {
+     "snap": "tulip_after_switch_to_drug_developer",
+     "persona": "drug_developer",
+     "hovercard": "TULIP-1 (NCT02446912) has outcome measure Number of Participants Who Achieved and Maintained an Oral Corticosteroid (OCS) Dose of ≤7 source ClinicalTrials.gov knowledge level registry verdict no pruning verdict in the trial layer reason loa",
+     "report": {
+      "user": "Why did TULIP-1 miss its primary endpoint, and what changed later?",
+      "context": [
+       "Program",
+       "Trial",
+       "Drug",
+       "Target",
+       "Indication",
+       "Stated failure",
+       "Sponsor, year"
+      ],
+      "stages": [
+       "final",
+       "evidence",
+       "results",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "Failure Diagnosis (claim 1.1): Curated record: TULIP-1 missed SRI-4, a composite lupus response measure.",
+      "confidence": "confidence: moderate",
+      "confidence_reason": "11 of 11 claims cite strong sources; 3 rest on post-hoc or exploratory analyses (hypothesis-generating).",
+      "points": [
+       "The report keeps 11 verified claims in 3 of 4 sections; the verifier removed 0. 1.11.22.12.22.32.42.52.6 +3",
+       "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+       "Candidate Responder Population: 7 claims, 4 supported, 3 hypothesis-generating (2.2, 2.3, 2.6) (claims 2.1-2.7). 2.12.22.32.42.52.62.7",
+       "No verified claim for Related Indications: the subgraph lacks the needed evidence."
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "ok: verifier: kept 11 claims, removed 0",
+       "ok: rewrites: 0 claims rewritten once after a failed check"
+      ],
+      "abstain": "no verified claim: the subgraph lacks the needed evidence",
+      "sections": [
+       "failure_diagnostician",
+       "redesign_advisor",
+       "indication_explorer",
+       "population_stratifier"
+      ],
+      "claims": 11,
+      "claim_evidence_chips": 11,
+      "subgraphs": 4
+     },
+     "headings": [
+      "Failed drug programs",
+      "Failure Diagnosis",
+      "Evidence-Supported Redesign Options",
+      "Related Indications",
+      "Candidate Responder Population"
+     ]
+    }
+   ]
+  },
+  "J5_trial_typed_question": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 13,
+   "snapshots": [
+    {
+     "snap": "metreo_report",
+     "persona": "physician_scientist",
+     "report": {
+      "user": "Why did mepolizumab fail in METREO for COPD, and which patients might respond?",
+      "context": [],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "Failure Diagnosis (claim 1.1): METREO (NCT02105961): primary outcome 'Rate of Moderate or Severe Exacerbations'; Rate ratio (Mepolizumab 100/Placebo) 0.8, p = 0.068.",
+      "confidence": "confidence: high",
+      "confidence_reason": "6 of 7 claims cite strong sources (registry or curated records) and at most a quarter are hypothesis-generating.",
+      "points": [
+       "The report keeps 7 verified claims in 4 of 4 sections; the verifier removed 0. 1.11.22.13.13.24.14.2",
+       "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+       "Candidate Responder Population: 1 claim, 1 supported (claim 2.1). 2.1"
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "ok: verifier: kept 7 claims, removed 0",
+       "ok: rewrites: 0 claims rewritten once after a failed check"
+      ],
+      "abstain": "",
+      "sections": [
+       "failure_diagnostician",
+       "population_stratifier",
+       "indication_explorer",
+       "redesign_advisor"
+      ],
+      "claims": 7,
+      "claim_evidence_chips": 7,
+      "subgraphs": 4
+     },
+     "headings": [
+      "Failed drug programs",
+      "Failure Diagnosis",
+      "Candidate Responder Population",
+      "Related Indications",
+      "Evidence-Supported Redesign Options"
+     ]
+    },
+    {
+     "snap": "program_card_ask",
+     "persona": "physician_scientist",
+     "report": {
+      "user": "Why did Mepolizumab — METREO fail, and what did the evidence support afterwards?",
+      "context": [],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "Failure Diagnosis (claim 1.1): METREO (NCT02105961): primary outcome 'Rate of Moderate or Severe Exacerbations'; Rate ratio (Mepolizumab 100/Placebo) 0.8, p = 0.068.",
+      "confidence": "confidence: high",
+      "confidence_reason": "6 of 7 claims cite strong sources (registry or curated records) and at most a quarter are hypothesis-generating.",
+      "points": [
+       "The report keeps 7 verified claims in 4 of 4 sections; the verifier removed 0. 1.11.22.13.13.24.14.2",
+       "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+       "Candidate Responder Population: 1 claim, 1 supported (claim 2.1). 2.1"
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "ok: verifier: kept 7 claims, removed 0",
+       "ok: rewrites: 0 claims rewritten once after a failed check"
+      ],
+      "abstain": "",
+      "sections": [
+       "failure_diagnostician",
+       "population_stratifier",
+       "indication_explorer",
+       "redesign_advisor"
+      ],
+      "claims": 7,
+      "claim_evidence_chips": 7,
+      "subgraphs": 4
+     },
+     "headings": [
+      "Failed drug programs",
+      "Failure Diagnosis",
+      "Candidate Responder Population",
+      "Related Indications",
+      "Evidence-Supported Redesign Options"
+     ]
+    },
+    {
+     "snap": "program_search_panel",
+     "persona": "physician_scientist",
+     "report": {
+      "user": "Why did Mepolizumab — METREO fail, and what did the evidence support afterwards?",
+      "context": [],
+      "stages": [
+       "final",
+       "results",
+       "evidence",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "Failure Diagnosis (claim 1.1): METREO (NCT02105961): primary outcome 'Rate of Moderate or Severe Exacerbations'; Rate ratio (Mepolizumab 100/Placebo) 0.8, p = 0.068.",
+      "confidence": "confidence: high",
+      "confidence_reason": "6 of 7 claims cite strong sources (registry or curated records) and at most a quarter are hypothesis-generating.",
+      "points": [
+       "The report keeps 7 verified claims in 4 of 4 sections; the verifier removed 0. 1.11.22.13.13.24.14.2",
+       "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+       "Candidate Responder Population: 1 claim, 1 supported (claim 2.1). 2.1"
+      ],
+      "rows": 0,
+      "row_evidence_chips": 0,
+      "checks": [
+       "ok: verifier: kept 7 claims, removed 0",
+       "ok: rewrites: 0 claims rewritten once after a failed check"
+      ],
+      "abstain": "",
+      "sections": [
+       "failure_diagnostician",
+       "population_stratifier",
+       "indication_explorer",
+       "redesign_advisor"
+      ],
+      "claims": 7,
+      "claim_evidence_chips": 7,
+      "subgraphs": 4
+     },
+     "side_panel": {
+      "title": "Failed program",
+      "lead": "",
+      "raw": null,
+      "headings": [
+       "Dalcetrapib — dal-GenEP25"
+      ]
+     },
+     "headings": [
+      "Failed drug programs",
+      "Failure Diagnosis",
+      "Candidate Responder Population",
+      "Related Indications",
+      "Evidence-Supported Redesign Options"
+     ]
+    }
+   ]
+  },
+  "J6_persona_switch_card_order": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 18,
+   "snapshots": [
+    {
+     "snap": "first_role",
+     "persona": "physician_scientist",
+     "card": "EGFR",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "bench_scientist",
+     "persona": "bench_scientist",
+     "card": "EGFR",
+     "order": "about,mechanism,known,predicted,trials",
+     "kinds_first": [
+      "annotation",
+      "binding or activity"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "clinician",
+     "persona": "clinician",
+     "card": "EGFR",
+     "order": "about,trials,known,predicted,mechanism",
+     "kinds_first": [
+      "clinical",
+      "curated"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    },
+    {
+     "snap": "drug_developer",
+     "persona": "drug_developer",
+     "card": "EGFR",
+     "order": "about,trials,predicted,mechanism,known",
+     "kinds_first": [
+      "binding or activity",
+      "clinical"
+     ],
+     "rows": 214,
+     "strength_chips": 188,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "EGFR → is associated with (statistical or not-provided level) → gastric cancer → is a kind of → digestive system cancer",
+     "weakest": "· weakest hop: confidence 0.52 (DisGeNET, unspecified)",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "J7_shared_link_hash": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 18,
+   "snapshots": [
+    {
+     "snap": "shared_hash",
+     "persona": "physician_scientist",
+     "card": "type",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 239,
+     "strength_chips": 207,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "PF-04691502 → binds → PIK3R2 · PF-04691502 → binds → MTOR → is genetically associated with → type 2 diabetes mellitus",
+     "weakest": "· weakest hop: confidence 0.58 (TIGA (GWAS Catalog), statistical association)",
+     "headings": [
+      "type 2 diabetes mellitus diseaseMONDO:0005148\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "J7b_shared_link_query": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 21,
+   "snapshots": [
+    {
+     "snap": "shared_query",
+     "persona": "physician_scientist",
+     "card": "PTGS2",
+     "order": "about,known,predicted,mechanism,trials",
+     "kinds_first": [
+      "human genetics",
+      "curated"
+     ],
+     "rows": 217,
+     "strength_chips": 184,
+     "lines": "kept:40 pruned:0 predicted:10 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 10,
+     "paths": 3,
+     "hops": 9,
+     "hops_kept": 9,
+     "paths_greyed": 0,
+     "slider_info": "Showing 50 of 50 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "PTGS2 → is associated with → thrombotic disease ← is associated with ← EPO → is associated with → vascular disease",
+     "weakest": "· weakest hop: confidence 0.63 (CTD, curated statement)",
+     "headings": [
+      "PTGS2 geneNCBIGene:5743\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "J8_examples_query_and_card": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 12,
+   "snapshots": [
+    {
+     "snap": "drug_developer_tab",
+     "persona": null,
+     "example_tabs": 5,
+     "example_cards": 4,
+     "headings": [
+      "Worked examples, by role"
+     ]
+    },
+    {
+     "snap": "portfolio_query",
+     "persona": "drug_developer",
+     "report": {
+      "user": "Which failed programs share a drug target?",
+      "context": [
+       "Scope"
+      ],
+      "stages": [
+       "final",
+       "evidence",
+       "results",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "13 rows answer this question, resting on 25 links from 2 sources.",
+      "confidence": "confidence: high",
+      "confidence_reason": "13 of 13 rows rest on curated or measured links from 2 sources, and no cited link was pruned.",
+      "points": [
+       "First rows (ordered by target): Peroxisome proliferator-activated receptor alpha and Amyloid-beta precursor protein (rows 1-3). row 1row 2row 3ea224e0754640f423e09796c043fc6d845",
+       "13 of 13 rows rest only on curated or measured links (curated:failed_clinical_trials_2016_2026.md and ChEMBL; rows 1-13). row 1row 2row 3row 4row 5row 6 +7ea224e0754640f423e09796c043fc6d845",
+       "None of the 25 links behind these rows carries a pruning verdict in this graph."
+      ],
+      "rows": 13,
+      "row_evidence_chips": 52,
+      "checks": [
+       "ok: query validation: the query passed validation",
+       "ok: attempts: 1 attempt to write a valid query"
+      ],
+      "abstain": "",
+      "sections": [],
+      "claims": 0,
+      "claim_evidence_chips": 0,
+      "subgraphs": 0
+     },
+     "headings": [
+      "Failed drug programs"
+     ]
+    },
+    {
+     "snap": "medchem_card_echo",
+     "persona": "drug_developer",
+     "card": "Cholesteryl",
+     "order": "about,trials,predicted,mechanism,known",
+     "kinds_first": [
+      "binding or activity",
+      "annotation"
+     ],
+     "rows": 92,
+     "strength_chips": 79,
+     "lines": "kept:40 pruned:0 predicted:0 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 0,
+     "paths": 0,
+     "hops": 0,
+     "hops_kept": 0,
+     "paths_greyed": 0,
+     "slider_info": "Showing 40 of 40 links. Predicted links have no pruning confidence and always show.",
+     "first_chain": "",
+     "weakest": "",
+     "report": {
+      "user": "Which failed programs share a drug target?",
+      "context": [
+       "Scope"
+      ],
+      "stages": [
+       "final",
+       "evidence",
+       "results",
+       "plan"
+      ],
+      "pinned_bottom_line": true,
+      "headline": "13 rows answer this question, resting on 25 links from 2 sources.",
+      "confidence": "confidence: high",
+      "confidence_reason": "13 of 13 rows rest on curated or measured links from 2 sources, and no cited link was pruned.",
+      "points": [
+       "First rows (ordered by target): Peroxisome proliferator-activated receptor alpha and Amyloid-beta precursor protein (rows 1-3). row 1row 2row 3ea224e0754640f423e09796c043fc6d845",
+       "13 of 13 rows rest only on curated or measured links (curated:failed_clinical_trials_2016_2026.md and ChEMBL; rows 1-13). row 1row 2row 3row 4row 5row 6 +7ea224e0754640f423e09796c043fc6d845",
+       "None of the 25 links behind these rows carries a pruning verdict in this graph."
+      ],
+      "rows": 13,
+      "row_evidence_chips": 52,
+      "checks": [
+       "ok: query validation: the query passed validation",
+       "ok: attempts: 1 attempt to write a valid query"
+      ],
+      "abstain": "",
+      "sections": [],
+      "claims": 0,
+      "claim_evidence_chips": 0,
+      "subgraphs": 0
+     },
+     "echo": {
+      "question": "What else binds cholesteryl ester transfer protein, dalcetrapib's target, and how potent is it?",
+      "context_fields": [
+       "Program",
+       "Trial",
+       "Drug",
+       "Target",
+       "Indication",
+       "Stated failure",
+       "Sponsor, year"
+      ]
+     },
+     "headings": [
+      "Cholesteryl ester transfer protein proteinUniProtKB:P11597\n ",
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "J9_info_tabs": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 15,
+   "snapshots": [
+    {
+     "snap": "numbers",
+     "persona": "physician_scientist",
+     "headings": [
+      "The numbers behind the four criteria",
+      "Link prediction: Pharos alone vs the enriched graph (frozen ",
+      "Further link-prediction results EXPLORATORY unless marked",
+      "Pruning",
+      "Standards: the schema with IRIs",
+      "Downloads"
+     ]
+    },
+    {
+     "snap": "build",
+     "persona": "physician_scientist",
+     "headings": [
+      "Pharos graph",
+      "Trial graph construction",
+      "Quality",
+      "Mapping coverage by entity type",
+      "Validation failures (0)",
+      "Cross-source checks (13)",
+      "Open review queue (9)",
+      "Sources and versions"
+     ]
+    },
+    {
+     "snap": "generalize",
+     "persona": "physician_scientist",
+     "headings": [
+      "The same machinery on other science",
+      "1. A second graph: failed clinical-trial programs",
+      "2. Bring your own source: a table becomes a graph in five st",
+      "3. A sponsor's question: planning a pivotal trial"
+     ]
+    },
+    {
+     "snap": "judges",
+     "persona": "physician_scientist",
+     "headings": [
+      "The agent loop in the brief, step by step",
+      "1. Ingest",
+      "2. Filter",
+      "3. Clean",
+      "4. Limit",
+      "5. Maintain",
+      "What is autonomous and what is not",
+      "Downloads"
+     ]
+    },
+    {
+     "snap": "explore_hover",
+     "persona": "physician_scientist",
+     "hovercard": "ANIFROLUMABtype drug · CHEMBL:CHEMBL2364653 1 link drawn heredouble-click or pin to add its neighbours click to pin; Esc closes",
+     "headings": [
+      "Graph: 4 nodes, 3 links"
+     ]
+    }
+   ]
+  },
+  "R1_v1_unchanged": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 9,
+   "snapshots": [
+    {
+     "snap": "v1_card",
+     "persona": null,
+     "card": "EGFR",
+     "order": null,
+     "kinds_first": [],
+     "rows": 214,
+     "strength_chips": 0,
+     "lines": "kept:0 pruned:0 predicted:0 unscored:0",
+     "hidden": 0,
+     "dimmed": 0,
+     "predictions": 0,
+     "paths": 0,
+     "hops": 0,
+     "hops_kept": 0,
+     "paths_greyed": 0,
+     "slider_info": "",
+     "first_chain": "",
+     "weakest": "",
+     "headings": [
+      "EGFR geneNCBIGene:1956\n      LinkJSON",
+      "Ask the Pharos graph a question"
+     ]
+    }
+   ]
+  },
+  "R2_v2_unchanged": {
+   "script_errors": 0,
+   "errors": [],
+   "api_calls": 5,
+   "snapshots": [
+    {
+     "snap": "v2_card",
+     "persona": null,
+     "headings": [
+      "What is known by kind of evidence",
+      "Predicted links",
+      "Failed trials that mention it",
+      "Related drugs context, not evidence"
+     ]
+    }
+   ]
+  }
+ }
+}

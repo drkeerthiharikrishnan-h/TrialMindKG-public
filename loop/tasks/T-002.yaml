@@ -1,0 +1,31 @@
+id: T-002
+title: Independence controls for the meta-path gain (exploratory, labelled as such)
+owner: science
+classification: science
+status: open
+closes: []
+objective: 'Test whether the meta-path gain of G2/G3 over G0 survives: (a) coverage-matched AUROC on pairs with a meta-path
+  in both graphs; (b) the shuffled-layer control (--shuffle-layers ... on G2); (c) dropping Open Targets edges whose datasource
+  is also a test-pair source; (d) a time split using data/reference/ot_releases_manifest.tsv. Primary protocol untouched.'
+read_first:
+- docs/archive/PLAN_2026-11-04.md section 3
+- outputs/linkpred/G*_B_kfold@frozen_*.json
+editable_paths:
+- pipelines/linkpred/controls.py
+- tests/test_linkpred_controls.py
+- outputs/linkpred/controls/
+- docs/sessions/
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- Each control reports a paired difference and 95% interval on the same folds
+- Wording of the headline claim is computed from the intervals (CLAUDE.md rule 7)
+- If a control removes the gain the report says so
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_linkpred_controls.py
+stop_rule: Shuffled-layer control only if G2 - G0 meta-path interval is above 0 (it is). Hard stop for linkpred work Nov
+  6 18:00; time split may continue to Nov 9 as exploratory.
+handoff: Ledger rows E003-E006, controls report, a plain-language paragraph for the write-up.

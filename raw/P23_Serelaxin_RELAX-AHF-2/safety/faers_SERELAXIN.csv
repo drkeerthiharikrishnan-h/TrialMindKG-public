@@ -1,0 +1,20 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+SERELAXIN,patient.drug.medicinalproduct,11,ANGIOEDEMA,5
+SERELAXIN,patient.drug.medicinalproduct,11,GASTROOESOPHAGEAL REFLUX DISEASE,5
+SERELAXIN,patient.drug.medicinalproduct,11,BLOOD CREATININE INCREASED,2
+SERELAXIN,patient.drug.medicinalproduct,11,HYPOTENSION,2
+SERELAXIN,patient.drug.medicinalproduct,11,ANAEMIA,1
+SERELAXIN,patient.drug.medicinalproduct,11,AORTIC VALVE INCOMPETENCE,1
+SERELAXIN,patient.drug.medicinalproduct,11,ATRIOVENTRICULAR BLOCK COMPLETE,1
+SERELAXIN,patient.drug.medicinalproduct,11,BLOOD PRESSURE FLUCTUATION,1
+SERELAXIN,patient.drug.medicinalproduct,11,CHRONIC KIDNEY DISEASE,1
+SERELAXIN,patient.drug.medicinalproduct,11,CIRCULATORY COLLAPSE,1
+SERELAXIN,patient.drug.medicinalproduct,11,DEHYDRATION,1
+SERELAXIN,patient.drug.medicinalproduct,11,INAPPROPRIATE SCHEDULE OF DRUG ADMINISTRATION,1
+SERELAXIN,patient.drug.medicinalproduct,11,LOSS OF CONSCIOUSNESS,1
+SERELAXIN,patient.drug.medicinalproduct,11,MITRAL VALVE INCOMPETENCE,1
+SERELAXIN,patient.drug.medicinalproduct,11,NEPHROPATHY TOXIC,1
+SERELAXIN,patient.drug.medicinalproduct,11,RENAL IMPAIRMENT,1
+SERELAXIN,patient.drug.medicinalproduct,11,SYNCOPE,1
+SERELAXIN,patient.drug.medicinalproduct,11,THERAPEUTIC RESPONSE DECREASED,1
+SERELAXIN,patient.drug.medicinalproduct,11,TRICUSPID VALVE INCOMPETENCE,1

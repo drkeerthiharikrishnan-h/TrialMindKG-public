@@ -1,0 +1,3964 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D020734",
+     "term": "Parkinsonian Disorders"
+    },
+    {
+     "id": "D001480",
+     "term": "Basal Ganglia Diseases"
+    },
+    {
+     "id": "D001927",
+     "term": "Brain Diseases"
+    },
+    {
+     "id": "D002493",
+     "term": "Central Nervous System Diseases"
+    },
+    {
+     "id": "D009422",
+     "term": "Nervous System Diseases"
+    },
+    {
+     "id": "D009069",
+     "term": "Movement Disorders"
+    },
+    {
+     "id": "D000080874",
+     "term": "Synucleinopathies"
+    },
+    {
+     "id": "D019636",
+     "term": "Neurodegenerative Diseases"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D010300",
+     "term": "Parkinson Disease"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "submissionTracking": {
+    "firstMcpInfo": {
+     "postDateStruct": {
+      "date": "2020-12-22",
+      "type": "ACTUAL"
+     }
+    }
+   },
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "documentSection": {
+  "largeDocumentModule": {
+   "largeDocs": [
+    {
+     "date": "2020-03-20",
+     "filename": "Prot_001.pdf",
+     "hasIcf": false,
+     "hasProtocol": true,
+     "hasSap": false,
+     "label": "Study Protocol",
+     "size": 1744996,
+     "typeAbbrev": "Prot",
+     "uploadDate": "2020-11-26T09:42"
+    },
+    {
+     "date": "2019-11-26",
+     "filename": "SAP_000.pdf",
+     "hasIcf": false,
+     "hasProtocol": false,
+     "hasSap": true,
+     "label": "Statistical Analysis Plan",
+     "size": 982595,
+     "typeAbbrev": "SAP",
+     "uploadDate": "2020-11-26T09:42"
+    }
+   ]
+  }
+ },
+ "hasResults": true,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "description": "Participants will receive RO7046015 at high dose level as intravenous (IV) infusion every 4 weeks (Q4W) up to 52 weeks in Part 1.",
+     "interventionNames": [
+      "Drug: RO7046015"
+     ],
+     "label": "Part 1: RO7046015 High Dose",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "Participants will receive RO7046015 at low dose level as IV infusion Q4W up to 52 weeks in Part 1.",
+     "interventionNames": [
+      "Drug: RO7046015"
+     ],
+     "label": "Part 1: RO7046015 Low Dose",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "Participants will receive placebo as IV infusion Q4W up to 52 weeks in Part 1.",
+     "interventionNames": [
+      "Drug: Placebo"
+     ],
+     "label": "Part 1: Placebo",
+     "type": "PLACEBO_COMPARATOR"
+    },
+    {
+     "description": "Part 1 RO7046015 high dose group participants and placebo group participants randomized to high dose level will receive RO7046015 at high dose level as IV infusion Q4W for additional 52 weeks in Part 2.",
+     "interventionNames": [
+      "Drug: RO7046015"
+     ],
+     "label": "Part 2: RO7046015 High Dose",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "Part 1 RO7046015 low dose group participants and placebo group participants randomized to low dose level will receive RO7046015 at low dose level as IV infusion Q4W for additional 52 weeks in Part 2.",
+     "interventionNames": [
+      "Drug: RO7046015"
+     ],
+     "label": "Part 2: RO7046015 Low Dose",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "All participants who complete Part 1 and Part 2 will receive monthly IV infusions of RO7046015.",
+     "interventionNames": [
+      "Drug: RO7046015"
+     ],
+     "label": "Part 3: RO7046015 Low Dose",
+     "type": "EXPERIMENTAL"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Part 1: RO7046015 High Dose",
+      "Part 2: RO7046015 High Dose"
+     ],
+     "description": "RO7046015 will be administered at dose of 4500 milligrams (mg) for participants with body-weight greater than or equal to (\\>/=) 65 kilograms (kg) or 3500 mg for participants with body-weight less than (\\<) 65 kg.",
+     "name": "RO7046015",
+     "otherNames": [
+      "PRX002; prasinezumab"
+     ],
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Part 1: RO7046015 Low Dose",
+      "Part 2: RO7046015 Low Dose",
+      "Part 3: RO7046015 Low Dose"
+     ],
+     "description": "RO7046015 will be administered at dose of 1512 mg to all participants in the indicated arm.",
+     "name": "RO7046015",
+     "otherNames": [
+      "PRX002; prasinezumab"
+     ],
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Part 1: Placebo"
+     ],
+     "description": "RO7046015 placebo will be administered to all participants in the indicated arm.",
+     "name": "Placebo",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Parkinson's Disease"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Birmingham",
+     "country": "United States",
+     "facility": "Uab Medicine",
+     "geoPoint": {
+      "lat": 33.52066,
+      "lon": -86.80249
+     },
+     "state": "Alabama",
+     "zip": "35233"
+    },
+    {
+     "city": "Phoenix",
+     "country": "United States",
+     "facility": "Barrow Neurology Clinics",
+     "geoPoint": {
+      "lat": 33.44838,
+      "lon": -112.07404
+     },
+     "state": "Arizona",
+     "zip": "85013"
+    },
+    {
+     "city": "Fullerton",
+     "country": "United States",
+     "facility": "Neurology Center of North Orange County",
+     "geoPoint": {
+      "lat": 33.87029,
+      "lon": -117.92534
+     },
+     "state": "California",
+     "zip": "92835"
+    },
+    {
+     "city": "Los Angeles",
+     "country": "United States",
+     "facility": "USC Keck Medical Center of USC",
+     "geoPoint": {
+      "lat": 34.05223,
+      "lon": -118.24368
+     },
+     "state": "California",
+     "zip": "90033"
+    },
+    {
+     "city": "San Francisco",
+     "country": "United States",
+     "facility": "University of California at San Francisco",
+     "geoPoint": {
+      "lat": 37.77493,
+      "lon": -122.41942
+     },
+     "state": "California",
+     "zip": "94115"
+    },
+    {
+     "city": "Englewood",
+     "country": "United States",
+     "facility": "CenExel Rocky Mountain Clinical Research, LLC",
+     "geoPoint": {
+      "lat": 39.64777,
+      "lon": -104.98776
+     },
+     "state": "Colorado",
+     "zip": "80113"
+    },
+    {
+     "city": "Fairfield",
+     "country": "United States",
+     "facility": "Associated Neurologists of Southern CT PC",
+     "geoPoint": {
+      "lat": 41.14121,
+      "lon": -73.26373
+     },
+     "state": "Connecticut",
+     "zip": "06824"
+    },
+    {
+     "city": "New Haven",
+     "country": "United States",
+     "facility": "Molecular Neurolmaging",
+     "geoPoint": {
+      "lat": 41.30815,
+      "lon": -72.92816
+     },
+     "state": "Connecticut",
+     "zip": "06510"
+    },
+    {
+     "city": "Aventura",
+     "country": "United States",
+     "facility": "Aventura Neurologic Associates",
+     "geoPoint": {
+      "lat": 25.95648,
+      "lon": -80.13921
+     },
+     "state": "Florida",
+     "zip": "33180"
+    },
+    {
+     "city": "Boca Raton",
+     "country": "United States",
+     "facility": "Parkinson's Disease and Movement Disorders Center of Boca Raton",
+     "geoPoint": {
+      "lat": 26.35869,
+      "lon": -80.0831
+     },
+     "state": "Florida",
+     "zip": "33486"
+    },
+    {
+     "city": "Tampa",
+     "country": "United States",
+     "facility": "USF Parkinsons Disease and Movement Disorders Center",
+     "geoPoint": {
+      "lat": 27.94752,
+      "lon": -82.45843
+     },
+     "state": "Florida",
+     "zip": "33613"
+    },
+    {
+     "city": "Evanston",
+     "country": "United States",
+     "facility": "Northwestern University",
+     "geoPoint": {
+      "lat": 42.04114,
+      "lon": -87.69006
+     },
+     "state": "Illinois",
+     "zip": "60208"
+    },
+    {
+     "city": "Kansas City",
+     "country": "United States",
+     "facility": "University of Kansas Medical Center",
+     "geoPoint": {
+      "lat": 39.11417,
+      "lon": -94.62746
+     },
+     "state": "Kansas",
+     "zip": "66160"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Beth Israel Deaconess Medical Center",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02215"
+    },
+    {
+     "city": "Farmington Hills",
+     "country": "United States",
+     "facility": "Quest Research Institute",
+     "geoPoint": {
+      "lat": 42.48531,
+      "lon": -83.37716
+     },
+     "state": "Michigan",
+     "zip": "48334"
+    },
+    {
+     "city": "Grand Rapids",
+     "country": "United States",
+     "facility": "Corewell Health Neurology and Epilepsy - Beltline",
+     "geoPoint": {
+      "lat": 42.96336,
+      "lon": -85.66809
+     },
+     "state": "Michigan",
+     "zip": "49525"
+    },
+    {
+     "city": "West Bloomfield",
+     "country": "United States",
+     "facility": "Henry Ford Health System",
+     "geoPoint": {
+      "lat": 42.56891,
+      "lon": -83.38356
+     },
+     "state": "Michigan",
+     "zip": "48322"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Columbia University",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10032"
+    },
+    {
+     "city": "Rochester",
+     "country": "United States",
+     "facility": "University of Rochester Medical Center",
+     "geoPoint": {
+      "lat": 43.15478,
+      "lon": -77.61556
+     },
+     "state": "New York",
+     "zip": "14618"
+    },
+    {
+     "city": "Tulsa",
+     "country": "United States",
+     "facility": "The Movement Disorder Clinic of Oklahoma",
+     "geoPoint": {
+      "lat": 36.15398,
+      "lon": -95.99277
+     },
+     "state": "Oklahoma",
+     "zip": "74136"
+    },
+    {
+     "city": "Portland",
+     "country": "United States",
+     "facility": "Oregon Health & Science Uni",
+     "geoPoint": {
+      "lat": 45.52345,
+      "lon": -122.67621
+     },
+     "state": "Oregon",
+     "zip": "97239"
+    },
+    {
+     "city": "Philadelphia",
+     "country": "United States",
+     "facility": "UNIVERSITY of PENNSYLVANIA",
+     "geoPoint": {
+      "lat": 39.95238,
+      "lon": -75.16362
+     },
+     "state": "Pennsylvania",
+     "zip": "19107"
+    },
+    {
+     "city": "Nashville",
+     "country": "United States",
+     "facility": "Vanderbilt University Medical Center",
+     "geoPoint": {
+      "lat": 36.16589,
+      "lon": -86.78444
+     },
+     "state": "Tennessee",
+     "zip": "37232"
+    },
+    {
+     "city": "Houston",
+     "country": "United States",
+     "facility": "Baylor College",
+     "geoPoint": {
+      "lat": 29.76328,
+      "lon": -95.36327
+     },
+     "state": "Texas",
+     "zip": "77030"
+    },
+    {
+     "city": "Round Rock",
+     "country": "United States",
+     "facility": "Central Texas Neurology Consultants",
+     "geoPoint": {
+      "lat": 30.50826,
+      "lon": -97.6789
+     },
+     "state": "Texas",
+     "zip": "78681"
+    },
+    {
+     "city": "Burlington",
+     "country": "United States",
+     "facility": "University of Vermont Medical Center",
+     "geoPoint": {
+      "lat": 44.47588,
+      "lon": -73.21207
+     },
+     "state": "Vermont",
+     "zip": "05401"
+    },
+    {
+     "city": "Innsbruck",
+     "country": "Austria",
+     "facility": "Medizinische Universität Innsbruck",
+     "geoPoint": {
+      "lat": 47.26266,
+      "lon": 11.39454
+     },
+     "zip": "6020"
+    },
+    {
+     "city": "Bordeaux",
+     "country": "France",
+     "facility": "Groupe Hospitalier Pellegrin",
+     "geoPoint": {
+      "lat": 44.84124,
+      "lon": -0.58046
+     },
+     "zip": "33000"
+    },
+    {
+     "city": "Clermont-Ferrand",
+     "country": "France",
+     "facility": "Hopital Gabriel Montpied",
+     "geoPoint": {
+      "lat": 45.77969,
+      "lon": 3.08682
+     },
+     "zip": "63003"
+    },
+    {
+     "city": "Créteil",
+     "country": "France",
+     "facility": "Hopital Henri Mondor",
+     "geoPoint": {
+      "lat": 48.79266,
+      "lon": 2.46569
+     },
+     "zip": "94010"
+    },
+    {
+     "city": "Grenoble",
+     "country": "France",
+     "facility": "Hôpital Michallon - Centre d'Investigation Clinique",
+     "geoPoint": {
+      "lat": 45.17869,
+      "lon": 5.71479
+     },
+     "zip": "38043"
+    },
+    {
+     "city": "Marseille",
+     "country": "France",
+     "facility": "hopital de la Timone",
+     "geoPoint": {
+      "lat": 43.29695,
+      "lon": 5.38107
+     },
+     "zip": "13385"
+    },
+    {
+     "city": "Nice",
+     "country": "France",
+     "facility": "CHU de Nice Hopital Pasteur",
+     "geoPoint": {
+      "lat": 43.70313,
+      "lon": 7.26608
+     },
+     "zip": "06002"
+    },
+    {
+     "city": "Paris",
+     "country": "France",
+     "facility": "Hopital Pitie-Salpetriere APHP",
+     "geoPoint": {
+      "lat": 48.85341,
+      "lon": 2.3488
+     },
+     "zip": "75013"
+    },
+    {
+     "city": "Poitiers",
+     "country": "France",
+     "facility": "CHU Poitiers",
+     "geoPoint": {
+      "lat": 46.58261,
+      "lon": 0.34348
+     },
+     "zip": "86021"
+    },
+    {
+     "city": "Rouen",
+     "country": "France",
+     "facility": "CHU Rouen Charles Nicolle",
+     "geoPoint": {
+      "lat": 49.44313,
+      "lon": 1.09932
+     },
+     "zip": "76031"
+    },
+    {
+     "city": "Saint-Herblain",
+     "country": "France",
+     "facility": "CHU de Nantes - Hopital Laennec",
+     "geoPoint": {
+      "lat": 47.21154,
+      "lon": -1.651
+     },
+     "zip": "44800"
+    },
+    {
+     "city": "Toulouse",
+     "country": "France",
+     "facility": "CIC - Hôpital Purpan",
+     "geoPoint": {
+      "lat": 43.60426,
+      "lon": 1.44367
+     },
+     "zip": "31059"
+    },
+    {
+     "city": "Berlin",
+     "country": "Germany",
+     "facility": "Klinik fur Neurologie",
+     "geoPoint": {
+      "lat": 52.52437,
+      "lon": 13.41053
+     },
+     "zip": "10117"
+    },
+    {
+     "city": "Düsseldorf",
+     "country": "Germany",
+     "facility": "Heinrich-Heine Universitätsklinik Düsseldorf",
+     "geoPoint": {
+      "lat": 51.22319,
+      "lon": 6.77927
+     },
+     "zip": "40225"
+    },
+    {
+     "city": "Kassel",
+     "country": "Germany",
+     "facility": "Paracelsus Elena Klinik Kassel",
+     "geoPoint": {
+      "lat": 51.31667,
+      "lon": 9.5
+     },
+     "zip": "34128"
+    },
+    {
+     "city": "Leipzig",
+     "country": "Germany",
+     "facility": "Klinik und Poliklinik für Neurologie Universitätsklinikum",
+     "geoPoint": {
+      "lat": 51.33962,
+      "lon": 12.37129
+     },
+     "zip": "04103"
+    },
+    {
+     "city": "Marburg",
+     "country": "Germany",
+     "facility": "Philipps Universität Marburg",
+     "geoPoint": {
+      "lat": 50.80904,
+      "lon": 8.77069
+     },
+     "zip": "35043"
+    },
+    {
+     "city": "München",
+     "country": "Germany",
+     "facility": "DZNE Clinical Trial Unit",
+     "geoPoint": {
+      "lat": 51.60698,
+      "lon": 13.31243
+     },
+     "zip": "81377"
+    },
+    {
+     "city": "Tübingen",
+     "country": "Germany",
+     "facility": "Universitaettsklinikum Tübingen",
+     "geoPoint": {
+      "lat": 48.52266,
+      "lon": 9.05222
+     },
+     "zip": "72076"
+    },
+    {
+     "city": "Ulm",
+     "country": "Germany",
+     "facility": "Universitätsklinikum Ulm",
+     "geoPoint": {
+      "lat": 48.39841,
+      "lon": 9.99155
+     },
+     "zip": "89081"
+    },
+    {
+     "city": "Sant Cugat del Vallès",
+     "country": "Spain",
+     "facility": "Hospital General de Catalunya",
+     "geoPoint": {
+      "lat": 41.47063,
+      "lon": 2.08611
+     },
+     "state": "Barcelona",
+     "zip": "08195"
+    },
+    {
+     "city": "Donostia / San Sebastian",
+     "country": "Spain",
+     "facility": "Policlínica Guipuzcoa",
+     "geoPoint": {
+      "lat": 43.31283,
+      "lon": -1.97499
+     },
+     "state": "Guipuzcoa",
+     "zip": "20014"
+    },
+    {
+     "city": "Alcorcón",
+     "country": "Spain",
+     "facility": "Fundacion Hospital de Alcorcon",
+     "geoPoint": {
+      "lat": 40.34582,
+      "lon": -3.82487
+     },
+     "state": "Madrid",
+     "zip": "28922"
+    },
+    {
+     "city": "Pamplona/iruña",
+     "country": "Spain",
+     "facility": "Clinica Universidad de Navarra",
+     "state": "Navarre",
+     "zip": "31008"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital de la Santa Creu i Sant Pau",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08025"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital Universitari Vall d'Hebron",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08035"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital Clinic de Barcelona",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08036"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Universitario de la Princesa",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28006"
+    },
+    {
+     "city": "Seville",
+     "country": "Spain",
+     "facility": "Hospital Universitario Virgen Macarena",
+     "geoPoint": {
+      "lat": 37.38283,
+      "lon": -5.97317
+     },
+     "zip": "41009"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "This multicenter, randomized, double-blind, placebo-controlled, Phase 2 study will evaluate the efficacy of intravenous prasinezumab (RO7046015/PRX002) versus placebo over 52 weeks in participants with early Parkinson's Disease (PD) who are untreated or treated with monoamine oxidase B (MAO-B) inhibitors since baseline. The study will consist of three parts: a 52-week, double-blind, placebo-controlled treatment period (Part 1) after which eligible participants will continue into an all-participants-on-treatment blinded dose extension for an additional 52 weeks (Part 2). Participants who complete Part 2 (including the 12-week treatment-free follow up visit assessing long term safety and efficacy of RO7046015) will be offered participation in Part 3 open-label extension (all-participants-on-RO7046015-treatment) for an additional 520 weeks."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "QUADRUPLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "CARE_PROVIDER",
+      "INVESTIGATOR",
+      "OUTCOMES_ASSESSOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 316,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE2"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Idiopathic PD with bradykinesia plus one of the other cardinal signs of PD (resting tremor, rigidity) being present, without any other known or suspected cause of PD untreated or treated with MAO-B inhibitor\n* Body weight range between: \\>/=45 kg/ 99 pounds (lbs) and less than or equal to (\\</=) 110 kg/242 lbs\n* Body mass index (BMI) of 18 to 34 kilograms per meter-squared (kg/m\\^2)\n* A diagnosis of PD for 2 years or less at screening\n* Hoehn and Yahr Stage I or II\n* A screening brain DaT-SPECT consistent with PD (central reading)\n* Clinical status does not require dopaminergic PD medication and is not expected to require dopaminergic treatment within 52 weeks from baseline\n* If presently being treated for PD, a stable dose of MAO-B inhibitor (rasagiline or selegiline) for at least 90 days prior to baseline and not expected to change within 52 weeks\n* For women of childbearing potential: use of highly effective contraceptive methods (that result in a failure rate of \\<1 percent \\[%\\] per year) during the treatment period and for at least 30 days (or longer if required by local regulations) after the last dose of study drug\n* For men with female partners of childbearing potential or pregnant female partners, must use a condom during the treatment period and for at least 30 days (or longer if required by local regulations) after the last dose of study drug to avoid exposing the embryo. Men must refrain from donating sperm during this same period. The female partners should use a contraception method with a failure rate of \\<1% per year during the treatment period and for at least 30 days (or longer if required by local regulations) after the last dose of study drug. Use of contraceptive measures is not required for male participants enrolled in Part 3.\n\nExclusion Criteria:\n\n* Medical history indicating a Parkinson syndrome other than idiopathic PD, including but not limited to, progressive supranuclear gaze palsy, multiple system atrophy, drug-induced parkinsonism, essential tremor, primary dystonia\n* Known carriers of certain familial PD genes (as specified in study protocol)\n* History of PD related freezing episodes or falls\n* A diagnosis of a significant CNS disease other than Parkinson's disease; history of repeated head injury; history of epilepsy or seizure disorder other than febrile seizures as a child\n* Mini Mental State Examination (MMSE) \\</=25\n* Reside in a nursing home or assisted care facility\n* History of or screening brain magnetic resonance imaging (MRI) scan indicative of clinically significant abnormality\n* Concomitant disease or condition that could interfere with, or treatment of which might interfere with, the conduct of the study, or that would, in the opinion of the Investigator, pose an unacceptable risk to the participant in this study or interfere with the participant's ability to comply with study procedures or abide by study restrictions, or with the ability to interpret safety data\n* Any significant cardiovascular condition\n* Any significant laboratory abnormality\n* Lactating women\n* Prior treatment with dopaminergic medication (for example, levodopa or a dopaminergic agonist) with no clinical treatment response or a clinical treatment response inconsistent with PD (for example, absence of observable response to a sufficiently high-dose of levodopa \\[i.e., ≥ 600 mg/day\\])\n* Use of any of the following: catechol-O-methyl transferase (COMT) inhibitors (entacapone, tolcapone), amantadine or anticholinergics, or dopaminergic medication (levodopa and both ergot and non-ergot \\[pramipexole, ropinirole, rotigotine\\] dopamine agonists) for more than a total of 60 days or within 60 days of baseline\n* Anti-epileptic medication for non-seizure-related treatment which has not remained stable for at least 60 days prior to baseline\n* Anti-depressant or anxiolytic use that has not remained stable for at least 90 days prior to baseline. The use of fluoxetine and fluvoxamine is not permitted. For patients treated with a MAO-B inhibitor and an antidepressant (except fluoxetine and fluvoxamine), a 6-month period of stable and tolerated dosing before baseline is required.\n* Use of any of the following within 90 days prior to baseline: antipsychotics (including clozapine and olanzapine), metoclopramide, alpha methyldopa, clozapine, olanzapine, flunarizine, amoxapine, amphetamine derivatives, reserpine, bupropion, buspirone, cocaine, mazindol, methamphetamine, methylphenidate, norephedrine, phentermine, phenylpropanolamine, and modafinil\n* Participated in an investigational drug, device, surgical , or stem cell study in PD\n* Any prior treatment with an investigational PD-related vaccine (including active immunization or passive immunotherapy with monoclonal antibodies).\n* Prior participation in any RO7046015 or PRX002 study\n* Receipt of any non-PD investigational product or device, or participation in a non-PD drug research study within a period of 30 days (or 5 half-lives of the drug, whichever is longer) before baseline\n* Receipt of any monoclonal antibody or an investigational immunomodulator within 180 days (or 5 half-lives, whichever is longer) before baseline\n* Immunomodulating drugs within 30 days prior to baseline\n* Allergy to any of the components of RO7046015 such as citrate, trehalose and polysorbate (Tween) 20 or a known hypersensitivity or an Infusion-related reaction (IRR) to the administration of any other monoclonal antibody\n* Any contraindications to obtaining a brain MRI. Patients with a hypersensitivity to iodine may receive an alternative thyroid blocking agent.\n* For participants consenting to provide optional cerebrospinal fluid (CSF) samples by lumbar puncture (LP): LP will only be performed if the participant does not have any contraindication to undergoing an LP\n* Donation of blood over 500 milliliters (mL) within three months prior to screening",
+   "healthyVolunteers": false,
+   "maximumAge": "80 Years",
+   "minimumAge": "40 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "acronym": "PASADENA",
+   "briefTitle": "A Study to Evaluate the Efficacy of Prasinezumab (RO7046015/PRX002) in Participants With Early Parkinson's Disease",
+   "nctId": "NCT03100149",
+   "officialTitle": "A Randomized, Double-Blind, Placebo-Controlled, 52-Week Phase II Study to Evaluate the Efficacy of Intravenous RO7046015/Prasinezumab (PRX002) in Participants With Early Parkinson's Disease With a 11-Year All-Participants-on-Treatment Extension",
+   "orgStudyIdInfo": {
+    "id": "BP39529"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Hoffmann-La Roche"
+   },
+   "secondaryIdInfos": [
+    {
+     "id": "2017-000087-15",
+     "type": "EUDRACT_NUMBER"
+    },
+    {
+     "id": "2023-504472-24-00",
+     "type": "CTIS"
+    },
+    {
+     "id": "2023",
+     "link": "https://reporter.nih.gov/quickSearch/2023",
+     "type": "NIH"
+    },
+    {
+     "id": "2017",
+     "link": "https://reporter.nih.gov/quickSearch/2017",
+     "type": "NIH"
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "description": "For eligible studies, qualified researchers may request access to individual patient level clinical data. See Roche's commitment to transparency of clinical study information here: https://go.roche.com/data\\_sharing",
+   "ipdSharing": "YES"
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "description": "The MDS-UPDRS is a multimodal scale consisting of four parts. Part I assessed non-motor experiences of daily living and has 2 components (Range 0-52). Part IA contains 6 questions and are assessed by the examiner (Range 0-24). Part IB contains 7 questions on non-motor experiences of daily living which was completed by the participant (Range 0-28). Part II assessed motor experiences of daily living (Range 0-52). It contained 13 questions completed by the participant. Part III assessed the motor signs of Parkinson's Disease (PD) and was administered by the rater (Range 0-132). Part III contained 33 scores based on 18 items. For each question a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, 4 = Severe. The MDS-UPDRS Total Score equals the sum of Parts I,II, and III (Range: 0-236). A higher score indicated more severe symptoms of Parkinson's disease.",
+     "measure": "Change From Baseline in Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Total Score (Sum of Parts I, II, and III) at Week 52",
+     "timeFrame": "From baseline to Week 52"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "description": "The MDS-UPDRS is a multimodal scale consisting of four parts. Part I assessed non-motor experiences of daily living and has 2 components (Range 0-52). Part IA contains 6 questions and are assessed by the examiner (Range 0-24). Part IB contains 7 questions on non-motor experiences of daily living which was completed by the participant (Range 0-28). Part II assessed motor experiences of daily living (Range 0-52). It contained 13 questions completed by the participant. Part III assessed the motor signs of Parkinson's Disease (PD) and was administered by the rater (Range 0-132). Part III contained 33 scores based on 18 items. There are 4 subscores in Part III: Bradykinesia, Rigidity, Resting tremors and Axial symptoms. For each question a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, 4 = Severe. MDS-UPDRS Total Score equals the sum of Parts I,II, and III (Range:0-236). A higher score indicated more severe symptoms of Parkinson's disease.",
+     "measure": "Change From Baseline in the MDS-UPDRS Part IA, Part IB, Part I Total, Part II Total, Part III Total and Part III Subscores",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "DaT-SPECT (dopamine transporter imaging with single photon emission computed tomography) is a dopamine transporter SPECT imaging that uses a radioactive agent called 123\\^I-ioflupane to quantify the density of the dopamine transporters in the striatum. Changes from baseline to week 52 in DaT-SPECT striatal binding ratios (SBRs; reference region: occipital cortex) in the putamen ipsilateral to the clinically most affected side were analyzed.",
+     "measure": "Change From Baseline in Dopamine Transporter Imaging With Single Photon Emission Computed Tomography (DaT-SPECT) Striatal Binding Ratio (SBR) in the Putamen Ipsilateral to the Clinically Most Affected Side",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "The Montreal Cognitive Assessment (MoCA) is a rapid screening that was developed to be more sensitive to participants presenting with mild cognitive complaints. It briefly assesses short term and working memory, visuospatial abilities, executive function, attention, concentration, language and orientation. Scores on the MoCA test range from 0-30. Higher scores are associated with better cognitive function.",
+     "measure": "Change From Baseline in Montreal Cognition Assessment (MoCA) Total Score",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "The CGI-I was intended as a measure of change in health status. CGI-I scores ranged from 1 (very much improved) through to 7 (very much worse). For the CGI-I, participants were divided into one of two groups, Responders or Progressors. Responders were scored on a scale of 1-4 which was rated as \"no change\", \"minimally improved\", \"much improved\" or \"very much improved.\" Progressors were scored on a scale of 5-7 which was rated as \"minimally worse\", \"much worse\" or \"very much worse.\" The percentage of participants rated by CGI-I Scale grouping at week 52 was analyzed using a logistic regression model.",
+     "measure": "Change From Baseline in Clinical Global Impression of Improvement (CGI-I) Score",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "The PGIC was intended as a measure of change in health state from the participants perspective. PGIC scores ranged from 1 (very much improved) through to 7 (very much worse). For the PGIC, participants were divided into one of two groups, Responders or Progressors. Responders were scored on a scale of 1-4 which was rated as \"no change\", \"minimally improved\", \"much improved\" or \"very much improved.\" Progressors were scored on a scale of 5-7 which was rated as \"minimally worse\", \"much worse\" or \"very much worse.\" The percentage of participants rated by PGIC Scale grouping at week 52 was analyzed using a logistic regression model.",
+     "measure": "Change From Baseline in Patient Global Impression of Change (PGIC) Score",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "The SE-ADL is a single item scale assessing Activities of Daily Living on a scale ranging from 0% (bedridden) to 100% (completely independent), using 10% intervals.",
+     "measure": "Change From Baseline in Schwab and England Activity of Daily Living (SE-ADL) Score",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "This outcome measure is defined as the time to between first dose of study medication and the date when the particiapnt increases in MDS-UPDRS Part I (Range 0-52) of 3 or more points, or in MDS-UPDRS Part II (Range 0-52) of 3 or more points, whichever comes first. A higher score indicated more severe motor signs of Parkinson's disease.",
+     "measure": "Time to Worsening in Motor or Non-Motor Symptoms",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "This endpoint is defined as the time between first dose of study medication and the date when the participant starts dopaminergic treatment.",
+     "measure": "Time to Start of Dopaminergic Parkinson's Disease Treatment",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "An AE was any untoward medical occurrence in a participant who received study drug without regard to possibility of causal relationship. An SAE was any AE resulting in any of the following outcomes or deemed significant for any other reason: death; initial or prolonged inpatient hospitalization; life-threatening experience (immediate risk of dying); persistent or significant disability/incapacity; congenital anomaly.",
+     "measure": "Percentage of Participants With Adverse Events (AEs) and Serious AEs (SAEs)",
+     "timeFrame": "From baseline to Week 52"
+    },
+    {
+     "description": "Samples of the participant's blood was taken to evaluate anti-drug antibodies (ADA). The number of ADA positive participants, Treatment-induced and Treatment-enhanced was reported. Treatment-induced = participants with ADA negative or missing data at baseline but develop an ADA response following exposure to the study drug. Treatment-enhanced = participants with ADA positive at baseline and the titre of one or more post-baseline samples is at least \\>=4 fold increase greater than the baseline titre sample.",
+     "measure": "Percentage of Participants With Anti-Drug Antibodies (ADAs) Against RO7046015",
+     "timeFrame": "Baseline, Pre-dose (0 hours) on Weeks 4, 20, 36, 52, 56, 68, 80, and 104; at early termination (up to Week 104), and follow-up (12 weeks after last dose up to Week 116)"
+    },
+    {
+     "description": "Clearance is a measure of the rate at which a drug is removed from the body.",
+     "measure": "Systemic Clearance (CL) of RO7046015",
+     "timeFrame": "Predose (0 hours) and end of infusion (infusion length=2 hours or less) on Baseline, Weeks 4, 20, 36, 52, 56, 68, 80, and 104; at Day 7, Day 14, early termination (up to Week 104), and follow-up (12 weeks after last dose up to Week 116)"
+    },
+    {
+     "description": "Volume of distribution is defined as the theoretical volume which the total amount of drug would need to be uniformly distributed to produce the desired plasma concentration of a drug.",
+     "measure": "Apparent Volume of Distribution (Vz/F) of RO7046015",
+     "timeFrame": "Predose (0 hours) and end of infusion (infusion length=2 hours or less) on Baseline, Weeks 4, 20, 36, 52, 56, 68, 80, and 104; at Day 7, Day 14, early termination (up to Week 104), and follow-up (12 weeks after last dose up to Week 116)"
+    },
+    {
+     "description": "AUC is defined as the measure of RO7046015 plasma concentration over time.",
+     "measure": "Area Under the Serum Concentration-Time Curve (AUC) of RO7046015 Over the Dosing Interval",
+     "timeFrame": "Baseline over the duration of the study"
+    },
+    {
+     "description": "Cmax is the maximum observed plasma concentration of RO7046015.",
+     "measure": "Maximum Observed Serum Concentration (Cmax) of RO7046015 at Steady-state",
+     "timeFrame": "Baseline over the duration of the study"
+    },
+    {
+     "description": "Cmin is the minimum observed plasma concentration of RO7046015.",
+     "measure": "Minimum Observed Serum Concentration (Ctrough) of RO7046015 at Steady-state",
+     "timeFrame": "Baseline over the duration of the study"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true
+  },
+  "referencesModule": {
+   "references": [
+    {
+     "citation": "Coles D, Kalyana A, Khalil S, Chauhan D, Rupasinghe T, Costello C, Batla A, Young T. The Efficacy and Safety of Monoclonal Antibodies That Target Alpha-Synuclein in Parkinson's Disease: A Systematic Review. Parkinsons Dis. 2026 Jul 22;2026:8540084. doi: 10.1155/padi/8540084. eCollection 2026.",
+     "pmid": "42495570",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Taylor KI, Lipsmeier F, Scelsi MA, Volkova-Volkmar E, Rukina D, Popp W, Lambrecht S, Anzures-Cabrera J, Summers D, Abt M, Monnet A, Kilchenmann T, Schjodt-Eriksen J, Essioux L, Kustermann T, Zago W, Svoboda H, Nikolcheva T, Postuma RB, Pagano G, Lindemann M; PASADENA Investigators; Prasinezumab Study Group. Exploratory digital outcome measures of motor sign progression in Parkinson's disease patients treated with prasinezumab. NPJ Digit Med. 2025 Jun 16;8(1):365. doi: 10.1038/s41746-025-01572-8.",
+     "pmid": "40523921",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Pagano G, Monnet A, Reyes A, Ribba B, Svoboda H, Kustermann T, Simuni T, Postuma RB, Pavese N, Stocchi F, Brockmann K, Smigorski K, Gerbaldo V, Fontoura P, Doody R, Kerchner GA, Brundin P, Marek K, Bonni A, Nikolcheva T; PASADENA Investigators; Prasinezumab Study Group. Sustained effect of prasinezumab on Parkinson's disease motor progression in the open-label extension of the PASADENA trial. Nat Med. 2024 Dec;30(12):3669-3675. doi: 10.1038/s41591-024-03270-6. Epub 2024 Oct 8.",
+     "pmid": "39379705",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Pagano G, Taylor KI, Anzures-Cabrera J, Marchesi M, Simuni T, Marek K, Postuma RB, Pavese N, Stocchi F, Azulay JP, Mollenhauer B, Lopez-Manzanares L, Russell DS, Boyd JT, Nicholas AP, Luquin MR, Hauser RA, Gasser T, Poewe W, Ricci B, Boulay A, Vogt A, Boess FG, Dukart J, D'Urso G, Finch R, Zanigni S, Monnet A, Pross N, Hahn A, Svoboda H, Britschgi M, Lipsmeier F, Volkova-Volkmar E, Lindemann M, Dziadek S, Holiga S, Rukina D, Kustermann T, Kerchner GA, Fontoura P, Umbricht D, Doody R, Nikolcheva T, Bonni A; PASADENA Investigators; Prasinezumab Study Group. Trial of Prasinezumab in Early-Stage Parkinson's Disease. N Engl J Med. 2022 Aug 4;387(5):421-432. doi: 10.1056/NEJMoa2202867.",
+     "pmid": "35921451",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Lipsmeier F, Taylor KI, Postuma RB, Volkova-Volkmar E, Kilchenmann T, Mollenhauer B, Bamdadian A, Popp WL, Cheng WY, Zhang YP, Wolf D, Schjodt-Eriksen J, Boulay A, Svoboda H, Zago W, Pagano G, Lindemann M. Reliability and validity of the Roche PD Mobile Application for remote monitoring of early Parkinson's disease. Sci Rep. 2022 Jul 15;12(1):12081. doi: 10.1038/s41598-022-15874-4.",
+     "pmid": "35840753",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Pagano G, Boess FG, Taylor KI, Ricci B, Mollenhauer B, Poewe W, Boulay A, Anzures-Cabrera J, Vogt A, Marchesi M, Post A, Nikolcheva T, Kinney GG, Zago WM, Ness DK, Svoboda H, Britschgi M, Ostrowitzki S, Simuni T, Marek K, Koller M, Sevigny J, Doody R, Fontoura P, Umbricht D, Bonni A; PASADENA Investigators; Prasinezumab Study Group. A Phase II Study to Evaluate the Safety and Efficacy of Prasinezumab in Early Parkinson's Disease (PASADENA): Rationale, Design, and Baseline Data. Front Neurol. 2021 Oct 1;12:705407. doi: 10.3389/fneur.2021.705407. eCollection 2021.",
+     "pmid": "34659081",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Jankovic J, Goodman I, Safirstein B, Marmon TK, Schenk DB, Koller M, Zago W, Ness DK, Griffith SG, Grundman M, Soto J, Ostrowitzki S, Boess FG, Martin-Facklam M, Quinn JF, Isaacson SH, Omidvar O, Ellenbogen A, Kinney GG. Safety and Tolerability of Multiple Ascending Doses of PRX002/RG7935, an Anti-alpha-Synuclein Monoclonal Antibody, in Patients With Parkinson Disease: A Randomized Clinical Trial. JAMA Neurol. 2018 Oct 1;75(10):1206-1214. doi: 10.1001/jamaneurol.2018.1487.",
+     "pmid": "29913017",
+     "type": "DERIVED"
+    }
+   ]
+  },
+  "sponsorCollaboratorsModule": {
+   "collaborators": [
+    {
+     "class": "INDUSTRY",
+     "name": "Prothena Biosciences Limited"
+    }
+   ],
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Hoffmann-La Roche"
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2031-12-01",
+    "type": "ESTIMATED"
+   },
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "lastUpdatePostDateStruct": {
+    "date": "2026-09-11",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-09-09",
+   "overallStatus": "ACTIVE_NOT_RECRUITING",
+   "primaryCompletionDateStruct": {
+    "date": "2019-11-27",
+    "type": "ACTUAL"
+   },
+   "resultsFirstPostDateStruct": {
+    "date": "2021-02-08",
+    "type": "ACTUAL"
+   },
+   "resultsFirstSubmitDate": "2020-11-26",
+   "resultsFirstSubmitQcDate": "2021-01-14",
+   "startDateStruct": {
+    "date": "2017-06-27",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2026-09",
+   "studyFirstPostDateStruct": {
+    "date": "2017-04-04",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2017-03-29",
+   "studyFirstSubmitQcDate": "2017-03-29"
+  }
+ },
+ "resultsSection": {
+  "adverseEventsModule": {
+   "description": "AEs were graded according to the National Cancer Institute Common Terminology Criteria for Adverse Events (NCI CTCAE) Version 4.0.",
+   "eventGroups": [
+    {
+     "deathsNumAffected": 0,
+     "deathsNumAtRisk": 105,
+     "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+     "id": "EG000",
+     "otherNumAffected": 57,
+     "otherNumAtRisk": 105,
+     "seriousNumAffected": 5,
+     "seriousNumAtRisk": 105,
+     "title": "Part 1: Placebo"
+    },
+    {
+     "deathsNumAffected": 0,
+     "deathsNumAtRisk": 105,
+     "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+     "id": "EG001",
+     "otherNumAffected": 67,
+     "otherNumAtRisk": 105,
+     "seriousNumAffected": 7,
+     "seriousNumAtRisk": 105,
+     "title": "Part 1: RO7046015 Low Dose"
+    },
+    {
+     "deathsNumAffected": 0,
+     "deathsNumAtRisk": 106,
+     "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+     "id": "EG002",
+     "otherNumAffected": 69,
+     "otherNumAtRisk": 106,
+     "seriousNumAffected": 8,
+     "seriousNumAtRisk": 106,
+     "title": "Part 1: RO7046015 High Dose"
+    }
+   ],
+   "frequencyThreshold": "5",
+   "otherEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 6,
+       "numAtRisk": 105,
+       "numEvents": 6
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 8,
+       "numAtRisk": 105,
+       "numEvents": 8
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 10,
+       "numAtRisk": 106,
+       "numEvents": 10
+      }
+     ],
+     "term": "Constipation"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 9,
+       "numAtRisk": 105,
+       "numEvents": 10
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 5,
+       "numAtRisk": 105,
+       "numEvents": 6
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 9,
+       "numAtRisk": 106,
+       "numEvents": 16
+      }
+     ],
+     "term": "Nausea"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 15,
+       "numAtRisk": 105,
+       "numEvents": 19
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 20,
+       "numAtRisk": 105,
+       "numEvents": 25
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 13,
+       "numAtRisk": 106,
+       "numEvents": 17
+      }
+     ],
+     "term": "Nasopharyngitis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 9,
+       "numAtRisk": 105,
+       "numEvents": 10
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 4,
+       "numAtRisk": 105,
+       "numEvents": 4
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 9,
+       "numAtRisk": 106,
+       "numEvents": 11
+      }
+     ],
+     "term": "Upper respiratory tract infection"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 5,
+       "numAtRisk": 105,
+       "numEvents": 7
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 5,
+       "numAtRisk": 105,
+       "numEvents": 9
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 10,
+       "numAtRisk": 106,
+       "numEvents": 15
+      }
+     ],
+     "term": "Fall"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 17,
+       "numAtRisk": 105,
+       "numEvents": 29
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 20,
+       "numAtRisk": 105,
+       "numEvents": 40
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 35,
+       "numAtRisk": 106,
+       "numEvents": 115
+      }
+     ],
+     "term": "Infusion related reaction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 8,
+       "numAtRisk": 105,
+       "numEvents": 9
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 7,
+       "numAtRisk": 105,
+       "numEvents": 8
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 4,
+       "numAtRisk": 106,
+       "numEvents": 4
+      }
+     ],
+     "term": "Arthralgia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 8,
+       "numAtRisk": 105,
+       "numEvents": 9
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 8,
+       "numAtRisk": 105,
+       "numEvents": 8
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 11,
+       "numAtRisk": 106,
+       "numEvents": 13
+      }
+     ],
+     "term": "Back pain"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 105,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 6,
+       "numAtRisk": 105,
+       "numEvents": 7
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 5,
+       "numAtRisk": 106,
+       "numEvents": 6
+      }
+     ],
+     "term": "Pain in extremity"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 10,
+       "numAtRisk": 105,
+       "numEvents": 12
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 10,
+       "numAtRisk": 105,
+       "numEvents": 19
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 12,
+       "numAtRisk": 106,
+       "numEvents": 15
+      }
+     ],
+     "term": "Headache"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 3,
+       "numAtRisk": 105,
+       "numEvents": 3
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 2,
+       "numAtRisk": 105,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 7,
+       "numAtRisk": 106,
+       "numEvents": 7
+      }
+     ],
+     "term": "Anxiety"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 5,
+       "numAtRisk": 105,
+       "numEvents": 5
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 3,
+       "numAtRisk": 105,
+       "numEvents": 3
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 8,
+       "numAtRisk": 106,
+       "numEvents": 9
+      }
+     ],
+     "term": "Insomnia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Skin and subcutaneous tissue disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 6,
+       "numAtRisk": 105,
+       "numEvents": 8
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 3,
+       "numAtRisk": 106,
+       "numEvents": 3
+      }
+     ],
+     "term": "Dermatitis contact"
+    }
+   ],
+   "seriousEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Acute myocardial infarction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Cardiac failure"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Inguinal hernia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Influenza like illness"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 1,
+       "numAtRisk": 106,
+       "numEvents": 1
+      }
+     ],
+     "term": "Anal abscess"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 2,
+       "numAtRisk": 106,
+       "numEvents": 2
+      }
+     ],
+     "term": "Infusion related reaction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 1,
+       "numAtRisk": 106,
+       "numEvents": 1
+      }
+     ],
+     "term": "Limb injury"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Radius fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Ulna fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 1,
+       "numAtRisk": 106,
+       "numEvents": 1
+      }
+     ],
+     "term": "Intervertebral disc protrusion"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Ligament disorder"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Basal cell carcinoma"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Large intestine benign neoplasm"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Malignant melanoma"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Facial paralysis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Parkinson's disease"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 105,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 0,
+       "numAtRisk": 106,
+       "numEvents": 0
+      }
+     ],
+     "term": "Transient ischaemic attack"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 1,
+       "numAtRisk": 106,
+       "numEvents": 1
+      }
+     ],
+     "term": "Behaviour disorder"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 1,
+       "numAtRisk": 106,
+       "numEvents": 1
+      }
+     ],
+     "term": "Suicide attempt"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Renal and urinary disorders",
+     "sourceVocabulary": "MedDRA version 22.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 105,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG002",
+       "numAffected": 1,
+       "numAtRisk": 106,
+       "numEvents": 1
+      }
+     ],
+     "term": "Nephrolithiasis"
+    }
+   ],
+   "timeFrame": "Baseline up to Week 52"
+  },
+  "baselineCharacteristicsModule": {
+   "denoms": [
+    {
+     "counts": [
+      {
+       "groupId": "BG000",
+       "value": "105"
+      },
+      {
+       "groupId": "BG001",
+       "value": "105"
+      },
+      {
+       "groupId": "BG002",
+       "value": "106"
+      },
+      {
+       "groupId": "BG003",
+       "value": "316"
+      }
+     ],
+     "units": "Participants"
+    }
+   ],
+   "groups": [
+    {
+     "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+     "id": "BG000",
+     "title": "Part 1: Placebo"
+    },
+    {
+     "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+     "id": "BG001",
+     "title": "Part 1: RO7046015 Low Dose"
+    },
+    {
+     "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+     "id": "BG002",
+     "title": "Part 1: RO7046015 High Dose"
+    },
+    {
+     "description": "Total of all reporting groups",
+     "id": "BG003",
+     "title": "Total"
+    }
+   ],
+   "measures": [
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "spread": "8.7",
+           "value": "59.9"
+          },
+          {
+           "groupId": "BG001",
+           "spread": "8.8",
+           "value": "60.3"
+          },
+          {
+           "groupId": "BG002",
+           "spread": "9.8",
+           "value": "59.4"
+          },
+          {
+           "groupId": "BG003",
+           "spread": "9.1",
+           "value": "59.9"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "dispersionType": "STANDARD_DEVIATION",
+     "paramType": "MEAN",
+     "title": "Age, Continuous",
+     "unitOfMeasure": "Years"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "34"
+          },
+          {
+           "groupId": "BG001",
+           "value": "34"
+          },
+          {
+           "groupId": "BG002",
+           "value": "35"
+          },
+          {
+           "groupId": "BG003",
+           "value": "103"
+          }
+         ],
+         "title": "Female"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "71"
+          },
+          {
+           "groupId": "BG001",
+           "value": "71"
+          },
+          {
+           "groupId": "BG002",
+           "value": "71"
+          },
+          {
+           "groupId": "BG003",
+           "value": "213"
+          }
+         ],
+         "title": "Male"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Sex: Female, Male",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "1"
+          },
+          {
+           "groupId": "BG001",
+           "value": "0"
+          },
+          {
+           "groupId": "BG002",
+           "value": "0"
+          },
+          {
+           "groupId": "BG003",
+           "value": "1"
+          }
+         ],
+         "title": "Asian"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "0"
+          },
+          {
+           "groupId": "BG001",
+           "value": "2"
+          },
+          {
+           "groupId": "BG002",
+           "value": "0"
+          },
+          {
+           "groupId": "BG003",
+           "value": "2"
+          }
+         ],
+         "title": "Black or African American"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "91"
+          },
+          {
+           "groupId": "BG001",
+           "value": "83"
+          },
+          {
+           "groupId": "BG002",
+           "value": "89"
+          },
+          {
+           "groupId": "BG003",
+           "value": "263"
+          }
+         ],
+         "title": "White"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "13"
+          },
+          {
+           "groupId": "BG001",
+           "value": "20"
+          },
+          {
+           "groupId": "BG002",
+           "value": "17"
+          },
+          {
+           "groupId": "BG003",
+           "value": "50"
+          }
+         ],
+         "title": "Unknown"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Race/Ethnicity, Customized",
+     "unitOfMeasure": "Participants"
+    }
+   ],
+   "populationDescription": "The modified intent-to-treat (mITT) population includes all participants randomized in the study who received any amount of study drug treatment."
+  },
+  "moreInfoModule": {
+   "certainAgreement": {
+    "otherDetails": "The Study being conducted under this Agreement is part of the Overall Study. Investigator is free to publish in reputable journals or to present at professional conferences the results of the Study, but only after the first publication or presentation that involves the Overall Study. The Sponsor may request that Confidential Information be deleted and/or the publication be postponed in order to protect the Sponsor's intellectual property rights.",
+    "piSponsorEmployee": false,
+    "restrictionType": "OTHER",
+    "restrictiveAgreement": true
+   },
+   "pointOfContact": {
+    "email": "genentech@druginfo.com",
+    "organization": "Hoffmann-La Roche",
+    "phone": "800-821-8590",
+    "title": "Medical Communications"
+   }
+  },
+  "outcomeMeasuresModule": {
+   "outcomeMeasures": [
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-4.21",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.18",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.71",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.2385",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-2.02",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-2.82",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.58",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.71",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.7169",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.62",
+       "statisticalMethod": "Mixed Models Analysis"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "1.221",
+           "value": "9.37"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "1.225",
+           "value": "7.35"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "1.234",
+           "value": "8.75"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "76"
+        },
+        {
+         "groupId": "OG001",
+         "value": "74"
+        },
+        {
+         "groupId": "OG002",
+         "value": "73"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The MDS-UPDRS is a multimodal scale consisting of four parts. Part I assessed non-motor experiences of daily living and has 2 components (Range 0-52). Part IA contains 6 questions and are assessed by the examiner (Range 0-24). Part IB contains 7 questions on non-motor experiences of daily living which was completed by the participant (Range 0-28). Part II assessed motor experiences of daily living (Range 0-52). It contained 13 questions completed by the participant. Part III assessed the motor signs of Parkinson's Disease (PD) and was administered by the rater (Range 0-132). Part III contained 33 scores based on 18 items. For each question a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, 4 = Severe. The MDS-UPDRS Total Score equals the sum of Parts I,II, and III (Range: 0-236). A higher score indicated more severe symptoms of Parkinson's disease.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The modified intent-to-treat (mITT) population includes all participants randomized in the study who received any amount of study drug treatment. Assessments of participants who started symptomatic therapy were included in the analysis up to the day before symptomatic treatment started.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Change From Baseline in Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Total Score (Sum of Parts I, II, and III) at Week 52",
+     "type": "PRIMARY",
+     "unitOfMeasure": "Units on a scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-0.30",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.13",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.165",
+       "groupDescription": "MDS-UPDRS Part IA",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.6116",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.08",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.13",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.30",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.165",
+       "groupDescription": "MDS-UPDRS Part IA",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.6188",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.08",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.48",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.40",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.345",
+       "groupDescription": "MDS-UPDRS Part IB",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.9062",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.04",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.43",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.46",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.347",
+       "groupDescription": "MDS-UPDRS Part IB",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.9621",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.02",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.71",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.34",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.411",
+       "groupDescription": "MDS-UPDRS Part I Total",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.6510",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.19",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.41",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.65",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.413",
+       "groupDescription": "MDS-UPDRS Part I Total",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.7709",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.12",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.33",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.01",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.523",
+       "groupDescription": "MDS-UPDRS Part II Total",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.5177",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.34",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.73",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.61",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.523",
+       "groupDescription": "MDS-UPDRS Part II Total",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.9095",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.06",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-3.49",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "-0.27",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.255",
+       "groupDescription": "MDS-UPDRS Part III Total",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.1354",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-1.88",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-2.64",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.61",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.262",
+       "groupDescription": "MDS-UPDRS Part III Total",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4217",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-1.02",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.38",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.56",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.369",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Rigidity",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.8053",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.09",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.22",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.73",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.370",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Rigidity",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4970",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.25",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-2.07",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "-0.07",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.779",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Bradykinesia",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.1703",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-1.07",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-1.45",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.56",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.782",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Bradykinesia",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.5729",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.44",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-1.02",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "-0.19",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.324",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Resting Tremor",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.0628",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.61",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.82",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.01",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.325",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Resting Tremor",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.2125",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.41",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.22",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.06",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.108",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Axial Symptoms",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4577",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.08",
+       "statisticalMethod": "Mixed Models Analysis"
+      },
+      {
+       "ciLowerLimit": "-0.15",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.13",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.109",
+       "groupDescription": "MDS-UPDRS Part III Subscore: Axial Symptoms",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.9182",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.01",
+       "statisticalMethod": "Mixed Models Analysis"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.119",
+           "value": "-0.19"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.119",
+           "value": "-0.27"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.121",
+           "value": "-0.10"
+          }
+         ]
+        }
+       ],
+       "title": "Part IA"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.247",
+           "value": "0.94"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.248",
+           "value": "0.90"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.251",
+           "value": "0.96"
+          }
+         ]
+        }
+       ],
+       "title": "Part IB"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.295",
+           "value": "0.77"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.297",
+           "value": "0.59"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.300",
+           "value": "0.89"
+          }
+         ]
+        }
+       ],
+       "title": "Part I total"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.373",
+           "value": "2.75"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.375",
+           "value": "3.09"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.376",
+           "value": "2.69"
+          }
+         ]
+        }
+       ],
+       "title": "Part II total"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.897",
+           "value": "5.57"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.900",
+           "value": "3.69"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.911",
+           "value": "4.55"
+          }
+         ]
+        }
+       ],
+       "title": "Part III total"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.263",
+           "value": "0.61"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.265",
+           "value": "0.70"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.268",
+           "value": "0.86"
+          }
+         ]
+        }
+       ],
+       "title": "Part III subscore - rigidity"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.556",
+           "value": "2.79"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.560",
+           "value": "1.72"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.565",
+           "value": "2.35"
+          }
+         ]
+        }
+       ],
+       "title": "Part III subscore - bradykinesia"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.231",
+           "value": "1.20"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.233",
+           "value": "0.59"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.234",
+           "value": "0.79"
+          }
+         ]
+        }
+       ],
+       "title": "Part III subscore - resting tremor"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.077",
+           "value": "0.19"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.078",
+           "value": "0.11"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.079",
+           "value": "0.18"
+          }
+         ]
+        }
+       ],
+       "title": "Part III subscore - axial symptoms"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "76"
+        },
+        {
+         "groupId": "OG001",
+         "value": "74"
+        },
+        {
+         "groupId": "OG002",
+         "value": "73"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The MDS-UPDRS is a multimodal scale consisting of four parts. Part I assessed non-motor experiences of daily living and has 2 components (Range 0-52). Part IA contains 6 questions and are assessed by the examiner (Range 0-24). Part IB contains 7 questions on non-motor experiences of daily living which was completed by the participant (Range 0-28). Part II assessed motor experiences of daily living (Range 0-52). It contained 13 questions completed by the participant. Part III assessed the motor signs of Parkinson's Disease (PD) and was administered by the rater (Range 0-132). Part III contained 33 scores based on 18 items. There are 4 subscores in Part III: Bradykinesia, Rigidity, Resting tremors and Axial symptoms. For each question a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, 4 = Severe. MDS-UPDRS Total Score equals the sum of Parts I,II, and III (Range:0-236). A higher score indicated more severe symptoms of Parkinson's disease.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The modified intent-to-treat (mITT) population includes all participants randomized in the study who received any amount of study drug treatment. Assessments of participants who started symptomatic therapy were included in the analysis up to the day before symptomatic treatment started.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Change From Baseline in the MDS-UPDRS Part IA, Part IB, Part I Total, Part II Total, Part III Total and Part III Subscores",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-0.05",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.01",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.02",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.3582",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "LS Means Difference",
+       "paramValue": "-0.02",
+       "statisticalMethod": "ANCOVA"
+      },
+      {
+       "ciLowerLimit": "-0.06",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.00",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.02",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.1955",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "LS Means Difference",
+       "paramValue": "-0.03",
+       "statisticalMethod": "ANCOVA"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.018",
+           "value": "-0.08"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.018",
+           "value": "-0.10"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.018",
+           "value": "-0.11"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "102"
+        },
+        {
+         "groupId": "OG001",
+         "value": "100"
+        },
+        {
+         "groupId": "OG002",
+         "value": "104"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "DaT-SPECT (dopamine transporter imaging with single photon emission computed tomography) is a dopamine transporter SPECT imaging that uses a radioactive agent called 123\\^I-ioflupane to quantify the density of the dopamine transporters in the striatum. Changes from baseline to week 52 in DaT-SPECT striatal binding ratios (SBRs; reference region: occipital cortex) in the putamen ipsilateral to the clinically most affected side were analyzed.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The mITT population includes all participants randomized in the study who received any amount of study drug treatment and had no symptomatic PD treatment. The analysis included all assessments regardless of symptomatic treatment intake.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Change From Baseline in Dopamine Transporter Imaging With Single Photon Emission Computed Tomography (DaT-SPECT) Striatal Binding Ratio (SBR) in the Putamen Ipsilateral to the Clinically Most Affected Side",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Striatal Binding Ratio (SBR)"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-0.09",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.54",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.245",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.3611",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.22",
+       "statisticalMethod": "ANCOVA"
+      },
+      {
+       "ciLowerLimit": "0.13",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.75",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.243",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.0727",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.44",
+       "statisticalMethod": "ANCOVA"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.177",
+           "value": "0.07"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.181",
+           "value": "0.30"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.178",
+           "value": "0.51"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "104"
+        },
+        {
+         "groupId": "OG001",
+         "value": "100"
+        },
+        {
+         "groupId": "OG002",
+         "value": "103"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The Montreal Cognitive Assessment (MoCA) is a rapid screening that was developed to be more sensitive to participants presenting with mild cognitive complaints. It briefly assesses short term and working memory, visuospatial abilities, executive function, attention, concentration, language and orientation. Scores on the MoCA test range from 0-30. Higher scores are associated with better cognitive function.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The mITT population includes all participants randomized in the study who received any amount of study drug treatment and had no symptomatic PD treatment. The analysis included all assessments regardless of symptomatic treatment intake.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Change From Baseline in Montreal Cognition Assessment (MoCA) Total Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.50",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.18",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4265",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Odds Ratio (OR)",
+       "paramValue": "0.77",
+       "statisticalMethod": "Regression, Logistic"
+      },
+      {
+       "ciLowerLimit": "0.49",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.16",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4063",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Odds Ratio (OR)",
+       "paramValue": "0.76",
+       "statisticalMethod": "Regression, Logistic"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "56.6"
+          },
+          {
+           "groupId": "OG001",
+           "value": "50.0"
+          },
+          {
+           "groupId": "OG002",
+           "value": "48.6"
+          }
+         ]
+        }
+       ],
+       "title": "Progressors"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "43.4"
+          },
+          {
+           "groupId": "OG001",
+           "value": "50.0"
+          },
+          {
+           "groupId": "OG002",
+           "value": "51.4"
+          }
+         ]
+        }
+       ],
+       "title": "Responders"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "76"
+        },
+        {
+         "groupId": "OG001",
+         "value": "72"
+        },
+        {
+         "groupId": "OG002",
+         "value": "72"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The CGI-I was intended as a measure of change in health status. CGI-I scores ranged from 1 (very much improved) through to 7 (very much worse). For the CGI-I, participants were divided into one of two groups, Responders or Progressors. Responders were scored on a scale of 1-4 which was rated as \"no change\", \"minimally improved\", \"much improved\" or \"very much improved.\" Progressors were scored on a scale of 5-7 which was rated as \"minimally worse\", \"much worse\" or \"very much worse.\" The percentage of participants rated by CGI-I Scale grouping at week 52 was analyzed using a logistic regression model.",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "NUMBER",
+     "populationDescription": "The mITT population includes all participants randomized in the study who received any amount of study drug treatment. Assessments of participants who started symptomatic therapy were included in the analysis up to the day before symptomatic treatment started.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Change From Baseline in Clinical Global Impression of Improvement (CGI-I) Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage of participants"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.48",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.15",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.3847",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Odds Ratio (OR)",
+       "paramValue": "0.75",
+       "statisticalMethod": "Regression, Logistic"
+      },
+      {
+       "ciLowerLimit": "0.57",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.36",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.7055",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Odds Ratio (OR)",
+       "paramValue": "0.88",
+       "statisticalMethod": "Regression, Logistic"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "58.1"
+          },
+          {
+           "groupId": "OG001",
+           "value": "50.7"
+          },
+          {
+           "groupId": "OG002",
+           "value": "53.5"
+          }
+         ]
+        }
+       ],
+       "title": "Progressors"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "41.9"
+          },
+          {
+           "groupId": "OG001",
+           "value": "49.3"
+          },
+          {
+           "groupId": "OG002",
+           "value": "46.5"
+          }
+         ]
+        }
+       ],
+       "title": "Responders"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "74"
+        },
+        {
+         "groupId": "OG001",
+         "value": "73"
+        },
+        {
+         "groupId": "OG002",
+         "value": "71"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The PGIC was intended as a measure of change in health state from the participants perspective. PGIC scores ranged from 1 (very much improved) through to 7 (very much worse). For the PGIC, participants were divided into one of two groups, Responders or Progressors. Responders were scored on a scale of 1-4 which was rated as \"no change\", \"minimally improved\", \"much improved\" or \"very much improved.\" Progressors were scored on a scale of 5-7 which was rated as \"minimally worse\", \"much worse\" or \"very much worse.\" The percentage of participants rated by PGIC Scale grouping at week 52 was analyzed using a logistic regression model.",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "NUMBER",
+     "populationDescription": "The mITT population includes all participants randomized in the study who received any amount of study drug treatment. Assessments of participants who started symptomatic therapy were included in the analysis up to the day before symptomatic treatment started.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Change From Baseline in Patient Global Impression of Change (PGIC) Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage of participants"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-1.87",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.41",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.888",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4142",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.73",
+       "statisticalMethod": "ANCOVA"
+      },
+      {
+       "ciLowerLimit": "-1.81",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "0.47",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.885",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4486",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.67",
+       "statisticalMethod": "ANCOVA"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.644",
+           "value": "-1.83"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.650",
+           "value": "-2.56"
+          },
+          {
+           "groupId": "OG002",
+           "spread": "0.647",
+           "value": "-2.50"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "104"
+        },
+        {
+         "groupId": "OG001",
+         "value": "102"
+        },
+        {
+         "groupId": "OG002",
+         "value": "103"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The SE-ADL is a single item scale assessing Activities of Daily Living on a scale ranging from 0% (bedridden) to 100% (completely independent), using 10% intervals.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The mITT population includes all participants randomized in the study who received any amount of study drug treatment and had no symptomatic PD treatment. The analysis included all assessments regardless of symptomatic treatment intake.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Change From Baseline in Schwab and England Activity of Daily Living (SE-ADL) Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.94",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.42",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.3769",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "1.15",
+       "statisticalMethod": "Regression, Cox"
+      },
+      {
+       "ciLowerLimit": "1.02",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.53",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.1658",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "1.25",
+       "statisticalMethod": "Regression, Cox"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "168.0",
+           "upperLimit": "225.0",
+           "value": "174.0"
+          },
+          {
+           "groupId": "OG001",
+           "lowerLimit": "117.0",
+           "upperLimit": "173.0",
+           "value": "169.0"
+          },
+          {
+           "groupId": "OG002",
+           "lowerLimit": "168.0",
+           "upperLimit": "222.0",
+           "value": "170.0"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "105"
+        },
+        {
+         "groupId": "OG001",
+         "value": "105"
+        },
+        {
+         "groupId": "OG002",
+         "value": "106"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "This outcome measure is defined as the time to between first dose of study medication and the date when the particiapnt increases in MDS-UPDRS Part I (Range 0-52) of 3 or more points, or in MDS-UPDRS Part II (Range 0-52) of 3 or more points, whichever comes first. A higher score indicated more severe motor signs of Parkinson's disease.",
+     "dispersionType": "80% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "The mITT population includes all participants randomized in the study who received any amount of study drug treatment and had no symptomatic PD treatment. The analysis included all assessments regardless of symptomatic treatment intake.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Time to Worsening in Motor or Non-Motor Symptoms",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Days"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.77",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.33",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.9542",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "1.01",
+       "statisticalMethod": "Regression, Cox"
+      },
+      {
+       "ciLowerLimit": "0.63",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "80",
+       "ciUpperLimit": "1.13",
+       "groupIds": [
+        "OG000",
+        "OG002"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.4567",
+       "pValueComment": "Nominal p-values are displayed for descriptive purposes only.",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "0.84",
+       "statisticalMethod": "Regression, Cox"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "comment": "The median time to start of treatment\" would be the timepoint when more than 50% of all participants started the treatment. At the end of Week 52, less than 50% of the participants started the treatment, thus the median time to start of treatment was not estimable.",
+           "groupId": "OG000",
+           "lowerLimit": "NA",
+           "upperLimit": "NA",
+           "value": "NA"
+          },
+          {
+           "comment": "The median time to start of treatment\" would be the timepoint when more than 50% of all participants started the treatment. At the end of Week 52, less than 50% of the participants started the treatment, thus the median time to start of treatment was not estimable.",
+           "groupId": "OG001",
+           "lowerLimit": "NA",
+           "upperLimit": "NA",
+           "value": "NA"
+          },
+          {
+           "comment": "The median time to start of treatment\" would be the timepoint when more than 50% of all participants started the treatment. At the end of Week 52, less than 50% of the participants started the treatment, thus the median time to start of treatment was not estimable.",
+           "groupId": "OG002",
+           "lowerLimit": "NA",
+           "upperLimit": "NA",
+           "value": "NA"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "105"
+        },
+        {
+         "groupId": "OG001",
+         "value": "105"
+        },
+        {
+         "groupId": "OG002",
+         "value": "106"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "This endpoint is defined as the time between first dose of study medication and the date when the participant starts dopaminergic treatment.",
+     "dispersionType": "80% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "The mITT population includes all participants randomized in the study who received any amount of study drug treatment and had no symptomatic PD treatment. The analysis included all assessments regardless of symptomatic treatment intake.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Time to Start of Dopaminergic Parkinson's Disease Treatment",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Days"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "82.9"
+          },
+          {
+           "groupId": "OG001",
+           "value": "93.3"
+          },
+          {
+           "groupId": "OG002",
+           "value": "91.5"
+          }
+         ]
+        }
+       ],
+       "title": "AEs"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "4.8"
+          },
+          {
+           "groupId": "OG001",
+           "value": "6.7"
+          },
+          {
+           "groupId": "OG002",
+           "value": "7.5"
+          }
+         ]
+        }
+       ],
+       "title": "SAEs"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "105"
+        },
+        {
+         "groupId": "OG001",
+         "value": "105"
+        },
+        {
+         "groupId": "OG002",
+         "value": "106"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "An AE was any untoward medical occurrence in a participant who received study drug without regard to possibility of causal relationship. An SAE was any AE resulting in any of the following outcomes or deemed significant for any other reason: death; initial or prolonged inpatient hospitalization; life-threatening experience (immediate risk of dying); persistent or significant disability/incapacity; congenital anomaly.",
+     "groups": [
+      {
+       "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG000",
+       "title": "Part 1: Placebo"
+      },
+      {
+       "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+       "id": "OG001",
+       "title": "Part 1: RO7046015 Low Dose"
+      },
+      {
+       "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+       "id": "OG002",
+       "title": "Part 1: RO7046015 High Dose"
+      }
+     ],
+     "paramType": "NUMBER",
+     "populationDescription": "All randomized participants receiving any dose of the study drug were included in the safety analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline to Week 52",
+     "title": "Percentage of Participants With Adverse Events (AEs) and Serious AEs (SAEs)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage of participants"
+    },
+    {
+     "anticipatedPostingDate": "2027-04",
+     "denomUnitsSelected": "Participants",
+     "description": "Samples of the participant's blood was taken to evaluate anti-drug antibodies (ADA). The number of ADA positive participants, Treatment-induced and Treatment-enhanced was reported. Treatment-induced = participants with ADA negative or missing data at baseline but develop an ADA response following exposure to the study drug. Treatment-enhanced = participants with ADA positive at baseline and the titre of one or more post-baseline samples is at least \\>=4 fold increase greater than the baseline titre sample.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "Baseline, Pre-dose (0 hours) on Weeks 4, 20, 36, 52, 56, 68, 80, and 104; at early termination (up to Week 104), and follow-up (12 weeks after last dose up to Week 116)",
+     "title": "Percentage of Participants With Anti-Drug Antibodies (ADAs) Against RO7046015",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-04",
+     "denomUnitsSelected": "Participants",
+     "description": "Clearance is a measure of the rate at which a drug is removed from the body.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "Predose (0 hours) and end of infusion (infusion length=2 hours or less) on Baseline, Weeks 4, 20, 36, 52, 56, 68, 80, and 104; at Day 7, Day 14, early termination (up to Week 104), and follow-up (12 weeks after last dose up to Week 116)",
+     "title": "Systemic Clearance (CL) of RO7046015",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-04",
+     "denomUnitsSelected": "Participants",
+     "description": "Volume of distribution is defined as the theoretical volume which the total amount of drug would need to be uniformly distributed to produce the desired plasma concentration of a drug.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "Predose (0 hours) and end of infusion (infusion length=2 hours or less) on Baseline, Weeks 4, 20, 36, 52, 56, 68, 80, and 104; at Day 7, Day 14, early termination (up to Week 104), and follow-up (12 weeks after last dose up to Week 116)",
+     "title": "Apparent Volume of Distribution (Vz/F) of RO7046015",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-04",
+     "denomUnitsSelected": "Participants",
+     "description": "AUC is defined as the measure of RO7046015 plasma concentration over time.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "Baseline over the duration of the study",
+     "title": "Area Under the Serum Concentration-Time Curve (AUC) of RO7046015 Over the Dosing Interval",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-04",
+     "denomUnitsSelected": "Participants",
+     "description": "Cmax is the maximum observed plasma concentration of RO7046015.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "Baseline over the duration of the study",
+     "title": "Maximum Observed Serum Concentration (Cmax) of RO7046015 at Steady-state",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-04",
+     "denomUnitsSelected": "Participants",
+     "description": "Cmin is the minimum observed plasma concentration of RO7046015.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "Baseline over the duration of the study",
+     "title": "Minimum Observed Serum Concentration (Ctrough) of RO7046015 at Steady-state",
+     "type": "SECONDARY"
+    }
+   ]
+  },
+  "participantFlowModule": {
+   "groups": [
+    {
+     "description": "Participants received placebo as intravenous (IV) infusion every four weeks (Q4W) up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to placebo during Part 1 of the study will be rerandomized to one of the two active doses using a 1:1 allocation ratio. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+     "id": "FG000",
+     "title": "Part 1: Placebo"
+    },
+    {
+     "description": "Participants received RO7046015 at a low dose level (1512 mg; for all body weights) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the low dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the low dose.",
+     "id": "FG001",
+     "title": "Part 1: RO7046015 Low Dose"
+    },
+    {
+     "description": "Participants received RO7046015 at a high dose level (3500 mg for body weight \\<65 kilogram (kg) or 4500 mg for body weight \\>=65 kg) as an IV infusion Q4W up to 52 weeks in Part 1.\n\nPart 2 of the study occurs from Weeks 56 to 104. Participants initially randomized to the high dose group will remain on their dose as assigned in Part 1. Part 2 is followed by 12 week termination follow-up safety visit and then by Part 3. Part 3 will last 260 weeks plus 12 weeks termination follow-up safety visit in which all participants will receive the high dose.",
+     "id": "FG002",
+     "title": "Part 1: RO7046015 High Dose"
+    }
+   ],
+   "periods": [
+    {
+     "dropWithdraws": [
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Adverse Event"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "1"
+        }
+       ],
+       "type": "Participant Moved out of Country"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "3"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "1"
+        }
+       ],
+       "type": "Withdrawal by Subject"
+      }
+     ],
+     "milestones": [
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "105"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "105"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "106"
+        }
+       ],
+       "type": "STARTED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "105"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "101"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "104"
+        }
+       ],
+       "comment": "Completed Part 1",
+       "type": "COMPLETED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "4"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "2"
+        }
+       ],
+       "type": "NOT COMPLETED"
+      }
+     ],
+     "title": "Overall Study"
+    }
+   ],
+   "preAssignmentDetails": "A total of 316 participants were randomized with a 1:1:1 allocation between the treatment groups (Placebo, Low-Dose prasinezumab and High-Dose prasinezumab)",
+   "recruitmentDetails": "Participants were enrolled at 57 sites in 5 different countries. 1 site had only 1 screen failure and no active participants were enrolled there."
+  }
+ }
+}

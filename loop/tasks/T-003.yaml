@@ -1,0 +1,40 @@
+id: T-003
+title: Fix judge-status and schema-validation bugs found by review
+owner: code
+classification: coding
+status: done
+closes:
+- judge_status_fixed
+objective: (1) claims.support_status must not return 'supported' when the judge verdict is 'unjudged' or 'not_addressed';
+  (2) nim.check_schema must reject wrong boolean/number/integer types; (3) evaluate.comparison must state in its output
+  that every system is judged against TrialMindKG's own retrieved facts; (4) numbers_page.PROTOCOL_TEXT must state the cap
+  actually used per run (G0 2M, G2/G3 run A 1M).
+read_first:
+- docs/sessions/2026-11-03_harness_review.md
+- pipelines/claims.py
+- pipelines/nim.py
+- pipelines/evaluate.py
+- pipelines/numbers_page.py
+editable_paths:
+- pipelines/claims.py
+- pipelines/nim.py
+- pipelines/evaluate.py
+- pipelines/numbers_page.py
+- tests/test_judge_status.py
+- tests/test_nim.py
+- tests/test_numbers_page.py
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+- data/snapshots_llm/
+acceptance:
+- tests/test_judge_status.py exists and passes
+- existing tests in test_claims, test_nim, test_evaluate, test_numbers_page still pass
+- re-run of evaluate on stand-ins changes only the reported counts, with the change explained in the commit message
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_judge_status.py tests/test_nim.py tests/test_numbers_page.py
+  tests/test_claims.py tests/test_evaluate.py
+stop_rule: Two rework rounds, then escalate to the owner.
+handoff: One commit [loop T-003].

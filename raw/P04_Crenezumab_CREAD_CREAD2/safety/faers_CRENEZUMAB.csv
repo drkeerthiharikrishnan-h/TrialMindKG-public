@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+CRENEZUMAB,patient.drug.medicinalproduct,12,APHASIA,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,ASTHENIA,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,BLOOD PRESSURE DECREASED,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,CARDIOVASCULAR DISORDER,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,CATARACT,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,COGNITIVE DISORDER,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,DEMENTIA ALZHEIMER^S TYPE,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,EPILEPSY,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,FATIGUE,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,HIP FRACTURE,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,MEMORY IMPAIRMENT,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,MIGRAINE,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,MUSCLE SPASMS,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,MUSCLE TWITCHING,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,NAUSEA,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,OSTEOPENIA,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,PRODUCT ADMINISTRATION ERROR,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,RENAL FAILURE,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,RESTLESSNESS,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,URINARY TRACT INFECTION,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,VARICOSE VEIN,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,VITAMIN B12 DEFICIENCY,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,WRONG TECHNIQUE IN PRODUCT USAGE PROCESS,10
+CRENEZUMAB,patient.drug.medicinalproduct,12,DRUG INTOLERANCE,5
+CRENEZUMAB,patient.drug.medicinalproduct,12,DEATH,1

@@ -1,0 +1,180 @@
+{
+ "page": "/",
+ "where": "",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 18,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/stored_answer/x05",
+  "GET /api/results",
+  "GET /api/neptune/status",
+  "GET /api/agent-loop",
+  "GET /api/agent-log",
+  "GET /api/downloads"
+ ],
+ "api_calls_last": [
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/stored_answer/x05",
+  "GET /api/results",
+  "GET /api/neptune/status",
+  "GET /api/agent-loop",
+  "GET /api/agent-log",
+  "GET /api/downloads"
+ ],
+ "evals": [],
+ "axe": [
+  {
+   "name": "first_screen",
+   "violations": []
+  },
+  {
+   "name": "worked_answer",
+   "violations": []
+  },
+  {
+   "name": "numbers",
+   "violations": []
+  },
+  {
+   "name": "explore",
+   "violations": []
+  },
+  {
+   "name": "judges",
+   "violations": []
+  }
+ ],
+ "snapshots": [
+  {
+   "name": "end",
+   "hash": "#judges",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": {
+    "user": "Why did TULIP-1 miss its primary endpoint, and what changed later?",
+    "context_fields": [
+     "Program",
+     "Trial",
+     "Drug",
+     "Target",
+     "Indication",
+     "Stated failure",
+     "Sponsor, year"
+    ],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "summary",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "Anifrolumab — TULIP-1. Stated failure: Phase III: SRI-4 primary endpoint missed. Diagnosis (claim 1.2, supported): The primary analysis missed the endpoint: mean difference -4.2 (95% CI -14.2 to 5.8), p=0.412, favoring neither group convincingly.",
+    "confidence": "confidence: moderate",
+    "confidence_reason": "19 of 19 claims cite strong sources; 7 rest on post-hoc or exploratory analyses (hypothesis-generating).",
+    "points": [
+     "The report keeps 19 verified claims in 4 of 4 sections; the verifier removed 2. 1.11.21.31.41.51.61.71.8 +11",
+     "Failure Diagnosis: 9 claims, 6 supported, 3 hypothesis-generating (1.4, 1.5, 1.6) (claims 1.1-1.9). 1.11.21.31.41.51.61.71.8 +1",
+     "Candidate Responder Population: 4 claims, 2 supported, 2 hypothesis-generating (2.2, 2.3) (claims 2.1-2.4). 2.12.22.32.4"
+    ],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 20,
+    "rows": 0,
+    "evidence_chips": 0,
+    "first_chip": "",
+    "checks": [
+     "ok: verifier: kept 19 claims, removed 2",
+     "ok: rewrites: 1 claim rewritten once after a failed check"
+    ],
+    "abstain": "",
+    "sections": [
+     "failure_diagnostician",
+     "population_stratifier",
+     "indication_explorer",
+     "redesign_advisor"
+    ],
+    "claims": 19,
+    "claim_evidence_chips": 24,
+    "subgraphs": 5
+   },
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 26,
+    "links": 32,
+    "sections": 11,
+    "tables": 8
+   },
+   "headings": [
+    "What the agent did, in five steps",
+    "When the graph has nothing: an honest \"no evidence\"",
+    "The dated log",
+    "The agent loop in the brief, step by step",
+    "1. Ingest",
+    "2. Filter",
+    "3. Clean",
+    "4. Limit",
+    "5. Maintain",
+    "What is autonomous and what is not",
+    "Downloads"
+   ]
+  }
+ ]
+}

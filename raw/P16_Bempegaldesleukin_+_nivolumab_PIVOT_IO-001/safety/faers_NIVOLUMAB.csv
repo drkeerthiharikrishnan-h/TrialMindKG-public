@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,DEATH,11950
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,MALIGNANT NEOPLASM PROGRESSION,9878
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,OFF LABEL USE,6353
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,DIARRHOEA,5251
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,FATIGUE,4195
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,PYREXIA,3721
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,INTENTIONAL PRODUCT USE ISSUE,3327
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,NAUSEA,3182
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,RASH,3093
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,DECREASED APPETITE,2911
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,DYSPNOEA,2692
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,PNEUMONIA,2471
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,COLITIS,2280
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,PNEUMONITIS,2190
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,HYPOTHYROIDISM,2112
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,ASTHENIA,2101
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,VOMITING,2084
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,ACUTE KIDNEY INJURY,1893
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,WEIGHT DECREASED,1857
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,PRURITUS,1790
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,ANAEMIA,1770
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,DRUG INEFFECTIVE,1760
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,INTERSTITIAL LUNG DISEASE,1668
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,GENERAL PHYSICAL HEALTH DETERIORATION,1593
+NIVOLUMAB,patient.drug.openfda.generic_name,96645,MALAISE,1560

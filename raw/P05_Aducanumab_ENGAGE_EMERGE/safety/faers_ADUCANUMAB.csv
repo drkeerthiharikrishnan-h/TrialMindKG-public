@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+ADUCANUMAB,patient.drug.medicinalproduct,104,AMYLOID RELATED IMAGING ABNORMALITY-OEDEMA/EFFUSION,53
+ADUCANUMAB,patient.drug.medicinalproduct,104,AMYLOID RELATED IMAGING ABNORMALITY-MICROHAEMORRHAGES AND HAEMOSIDERIN DEPOSITS,40
+ADUCANUMAB,patient.drug.medicinalproduct,104,SUPERFICIAL SIDEROSIS OF CENTRAL NERVOUS SYSTEM,10
+ADUCANUMAB,patient.drug.medicinalproduct,104,HEADACHE,8
+ADUCANUMAB,patient.drug.medicinalproduct,104,SEIZURE,6
+ADUCANUMAB,patient.drug.medicinalproduct,104,DRUG INEFFECTIVE,5
+ADUCANUMAB,patient.drug.medicinalproduct,104,THERAPY NON-RESPONDER,4
+ADUCANUMAB,patient.drug.medicinalproduct,104,CONFUSIONAL STATE,3
+ADUCANUMAB,patient.drug.medicinalproduct,104,BREAST CANCER,2
+ADUCANUMAB,patient.drug.medicinalproduct,104,DIZZINESS,2
+ADUCANUMAB,patient.drug.medicinalproduct,104,FALL,2
+ADUCANUMAB,patient.drug.medicinalproduct,104,GASTRIC CANCER,2
+ADUCANUMAB,patient.drug.medicinalproduct,104,MIGRAINE,2
+ADUCANUMAB,patient.drug.medicinalproduct,104,NAUSEA,2
+ADUCANUMAB,patient.drug.medicinalproduct,104,ACUTE CORONARY SYNDROME,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,AMYLOID RELATED IMAGING ABNORMALITIES,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,ANKLE FRACTURE,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,BALANCE DISORDER,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,BLOOD THYROID STIMULATING HORMONE INCREASED,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,CATARACT,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,CEREBRAL HAEMATOMA,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,CEREBRAL ISCHAEMIA,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,COMPLICATED FRACTURE,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,CONSTIPATION,1
+ADUCANUMAB,patient.drug.medicinalproduct,104,DEPRESSION,1

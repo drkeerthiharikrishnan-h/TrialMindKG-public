@@ -1,0 +1,39 @@
+# Source card: MONDO disease ontology hierarchy (L2 context layer on top of Pharos L0).
+# Data: data/external/mondo/mondo.json (scripts/download_latest_layers.sh, Mac) ->
+#       python pipelines/ontology_prepare.py mondo -> data/ontologies/mondo/{terms,relations}.tsv.gz
+# Read by the generic builder pipelines/kgbuilder/engine.py.
+#
+# What it adds: every live MONDO term as a biolink:Disease node, and the is_a tree as biolink:subclass_of edges
+# (child -> parent). Pharos diseases carry MONDO ids (sources/pharos.yaml maps UMLS/DOID to MONDO), so the tree
+# joins them and gives the GNN and the multi-hop questions a path between related diseases (standards criterion:
+# the organisers' ontology classes and IRIs; usability: "diseases related to X").
+# Not a claim about biology, so pruning never removes these edges (prune.never_prune_predicates).
+# The release is written by ontology_prepare.py to data/ontologies/mondo/version.txt and outputs/mondo_hierarchy/prepare.md.
+name: mondo_hierarchy
+version: "download 2026-10-25 (release IRI in data/ontologies/mondo/version.txt)"
+tables_dir: data/ontologies/mondo
+aggregator: infores:mondo
+layer: L2
+
+nodes:
+  - table: terms
+    id: {column: id}                  # MONDO:0005015 (already a CURIE)
+    category: biolink:Disease
+    name: name
+
+edges:
+  - name: mondo_is_a
+    table: relations
+    filter: {relation: is_a}
+    subject: {column: subject, category: biolink:Disease}
+    predicate: biolink:subclass_of
+    object: {column: object, category: biolink:Disease}
+    record_columns: [subject, object]
+    source: "MONDO is_a"
+    primary_knowledge_source: "infores:mondo"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "rdfs:subClassOf"}
+
+prune:
+  never_prune_predicates: [biolink:subclass_of]

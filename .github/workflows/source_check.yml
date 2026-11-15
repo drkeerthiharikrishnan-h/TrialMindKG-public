@@ -1,0 +1,71 @@
+# Maintain, the part that runs by itself (docs/AGENT_LOOP.md, docs/MAINTAIN.md).
+#
+# Every week, and when started by hand (Actions tab -> "Source check" -> Run workflow), this asks each source for
+# its current release identifier and compares it with what the repository's manifests and source cards say was
+# pulled. One small request per source: a release page, a release feed or the source's own version query. It
+# downloads no data, rebuilds nothing and changes no file in the repository.
+#
+# It writes a dated report (what changed upstream, which layers would be rebuilt), shows it on the run's page,
+# keeps it as a run artifact, and opens an issue when a source has a newer release. A scientist then decides
+# whether to take the release and runs docs/MAINTAIN.md on the computer that holds the data.
+#
+# No secrets: the sources are public. The issue is opened with the token GitHub gives every run. A source that
+# needs a login (the AACT registry export) is skipped and the report says so.
+name: Source check
+
+on:
+  schedule:
+    - cron: "23 5 * * 1"        # Mondays 05:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: source-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install what the check needs (two small packages, not the project's full requirements)
+        run: pip install --quiet pyyaml requests
+
+      - name: Compare each source's current release with the repository's manifests
+        run: python pipelines/maintain.py source-check --out source_check
+
+      - name: Show the report on the run's page
+        run: cat source_check/report_*.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep the dated report
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-check-report
+          path: |
+            source_check/report_*.md
+            source_check/source_check.json
+          retention-days: 90
+
+      - name: Decide whether to open an issue (pipelines/maintain.py issue_decision, tested)
+        id: decide
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue list --state open --limit 1000 --json title > open_issues.json
+          python pipelines/maintain.py issue-decision source_check/source_check.json --open-issues open_issues.json --github-output "$GITHUB_OUTPUT"
+
+      - name: Open an issue when a source has a newer release
+        if: steps.decide.outputs.open == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: ${{ steps.decide.outputs.title }}
+        run: gh issue create --title "$TITLE" --body-file source_check/report_*.md

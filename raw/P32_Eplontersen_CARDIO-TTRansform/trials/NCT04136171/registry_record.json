@@ -1,0 +1,1755 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D057165",
+     "term": "Proteostasis Deficiencies"
+    },
+    {
+     "id": "D008659",
+     "term": "Metabolic Diseases"
+    },
+    {
+     "id": "D009750",
+     "term": "Nutritional and Metabolic Diseases"
+    },
+    {
+     "id": "D006331",
+     "term": "Heart Diseases"
+    },
+    {
+     "id": "D002318",
+     "term": "Cardiovascular Diseases"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D000686",
+     "term": "Amyloidosis"
+    },
+    {
+     "id": "D009202",
+     "term": "Cardiomyopathies"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "C000730926",
+     "term": "eplontersen"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "hasResults": false,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "description": "Eplontersen by subcutaneous injection once every 4 weeks",
+     "interventionNames": [
+      "Drug: Eplontersen"
+     ],
+     "label": "Eplontersen",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "Eplontersen-matching placebo by subcutaneous injection once every 4 weeks",
+     "interventionNames": [
+      "Drug: Placebo"
+     ],
+     "label": "Placebo",
+     "type": "PLACEBO_COMPARATOR"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Eplontersen"
+     ],
+     "description": "Eplontersen by subcutaneous injection",
+     "name": "Eplontersen",
+     "otherNames": [
+      "ION-682884",
+      "IONIS-TTR-LRx"
+     ],
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Placebo"
+     ],
+     "description": "Eplontersen-matching placebo by subcutaneous injection",
+     "name": "Placebo",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Transthyretin-Mediated Amyloid Cardiomyopathy (ATTR CM)"
+   ],
+   "keywords": [
+    "TTR",
+    "Amyloidosis",
+    "Cardiomyopathy"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Phoenix",
+     "country": "United States",
+     "facility": "Mayo Clinic - Arizona",
+     "geoPoint": {
+      "lat": 33.44838,
+      "lon": -112.07404
+     },
+     "state": "Arizona",
+     "zip": "85054"
+    },
+    {
+     "city": "La Jolla",
+     "country": "United States",
+     "facility": "Altman Clinical and Translational Research Institute Center for Clinical Research",
+     "geoPoint": {
+      "lat": 32.84727,
+      "lon": -117.2742
+     },
+     "state": "California",
+     "zip": "92037"
+    },
+    {
+     "city": "Los Angeles",
+     "country": "United States",
+     "facility": "Cedars-Sinai Medical Center",
+     "geoPoint": {
+      "lat": 34.05223,
+      "lon": -118.24368
+     },
+     "state": "California",
+     "zip": "90048"
+    },
+    {
+     "city": "San Francisco",
+     "country": "United States",
+     "facility": "University of California, San Francisco (UCSF) - Medical Center",
+     "geoPoint": {
+      "lat": 37.77493,
+      "lon": -122.41942
+     },
+     "state": "California",
+     "zip": "94143"
+    },
+    {
+     "city": "Stanford",
+     "country": "United States",
+     "facility": "Stanford Hospital",
+     "geoPoint": {
+      "lat": 37.42411,
+      "lon": -122.16608
+     },
+     "state": "California",
+     "zip": "94305"
+    },
+    {
+     "city": "Aurora",
+     "country": "United States",
+     "facility": "University of Colorado Hospital - Anschutz Medical Campus",
+     "geoPoint": {
+      "lat": 39.72943,
+      "lon": -104.83192
+     },
+     "state": "Colorado",
+     "zip": "80045"
+    },
+    {
+     "city": "Washington D.C.",
+     "country": "United States",
+     "facility": "MedStar Washington Hospital Center",
+     "geoPoint": {
+      "lat": 38.89511,
+      "lon": -77.03637
+     },
+     "state": "District of Columbia",
+     "zip": "20010"
+    },
+    {
+     "city": "Washington D.C.",
+     "country": "United States",
+     "facility": "The George Washington Medical Faculty Associates - Foggy Bottom North Pavilion",
+     "geoPoint": {
+      "lat": 38.89511,
+      "lon": -77.03637
+     },
+     "state": "District of Columbia",
+     "zip": "20037"
+    },
+    {
+     "city": "Weston",
+     "country": "United States",
+     "facility": "Cleveland Clinic Florida",
+     "geoPoint": {
+      "lat": 26.10037,
+      "lon": -80.39977
+     },
+     "state": "Florida",
+     "zip": "33331"
+    },
+    {
+     "city": "Atlanta",
+     "country": "United States",
+     "facility": "Piedmont Heart of Fayetteville",
+     "geoPoint": {
+      "lat": 33.749,
+      "lon": -84.38798
+     },
+     "state": "Georgia",
+     "zip": "30309"
+    },
+    {
+     "city": "Atlanta",
+     "country": "United States",
+     "facility": "Emory Heart and Vascular Center - Emory Clifton Campus",
+     "geoPoint": {
+      "lat": 33.749,
+      "lon": -84.38798
+     },
+     "state": "Georgia",
+     "zip": "30322"
+    },
+    {
+     "city": "Fayetteville",
+     "country": "United States",
+     "facility": "Piedmont Heart of Fayetteville",
+     "geoPoint": {
+      "lat": 33.44873,
+      "lon": -84.45493
+     },
+     "state": "Georgia",
+     "zip": "30214"
+    },
+    {
+     "city": "Chicago",
+     "country": "United States",
+     "facility": "Northwestern University",
+     "geoPoint": {
+      "lat": 41.85003,
+      "lon": -87.65005
+     },
+     "state": "Illinois",
+     "zip": "60611"
+    },
+    {
+     "city": "Chicago",
+     "country": "United States",
+     "facility": "The University of Chicago Medical Center",
+     "geoPoint": {
+      "lat": 41.85003,
+      "lon": -87.65005
+     },
+     "state": "Illinois",
+     "zip": "60637"
+    },
+    {
+     "city": "Maywood",
+     "country": "United States",
+     "facility": "Loyola University Medical Center",
+     "geoPoint": {
+      "lat": 41.8792,
+      "lon": -87.84312
+     },
+     "state": "Illinois",
+     "zip": "60153"
+    },
+    {
+     "city": "Indianapolis",
+     "country": "United States",
+     "facility": "Indiana University Health",
+     "geoPoint": {
+      "lat": 39.76838,
+      "lon": -86.15804
+     },
+     "state": "Indiana",
+     "zip": "46202"
+    },
+    {
+     "city": "Kansas City",
+     "country": "United States",
+     "facility": "University of Kansas Medical Center",
+     "geoPoint": {
+      "lat": 39.11417,
+      "lon": -94.62746
+     },
+     "state": "Kansas",
+     "zip": "66160"
+    },
+    {
+     "city": "New Orleans",
+     "country": "United States",
+     "facility": "Tulane University Heart and Vascular Institute",
+     "geoPoint": {
+      "lat": 29.95465,
+      "lon": -90.07507
+     },
+     "state": "Louisiana",
+     "zip": "70112"
+    },
+    {
+     "city": "New Orleans",
+     "country": "United States",
+     "facility": "Ochsner Health System",
+     "geoPoint": {
+      "lat": 29.95465,
+      "lon": -90.07507
+     },
+     "state": "Louisiana",
+     "zip": "70121"
+    },
+    {
+     "city": "Baltimore",
+     "country": "United States",
+     "facility": "University of Maryland Medical Center",
+     "geoPoint": {
+      "lat": 39.29038,
+      "lon": -76.61219
+     },
+     "state": "Maryland",
+     "zip": "21201"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Massachusetts General Hospital",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02114"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Brigham and Women's Hospital",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02115"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Boston University School of Medicine",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02118"
+    },
+    {
+     "city": "Detroit",
+     "country": "United States",
+     "facility": "Henry Ford Health System",
+     "geoPoint": {
+      "lat": 42.33143,
+      "lon": -83.04575
+     },
+     "state": "Michigan",
+     "zip": "48202"
+    },
+    {
+     "city": "Minneapolis",
+     "country": "United States",
+     "facility": "Minneapolis Heart Institute",
+     "geoPoint": {
+      "lat": 44.97997,
+      "lon": -93.26384
+     },
+     "state": "Minnesota",
+     "zip": "55407"
+    },
+    {
+     "city": "Rochester",
+     "country": "United States",
+     "facility": "Mayo Clinic - Rochester",
+     "geoPoint": {
+      "lat": 44.02163,
+      "lon": -92.4699
+     },
+     "state": "Minnesota",
+     "zip": "55905"
+    },
+    {
+     "city": "Kansas City",
+     "country": "United States",
+     "facility": "Saint Luke's Hospital of Kansas City",
+     "geoPoint": {
+      "lat": 39.09973,
+      "lon": -94.57857
+     },
+     "state": "Missouri",
+     "zip": "64111"
+    },
+    {
+     "city": "St Louis",
+     "country": "United States",
+     "facility": "Barnes-Jewish Hospital",
+     "geoPoint": {
+      "lat": 38.62727,
+      "lon": -90.19789
+     },
+     "state": "Missouri",
+     "zip": "63110"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "New York University Langone Cardiology Associates",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10016"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Columbia University Irving Medical Center",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10034"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Weill Cornell Medicine Cardiology",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10065"
+    },
+    {
+     "city": "Rosedale",
+     "country": "United States",
+     "facility": "Laurelton Heart Specialists",
+     "geoPoint": {
+      "lat": 40.66205,
+      "lon": -73.73541
+     },
+     "state": "New York",
+     "zip": "11422"
+    },
+    {
+     "city": "Chapel Hill",
+     "country": "United States",
+     "facility": "The University of North Carolina at Chapel Hill",
+     "geoPoint": {
+      "lat": 35.9132,
+      "lon": -79.05584
+     },
+     "state": "North Carolina",
+     "zip": "27599"
+    },
+    {
+     "city": "Durham",
+     "country": "United States",
+     "facility": "Duke University Medical Center",
+     "geoPoint": {
+      "lat": 35.99403,
+      "lon": -78.89862
+     },
+     "state": "North Carolina",
+     "zip": "27710"
+    },
+    {
+     "city": "Cincinnati",
+     "country": "United States",
+     "facility": "Carl and Edyth Lindner Research Center at The Christ Hospital",
+     "geoPoint": {
+      "lat": 39.12711,
+      "lon": -84.51439
+     },
+     "state": "Ohio",
+     "zip": "45219"
+    },
+    {
+     "city": "Cleveland",
+     "country": "United States",
+     "facility": "University Hospitals Cleveland Medical Center",
+     "geoPoint": {
+      "lat": 41.4995,
+      "lon": -81.69541
+     },
+     "state": "Ohio",
+     "zip": "44106"
+    },
+    {
+     "city": "Cleveland",
+     "country": "United States",
+     "facility": "Cleveland Clinic Main Campus",
+     "geoPoint": {
+      "lat": 41.4995,
+      "lon": -81.69541
+     },
+     "state": "Ohio",
+     "zip": "44195"
+    },
+    {
+     "city": "Columbus",
+     "country": "United States",
+     "facility": "The Ohio State University College of Medicine",
+     "geoPoint": {
+      "lat": 39.96118,
+      "lon": -82.99879
+     },
+     "state": "Ohio",
+     "zip": "43210"
+    },
+    {
+     "city": "Portland",
+     "country": "United States",
+     "facility": "Oregon Health and Science University",
+     "geoPoint": {
+      "lat": 45.52345,
+      "lon": -122.67621
+     },
+     "state": "Oregon",
+     "zip": "97239"
+    },
+    {
+     "city": "Lancaster",
+     "country": "United States",
+     "facility": "Lancaster General Hospital",
+     "geoPoint": {
+      "lat": 40.03788,
+      "lon": -76.30551
+     },
+     "state": "Pennsylvania",
+     "zip": "17602"
+    },
+    {
+     "city": "Philadelphia",
+     "country": "United States",
+     "facility": "Penn Presbyterian Medical Center",
+     "geoPoint": {
+      "lat": 39.95238,
+      "lon": -75.16362
+     },
+     "state": "Pennsylvania",
+     "zip": "19104"
+    },
+    {
+     "city": "Pittsburgh",
+     "country": "United States",
+     "facility": "University of Pittsburgh Medical School",
+     "geoPoint": {
+      "lat": 40.44062,
+      "lon": -79.99589
+     },
+     "state": "Pennsylvania",
+     "zip": "15261"
+    },
+    {
+     "city": "Charleston",
+     "country": "United States",
+     "facility": "Medical University of South Carolina",
+     "geoPoint": {
+      "lat": 32.77632,
+      "lon": -79.93275
+     },
+     "state": "South Carolina",
+     "zip": "29425"
+    },
+    {
+     "city": "Nashville",
+     "country": "United States",
+     "facility": "Vanderbilt University Medical Center",
+     "geoPoint": {
+      "lat": 36.16589,
+      "lon": -86.78444
+     },
+     "state": "Tennessee",
+     "zip": "37232"
+    },
+    {
+     "city": "Dallas",
+     "country": "United States",
+     "facility": "University of Texas Southwestern Medical Center",
+     "geoPoint": {
+      "lat": 32.78306,
+      "lon": -96.80667
+     },
+     "state": "Texas",
+     "zip": "75390"
+    },
+    {
+     "city": "Houston",
+     "country": "United States",
+     "facility": "Houston Methodist Hospital",
+     "geoPoint": {
+      "lat": 29.76328,
+      "lon": -95.36327
+     },
+     "state": "Texas",
+     "zip": "77030"
+    },
+    {
+     "city": "Salt Lake City",
+     "country": "United States",
+     "facility": "University of Utah",
+     "geoPoint": {
+      "lat": 40.76078,
+      "lon": -111.89105
+     },
+     "state": "Utah",
+     "zip": "84112"
+    },
+    {
+     "city": "Richmond",
+     "country": "United States",
+     "facility": "Virginia Commonwealth University (VCU)",
+     "geoPoint": {
+      "lat": 37.55376,
+      "lon": -77.46026
+     },
+     "state": "Virginia",
+     "zip": "23298"
+    },
+    {
+     "city": "Seattle",
+     "country": "United States",
+     "facility": "University of Washington",
+     "geoPoint": {
+      "lat": 47.60621,
+      "lon": -122.33207
+     },
+     "state": "Washington",
+     "zip": "98195"
+    },
+    {
+     "city": "Madison",
+     "country": "United States",
+     "facility": "University of Wisconsin - Madison",
+     "geoPoint": {
+      "lat": 43.07305,
+      "lon": -89.40123
+     },
+     "state": "Wisconsin",
+     "zip": "53792"
+    },
+    {
+     "city": "Milwaukee",
+     "country": "United States",
+     "facility": "Froedtert & Medical College of Wisconsin",
+     "geoPoint": {
+      "lat": 43.0389,
+      "lon": -87.90647
+     },
+     "state": "Wisconsin",
+     "zip": "53226"
+    },
+    {
+     "city": "Ciudad Autonoma de Buenos Aires",
+     "country": "Argentina",
+     "facility": "Instituto Cardiovascular de Buenos Aires",
+     "state": "Buenos Aires",
+     "zip": "C1428ART"
+    },
+    {
+     "city": "Ciudad Autónoma de Buenos Aires",
+     "country": "Argentina",
+     "facility": "Hospital Italiano de Buenos Aires",
+     "state": "Buenos Aires",
+     "zip": "C1199ABB"
+    },
+    {
+     "city": "Liverpool",
+     "country": "Australia",
+     "facility": "Liverpool Hospital",
+     "geoPoint": {
+      "lat": -33.91938,
+      "lon": 150.92588
+     },
+     "state": "New South Wales",
+     "zip": "2170"
+    },
+    {
+     "city": "Westmead",
+     "country": "Australia",
+     "facility": "The Westmead Institute for Medical Research",
+     "geoPoint": {
+      "lat": -33.80383,
+      "lon": 150.98768
+     },
+     "state": "New South Wales",
+     "zip": "NSW 2145"
+    },
+    {
+     "city": "Woolloongabba",
+     "country": "Australia",
+     "facility": "Princess Alexandra Hospital",
+     "geoPoint": {
+      "lat": -27.48855,
+      "lon": 153.03655
+     },
+     "state": "Queensland",
+     "zip": "4102"
+    },
+    {
+     "city": "Leabrook",
+     "country": "Australia",
+     "facility": "Advara Heartcare",
+     "geoPoint": {
+      "lat": -34.92976,
+      "lon": 138.65862
+     },
+     "state": "South Australia",
+     "zip": "5068"
+    },
+    {
+     "city": "Hobart",
+     "country": "Australia",
+     "facility": "Royal Hobart Hospital",
+     "geoPoint": {
+      "lat": -42.87936,
+      "lon": 147.32941
+     },
+     "state": "Tasmania",
+     "zip": "7000"
+    },
+    {
+     "city": "Box Hill",
+     "country": "Australia",
+     "facility": "Box Hill Hospital",
+     "geoPoint": {
+      "lat": -37.81887,
+      "lon": 145.12545
+     },
+     "state": "Victoria",
+     "zip": "3128"
+    },
+    {
+     "city": "Joondalup",
+     "country": "Australia",
+     "facility": "Advara HeartCare",
+     "geoPoint": {
+      "lat": -31.74445,
+      "lon": 115.76835
+     },
+     "state": "Western Australia",
+     "zip": "6027"
+    },
+    {
+     "city": "Murdoch",
+     "country": "Australia",
+     "facility": "Advara HeartCare Murdoch",
+     "geoPoint": {
+      "lat": -32.06987,
+      "lon": 115.83757
+     },
+     "state": "Western Australia",
+     "zip": "6150"
+    },
+    {
+     "city": "Graz",
+     "country": "Austria",
+     "facility": "Medizinische Universität Graz",
+     "geoPoint": {
+      "lat": 47.06733,
+      "lon": 15.44197
+     },
+     "state": "Styria",
+     "zip": "8036"
+    },
+    {
+     "city": "Innsbruck",
+     "country": "Austria",
+     "facility": "Medizinische Universität Innsbruck",
+     "geoPoint": {
+      "lat": 47.26266,
+      "lon": 11.39454
+     },
+     "state": "Tyrol",
+     "zip": "6020"
+    },
+    {
+     "city": "Vienna",
+     "country": "Austria",
+     "facility": "Medizinische Universität Wien",
+     "geoPoint": {
+      "lat": 48.20849,
+      "lon": 16.37208
+     },
+     "zip": "1090"
+    },
+    {
+     "city": "Genk",
+     "country": "Belgium",
+     "facility": "Ziekenhuis Oost-Limburg - Campus Sint-Jan",
+     "geoPoint": {
+      "lat": 50.965,
+      "lon": 5.50082
+     },
+     "state": "Limburg",
+     "zip": "3600"
+    },
+    {
+     "city": "Bruges",
+     "country": "Belgium",
+     "facility": "Algemeen Ziekenhuis Sint-Jan Brugge-Oostende - Campus Sint-Jan",
+     "geoPoint": {
+      "lat": 51.20892,
+      "lon": 3.22424
+     },
+     "state": "West-Vlaanderen",
+     "zip": "8000"
+    },
+    {
+     "city": "Campinas",
+     "country": "Brazil",
+     "facility": "Universidade Estadual de Campinas",
+     "geoPoint": {
+      "lat": -22.90556,
+      "lon": -47.06083
+     },
+     "zip": "13083881"
+    },
+    {
+     "city": "Porto Alegre",
+     "country": "Brazil",
+     "facility": "Hospital Moinhos de Vento",
+     "geoPoint": {
+      "lat": -30.03283,
+      "lon": -51.23019
+     },
+     "zip": "90560-030"
+    },
+    {
+     "city": "Ribeirão Preto",
+     "country": "Brazil",
+     "facility": "Centro Avançado de Pesquisa e Estudos para o Diagnóstico CAPED",
+     "geoPoint": {
+      "lat": -21.1775,
+      "lon": -47.81028
+     },
+     "zip": "14026-900"
+    },
+    {
+     "city": "Ribeirão Preto",
+     "country": "Brazil",
+     "facility": "Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto",
+     "geoPoint": {
+      "lat": -21.1775,
+      "lon": -47.81028
+     },
+     "zip": "14040-030"
+    },
+    {
+     "city": "São Paulo",
+     "country": "Brazil",
+     "facility": "A Beneficência Portuguesa de São Paulo - Unidade Mirante",
+     "geoPoint": {
+      "lat": -23.5475,
+      "lon": -46.63611
+     },
+     "zip": "01323-030"
+    },
+    {
+     "city": "São Paulo",
+     "country": "Brazil",
+     "facility": "Instituto Dante Pazzanese de Cardiologia",
+     "geoPoint": {
+      "lat": -23.5475,
+      "lon": -46.63611
+     },
+     "zip": "04012-909"
+    },
+    {
+     "city": "São Paulo",
+     "country": "Brazil",
+     "facility": "Instituto do Coração de São Paulo",
+     "geoPoint": {
+      "lat": -23.5475,
+      "lon": -46.63611
+     },
+     "zip": "05403-000"
+    },
+    {
+     "city": "Calgary",
+     "country": "Canada",
+     "facility": "University of Calgary",
+     "geoPoint": {
+      "lat": 51.05011,
+      "lon": -114.08529
+     },
+     "state": "Alberta",
+     "zip": "T2N 4Z6"
+    },
+    {
+     "city": "Vancouver",
+     "country": "Canada",
+     "facility": "Gordon and Leslie Diamond Health Care Centre",
+     "geoPoint": {
+      "lat": 49.24966,
+      "lon": -123.11934
+     },
+     "state": "British Columbia",
+     "zip": "V5Z 1M9"
+    },
+    {
+     "city": "London",
+     "country": "Canada",
+     "facility": "University Hospital - London Health Sciences Centre",
+     "geoPoint": {
+      "lat": 42.98339,
+      "lon": -81.23304
+     },
+     "state": "Ontario",
+     "zip": "N6A 5A5"
+    },
+    {
+     "city": "Toronto",
+     "country": "Canada",
+     "facility": "Toronto General Hospital",
+     "geoPoint": {
+      "lat": 43.70643,
+      "lon": -79.39864
+     },
+     "state": "Ontario",
+     "zip": "M5G 2M9"
+    },
+    {
+     "city": "Montreal",
+     "country": "Canada",
+     "facility": "Centre Hospitalier de l'Université de Montréal (CHUM)",
+     "geoPoint": {
+      "lat": 45.50884,
+      "lon": -73.58781
+     },
+     "state": "Quebec",
+     "zip": "H2X 0C1"
+    },
+    {
+     "city": "Rimouski",
+     "country": "Canada",
+     "facility": "Hôpital Regional de Rimouski",
+     "geoPoint": {
+      "lat": 48.44879,
+      "lon": -68.52396
+     },
+     "state": "Quebec",
+     "zip": "G5L 5T1"
+    },
+    {
+     "city": "Brno",
+     "country": "Czechia",
+     "facility": "Fakultní Nemocnice u sv. Anny v Brn",
+     "geoPoint": {
+      "lat": 49.19522,
+      "lon": 16.60796
+     },
+     "state": "South Moravian",
+     "zip": "656 91"
+    },
+    {
+     "city": "Prague",
+     "country": "Czechia",
+     "facility": "Vseobecna Fakultni Nemocnice v Praze",
+     "geoPoint": {
+      "lat": 50.08804,
+      "lon": 14.42076
+     },
+     "zip": "128 08"
+    },
+    {
+     "city": "Prague",
+     "country": "Czechia",
+     "facility": "Institut Klinické a Experimentální Medicíny",
+     "geoPoint": {
+      "lat": 50.08804,
+      "lon": 14.42076
+     },
+     "zip": "140 21"
+    },
+    {
+     "city": "Copenhagen",
+     "country": "Denmark",
+     "facility": "Rigshospitalet",
+     "geoPoint": {
+      "lat": 55.67594,
+      "lon": 12.56553
+     },
+     "state": "Capital Region",
+     "zip": "2100"
+    },
+    {
+     "city": "Odense",
+     "country": "Denmark",
+     "facility": "Odense Universitetshospital",
+     "geoPoint": {
+      "lat": 55.39594,
+      "lon": 10.38831
+     },
+     "state": "Region Syddanmark",
+     "zip": "5000"
+    },
+    {
+     "city": "Toulouse",
+     "country": "France",
+     "facility": "Hôpital Rangueil",
+     "geoPoint": {
+      "lat": 43.60426,
+      "lon": 1.44367
+     },
+     "state": "Occitanie",
+     "zip": "31059"
+    },
+    {
+     "city": "Créteil",
+     "country": "France",
+     "facility": "Hôpitaux Universitaires Henri Mondor",
+     "geoPoint": {
+      "lat": 48.79266,
+      "lon": 2.46569
+     },
+     "zip": "94010"
+    },
+    {
+     "city": "La Roche-sur-Yon",
+     "country": "France",
+     "facility": "Centre Hospitalier Départemental Vendée",
+     "geoPoint": {
+      "lat": 46.66974,
+      "lon": -1.42757
+     },
+     "zip": "85925"
+    },
+    {
+     "city": "Marseille",
+     "country": "France",
+     "facility": "Hôpital de la Timone",
+     "geoPoint": {
+      "lat": 43.29695,
+      "lon": 5.38107
+     },
+     "zip": "13005"
+    },
+    {
+     "city": "Pessac",
+     "country": "France",
+     "facility": "Hôpital Haut-Lévêque",
+     "geoPoint": {
+      "lat": 44.80565,
+      "lon": -0.6324
+     },
+     "zip": "33604"
+    },
+    {
+     "city": "Saint-Herblain",
+     "country": "France",
+     "facility": "Centre Hospitalier Universitaire De Nantes - Hôpital Nord Laennec",
+     "geoPoint": {
+      "lat": 47.21154,
+      "lon": -1.651
+     },
+     "zip": "44805"
+    },
+    {
+     "city": "Homburg",
+     "country": "Germany",
+     "facility": "Universitätsklinikum des Saarlandes",
+     "geoPoint": {
+      "lat": 49.32637,
+      "lon": 7.33867
+     },
+     "state": "Saarland",
+     "zip": "66421"
+    },
+    {
+     "city": "Cologne",
+     "country": "Germany",
+     "facility": "Uniklinik Koln",
+     "geoPoint": {
+      "lat": 50.93333,
+      "lon": 6.95
+     },
+     "zip": "50937"
+    },
+    {
+     "city": "Heidelberg",
+     "country": "Germany",
+     "facility": "Universitaetsklinikum Heidelberg - Zentrum fur Innere Medizin",
+     "geoPoint": {
+      "lat": 49.40768,
+      "lon": 8.69079
+     },
+     "zip": "69120"
+    },
+    {
+     "city": "Münster",
+     "country": "Germany",
+     "facility": "Universitätsklinikum Münster",
+     "geoPoint": {
+      "lat": 51.96236,
+      "lon": 7.62571
+     },
+     "zip": "48149"
+    },
+    {
+     "city": "Würzburg",
+     "country": "Germany",
+     "facility": "Universitätsklinikum Würzburg",
+     "geoPoint": {
+      "lat": 49.79391,
+      "lon": 9.95121
+     },
+     "zip": "97078"
+    },
+    {
+     "city": "Athens",
+     "country": "Greece",
+     "facility": "Alexandra General Hospital",
+     "geoPoint": {
+      "lat": 37.98376,
+      "lon": 23.72784
+     },
+     "zip": "11528"
+    },
+    {
+     "city": "Haifa",
+     "country": "Israel",
+     "facility": "Rambam Health Care Campus",
+     "geoPoint": {
+      "lat": 32.81303,
+      "lon": 34.99928
+     },
+     "zip": "3109601"
+    },
+    {
+     "city": "Jerusalem",
+     "country": "Israel",
+     "facility": "Hadassah University Hospital Ein Kerem",
+     "geoPoint": {
+      "lat": 31.76904,
+      "lon": 35.21633
+     },
+     "zip": "9112001"
+    },
+    {
+     "city": "Rehovot",
+     "country": "Israel",
+     "facility": "Kaplan Medical Center",
+     "geoPoint": {
+      "lat": 31.89421,
+      "lon": 34.81199
+     }
+    },
+    {
+     "city": "Ancona",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliero Universitaria Delle Marche",
+     "geoPoint": {
+      "lat": 43.60717,
+      "lon": 13.5103
+     },
+     "zip": "60126"
+    },
+    {
+     "city": "Bologna",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliero-Universitaria di Bologna Policlinico Sant Orsola-Malpighi",
+     "geoPoint": {
+      "lat": 44.49381,
+      "lon": 11.33875
+     },
+     "zip": "40138"
+    },
+    {
+     "city": "Florence",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliero - Universitaria Careggi",
+     "geoPoint": {
+      "lat": 43.77925,
+      "lon": 11.24626
+     },
+     "zip": "50139"
+    },
+    {
+     "city": "Padua",
+     "country": "Italy",
+     "facility": "Azienda Ospedale - Università di Padova",
+     "geoPoint": {
+      "lat": 45.40797,
+      "lon": 11.88586
+     },
+     "zip": "35128"
+    },
+    {
+     "city": "Pavia",
+     "country": "Italy",
+     "facility": "Fondazione IRCCS Policlinico San Matteo",
+     "geoPoint": {
+      "lat": 45.19205,
+      "lon": 9.15917
+     },
+     "zip": "27100"
+    },
+    {
+     "city": "Pisa",
+     "country": "Italy",
+     "facility": "Fondazione Toscana Gabriele Monasterio per la Ricerca Medica e di Sanita Pubblica",
+     "geoPoint": {
+      "lat": 43.70853,
+      "lon": 10.4036
+     },
+     "zip": "56126"
+    },
+    {
+     "city": "Roma",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera - Universitaria Sant' Andrea",
+     "geoPoint": {
+      "lat": 44.99364,
+      "lon": 11.10642
+     },
+     "zip": "00189"
+    },
+    {
+     "city": "Uwajima-shi",
+     "country": "Japan",
+     "facility": "Uwajima City Hospital",
+     "state": "Ehime",
+     "zip": "798-8510"
+    },
+    {
+     "city": "Kitakyushu-shi",
+     "country": "Japan",
+     "facility": "Hospital of the University of Occupational and Environmental Health",
+     "state": "Fukuoka",
+     "zip": "807-8555"
+    },
+    {
+     "city": "Kurume-shi",
+     "country": "Japan",
+     "facility": "Kurume University Hospital",
+     "state": "Fukuoka",
+     "zip": "830-0011"
+    },
+    {
+     "city": "Sapporo",
+     "country": "Japan",
+     "facility": "Sapporo Medical University Hospital",
+     "geoPoint": {
+      "lat": 43.06667,
+      "lon": 141.35
+     },
+     "state": "Hokkaido",
+     "zip": "060-8543"
+    },
+    {
+     "city": "Fukuoka",
+     "country": "Japan",
+     "facility": "Saiseikai Fukuoka General Hospital",
+     "geoPoint": {
+      "lat": 33.6,
+      "lon": 130.41667
+     },
+     "state": "Hukuoka",
+     "zip": "810-0001"
+    },
+    {
+     "city": "Kyoto",
+     "country": "Japan",
+     "facility": "University Hospital Kyoto Prefectural University of Medicine",
+     "geoPoint": {
+      "lat": 35.02107,
+      "lon": 135.75385
+     },
+     "state": "Kyoto",
+     "zip": "602-8566"
+    },
+    {
+     "city": "Matsumoto",
+     "country": "Japan",
+     "facility": "Shinshu University Hospital",
+     "geoPoint": {
+      "lat": 36.23333,
+      "lon": 137.96667
+     },
+     "state": "Nagano",
+     "zip": "390-8621"
+    },
+    {
+     "city": "Okayama",
+     "country": "Japan",
+     "facility": "Okayama University Hospital",
+     "geoPoint": {
+      "lat": 34.65,
+      "lon": 133.93333
+     },
+     "state": "Okayama-ken",
+     "zip": "700-8558"
+    },
+    {
+     "city": "Osaka",
+     "country": "Japan",
+     "facility": "Osaka Metropolitan University Hospital",
+     "geoPoint": {
+      "lat": 34.69379,
+      "lon": 135.50107
+     },
+     "state": "Osaka",
+     "zip": "545-8586"
+    },
+    {
+     "city": "Hamamatsu",
+     "country": "Japan",
+     "facility": "Hamamatsu University Hospital",
+     "geoPoint": {
+      "lat": 34.7,
+      "lon": 137.73333
+     },
+     "state": "Shizuoka",
+     "zip": "431-3192"
+    },
+    {
+     "city": "Shinjuku-Ku",
+     "country": "Japan",
+     "facility": "Keio University Hospital",
+     "state": "Tokyo",
+     "zip": "160-8582"
+    },
+    {
+     "city": "Kumamoto",
+     "country": "Japan",
+     "facility": "Kumamoto University Hospital",
+     "geoPoint": {
+      "lat": 32.80589,
+      "lon": 130.69181
+     },
+     "zip": "860-8556"
+    },
+    {
+     "city": "Krakow",
+     "country": "Poland",
+     "facility": "Krakowski Szpital Specjalistyczny im. Jana Pawa II",
+     "geoPoint": {
+      "lat": 50.06143,
+      "lon": 19.93658
+     },
+     "zip": "31-202"
+    },
+    {
+     "city": "Warsaw",
+     "country": "Poland",
+     "facility": "Narodowy Instytut Kardiologii Stefana kardyna Wyszyskiego - Pastwowy Instytut Badawczy",
+     "geoPoint": {
+      "lat": 52.22977,
+      "lon": 21.01178
+     },
+     "zip": "04-628"
+    },
+    {
+     "city": "Guimarães",
+     "country": "Portugal",
+     "facility": "Hospital da Senhora da Oliveira - Guimarães",
+     "geoPoint": {
+      "lat": 41.44443,
+      "lon": -8.29619
+     },
+     "zip": "4835-044"
+    },
+    {
+     "city": "Lisbon",
+     "country": "Portugal",
+     "facility": "Centro Hospitalar Universitário de Lisboa Central - Hospital de Santa Marta",
+     "geoPoint": {
+      "lat": 38.72509,
+      "lon": -9.1498
+     },
+     "zip": "1169-024"
+    },
+    {
+     "city": "Porto",
+     "country": "Portugal",
+     "facility": "Centro Hospitalar Universitário do Porto - Hospital Geral de Santo Antonio",
+     "geoPoint": {
+      "lat": 41.1485,
+      "lon": -8.61097
+     },
+     "zip": "4099-001"
+    },
+    {
+     "city": "Porto",
+     "country": "Portugal",
+     "facility": "Centro Hospitalar Universitário de São João",
+     "geoPoint": {
+      "lat": 41.1485,
+      "lon": -8.61097
+     },
+     "zip": "4200-319"
+    },
+    {
+     "city": "San Juan",
+     "country": "Puerto Rico",
+     "facility": "Veterans Affairs Caribbean Healthcare System",
+     "geoPoint": {
+      "lat": 18.46633,
+      "lon": -66.10572
+     },
+     "zip": "00921"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital Universitari Vall d'Hebrón",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08035"
+    },
+    {
+     "city": "Majadahonda",
+     "country": "Spain",
+     "facility": "Hospital Universitario Puerta de Hierro - Majadahonda",
+     "geoPoint": {
+      "lat": 40.47353,
+      "lon": -3.87182
+     },
+     "zip": "28222"
+    },
+    {
+     "city": "Murcia",
+     "country": "Spain",
+     "facility": "Hospital Clínico Universitario Virgen de la Arrixaca",
+     "geoPoint": {
+      "lat": 37.98704,
+      "lon": -1.13004
+     },
+     "zip": "30120"
+    },
+    {
+     "city": "Santiago de Compostela",
+     "country": "Spain",
+     "facility": "Complejo Hospitalario Universitario de Santiago",
+     "geoPoint": {
+      "lat": 42.88052,
+      "lon": -8.54569
+     },
+     "zip": "15706"
+    },
+    {
+     "city": "Gothenburg",
+     "country": "Sweden",
+     "facility": "Sahlgrenska Universitetssjukhuset",
+     "geoPoint": {
+      "lat": 57.70716,
+      "lon": 11.96679
+     },
+     "zip": "413 45"
+    },
+    {
+     "city": "Skellefteå",
+     "country": "Sweden",
+     "facility": "Skellefteå lasarett",
+     "geoPoint": {
+      "lat": 64.75067,
+      "lon": 20.95279
+     },
+     "zip": "931 86"
+    },
+    {
+     "city": "Glasgow",
+     "country": "United Kingdom",
+     "facility": "Synexus - Scotland Clinical Research Centre",
+     "geoPoint": {
+      "lat": 55.86515,
+      "lon": -4.25763
+     },
+     "state": "Scotland",
+     "zip": "G20 0SP"
+    },
+    {
+     "city": "Cardiff",
+     "country": "United Kingdom",
+     "facility": "Synexus - Wales",
+     "geoPoint": {
+      "lat": 51.48,
+      "lon": -3.18
+     },
+     "state": "Wales",
+     "zip": "CF15 9SS"
+    },
+    {
+     "city": "Edgbaston",
+     "country": "United Kingdom",
+     "facility": "Synexus Midlands Clinical Research Centre",
+     "geoPoint": {
+      "lat": 52.4623,
+      "lon": -1.92115
+     },
+     "zip": "B15 2SQ"
+    },
+    {
+     "city": "Hexham",
+     "country": "United Kingdom",
+     "facility": "Synexus - North Tees Clinical Research Centre",
+     "geoPoint": {
+      "lat": 54.96986,
+      "lon": -2.104
+     },
+     "zip": "TS19 8PE"
+    },
+    {
+     "city": "Liverpool",
+     "country": "United Kingdom",
+     "facility": "Synexus - Manchester Clinical Research Centre",
+     "geoPoint": {
+      "lat": 53.41058,
+      "lon": -2.97794
+     },
+     "zip": "L22 0LG"
+    },
+    {
+     "city": "Liverpool",
+     "country": "United Kingdom",
+     "facility": "Synexus - Merseyside Clinical Research Centre",
+     "geoPoint": {
+      "lat": 53.41058,
+      "lon": -2.97794
+     },
+     "zip": "L22 0LG"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "Royal Free London NHS Foundation Trust",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "HR3M+6R"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "Richmond Pharmacology",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "SE1 1YR"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "To evaluate the efficacy of eplontersen compared to placebo in participants with ATTR-CM receiving available standard of care (SoC).",
+   "detailedDescription": "This is a multicenter, double-blind study in 1438 participants, who will be randomized to receive subcutaneous (SC) injections of either eplontersen or placebo once every 4 weeks. Participants will also receive daily supplemental doses of the recommended daily allowance of vitamin A."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "DOUBLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "INVESTIGATOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 1438,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE3"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Females must be non-pregnant and non-lactating, and either surgically sterile or post-menopausal or abstinent. If engaged in sexual relations of child-bearing potential, agree to use 1 highly effective contraceptive method\n* Males must be surgically sterile or, abstinent or, if engaged in sexual relations with a woman of child-bearing potential, the participant or the participant's non-pregnant female partner must be using a highly effective contraceptive method\n* Amyloid deposits in cardiac or non-cardiac tissue confirmed by Congo Red (or equivalent) staining OR technetium scintigraphy (99mTc -3,3-diphosphono-1,2- propanodicarboxylic acid \\[DPD-Tc\\], 99m Tc-pyrophosphate \\[PYP-Tc\\], or 99m Tc-hydroxymethylene-diphosphonate \\[HMDP-Tc\\]) with Grade 2 or 3 cardiac uptake in the absence of abnormal light chains ratio, centrally confirmed\n* End-diastolic interventricular septum thickness of \\> 12 millimeters (mm) on Screening echocardiogram\n* New York Heart Association (NYHA) class I-III\n\nExclusion Criteria:\n\n* Acute coronary syndrome, unstable angina, stroke, transient ischemic attack (TIA), coronary revascularization, cardiac device implantation, cardiac valve repair, or major surgery within 3 months of Screening\n* Cardiomyopathy not primarily caused by ATTR-CM, for example, cardiomyopathy due to hypertension, valvular heart disease, or ischemic heart disease\n* Monoclonal gammopathy of undetermined significance (MGUS) and/or alterations in immunoglobulin free light chain (FLC) ratio unless fat, bone marrow, or heart biopsy confirming the absence of light chain and the presence of TTR protein by mass spectrometry or immunoelectron microscopy. For participants with chronic kidney disease (CKD) and without presence of monoclonal protein in blood and urine, the acceptable FLC ratio is 0.26-2.25. Results different from that may be discussed with local hematologist, Investigator and Medical Monitor if the risks associated with the biopsy outweigh the benefits\n* Prior liver or heart transplant, and/or Left Ventricular Assist Device (LVAD) or anticipated liver transplant or LVAD within 1 year after randomization\n* Current or previous treatment with Tegsedi™ (inotersen) or Onpattro™ (patisiran) or other oligonucleotide or ribonucleic acid (RNA) therapeutic (including small interfering ribonucleic acid \\[siRNA\\]; does not apply to COVID-19 mitochondrial \\[mRNA\\] vaccinations)\n* Current treatment with diflunisal, doxycycline, with or without ursodeoxycholic acid, and/or non-dihydropyridine calcium-channel blocker (e.g., verapamil, diltiazem). Participants receiving any of these agents must respect a wash-out period of 14 days before randomization.",
+   "healthyVolunteers": false,
+   "maximumAge": "90 Years",
+   "minimumAge": "18 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "briefTitle": "CARDIO-TTRansform: A Study to Evaluate the Efficacy and Safety of Eplontersen (Formerly Known as ION-682884, IONIS-TTR-LRx and AKCEA-TTR-LRx) in Participants With Transthyretin-Mediated Amyloid Cardiomyopathy (ATTR CM)",
+   "nctId": "NCT04136171",
+   "officialTitle": "A Phase 3 Global, Double-Blind, Randomized, Placebo-Controlled Study to Evaluate the Efficacy and Safety of ION-682884 in Patients With Transthyretin-Mediated Amyloid Cardiomyopathy (ATTR CM)",
+   "orgStudyIdInfo": {
+    "id": "ION-682884-CS2"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Ionis Pharmaceuticals, Inc."
+   },
+   "secondaryIdInfos": [
+    {
+     "id": "2019-002835-27",
+     "type": "EUDRACT_NUMBER"
+    },
+    {
+     "id": "2024-514434-20-00",
+     "type": "CTIS"
+    },
+    {
+     "id": "2019",
+     "link": "https://reporter.nih.gov/quickSearch/2019",
+     "type": "NIH"
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "description": "Ionis may share anonymized individual participant data, aggregated clinical data, and other types of data that support the results in this study. Data requests from qualified researchers will be considered once all three of the following criteria are met: (1) 12 months from marketing approval of the study drug in both the United States and European Union; (2) 18 months from conclusion of the study; and (3) 6 months from publication of study article. Access would be via a secure environment and is contingent upon approval of a research proposal and entry into an appropriate data use agreement. Requests to access data can be submitted via the website https://vivli.org/ourmember/ionis/.",
+   "ipdSharing": "YES"
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "Composite Outcome of Cardiovascular (CV) Mortality and Recurrent CV Clinical Events up to Week 140",
+     "timeFrame": "Baseline up to Week 140"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "description": "The 6MWT is a submaximal exercise test that entails measurement of distance walked over a span of 6 minutes. The 6MWT provides information regarding functional capacity, response to therapy and prognosis across a range of chronic cardiopulmonary conditions.",
+     "measure": "Change From Baseline in the 6-minute Walk Test (6MWT) Distance at Week 140",
+     "timeFrame": "Baseline to Week 140"
+    },
+    {
+     "description": "The Kansas City Cardiomyopathy Questionnaire (KCCQ) is a 23-item self-administered questionnaire developed to independently measure the participant's perception of their health status, which includes heart failure symptoms, impact on physical and social function, and how their heart failure impacts their quality of life (QOL) within a 2-week recall period.\n\nThe KCCQ tool quantifies the following six (6) distinct domains and two (2) summary scores. KCCQ responses are provided along a rating scale continuum with equal spacing from worst to best, with a higher score equaling a better score.",
+     "measure": "Change From Baseline in the Kansas City Cardiomyopathy Questionnaire (KCCQ) Scores at Week 140",
+     "timeFrame": "Baseline to Week 140"
+    },
+    {
+     "measure": "Recurrent CV Clinical Events up to Week 140",
+     "timeFrame": "Baseline up to Week 140"
+    },
+    {
+     "measure": "All-Cause Mortality up to Week 160",
+     "timeFrame": "Baseline up to Week 160"
+    },
+    {
+     "measure": "All-Cause Mortality up to Week 140",
+     "timeFrame": "Baseline up to Week 140"
+    },
+    {
+     "description": "To evaluate the effect of treatment with ION-682884 compared to placebo up to Week 140 on the composite endpoint of CV death and recurrent CV clinical events in patients with ATTR-CM on tafamidis at Baseline.",
+     "measure": "Composite Outcome of Cardiovascular (CV) Mortality and Recurrent CV Clinical Events up to Week 140 in Subgroup of Patients Treated with Tafamidis at Baseline",
+     "timeFrame": "Baseline up to Week 140"
+    },
+    {
+     "measure": "CV Mortality up to Week 160",
+     "timeFrame": "Baseline up to Week 160"
+    },
+    {
+     "measure": "CV Mortality up to Week 140",
+     "timeFrame": "Baseline up to Week 140"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true,
+   "isUsExport": true,
+   "oversightHasDmc": true
+  },
+  "referencesModule": {
+   "references": [
+    {
+     "citation": "Garcia-Pavia P, Cappelli F, Davis MK, Fontana M, Gillmore JD, Hanna M, Masri A, Obici L, Solomon SD, Sperry BW, Tahara N, Waddington-Cruz M, Boman K, Cuddy SAM, Debonnaire P, Fine NM, Podolec P, Yilmaz A, Conrad T, Yang Q, Claggett BL, Chen J, Tsimikas S, Maurer MS. Eplontersen with and without background transthyretin stabilizers in transthyretin amyloid cardiomyopathy: secondary analysis of a phase 3, randomized controlled trial. Nat Med. 2026 Aug 30. doi: 10.1038/s41591-026-04670-6. Online ahead of print.",
+     "pmid": "42742182",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Gillmore JD, Hamatani Y, Fontana M, Vaduganathan M, Claggett BL, Garcia-Pavia P, Masri A, Cappelli F, Grogan M, Morbach C, Maurer MS, Solomon SD. Gene Silencer Therapy in Transthyretin Amyloid Cardiomyopathy: A Meta-Analysis of Outcomes Trials. JAMA. 2026 Aug 30. doi: 10.1001/jama.2026.17246. Online ahead of print.",
+     "pmid": "42669065",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Fontana M, Masri A, Solomon SD, Cappelli F, Davis MK, Garcia-Pavia P, Gillmore JD, Hanna M, Obici L, Sperry BW, Tahara N, Waddington-Cruz M, Azevedo O, Damy T, de Barros Correia E, Khouri MG, Nikolova AP, Stork S, Conrad T, Yang Q, Claggett BL, Chen J, Brice GT, Tsimikas S, Maurer MS; CARDIO-TTRansform Investigators. Eplontersen for Transthyretin Amyloid Cardiomyopathy. N Engl J Med. 2026 Aug 28. doi: 10.1056/NEJMoa2608510. Online ahead of print.",
+     "pmid": "42663301",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Masri A, Cappelli F, Davis MK, Fontana M, Garcia-Pavia P, Gillmore JD, Hanna M, Obici L, Solomon SD, Sperry BW, Tahara N, Waddington-Cruz M, Kristen AV, Falk RH, Shah SJ, Nativi-Nicolau J, Viney NJ, Yang Q, Chen J, Tsimikas S, Maurer MS. Rationale and Design of CARDIO-TTRansform, a Phase 3 Trial of Eplontersen in Transthyretin Amyloid Cardiomyopathy. Circ Heart Fail. 2026 Jun;19(6):e014205. doi: 10.1161/CIRCHEARTFAILURE.126.014205. Epub 2026 May 9.",
+     "pmid": "42104840",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Masri A, Maurer MS, Claggett BL, Kulac I, Waddington Cruz M, Conceicao I, Weiler M, Berk JL, Gertz M, Gillmore JD, Rush S, Chen J, Zhou W, Kwoh J, Duran JM, Tsimikas S, Solomon SD. Effect of Eplontersen on Cardiac Structure and Function in Patients With Hereditary Transthyretin Amyloidosis. J Card Fail. 2024 Aug;30(8):973-980. doi: 10.1016/j.cardfail.2023.11.016. Epub 2023 Dec 7.",
+     "pmid": "38065307",
+     "type": "DERIVED"
+    }
+   ]
+  },
+  "sponsorCollaboratorsModule": {
+   "collaborators": [
+    {
+     "class": "INDUSTRY",
+     "name": "AstraZeneca"
+    }
+   ],
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Ionis Pharmaceuticals, Inc."
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2026-08-12",
+    "type": "ACTUAL"
+   },
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "lastUpdatePostDateStruct": {
+    "date": "2026-09-03",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-09-02",
+   "overallStatus": "COMPLETED",
+   "primaryCompletionDateStruct": {
+    "date": "2026-03-25",
+    "type": "ACTUAL"
+   },
+   "startDateStruct": {
+    "date": "2020-03-13",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2026-09",
+   "studyFirstPostDateStruct": {
+    "date": "2019-10-23",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2019-10-21",
+   "studyFirstSubmitQcDate": "2019-10-21"
+  }
+ }
+}

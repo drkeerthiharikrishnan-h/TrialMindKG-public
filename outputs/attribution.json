@@ -1,0 +1,113 @@
+{
+ "notice": "The MIT licence of this repository covers the code only. The data shown here come from the sources below and keep their own licences; reuse of a row follows the licence of its source (every edge names it). Rows from CTD and DisGeNET are for non-commercial use only; rows from ChEMBL are share-alike.",
+ "items": [
+  {
+   "source": "Pharos / TCRD",
+   "licence": "no licence of its own; each upstream source's licence applies",
+   "text": "Data from Pharos 3.19.2 / TCRD 6.13.5 (NCATS), pulled 2026-10-25; cite Kelleher, Sheils et al., Pharos 2023, Nucleic Acids Res., doi:10.1093/nar/gkac1033.",
+   "url": "https://pharos.nih.gov/about",
+   "conditions": "respect each upstream licence"
+  },
+  {
+   "source": "Open Targets Platform",
+   "licence": "CC0 1.0",
+   "text": "Open Targets Platform 26.09.",
+   "url": "https://github.com/opentargets/platform-docs",
+   "conditions": "none required; cite the latest Open Targets publication"
+  },
+  {
+   "source": "ChEMBL",
+   "licence": "CC BY-SA 3.0",
+   "text": "ChEMBL 37 (EMBL-EBI).",
+   "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/LICENSE",
+   "conditions": "share-alike: rows derived from ChEMBL stay under CC BY-SA 3.0"
+  },
+  {
+   "source": "Gene Ontology",
+   "licence": "CC BY 4.0",
+   "text": "Gene Ontology.",
+   "url": "https://github.com/geneontology/go-ontology/blob/master/LICENSE",
+   "conditions": "attribution"
+  },
+  {
+   "source": "MONDO",
+   "licence": "CC BY 4.0",
+   "text": "MONDO disease ontology.",
+   "url": "https://github.com/monarch-initiative/mondo/blob/master/LICENSE",
+   "conditions": "attribution"
+  },
+  {
+   "source": "Human Phenotype Ontology",
+   "licence": "HPO licence (custom terms)",
+   "text": "This service/product uses the Human Phenotype Ontology (version 2026-09-01).",
+   "url": "https://hpo.jax.org/license",
+   "conditions": "show the notice with the HPO file version; the ontology is not altered"
+  },
+  {
+   "source": "STRING",
+   "licence": "CC BY 4.0",
+   "text": "Protein-protein interactions from STRING (via Pharos).",
+   "url": "https://string-db.org/cgi/access",
+   "conditions": "attribution"
+  },
+  {
+   "source": "JensenLab DISEASES",
+   "licence": "CC BY 4.0",
+   "text": "Gene-disease rows from JensenLab DISEASES (via Pharos).",
+   "url": "https://diseases.jensenlab.org/Downloads",
+   "conditions": "attribution"
+  },
+  {
+   "source": "TIN-X",
+   "licence": "no explicit licence published; NIH IDG resource",
+   "text": "TIN-X text-mining scores (NIH Illuminating the Druggable Genome, via Pharos).",
+   "url": "https://pharos.nih.gov/about",
+   "conditions": "attribution"
+  },
+  {
+   "source": "CTD",
+   "licence": "CTD terms: cite, link to CTD, non-commercial use",
+   "text": "Gene-disease rows from the Comparative Toxicogenomics Database (CTD), https://ctdbase.org/ (via Pharos).",
+   "url": "https://ctdbase.org/about/legal.jsp",
+   "conditions": "cite CTD; hyperlink to the CTD data pages; non-commercial use only"
+  },
+  {
+   "source": "DisGeNET",
+   "licence": "upstream public release CC BY-NC-SA 4.0; current DISGENET is licensed",
+   "text": "Gene-disease rows from the public DisGeNET release (via Pharos).",
+   "url": "https://www.disgenet.com/legal",
+   "conditions": "non-commercial use only; share-alike"
+  },
+  {
+   "source": "ClinicalTrials.gov",
+   "licence": "ClinicalTrials.gov terms and conditions",
+   "text": "Trial records from ClinicalTrials.gov (via AACT); data processed 2026-10-05.",
+   "url": "https://clinicaltrials.gov/about-site/terms-conditions",
+   "conditions": "attribute ClinicalTrials.gov and display the date the data were processed"
+  },
+  {
+   "source": "GTEx",
+   "licence": "GTEx Portal terms: cite",
+   "text": "The data used here were obtained from the GTEx Portal on 2026-10-05.",
+   "url": "https://gtexportal.org/home/license",
+   "conditions": "citation with the date the data were obtained"
+  },
+  {
+   "source": "openFDA (FAERS, Drugs@FDA)",
+   "licence": "CC0 1.0",
+   "text": "Adverse-event and regulatory data from openFDA.",
+   "url": "https://open.fda.gov/license",
+   "conditions": "none required"
+  }
+ ],
+ "licences_file": "DATA_LICENSES.md",
+ "versions": {
+  "pharos_version": "Pharos 3.19.2 / TCRD 6.13.5",
+  "pharos_date": "2026-10-25",
+  "ot_version": "26.09",
+  "chembl_version": "37",
+  "hpo_version": "2026-09-01",
+  "ctgov_date": "2026-10-05",
+  "gtex_date": "2026-10-05"
+ }
+}

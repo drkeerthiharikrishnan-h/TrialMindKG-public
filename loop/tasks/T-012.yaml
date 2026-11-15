@@ -1,0 +1,27 @@
+id: T-012
+title: AWS compute and Neptune parity (bounded, after cost estimate)
+owner: science
+classification: science
+status: blocked
+closes: []
+objective: Reproduce G0 on AWS and compare to the Mac (0.5864; fold spread 0.580-0.592), then run G2/G3 at 2M if the Mac
+  could not; load the trial layer + a kinase-family Pharos subgraph into Neptune with auto-stop and show the same answers
+  as the local graph.
+read_first:
+- docs/archive/PLAN_2026-11-04.md section 6
+- aws/README.md
+- outputs/neptune/
+editable_paths:
+- aws/
+- outputs/parity/
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- parity tolerance fixed before the run
+- cost never above the cap the owner approved
+validations: []
+stop_rule: Needs the owner's approval of a written cost estimate; Neptune only behind an auto-stop.
+handoff: outputs/parity/ reports.

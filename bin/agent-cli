@@ -1,0 +1,1107 @@
+#!/usr/bin/env python3
+"""agent-cli: the lookups and commands an agent repeats on TrialMindKG, from one place.
+
+Written for an agent, not a human: one line per fact, tab-separated rows, no prose. Every subcommand has
+--help; the global --json flag prints the same facts as JSON. Standard library only (yaml is optional and
+already a project dependency). Run from anywhere inside the repo.
+
+    bin/agent-cli start            # session start: branch vs main, dirty files, open steps, last log entry
+    bin/agent-cli next             # open items of docs/NEXT_STEPS.md
+    bin/agent-cli defs pipelines/linkpred/run.py
+    bin/agent-cli fn pipelines/linkpred/run.py run_experiment
+    bin/agent-cli test --for pipelines/make_graphs.py
+    bin/agent-cli controller --help # persistent model-routed development tasks (docs/DEVELOPMENT_CONTROLLER.md)
+    bin/agent-cli repeats          # which calls were repeated in the session transcripts (this tool's own audit)
+"""
+import argparse
+import ast
+import gzip
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+from collections import Counter, OrderedDict
+from pathlib import Path
+
+HERE = Path(__file__).resolve()
+ROOT = HERE.parent.parent
+KNOWLEDGE = ["CLAUDE.md", ".claude/skills/trialmindkg/SKILL.md", "docs/MASTER_PLAN.md", "docs/NEXT_STEPS.md",
+             "docs/STRATEGY_REVIEW_RESPONSE_2026-11-02.md", "docs/USABILITY_PLAN.md"]
+# The session log (docs/STATUS_CHECKLIST.md) was archived 2026-11-04 (MASTER_PLAN section 10); status/start/handoff still read it from there.
+STATUS_LOG = "docs/archive/STATUS_CHECKLIST.md"
+SEARCH_DIRS = ["pipelines", "tests", "docs", "sources", "scripts", "config", "aws", "bin", "CLAUDE.md", "AGENTS.md",
+               "README.md", "requirements.txt"]
+EXCLUDE = {".git", "node_modules", "__pycache__", ".venv", "data", "outputs", "raw", "raw_text", "frontend"}
+BLOCKED_FROM_CLOUD = ["AACT DB", "europepmc.org website", "cdn.clinicaltrials.gov", "FDA site", "Hugging Face", "cdnjs",
+                      "nodenorm.transl.ncats.io (use nodenormalization-sri.renci.org)"]
+GRAPHS = ["g0", "g1", "g2", "g3", "g4"]
+TRAILER_AUTHOR = "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>"
+MAC_PREAMBLE = "cd ~/projects/TrialMindKG && source .venv/bin/activate"
+MAC_PULL = "git pull --no-rebase --no-edit origin main"
+TEST_LOG = Path("/tmp/agent_pytest.log")
+APP_LOG = Path("/tmp/agent_app.log")
+APP_PID = Path("/tmp/agent_app.pid")
+
+
+# ----------------------------------------------------------------------------- helpers
+def sh(cmd, cwd=ROOT, timeout=120, check=False):
+    """Takes a shell command string. Returns (exit code, stdout+stderr as text)."""
+    p = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+    if check and p.returncode:
+        raise SystemExit(f"{cmd}: exit {p.returncode}\n{p.stdout}{p.stderr}")
+    return p.returncode, (p.stdout + p.stderr).strip()
+
+
+def read(rel):
+    p = ROOT / rel
+    return p.read_text(errors="replace") if p.exists() else ""
+
+
+def emit(obj, as_json):
+    """Renders a result. dict -> 'key\\tvalue' lines; list of dicts -> header + tab rows; list -> lines."""
+    if as_json:
+        print(json.dumps(obj, indent=1, default=str))
+        return
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if isinstance(v, (list, tuple)) and v and isinstance(v[0], dict):
+                print(f"{k}:")
+                emit(v, False)
+            elif isinstance(v, (list, tuple)):
+                print(f"{k}\t" + " | ".join(str(x) for x in v))
+            elif isinstance(v, dict):
+                print(f"{k}\t" + json.dumps(v, default=str))
+            else:
+                print(f"{k}\t{v}")
+    elif isinstance(obj, list):
+        if obj and isinstance(obj[0], dict):
+            keys = list(OrderedDict((k, 1) for row in obj for k in row))
+            print("\t".join(keys))
+            for row in obj:
+                print("\t".join(str(row.get(k, "")) for k in keys))
+        else:
+            for x in obj:
+                print(x)
+    else:
+        print(obj)
+
+
+def markdown_sections(text):
+    """Takes markdown text. Returns [(heading line, start line no, end line no)] for every heading."""
+    lines = text.splitlines()
+    heads = [(i, l) for i, l in enumerate(lines) if re.match(r"^#{1,6} ", l)]
+    out = []
+    for n, (i, l) in enumerate(heads):
+        end = heads[n + 1][0] if n + 1 < len(heads) else len(lines)
+        out.append((l, i + 1, end))
+    return out
+
+
+def file_lines(rel, start, end):
+    lines = read(rel).splitlines()
+    return lines[max(start - 1, 0):end]
+
+
+# ----------------------------------------------------------------------------- next steps / status
+STEP_RE = re.compile(r"^(\d+[a-z]?)\.\s+\[( |x|~)\]\s+(.*)$")
+
+
+def next_items(text, only_open=True):
+    """Takes NEXT_STEPS markdown. Returns [{id, state, who, text}] (state: open / running / done); item text is
+    the first line plus the continuation lines joined."""
+    items = []
+    for line in text.splitlines():
+        m = STEP_RE.match(line)
+        if m:
+            sid, mark, rest = m.groups()
+            who = rest.split()[0] if rest.split() and rest.split()[0].isupper() else ""
+            items.append({"id": sid, "state": {" ": "open", "x": "done", "~": "running"}[mark], "who": who,
+                          "text": rest})
+        elif items and line.startswith("       ") and not line.strip().startswith("```"):
+            items[-1]["text"] += " " + line.strip()
+    if only_open:
+        items = [i for i in items if i["state"] != "done"]
+    return items
+
+
+def step_text(text, step_id):
+    """Takes NEXT_STEPS markdown and a step id ('7e'). Returns the full block of that step (until the next step)."""
+    lines = text.splitlines()
+    out, inside = [], False
+    for line in lines:
+        m = STEP_RE.match(line)
+        if m:
+            if inside:
+                break
+            inside = m.group(1) == step_id
+        if inside:
+            out.append(line)
+    return "\n".join(out)
+
+
+def status_entries(text):
+    """Takes STATUS_CHECKLIST markdown. Returns the session-log entries (latest first) as [{date, head, text}]."""
+    sec = [s for s in markdown_sections(text) if "Session log" in s[0]]
+    if not sec:
+        return []
+    lines = file_lines_from_text(text, sec[0][1], sec[0][2])
+    entries = []
+    for line in lines:
+        m = re.match(r"^- (\d{4}-\d{2}-\d{2}) \(([^)]*)\):?\s*(.*)$", line)
+        if m:
+            entries.append({"date": m.group(1), "head": m.group(2), "text": m.group(3)})
+        elif entries and line.startswith("  "):
+            entries[-1]["text"] += " " + line.strip()
+    return entries
+
+
+def file_lines_from_text(text, start, end):
+    return text.splitlines()[start:end]
+
+
+# ----------------------------------------------------------------------------- git
+def git_state(fetch=False):
+    """Returns branch, HEAD, origin/main HEAD, ahead/behind counts, dirty file count."""
+    if fetch:
+        sh("git fetch -q origin main", timeout=120)
+    _, branch = sh("git rev-parse --abbrev-ref HEAD")
+    _, head = sh("git log --oneline -1")
+    _, main = sh("git log --oneline -1 origin/main")
+    _, ab = sh("git rev-list --left-right --count HEAD...origin/main")
+    ahead, behind = (ab.split() + ["?", "?"])[:2]
+    _, dirty = sh("git status --short")
+    dirty_files = [l for l in dirty.splitlines() if l.strip()]
+    return {"branch": branch, "head": head, "origin_main": main, "ahead_of_main": ahead, "behind_main": behind,
+            "dirty": len(dirty_files), "dirty_files": dirty_files[:20],
+            "in_sync_with_main": ahead == "0" and behind == "0"}
+
+
+def branches():
+    """Returns every remote branch with whether origin/main already contains it (safe to delete)."""
+    _, out = sh("git branch -r")
+    rows = []
+    for b in out.splitlines():
+        b = b.strip()
+        if not b or "HEAD" in b:
+            continue
+        rc, _ = sh(f"git merge-base --is-ancestor {b} origin/main")
+        rows.append({"branch": b, "contained_in_main": rc == 0,
+                     "delete": f"git push origin --delete {b.split('/', 1)[1]}" if rc == 0 and not b.endswith("/main") else ""})
+    return rows
+
+
+# ----------------------------------------------------------------------------- code lookups
+def defs(rel):
+    """Takes a python file path. Returns [{line, kind, name, doc}] for every top-level and nested def/class."""
+    src = read(rel)
+    if not rel.endswith(".py"):
+        return [{"line": i + 1, "kind": "match", "name": l.strip()[:120], "doc": ""}
+                for i, l in enumerate(src.splitlines()) if re.match(r"^\s*(def |class |function |async |const \w+ = )", l)]
+    try:
+        tree = ast.parse(src)
+    except SyntaxError as e:
+        return [{"line": e.lineno, "kind": "error", "name": str(e), "doc": ""}]
+    rows = []
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
+            doc = (ast.get_docstring(node) or "").splitlines()
+            args = ""
+            if not isinstance(node, ast.ClassDef):
+                args = "(" + ", ".join(a.arg for a in node.args.args) + ")"
+            rows.append({"line": node.lineno, "kind": "class" if isinstance(node, ast.ClassDef) else "def",
+                         "name": node.name + args, "doc": doc[0][:110] if doc else ""})
+    return sorted(rows, key=lambda r: r["line"])
+
+
+def fn_source(rel, name):
+    """Takes a python file and a def/class name. Returns its source text with line numbers."""
+    src = read(rel)
+    tree = ast.parse(src)
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)) and node.name == name:
+            lines = src.splitlines()[node.lineno - 1:node.end_lineno]
+            return "\n".join(f"{node.lineno + i}\t{l}" for i, l in enumerate(lines))
+    return ""
+
+
+def grep(term, paths=None, ignore_case=False, max_rows=200):
+    """Takes a regex. Returns [{file, line, text}] from the code/docs dirs (data, outputs, raw excluded)."""
+    paths = paths or [p for p in SEARCH_DIRS if (ROOT / p).exists()]
+    flags = "-rnI" + ("i" if ignore_case else "")
+    excl = " ".join(f"--exclude-dir={d}" for d in EXCLUDE)
+    _, out = sh(f"grep {flags} {excl} -e {json.dumps(term)} " + " ".join(json.dumps(p) for p in paths))
+    rows = []
+    for l in out.splitlines()[:max_rows]:
+        m = re.match(r"^(.*?):(\d+):(.*)$", l)
+        if m:
+            rows.append({"file": m.group(1), "line": int(m.group(2)), "text": m.group(3).strip()[:160]})
+    return rows
+
+
+def find_files(name):
+    """Takes a name fragment. Returns matching paths (case-insensitive), skipping data/outputs/.git."""
+    hits = []
+    for p in ROOT.rglob("*"):
+        if any(part in EXCLUDE for part in p.parts):
+            continue
+        if name.lower() in p.name.lower():
+            hits.append(str(p.relative_to(ROOT)))
+    return sorted(hits)[:200]
+
+
+def section(rel, pattern):
+    """Takes a markdown file and a heading regex. Returns the first matching section's lines."""
+    text = read(rel)
+    for head, start, end in markdown_sections(text):
+        if re.search(pattern, head, re.I):
+            return [f"{head} (lines {start}-{end})"] + text.splitlines()[start:end]
+    return []
+
+
+def repo_map(rel="pipelines"):
+    """Takes a directory. Returns [{file, first_line}] where first_line is the docstring / first comment / heading."""
+    rows = []
+    for p in sorted((ROOT / rel).iterdir()):
+        if p.name.startswith((".", "__")) or p.name in EXCLUDE:
+            continue
+        if p.is_dir():
+            rows.append({"file": p.name + "/", "first_line": f"{len([x for x in p.iterdir()])} entries"})
+            continue
+        first = ""
+        try:
+            for l in p.read_text(errors="replace").splitlines()[:8]:
+                s = l.strip().strip('"').strip("'").lstrip("# ")
+                if s and not s.startswith(("import", "from", "---", "name:")):
+                    first = s[:120]
+                    break
+        except Exception:
+            pass
+        rows.append({"file": p.name, "first_line": first})
+    return rows
+
+
+# ----------------------------------------------------------------------------- source cards, layers, outputs
+def load_yaml(rel):
+    try:
+        import yaml
+    except ImportError:
+        return None
+    return yaml.safe_load(read(rel))
+
+
+def card_summary(rel):
+    """Takes a source card path. Returns name/version/layer, the lookups, and one row per node/edge block."""
+    doc = load_yaml(rel)
+    if not isinstance(doc, dict):
+        return {"file": rel, "raw": read(rel)[:4000]}
+    out = {"file": rel, "name": doc.get("name"), "version": doc.get("version"), "layer": doc.get("layer"),
+           "tables_dir": doc.get("tables_dir"), "lookups": sorted((doc.get("lookups") or {}).keys())}
+    blocks = []
+    for key in ("nodes", "edges"):
+        specs = doc.get(key) or []
+        specs = list(specs.values()) if isinstance(specs, dict) else specs
+        for spec in specs:
+            spec = spec or {}
+            blocks.append({"kind": key[:-1], "block": spec.get("name", ""), "table": spec.get("table", ""),
+                           "category": spec.get("category") or _end_cat(spec.get("id")) or spec.get("category_by_prefix", ""),
+                           "predicate": spec.get("predicate", ""),
+                           "subject": _end(spec.get("subject")), "object": _end(spec.get("object")),
+                           "knowledge_level": spec.get("knowledge_level", "")})
+    out["blocks"] = blocks
+    out["prune"] = sorted((doc.get("prune") or {}).keys()) if isinstance(doc.get("prune"), dict) else bool(doc.get("prune"))
+    return out
+
+
+def _end(spec):
+    """Takes a subject/object spec. Returns 'category <- column/lookup chain' in one short string."""
+    if not isinstance(spec, dict):
+        return str(spec or "")
+    cols = spec.get("columns") or [spec]
+    chain = []
+    for c in cols:
+        if not isinstance(c, dict):
+            continue
+        chain.append(c.get("column", "?") + ("@" + c["lookup"] if c.get("lookup") else "") + (":" + c["prefix"] if c.get("prefix") else ""))
+    cat = spec.get("category") or ("by_prefix" if spec.get("category_by_prefix") else "")
+    return f"{cat}<-{'|'.join(chain)}"
+
+
+def _end_cat(spec):
+    return spec.get("category", "") if isinstance(spec, dict) else ""
+
+
+def layers():
+    """Returns one row per source card: layer files in data/kg/<name>/, verdicts, pruning metrics in outputs."""
+    rows = []
+    for card in sorted((ROOT / "sources").glob("*.yaml")):
+        name = card.stem
+        m = re.search(r"^name:\s*(\S+)", card.read_text(), re.M)
+        layer = m.group(1) if m else name
+        d = ROOT / "data" / "kg" / layer
+        files = sorted(p.name for p in d.iterdir()) if d.exists() else []
+        metrics = ROOT / "outputs" / layer / "prune_metrics.json"
+        pruned = ""
+        if metrics.exists():
+            try:
+                j = json.loads(metrics.read_text())
+                pruned = j.get("share_pruned", j.get("pruned", ""))
+            except Exception:
+                pruned = "unreadable"
+        rows.append({"card": card.name, "layer": layer, "built": "nodes.tsv.gz" in files,
+                     "verdicts": "edge_verdicts.tsv.gz" in files, "prune_metrics": pruned,
+                     "summary": (ROOT / "outputs" / layer / "summary.md").exists()})
+    return rows
+
+
+def graphs():
+    """Returns one row per graph G0-G4: heterodata.pt present, totals line of summary.md."""
+    rows = []
+    for g in GRAPHS:
+        d = ROOT / "outputs" / g
+        total = ""
+        s = d / "summary.md"
+        if s.exists():
+            m = re.search(r"Total: ([^\n]*)", s.read_text())
+            total = m.group(1) if m else ""
+            m2 = re.search(r"(\d[\d,]*) node rows re-typed", s.read_text())
+            if m2:
+                total += f"; re-typed {m2.group(1)}"
+        rows.append({"graph": g.upper(), "heterodata": (d / "heterodata.pt").exists(), "summary": total})
+    return rows
+
+
+def results(out_dir="outputs/linkpred"):
+    """Returns one row per linkpred result JSON: graph, task, split, AUROC mean +- ci, baselines, wiring."""
+    rows = []
+    for p in sorted((ROOT / out_dir).glob("*_*_*.json")):
+        try:
+            j = json.loads(p.read_text())
+        except Exception:
+            rows.append({"file": p.name, "error": "unreadable"})
+            continue
+        s = j.get("summary", {})
+        st = j.get("settings", {})
+
+        def m(k):
+            v = s.get(k, {})
+            return f"{v.get('mean')}+-{v.get('ci95')}" if isinstance(v, dict) else v
+        wiring = {k: v for k, v in (st.get("wiring") or {}).items() if v not in (False, None, 0, "all")}
+        rows.append({"file": p.name, "auroc": m("auroc"), "auprc": m("auprc"), "mrr": m("mrr"),
+                     "degree": m("auroc_degree_dst"), "aa": m("auroc_aa"), "untrained": m("auroc_untrained"),
+                     "epochs": st.get("epochs"), "hidden": st.get("hidden"), "cap": st.get("max_edges"),
+                     "fraction": st.get("sample_fraction"), "wiring": json.dumps(wiring) if wiring else ""})
+    return rows
+
+
+def tsv_head(rel, n=5):
+    """Takes a .tsv or .tsv.gz path. Returns columns, first n rows and the row count."""
+    p = ROOT / rel
+    opener = gzip.open if str(p).endswith(".gz") else open
+    with opener(p, "rt", errors="replace") as f:
+        header = f.readline().rstrip("\n").split("\t")
+        rows = []
+        count = 0
+        for line in f:
+            if count < n:
+                rows.append(line.rstrip("\n").split("\t"))
+            count += 1
+    return {"file": rel, "columns": header, "rows": count, "head": [dict(zip(header, r)) for r in rows]}
+
+
+# ----------------------------------------------------------------------------- tests, jobs, app
+def test_for(module):
+    """Takes a source path like pipelines/linkpred/run.py. Returns the test files whose name matches its stem."""
+    stem = Path(module).stem
+    parent = Path(module).parent.name
+    tests = sorted((ROOT / "tests").glob("test_*.py"))
+    rel = lambda ps: [str(p.relative_to(ROOT)) for p in ps]
+    hits = rel(p for p in tests if stem in p.stem)                                   # 1. test file named after it
+    if not hits and parent not in ("pipelines", ""):
+        hits = rel(p for p in tests if parent in p.stem)                             # 2. the package's tests
+    if not hits:
+        hits = rel(p for p in tests if stem in p.read_text(errors="replace"))        # 3. tests that mention it
+    return hits
+
+
+def run_tests(paths, background, timeout=900):
+    """Runs pytest -q on paths (all tests when empty). Foreground: returns the last lines. Background: writes
+    /tmp/agent_pytest.log and returns the PID; read it later with `test --last`."""
+    cmd = f"timeout {timeout} python3 -m pytest -q " + " ".join(json.dumps(p) for p in paths)
+    if background:
+        with open(TEST_LOG, "w") as log:
+            proc = subprocess.Popen(cmd + "; echo PYTEST_EXIT=$?", shell=True, cwd=ROOT, stdout=log, stderr=subprocess.STDOUT)
+        return {"pid": proc.pid, "log": str(TEST_LOG), "wait": f"bin/agent-cli wait --log {TEST_LOG} --until PYTEST_EXIT"}
+    rc, out = sh(cmd, timeout=timeout + 30)
+    tail = out.splitlines()[-12:]
+    return {"exit": rc, "tail": tail, "summary": tail[-1] if tail else ""}
+
+
+def last_test_log(n=15):
+    if not TEST_LOG.exists():
+        return {"log": str(TEST_LOG), "exists": False}
+    lines = TEST_LOG.read_text(errors="replace").splitlines()
+    done = any(l.startswith("PYTEST_EXIT=") for l in lines)
+    return {"log": str(TEST_LOG), "finished": done, "tail": lines[-n:]}
+
+
+def wait_for(log=None, until=None, pid=None, every=10, max_seconds=590):
+    """Polls every `every` s until `until` appears in `log`, or `pid` exits, or max_seconds. Returns what happened."""
+    t0 = time.time()
+    while time.time() - t0 < max_seconds:
+        if log and until and Path(log).exists() and until in Path(log).read_text(errors="replace"):
+            return {"done": True, "seconds": int(time.time() - t0), "tail": Path(log).read_text(errors="replace").splitlines()[-5:]}
+        if pid and sh(f"kill -0 {int(pid)}")[0] != 0:
+            return {"done": True, "seconds": int(time.time() - t0), "pid_exited": pid}
+        time.sleep(every)
+    tail = Path(log).read_text(errors="replace").splitlines()[-5:] if log and Path(log).exists() else []
+    return {"done": False, "seconds": int(time.time() - t0), "tail": tail}
+
+
+def jobs():
+    """Returns python/node processes whose command line mentions this repo's scripts (pid, elapsed, command)."""
+    _, out = sh("ps -eo pid,etime,args")
+    rows = []
+    for l in out.splitlines()[1:]:
+        parts = l.split(None, 2)
+        if len(parts) < 3:
+            continue
+        pid, et, cmd = parts
+        if re.search(r"pipelines[/.]|pytest|uvicorn|app\.py|scripts/", cmd) and "agent-cli" not in cmd and "ps -eo" not in cmd:
+            rows.append({"pid": int(pid), "elapsed": et, "command": cmd[:140]})
+    return rows
+
+
+def app(action, port=8000, pharos_root=None):
+    """start|stop|status|log for pipelines/app.py (background, PID file, health check on the port)."""
+    if action == "start":
+        env = os.environ.copy()
+        if pharos_root:
+            env["TMKG_PHAROS_ROOT"] = pharos_root
+        with open(APP_LOG, "w") as log:
+            proc = subprocess.Popen([sys.executable, "pipelines/app.py"], cwd=ROOT, stdout=log, stderr=subprocess.STDOUT, env=env)
+        APP_PID.write_text(str(proc.pid))
+        for _ in range(30):
+            time.sleep(1)
+            if sh(f"curl -s -o /dev/null -w '%{{http_code}}' http://localhost:{port}/")[1].endswith("200"):
+                return {"pid": proc.pid, "url": f"http://localhost:{port}/", "log": str(APP_LOG), "up": True}
+        return {"pid": proc.pid, "up": False, "log_tail": APP_LOG.read_text(errors="replace").splitlines()[-8:]}
+    if action == "stop":
+        if APP_PID.exists():
+            pid = APP_PID.read_text().strip()
+            sh(f"kill {pid}")
+            APP_PID.unlink()
+            return {"killed": pid}
+        return {"killed": None, "hint": "no PID file; use `jobs` then `kill <pid>`"}
+    if action == "log":
+        return {"tail": APP_LOG.read_text(errors="replace").splitlines()[-30:] if APP_LOG.exists() else []}
+    code = sh(f"curl -s -o /dev/null -w '%{{http_code}}' http://localhost:{port}/")[1]
+    return {"http": code, "pid": APP_PID.read_text().strip() if APP_PID.exists() else None}
+
+
+# ----------------------------------------------------------------------------- git writes, owner blocks
+def commit_message(msg, session_url):
+    """Takes the subject/body and the session URL. Returns the full message with the mandatory trailers."""
+    lines = [msg.rstrip(), "", TRAILER_AUTHOR]
+    if session_url:
+        lines.append(f"Claude-Session: {session_url}")
+    return "\n".join(lines) + "\n"
+
+
+def do_commit(msg, paths, session_url, dry):
+    """Stages the given paths and commits with trailers. Refuses .env, data/internal, and empty path lists."""
+    bad = [p for p in paths if p == ".env" or p.startswith("data/internal")]
+    if bad:
+        raise SystemExit(f"refusing to stage {bad} (CLAUDE.md rule 5)")
+    if not paths:
+        raise SystemExit("name the paths to stage (no `git add -A`)")
+    full = commit_message(msg, session_url)
+    if dry:
+        return {"would_add": paths, "message": full}
+    sh("git add -- " + " ".join(json.dumps(p) for p in paths), check=True)
+    p = subprocess.run(["git", "commit", "-q", "-F", "-"], cwd=ROOT, input=full, text=True, capture_output=True)
+    if p.returncode:
+        raise SystemExit(p.stdout + p.stderr)
+    return {"committed": sh("git log --oneline -1")[1], "trailer_session": bool(session_url)}
+
+
+def sync(run):
+    """Session end: push the session branch, then fast-forward main. Prints the commands unless --run."""
+    st = git_state()
+    cmds = [f"git push -u origin {st['branch']}", "git push origin HEAD:main"]
+    if st["dirty"]:
+        return {"blocked": f"{st['dirty']} dirty files; commit first", "dirty_files": st["dirty_files"]}
+    if st["behind_main"] not in ("0", "?"):
+        return {"blocked": f"branch is {st['behind_main']} behind origin/main; rebase or merge first"}
+    if not run:
+        return {"branch": st["branch"], "commands": cmds, "run": "bin/agent-cli sync --run"}
+    out = []
+    for c in cmds:
+        for attempt, delay in enumerate((0, 2, 4, 8, 16)):
+            if delay:
+                time.sleep(delay)
+            rc, o = sh(c, timeout=180)
+            if rc == 0:
+                out.append(f"ok: {c}")
+                break
+        else:
+            out.append(f"FAILED after retries: {c}\n{o}")
+            return {"pushed": out, "ok": False}
+    return {"pushed": out, "ok": True, "state": git_state(fetch=True)}
+
+
+def mac_block(commands, pull=True, paste="the last 3 lines"):
+    """Takes the commands the owner should run. Returns the fenced terminal block in the standard shape."""
+    head = MAC_PREAMBLE + (" && " + MAC_PULL if pull else "")
+    body = "\n".join(commands)
+    return f"```bash\n{head}\n{body}\n```\nPaste back: {paste}."
+
+
+def rules(term):
+    """Takes a regex. Returns matching lines from the rule/memory docs (CLAUDE.md, SKILL.md, PROJECT_MEMORY...)."""
+    rows = []
+    for rel in KNOWLEDGE:
+        for i, l in enumerate(read(rel).splitlines()):
+            if re.search(term, l, re.I):
+                rows.append({"file": rel, "line": i + 1, "text": l.strip()[:170]})
+    return rows[:200]
+
+
+def env_report():
+    """Returns python/platform, which heavy imports load, which graph files exist, and the cloud-blocked hosts."""
+    import importlib.util
+    mods = {m: importlib.util.find_spec(m) is not None
+            for m in ("pandas", "yaml", "torch", "torch_geometric", "scipy", "fastapi", "playwright", "openpyxl")}
+    where = "mac" if str(ROOT).startswith("/Users/") else ("cloud" if str(ROOT).startswith("/home/user") else "other")
+    try:
+        env_file = (ROOT / ".env").exists()
+    except PermissionError:          # Claude Science's sandbox hides .env on purpose: report "hidden", do not crash
+        env_file = "hidden"
+    return {"python": sys.version.split()[0], "where": where, "root": str(ROOT), "imports": mods,
+            "graphs_on_disk": [g.upper() for g in GRAPHS if (ROOT / "outputs" / g / "heterodata.pt").exists()],
+            "layers_on_disk": [p.name for p in (ROOT / "data" / "kg").iterdir()] if (ROOT / "data" / "kg").exists() else [],
+            "env_file": env_file, "blocked_from_cloud": BLOCKED_FROM_CLOUD}
+
+
+def start(fetch):
+    """The session-start bundle: git state, open steps, last status entry, environment."""
+    st = git_state(fetch=fetch)
+    nxt = next_items(read("docs/NEXT_STEPS.md"))
+    log = status_entries(read(STATUS_LOG))
+    env = env_report()
+    return {"git": st, "open_steps": [f"{i['id']} [{i['state']}] {i['text'][:110]}" for i in nxt[:6]],
+            "last_log": f"{log[0]['date']} ({log[0]['head']}): {log[0]['text'][:200]}" if log else "",
+            "where": env["where"], "torch": env["imports"]["torch"], "graphs_on_disk": env["graphs_on_disk"],
+            "rules": "CLAUDE.md rules 1-10; update docs/NEXT_STEPS.md + loop/ledger.tsv before the end"}
+
+
+# ----------------------------------------------------------------------------- transcript audit (the before table)
+CATEGORIES = [
+    ("test", "run pytest / read its log", lambda n, i: n == "Bash" and re.search(r"pytest|/tmp/(pytest|full_tests)", i.get("command", ""))),
+    ("commit", "git add/commit with trailers", lambda n, i: n == "Bash" and re.search(r"git (add|commit)", i.get("command", ""))),
+    ("sync", "git push / fast-forward main", lambda n, i: n == "Bash" and re.search(r"git push", i.get("command", ""))),
+    ("app", "start app + curl check", lambda n, i: n == "Bash" and re.search(r"pipelines/app\.py|curl -s[^\n]*localhost", i.get("command", ""))),
+    ("start/branches", "git log/status/fetch/branch checks", lambda n, i: n == "Bash" and re.search(r"git (log|status|fetch|branch|merge-base|rev-parse)", i.get("command", ""))),
+    ("next/status/rules", "read NEXT_STEPS / STATUS / SKILL / memory / plan docs",
+     lambda n, i: (n == "Bash" and re.search(r"(cat|sed -n|head|tail|grep)[^\n&|;]*(NEXT_STEPS|STATUS_CHECKLIST|SKILL\.md|PROJECT_MEMORY|CLAUDE\.md|WINNING_PLAN|EXECUTION_PLAN|_PLAN\.md)", i.get("command", "")))
+     or (n == "Read" and re.search(r"docs/.*\.md|CLAUDE|SKILL", i.get("file_path", "")))),
+    ("defs", "list functions in a module (grep def)", lambda n, i: n == "Bash" and re.search(r'grep[^\n&|;]*"\^?\s*def ', i.get("command", ""))),
+    ("card", "read a source card", lambda n, i: n == "Bash" and re.search(r"(cat|sed -n|head|grep)[^\n&|;]*sources/\w+\.yaml", i.get("command", ""))),
+    ("fn/show", "read a slice of a source file (sed -n / cat / head)", lambda n, i: (n == "Bash" and re.search(r"(^|&& |; )(cat|sed -n|head|tail) [^\n&|;]*\.(py|html|yaml|js|txt|md)", i.get("command", ""))) or (n == "Read" and i.get("file_path", "").endswith((".py", ".html", ".yaml", ".js")))),
+    ("grep", "grep for a term across the repo", lambda n, i: (n == "Bash" and re.search(r"(^|&& |\| |; )grep ", i.get("command", ""))) or n == "Grep"),
+    ("find/map", "find a file by name / ls a directory", lambda n, i: (n == "Bash" and re.search(r"(^|&& |\| |; )(find|ls) ", i.get("command", ""))) or n == "Glob"),
+    ("wait/jobs", "wait loops, pgrep, kill by PID, background logs", lambda n, i: n == "Bash" and re.search(r"(^|; |&& )(until|while) |pgrep|kill \$|/tmp/\w+\.log|nohup", i.get("command", ""))),
+    ("results/graphs/layers", "look at outputs (summary.md, linkpred json, prune metrics)", lambda n, i: n == "Bash" and re.search(r"outputs/|data/kg/", i.get("command", ""))),
+    ("tsv", "peek at a tsv(.gz)", lambda n, i: n == "Bash" and re.search(r"zcat|gzip -dc|\.tsv", i.get("command", ""))),
+    ("(edit)", "python inline edit (open/replace/write)", lambda n, i: n == "Bash" and re.search(r"s\.replace\(old|assert old in", i.get("command", ""))),
+    ("(images)", "screenshots read", lambda n, i: n == "Read" and i.get("file_path", "").endswith(".png")),
+]
+
+
+HEREDOC_RE = re.compile(r"<<-?\s*'?(\w+)'?.*?\n\1\b", re.S)
+
+
+def command_parts(command):
+    """Takes a shell command. Returns its top-level parts (split on && ; newline) with heredoc bodies removed, so a
+    python script fed through a heredoc counts as one part and its text is not classified line by line."""
+    stripped = HEREDOC_RE.sub("<<HEREDOC", command)
+    return [p.strip() for p in re.split(r"&&|\n|;", stripped) if p.strip() and not p.strip().startswith(("#", "echo "))]
+
+
+def repeats(jsonl_paths):
+    """Takes transcript .jsonl paths. Returns per category: questions (tool calls), calls (command parts), bytes
+    of tool output read, and the subcommand that replaces it. Categories are matched first-hit in CATEGORIES order."""
+    uses, sizes = {}, {}
+    for path in jsonl_paths:
+        for line in open(path, errors="replace"):
+            try:
+                d = json.loads(line)
+            except Exception:
+                continue
+            c = (d.get("message") or {}).get("content")
+            if not isinstance(c, list):
+                continue
+            for b in c:
+                if not isinstance(b, dict):
+                    continue
+                if b.get("type") == "tool_use":
+                    uses[b["id"]] = (b.get("name"), b.get("input") or {})
+                elif b.get("type") == "tool_result":
+                    cc = b.get("content")
+                    txt = "".join(x.get("text", "") for x in cc if isinstance(x, dict)) if isinstance(cc, list) else str(cc or "")
+                    sizes[b.get("tool_use_id")] = len(txt)
+    agg = OrderedDict((sub, {"subcommand": sub, "what": what, "questions": 0, "calls": 0, "bytes_read": 0}) for sub, what, _ in CATEGORIES)
+    other = {"subcommand": "(other)", "what": "everything else", "questions": 0, "calls": 0, "bytes_read": 0}
+    for uid, (n, i) in uses.items():
+        sz = sizes.get(uid, 0)
+        parts = [i]
+        if n == "Bash":   # a compound command counts once per part; its output bytes go to the first matched part
+            parts = [{"command": p} for p in command_parts(i.get("command", ""))]
+        first = True
+        for part in parts:
+            for sub, _, f in CATEGORIES:
+                try:
+                    ok = bool(f(n, part))
+                except Exception:
+                    ok = False
+                if ok:
+                    agg[sub]["calls"] += 1
+                    agg[sub]["bytes_read"] += sz if first else 0   # questions = tool calls whose first part matched
+                    agg[sub]["questions"] += 1 if first else 0
+                    first = False
+                    break
+        if first:
+            other["calls"] += 1
+            other["questions"] += 1
+            other["bytes_read"] += sz
+    rows = [r for r in agg.values() if r["calls"]] + [other]
+    return {"transcripts": [str(p) for p in jsonl_paths], "tool_calls": len(uses), "rows": rows}
+
+
+def default_transcripts():
+    d = Path.home() / ".claude" / "projects"
+    key = str(ROOT).replace("/", "-")
+    return sorted(str(p) for p in d.glob(f"*{key}*/*.jsonl")) + sorted(str(p) for p in d.glob(f"*{key}*.jsonl")) if d.exists() else []
+
+
+# ----------------------------------------------------------------------------- continuity: handoff, digest, transcript
+HANDOFF = Path("docs/HANDOFF.md")
+SESSIONS_DIR = Path("docs/sessions")
+MANIFEST = Path(".claude/continuity.yaml")
+SECRET_RE = re.compile(r"(sk-[A-Za-z0-9_-]{8,}|nvapi-[A-Za-z0-9_-]{8,}|AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9]{20,}|"
+                       r"(?i:password|passwd|secret|token|api[_-]?key)\s*[=:]\s*\S+)")
+
+
+def scrub(text):
+    """Takes text. Returns it with anything that looks like a key, token or password replaced by [REDACTED]."""
+    return SECRET_RE.sub("[REDACTED]", text)
+
+
+def handoff_state(fetch=False):
+    """Collects the live facts a handoff is written from (git, steps, log, machine). Returns a dict."""
+    st = git_state(fetch=fetch)
+    items = next_items(read("docs/NEXT_STEPS.md"))
+    log = status_entries(read(STATUS_LOG))[:2]
+    env = env_report()
+    first = lambda who: next((i for i in items if i["who"] == who and i["state"] == "open"), None)
+    return {"date": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), "where": env["where"], "git": st,
+            "open": items[:8], "running": [i for i in items if i["state"] == "running"],
+            "next_mac": first("MAC"), "next_cloud": first("CLOUD"), "next_owner": first("OWNER"),
+            "log": log, "graphs_on_disk": env["graphs_on_disk"], "layers_on_disk": env["layers_on_disk"],
+            "torch": env["imports"].get("torch", False)}
+
+
+def handoff_markdown(h):
+    """Takes handoff_state()'s dict. Returns docs/HANDOFF.md as text: every line computed from the state."""
+    g = h["git"]
+    in_sync = "yes" if g["in_sync_with_main"] else f"NO (ahead {g['ahead_of_main']}, behind {g['behind_main']})"
+    L = ["# Handoff (written by `bin/agent-cli end`; read by the SessionStart hook)", "",
+         f"- written: {h['date']} on the {h['where']} machine",
+         f"- branch: `{g['branch']}` at `{g['head'][:72]}`",
+         f"- origin/main: `{g['origin_main'][:72]}`",
+         f"- in sync with main: {in_sync}",
+         f"- uncommitted files when written: {g['dirty']}",
+         f"- torch here: {h['torch']}; graphs on disk: {', '.join(h['graphs_on_disk']) or 'none'}; layers on disk: {', '.join(h['layers_on_disk']) or 'none'}",
+         ""]
+    L.append("## Next action")
+    for key, label in (("next_mac", "MAC"), ("next_cloud", "CLOUD"), ("next_owner", "OWNER")):
+        i = h[key]
+        L.append(f"- {label}: " + (f"step {i['id']}: {i['text'][:300]}" if i else "no open item"))
+    L.append("")
+    L.append("## Running or partly done")
+    L += [f"- step {i['id']}: {i['text'][:300]}" for i in h["running"]] or ["- none"]
+    L.append("")
+    L.append("## Open steps (first 8, from docs/NEXT_STEPS.md)")
+    L += [f"- {i['id']} [{i['state']}] {i['who']} {i['text'][:200]}" for i in h["open"]] or ["- none"]
+    L.append("")
+    L.append("## Last session-log entries (docs/archive/STATUS_CHECKLIST.md, frozen 2026-11-04)")
+    L += [f"- {e['date']} ({e['head']}): {e['text'][:400]}" for e in h["log"]] or ["- none"]
+    L.append("")
+    L.append("Full state: `bin/agent-cli start`; the list: `bin/agent-cli next`; this file is regenerated, do not edit by hand.")
+    return "\n".join(L) + "\n"
+
+
+def transcript_rows(jsonl_path, width=220):
+    """Takes a transcript .jsonl. Returns [{n, who, text}]: the user's messages, the assistant's text, and each
+    tool call as one line (tool name + its main argument), in order. Long texts are cut to `width` chars."""
+    rows = []
+    for line in open(jsonl_path, errors="replace"):
+        try:
+            d = json.loads(line)
+        except Exception:
+            continue
+        m = d.get("message") or {}
+        role = m.get("role") or d.get("type")
+        c = m.get("content")
+        if isinstance(c, str):
+            if role == "user" and c.strip() and not c.startswith("<"):
+                rows.append({"who": "USER", "text": c})
+            continue
+        if not isinstance(c, list):
+            continue
+        for b in c:
+            if not isinstance(b, dict):
+                continue
+            t = b.get("type")
+            if t == "text" and b.get("text", "").strip():
+                if role == "user" and b["text"].startswith(("<system-reminder", "<local-command")):
+                    continue
+                rows.append({"who": "USER" if role == "user" else "CLAUDE", "text": b["text"]})
+            elif t == "tool_use":
+                i = b.get("input") or {}
+                arg = i.get("command") or i.get("file_path") or i.get("pattern") or i.get("url") or i.get("prompt") or ""
+                rows.append({"who": "TOOL", "text": f"{b.get('name')}: {arg}"})
+    out = []
+    for n, r in enumerate(rows, 1):
+        text = re.sub(r"\s+", " ", scrub(r["text"])).strip()
+        out.append({"n": n, "who": r["who"], "text": text[:width] + ("..." if len(text) > width else "")})
+    return out
+
+
+def session_digest(jsonl_path, width=300):
+    """Takes a transcript. Returns the digest markdown: the user's messages (scrubbed, cut), the commits made,
+    and the files changed, so the next session knows what was asked and what was done without the transcript."""
+    rows = transcript_rows(jsonl_path, width=width)
+    harness = ("Base directory for this skill", "This session is being continued", "Launching skill")
+    users = [r["text"] for r in rows if r["who"] == "USER" and not r["text"].startswith(harness)]
+    commits = sorted({re.sub(r"\s+", " ", r["text"])[:160] for r in rows if r["who"] == "TOOL" and re.search(r"git commit|agent-cli (commit|end)", r["text"])})
+    sid = Path(jsonl_path).stem[:8]
+    _, log = sh("git log --since='1 day ago' --oneline --no-merges -20")
+    _, changed = sh("git diff --stat HEAD~5..HEAD 2>/dev/null | tail -1")
+    L = [f"# Session digest {time.strftime('%Y-%m-%d', time.gmtime())} ({sid})", "",
+         f"- transcript: {jsonl_path} (not committed; {len(rows)} rows: {len(users)} user messages, "
+         f"{sum(r['who'] == 'TOOL' for r in rows)} tool calls)",
+         f"- commits in the last day (git log): {len(log.splitlines())}", "",
+         "## What the owner asked, in order (cut to one line each, secrets scrubbed)"]
+    L += [f"{n}. {u}" for n, u in enumerate(users, 1)] or ["- none found"]
+    L += ["", "## Commits in the last day"] + ([f"- {l}" for l in log.splitlines()] or ["- none"])
+    L += ["", f"## Files changed in the last five commits", f"- {changed or 'n/a'}"]
+    return "\n".join(L) + "\n"
+
+
+def continuity_check(manifest=MANIFEST):
+    """Reads .claude/continuity.yaml and checks every file/dir it names exists. Returns {ok, missing, listed}."""
+    doc = load_yaml(str(manifest))
+    if not isinstance(doc, dict):
+        return {"ok": False, "error": f"{manifest} unreadable or PyYAML missing"}
+    paths = []
+
+    def walk(x):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k in ("file", "dir", "settings") and isinstance(v, str):
+                    paths.append(v)
+                else:
+                    walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    walk(doc.get("layers", {}))
+    missing = [p for p in paths if not (ROOT / p).exists()]
+    layers = {k: (len(v) if isinstance(v, list) else len(v or {})) for k, v in (doc.get("layers") or {}).items()}
+    return {"ok": not missing, "listed": len(paths), "missing": missing, "layers": layers,
+            "start_sequence": doc.get("start_sequence", []), "end_sequence": doc.get("end_sequence", [])}
+
+
+def end_session(msg, session_url, run, jsonl=None, digest=False):
+    """Session end: write docs/HANDOFF.md (from the repo's own state), commit it (and nothing else), then sync.
+    With digest=True also write a docs/sessions digest from the transcript; that is opt-in because the digest
+    quotes the conversation, which the owner may not want in a public repository. Refuses when other files are
+    dirty: the work itself is committed first, with its tests."""
+    st = git_state()
+    others = [f for f in st["dirty_files"] if not re.search(r"docs/HANDOFF\.md|docs/sessions/", f)]
+    if others:
+        return {"blocked": "commit the work first (tests green); only HANDOFF/sessions may be dirty here", "dirty_files": others}
+    (ROOT / HANDOFF).write_text(handoff_markdown(handoff_state()))
+    paths = [str(HANDOFF)]
+    files = ([jsonl] if jsonl else default_transcripts()) if digest else []
+    if files:
+        latest = max(files, key=lambda f: Path(f).stat().st_mtime)
+        (ROOT / SESSIONS_DIR).mkdir(exist_ok=True)
+        out = SESSIONS_DIR / f"{time.strftime('%Y-%m-%d', time.gmtime())}_{Path(latest).stem[:8]}.md"
+        (ROOT / out).write_text(session_digest(latest))
+        paths.append(str(out))
+    if not run:
+        return {"written": paths, "then": f"bin/agent-cli end -m ... --run  (commits {paths} and runs sync --run)"}
+    res = do_commit(msg, paths, session_url, dry=False)
+    return {"written": paths, "commit": res, "sync": sync(run=True)}
+
+
+# ----------------------------------------------------------------------------- CLI
+def build_parser():
+    ap = argparse.ArgumentParser(prog="agent-cli", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--json", action="store_true", help="print JSON instead of tab lines")
+    sp = ap.add_subparsers(dest="cmd", required=True)
+    sp.add_parser("controller", help="persistent autonomous development controller (run, resume, status)")
+
+    p = sp.add_parser("start", help="session start: branch vs origin/main, dirty files, open steps, last log entry, env")
+    p.add_argument("--fetch", action="store_true", help="git fetch origin main first")
+    p = sp.add_parser("git", help="branch, HEAD, origin/main, ahead/behind, dirty files")
+    p.add_argument("--fetch", action="store_true")
+    sp.add_parser("branches", help="remote branches and whether main already contains them (delete command)")
+    p = sp.add_parser("next", help="open [ ]/[~] items of docs/NEXT_STEPS.md; --step 7e prints one step in full")
+    p.add_argument("--all", action="store_true", help="include done items")
+    p.add_argument("--step", help="print the full block of this step id")
+    p.add_argument("-n", type=int, default=50)
+    p = sp.add_parser("status", help="latest session-log entries (archived docs/archive/STATUS_CHECKLIST.md)")
+    p.add_argument("-n", type=int, default=3)
+    p.add_argument("--full", action="store_true", help="whole entry text, not the first 200 chars")
+    p = sp.add_parser("rules", help="grep the rule/memory docs (CLAUDE.md, SKILL.md, PROJECT_MEMORY, plans)")
+    p.add_argument("term")
+    p = sp.add_parser("defs", help="functions/classes of a file with line numbers and docstring first line")
+    p.add_argument("file")
+    p = sp.add_parser("fn", help="source of one function/class, numbered")
+    p.add_argument("file")
+    p.add_argument("name")
+    p = sp.add_parser("show", help="lines START-END of a file, numbered")
+    p.add_argument("file")
+    p.add_argument("start", type=int)
+    p.add_argument("end", type=int)
+    p = sp.add_parser("section", help="a markdown section by heading regex")
+    p.add_argument("file")
+    p.add_argument("heading")
+    p = sp.add_parser("grep", help="grep -n a regex across code/docs/sources (data, outputs, raw excluded)")
+    p.add_argument("term")
+    p.add_argument("paths", nargs="*")
+    p.add_argument("-i", action="store_true")
+    p = sp.add_parser("find", help="files whose name contains a fragment")
+    p.add_argument("name")
+    p = sp.add_parser("map", help="files of a directory with their first docstring/comment line")
+    p.add_argument("dir", nargs="?", default="pipelines")
+    p = sp.add_parser("card", help="source card summary: name, layer, lookups, node/edge blocks")
+    p.add_argument("name", help="card stem (pharos) or path")
+    p.add_argument("--raw", action="store_true", help="print the yaml itself")
+    p = sp.add_parser("nim-check", help="pre-flight: every model id of config/nim_models.yaml answers one tiny structured call "
+                                       "(live catalogue listing, 404-for-this-account); exit 1 if one fails, 2 without a key")
+    p.add_argument("--no-list", action="store_true", help="skip reading the live model list")
+    sp.add_parser("layers", help="per source card: layer built? verdicts? prune share? summary?")
+    sp.add_parser("graphs", help="G0-G4: heterodata.pt present and summary totals")
+    p = sp.add_parser("results", help="linkpred result JSONs: AUROC per graph/task/split with baselines and wiring")
+    p.add_argument("--dir", default="outputs/linkpred")
+    p = sp.add_parser("tsv", help="columns, first rows and row count of a tsv(.gz)")
+    p.add_argument("file")
+    p.add_argument("-n", type=int, default=5)
+    p = sp.add_parser("test", help="pytest: paths, --for MODULE (its test files), --bg (background), --last (log tail)")
+    p.add_argument("paths", nargs="*")
+    p.add_argument("--for", dest="module", help="run the test files that match this source file")
+    p.add_argument("--bg", action="store_true")
+    p.add_argument("--last", action="store_true")
+    p.add_argument("--only-list", action="store_true", help="list the matching test files, do not run")
+    p = sp.add_parser("wait", help="poll until a log contains a string or a PID exits (no foreground sleep needed)")
+    p.add_argument("--log")
+    p.add_argument("--until")
+    p.add_argument("--pid", type=int)
+    p.add_argument("--every", type=int, default=10)
+    p.add_argument("--max", type=int, default=590)
+    sp.add_parser("jobs", help="background python jobs of this repo (pid, elapsed, command); kill by PID, never pkill -f")
+    p = sp.add_parser("kill", help="kill a job by PID")
+    p.add_argument("pid", type=int)
+    p = sp.add_parser("app", help="start|stop|status|log the FastAPI app in the background")
+    p.add_argument("action", choices=["start", "stop", "status", "log"])
+    p.add_argument("--pharos-root", help="TMKG_PHAROS_ROOT for a fixture graph")
+    p.add_argument("--port", type=int, default=8000)
+    p = sp.add_parser("commit", help="git add PATHS + commit with the mandatory trailers (session URL from --session or $CLAUDE_SESSION_URL)")
+    p.add_argument("-m", required=True)
+    p.add_argument("paths", nargs="*")
+    p.add_argument("--session", default=os.environ.get("CLAUDE_SESSION_URL", ""))
+    p.add_argument("--dry", action="store_true")
+    p = sp.add_parser("sync", help="session end: push the session branch, fast-forward main (prints commands; --run executes)")
+    p.add_argument("--run", action="store_true")
+    p = sp.add_parser("mac", help="the owner's terminal block in the standard shape (cd, venv, pull, commands)")
+    p.add_argument("commands", nargs="+")
+    p.add_argument("--no-pull", action="store_true")
+    p.add_argument("--paste", default="the last 3 lines")
+    p = sp.add_parser("env", help="python, where (mac/cloud), imports that load, graphs/layers on disk, blocked hosts")
+    p = sp.add_parser("handoff", help="show docs/HANDOFF.md (the previous session's snapshot); --write regenerates it from live state")
+    p.add_argument("--write", action="store_true")
+    p = sp.add_parser("transcript", help="condensed view of a transcript .jsonl: user messages, replies, tool calls, one line each")
+    p.add_argument("path", nargs="?", help="default: this repo's newest transcript under ~/.claude/projects")
+    p.add_argument("--last", type=int, default=80)
+    p.add_argument("--width", type=int, default=220)
+    p.add_argument("--grep", help="only rows matching this regex")
+    p = sp.add_parser("digest", help="session digest markdown (owner messages, commits, files) from a transcript; --write saves it under docs/sessions/")
+    p.add_argument("path", nargs="?")
+    p.add_argument("--write", action="store_true")
+    sp.add_parser("continuity", help="check .claude/continuity.yaml: every file it names exists; print the start/end sequences")
+    p = sp.add_parser("end", help="session end: write HANDOFF.md + digest, commit them, push branch, fast-forward main (--run executes)")
+    p.add_argument("-m", default="handoff: session snapshot and digest")
+    p.add_argument("--session", default=os.environ.get("CLAUDE_SESSION_URL", ""))
+    p.add_argument("--run", action="store_true")
+    p.add_argument("--transcript", help="transcript .jsonl for the digest (default: newest)")
+    p.add_argument("--digest", action="store_true", help="also write docs/sessions/<date>_<id>.md from the transcript (opt-in: it quotes the conversation)")
+    p = sp.add_parser("repeats", help="audit session transcripts: repeated calls per category and bytes read (the before table)")
+    p.add_argument("jsonl", nargs="*", help="transcript files (default: this repo's under ~/.claude/projects)")
+    return ap
+
+
+def nim_check(list_models=True, as_json=False):
+    """The pre-flight of pipelines/nim.py. Returns (report or lines, exit code): 0 all models answer, 1 a model failed,
+    2 no key (offline backend: nothing hosted to check), 3 packages missing (use the venv python)."""
+    sys.path.insert(0, str(ROOT / "pipelines"))
+    try:
+        import nim as nimmod
+    except ImportError as err:               # requests / yaml live in the project venv, not in a bare python3
+        return [f"nim-check needs the project environment ({err}): .venv/bin/python bin/agent-cli nim-check"], 3
+    rep = nimmod.preflight(nimmod.NIM(), list_models=list_models)
+    out = rep if as_json else nimmod.preflight_text(rep).splitlines()
+    return out, (2 if rep["ok"] is None else 0 if rep["ok"] else 1)
+
+
+def main(argv=None):
+    try:                                     # `agent-cli ... | head` must not end in a BrokenPipe traceback
+        import signal
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+    except (ImportError, AttributeError, ValueError):
+        pass
+    ap = build_parser()
+    argv = list(sys.argv[1:] if argv is None else argv)
+    as_json = "--json" in argv            # accepted before or after the subcommand
+    argv = [x for x in argv if x != "--json"]
+    if argv and argv[0] == "controller":
+        # Forward argv without a shell; the controller owns its schema and exit codes.
+        result = subprocess.run([sys.executable, str(ROOT / "bin" / "dev-controller"), *argv[1:]], cwd=ROOT)
+        raise SystemExit(result.returncode)
+    a = ap.parse_args(argv)
+    a.json = as_json
+    c = a.cmd
+    if c == "start":
+        out = start(a.fetch)
+    elif c == "git":
+        out = git_state(a.fetch)
+    elif c == "branches":
+        out = branches()
+    elif c == "next":
+        text = read("docs/NEXT_STEPS.md")
+        out = step_text(text, a.step) if a.step else [f"{i['id']}\t{i['state']}\t{i['who']}\t{i['text'][:400]}" for i in next_items(text, not a.all)[:a.n]]
+        if a.json and not a.step:
+            out = next_items(text, not a.all)[:a.n]
+    elif c == "status":
+        ents = status_entries(read(STATUS_LOG))[:a.n]
+        out = ents if a.json else [f"{e['date']}\t{e['head']}\t{e['text'] if a.full else e['text'][:200]}" for e in ents]
+    elif c == "rules":
+        out = rules(a.term)
+    elif c == "defs":
+        out = defs(a.file)
+    elif c == "fn":
+        out = fn_source(a.file, a.name) or f"no def/class named {a.name} in {a.file}"
+    elif c == "show":
+        out = [f"{a.start + i}\t{l}" for i, l in enumerate(file_lines(a.file, a.start, a.end))]
+    elif c == "section":
+        out = section(a.file, a.heading) or [f"no heading matching {a.heading!r} in {a.file}"]
+    elif c == "grep":
+        out = grep(a.term, a.paths or None, a.i)
+    elif c == "find":
+        out = find_files(a.name)
+    elif c == "map":
+        out = repo_map(a.dir)
+    elif c == "card":
+        rel = a.name if a.name.endswith(".yaml") else f"sources/{a.name}.yaml"
+        out = read(rel) if a.raw else card_summary(rel)
+    elif c == "nim-check":
+        out, code = nim_check(not a.no_list, as_json)
+        if code:
+            emit(out, as_json)
+            raise SystemExit(code)
+    elif c == "layers":
+        out = layers()
+    elif c == "graphs":
+        out = graphs()
+    elif c == "results":
+        out = results(a.dir) or [{"note": f"no result JSON in {a.dir}"}]
+    elif c == "tsv":
+        out = tsv_head(a.file, a.n)
+    elif c == "test":
+        if a.last:
+            out = last_test_log()
+        else:
+            paths = list(a.paths) + (test_for(a.module) if a.module else [])
+            if a.module and not test_for(a.module):
+                out = {"error": f"no test file for {a.module}; CLAUDE.md rule 8: write tests/test_{Path(a.module).stem}.py"}
+            elif a.only_list:
+                out = paths
+            else:
+                out = run_tests(paths, a.bg)
+    elif c == "wait":
+        out = wait_for(a.log, a.until, a.pid, a.every, a.max)
+    elif c == "jobs":
+        out = jobs()
+    elif c == "kill":
+        rc, o = sh(f"kill {a.pid}")
+        out = {"pid": a.pid, "killed": rc == 0, "msg": o}
+    elif c == "app":
+        out = app(a.action, a.port, a.pharos_root)
+    elif c == "commit":
+        out = do_commit(a.m, a.paths, a.session, a.dry)
+    elif c == "sync":
+        out = sync(a.run)
+    elif c == "mac":
+        out = mac_block(a.commands, not a.no_pull, a.paste)
+    elif c == "env":
+        out = env_report()
+    elif c == "handoff":
+        if a.write:
+            (ROOT / HANDOFF).write_text(handoff_markdown(handoff_state()))
+        out = read(str(HANDOFF)) or f"no {HANDOFF} yet; write it with: bin/agent-cli handoff --write"
+    elif c == "transcript":
+        files = [a.path] if a.path else default_transcripts()
+        if not files:
+            raise SystemExit("no transcript found; pass a path")
+        latest = max(files, key=lambda f: Path(f).stat().st_mtime)
+        rows = transcript_rows(latest, a.width)
+        if a.grep:
+            rows = [r for r in rows if re.search(a.grep, r["text"], re.I)]
+        rows = rows[-a.last:]
+        out = rows if a.json else [f"{latest}\t{len(rows)} rows shown"] + [f"{r['n']}\t{r['who']}\t{r['text']}" for r in rows]
+    elif c == "digest":
+        files = [a.path] if a.path else default_transcripts()
+        if not files:
+            raise SystemExit("no transcript found; pass a path")
+        latest = max(files, key=lambda f: Path(f).stat().st_mtime)
+        text = session_digest(latest)
+        if a.write:
+            (ROOT / SESSIONS_DIR).mkdir(exist_ok=True)
+            target = ROOT / SESSIONS_DIR / f"{time.strftime('%Y-%m-%d', time.gmtime())}_{Path(latest).stem[:8]}.md"
+            target.write_text(text)
+            out = {"written": str(target.relative_to(ROOT))}
+        else:
+            out = text
+    elif c == "continuity":
+        out = continuity_check()
+    elif c == "end":
+        out = end_session(a.m, a.session, a.run, a.transcript, a.digest)
+    elif c == "repeats":
+        files = a.jsonl or default_transcripts()
+        if not files:
+            raise SystemExit("no transcript .jsonl found; pass paths")
+        out = repeats(files)
+        if not a.json:
+            print(f"transcripts\t{len(files)}\ttool_calls\t{out['tool_calls']}")
+            out = out["rows"]
+    else:
+        ap.error(c)
+    emit(out, a.json)
+
+
+if __name__ == "__main__":
+    main()

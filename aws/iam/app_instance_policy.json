@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Sid": "ReadTheAppBundle", "Effect": "Allow", "Action": ["s3:GetObject", "s3:ListBucket"],
+     "Resource": ["arn:aws:s3:::BUCKET_NAME", "arn:aws:s3:::BUCKET_NAME/app/*"]},
+    {"Sid": "KeepCaddysCertificateAcrossRelaunches", "Effect": "Allow", "Action": ["s3:PutObject"],
+     "Resource": "arn:aws:s3:::BUCKET_NAME/app/caddy/*"},
+    {"Sid": "ReadTheNimKey", "Effect": "Allow", "Action": ["ssm:GetParameter"],
+     "Resource": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/trialmindkg/*"},
+    {"Sid": "SessionManagerInsteadOfSsh", "Effect": "Allow",
+     "Action": ["ssmmessages:CreateControlChannel", "ssmmessages:CreateDataChannel", "ssmmessages:OpenControlChannel",
+                "ssmmessages:OpenDataChannel", "ssm:UpdateInstanceInformation"], "Resource": "*"},
+    {"Sid": "WakeTheProjectNeptune", "Effect": "Allow", "Action": ["rds:DescribeDBClusters", "rds:StartDBCluster"],
+     "Resource": "arn:aws:rds:REGION:ACCOUNT_ID:cluster:tmkg-*"}
+  ]
+}

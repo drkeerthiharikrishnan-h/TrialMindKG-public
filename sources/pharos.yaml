@@ -1,0 +1,316 @@
+# Source card: Pharos 3.19.2 (TCRD 6.13.5), pulled by pipelines/pharos.py into data/pharos/<table>.tsv.gz.
+# Read by the generic builder pipelines/kgbuilder/engine.py (format documented there). Layer L0 = Pharos as
+# delivered: every row whose identifiers can be standardised becomes an edge; nothing is filtered on content.
+#
+# Modelling (BioLink 4.4.5, checked by the builder against biolink-model.yaml):
+#   Gene (NCBIGene, protein-coding: type SO:0001217) -has_gene_product-> Protein (UniProtKB)
+#     BioLink's translates_to requires a transcript as subject, so the gene -> protein link is has_gene_product
+#     (RO:0002205); the brief's so#translates_to is kept as original_predicate.
+#   gene-level evidence on the Gene: disease associations, GWAS (TIGA), mouse phenotypes, TIN-X text mining
+#   protein-level evidence on the Protein: ligand activities, GO, pathways
+name: pharos
+version: pharos319 (Pharos 3.19.2 / TCRD 6.13.5)
+tables_dir: data/pharos
+aggregator: infores:pharos
+layer: L0
+
+lookups:
+  uniprot_to_gene: {table: gene_ids, key: UniProt, value: NCBI Gene ID, prefix: NCBIGene}
+  # 3,369 targets have no NCBI Gene id in Pharos; all of them have an Ensembl gene id in the TIGA table
+  uniprot_to_ensembl: {table: tiga, key: UniProt, value: TIGA ENSG ID, prefix: ENSEMBL}
+  # HGNC (data/reference/hgnc_gene_ids.tsv, pipelines/hgnc_ref.py): NCBI Gene id for a UniProt accession whose Pharos
+  # row has none, so the gene gets the same id as in the Open Targets and trial layers; Ensembl only as a last resort
+  hgnc_uniprot_to_gene: {ref_file: data/reference/hgnc_gene_ids.tsv, key: uniprot_id, value: ncbigene_id, skip_ambiguous: true}
+  # CC-34 (review m4; takes effect at the CS-9 rebuild): the HGNC id of a gene as an xref on the Gene node (NCATS compares
+  # HGNC ids), and EFO trait / disease ids mapped to MONDO where MONDO has an exact xref (the Open Targets card's rule)
+  ncbigene_to_hgnc: {ref_file: data/reference/hgnc_gene_ids.tsv, key: ncbigene_id, value: hgnc_id, skip_ambiguous: true,
+                     key_prefix: NCBIGene}
+  efo_to_mondo: {ref_file: data/reference/mondo_efo_exact.tsv, key: efo_id, value: mondo_id, skip_ambiguous: true}
+  umls_to_mondo: {ref_file: data/reference/mondo_umls_exact.tsv, key: umls_id, value: mondo_id, skip_ambiguous: true}
+  doid_to_mondo: {ref_file: data/reference/mondo_doid_exact.tsv, key: doid_id, value: mondo_id, skip_ambiguous: true}
+
+nodes:
+  - table: targets
+    id: {column: UniProt, prefix: UniProtKB}
+    category: biolink:Protein
+    name: Name
+    properties: {symbol: Symbol, tdl: Target Development Level, idg_family: IDG Family, novelty: Novelty,
+                 pubmed_score: PubMed Score}
+    constants: {type: "PR:000000001", in_taxon: "NCBITaxon:9606"}      # PR:000000001 = protein (the brief's IRI)
+  - table: gene_ids
+    id: {column: NCBI Gene ID, prefix: NCBIGene}
+    category: biolink:Gene
+    name: Symbol
+    properties: {hgnc: {column: NCBI Gene ID, lookup: ncbigene_to_hgnc}}
+    constants: {type: "SO:0001217", in_taxon: "NCBITaxon:9606"}
+
+edges:
+  - name: gene_has_product
+    table: gene_ids
+    subject: {columns: [{column: NCBI Gene ID, prefix: NCBIGene}, {column: UniProt, lookup: hgnc_uniprot_to_gene},
+                        {column: UniProt, lookup: uniprot_to_ensembl}],
+              category: biolink:Gene}
+    predicate: biolink:has_gene_product
+    object: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    source: Pharos target-gene mapping
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "SO:translates_to"}
+
+  - name: gene_disease
+    table: diseases
+    subject: {columns: [{column: UniProt, lookup: uniprot_to_gene}, {column: UniProt, lookup: hgnc_uniprot_to_gene},
+                        {column: UniProt, lookup: uniprot_to_ensembl}],
+              category: biolink:Gene}
+    predicate: biolink:gene_associated_with_condition
+    object:
+      columns:
+        - Mondo ID                                                        # preferred: Pharos's own MONDO id
+        - {column: Associated Disease Source ID, lookup: umls_to_mondo}   # UMLS:Cxxx -> MONDO via OWL xrefs
+        - {column: Associated Disease Source ID, lookup: doid_to_mondo}   # DOID:xxx -> MONDO via OWL xrefs
+        - {column: Associated Disease Source ID, lookup: efo_to_mondo}    # EFO:xxx -> MONDO (CC-34)
+        - Associated Disease Source ID                                    # fallback: OMIM, ORDO, etc. as-is
+      prefix_map: {MIM: OMIM, Orphanet: ORDO, UMLS: null, AmyCo: null, NCBIGene: null}   # remaining UMLS/AmyCo/NCBIGene -> drop
+      category: biolink:Disease
+      name: Linked Disease
+    record_columns: [UniProt, Disease Data Source, Associated Disease Source ID, Mondo ID]
+    source: {column: Disease Data Source}
+    primary_knowledge_source:
+      column: Disease Data Source
+      map: {DisGeNET: "infores:disgenet", CTD: "infores:ctd", "JensenLab Text Mining": "infores:diseases",
+            "JensenLab Knowledge MedlinePlus": "infores:medlineplus", "JensenLab Knowledge UniProtKB-KW": "infores:uniprot",
+            "JensenLab Knowledge AmyCo": "infores:amyco", "JensenLab Experiment TIGA": "infores:tiga",
+            eRAM: "infores:eram", "DrugCentral Indication": "infores:drugcentral", Monarch: "infores:monarchinitiative",
+            "UniProt Disease": "infores:uniprot", "*": "infores:pharos"}
+    knowledge_level:
+      column: Disease Data Source
+      map: {"JensenLab Text Mining": text_co_occurrence, "JensenLab Experiment TIGA": statistical_association,
+            "Expression Atlas": statistical_association, CTD: knowledge_assertion, Monarch: knowledge_assertion,
+            "UniProt Disease": knowledge_assertion, "DrugCentral Indication": knowledge_assertion,
+            "JensenLab Knowledge MedlinePlus": knowledge_assertion, "JensenLab Knowledge UniProtKB-KW": knowledge_assertion,
+            "JensenLab Knowledge AmyCo": knowledge_assertion, "*": not_provided}
+    agent_type:
+      column: Disease Data Source
+      map: {"JensenLab Text Mining": text_mining_agent, "Expression Atlas": data_analysis_pipeline,
+            "JensenLab Experiment TIGA": data_analysis_pipeline, CTD: manual_agent, "UniProt Disease": manual_agent,
+            "DrugCentral Indication": manual_agent, "*": not_provided}
+    properties: {jensenlab_zscore: JensenLab TextMining zscore, jensenlab_confidence: JensenLab Confidence,
+                 disgenet_score: DisGeNET Score, expression_atlas_log2fc: Expression Atlas Log2 Fold Change,
+                 p_value: Associated Disease P-value, evidence: Associated Disease Evidence,
+                 drug_name: Associated Disease Drug Name, monarch_s2o: Monarch S2O,
+                 source_disease_id: Associated Disease Source ID}
+
+  - name: ligand_activity
+    table: ligands
+    subject:
+      columns: [{column: Ligand ChEMBL ID, prefix: CHEMBL.COMPOUND}, {column: Ligand PubChem ID, prefix: PUBCHEM.COMPOUND},
+                {column: Ligand Guide to Pharmacology ID, prefix: GTOPDB}, {column: Ligand DrugCentral ID, prefix: DrugCentral}]
+      category: biolink:SmallMolecule
+    predicate: biolink:directly_physically_interacts_with
+    object: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    record_columns: [Ligand ChEMBL ID, Ligand PubChem ID, UniProt]
+    source: {column: Ligand Reference Source, default: Pharos ligand activity}
+    primary_knowledge_source:
+      column: Ligand Reference Source
+      map: {CHEMBL: "infores:chembl", IUPHAR: "infores:gtopdb", "DRUG LABEL": "infores:drugcentral",
+            "SCIENTIFIC LITERATURE": "infores:drugcentral", "KEGG DRUG": "infores:drugcentral", "*": "infores:chembl"}
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    properties: {activity: Ligand Activity, activity_type: Ligand Activity Type, action: Ligand Action,
+                 pmids: Ligand PubMed IDs, references: Ligand References, ligand_name: Ligand Name,
+                 is_drug: Ligand Is Drug, smiles: Ligand SMILES}
+
+  - name: protein_molecular_function
+    table: go
+    filter: {GO Term Type: Function}
+    subject: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    predicate: biolink:capable_of
+    object: {column: GO Term go_id, category: biolink:MolecularActivity, name: GO Term}
+    record_columns: [UniProt, GO Term go_id, GO Term Evidence]
+    source: Gene Ontology annotation
+    primary_knowledge_source: "infores:goa"
+    knowledge_level: knowledge_assertion
+    agent_type: {column: GO Term Evidence, map: {IEA: automated_agent, "*": manual_agent}}
+    properties: {evidence_code: GO Term Evidence, assigned_by: GO Term Assigned By}
+  - name: protein_biological_process
+    table: go
+    filter: {GO Term Type: Process}
+    subject: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    predicate: biolink:actively_involved_in
+    object: {column: GO Term go_id, category: biolink:BiologicalProcess, name: GO Term}
+    record_columns: [UniProt, GO Term go_id, GO Term Evidence]
+    source: Gene Ontology annotation
+    primary_knowledge_source: "infores:goa"
+    knowledge_level: knowledge_assertion
+    agent_type: {column: GO Term Evidence, map: {IEA: automated_agent, "*": manual_agent}}
+    properties: {evidence_code: GO Term Evidence, assigned_by: GO Term Assigned By}
+  - name: protein_cellular_component
+    table: go
+    filter: {GO Term Type: Component}
+    subject: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    predicate: biolink:located_in
+    object: {column: GO Term go_id, category: biolink:CellularComponent, name: GO Term}
+    record_columns: [UniProt, GO Term go_id, GO Term Evidence]
+    source: Gene Ontology annotation
+    primary_knowledge_source: "infores:goa"
+    knowledge_level: knowledge_assertion
+    agent_type: {column: GO Term Evidence, map: {IEA: automated_agent, "*": manual_agent}}
+    properties: {evidence_code: GO Term Evidence, assigned_by: GO Term Assigned By}
+
+  - name: protein_pathway
+    table: pathways
+    filter: {Pathway Type: [Reactome, KEGG, WikiPathways]}
+    subject: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    predicate: biolink:actively_involved_in
+    object:
+      column: Pathway Source ID
+      replace: {"^path:": "", "_r\\d+$": ""}
+      prefix_by: {column: Pathway Type, map: {Reactome: REACT, KEGG: KEGG.PATHWAY, WikiPathways: WIKIPATHWAYS}}
+      category: biolink:Pathway
+      name: Pathway Name
+    record_columns: [UniProt, Pathway Type, Pathway Source ID]
+    source: {column: Pathway Type}
+    primary_knowledge_source: {column: Pathway Type, map: {Reactome: "infores:reactome", KEGG: "infores:kegg",
+                                                           WikiPathways: "infores:wikipathways"}}
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+
+  - name: gene_mouse_phenotype
+    table: phenotypes
+    require: Term ID
+    explode_json: [Term ID]
+    subject: {columns: [{column: UniProt, lookup: uniprot_to_gene}, {column: UniProt, lookup: hgnc_uniprot_to_gene},
+                        {column: UniProt, lookup: uniprot_to_ensembl}],
+              category: biolink:Gene}
+    predicate: biolink:has_phenotype
+    object: {column: Term ID, category: biolink:PhenotypicFeature, name: Term Name}
+    record_columns: [UniProt, Phenotype Data Source, Term ID, Procedure Name, Parameter Name, Sex]
+    source: {column: Phenotype Data Source}
+    primary_knowledge_source: {column: Phenotype Data Source,
+                               map: {"JAX/MGI Human Ortholog Phenotype": "infores:mgi", "*": "infores:pharos"}}
+    knowledge_level: {column: Phenotype Data Source, map: {IMPC: statistical_association, "*": knowledge_assertion}}
+    agent_type: {column: Phenotype Data Source, map: {IMPC: data_analysis_pipeline, "*": manual_agent}}
+    properties: {p_value: p-value, effect_size: Effect Size, percentage_change: Percentage Change,
+                 procedure: Procedure Name, parameter: Parameter Name, sex: Sex}
+    constants: {qualifier: "mouse ortholog phenotype"}
+
+  - name: gene_gwas_trait
+    table: tiga
+    subject: {columns: [{column: UniProt, lookup: uniprot_to_gene}, {column: UniProt, lookup: hgnc_uniprot_to_gene},
+                        {column: UniProt, lookup: uniprot_to_ensembl}],
+              category: biolink:Gene}
+    predicate: biolink:genetically_associated_with
+    object:
+      columns: [{column: EFO ID, lookup: efo_to_mondo}, {column: EFO ID}]   # CC-34: EFO -> MONDO where MONDO has an exact xref
+      replace: {"_": ":"}
+      route_property: disease_route
+      prefix_map: {Orphanet: ORDO}
+      category_by_prefix: {MONDO: biolink:Disease, ORDO: biolink:Disease, EFO: biolink:DiseaseOrPhenotypicFeature,
+                           HP: biolink:PhenotypicFeature}
+      name: GWAS Trait
+    record_columns: [UniProt, EFO ID]
+    source: TIGA (GWAS Catalog)
+    primary_knowledge_source: "infores:tiga"
+    knowledge_level: statistical_association
+    agent_type: data_analysis_pipeline
+    properties: {study_count: Study Count, snp_count: SNP Count, median_p_value: Median p-value,
+                 median_odds_ratio: Median Odds Ratio, mean_rank_score: Mean Rank Score, rcras: RCRAS}
+
+  - name: gene_disease_textmining_tinx
+    table: tinx
+    subject: {columns: [{column: UniProt, lookup: uniprot_to_gene}, {column: UniProt, lookup: hgnc_uniprot_to_gene},
+                        {column: UniProt, lookup: uniprot_to_ensembl}],
+              category: biolink:Gene}
+    predicate: biolink:gene_associated_with_condition
+    object:
+      columns:
+        - {column: TINX Disease DOID, lookup: doid_to_mondo}   # DOID -> MONDO where possible
+        - TINX Disease DOID                                     # fallback: keep the DOID as-is
+      category: biolink:Disease
+      name: TINX Disease
+    record_columns: [UniProt, TINX Disease DOID]
+    source: TIN-X
+    primary_knowledge_source: "infores:pharos"
+    knowledge_level: text_co_occurrence
+    agent_type: text_mining_agent
+    properties: {tinx_importance: TINX Target Importance, tinx_disease_novelty: TINX Disease Novelty}
+
+  # --- PPI (protein-protein interaction) edges ---
+  # Each row links two proteins via STRING, BioPlex, Reactome or a combination.
+  # The "PPI Data Source" cell can be comma-separated ("BioPlex,STRINGDB"); we keep it as-is
+  # and map the primary knowledge source to the first named database.
+  - name: protein_protein_interaction
+    table: ppi
+    subject: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    predicate: biolink:physically_interacts_with
+    object: {column: PPI UniProt, prefix: UniProtKB, category: biolink:Protein}
+    record_columns: [UniProt, PPI UniProt, PPI Data Source]
+    source: {column: PPI Data Source, default: Pharos PPI}
+    primary_knowledge_source:
+      column: PPI Data Source
+      map: {STRINGDB: "infores:string", BioPlex: "infores:bioplex", Reactome: "infores:reactome",
+            "BioPlex,STRINGDB": "infores:string", "Reactome,STRINGDB": "infores:string", "*": "infores:string"}
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    properties: {stringdb_score: StringDB Interaction Score, bioplex_probability: BioPlex Interaction Probability}
+
+# Pruning v1 settings (pipelines/kgbuilder/prune.py): which columns are the source's own score (and which direction
+# is "stronger"), which predicates state the same kind of pair, and ontology roots too generic to be informative.
+prune:
+  score_columns: {jensenlab_zscore: higher, disgenet_score: higher, monarch_s2o: higher, expression_atlas_log2fc: abs,
+                  activity: higher, mean_rank_score: higher, study_count: higher, p_value: lower, tinx_importance: higher,
+                  stringdb_score: higher, bioplex_probability: higher}
+  pair_groups:
+    gene_condition: [biolink:gene_associated_with_condition, biolink:genetically_associated_with]
+  generic_objects: ["MONDO:0000001", "DOID:4"]     # "disease or disorder" / "disease"
+  # Owner decision 6 (9 Nov): Pharos PPI rows whose "PPI Data Source" is "mock" are placeholder self-pairs without a score
+  # (19,165 rows in Pharos 3.19.2, outputs/pharos/prune_report.md "By source"); they are pruned whatever their confidence.
+  hard_prune:
+    - {source: mock, predicate: biolink:physically_interacts_with, self_pair: true,
+       reason: pharos_placeholder_self_interaction}
+  activity_range: [2, 14]                          # pActivity outside this range is implausible
+  never_prune_predicates: [biolink:has_gene_product]   # gene -> protein identity mapping, not a claim to judge
+  # Pruning v1.1 (docs/BACKUP_PLAN.md B2; pipelines/kgbuilder/prune.py). Protection is a policy, not measured by the
+  # injected errors: an edge from a curated source that another primary source also asserts is never pruned.
+  # trust_weight / svd_k / plausibility_by stay at the v1 values (0.2 / 32 / all) until
+  # `python pipelines/prune_compare.py sources/pharos.yaml` has compared them on a separate injected set (seed 1);
+  # trust_weight is decided with the owner's spot check (step 17), not on injected errors alone.
+  version: v1.1
+  protect_curated_corroborated: true
+
+# Corrections made when a product is WRITTEN (KGX tables, card index, Neptune files): pipelines/export_graph_kgx.py,
+# block "export fixes". The layer file data/kg/pharos, the training graphs G0-G4, the frozen benchmark and the verdict
+# file keep the labels above (the benchmark selects edges by knowledge level, so they must not move). Owner decision.
+export_overrides:
+  # Start nodes of the small sample folder (export_graph_kgx.py --sample): the EGFR gene and its protein.
+  sample_seeds: ["NCBIGene:1956", "UniProtKB:P00533"]
+  relabel_edges:
+    # A STRING link is a combined score computed from several evidence channels, a BioPlex link a probability computed
+    # from affinity-purification mass spectrometry: neither is a statement a curator wrote. `source` is the Pharos
+    # "PPI Data Source" cell.
+    - name: STRING score rows are a statistical association
+      when: {predicate: "biolink:physically_interacts_with", source: [STRINGDB, "BioPlex,STRINGDB"]}
+      set: {knowledge_level: statistical_association, agent_type: data_analysis_pipeline}
+      why: "STRING combined score (stringdb_score), computed by a pipeline; was knowledge_assertion + manual_agent"
+    - name: BioPlex probability rows are a statistical association
+      when: {predicate: "biolink:physically_interacts_with", source: BioPlex}
+      set: {knowledge_level: statistical_association, agent_type: data_analysis_pipeline}
+      why: "BioPlex interaction probability (bioplex_probability), computed by a pipeline; was knowledge_assertion + manual_agent"
+    - name: placeholder self-pairs have no knowledge level
+      when: {predicate: "biolink:physically_interacts_with", source: mock}
+      set: {knowledge_level: not_provided, agent_type: not_provided}
+      why: "Pharos placeholder rows without a score (always pruned); was knowledge_assertion + manual_agent"
+  # `when` makes an exception checkable: a row of a predicate the relabel rules name that matches neither a rule nor
+  # an exception is counted by the export ("no rule and no listed exception"), so a new source cell cannot pass unseen.
+  kept_as_is:
+    - what: "TIN-X text-mining rows: primary_knowledge_source infores:pharos"
+      why: "the infores registry has no entry for TIN-X (infores:tinx and infores:tin-x looked up: data/reference/infores_checked.tsv),
+            so the aggregator's id is kept; knowledge_level text_co_occurrence and agent_type text_mining_agent already say what the rows are"
+    - what: "Protein-protein rows whose source cell names Reactome (Reactome, 'Reactome,STRINGDB', 'BioPlex,Reactome',
+             'BioPlex,Reactome,STRINGDB'): knowledge_assertion + manual_agent"
+      why: "Reactome is curated by people; the mixed rows keep the curated level although their primary source is written infores:string
+            (the two cells with BioPlex: 2,480 and 6 of the 11,672,660 interaction rows of Pharos 3.19.2, counted in the IntAct corroboration report)"
+      when: {predicate: "biolink:physically_interacts_with",
+             source: [Reactome, "Reactome,STRINGDB", "BioPlex,Reactome", "BioPlex,Reactome,STRINGDB"]}
+    - what: "BioPlex-only protein-protein rows: primary_knowledge_source infores:bioplex"
+      why: "the infores registry has no entry for BioPlex (data/reference/infores_checked.tsv); the id is kept and listed"

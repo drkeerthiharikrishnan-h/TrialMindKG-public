@@ -1,0 +1,479 @@
+{
+  "settings": {
+    "epochs": 0,
+    "hidden": 64,
+    "seeds": 1,
+    "max_edges_per_type": 1000000,
+    "sample_fraction": null,
+    "wiring": {
+      "reverse_edges": true,
+      "learn_embeddings": true,
+      "num_bases": 30,
+      "neg_pool": "training",
+      "positives": "assertions",
+      "baselines": true,
+      "min_type_edges": 0,
+      "metapaths": true,
+      "metapath_len": 3,
+      "neg_match": "degree",
+      "strata": true,
+      "keep_layers": [],
+      "drop_layers": [],
+      "shuffle_layers": [],
+      "random_drop": 0.0,
+      "keep_whole": [
+        "has_gene_product"
+      ],
+      "test_levels": [
+        "knowledge_assertion"
+      ],
+      "drop_levels": [
+        "text_co_occurrence"
+      ]
+    },
+    "tag": "diag_release_metapath",
+    "test_set": {
+      "from": "G0",
+      "digest": "24f5864cc07ad723",
+      "layer": "pharos",
+      "excluded_knowledge_levels": [
+        "text_co_occurrence"
+      ],
+      "included_knowledge_levels": [
+        "knowledge_assertion"
+      ]
+    }
+  },
+  "per_seed": [
+    {
+      "auroc": 0.5043709029103111,
+      "auprc": 0.5015722341850608,
+      "stratum_disease_1-5_n": 1841.0,
+      "stratum_disease_1-5": 0.5114197380429373,
+      "stratum_disease_101-500_n": 2131.2,
+      "stratum_disease_101-500": 0.4903338642263857,
+      "stratum_disease_21-100_n": 2329.6,
+      "stratum_disease_21-100": 0.4998147468201039,
+      "stratum_disease_6-20_n": 1375.8,
+      "stratum_disease_6-20": 0.5017449451874644,
+      "stratum_disease_>500_n": 225.0,
+      "stratum_disease_>500": 0.6553524350283841,
+      "stratum_gene_1-5_n": 2857.0,
+      "stratum_gene_1-5": 0.49433963027574046,
+      "stratum_gene_101-500_n": 146.6,
+      "stratum_gene_101-500": 0.5124808475721948,
+      "stratum_gene_21-100_n": 1800.0,
+      "stratum_gene_21-100": 0.5148916775768517,
+      "stratum_gene_6-20_n": 3099.0,
+      "stratum_gene_6-20": 0.5074832482723739,
+      "auroc_untrained": 0.5043709029103111,
+      "auroc_degree_dst": 0.5004607598649844,
+      "auroc_degree_src": 0.5,
+      "auroc_degree_prod": 0.49060509496923316,
+      "auroc_cn": 0.7334395805580958,
+      "auroc_aa": 0.7466075883832684,
+      "auroc_path3": 0.539547314250528,
+      "metapath_n_shapes": 200.0,
+      "metapath_n_shapes_dropped": 179.0,
+      "metapath_fit_pairs": 4189.6,
+      "auroc_metapath": 0.790224311342125,
+      "metapath_coverage": 0.9932893228058564,
+      "metapath_shapes": [
+        {
+          "shape": "Gene -gene_associated_with_condition_context-> Disease <-subclass_of- Disease",
+          "auroc": 0.6601,
+          "coverage": 0.3949
+        },
+        {
+          "shape": "Gene -gene_associated_with_condition-> Disease <-gene_associated_with_condition- Gene -gene_associated_with_condition-> Disease",
+          "auroc": 0.6275,
+          "coverage": 0.6781
+        },
+        {
+          "shape": "Gene -actively_involved_in@product-> BiologicalProcess -actively_involved_in^-1@product-> Gene -gene_associated_with_condition-> Disease",
+          "auroc": 0.6033,
+          "coverage": 0.7464
+        },
+        {
+          "shape": "Gene -gene_associated_with_condition_context-> Disease -subclass_of-> Disease",
+          "auroc": 0.5964,
+          "coverage": 0.2367
+        },
+        {
+          "shape": "Gene -gene_associated_with_condition_context-> Disease -subclass_of-> Disease <-subclass_of- Disease",
+          "auroc": 0.596,
+          "coverage": 0.4223
+        },
+        {
+          "shape": "Gene -physically_interacts_with@product-> Gene -gene_associated_with_condition-> Disease",
+          "auroc": 0.5916,
+          "coverage": 0.5075
+        },
+        {
+          "shape": "Gene -physically_interacts_with^-1@product-> Gene -gene_associated_with_condition-> Disease",
+          "auroc": 0.5909,
+          "coverage": 0.5048
+        },
+        {
+          "shape": "Gene -gene_associated_with_condition-> Disease <-gene_associated_with_condition- Gene -gene_associated_with_condition_context-> Disease",
+          "auroc": 0.5875,
+          "coverage": 0.6976
+        },
+        {
+          "shape": "Gene -gene_associated_with_condition_context-> Disease <-subclass_of- Disease <-subclass_of- Disease",
+          "auroc": 0.5849,
+          "coverage": 0.3094
+        },
+        {
+          "shape": "Gene -gene_associated_with_condition-> Disease -subclass_of-> Disease <-subclass_of- Disease",
+          "auroc": 0.5797,
+          "coverage": 0.2064
+        }
+      ],
+      "n_test": 7902.6,
+      "n_test_missing_node": 0.0,
+      "n_train_task": 41799.2,
+      "n_leak_edges_removed": 10238.6,
+      "folds": [
+        {
+          "auroc": 0.5004241307963812,
+          "auprc": 0.49815632112177904,
+          "stratum_disease_1-5_n": 1820,
+          "stratum_disease_1-5": 0.5150205289216279,
+          "stratum_disease_101-500_n": 2137,
+          "stratum_disease_101-500": 0.4905781308404257,
+          "stratum_disease_21-100_n": 2351,
+          "stratum_disease_21-100": 0.4896901704859295,
+          "stratum_disease_6-20_n": 1308,
+          "stratum_disease_6-20": 0.48907803308737574,
+          "stratum_disease_>500_n": 234,
+          "stratum_disease_>500": 0.6529512747461466,
+          "stratum_gene_1-5_n": 2866,
+          "stratum_gene_1-5": 0.48776813511053624,
+          "stratum_gene_101-500_n": 152,
+          "stratum_gene_101-500": 0.5040685595567868,
+          "stratum_gene_21-100_n": 1778,
+          "stratum_gene_21-100": 0.5099586117539582,
+          "stratum_gene_6-20_n": 3054,
+          "stratum_gene_6-20": 0.506780697928447,
+          "auroc_untrained": 0.5004241307963812,
+          "auroc_degree_dst": 0.5021203294251289,
+          "auroc_degree_src": 0.5,
+          "auroc_degree_prod": 0.4912911761126212,
+          "auroc_cn": 0.7337693050428009,
+          "auroc_aa": 0.7477997403545783,
+          "auroc_path3": 0.541546959308694,
+          "metapath_n_shapes": 200,
+          "metapath_n_shapes_dropped": 179,
+          "metapath_fit_pairs": 4205,
+          "auroc_metapath": 0.7988225485820926,
+          "metapath_coverage": 0.9932484076433121,
+          "n_test": 7850,
+          "n_test_missing_node": 0,
+          "n_train_task": 41950,
+          "n_leak_edges_removed": 10127
+        },
+        {
+          "auroc": 0.5063392623075751,
+          "auprc": 0.5029314433984766,
+          "stratum_disease_1-5_n": 1878,
+          "stratum_disease_1-5": 0.5161700810120208,
+          "stratum_disease_101-500_n": 2155,
+          "stratum_disease_101-500": 0.4910173825506969,
+          "stratum_disease_21-100_n": 2364,
+          "stratum_disease_21-100": 0.5025552492119526,
+          "stratum_disease_6-20_n": 1476,
+          "stratum_disease_6-20": 0.5029376987536813,
+          "stratum_disease_>500_n": 227,
+          "stratum_disease_>500": 0.6485862329950125,
+          "stratum_gene_1-5_n": 2946,
+          "stratum_gene_1-5": 0.49232496316360247,
+          "stratum_gene_101-500_n": 161,
+          "stratum_gene_101-500": 0.519385826164114,
+          "stratum_gene_21-100_n": 1874,
+          "stratum_gene_21-100": 0.5094855285323285,
+          "stratum_gene_6-20_n": 3119,
+          "stratum_gene_6-20": 0.5174894823389539,
+          "auroc_untrained": 0.5063392623075751,
+          "auroc_degree_dst": 0.49793445358939187,
+          "auroc_degree_src": 0.5,
+          "auroc_degree_prod": 0.4886722069806432,
+          "auroc_cn": 0.731999748513946,
+          "auroc_aa": 0.7449303688462124,
+          "auroc_path3": 0.5388185718640451,
+          "metapath_n_shapes": 200,
+          "metapath_n_shapes_dropped": 179,
+          "metapath_fit_pairs": 4190,
+          "auroc_metapath": 0.7838927069044354,
+          "metapath_coverage": 0.9940740740740741,
+          "n_test": 8100,
+          "n_test_missing_node": 0,
+          "n_train_task": 41561,
+          "n_leak_edges_removed": 10554
+        },
+        {
+          "auroc": 0.5081116472169737,
+          "auprc": 0.5049147043882605,
+          "stratum_disease_1-5_n": 1829,
+          "stratum_disease_1-5": 0.5145461866574037,
+          "stratum_disease_101-500_n": 2066,
+          "stratum_disease_101-500": 0.49375989256753655,
+          "stratum_disease_21-100_n": 2246,
+          "stratum_disease_21-100": 0.5085320375631676,
+          "stratum_disease_6-20_n": 1354,
+          "stratum_disease_6-20": 0.49138037305079973,
+          "stratum_disease_>500_n": 228,
+          "stratum_disease_>500": 0.6908856571252693,
+          "stratum_gene_1-5_n": 2756,
+          "stratum_gene_1-5": 0.5035176582666451,
+          "stratum_gene_101-500_n": 137,
+          "stratum_gene_101-500": 0.5768021737972188,
+          "stratum_gene_21-100_n": 1708,
+          "stratum_gene_21-100": 0.5180587015779169,
+          "stratum_gene_6-20_n": 3122,
+          "stratum_gene_6-20": 0.5041663571660441,
+          "auroc_untrained": 0.5081116472169737,
+          "auroc_degree_dst": 0.5019376900849025,
+          "auroc_degree_src": 0.5,
+          "auroc_degree_prod": 0.4919360686507604,
+          "auroc_cn": 0.7355169641226805,
+          "auroc_aa": 0.7485551824705248,
+          "auroc_path3": 0.5435702708951867,
+          "metapath_n_shapes": 200,
+          "metapath_n_shapes_dropped": 179,
+          "metapath_fit_pairs": 4241,
+          "auroc_metapath": 0.791312028595184,
+          "metapath_coverage": 0.9931373818464327,
+          "n_test": 7723,
+          "n_test_missing_node": 0,
+          "n_train_task": 42007,
+          "n_leak_edges_removed": 10069
+        },
+        {
+          "auroc": 0.5068820032318246,
+          "auprc": 0.5030405244810121,
+          "stratum_disease_1-5_n": 1828,
+          "stratum_disease_1-5": 0.5054387380356142,
+          "stratum_disease_101-500_n": 2111,
+          "stratum_disease_101-500": 0.48696514456656065,
+          "stratum_disease_21-100_n": 2356,
+          "stratum_disease_21-100": 0.5087372197128452,
+          "stratum_disease_6-20_n": 1399,
+          "stratum_disease_6-20": 0.5169714301188278,
+          "stratum_disease_>500_n": 215,
+          "stratum_disease_>500": 0.65611681990265,
+          "stratum_gene_1-5_n": 2884,
+          "stratum_gene_1-5": 0.5005410308151915,
+          "stratum_gene_101-500_n": 146,
+          "stratum_gene_101-500": 0.49723212610245826,
+          "stratum_gene_21-100_n": 1815,
+          "stratum_gene_21-100": 0.5230237764572851,
+          "stratum_gene_6-20_n": 3064,
+          "stratum_gene_6-20": 0.5040442705315327,
+          "auroc_untrained": 0.5068820032318246,
+          "auroc_degree_dst": 0.49923713413424525,
+          "auroc_degree_src": 0.5,
+          "auroc_degree_prod": 0.48999939746401894,
+          "auroc_cn": 0.7332964084874859,
+          "auroc_aa": 0.746775781046258,
+          "auroc_path3": 0.5378789144395869,
+          "metapath_n_shapes": 200,
+          "metapath_n_shapes_dropped": 179,
+          "metapath_fit_pairs": 4191,
+          "auroc_metapath": 0.7924010476932088,
+          "metapath_coverage": 0.9936780882538879,
+          "n_test": 7909,
+          "n_test_missing_node": 0,
+          "n_train_task": 41756,
+          "n_leak_edges_removed": 10194
+        },
+        {
+          "auroc": 0.5000974709988008,
+          "auprc": 0.49881817753577584,
+          "stratum_disease_1-5_n": 1850,
+          "stratum_disease_1-5": 0.5059231555880205,
+          "stratum_disease_101-500_n": 2187,
+          "stratum_disease_101-500": 0.48934877060670895,
+          "stratum_disease_21-100_n": 2331,
+          "stratum_disease_21-100": 0.4895590571266247,
+          "stratum_disease_6-20_n": 1342,
+          "stratum_disease_6-20": 0.5083571909266371,
+          "stratum_disease_>500_n": 221,
+          "stratum_disease_>500": 0.6282221903728424,
+          "stratum_gene_1-5_n": 2833,
+          "stratum_gene_1-5": 0.48754636402272694,
+          "stratum_gene_101-500_n": 137,
+          "stratum_gene_101-500": 0.4649155522403964,
+          "stratum_gene_21-100_n": 1825,
+          "stratum_gene_21-100": 0.5139317695627698,
+          "stratum_gene_6-20_n": 3136,
+          "stratum_gene_6-20": 0.504935433396892,
+          "auroc_untrained": 0.5000974709988008,
+          "auroc_degree_dst": 0.501074192091253,
+          "auroc_degree_src": 0.5,
+          "auroc_degree_prod": 0.49112662563812226,
+          "auroc_cn": 0.7326154766235659,
+          "auroc_aa": 0.7449768691987685,
+          "auroc_path3": 0.5359218547451278,
+          "metapath_n_shapes": 200,
+          "metapath_n_shapes_dropped": 179,
+          "metapath_fit_pairs": 4121,
+          "auroc_metapath": 0.7846932249357047,
+          "metapath_coverage": 0.9923086622115749,
+          "n_test": 7931,
+          "n_test_missing_node": 0,
+          "n_train_task": 41722,
+          "n_leak_edges_removed": 10249
+        }
+      ],
+      "test_from": "G0",
+      "test_set_digest": "24f5864cc07ad723"
+    }
+  ],
+  "summary": {
+    "auroc": {
+      "mean": 0.5044,
+      "ci95": 0.0
+    },
+    "auprc": {
+      "mean": 0.5016,
+      "ci95": 0.0
+    },
+    "stratum_disease_1-5_n": {
+      "mean": 1841.0,
+      "ci95": 0.0
+    },
+    "stratum_disease_1-5": {
+      "mean": 0.5114,
+      "ci95": 0.0
+    },
+    "stratum_disease_101-500_n": {
+      "mean": 2131.2,
+      "ci95": 0.0
+    },
+    "stratum_disease_101-500": {
+      "mean": 0.4903,
+      "ci95": 0.0
+    },
+    "stratum_disease_21-100_n": {
+      "mean": 2329.6,
+      "ci95": 0.0
+    },
+    "stratum_disease_21-100": {
+      "mean": 0.4998,
+      "ci95": 0.0
+    },
+    "stratum_disease_6-20_n": {
+      "mean": 1375.8,
+      "ci95": 0.0
+    },
+    "stratum_disease_6-20": {
+      "mean": 0.5017,
+      "ci95": 0.0
+    },
+    "stratum_disease_>500_n": {
+      "mean": 225.0,
+      "ci95": 0.0
+    },
+    "stratum_disease_>500": {
+      "mean": 0.6554,
+      "ci95": 0.0
+    },
+    "stratum_gene_1-5_n": {
+      "mean": 2857.0,
+      "ci95": 0.0
+    },
+    "stratum_gene_1-5": {
+      "mean": 0.4943,
+      "ci95": 0.0
+    },
+    "stratum_gene_101-500_n": {
+      "mean": 146.6,
+      "ci95": 0.0
+    },
+    "stratum_gene_101-500": {
+      "mean": 0.5125,
+      "ci95": 0.0
+    },
+    "stratum_gene_21-100_n": {
+      "mean": 1800.0,
+      "ci95": 0.0
+    },
+    "stratum_gene_21-100": {
+      "mean": 0.5149,
+      "ci95": 0.0
+    },
+    "stratum_gene_6-20_n": {
+      "mean": 3099.0,
+      "ci95": 0.0
+    },
+    "stratum_gene_6-20": {
+      "mean": 0.5075,
+      "ci95": 0.0
+    },
+    "auroc_untrained": {
+      "mean": 0.5044,
+      "ci95": 0.0
+    },
+    "auroc_degree_dst": {
+      "mean": 0.5005,
+      "ci95": 0.0
+    },
+    "auroc_degree_src": {
+      "mean": 0.5,
+      "ci95": 0.0
+    },
+    "auroc_degree_prod": {
+      "mean": 0.4906,
+      "ci95": 0.0
+    },
+    "auroc_cn": {
+      "mean": 0.7334,
+      "ci95": 0.0
+    },
+    "auroc_aa": {
+      "mean": 0.7466,
+      "ci95": 0.0
+    },
+    "auroc_path3": {
+      "mean": 0.5395,
+      "ci95": 0.0
+    },
+    "metapath_n_shapes": {
+      "mean": 200.0,
+      "ci95": 0.0
+    },
+    "metapath_n_shapes_dropped": {
+      "mean": 179.0,
+      "ci95": 0.0
+    },
+    "metapath_fit_pairs": {
+      "mean": 4189.6,
+      "ci95": 0.0
+    },
+    "auroc_metapath": {
+      "mean": 0.7902,
+      "ci95": 0.0
+    },
+    "metapath_coverage": {
+      "mean": 0.9933,
+      "ci95": 0.0
+    },
+    "n_test": {
+      "mean": 7902.6,
+      "ci95": 0.0
+    },
+    "n_test_missing_node": {
+      "mean": 0.0,
+      "ci95": 0.0
+    },
+    "n_train_task": {
+      "mean": 41799.2,
+      "ci95": 0.0
+    },
+    "n_leak_edges_removed": {
+      "mean": 10238.6,
+      "ci95": 0.0
+    }
+  }
+}

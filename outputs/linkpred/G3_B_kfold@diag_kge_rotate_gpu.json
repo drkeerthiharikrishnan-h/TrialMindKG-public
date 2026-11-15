@@ -1,0 +1,369 @@
+{
+  "settings": {
+    "epochs": 300,
+    "hidden": 512,
+    "seeds": 1,
+    "max_edges_per_type": 1000000,
+    "sample_fraction": null,
+    "wiring": {
+      "reverse_edges": true,
+      "learn_embeddings": true,
+      "num_bases": 30,
+      "neg_pool": "training",
+      "positives": "assertions",
+      "baselines": false,
+      "min_type_edges": 0,
+      "metapaths": false,
+      "metapath_len": 3,
+      "neg_match": "degree",
+      "strata": true,
+      "keep_layers": [],
+      "drop_layers": [],
+      "shuffle_layers": [],
+      "random_drop": 0.0,
+      "keep_whole": [
+        "has_gene_product"
+      ],
+      "test_levels": [
+        "knowledge_assertion"
+      ],
+      "drop_levels": [
+        "text_co_occurrence"
+      ]
+    },
+    "tag": "diag_kge_rotate_gpu",
+    "test_set": {
+      "from": "G0",
+      "digest": "24f5864cc07ad723",
+      "layer": "pharos",
+      "excluded_knowledge_levels": [
+        "text_co_occurrence"
+      ],
+      "included_knowledge_levels": [
+        "knowledge_assertion"
+      ]
+    },
+    "kge": {
+      "model_name": "rotate",
+      "kge_epochs": 300,
+      "kge_minutes": 45.0,
+      "batch_size": 16384,
+      "lr": 0.01,
+      "margin": 9.0,
+      "library": "torch_geometric.nn.kge",
+      "optimizer": "SparseAdam",
+      "negatives": "PyG KGEModel.random_sample (head or tail corrupted)",
+      "note": "EXPLORATORY (ledger E006); auroc = the KGE model's AUROC"
+    }
+  },
+  "per_seed": [
+    {
+      "auroc": 0.6501022015886019,
+      "auprc": 0.636896176930337,
+      "stratum_disease_1-5_n": 1841.0,
+      "stratum_disease_1-5": 0.6118262424964135,
+      "stratum_disease_101-500_n": 2131.2,
+      "stratum_disease_101-500": 0.6189946289432674,
+      "stratum_disease_21-100_n": 2329.6,
+      "stratum_disease_21-100": 0.6889228902961266,
+      "stratum_disease_6-20_n": 1375.8,
+      "stratum_disease_6-20": 0.7519660390168141,
+      "stratum_disease_>500_n": 225.0,
+      "stratum_disease_>500": 0.77914521854725,
+      "stratum_gene_1-5_n": 2857.0,
+      "stratum_gene_1-5": 0.6325518443469059,
+      "stratum_gene_101-500_n": 146.6,
+      "stratum_gene_101-500": 0.683079911157861,
+      "stratum_gene_21-100_n": 1800.0,
+      "stratum_gene_21-100": 0.67668077679066,
+      "stratum_gene_6-20_n": 3099.0,
+      "stratum_gene_6-20": 0.6587333653757025,
+      "kge_dim": 512.0,
+      "kge_epochs_done": 294.0,
+      "kge_train_minutes": 39.25,
+      "kge_final_loss": 0.026017267762651463,
+      "kge_n_triples": 4308295.2,
+      "n_test": 7902.6,
+      "n_test_missing_node": 0.0,
+      "n_train_task": 41792.0,
+      "n_leak_edges_removed": 10047.8,
+      "folds": [
+        {
+          "auroc": 0.6456221428861212,
+          "auprc": 0.6378262009282136,
+          "stratum_disease_1-5_n": 1820,
+          "stratum_disease_1-5": 0.5942289578553315,
+          "stratum_disease_101-500_n": 2137,
+          "stratum_disease_101-500": 0.6076821490204563,
+          "stratum_disease_21-100_n": 2351,
+          "stratum_disease_21-100": 0.6957261007877223,
+          "stratum_disease_6-20_n": 1308,
+          "stratum_disease_6-20": 0.7550269922097841,
+          "stratum_disease_>500_n": 234,
+          "stratum_disease_>500": 0.817700343341369,
+          "stratum_gene_1-5_n": 2866,
+          "stratum_gene_1-5": 0.6273934265048413,
+          "stratum_gene_101-500_n": 152,
+          "stratum_gene_101-500": 0.660534972299169,
+          "stratum_gene_21-100_n": 1778,
+          "stratum_gene_21-100": 0.6733184996982239,
+          "stratum_gene_6-20_n": 3054,
+          "stratum_gene_6-20": 0.6528766850693198,
+          "kge_dim": 512,
+          "kge_epochs_done": 270,
+          "kge_train_minutes": 45.07,
+          "kge_final_loss": 0.026239803684131726,
+          "kge_n_triples": 4308546,
+          "n_test": 7850,
+          "n_test_missing_node": 0,
+          "n_train_task": 41945,
+          "n_leak_edges_removed": 9950
+        },
+        {
+          "auroc": 0.6482046563023929,
+          "auprc": 0.6318896641516385,
+          "stratum_disease_1-5_n": 1878,
+          "stratum_disease_1-5": 0.613294624943718,
+          "stratum_disease_101-500_n": 2155,
+          "stratum_disease_101-500": 0.6189671674894084,
+          "stratum_disease_21-100_n": 2364,
+          "stratum_disease_21-100": 0.6960273390192997,
+          "stratum_disease_6-20_n": 1476,
+          "stratum_disease_6-20": 0.7326510527977909,
+          "stratum_disease_>500_n": 227,
+          "stratum_disease_>500": 0.7358962914087213,
+          "stratum_gene_1-5_n": 2946,
+          "stratum_gene_1-5": 0.6296245982793243,
+          "stratum_gene_101-500_n": 161,
+          "stratum_gene_101-500": 0.6984684232861387,
+          "stratum_gene_21-100_n": 1874,
+          "stratum_gene_21-100": 0.6771167319119468,
+          "stratum_gene_6-20_n": 3119,
+          "stratum_gene_6-20": 0.6542025260478317,
+          "kge_dim": 512,
+          "kge_epochs_done": 300,
+          "kge_train_minutes": 37.82,
+          "kge_final_loss": 0.0259556620463219,
+          "kge_n_triples": 4307732,
+          "n_test": 8100,
+          "n_test_missing_node": 0,
+          "n_train_task": 41552,
+          "n_leak_edges_removed": 10371
+        },
+        {
+          "auroc": 0.6547907108438702,
+          "auprc": 0.6387379076751301,
+          "stratum_disease_1-5_n": 1829,
+          "stratum_disease_1-5": 0.6319617928872688,
+          "stratum_disease_101-500_n": 2066,
+          "stratum_disease_101-500": 0.6194588736272232,
+          "stratum_disease_21-100_n": 2246,
+          "stratum_disease_21-100": 0.6816320931482822,
+          "stratum_disease_6-20_n": 1354,
+          "stratum_disease_6-20": 0.762348116745831,
+          "stratum_disease_>500_n": 228,
+          "stratum_disease_>500": 0.7928785780240074,
+          "stratum_gene_1-5_n": 2756,
+          "stratum_gene_1-5": 0.6355292108417365,
+          "stratum_gene_101-500_n": 137,
+          "stratum_gene_101-500": 0.6573605413181309,
+          "stratum_gene_21-100_n": 1708,
+          "stratum_gene_21-100": 0.6817045012038677,
+          "stratum_gene_6-20_n": 3122,
+          "stratum_gene_6-20": 0.6672283162495829,
+          "kge_dim": 512,
+          "kge_epochs_done": 300,
+          "kge_train_minutes": 37.88,
+          "kge_final_loss": 0.025872967804396105,
+          "kge_n_triples": 4308667,
+          "n_test": 7723,
+          "n_test_missing_node": 0,
+          "n_train_task": 41998,
+          "n_leak_edges_removed": 9882
+        },
+        {
+          "auroc": 0.6563167456675161,
+          "auprc": 0.6420729689861775,
+          "stratum_disease_1-5_n": 1828,
+          "stratum_disease_1-5": 0.6174906870514103,
+          "stratum_disease_101-500_n": 2111,
+          "stratum_disease_101-500": 0.630158038435741,
+          "stratum_disease_21-100_n": 2356,
+          "stratum_disease_21-100": 0.6909923296658317,
+          "stratum_disease_6-20_n": 1399,
+          "stratum_disease_6-20": 0.7601482934047141,
+          "stratum_disease_>500_n": 215,
+          "stratum_disease_>500": 0.7408112493239589,
+          "stratum_gene_1-5_n": 2884,
+          "stratum_gene_1-5": 0.6404603162313092,
+          "stratum_gene_101-500_n": 146,
+          "stratum_gene_101-500": 0.7234002627134547,
+          "stratum_gene_21-100_n": 1815,
+          "stratum_gene_21-100": 0.6785347084670902,
+          "stratum_gene_6-20_n": 3064,
+          "stratum_gene_6-20": 0.664330765258472,
+          "kge_dim": 512,
+          "kge_epochs_done": 300,
+          "kge_train_minutes": 37.79,
+          "kge_final_loss": 0.026028598343578128,
+          "kge_n_triples": 4308300,
+          "n_test": 7909,
+          "n_test_missing_node": 0,
+          "n_train_task": 41752,
+          "n_leak_edges_removed": 10003
+        },
+        {
+          "auroc": 0.6455767522431088,
+          "auprc": 0.6339541429105255,
+          "stratum_disease_1-5_n": 1850,
+          "stratum_disease_1-5": 0.6021551497443389,
+          "stratum_disease_101-500_n": 2187,
+          "stratum_disease_101-500": 0.6187069161435084,
+          "stratum_disease_21-100_n": 2331,
+          "stratum_disease_21-100": 0.6802365888594974,
+          "stratum_disease_6-20_n": 1342,
+          "stratum_disease_6-20": 0.7496557399259508,
+          "stratum_disease_>500_n": 221,
+          "stratum_disease_>500": 0.8084396306381934,
+          "stratum_gene_1-5_n": 2833,
+          "stratum_gene_1-5": 0.6297516698773182,
+          "stratum_gene_101-500_n": 137,
+          "stratum_gene_101-500": 0.675635356172412,
+          "stratum_gene_21-100_n": 1825,
+          "stratum_gene_21-100": 0.6727294426721712,
+          "stratum_gene_6-20_n": 3136,
+          "stratum_gene_6-20": 0.6550285342533059,
+          "kge_dim": 512,
+          "kge_epochs_done": 300,
+          "kge_train_minutes": 37.69,
+          "kge_final_loss": 0.025989306934829447,
+          "kge_n_triples": 4308231,
+          "n_test": 7931,
+          "n_test_missing_node": 0,
+          "n_train_task": 41713,
+          "n_leak_edges_removed": 10033
+        }
+      ],
+      "test_from": "G0",
+      "test_set_digest": "24f5864cc07ad723"
+    }
+  ],
+  "summary": {
+    "auroc": {
+      "mean": 0.6501,
+      "ci95": 0.0
+    },
+    "auprc": {
+      "mean": 0.6369,
+      "ci95": 0.0
+    },
+    "stratum_disease_1-5_n": {
+      "mean": 1841.0,
+      "ci95": 0.0
+    },
+    "stratum_disease_1-5": {
+      "mean": 0.6118,
+      "ci95": 0.0
+    },
+    "stratum_disease_101-500_n": {
+      "mean": 2131.2,
+      "ci95": 0.0
+    },
+    "stratum_disease_101-500": {
+      "mean": 0.619,
+      "ci95": 0.0
+    },
+    "stratum_disease_21-100_n": {
+      "mean": 2329.6,
+      "ci95": 0.0
+    },
+    "stratum_disease_21-100": {
+      "mean": 0.6889,
+      "ci95": 0.0
+    },
+    "stratum_disease_6-20_n": {
+      "mean": 1375.8,
+      "ci95": 0.0
+    },
+    "stratum_disease_6-20": {
+      "mean": 0.752,
+      "ci95": 0.0
+    },
+    "stratum_disease_>500_n": {
+      "mean": 225.0,
+      "ci95": 0.0
+    },
+    "stratum_disease_>500": {
+      "mean": 0.7791,
+      "ci95": 0.0
+    },
+    "stratum_gene_1-5_n": {
+      "mean": 2857.0,
+      "ci95": 0.0
+    },
+    "stratum_gene_1-5": {
+      "mean": 0.6326,
+      "ci95": 0.0
+    },
+    "stratum_gene_101-500_n": {
+      "mean": 146.6,
+      "ci95": 0.0
+    },
+    "stratum_gene_101-500": {
+      "mean": 0.6831,
+      "ci95": 0.0
+    },
+    "stratum_gene_21-100_n": {
+      "mean": 1800.0,
+      "ci95": 0.0
+    },
+    "stratum_gene_21-100": {
+      "mean": 0.6767,
+      "ci95": 0.0
+    },
+    "stratum_gene_6-20_n": {
+      "mean": 3099.0,
+      "ci95": 0.0
+    },
+    "stratum_gene_6-20": {
+      "mean": 0.6587,
+      "ci95": 0.0
+    },
+    "kge_dim": {
+      "mean": 512.0,
+      "ci95": 0.0
+    },
+    "kge_epochs_done": {
+      "mean": 294.0,
+      "ci95": 0.0
+    },
+    "kge_train_minutes": {
+      "mean": 39.25,
+      "ci95": 0.0
+    },
+    "kge_final_loss": {
+      "mean": 0.026,
+      "ci95": 0.0
+    },
+    "kge_n_triples": {
+      "mean": 4308295.2,
+      "ci95": 0.0
+    },
+    "n_test": {
+      "mean": 7902.6,
+      "ci95": 0.0
+    },
+    "n_test_missing_node": {
+      "mean": 0.0,
+      "ci95": 0.0
+    },
+    "n_train_task": {
+      "mean": 41792.0,
+      "ci95": 0.0
+    },
+    "n_leak_edges_removed": {
+      "mean": 10047.8,
+      "ci95": 0.0
+    }
+  }
+}

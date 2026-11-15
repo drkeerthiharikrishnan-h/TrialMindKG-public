@@ -1,0 +1,4 @@
+# Link-prediction steps only (pipelines/linkpred/); the app and the builders need requirements.txt alone.
+# torch_geometric is pinned to the version that wrote the committed heterodata.pt files (scripts/gpu_kge_run.sh).
+torch
+torch_geometric==2.8.1

@@ -1,0 +1,9 @@
+registry_name,chembl_id,justification
+TQJ230,CHEMBL4298202,"Confirmed by owner 2026-10-05: TQJ230 (Novartis code, registry NCT04023552 Lp(a)HORIZON) is pelacarsen"
+AOC 1001 (del-desiran),CHEMBL5314669,"Confirmed by owner 2026-10-05: AOC 1001 / del-desiran (registry NCT06411288 HARBOR) is delpacibart etedesiran"
+Semagludtide,CHEMBL2108724,Confirmed by owner 2026-10-05: registry spelling in NCT04777396 (evoke) of semaglutide
+Asundexian (BAY2433334),CHEMBL5427131,Confirmed by owner 2026-10-05: registry name in NCT05643573 (OCEANIC-AF) is asundexian
+K-877,CHEMBL247951,Confirmed by owner 2026-10-05: K-877 (registry NCT03071692 PROMINENT) is pemafibrate; ChEMBL lists K-877 as separate record CHEMBL3545412
+Steroidal Eye Drops,NONE,"Confirmed by owner 2026-10-05: drug class (comparator in NCT04778397), not a single molecule"
+LHRH Agonist,NONE,"Confirmed by owner 2026-10-05: drug class (NCT04546009), not a single molecule"
+Asundexian,CHEMBL5427131,Confirmed by owner 2026-10-05: unnamed ChEMBL record CHEMBL5427131 is asundexian

@@ -1,0 +1,210 @@
+# Source card: Open Targets Platform 26.09 (L1/L2 enrichment layer on top of Pharos L0).
+# Data downloaded by scripts/download_ot_parquet.py -> data/opentargets/<dataset>.parquet
+# Read by the generic builder pipelines/kgbuilder/engine.py (single Parquet files).
+#
+# This card adds edges Pharos does NOT have:
+#   - Overall direct association scores (target-disease, gene-level evidence aggregation)
+#   - Drug mechanisms of action with ChEMBL ids
+#   - Clinical indications (drug-disease with phase)
+#   - Disease-phenotype links (HPO)
+#   - Genetic evidence: ClinVar/EVA, gene burden, Orphanet, Gene2Phenotype, ClinGen, COSMIC CGC, IntOGen
+#   - Literature co-occurrence scores
+#
+# It does NOT duplicate Pharos edges: the builder's dedup merges any (subject, predicate, object, source)
+# that matches. Where both sources state the same pair, both appear (different sources), and the timeline
+# and pruning use the overlap as corroboration.
+#
+# Modelling (BioLink 4.4.5):
+#   Ensembl gene ids -> Gene (NCBIGene via the HGNC reference table data/reference/hgnc_gene_ids.tsv, else ENSEMBL:)
+#   EFO/MONDO disease ids -> Disease (EFO: prefix kept; MONDO mapped where possible)
+#   ChEMBL compound ids -> SmallMolecule (CHEMBL.COMPOUND:)
+name: opentargets
+version: "26.09 (direct associations, score >= 0.1)"
+tables_dir: data/opentargets
+aggregator: infores:opentargets
+layer: L1
+
+lookups:
+  # OT target table: approvedSymbol, id (Ensembl gene), proteinAnnotations.id (UniProt list — first entry)
+  umls_to_mondo: {ref_file: data/reference/mondo_umls_exact.tsv, key: umls_id, value: mondo_id, skip_ambiguous: true}
+  doid_to_mondo: {ref_file: data/reference/mondo_doid_exact.tsv, key: doid_id, value: mondo_id, skip_ambiguous: true}
+  # Ensembl gene -> NCBI Gene id through HGNC (data/reference/hgnc_gene_ids.tsv), so OT genes join Pharos genes;
+  # a gene HGNC does not map keeps its ENSEMBL: id
+  ensembl_to_gene: {ref_file: data/reference/hgnc_gene_ids.tsv, key: ensembl_id, value: ncbigene_id, skip_ambiguous: true}
+  # EFO / Orphanet disease ids -> MONDO where MONDO has an exact xref (pipelines/mondo_ref.py), so an Open Targets
+  # edge lands on the Pharos disease node instead of a twin node beside it (2026-11-01)
+  efo_to_mondo: {ref_file: data/reference/mondo_efo_exact.tsv, key: efo_id, value: mondo_id, skip_ambiguous: true}
+  orphanet_to_mondo: {ref_file: data/reference/mondo_orphanet_exact.tsv, key: orphanet_id, value: mondo_id, skip_ambiguous: true}
+
+nodes:
+  - table: targets
+    id: {columns: [{column: id, lookup: ensembl_to_gene}, {column: id, prefix: ENSEMBL}]}
+    category: biolink:Gene
+    name: approvedSymbol
+    properties: {biotype: biotype}
+    constants: {in_taxon: "NCBITaxon:9606"}
+
+  - table: diseases
+    id:                               # already prefixed: EFO_xxxx, MONDO_xxxx, Orphanet_xxx, HP_xxx
+      columns: [{column: id, lookup: efo_to_mondo}, {column: id, lookup: orphanet_to_mondo}, {column: id}]
+      replace: {"_": ":"}            # EFO_0000311 -> EFO:0000311 (before the lookup)
+    category: biolink:Disease
+    name: name
+
+edges:
+  # --- Target-disease overall association (the main L1 edge) ---
+  - name: ot_target_disease_association
+    table: associationByOverallDirect
+    min_value: {associationScore: 0.1}
+    subject: {columns: [{column: targetId, lookup: ensembl_to_gene}, {column: targetId, prefix: ENSEMBL}],
+              category: biolink:Gene}
+    predicate: biolink:gene_associated_with_condition
+    object:
+      columns: [{column: diseaseId, lookup: efo_to_mondo}, {column: diseaseId, lookup: orphanet_to_mondo},
+                {column: diseaseId}]
+      category: biolink:Disease
+      replace: {"_": ":"}
+    record_columns: [targetId, diseaseId]
+    source: "Open Targets 26.09 overall direct"
+    primary_knowledge_source: "infores:opentargets"
+    knowledge_level: statistical_association
+    agent_type: data_analysis_pipeline
+    properties: {ot_score: associationScore}
+
+  # --- Drug mechanism of action (drug -> target, with action type) ---
+  - name: ot_drug_mechanism
+    table: mechanismOfAction
+    subject:
+      column: chemblIds                     # JSON array in OT; explode below
+      prefix: CHEMBL.COMPOUND
+      category: biolink:SmallMolecule
+    predicate: biolink:directly_physically_interacts_with
+    object: {columns: [{column: targets, lookup: ensembl_to_gene}, {column: targets, prefix: ENSEMBL}],
+             category: biolink:Gene}
+    explode_json: [chemblIds, targets]
+    record_columns: [chemblIds, targets]
+    source: "Open Targets 26.09 drug mechanism"
+    primary_knowledge_source: "infores:opentargets"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    properties: {action_type: actionType, mechanism: mechanismOfAction}
+
+  # --- Clinical indication (drug -> disease with max phase) ---
+  - name: ot_clinical_indication
+    table: indication
+    subject:
+      column: drugId
+      prefix: CHEMBL.COMPOUND
+      category: biolink:SmallMolecule
+    predicate: biolink:treats_or_applied_or_studied_to_treat
+    object:
+      columns: [{column: diseaseId, lookup: efo_to_mondo}, {column: diseaseId, lookup: orphanet_to_mondo},
+                {column: diseaseId}]
+      category: biolink:Disease
+      replace: {"_": ":"}
+    record_columns: [drugId, diseaseId]
+    source: "Open Targets 26.09 clinical indication"
+    primary_knowledge_source: "infores:opentargets"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    properties: {max_phase: maxClinicalStage}
+
+  # --- Disease-phenotype (HPO annotations) ---
+  - name: ot_disease_phenotype
+    table: diseaseToPhenotype
+    subject:
+      columns: [{column: disease, lookup: efo_to_mondo}, {column: disease, lookup: orphanet_to_mondo},
+                {column: disease}]
+      category: biolink:Disease
+      replace: {"_": ":"}
+    predicate: biolink:has_phenotype
+    object:
+      column: phenotype
+      category: biolink:PhenotypicFeature
+      replace: {"_": ":"}
+    record_columns: [disease, phenotype]
+    source: "Open Targets 26.09 disease phenotype"
+    primary_knowledge_source: "infores:opentargets"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+
+# Pruning: OT scores serve as corroboration signals; ot_score feeds into corroboration, not standalone pruning.
+prune:
+  score_columns: {ot_score: higher}
+  pair_groups:
+    gene_condition: [biolink:gene_associated_with_condition, biolink:genetically_associated_with]
+
+# Corrections made when a product is WRITTEN (KGX tables, card index, Neptune files): pipelines/export_graph_kgx.py,
+# block "export fixes". The layer files, the training graphs, the frozen benchmark and the verdict file are not changed.
+export_overrides:
+  # Most specific class for a gene: the Sequence Ontology term of its Open Targets (Ensembl) biotype, written to the
+  # node property `type` of every biolink:Gene node of the assembled graph, whichever layer contributed the node.
+  # A gene without a biotype keeps the type a source card gave it (Pharos: SO:0001217 for the gene of a Pharos protein),
+  # else it gets `unknown`. Every id below was looked up in so.obo (data-version 2026-08-07); the names are in
+  # data/reference/so_gene_terms.tsv and the export stops if an id is not listed there.
+  gene_type:
+    property: biotype
+    unknown: "SO:0000704"                                   # gene
+    map:
+      protein_coding: "SO:0001217"                          # protein_coding_gene
+      lncRNA: "SO:0002127"                                  # lncRNA_gene
+      miRNA: "SO:0001265"                                   # miRNA_gene
+      snRNA: "SO:0001268"                                   # snRNA_gene
+      snoRNA: "SO:0001267"                                  # snoRNA_gene
+      scaRNA: "SO:0002339"                                  # scaRNA_gene
+      scRNA: "SO:0001266"                                   # scRNA_gene
+      rRNA: "SO:0001637"                                    # rRNA_gene
+      Mt_rRNA: "SO:0002363"                                 # mt_rRNA_gene
+      Mt_tRNA: "SO:0001272"                                 # tRNA_gene (SO has no mitochondrial tRNA GENE term: the parent is used)
+      ribozyme: "SO:0002181"                                # ribozyme_gene
+      vault_RNA: "SO:0002358"                               # vault_RNA_gene
+      misc_RNA: "SO:0001263"                                # ncRNA_gene (no narrower gene term)
+      sRNA: "SO:0001263"                                    # ncRNA_gene (no narrower gene term)
+      pseudogene: "SO:0000336"                              # pseudogene
+      processed_pseudogene: "SO:0000043"                    # processed_pseudogene
+      unprocessed_pseudogene: "SO:0001760"                  # non_processed_pseudogene (exact synonym: unprocessed_pseudogene)
+      unitary_pseudogene: "SO:0001759"                      # unitary_pseudogene
+      polymorphic_pseudogene: "SO:0001841"                  # polymorphic_pseudogene
+      transcribed_processed_pseudogene: "SO:0002109"        # transcribed_processed_pseudogene
+      transcribed_unprocessed_pseudogene: "SO:0002107"      # transcribed_unprocessed_pseudogene
+      transcribed_unitary_pseudogene: "SO:0002108"          # transcribed_unitary_pseudogene
+      translated_processed_pseudogene: "SO:0002105"         # translated_processed_pseudogene
+      translated_unprocessed_pseudogene: "SO:0002106"       # translated_unprocessed_pseudogene
+      rRNA_pseudogene: "SO:0000336"                         # pseudogene (SO's rRNA pseudogene terms are transcripts, not genes)
+      IG_C_gene: "SO:0002123"                               # IG_C_gene
+      IG_D_gene: "SO:0002124"                               # IG_D_gene
+      IG_J_gene: "SO:0002125"                               # IG_J_gene
+      IG_V_gene: "SO:0002126"                               # IG_V_gene
+      IG_C_pseudogene: "SO:0002100"                         # IG_C_pseudogene
+      IG_J_pseudogene: "SO:0002101"                         # IG_J_pseudogene
+      IG_V_pseudogene: "SO:0002102"                         # IG_V_pseudogene
+      IG_pseudogene: "SO:0002098"                           # immunoglobulin_pseudogene
+      TR_C_gene: "SO:0002134"                               # TR_C_Gene
+      TR_D_gene: "SO:0002135"                               # TR_D_Gene
+      TR_J_gene: "SO:0002136"                               # TR_J_Gene
+      TR_V_gene: "SO:0002137"                               # TR_V_Gene
+      TR_V_pseudogene: "SO:0002103"                         # TR_V_pseudogene
+      TR_J_pseudogene: "SO:0002104"                         # TR_J_pseudogene
+      # TEC and artifact have no SO GENE term (SO:0002139 is a transcript): such genes get `unknown` and are counted in
+      # the export report under "biotypes without a sequence-ontology gene term".
+  # Open Targets' disease index also holds traits, measurements and grouping terms taken from other ontologies. Typed
+  # biolink:Disease by the card, they are written as the parent class "disease or phenotypic feature" (the class the
+  # EFO-only terms already have): true for a disease grouping and for a trait, and no node is dropped.
+  retype_nodes:
+    - name: Open Targets index terms that are not diseases
+      prefixes: [GSSO, OTAR, OBI, NCIT, PATO, OGMS, UBERON]
+      from: biolink:Disease
+      to: biolink:DiseaseOrPhenotypicFeature
+      why: "traits, measurements and grouping terms of the Open Targets disease index (e.g. PATO 'amount', UBERON 'life cycle')"
+  rename_ids:
+    # This layer writes Orphanet numbers as Orphanet:<n>, Pharos rows as ORDO:<n>. ORDO is the prefix the BioLink model
+    # lists for Disease (data/reference/biolink-model.yaml, id_prefixes), so every Orphanet number is written ORDO:<n>
+    # and the same disorder is one node whichever layer names it.
+    - name: "Orphanet: written as ORDO:"
+      match: '^Orphanet:(.+)$'
+      to: 'ORDO:\1'
+      why: "two prefixes for the same Orphanet number; ORDO is the one BioLink lists for Disease"
+  kept_as_is:
+    - what: "primary and aggregator knowledge source infores:opentargets"
+      why: "the infores registry spells it infores:open-targets (data/reference/infores_checked.tsv); the id is kept because the
+            app, the tested questions and the verdict file name the layer by it"

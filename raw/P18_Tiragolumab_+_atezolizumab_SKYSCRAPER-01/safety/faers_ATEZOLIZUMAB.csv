@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,DEATH,4265
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,OFF LABEL USE,3585
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,DISEASE PROGRESSION,2163
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,PYREXIA,1749
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,DIARRHOEA,1710
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,FATIGUE,1500
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,ANAEMIA,1351
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,PNEUMONIA,1134
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,DECREASED APPETITE,1110
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,HYPOTHYROIDISM,1079
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,NAUSEA,1062
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,DYSPNOEA,1028
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,HYPERTENSION,996
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,PNEUMONITIS,966
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,RASH,958
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,FEBRILE NEUTROPENIA,952
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,ASTHENIA,947
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,THROMBOCYTOPENIA,842
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,INTERSTITIAL LUNG DISEASE,835
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,NEUTROPENIA,833
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,VOMITING,811
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,INTENTIONAL PRODUCT USE ISSUE,798
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,HEPATOCELLULAR CARCINOMA,791
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,COLITIS,782
+ATEZOLIZUMAB,patient.drug.openfda.generic_name,38623,PLATELET COUNT DECREASED,745

@@ -1,0 +1,6528 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D003704",
+     "term": "Dementia"
+    },
+    {
+     "id": "D001927",
+     "term": "Brain Diseases"
+    },
+    {
+     "id": "D002493",
+     "term": "Central Nervous System Diseases"
+    },
+    {
+     "id": "D009422",
+     "term": "Nervous System Diseases"
+    },
+    {
+     "id": "D024801",
+     "term": "Tauopathies"
+    },
+    {
+     "id": "D019636",
+     "term": "Neurodegenerative Diseases"
+    },
+    {
+     "id": "D019965",
+     "term": "Neurocognitive Disorders"
+    },
+    {
+     "id": "D001523",
+     "term": "Mental Disorders"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D000544",
+     "term": "Alzheimer Disease"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "C573372",
+     "term": "crenezumab"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "removedCountries": [
+    "Greece",
+    "Guatemala",
+    "Hungary",
+    "Mexico"
+   ],
+   "submissionTracking": {
+    "firstMcpInfo": {
+     "postDateStruct": {
+      "date": "2020-06-12",
+      "type": "ACTUAL"
+     }
+    }
+   },
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "documentSection": {
+  "largeDocumentModule": {
+   "largeDocs": [
+    {
+     "date": "2018-03-14",
+     "filename": "Prot_SAP_000.pdf",
+     "hasIcf": false,
+     "hasProtocol": true,
+     "hasSap": true,
+     "label": "Study Protocol and Statistical Analysis Plan",
+     "size": 3567532,
+     "typeAbbrev": "Prot_SAP",
+     "uploadDate": "2020-05-26T15:22"
+    }
+   ]
+  }
+ },
+ "hasResults": true,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+     "interventionNames": [
+      "Drug: Placebo"
+     ],
+     "label": "Placebo",
+     "type": "PLACEBO_COMPARATOR"
+    },
+    {
+     "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+     "interventionNames": [
+      "Drug: Crenezumab"
+     ],
+     "label": "Crenezumab",
+     "type": "EXPERIMENTAL"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Crenezumab"
+     ],
+     "description": "Crenezumab was administered by intravenous (IV) infusion at 60mg/kg as per the dosing schedule described above.",
+     "name": "Crenezumab",
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Placebo"
+     ],
+     "description": "Placebo was administered by intravenous (IV) infusion at 60mg/kg as per the dosing schedule described above.",
+     "name": "Placebo",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Alzheimer's Disease"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Scottsdale",
+     "country": "United States",
+     "facility": "Imaging End Points Clinical Research",
+     "geoPoint": {
+      "lat": 33.50921,
+      "lon": -111.89903
+     },
+     "state": "Arizona",
+     "zip": "85258"
+    },
+    {
+     "city": "Fayetteville",
+     "country": "United States",
+     "facility": "Health Initiatives Research, PLLC",
+     "geoPoint": {
+      "lat": 36.06258,
+      "lon": -94.15743
+     },
+     "state": "Arkansas",
+     "zip": "72703"
+    },
+    {
+     "city": "Little Rock",
+     "country": "United States",
+     "facility": "Clinical Trials Inc.",
+     "geoPoint": {
+      "lat": 34.74648,
+      "lon": -92.28959
+     },
+     "state": "Arkansas",
+     "zip": "72205"
+    },
+    {
+     "city": "Pasadena",
+     "country": "United States",
+     "facility": "Neuro-Therapeutics Inc.",
+     "geoPoint": {
+      "lat": 34.14778,
+      "lon": -118.14452
+     },
+     "state": "California",
+     "zip": "91105"
+    },
+    {
+     "city": "Rancho Mirage",
+     "country": "United States",
+     "facility": "Desert Valley Medical Group",
+     "geoPoint": {
+      "lat": 33.73974,
+      "lon": -116.41279
+     },
+     "state": "California",
+     "zip": "92270"
+    },
+    {
+     "city": "Redlands",
+     "country": "United States",
+     "facility": "Anderson Clinical Research, Inc.",
+     "geoPoint": {
+      "lat": 34.05557,
+      "lon": -117.18254
+     },
+     "state": "California",
+     "zip": "92374"
+    },
+    {
+     "city": "Sacramento",
+     "country": "United States",
+     "facility": "University of California, Davis; Alzheimers Disease Center, Department of Neurology",
+     "geoPoint": {
+      "lat": 38.58157,
+      "lon": -121.4944
+     },
+     "state": "California",
+     "zip": "95817"
+    },
+    {
+     "city": "San Francisco",
+     "country": "United States",
+     "facility": "UCSF - Memory and Aging Center",
+     "geoPoint": {
+      "lat": 37.77493,
+      "lon": -122.41942
+     },
+     "state": "California",
+     "zip": "94158"
+    },
+    {
+     "city": "Colorado Springs",
+     "country": "United States",
+     "facility": "MCB Clinical Research Centers",
+     "geoPoint": {
+      "lat": 38.83388,
+      "lon": -104.82136
+     },
+     "state": "Colorado",
+     "zip": "80910"
+    },
+    {
+     "city": "Norwalk",
+     "country": "United States",
+     "facility": "Research Center for Clinical Studies, Inc.",
+     "geoPoint": {
+      "lat": 41.1176,
+      "lon": -73.4079
+     },
+     "state": "Connecticut",
+     "zip": "06851"
+    },
+    {
+     "city": "Stamford",
+     "country": "United States",
+     "facility": "KI Health Partners, LLC; New England Institute for Clinical Research",
+     "geoPoint": {
+      "lat": 41.05343,
+      "lon": -73.53873
+     },
+     "state": "Connecticut",
+     "zip": "06905"
+    },
+    {
+     "city": "Washington D.C.",
+     "country": "United States",
+     "facility": "Georgetown University Hospital",
+     "geoPoint": {
+      "lat": 38.89511,
+      "lon": -77.03637
+     },
+     "state": "District of Columbia",
+     "zip": "20057"
+    },
+    {
+     "city": "Atlantis",
+     "country": "United States",
+     "facility": "JEM Research LLC",
+     "geoPoint": {
+      "lat": 26.5909,
+      "lon": -80.10088
+     },
+     "state": "Florida",
+     "zip": "33462"
+    },
+    {
+     "city": "Bradenton",
+     "country": "United States",
+     "facility": "Bradenton Research Center",
+     "geoPoint": {
+      "lat": 27.49893,
+      "lon": -82.57482
+     },
+     "state": "Florida",
+     "zip": "34205"
+    },
+    {
+     "city": "Fort Myers",
+     "country": "United States",
+     "facility": "Neuropsychiatric Research; Center of Southwest Florida",
+     "geoPoint": {
+      "lat": 26.62168,
+      "lon": -81.84059
+     },
+     "state": "Florida",
+     "zip": "33912"
+    },
+    {
+     "city": "Lake Worth",
+     "country": "United States",
+     "facility": "Alzheimer's Research and Treatment Center",
+     "geoPoint": {
+      "lat": 26.61708,
+      "lon": -80.07231
+     },
+     "state": "Florida",
+     "zip": "33414"
+    },
+    {
+     "city": "Ocala",
+     "country": "United States",
+     "facility": "Renstar Medical Research",
+     "geoPoint": {
+      "lat": 29.1872,
+      "lon": -82.14009
+     },
+     "state": "Florida",
+     "zip": "34470"
+    },
+    {
+     "city": "Orlando",
+     "country": "United States",
+     "facility": "Bioclinica Research",
+     "geoPoint": {
+      "lat": 28.53834,
+      "lon": -81.37924
+     },
+     "state": "Florida",
+     "zip": "32806"
+    },
+    {
+     "city": "Port Orange",
+     "country": "United States",
+     "facility": "Progressive Medical Research",
+     "geoPoint": {
+      "lat": 29.13832,
+      "lon": -80.99561
+     },
+     "state": "Florida",
+     "zip": "32127"
+    },
+    {
+     "city": "Columbus",
+     "country": "United States",
+     "facility": "Columbus Memory Center",
+     "geoPoint": {
+      "lat": 32.46098,
+      "lon": -84.98771
+     },
+     "state": "Georgia",
+     "zip": "31909"
+    },
+    {
+     "city": "Lake Charles",
+     "country": "United States",
+     "facility": "Lake Charles Clinical Trials, LLC",
+     "geoPoint": {
+      "lat": 30.21309,
+      "lon": -93.2044
+     },
+     "state": "Louisiana",
+     "zip": "70601"
+    },
+    {
+     "city": "Winchester",
+     "country": "United States",
+     "facility": "Alzheimers Disease Center; Neurology",
+     "geoPoint": {
+      "lat": 42.45232,
+      "lon": -71.137
+     },
+     "state": "Massachusetts",
+     "zip": "01890"
+    },
+    {
+     "city": "Saint Paul",
+     "country": "United States",
+     "facility": "Health Partners Institute for Education and Research",
+     "geoPoint": {
+      "lat": 44.94441,
+      "lon": -93.09327
+     },
+     "state": "Minnesota",
+     "zip": "55130"
+    },
+    {
+     "city": "Flowood",
+     "country": "United States",
+     "facility": "Precise Research Centers",
+     "geoPoint": {
+      "lat": 32.30959,
+      "lon": -90.13898
+     },
+     "state": "Mississippi",
+     "zip": "39232"
+    },
+    {
+     "city": "Omaha",
+     "country": "United States",
+     "facility": "University of Nebraska Medical Center; Dept of Neurological Sciences",
+     "geoPoint": {
+      "lat": 41.25626,
+      "lon": -95.94043
+     },
+     "state": "Nebraska",
+     "zip": "68198-8440"
+    },
+    {
+     "city": "Las Vegas",
+     "country": "United States",
+     "facility": "Cleveland Clinic Lou Ruvo; Center for Brain Research",
+     "geoPoint": {
+      "lat": 36.17497,
+      "lon": -115.13722
+     },
+     "state": "Nevada",
+     "zip": "89106"
+    },
+    {
+     "city": "Summit",
+     "country": "United States",
+     "facility": "The Cognitive and Research Center of New Jersey",
+     "geoPoint": {
+      "lat": 40.71562,
+      "lon": -74.36468
+     },
+     "state": "New Jersey",
+     "zip": "07081"
+    },
+    {
+     "city": "Toms River",
+     "country": "United States",
+     "facility": "Advanced Memory Research Institute of NJ",
+     "geoPoint": {
+      "lat": 39.95373,
+      "lon": -74.19792
+     },
+     "state": "New Jersey",
+     "zip": "08755"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Columbia University Medical Center",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10032"
+    },
+    {
+     "city": "White Plains",
+     "country": "United States",
+     "facility": "Burke Rehabilitation Hospital",
+     "geoPoint": {
+      "lat": 41.03399,
+      "lon": -73.76291
+     },
+     "state": "New York",
+     "zip": "10605"
+    },
+    {
+     "city": "Charlotte",
+     "country": "United States",
+     "facility": "Behavioral Health Research",
+     "geoPoint": {
+      "lat": 35.22709,
+      "lon": -80.84313
+     },
+     "state": "North Carolina",
+     "zip": "28211"
+    },
+    {
+     "city": "Raleigh",
+     "country": "United States",
+     "facility": "Wake Research Associates",
+     "geoPoint": {
+      "lat": 35.7721,
+      "lon": -78.63861
+     },
+     "state": "North Carolina",
+     "zip": "27612"
+    },
+    {
+     "city": "Cincinnati",
+     "country": "United States",
+     "facility": "University of Cincinnati; Department of Psychiatry and Behavioral Neuroscience",
+     "geoPoint": {
+      "lat": 39.12711,
+      "lon": -84.51439
+     },
+     "state": "Ohio",
+     "zip": "45219"
+    },
+    {
+     "city": "Columbus",
+     "country": "United States",
+     "facility": "Ohio State University; College of Medicine",
+     "geoPoint": {
+      "lat": 39.96118,
+      "lon": -82.99879
+     },
+     "state": "Ohio",
+     "zip": "43210"
+    },
+    {
+     "city": "Dayton",
+     "country": "United States",
+     "facility": "Dayton Center for Neuro Disorders",
+     "geoPoint": {
+      "lat": 39.75895,
+      "lon": -84.19161
+     },
+     "state": "Ohio",
+     "zip": "45459"
+    },
+    {
+     "city": "Portland",
+     "country": "United States",
+     "facility": "Summit Research Network Inc.",
+     "geoPoint": {
+      "lat": 45.52345,
+      "lon": -122.67621
+     },
+     "state": "Oregon",
+     "zip": "97210"
+    },
+    {
+     "city": "Philadelphia",
+     "country": "United States",
+     "facility": "Thomas Jefferson University",
+     "geoPoint": {
+      "lat": 39.95238,
+      "lon": -75.16362
+     },
+     "state": "Pennsylvania",
+     "zip": "19107"
+    },
+    {
+     "city": "Plains",
+     "country": "United States",
+     "facility": "Northeastern Pennsylvania Memory",
+     "geoPoint": {
+      "lat": 41.27536,
+      "lon": -75.8502
+     },
+     "state": "Pennsylvania",
+     "zip": "18705"
+    },
+    {
+     "city": "Willow Grove",
+     "country": "United States",
+     "facility": "Abington Neurological Associates",
+     "geoPoint": {
+      "lat": 40.144,
+      "lon": -75.11573
+     },
+     "state": "Pennsylvania",
+     "zip": "19090"
+    },
+    {
+     "city": "Cordova",
+     "country": "United States",
+     "facility": "Neurology Clinic PC",
+     "geoPoint": {
+      "lat": 35.15565,
+      "lon": -89.7762
+     },
+     "state": "Tennessee",
+     "zip": "38018"
+    },
+    {
+     "city": "Austin",
+     "country": "United States",
+     "facility": "Senior Adults Specialty Research",
+     "geoPoint": {
+      "lat": 30.26715,
+      "lon": -97.74306
+     },
+     "state": "Texas",
+     "zip": "78757"
+    },
+    {
+     "city": "Beaumont",
+     "country": "United States",
+     "facility": "Gadolin Research, LLC",
+     "geoPoint": {
+      "lat": 30.08605,
+      "lon": -94.10185
+     },
+     "state": "Texas",
+     "zip": "77702"
+    },
+    {
+     "city": "Dallas",
+     "country": "United States",
+     "facility": "Texas Neurology PA",
+     "geoPoint": {
+      "lat": 32.78306,
+      "lon": -96.80667
+     },
+     "state": "Texas",
+     "zip": "75214"
+    },
+    {
+     "city": "Dallas",
+     "country": "United States",
+     "facility": "Kerwin Research Center, LLC",
+     "geoPoint": {
+      "lat": 32.78306,
+      "lon": -96.80667
+     },
+     "state": "Texas",
+     "zip": "75231"
+    },
+    {
+     "city": "Houston",
+     "country": "United States",
+     "facility": "Alzheimers Disease & Memory Disorders Center; Department of Neurology Baylor College of Medicine",
+     "geoPoint": {
+      "lat": 29.76328,
+      "lon": -95.36327
+     },
+     "state": "Texas",
+     "zip": "77030"
+    },
+    {
+     "city": "San Antonio",
+     "country": "United States",
+     "facility": "Clinical Trials of Texas, Inc",
+     "geoPoint": {
+      "lat": 29.42412,
+      "lon": -98.49363
+     },
+     "state": "Texas",
+     "zip": "78229"
+    },
+    {
+     "city": "Norfolk",
+     "country": "United States",
+     "facility": "Sentara Medical Group",
+     "geoPoint": {
+      "lat": 36.84681,
+      "lon": -76.28522
+     },
+     "state": "Virginia",
+     "zip": "23507"
+    },
+    {
+     "city": "Richmond",
+     "country": "United States",
+     "facility": "National Clinical Research Inc.-Richmond",
+     "geoPoint": {
+      "lat": 37.55376,
+      "lon": -77.46026
+     },
+     "state": "Virginia",
+     "zip": "23294"
+    },
+    {
+     "city": "Buenos Aires",
+     "country": "Argentina",
+     "facility": "Hospital Italiano",
+     "geoPoint": {
+      "lat": -34.61315,
+      "lon": -58.37723
+     },
+     "zip": "C1181ACH"
+    },
+    {
+     "city": "Caba",
+     "country": "Argentina",
+     "facility": "Universidad Maimonides",
+     "zip": "C1405BCK"
+    },
+    {
+     "city": "Córdoba",
+     "country": "Argentina",
+     "facility": "DAMIC",
+     "geoPoint": {
+      "lat": -31.40648,
+      "lon": -64.18853
+     },
+     "zip": "X500 3DCE"
+    },
+    {
+     "city": "Darlinghurst",
+     "country": "Australia",
+     "facility": "St Vincent's Hospital Sydney",
+     "geoPoint": {
+      "lat": -33.87939,
+      "lon": 151.21925
+     },
+     "state": "New South Wales",
+     "zip": "2010"
+    },
+    {
+     "city": "Erina",
+     "country": "Australia",
+     "facility": "Central Coast Neurosciences Research",
+     "geoPoint": {
+      "lat": -33.43218,
+      "lon": 151.38972
+     },
+     "state": "New South Wales",
+     "zip": "2250"
+    },
+    {
+     "city": "Hornsby",
+     "country": "Australia",
+     "facility": "Hornsby Ku-ring-gai Hospital; Division of Rehabilitation & Aged Care",
+     "geoPoint": {
+      "lat": -33.70244,
+      "lon": 151.09931
+     },
+     "state": "New South Wales",
+     "zip": "2077"
+    },
+    {
+     "city": "Woodville",
+     "country": "Australia",
+     "facility": "The Queen Elizabeth Hospital; Neurology",
+     "geoPoint": {
+      "lat": -34.877,
+      "lon": 138.54291
+     },
+     "state": "South Australia",
+     "zip": "5011"
+    },
+    {
+     "city": "Bruges",
+     "country": "Belgium",
+     "facility": "AZ Sint Jan",
+     "geoPoint": {
+      "lat": 51.20892,
+      "lon": 3.22424
+     },
+     "zip": "8000"
+    },
+    {
+     "city": "Kortrijk",
+     "country": "Belgium",
+     "facility": "AZ Groeninge",
+     "geoPoint": {
+      "lat": 50.82803,
+      "lon": 3.26487
+     },
+     "zip": "8500"
+    },
+    {
+     "city": "Leuven",
+     "country": "Belgium",
+     "facility": "UZ Leuven Gasthuisberg",
+     "geoPoint": {
+      "lat": 50.87959,
+      "lon": 4.70093
+     },
+     "zip": "3000"
+    },
+    {
+     "city": "Brasília",
+     "country": "Brazil",
+     "facility": "CCBR - Brasilia",
+     "geoPoint": {
+      "lat": -15.77972,
+      "lon": -47.92972
+     },
+     "state": "Federal District",
+     "zip": "70200-730"
+    },
+    {
+     "city": "Belo Horizonte",
+     "country": "Brazil",
+     "facility": "Hospital das Clinicas - UFMG",
+     "geoPoint": {
+      "lat": -19.92083,
+      "lon": -43.93778
+     },
+     "state": "Minas Gerais",
+     "zip": "31270-901"
+    },
+    {
+     "city": "Curitiba",
+     "country": "Brazil",
+     "facility": "Instituto de Neurologia de Curitiba",
+     "geoPoint": {
+      "lat": -25.42778,
+      "lon": -49.27306
+     },
+     "state": "Paraná",
+     "zip": "81210-310"
+    },
+    {
+     "city": "Rio de Janeiro",
+     "country": "Brazil",
+     "facility": "Centro Psiquiatria Sandra Ruschel Ltda",
+     "geoPoint": {
+      "lat": -22.90642,
+      "lon": -43.18223
+     },
+     "state": "Rio de Janeiro",
+     "zip": "22270-060"
+    },
+    {
+     "city": "Porto Alegre",
+     "country": "Brazil",
+     "facility": "Hospital das Clinicas - UFRGS",
+     "geoPoint": {
+      "lat": -30.03283,
+      "lon": -51.23019
+     },
+     "state": "Rio Grande do Sul"
+    },
+    {
+     "city": "São Paulo",
+     "country": "Brazil",
+     "facility": "Clínica Dr. Norton Sayeg LTDA - EPP",
+     "geoPoint": {
+      "lat": -23.5475,
+      "lon": -46.63611
+     },
+     "state": "São Paulo",
+     "zip": "04534-011"
+    },
+    {
+     "city": "Kelowna",
+     "country": "Canada",
+     "facility": "OCT Research ULC",
+     "geoPoint": {
+      "lat": 49.88307,
+      "lon": -119.48568
+     },
+     "state": "British Columbia",
+     "zip": "V1Y 1Z9"
+    },
+    {
+     "city": "Victoria",
+     "country": "Canada",
+     "facility": "Vancouver Island Health Authority",
+     "geoPoint": {
+      "lat": 48.4359,
+      "lon": -123.35155
+     },
+     "state": "British Columbia",
+     "zip": "V8R 1J8"
+    },
+    {
+     "city": "Halifax",
+     "country": "Canada",
+     "facility": "True North Clinical Research-Halifax",
+     "geoPoint": {
+      "lat": 44.64269,
+      "lon": -63.57688
+     },
+     "state": "Nova Scotia",
+     "zip": "B3S 1M7"
+    },
+    {
+     "city": "Kentville",
+     "country": "Canada",
+     "facility": "True North Clinical Research Kentville",
+     "geoPoint": {
+      "lat": 45.0771,
+      "lon": -64.49605
+     },
+     "state": "Nova Scotia",
+     "zip": "B4N 5E3"
+    },
+    {
+     "city": "Kingston",
+     "country": "Canada",
+     "facility": "Providence Care; Mental Health Services",
+     "geoPoint": {
+      "lat": 44.22976,
+      "lon": -76.48098
+     },
+     "state": "Ontario",
+     "zip": "K7L 4X3"
+    },
+    {
+     "city": "London",
+     "country": "Canada",
+     "facility": "Parkwood Hospital; Geriatric Medicine",
+     "geoPoint": {
+      "lat": 42.98339,
+      "lon": -81.23304
+     },
+     "state": "Ontario",
+     "zip": "N6C 5J1"
+    },
+    {
+     "city": "Peterborough",
+     "country": "Canada",
+     "facility": "Kawartha Centre - Redefining Healthy Aging",
+     "geoPoint": {
+      "lat": 44.30012,
+      "lon": -78.31623
+     },
+     "state": "Ontario",
+     "zip": "K9H 2P4"
+    },
+    {
+     "city": "Toronto",
+     "country": "Canada",
+     "facility": "The Centre for Memory and Aging",
+     "geoPoint": {
+      "lat": 43.70643,
+      "lon": -79.39864
+     },
+     "state": "Ontario",
+     "zip": "M4G 3E8"
+    },
+    {
+     "city": "Toronto",
+     "country": "Canada",
+     "facility": "St. Michael's Hospital",
+     "geoPoint": {
+      "lat": 43.70643,
+      "lon": -79.39864
+     },
+     "state": "Ontario",
+     "zip": "M5B 1N9"
+    },
+    {
+     "city": "Woodstock",
+     "country": "Canada",
+     "facility": "Devonshire Clinical Research Inc.",
+     "geoPoint": {
+      "lat": 43.13339,
+      "lon": -80.7497
+     },
+     "state": "Ontario",
+     "zip": "N4S 5P5"
+    },
+    {
+     "city": "Greenfield Park",
+     "country": "Canada",
+     "facility": "Clinique Neuro Rive-Sud",
+     "geoPoint": {
+      "lat": 45.48649,
+      "lon": -73.46223
+     },
+     "state": "Quebec",
+     "zip": "J4V 2J2"
+    },
+    {
+     "city": "Québec",
+     "country": "Canada",
+     "facility": "ALPHA Recherche Clinique",
+     "geoPoint": {
+      "lat": 46.81228,
+      "lon": -71.21454
+     },
+     "zip": "G3K 2P8"
+    },
+    {
+     "city": "Beijing",
+     "country": "China",
+     "facility": "Beijing Union Hospital",
+     "geoPoint": {
+      "lat": 39.9075,
+      "lon": 116.39723
+     },
+     "zip": "100730"
+    },
+    {
+     "city": "Tianjin (天津)",
+     "country": "China",
+     "facility": "Tianjin Medical University General Hospital",
+     "geoPoint": {
+      "lat": 39.14222,
+      "lon": 117.17667
+     },
+     "zip": "300052"
+    },
+    {
+     "city": "Aarhus N",
+     "country": "Denmark",
+     "facility": "Aarhus Universitetshospital, Neurologisk Afdeling F, Demensklinikken",
+     "geoPoint": {
+      "lat": 56.20367,
+      "lon": 10.17317
+     },
+     "zip": "8200"
+    },
+    {
+     "city": "København Ø",
+     "country": "Denmark",
+     "facility": "Rigshospitalet, Hukommelsesklinikken",
+     "geoPoint": {
+      "lat": 55.70968,
+      "lon": 12.57862
+     },
+     "zip": "2100"
+    },
+    {
+     "city": "Tallinn",
+     "country": "Estonia",
+     "facility": "Laane-Tallinna Keskhaigla",
+     "geoPoint": {
+      "lat": 59.43696,
+      "lon": 24.75353
+     },
+     "zip": "10617"
+    },
+    {
+     "city": "Bordeaux",
+     "country": "France",
+     "facility": "Hopital Pellegrin; Cmrr Aquitaine",
+     "geoPoint": {
+      "lat": 44.84124,
+      "lon": -0.58046
+     },
+     "zip": "33076"
+    },
+    {
+     "city": "Colmar",
+     "country": "France",
+     "facility": "Hôpital de Jour du Centre pour Personnes Âgées; Louis Pasteur Neurologie",
+     "geoPoint": {
+      "lat": 48.08078,
+      "lon": 7.35584
+     },
+     "zip": "68000"
+    },
+    {
+     "city": "Lille",
+     "country": "France",
+     "facility": "Hopital Roger Salengro; Service de Neurologie",
+     "geoPoint": {
+      "lat": 50.63391,
+      "lon": 3.05512
+     }
+    },
+    {
+     "city": "Limoges",
+     "country": "France",
+     "facility": "CHU de Limoges Hopital Dupuytren; Service de Medecine Geriatrique",
+     "geoPoint": {
+      "lat": 45.83362,
+      "lon": 1.24759
+     },
+     "zip": "87042"
+    },
+    {
+     "city": "Paris",
+     "country": "France",
+     "facility": "Hopital Broca",
+     "geoPoint": {
+      "lat": 48.85341,
+      "lon": 2.3488
+     },
+     "zip": "75013"
+    },
+    {
+     "city": "Paris",
+     "country": "France",
+     "facility": "CH Pitie Salpetriere; IM2A",
+     "geoPoint": {
+      "lat": 48.85341,
+      "lon": 2.3488
+     },
+     "zip": "75651"
+    },
+    {
+     "city": "Reims",
+     "country": "France",
+     "facility": "Hôpital Maison Blanche",
+     "geoPoint": {
+      "lat": 49.26526,
+      "lon": 4.02853
+     },
+     "zip": "51092"
+    },
+    {
+     "city": "Rennes",
+     "country": "France",
+     "facility": "CHU Rennes - Hopital Pontchaillou",
+     "geoPoint": {
+      "lat": 48.11109,
+      "lon": -1.67431
+     },
+     "zip": "35033"
+    },
+    {
+     "city": "Rouen",
+     "country": "France",
+     "facility": "CHU de Rouen Hopital; Service de Neurologie",
+     "geoPoint": {
+      "lat": 49.44313,
+      "lon": 1.09932
+     },
+     "zip": "76031"
+    },
+    {
+     "city": "Saint-Herblain",
+     "country": "France",
+     "facility": "Hop Guillaume Et Rene Laennec; Cmrr St Herblain",
+     "geoPoint": {
+      "lat": 47.21154,
+      "lon": -1.651
+     },
+     "zip": "44800"
+    },
+    {
+     "city": "Villeurbanne",
+     "country": "France",
+     "facility": "Hopital des Charpennes",
+     "geoPoint": {
+      "lat": 45.76601,
+      "lon": 4.8795
+     },
+     "zip": "69100"
+    },
+    {
+     "city": "Berlin",
+     "country": "Germany",
+     "facility": "ECRC Experimental and Clinical Research Center, Charité Campus Berlin Buch, Memory Clinic",
+     "geoPoint": {
+      "lat": 52.52437,
+      "lon": 13.41053
+     },
+     "zip": "13125"
+    },
+    {
+     "city": "Frankfurt",
+     "country": "Germany",
+     "facility": "Klinikum Joh.Wolfg.Goethe-UNI Zentrum d. Psychiatrie Klinik f. Psychiatrie Psychosomatik",
+     "geoPoint": {
+      "lat": 49.68333,
+      "lon": 10.53333
+     },
+     "zip": "60528"
+    },
+    {
+     "city": "Freiburg im Breisgau",
+     "country": "Germany",
+     "facility": "Universitätsklinikum Freiburg, Zentrum für Geriatrie und Gerontologie",
+     "geoPoint": {
+      "lat": 47.9959,
+      "lon": 7.85222
+     },
+     "zip": "79106"
+    },
+    {
+     "city": "Homburg/Saar",
+     "country": "Germany",
+     "facility": "Universitätsklinikum des Saarlandes Klinik f. Psychiatrie und Psychotherapie",
+     "zip": "66421"
+    },
+    {
+     "city": "Leipzig",
+     "country": "Germany",
+     "facility": "PANAKEIA - Arzneimittelforschung Leipzig GmbH",
+     "geoPoint": {
+      "lat": 51.33962,
+      "lon": 12.37129
+     },
+     "zip": "04275"
+    },
+    {
+     "city": "Mittweida",
+     "country": "Germany",
+     "facility": "Pharmakologisches Studienzentrum",
+     "geoPoint": {
+      "lat": 50.98622,
+      "lon": 12.97537
+     },
+     "zip": "09648"
+    },
+    {
+     "city": "München",
+     "country": "Germany",
+     "facility": "Klinikum rechts der Isar der TU München; Klinik für Psychiatrie und Psychotherapie",
+     "geoPoint": {
+      "lat": 51.60698,
+      "lon": 13.31243
+     },
+     "zip": "81675"
+    },
+    {
+     "city": "Haifa",
+     "country": "Israel",
+     "facility": "Rambam Medical Center",
+     "geoPoint": {
+      "lat": 32.81303,
+      "lon": 34.99928
+     },
+     "zip": "3109601"
+    },
+    {
+     "city": "Ramat Gan",
+     "country": "Israel",
+     "facility": "Sheba Medical Center; Psychiatry Department",
+     "geoPoint": {
+      "lat": 32.08227,
+      "lon": 34.81065
+     },
+     "zip": "5262100"
+    },
+    {
+     "city": "Tel Aviv",
+     "country": "Israel",
+     "facility": "Tel Aviv Sourasky Medical Center; Department of Neurology",
+     "geoPoint": {
+      "lat": 32.08088,
+      "lon": 34.78057
+     },
+     "zip": "6423906"
+    },
+    {
+     "city": "Rome",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera Universitaria Policlinico Tor Vergata; Neurologia",
+     "geoPoint": {
+      "lat": 41.89193,
+      "lon": 12.51133
+     },
+     "state": "Lazio",
+     "zip": "00133"
+    },
+    {
+     "city": "Rome",
+     "country": "Italy",
+     "facility": "Umberto I Policlinico di Roma-Università di Roma La Sapienza",
+     "geoPoint": {
+      "lat": 41.89193,
+      "lon": 12.51133
+     },
+     "state": "Lazio",
+     "zip": "00185"
+    },
+    {
+     "city": "Rome",
+     "country": "Italy",
+     "facility": "Ospedale San Giovanni Calibita Fatebenefratell;Neurologia",
+     "geoPoint": {
+      "lat": 41.89193,
+      "lon": 12.51133
+     },
+     "state": "Lazio",
+     "zip": "00186"
+    },
+    {
+     "city": "Brescia",
+     "country": "Italy",
+     "facility": "IRCCS \"Centro S. Giovanni di Dio\" Fatebenefratelli -UO Alzheimer",
+     "geoPoint": {
+      "lat": 45.53558,
+      "lon": 10.21472
+     },
+     "state": "Lombardy",
+     "zip": "25125"
+    },
+    {
+     "city": "Castellanza",
+     "country": "Italy",
+     "facility": "Irccs Multimedica Santa Maria; Unita' Di Neurologia",
+     "geoPoint": {
+      "lat": 45.61079,
+      "lon": 8.89616
+     },
+     "state": "Lombardy",
+     "zip": "21053"
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "IRCCS Ospedale San Raffaele; Centro Disturbi della Memoria",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     },
+     "state": "Lombardy",
+     "zip": "20132"
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "Fondazione IRCCS Istituto Nazionale Neurologico Besta; UO Neuropatologia",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     },
+     "state": "Lombardy",
+     "zip": "20133"
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "Ospedale S. Maria Nascente; Fondazione Don Gnocchi; Dip. Neurologia Riabilitativa",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     },
+     "state": "Lombardy",
+     "zip": "20148"
+    },
+    {
+     "city": "Passirana",
+     "country": "Italy",
+     "facility": "Ospedale Casati Passirana di Rho; Centro Regionale Alzheimer",
+     "geoPoint": {
+      "lat": 45.54792,
+      "lon": 9.04412
+     },
+     "state": "Lombardy",
+     "zip": "20017"
+    },
+    {
+     "city": "Pozzilli",
+     "country": "Italy",
+     "facility": "IRCCS Neuromed; Neurologia I-Centro studio e cura delle demenze e UVA",
+     "geoPoint": {
+      "lat": 41.51142,
+      "lon": 14.06252
+     },
+     "state": "Molise",
+     "zip": "86077"
+    },
+    {
+     "city": "Turin",
+     "country": "Italy",
+     "facility": "AO Città della Salute e della Scienza Osp.S.Giov.Battista Molinette; SC Geriatria",
+     "geoPoint": {
+      "lat": 45.07049,
+      "lon": 7.68682
+     },
+     "state": "Piedmont",
+     "zip": "10126"
+    },
+    {
+     "city": "Pisa",
+     "country": "Italy",
+     "facility": "A.O. Universitaria Pisana; Neurologia",
+     "geoPoint": {
+      "lat": 43.70853,
+      "lon": 10.4036
+     },
+     "state": "Tuscany",
+     "zip": "56126"
+    },
+    {
+     "city": "Aichi",
+     "country": "Japan",
+     "facility": "National Center for Geriatrics and Gerontology",
+     "geoPoint": {
+      "lat": 32.51879,
+      "lon": 130.62158
+     },
+     "zip": "474-8511"
+    },
+    {
+     "city": "Chiba",
+     "country": "Japan",
+     "facility": "Inage Neurology and Memory Clinic",
+     "geoPoint": {
+      "lat": 35.6,
+      "lon": 140.11667
+     },
+     "zip": "263-0043"
+    },
+    {
+     "city": "Fukuoka",
+     "country": "Japan",
+     "facility": "Fukuoka Mirai Hospital",
+     "geoPoint": {
+      "lat": 33.6,
+      "lon": 130.41667
+     },
+     "zip": "813-0017"
+    },
+    {
+     "city": "Hiroshima",
+     "country": "Japan",
+     "facility": "National Hospital Organization Hiroshima-Nishi Medical Center",
+     "geoPoint": {
+      "lat": 34.4,
+      "lon": 132.45
+     },
+     "zip": "739-0696"
+    },
+    {
+     "city": "Hyōgo",
+     "country": "Japan",
+     "facility": "Tsukazaki Hospital",
+     "geoPoint": {
+      "lat": 43.36667,
+      "lon": 144.43333
+     },
+     "zip": "671-1227"
+    },
+    {
+     "city": "Kagawa",
+     "country": "Japan",
+     "facility": "Kagawa Prefectural Central Hospital",
+     "geoPoint": {
+      "lat": 34.06667,
+      "lon": 131.03333
+     },
+     "zip": "760-8557"
+    },
+    {
+     "city": "Kanagawa",
+     "country": "Japan",
+     "facility": "Fujisawa City Hospital",
+     "geoPoint": {
+      "lat": 37.58333,
+      "lon": 139.91667
+     },
+     "zip": "251-8550"
+    },
+    {
+     "city": "Kanagawa",
+     "country": "Japan",
+     "facility": "National Hospital Organization Sagamihara National Hospital",
+     "geoPoint": {
+      "lat": 37.58333,
+      "lon": 139.91667
+     },
+     "zip": "252-0392"
+    },
+    {
+     "city": "Kyoto",
+     "country": "Japan",
+     "facility": "Ijinkai Takeda General Hospital",
+     "geoPoint": {
+      "lat": 35.02107,
+      "lon": 135.75385
+     },
+     "zip": "601-1495"
+    },
+    {
+     "city": "Kyoto",
+     "country": "Japan",
+     "facility": "Rakuwakai Otowarehabilitation Hospital",
+     "geoPoint": {
+      "lat": 35.02107,
+      "lon": 135.75385
+     },
+     "zip": "607-8113"
+    },
+    {
+     "city": "Nagano",
+     "country": "Japan",
+     "facility": "National Hospital Organization Matsumoto Medical Center",
+     "geoPoint": {
+      "lat": 36.65,
+      "lon": 138.18333
+     },
+     "zip": "399-8701"
+    },
+    {
+     "city": "Numakunai",
+     "country": "Japan",
+     "facility": "Iwate Medical University Hospital",
+     "geoPoint": {
+      "lat": 39.96667,
+      "lon": 141.21667
+     },
+     "zip": "028-3695"
+    },
+    {
+     "city": "Okayama",
+     "country": "Japan",
+     "facility": "Katayama Medical Clinic",
+     "geoPoint": {
+      "lat": 34.65,
+      "lon": 133.93333
+     },
+     "zip": "710-0813"
+    },
+    {
+     "city": "Osaka",
+     "country": "Japan",
+     "facility": "Osaka University Hospital",
+     "geoPoint": {
+      "lat": 34.69379,
+      "lon": 135.50107
+     },
+     "zip": "565-0871"
+    },
+    {
+     "city": "Osaka",
+     "country": "Japan",
+     "facility": "Asakayama General Hospital",
+     "geoPoint": {
+      "lat": 34.69379,
+      "lon": 135.50107
+     },
+     "zip": "590-0018"
+    },
+    {
+     "city": "Shizuoka",
+     "country": "Japan",
+     "facility": "NHO Shizuoka Institute of Epilepsy and Neurological Disorders",
+     "geoPoint": {
+      "lat": 34.98333,
+      "lon": 138.38333
+     },
+     "zip": "420-8688"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "Kanto Central Hospital",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "158-8531"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "Tokyo Medical University Hospital",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "160-0023"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "Shinjuku Research Park Clinic",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "169-0073"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "Tokyo Metropolitan Geriatric Hospital",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "173-0015"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "National Center of Neurology and Psychiatry",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "187-8551"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "Tokyo Medical University Hachioji Medical Center",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "193-0998"
+    },
+    {
+     "city": "Lørenskog",
+     "country": "Norway",
+     "facility": "Akershus universitetssykehus HF; Nevroklinikken S203",
+     "zip": "1478"
+    },
+    {
+     "city": "Oslo",
+     "country": "Norway",
+     "facility": "Oslo universitetssykehus HF Ullevål sykehus; Hukommelsesklinikken",
+     "geoPoint": {
+      "lat": 59.91273,
+      "lon": 10.74609
+     },
+     "zip": "0450"
+    },
+    {
+     "city": "Lima",
+     "country": "Peru",
+     "facility": "Clinica Internacional; Unidad De Investigacion",
+     "geoPoint": {
+      "lat": -12.04318,
+      "lon": -77.02824
+     },
+     "zip": "15001"
+    },
+    {
+     "city": "Lima",
+     "country": "Peru",
+     "facility": "Hospital Nacional Dos de Mayo; Unidad de Investigacion de Neurologia",
+     "geoPoint": {
+      "lat": -12.04318,
+      "lon": -77.02824
+     },
+     "zip": "Lima 01"
+    },
+    {
+     "city": "Bydgoszcz",
+     "country": "Poland",
+     "facility": "NZOZ Dom Sue Ryder",
+     "geoPoint": {
+      "lat": 53.1235,
+      "lon": 18.00762
+     },
+     "zip": "85-023"
+    },
+    {
+     "city": "Szczecin",
+     "country": "Poland",
+     "facility": "Centrum Medyczne Euromedis Sp. z o.o.",
+     "geoPoint": {
+      "lat": 53.42894,
+      "lon": 14.55302
+     },
+     "zip": "70-111"
+    },
+    {
+     "city": "Warsaw",
+     "country": "Poland",
+     "facility": "Centrum Medyczne NeuroProtect",
+     "geoPoint": {
+      "lat": 52.22977,
+      "lon": 21.01178
+     },
+     "zip": "01-684"
+    },
+    {
+     "city": "Wroclaw",
+     "country": "Poland",
+     "facility": "NZOZ WCA",
+     "geoPoint": {
+      "lat": 51.10286,
+      "lon": 17.03006
+     },
+     "zip": "53-659"
+    },
+    {
+     "city": "Braga",
+     "country": "Portugal",
+     "facility": "Hospital de Braga; Servico de Neurologia",
+     "geoPoint": {
+      "lat": 41.5514,
+      "lon": -8.42311
+     },
+     "zip": "4710-243"
+    },
+    {
+     "city": "Coimbra",
+     "country": "Portugal",
+     "facility": "HUC; Servico de Neurologia",
+     "geoPoint": {
+      "lat": 40.20686,
+      "lon": -8.41996
+     },
+     "zip": "3000-075"
+    },
+    {
+     "city": "Matosinhos Municipality",
+     "country": "Portugal",
+     "facility": "Hospital Pedro Hispano; Servico de Neurologia",
+     "geoPoint": {
+      "lat": 41.18207,
+      "lon": -8.68908
+     },
+     "zip": "4464-513"
+    },
+    {
+     "city": "Porto",
+     "country": "Portugal",
+     "facility": "Hospital Geral de Santo Antonio; Servico de Neurologia",
+     "geoPoint": {
+      "lat": 41.1485,
+      "lon": -8.61097
+     },
+     "zip": "4099-001"
+    },
+    {
+     "city": "Saint Petersburg",
+     "country": "Russia",
+     "facility": "LLC Baltic Medicine",
+     "geoPoint": {
+      "lat": 59.93863,
+      "lon": 30.31413
+     },
+     "state": "Sankt-Peterburg",
+     "zip": "194356"
+    },
+    {
+     "city": "Yekaterinburg",
+     "country": "Russia",
+     "facility": "State Healthcare Institution of Sverdlovsk Region Sverdlovsk Regional Clinical Psychiatric Hospita",
+     "geoPoint": {
+      "lat": 56.85733,
+      "lon": 60.61529
+     },
+     "state": "Sverdlovsk Oblast",
+     "zip": "620030"
+    },
+    {
+     "city": "Kazan'",
+     "country": "Russia",
+     "facility": "State Autonomous Healthcare Institution \"Republican Clinical Neurological Center",
+     "geoPoint": {
+      "lat": 55.78874,
+      "lon": 49.12214
+     },
+     "zip": "420021"
+    },
+    {
+     "city": "Kazan'",
+     "country": "Russia",
+     "facility": "State autonomous institution of healthcare Inter-regional clinical and diagnostic center",
+     "geoPoint": {
+      "lat": 55.78874,
+      "lon": 49.12214
+     },
+     "zip": "420101"
+    },
+    {
+     "city": "Moscow",
+     "country": "Russia",
+     "facility": "Institution of RAMS (Mental Health Research Center of RAMS)",
+     "geoPoint": {
+      "lat": 55.75204,
+      "lon": 37.61781
+     },
+     "zip": "115522"
+    },
+    {
+     "city": "Nizhny Novgorod",
+     "country": "Russia",
+     "facility": "City Clinical Psychiatry Hospital #1",
+     "geoPoint": {
+      "lat": 56.32867,
+      "lon": 44.00205
+     },
+     "zip": "603155"
+    },
+    {
+     "city": "Saint Petersburg",
+     "country": "Russia",
+     "facility": "St Nicolas Psychiatric Hospital; Chair of Psychiatry and Narcology of St. Petersburg Medical Academy",
+     "geoPoint": {
+      "lat": 59.93863,
+      "lon": 30.31413
+     },
+     "zip": "190121"
+    },
+    {
+     "city": "Tomsk",
+     "country": "Russia",
+     "facility": "Nebbiolo Center for Clinical Trials",
+     "geoPoint": {
+      "lat": 56.50049,
+      "lon": 84.98216
+     },
+     "zip": "634009"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "Clinic for Mental disorders Dr Laza Lazarevic",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "Neurology clinic, Clinical Center of Serbia",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Kragujevac",
+     "country": "Serbia",
+     "facility": "Clinic for neurology, Clinical Center Kragujevac",
+     "geoPoint": {
+      "lat": 44.01667,
+      "lon": 20.91667
+     },
+     "zip": "34000"
+    },
+    {
+     "city": "Johannesburg",
+     "country": "South Africa",
+     "facility": "Private Practice; the Osteoporosis Clinic",
+     "geoPoint": {
+      "lat": -26.20227,
+      "lon": 28.04363
+     },
+     "zip": "2196"
+    },
+    {
+     "city": "Busan",
+     "country": "South Korea",
+     "facility": "Dong-A University Hospital",
+     "geoPoint": {
+      "lat": 35.10168,
+      "lon": 129.03004
+     },
+     "zip": "49201"
+    },
+    {
+     "city": "Incheon",
+     "country": "South Korea",
+     "facility": "Gachon University Gil Medical Center",
+     "geoPoint": {
+      "lat": 37.45646,
+      "lon": 126.70515
+     },
+     "zip": "21565"
+    },
+    {
+     "city": "Seongnam-si",
+     "country": "South Korea",
+     "facility": "Seoul National University Bundang Hospital",
+     "geoPoint": {
+      "lat": 37.43861,
+      "lon": 127.13778
+     },
+     "zip": "13605"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Seoul National University Hospital",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "03080"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Hanyang University Seoul Hospital",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "04763"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Konkuk University Medical Center",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "05030"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Samsung Medical Center",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "06351"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Seoul St Mary's Hospital",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "06591"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Borame Medical Center",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "07061"
+    },
+    {
+     "city": "Elche",
+     "country": "Spain",
+     "facility": "Hospital General Universitario de Elche; Servicio de Neurología",
+     "geoPoint": {
+      "lat": 38.26218,
+      "lon": -0.70107
+     },
+     "state": "Alicante",
+     "zip": "03203"
+    },
+    {
+     "city": "BArcelon",
+     "country": "Spain",
+     "facility": "Fundació ACE",
+     "state": "Barcelona",
+     "zip": "08034"
+    },
+    {
+     "city": "Sant Cugat del Vallès",
+     "country": "Spain",
+     "facility": "Hospital General De Catalunya; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 41.47063,
+      "lon": 2.08611
+     },
+     "state": "Barcelona",
+     "zip": "8195"
+    },
+    {
+     "city": "Terrassa",
+     "country": "Spain",
+     "facility": "Hospital Mutua De Terrasa; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 41.56667,
+      "lon": 2.01667
+     },
+     "state": "Barcelona",
+     "zip": "08222"
+    },
+    {
+     "city": "Plasencia",
+     "country": "Spain",
+     "facility": "Hospital Virgen del Puerto. Servicio de Neurología",
+     "geoPoint": {
+      "lat": 40.03116,
+      "lon": -6.08845
+     },
+     "state": "Caceres",
+     "zip": "10600"
+    },
+    {
+     "city": "Santander",
+     "country": "Spain",
+     "facility": "Hospital Universitario Marques de Valdecilla; Servicio de Neurología",
+     "geoPoint": {
+      "lat": 43.46589,
+      "lon": -3.80493
+     },
+     "state": "Cantabria"
+    },
+    {
+     "city": "Castellon",
+     "country": "Spain",
+     "facility": "Hospital la Magdalena; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 39.98567,
+      "lon": -0.04935
+     },
+     "state": "Castellon",
+     "zip": "12004"
+    },
+    {
+     "city": "Salt",
+     "country": "Spain",
+     "facility": "Hospital Santa Caterina, Unitat de Valoració de la memoria i les demencies",
+     "geoPoint": {
+      "lat": 41.97489,
+      "lon": 2.79281
+     },
+     "state": "Girona",
+     "zip": "17090"
+    },
+    {
+     "city": "Donosti-San Sebastián",
+     "country": "Spain",
+     "facility": "Policlínica Guipuzkoa; Servicio de Neurología",
+     "state": "Guipuzcoa",
+     "zip": "20014"
+    },
+    {
+     "city": "Santiago de Compostela",
+     "country": "Spain",
+     "facility": "Complejo Hospitalario Universitario de Santiago (CHUS) ; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 42.88052,
+      "lon": -8.54569
+     },
+     "state": "LA Coruña",
+     "zip": "15706"
+    },
+    {
+     "city": "Logroño",
+     "country": "Spain",
+     "facility": "Hospital San Pedro; Servicio de Neurología",
+     "geoPoint": {
+      "lat": 42.46615,
+      "lon": -2.45115
+     },
+     "state": "La Rioja",
+     "zip": "26006"
+    },
+    {
+     "city": "Pozuelo de Alarcón",
+     "country": "Spain",
+     "facility": "Hospital Quiron de Madrid; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 40.43293,
+      "lon": -3.81338
+     },
+     "state": "Madrid",
+     "zip": "28223"
+    },
+    {
+     "city": "Pamplona",
+     "country": "Spain",
+     "facility": "Clinica Universitaria de Navarra; Servicio de Neurología",
+     "geoPoint": {
+      "lat": 42.81687,
+      "lon": -1.64323
+     },
+     "state": "Navarre",
+     "zip": "31008"
+    },
+    {
+     "city": "Barakaldo",
+     "country": "Spain",
+     "facility": "CAE Oroitu",
+     "geoPoint": {
+      "lat": 43.29639,
+      "lon": -2.98813
+     },
+     "state": "Vizcaya",
+     "zip": "48903"
+    },
+    {
+     "city": "Albacete",
+     "country": "Spain",
+     "facility": "Hospital Perpetuo Socorro, Servicio de Geriatria",
+     "geoPoint": {
+      "lat": 38.99424,
+      "lon": -1.85643
+     },
+     "zip": "2006"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital de la Santa Creu i Sant Pau; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08025"
+    },
+    {
+     "city": "Burgos",
+     "country": "Spain",
+     "facility": "Hospital Universitario de Burgos. Servicio de Neurología",
+     "geoPoint": {
+      "lat": 42.34106,
+      "lon": -3.70184
+     },
+     "zip": "09006"
+    },
+    {
+     "city": "Córdoba",
+     "country": "Spain",
+     "facility": "Hospital Universitario Reina Sofia; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 37.89155,
+      "lon": -4.77275
+     },
+     "zip": "14011"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Ramon y Cajal; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28034"
+    },
+    {
+     "city": "Salamanca",
+     "country": "Spain",
+     "facility": "Complejo Asistencial Universitario de Salamanca; Servicio de Psiquiatría; CSM La Alamedilla",
+     "geoPoint": {
+      "lat": 40.96882,
+      "lon": -5.66388
+     },
+     "zip": "37005"
+    },
+    {
+     "city": "Seville",
+     "country": "Spain",
+     "facility": "Hospital Universitario Virgen Macarena; Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 37.38283,
+      "lon": -5.97317
+     },
+     "zip": "41009"
+    },
+    {
+     "city": "Malmö",
+     "country": "Sweden",
+     "facility": "Skånes Universitetssjukhus Malmö, Minneskliniken",
+     "geoPoint": {
+      "lat": 55.60587,
+      "lon": 13.00073
+     },
+     "zip": "211 46"
+    },
+    {
+     "city": "Mölndal",
+     "country": "Sweden",
+     "facility": "Sahlgrenska Academy University,Neuroscience and Physiology;Departmt of Psychiatry and Neurochemistry",
+     "geoPoint": {
+      "lat": 57.6554,
+      "lon": 12.01378
+     },
+     "zip": "431 41"
+    },
+    {
+     "city": "Changhua County",
+     "country": "Taiwan",
+     "facility": "Changhua Christian Hospital; Neurology",
+     "zip": "500"
+    },
+    {
+     "city": "Kaohsiung City",
+     "country": "Taiwan",
+     "facility": "Kaohsiung Medical University Hospital; Neurology",
+     "geoPoint": {
+      "lat": 22.61626,
+      "lon": 120.31333
+     },
+     "zip": "807"
+    },
+    {
+     "city": "New Taipei City",
+     "country": "Taiwan",
+     "facility": "Taipei Medical University - Shuang Ho Hospital - Neurology",
+     "geoPoint": {
+      "lat": 25.06199,
+      "lon": 121.45703
+     },
+     "zip": "23561"
+    },
+    {
+     "city": "Taipei",
+     "country": "Taiwan",
+     "facility": "National Taiwan University Hospital; Neurology",
+     "geoPoint": {
+      "lat": 25.05306,
+      "lon": 121.52639
+     },
+     "zip": "100"
+    },
+    {
+     "city": "Taoyuan",
+     "country": "Taiwan",
+     "facility": "Chang Gung Memorial Foundation - Linkou - Neurology",
+     "geoPoint": {
+      "lat": 24.99368,
+      "lon": 121.29696
+     },
+     "zip": "333"
+    },
+    {
+     "city": "Ankara",
+     "country": "Turkey (Türkiye)",
+     "facility": "Hacettepe University Medical Faculty; Neurology",
+     "geoPoint": {
+      "lat": 39.91987,
+      "lon": 32.85427
+     },
+     "zip": "06100"
+    },
+    {
+     "city": "Istanbul",
+     "country": "Turkey (Türkiye)",
+     "facility": "Istanbul University Istanbul School of Medicine; Neurology",
+     "geoPoint": {
+      "lat": 41.01384,
+      "lon": 28.94966
+     },
+     "zip": "34093"
+    },
+    {
+     "city": "Samsun",
+     "country": "Turkey (Türkiye)",
+     "facility": "Ondokuz Mayis Univ. Med. Fac.; Neurology",
+     "geoPoint": {
+      "lat": 41.27976,
+      "lon": 36.3361
+     },
+     "zip": "55139"
+    },
+    {
+     "city": "Cheltenham",
+     "country": "United Kingdom",
+     "facility": "The Fritchie Centre, Charlton Lane Centre, Charlon Lane, Leckhampton; The Fritchie Centre",
+     "geoPoint": {
+      "lat": 51.90006,
+      "lon": -2.07972
+     },
+     "zip": "GL53 9DZ"
+    },
+    {
+     "city": "Chertsey",
+     "country": "United Kingdom",
+     "facility": "Surrey and Borders NHS Foundation Trust; Brain Science Research Unit",
+     "geoPoint": {
+      "lat": 51.38812,
+      "lon": -0.50782
+     },
+     "zip": "KT16 0AE"
+    },
+    {
+     "city": "Crowborough",
+     "country": "United Kingdom",
+     "facility": "Sussex Partnership NHS Foundation Trust; Cognitive Treatment and Research unit",
+     "geoPoint": {
+      "lat": 51.06098,
+      "lon": 0.16342
+     },
+     "zip": "TN6 1HB"
+    },
+    {
+     "city": "Dundee",
+     "country": "United Kingdom",
+     "facility": "Ninewells Hospital",
+     "geoPoint": {
+      "lat": 56.46913,
+      "lon": -2.97489
+     },
+     "zip": "DD12 9SY"
+    },
+    {
+     "city": "Edinburgh",
+     "country": "United Kingdom",
+     "facility": "NHS Lothian - Western General Hospital; NHS Lothian - Western General Hospital",
+     "geoPoint": {
+      "lat": 55.95206,
+      "lon": -3.19648
+     },
+     "zip": "EH4 2XU"
+    },
+    {
+     "city": "Glasgow",
+     "country": "United Kingdom",
+     "facility": "Queen Elizabeth University Hospital; Clinical Research Facility",
+     "geoPoint": {
+      "lat": 55.86515,
+      "lon": -4.25763
+     },
+     "zip": "G51 4TF"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "RE:Cognition Health",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "W1G 9RU"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "Charing Cross Hospital; Imperial Memory Unit, Level 10 West",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "W6 8RF"
+    },
+    {
+     "city": "Manchester",
+     "country": "United Kingdom",
+     "facility": "Manchester Royal Infirmary",
+     "geoPoint": {
+      "lat": 53.48095,
+      "lon": -2.23743
+     },
+     "zip": "M13 9WL"
+    },
+    {
+     "city": "Oxford",
+     "country": "United Kingdom",
+     "facility": "John Radcliffe Hospital",
+     "geoPoint": {
+      "lat": 51.75222,
+      "lon": -1.25596
+     },
+     "zip": "OX3 9DU"
+    },
+    {
+     "city": "Southampton",
+     "country": "United Kingdom",
+     "facility": "University Southampton NHS Foundation Trust; Wessex Neurologica Centre",
+     "geoPoint": {
+      "lat": 50.90395,
+      "lon": -1.40428
+     },
+     "zip": "SO166YD"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "affiliation": "Hoffmann-La Roche",
+     "name": "Clinical Trials",
+     "role": "STUDY_DIRECTOR"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "This randomized, double-blind, placebo-controlled, parallel-group study will evaluate the efficacy and safety of crenezumab versus placebo in participants with prodromal to mild AD. Participants will be randomized 1:1 to receive either intravenous (IV) infusion of crenezumab or placebo every 4 weeks (Q4W) for 100 weeks. The primary efficacy assessment will be performed at 105 weeks. The participants who do not enter open-label extension will enter for a long term follow-up period for up to 52 weeks after the last crenezumab dose (Week 153)."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "DOUBLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "INVESTIGATOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 806,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE3"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Weight between 40 and 120 kilograms (Kg) inclusive\n* Availability of a person (referred to as the \"caregiver\") who in the investigator's judgment:\n* Has frequent and sufficient contact with the participant to be able to provide accurate information regarding the participant's cognitive and functional abilities, agrees to provide information at clinic visits (which require partner input for scale completion), signs the necessary consent form, and has sufficient cognitive capacity to accurately report upon the participant's behavior and cognitive and functional abilities\n* Fluency in the language of the tests used at the study site\n* Adequate visual and auditory acuity, in the investigator's judgment, sufficient to perform the neuropsychological testing (eye glasses and hearing aids are permitted)\n* Evidence of the AD pathological process, by a positive amyloid assessment either on cerebrospinal fluid (CSF) amyloid beta 1-42 levels as measured on the Elecsys beta-amyloid(1-42) test system or amyloid PET scan by qualitative read by the core/central PET laboratory\n* Demonstrated abnormal memory function at screening (up to 4 weeks before screening begins) or screening (FCSRT cueing index =\\<0.67 AND free recall =\\<27)\n* Screening mini mental state examination (MMSE) score of greater than or equal to (\\>=) 22 points and Clinical Dementia Rating-Global Score (CDR-GS) of 0.5 or 1.0\n* Meets National Institute on Aging/Alzheimer's Association (NIAAA) core clinical criteria for probable AD dementia or prodromal AD (consistent with the NIAAA diagnostic criteria and guidelines for mild cognitive impairment (MCI)\n* If receiving symptomatic AD medications, the dosing regimen must have been stable for 3 months prior to screening\n* Participant must have completed at least 6 years of formal education after the age of 5 years\n\nExclusion Criteria:\n\n* Any evidence of a condition other than AD that may affect cognition such as other dementias, stroke, brain damage, autoimmune disorders (e.g. multiple sclerosis) or infections with neurological sequelae.\n* History of major psychiatric illness such as schizophrenia or major depression (if not considered in remission)\n* At risk of suicide in the opinion of the investigator\n* Any abnormal MRI findings, such as presence of cerebral vascular pathology, cortical stroke, etc or inability to tolerate MRI procedures or contraindication to MRI\n* Unstable or clinically significant cardiovascular (e.g., myocardial infarction), kidney or liver disease\n* Uncontrolled hypertension\n* Screening hemoglobin A1c (HbA1C) \\>8%\n* Poor peripheral venous access\n* History of cancer except:\n\nIf considered to be cured or If not being actively treated with anti-cancer therapy or radiotherapy\n\n\\- Known history of severe allergic, anaphylactic, or other hypersensitivity reactions to chimeric, human, or humanized antibodies or fusion proteins",
+   "healthyVolunteers": false,
+   "maximumAge": "85 Years",
+   "minimumAge": "50 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "acronym": "CREAD 2",
+   "briefTitle": "A Study of Crenezumab Versus Placebo to Evaluate the Efficacy and Safety in Participants With Prodromal to Mild Alzheimer's Disease (AD)",
+   "nctId": "NCT03114657",
+   "officialTitle": "A Phase III, Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Group, Efficacy and Safety Study of Crenezumab in Patients With Prodromal to Mild Alzheimer's Disease",
+   "orgStudyIdInfo": {
+    "id": "BN29553"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Hoffmann-La Roche"
+   },
+   "secondaryIdInfos": [
+    {
+     "id": "2016-003288-20",
+     "type": "EUDRACT_NUMBER"
+    },
+    {
+     "id": "2016",
+     "link": "https://reporter.nih.gov/quickSearch/2016",
+     "type": "NIH"
+    }
+   ]
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "description": "The CDR-SB rates impairment in 6 categories (memory, orientation, judgement and problem solving, community affairs, home and hobbies and personal care) on a 5-point scale in which no impairment = 0, questionable impairment = 0.5 and mild, moderate and severe impairment = 1, 2 and 3 respectively. The score range is from 0 to 18 with a high score indicating a high disease severity. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline for this primary endpoint. Data after 29 January 2019 are censored for the primary and secondary efficacy analyses to avoid potential biases due to investigators, participants, raters, etc. being potentially influenced by early closure of the study due to lack of efficacy.",
+     "measure": "Change From Baseline to Week 77 in Clinical Dementia Rating-Sum of Boxes (CDR-SB) Scale Score",
+     "timeFrame": "Baseline, Week 77"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "description": "The ADAS-Cog-13 assesses multiple cognitive domains including memory, comprehension, praxis, orientation, and spontaneous speech. Most of these are assessed by tests although some are rated by the clinician on a 5-point scale. The ADAS-Cog-13 is the ADAS-Cog-11 with 2 further items: delayed word recall and total digit cancellation. The score range for ADAS-Cog-13 is from 0 to 85 with high scores representing severe dysfunction. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 in Alzheimer's Disease Assessment Scale-Cognition 13 (ADAS-Cog-13) Subscale Score",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The ADAS-Cog-11 assesses multiple cognitive domains including memory, comprehension, praxis, orientation, and spontaneous speech. Most of these are assessed by tests although some are rated by the clinician on a 5-point scale. The score range for ADAS-Cog-11 is from 0 to 70 with high scores representing severe dysfunction. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 in Alzheimer's Disease Assessment Scale-Cognition 11 (ADAS-Cog-11) Subscale Score",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The CDR-GS represents a semi-structured interview which rates impairment in 6 categories (memory, orientation, judgement and problem solving, community affairs, home and hobbies, and personal care) on a 5-point scale in which CDR 0 = no dementia and CDR 0.5, 1, 2 or 3 = questionable, mild, moderate or severe dementia respectively. The range in scores for the CDR-GS is from 0 to 3 and a high score on the CDR-GS would indicate a high disease severity. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 on Severity of Dementia, Assessed Using the CDR-Global Score (CDR-GS)",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The MMSE is a set of standardized questions used to evaluate possible cognitive impairment and help stage the severity level of this impairment. The questions target 6 areas: orientation, registration, attention, short-term recall, language and constructional praxis/visuospatial abilities. The scores on the MMSE range from 0 to 30, with higher scores indicating better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 on Severity of Dementia, Assessed Using the Mini Mental State Evaluation (MMSE)",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The ADCS-ADL (Alzheimer's Disease Cooperative Study-Activities of Daily Living) is the scale most widely used to assess functional outcomes in participants with AD. The ADCS-ADL covers both basic ADL (e.g., eating and toileting) and more complex 'instrumental' ADL or iADL (e.g., using the telephone, managing finances and preparing a meal). The ADCS-ADL consists of 23 questions with a score range of 0 to 78 where a higher score represents better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 on Function as Assessed by (ADCS-ADL) Total Score",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The ADCS-iADL (Alzheimer's Disease Cooperative Study-Instrumental Activities of Daily Living) measures activities such as using the telephone, managing finances and preparing a meal. The ADCS-iADL consists of 16 questions with a score range of 0 to 56 where a higher score represents better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 on Function as Assessed by (ADCS-iADL) Instrumental Score",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The Functional Activities Questionnaire (FAQ) is an instrument consisting of 10 items and assesses instrumental, social and cognitive functioning. The score range is from 0 to 30 with higher scores representing higher impairment. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 on Function as Assessed by the Functional Activities Questionnaire (FAQ) Total Score",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The ADCS-ADL (Alzheimer's Disease Cooperative Study-Activities of Daily Living) is the scale most widely used to assess functional outcomes in participants with AD. The ADCS-ADL covers both basic ADL (e.g., eating and toileting) and more complex 'instrumental' ADL or iADL (e.g., using the telephone, managing finances and preparing a meal). The ADCS-ADL consists of 23 questions with a score range of 0 to 78 where a higher score represents better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 77 on a Measure of Dependence Level Assessed From the ADCS-ADL Score",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The NPI-Q evaluates 12 neuropsychiatric disturbances common in dementia: delusions, hallucinations, agitation, dysphoria, anxiety, apathy, irritability, euphoria, disinhibition, aberrant motor behavior, night-time behavioral disturbances and appetite/eating abnormalities. The severity of each neuropsychiatric symptom is rated on a 3-point scale (mild, moderate and marked). The total severity score range is from 0 to 36 with higher scores representing higher severity. Difference in mean change from Baseline to Week 53 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures adjusting for disease severity, APOEe4 status, geographic region and the use/non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Change From Baseline to Week 53 on Behavior in Neuropsychiatric Inventory Questionnaire (NPI-Q) Total Score",
+     "timeFrame": "Baseline, Week 53"
+    },
+    {
+     "description": "The QoL-AD (Quality of Life - Alzheimer's Disease) scale assesses QoL in participants who have dementia. The QoL-AD consists of 13 items covering aspects of participants' relationships with friends and family, physical condition, mood, concerns about finances and overall assessment of QoL. Items are rated on 4-point Likert-type scales ranging from 1 \\[poor\\] to 4 \\[excellent\\]. The score range is from 13 to 52, with higher scores indicating a better QoL. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Quality of Life-Alzheimer's Disease (QoL-AD) Scale Score",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The ZCI-AD is a modified version of the Zarit Burden Interview, which was originally designed to reflect the stresses experienced by caregivers of people with dementia. This modified version includes slight modifications in item and title wording (e.g., removal of \"your relative\" to refer directly to the patient, removal of \"burden\" from title) and the use of 11-point numerical rating scales. The ZCI-AD scale consists of a total of 30 items. Total scores will be calculated with a total score range from 0 to 300 (higher scores indicate a higher burden on the caregiver). The difference in mean change from Baseline to Week 53 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Zarit Caregiver Interview for Alzheimer's Disease (ZCI-AD) Scale Score",
+     "timeFrame": "Baseline, Week 53"
+    },
+    {
+     "description": "The EQ-5D is a standardized measure of health status designed to provide a simple generic measure of health for clinical and economic appraisal. It is broadly applicable across a wide range of health conditions and treatment. The EQ-5D assesses five domains to provide a health state index. These are anxiety/depression, pain/discomfort, usual activities, mobility, and self-care. The scores on the EQ-5D ranges from 0 (worst imaginable health state) to 100 (best imaginable health state). The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "European Quality of Life-5 Dimensions (EQ-5D) Questionnaire Domain Scores for Participants",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "The EQ-5D is a standardized measure of health status designed to provide a simple generic measure of health for clinical and economic appraisal. It is broadly applicable across a wide range of health conditions and treatment. The EQ-5D assesses five domains to provide a health state index. These are anxiety/depression, pain/discomfort, usual activities, mobility, and self-care. The scores on the EQ-5D ranges from 0 (worst imaginable health state) to 100 (best imaginable health state). The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "European Quality of Life-5 Dimensions (EQ-5D) Questionnaire Domain Scores for Caregivers",
+     "timeFrame": "Baseline, Week 77"
+    },
+    {
+     "description": "An Adverse Event is any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An adverse event can therefore be any unfavorable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. Preexisting conditions which worsen during a study are also considered as adverse events.",
+     "measure": "Percentage of Participants With Adverse Event (AEs) and Serious Adverse Event (SAEs)",
+     "timeFrame": "Baseline up until 16 weeks after the last dose of study drug (up to 117 weeks)."
+    },
+    {
+     "description": "Participants were considered positive or negative for ADA based on their baseline and post-baseline sample results. The number and percentage of participants with confirmed positive ADA levels were determined for Crenezumab and Placebo groups. The prevalence of ADA at baseline was calculated as the proportion of participants with confirmed positive ADA levels at baseline relative to the total number of participants with a sample available at baseline. The incidence of treatment-emergent ADAs was determined as the proportion of participants with confirmed post-baseline positive ADAs relative to the total number of participants that had at least one post-baseline sample available for ADA analysis.",
+     "measure": "Percentage of Participants With Anti-Crenezumab Antibodies",
+     "timeFrame": "Baseline up to Week 105"
+    },
+    {
+     "description": "Serum concentration data for Crenezumab will be tabulated and summarized. Descriptive summary statistics will include the arithmetic mean and SD. Since a sparse PK sampling design is being used, population (non-linear mixed-effects) modeling will be used to analyze the dose concentration-time data of crenezumab. Information from other clinical studies may be incorporated to establish the PK model. Please note that Post-dose samples were not collected at Weeks 5, 13, 37, 53 and 77.",
+     "measure": "Serum Concentration of Crenezumab",
+     "timeFrame": "Pre-infusion (0 hour), 60-90 minutes post-infusion on Day 1 Week 1 and on Week 25; Weeks 13 (Pre-dose), 37 (Pre-dose), 53 (Pre-dose) and 77 (Pre-dose) (infusion length = as per the Pharmacy Manual)"
+    },
+    {
+     "description": "Plasma Abeta 40 concentrations will be measured over time and descriptive summary statistics will include the arithmetic mean and SD. Please note that Pre-dose samples were only collected at Weeks 1 and 53.",
+     "measure": "Plasma Amyloid Beta (Abeta) 40 Concentrations",
+     "timeFrame": "Week 1 Day 1; Weeks 53"
+    },
+    {
+     "description": "Plasma Abeta 42 concentrations will be measured over time and descriptive summary statistics will include the arithmetic mean and SD. Please note that Pre-dose samples were only collected at Weeks 1 and 53.",
+     "measure": "Plasma Amyloid Beta (Abeta) 42 Concentrations",
+     "timeFrame": "Week 1 Day 1; Weeks 53"
+    },
+    {
+     "description": "Percentage Change in Whole Brain Volume will be measured over time and descriptive summary statistics will include the arithmetic mean, median, range, SD, and coefficient of variation, as appropriate. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Percentage Change From Baseline to Week 105 in Whole Brain Volume as Determined by Magnetic Resonance Imaging (MRI)",
+     "timeFrame": "Baseline, Week 105"
+    },
+    {
+     "description": "Percentage Change in Ventricle Volume will be measured over time and descriptive summary statistics will include the arithmetic mean, median, range, SD, and coefficient of variation, as appropriate. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Percentage Change From Baseline to Week 105 in Ventricle Volume as Determined by Magnetic Resonance Imaging (MRI)",
+     "timeFrame": "Baseline, Week 105"
+    },
+    {
+     "description": "Percentage Change in Hippocampal Volume will be measured over time and descriptive summary statistics will include the arithmetic mean, median, range, SD, and coefficient of variation, as appropriate. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "measure": "Percentage Change From Baseline to Week 105 in Hippocampal Volume as Determined by Magnetic Resonance Imaging (MRI)",
+     "timeFrame": "Baseline, Week 105"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true,
+   "oversightHasDmc": true
+  },
+  "referencesModule": {
+   "references": [
+    {
+     "citation": "Hibar DP, Bauer A, Rabe C, Borlinghaus N, Jethwa A, Kollmorgen G, Di Domenico A, Zetterberg H, Blennow K, Masters CL, Sperling RA, Bittner T. Elecsys pTau217 plasma immunoassay detection of amyloid pathology in clinical cohorts. Alzheimers Dement. 2026 Jan;22(1):e71009. doi: 10.1002/alz.71009.",
+     "pmid": "41537338",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Chandler JM, Lansdall CJ, Ye W, McDougall F, Belger M, Toth B, Mi X, Sink KM, Atkins AS. The Alzheimer's Disease Cooperative Study - Activities of Daily Living dependence score: revision and validation of an algorithm evaluating patient dependence across the spectrum of AD severity. J Prev Alzheimers Dis. 2025 Sep;12(8):100261. doi: 10.1016/j.tjpad.2025.100261. Epub 2025 Jul 1.",
+     "pmid": "40603145",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Teng E, Manser PT, Shah M, Pickthorn K, Hu N, Djakovic S, Swendsen H, Blendstrup M, Faccin G, Ostrowitzki S, Sink KM. The Use of Episodic Memory Tests for Screening in Clinical Trials for Early Alzheimer's Disease: A Comparison of the Free and Cued Selective Reminding Test (FCSRT) and the Repeatable Battery for the Assessment of Neuropsychological Status (RBANS). J Prev Alzheimers Dis. 2023;10(1):41-49. doi: 10.14283/jpad.2022.101.",
+     "pmid": "36641609",
+     "type": "DERIVED"
+    },
+    {
+     "citation": "Ostrowitzki S, Bittner T, Sink KM, Mackey H, Rabe C, Honig LS, Cassetta E, Woodward M, Boada M, van Dyck CH, Grimmer T, Selkoe DJ, Schneider A, Blondeau K, Hu N, Quartino A, Clayton D, Dolton M, Dang Y, Ostaszewski B, Sanabria-Bohorquez SM, Rabbia M, Toth B, Eichenlaub U, Smith J, Honigberg LA, Doody RS. Evaluating the Safety and Efficacy of Crenezumab vs Placebo in Adults With Early Alzheimer Disease: Two Phase 3 Randomized Placebo-Controlled Trials. JAMA Neurol. 2022 Nov 1;79(11):1113-1121. doi: 10.1001/jamaneurol.2022.2909.",
+     "pmid": "36121669",
+     "type": "DERIVED"
+    }
+   ]
+  },
+  "sponsorCollaboratorsModule": {
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Hoffmann-La Roche"
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2019-06-11",
+    "type": "ACTUAL"
+   },
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "lastUpdatePostDateStruct": {
+    "date": "2020-07-16",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2020-07-01",
+   "overallStatus": "TERMINATED",
+   "primaryCompletionDateStruct": {
+    "date": "2019-06-11",
+    "type": "ACTUAL"
+   },
+   "resultsFirstPostDateStruct": {
+    "date": "2020-07-16",
+    "type": "ACTUAL"
+   },
+   "resultsFirstSubmitDate": "2020-05-26",
+   "resultsFirstSubmitQcDate": "2020-07-01",
+   "startDateStruct": {
+    "date": "2017-03-29",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2020-06",
+   "studyFirstPostDateStruct": {
+    "date": "2017-04-14",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2017-03-28",
+   "studyFirstSubmitQcDate": "2017-04-10",
+   "whyStopped": "This study was discontinued due to an interim analysis in the BN29552 study, which indicated that Crenezumab was unlikely to meet its primary endpoint."
+  }
+ },
+ "resultsSection": {
+  "adverseEventsModule": {
+   "eventGroups": [
+    {
+     "deathsNumAffected": 6,
+     "deathsNumAtRisk": 398,
+     "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+     "id": "EG000",
+     "otherNumAffected": 77,
+     "otherNumAtRisk": 398,
+     "seriousNumAffected": 42,
+     "seriousNumAtRisk": 398,
+     "title": "Placebo"
+    },
+    {
+     "deathsNumAffected": 0,
+     "deathsNumAtRisk": 404,
+     "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+     "id": "EG001",
+     "otherNumAffected": 85,
+     "otherNumAtRisk": 404,
+     "seriousNumAffected": 33,
+     "seriousNumAtRisk": 404,
+     "title": "Crenezumab"
+    }
+   ],
+   "frequencyThreshold": "5",
+   "otherEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 25,
+       "numAtRisk": 398,
+       "numEvents": 32
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 24,
+       "numAtRisk": 404,
+       "numEvents": 28
+      }
+     ],
+     "term": "NASOPHARYNGITIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 20,
+       "numAtRisk": 398,
+       "numEvents": 34
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 19,
+       "numAtRisk": 404,
+       "numEvents": 26
+      }
+     ],
+     "term": "FALL"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 22,
+       "numAtRisk": 398,
+       "numEvents": 28
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 25,
+       "numAtRisk": 404,
+       "numEvents": 30
+      }
+     ],
+     "term": "HEADACHE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 15,
+       "numAtRisk": 398,
+       "numEvents": 18
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 27,
+       "numAtRisk": 404,
+       "numEvents": 29
+      }
+     ],
+     "term": "HYPERTENSION"
+    }
+   ],
+   "seriousEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Blood and lymphatic system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 2,
+       "numAtRisk": 404,
+       "numEvents": 2
+      }
+     ],
+     "term": "ANAEMIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 398,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "ATRIAL FIBRILLATION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CORONARY ARTERY DISEASE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "PALPITATIONS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "TACHYCARDIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "TRIFASCICULAR BLOCK"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Ear and labyrinth disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "TINNITUS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Ear and labyrinth disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 398,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "VERTIGO"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "COLITIS ISCHAEMIC"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CONSTIPATION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "GASTROINTESTINAL HAEMORRHAGE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "UPPER GASTROINTESTINAL HAEMORRHAGE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "ASTHENIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "CHEST DISCOMFORT"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "CHEST PAIN"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "NON-CARDIAC CHEST PAIN"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "PYREXIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 398,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "SUDDEN DEATH"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "BACTERAEMIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "BRONCHITIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CELLULITIS STAPHYLOCOCCAL"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CLOSTRIDIUM DIFFICILE INFECTION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "ENDOCARDITIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "ENTEROBACTER PNEUMONIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 398,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "GASTROENTERITIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "LIVER ABSCESS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "NEUROSYPHILIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "PHARYNGITIS STREPTOCOCCAL"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 398,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "PNEUMONIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "PNEUMONIA INFLUENZAL"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "STAPHYLOCOCCAL BACTERAEMIA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "URINARY TRACT INFECTION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "ANKLE FRACTURE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CLAVICLE FRACTURE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CRANIOCEREBRAL INJURY"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 6,
+       "numAtRisk": 398,
+       "numEvents": 6
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 2,
+       "numAtRisk": 404,
+       "numEvents": 2
+      }
+     ],
+     "term": "FALL"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 3,
+       "numAtRisk": 398,
+       "numEvents": 3
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "HIP FRACTURE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "HUMERUS FRACTURE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "LOWER LIMB FRACTURE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "MENISCUS INJURY"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "PUBIS FRACTURE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "RIB FRACTURE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 3,
+       "numAtRisk": 404,
+       "numEvents": 3
+      }
+     ],
+     "term": "SUBDURAL HAEMATOMA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Investigations",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "ARTHROSCOPY"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Metabolism and nutrition disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "DEHYDRATION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "ARTHRITIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "INTERVERTEBRAL DISC PROTRUSION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "MUSCULOSKELETAL PAIN"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "BONE GIANT CELL TUMOUR MALIGNANT"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CLEAR CELL ENDOMETRIAL CARCINOMA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "LUNG ADENOCARCINOMA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "LUNG NEOPLASM MALIGNANT"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "PROSTATE CANCER"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "AMYOTROPHIC LATERAL SCLEROSIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "CEREBRAL ARTERIOSCLEROSIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "ISCHAEMIC CEREBRAL INFARCTION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "SPEECH DISORDER"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "SUBARACHNOID HAEMORRHAGE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "SUPERIOR SAGITTAL SINUS THROMBOSIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 398,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "SYNCOPE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "AGGRESSION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "DELUSION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "DEPRESSIVE SYMPTOM"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "SUICIDE THREAT"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "ASTHMA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "CHRONIC OBSTRUCTIVE PULMONARY DISEASE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "COUGH"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 398,
+       "numEvents": 3
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "DYSPNOEA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "INTERSTITIAL LUNG DISEASE"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "PULMONARY EMBOLISM"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Skin and subcutaneous tissue disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "SKIN ULCER"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Surgical and medical procedures",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "CARDIAC ABLATION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Surgical and medical procedures",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "KNEE ARTHROPLASTY"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "ARTERIOVENOUS FISTULA"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "HYPERTENSIVE CRISIS"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "HYPOTENSION"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 398,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 404,
+       "numEvents": 1
+      }
+     ],
+     "term": "PERIPHERAL VASCULAR DISORDER"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 22.0",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 398,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 404,
+       "numEvents": 0
+      }
+     ],
+     "term": "SHOCK HAEMORRHAGIC"
+    }
+   ],
+   "timeFrame": "Baseline up until 16 weeks after the last dose of study drug (up to 117 weeks)."
+  },
+  "baselineCharacteristicsModule": {
+   "denoms": [
+    {
+     "counts": [
+      {
+       "groupId": "BG000",
+       "value": "399"
+      },
+      {
+       "groupId": "BG001",
+       "value": "407"
+      },
+      {
+       "groupId": "BG002",
+       "value": "806"
+      }
+     ],
+     "units": "Participants"
+    }
+   ],
+   "groups": [
+    {
+     "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+     "id": "BG000",
+     "title": "Placebo"
+    },
+    {
+     "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+     "id": "BG001",
+     "title": "Crenezumab"
+    },
+    {
+     "description": "Total of all reporting groups",
+     "id": "BG002",
+     "title": "Total"
+    }
+   ],
+   "measures": [
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "spread": "7.9",
+           "value": "70.7"
+          },
+          {
+           "groupId": "BG001",
+           "spread": "7.5",
+           "value": "71.1"
+          },
+          {
+           "groupId": "BG002",
+           "spread": "7.7",
+           "value": "70.9"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "dispersionType": "STANDARD_DEVIATION",
+     "paramType": "MEAN",
+     "title": "Age, Continuous",
+     "unitOfMeasure": "Years"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "225"
+          },
+          {
+           "groupId": "BG001",
+           "value": "231"
+          },
+          {
+           "groupId": "BG002",
+           "value": "456"
+          }
+         ],
+         "title": "Female"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "174"
+          },
+          {
+           "groupId": "BG001",
+           "value": "176"
+          },
+          {
+           "groupId": "BG002",
+           "value": "350"
+          }
+         ],
+         "title": "Male"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Sex: Female, Male",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "42"
+          },
+          {
+           "groupId": "BG001",
+           "value": "35"
+          },
+          {
+           "groupId": "BG002",
+           "value": "77"
+          }
+         ]
+        }
+       ],
+       "title": "Hispanic or Latino"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "334"
+          },
+          {
+           "groupId": "BG001",
+           "value": "348"
+          },
+          {
+           "groupId": "BG002",
+           "value": "682"
+          }
+         ]
+        }
+       ],
+       "title": "Not Hispanic or Latino"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "15"
+          },
+          {
+           "groupId": "BG001",
+           "value": "19"
+          },
+          {
+           "groupId": "BG002",
+           "value": "34"
+          }
+         ]
+        }
+       ],
+       "title": "Not Stated"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "8"
+          },
+          {
+           "groupId": "BG001",
+           "value": "5"
+          },
+          {
+           "groupId": "BG002",
+           "value": "13"
+          }
+         ]
+        }
+       ],
+       "title": "Unknown"
+      }
+     ],
+     "paramType": "NUMBER",
+     "title": "Race/Ethnicity, Customized",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "8"
+          },
+          {
+           "groupId": "BG001",
+           "value": "5"
+          },
+          {
+           "groupId": "BG002",
+           "value": "13"
+          }
+         ]
+        }
+       ],
+       "title": "American Indian or Alaska Native"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "45"
+          },
+          {
+           "groupId": "BG001",
+           "value": "47"
+          },
+          {
+           "groupId": "BG002",
+           "value": "92"
+          }
+         ]
+        }
+       ],
+       "title": "Asian"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "4"
+          },
+          {
+           "groupId": "BG001",
+           "value": "3"
+          },
+          {
+           "groupId": "BG002",
+           "value": "7"
+          }
+         ]
+        }
+       ],
+       "title": "Black or African American"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "4"
+          },
+          {
+           "groupId": "BG001",
+           "value": "3"
+          },
+          {
+           "groupId": "BG002",
+           "value": "7"
+          }
+         ]
+        }
+       ],
+       "title": "Multiple"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "5"
+          },
+          {
+           "groupId": "BG001",
+           "value": "7"
+          },
+          {
+           "groupId": "BG002",
+           "value": "12"
+          }
+         ]
+        }
+       ],
+       "title": "Unknown"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "333"
+          },
+          {
+           "groupId": "BG001",
+           "value": "342"
+          },
+          {
+           "groupId": "BG002",
+           "value": "675"
+          }
+         ]
+        }
+       ],
+       "title": "White"
+      }
+     ],
+     "paramType": "NUMBER",
+     "title": "Race/Ethnicity, Customized",
+     "unitOfMeasure": "Participants"
+    }
+   ]
+  },
+  "moreInfoModule": {
+   "certainAgreement": {
+    "otherDetails": "The Study being conducted under this Agreement is part of the Overall Study. Investigator is free to publish in reputable journals or to present at professional conferences the results of the Study, but only after the first publication or presentation that involves the Overall Study. The Sponsor may request that Confidential Information be deleted and/or the publication be postponed in order to protect the Sponsor's intellectual property rights.",
+    "piSponsorEmployee": false,
+    "restrictionType": "OTHER",
+    "restrictiveAgreement": true
+   },
+   "limitationsAndCaveats": {
+    "description": "This study was discontinued due to an interim analysis in the BN29552 study, which indicated that Crenezumab was unlikely to meet its primary endpoint. No participants reached Week 105 for primary and secondary efficacy endpoints."
+   },
+   "pointOfContact": {
+    "email": "genentech@druginfo.com",
+    "organization": "Hoffmann-La Roche",
+    "phone": "800 821-8590",
+    "title": "Medical Communications"
+   }
+  },
+  "outcomeMeasuresModule": {
+   "outcomeMeasures": [
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.00",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "2.60",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.633",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "1.30"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.434",
+           "value": "3.19"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.471",
+           "value": "1.89"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The CDR-SB rates impairment in 6 categories (memory, orientation, judgement and problem solving, community affairs, home and hobbies and personal care) on a 5-point scale in which no impairment = 0, questionable impairment = 0.5 and mild, moderate and severe impairment = 1, 2 and 3 respectively. The score range is from 0 to 18 with a high score indicating a high disease severity. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline for this primary endpoint. Data after 29 January 2019 are censored for the primary and secondary efficacy analyses to avoid potential biases due to investigators, participants, raters, etc. being potentially influenced by early closure of the study due to lack of efficacy.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 in Clinical Dementia Rating-Sum of Boxes (CDR-SB) Scale Score",
+     "type": "PRIMARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-2.40",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "5.89",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "2.028",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "1.74"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "1.382",
+           "value": "8.90"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "1.526",
+           "value": "7.16"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The ADAS-Cog-13 assesses multiple cognitive domains including memory, comprehension, praxis, orientation, and spontaneous speech. Most of these are assessed by tests although some are rated by the clinician on a 5-point scale. The ADAS-Cog-13 is the ADAS-Cog-11 with 2 further items: delayed word recall and total digit cancellation. The score range for ADAS-Cog-13 is from 0 to 85 with high scores representing severe dysfunction. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 in Alzheimer's Disease Assessment Scale-Cognition 13 (ADAS-Cog-13) Subscale Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-4.03",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "4.68",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "2.124",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "0.33"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "1.452",
+           "value": "7.16"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "1.592",
+           "value": "6.84"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The ADAS-Cog-11 assesses multiple cognitive domains including memory, comprehension, praxis, orientation, and spontaneous speech. Most of these are assessed by tests although some are rated by the clinician on a 5-point scale. The score range for ADAS-Cog-11 is from 0 to 70 with high scores representing severe dysfunction. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 in Alzheimer's Disease Assessment Scale-Cognition 11 (ADAS-Cog-11) Subscale Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-0.20",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.39",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.141",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "0.09"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.096",
+           "value": "0.39"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.102",
+           "value": "0.29"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The CDR-GS represents a semi-structured interview which rates impairment in 6 categories (memory, orientation, judgement and problem solving, community affairs, home and hobbies, and personal care) on a 5-point scale in which CDR 0 = no dementia and CDR 0.5, 1, 2 or 3 = questionable, mild, moderate or severe dementia respectively. The range in scores for the CDR-GS is from 0 to 3 and a high score on the CDR-GS would indicate a high disease severity. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 on Severity of Dementia, Assessed Using the CDR-Global Score (CDR-GS)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-2.42",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.60",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.985",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-0.41"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.672",
+           "value": "-3.63"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.740",
+           "value": "-3.21"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The MMSE is a set of standardized questions used to evaluate possible cognitive impairment and help stage the severity level of this impairment. The questions target 6 areas: orientation, registration, attention, short-term recall, language and constructional praxis/visuospatial abilities. The scores on the MMSE range from 0 to 30, with higher scores indicating better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 on Severity of Dementia, Assessed Using the Mini Mental State Evaluation (MMSE)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-8.74",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "3.70",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "3.052",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-2.52"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "2.064",
+           "value": "-8.83"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "2.278",
+           "value": "-6.31"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The ADCS-ADL (Alzheimer's Disease Cooperative Study-Activities of Daily Living) is the scale most widely used to assess functional outcomes in participants with AD. The ADCS-ADL covers both basic ADL (e.g., eating and toileting) and more complex 'instrumental' ADL or iADL (e.g., using the telephone, managing finances and preparing a meal). The ADCS-ADL consists of 23 questions with a score range of 0 to 78 where a higher score represents better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 on Function as Assessed by (ADCS-ADL) Total Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-6.29",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "3.92",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "2.501",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-1.19"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "1.692",
+           "value": "-6.69"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "1.872",
+           "value": "-5.51"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The ADCS-iADL (Alzheimer's Disease Cooperative Study-Instrumental Activities of Daily Living) measures activities such as using the telephone, managing finances and preparing a meal. The ADCS-iADL consists of 16 questions with a score range of 0 to 56 where a higher score represents better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 on Function as Assessed by (ADCS-iADL) Instrumental Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-2.25",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "3.51",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.420",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "0.63"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.991",
+           "value": "5.00"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "1.059",
+           "value": "4.37"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The Functional Activities Questionnaire (FAQ) is an instrument consisting of 10 items and assesses instrumental, social and cognitive functioning. The score range is from 0 to 30 with higher scores representing higher impairment. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 on Function as Assessed by the Functional Activities Questionnaire (FAQ) Total Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "0"
+        },
+        {
+         "groupId": "OG001",
+         "value": "0"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The ADCS-ADL (Alzheimer's Disease Cooperative Study-Activities of Daily Living) is the scale most widely used to assess functional outcomes in participants with AD. The ADCS-ADL covers both basic ADL (e.g., eating and toileting) and more complex 'instrumental' ADL or iADL (e.g., using the telephone, managing finances and preparing a meal). The ADCS-ADL consists of 23 questions with a score range of 0 to 78 where a higher score represents better function. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "populationDescription": "Please note that for this Outcome Measure, no participants were evaluated at all as the derivation of this endpoint was not pre-specified before the Sponsor terminated the study and therefore it was not reported.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Change From Baseline to Week 77 on a Measure of Dependence Level Assessed From the ADCS-ADL Score",
+     "type": "SECONDARY"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-1.75",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.23",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.502",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-0.76"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.852",
+           "value": "-0.00"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.886",
+           "value": "0.76"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "102"
+        },
+        {
+         "groupId": "OG001",
+         "value": "110"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The NPI-Q evaluates 12 neuropsychiatric disturbances common in dementia: delusions, hallucinations, agitation, dysphoria, anxiety, apathy, irritability, euphoria, disinhibition, aberrant motor behavior, night-time behavioral disturbances and appetite/eating abnormalities. The severity of each neuropsychiatric symptom is rated on a 3-point scale (mild, moderate and marked). The total severity score range is from 0 to 36 with higher scores representing higher severity. Difference in mean change from Baseline to Week 53 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures adjusting for disease severity, APOEe4 status, geographic region and the use/non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 53",
+     "title": "Change From Baseline to Week 53 on Behavior in Neuropsychiatric Inventory Questionnaire (NPI-Q) Total Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-3.30",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "2.39",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.383",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-0.46"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "1.310",
+           "value": "-1.61"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "1.432",
+           "value": "-1.16"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "11"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The QoL-AD (Quality of Life - Alzheimer's Disease) scale assesses QoL in participants who have dementia. The QoL-AD consists of 13 items covering aspects of participants' relationships with friends and family, physical condition, mood, concerns about finances and overall assessment of QoL. Items are rated on 4-point Likert-type scales ranging from 1 \\[poor\\] to 4 \\[excellent\\]. The score range is from 13 to 52, with higher scores indicating a better QoL. The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "Quality of Life-Alzheimer's Disease (QoL-AD) Scale Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-4.35",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "17.44",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "5.527",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "6.55"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "9.292",
+           "value": "9.20"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "9.643",
+           "value": "2.65"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "101"
+        },
+        {
+         "groupId": "OG001",
+         "value": "108"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The ZCI-AD is a modified version of the Zarit Burden Interview, which was originally designed to reflect the stresses experienced by caregivers of people with dementia. This modified version includes slight modifications in item and title wording (e.g., removal of \"your relative\" to refer directly to the patient, removal of \"burden\" from title) and the use of 11-point numerical rating scales. The ZCI-AD scale consists of a total of 30 items. Total scores will be calculated with a total score range from 0 to 300 (higher scores indicate a higher burden on the caregiver). The difference in mean change from Baseline to Week 53 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 53",
+     "title": "Zarit Caregiver Interview for Alzheimer's Disease (ZCI-AD) Scale Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-12.31",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "11.71",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "5.831",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-0.30"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "3.961",
+           "value": "-3.69"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "4.392",
+           "value": "-3.39"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The EQ-5D is a standardized measure of health status designed to provide a simple generic measure of health for clinical and economic appraisal. It is broadly applicable across a wide range of health conditions and treatment. The EQ-5D assesses five domains to provide a health state index. These are anxiety/depression, pain/discomfort, usual activities, mobility, and self-care. The scores on the EQ-5D ranges from 0 (worst imaginable health state) to 100 (best imaginable health state). The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "European Quality of Life-5 Dimensions (EQ-5D) Questionnaire Domain Scores for Participants",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-11.50",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "4.73",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "3.940",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-3.38"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "2.724",
+           "value": "-4.07"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "3.031",
+           "value": "-0.68"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "15"
+        },
+        {
+         "groupId": "OG001",
+         "value": "12"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The EQ-5D is a standardized measure of health status designed to provide a simple generic measure of health for clinical and economic appraisal. It is broadly applicable across a wide range of health conditions and treatment. The EQ-5D assesses five domains to provide a health state index. These are anxiety/depression, pain/discomfort, usual activities, mobility, and self-care. The scores on the EQ-5D ranges from 0 (worst imaginable health state) to 100 (best imaginable health state). The difference in mean change from Baseline to Week 77 between Crenezumab and Placebo treated participants was estimated. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 77",
+     "title": "European Quality of Life-5 Dimensions (EQ-5D) Questionnaire Domain Scores for Caregivers",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a Scale"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "73.1"
+          },
+          {
+           "groupId": "OG001",
+           "value": "73.5"
+          }
+         ]
+        }
+       ],
+       "title": "AEs"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "10.6"
+          },
+          {
+           "groupId": "OG001",
+           "value": "8.2"
+          }
+         ]
+        }
+       ],
+       "title": "SAEs"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "398"
+        },
+        {
+         "groupId": "OG001",
+         "value": "404"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "An Adverse Event is any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An adverse event can therefore be any unfavorable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. Preexisting conditions which worsen during a study are also considered as adverse events.",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "NUMBER",
+     "populationDescription": "The Safety analysis population included all randomized participants who received at least 1 dose of study drug with participants grouped according to actual treatment received. If a participant received at least 2 vials of crenezumab, then they were placed in the crenezumab arm.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline up until 16 weeks after the last dose of study drug (up to 117 weeks).",
+     "title": "Percentage of Participants With Adverse Event (AEs) and Serious Adverse Event (SAEs)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage"
+    },
+    {
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "0"
+        },
+        {
+         "groupId": "OG001",
+         "value": "0"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Participants were considered positive or negative for ADA based on their baseline and post-baseline sample results. The number and percentage of participants with confirmed positive ADA levels were determined for Crenezumab and Placebo groups. The prevalence of ADA at baseline was calculated as the proportion of participants with confirmed positive ADA levels at baseline relative to the total number of participants with a sample available at baseline. The incidence of treatment-emergent ADAs was determined as the proportion of participants with confirmed post-baseline positive ADAs relative to the total number of participants that had at least one post-baseline sample available for ADA analysis.",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "populationDescription": "Please note that for this Outcome Measure, no Participants were evaluated at all as the existing immunogenicity data from an identical study (Study BN29552) showed a low potential of Crenezumab to induce Anti-Drug Antibodies (ADAs).",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline up to Week 105",
+     "title": "Percentage of Participants With Anti-Crenezumab Antibodies",
+     "type": "SECONDARY"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "comment": "No Drug was administered at this point so no concentrations detected.",
+           "groupId": "OG000",
+           "spread": "NA",
+           "value": "NA"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "138"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 1 Day 1 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "437",
+           "value": "1260"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "110"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 1 Day 1 Postdose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "128",
+           "value": "246"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "138"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 5 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "162",
+           "value": "360"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "128"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 13 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "196",
+           "value": "401"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "125"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 25 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "443",
+           "value": "1650"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "106"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 25 Postdose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "351",
+           "value": "456"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "97"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 37 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "130",
+           "value": "401"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "32"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 53 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "94.2",
+           "value": "357"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "3"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 77 Predose"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "138"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Serum concentration data for Crenezumab will be tabulated and summarized. Descriptive summary statistics will include the arithmetic mean and SD. Since a sparse PK sampling design is being used, population (non-linear mixed-effects) modeling will be used to analyze the dose concentration-time data of crenezumab. Information from other clinical studies may be incorporated to establish the PK model. Please note that Post-dose samples were not collected at Weeks 5, 13, 37, 53 and 77.",
+     "dispersionType": "Standard Deviation",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "MEAN",
+     "populationDescription": "The PK Analysis population was defined as all participants who have received at least one dose of crenezumab and with at least one evaluable post-dose PK sample. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Pre-infusion (0 hour), 60-90 minutes post-infusion on Day 1 Week 1 and on Week 25; Weeks 13 (Pre-dose), 37 (Pre-dose), 53 (Pre-dose) and 77 (Pre-dose) (infusion length = as per the Pharmacy Manual)",
+     "title": "Serum Concentration of Crenezumab",
+     "type": "SECONDARY",
+     "unitOfMeasure": "ug/mL"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.0687",
+           "value": "0.415"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "36"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 1 Day 1 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "6.91",
+           "value": "46.6"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "13"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 53 Predose"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "36"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Plasma Abeta 40 concentrations will be measured over time and descriptive summary statistics will include the arithmetic mean and SD. Please note that Pre-dose samples were only collected at Weeks 1 and 53.",
+     "dispersionType": "Standard Deviation",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "MEAN",
+     "populationDescription": "The PD Analysis population was defined as all participants who have received at least one dose of crenezumab and with at least one evaluable post-dose PK sample. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Week 1 Day 1; Weeks 53",
+     "title": "Plasma Amyloid Beta (Abeta) 40 Concentrations",
+     "type": "SECONDARY",
+     "unitOfMeasure": "ng/mL"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.00463",
+           "value": "0.0331"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "36"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 1 Day 1 Predose"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.473",
+           "value": "2.94"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "13"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Week 53 Predose"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "36"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Plasma Abeta 42 concentrations will be measured over time and descriptive summary statistics will include the arithmetic mean and SD. Please note that Pre-dose samples were only collected at Weeks 1 and 53.",
+     "dispersionType": "Standard Deviation",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "MEAN",
+     "populationDescription": "The PD Analysis population was defined as all participants who have received at least one dose of crenezumab and with at least one evaluable post-dose PK sample. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Week 1 Day 1; Weeks 53",
+     "title": "Plasma Amyloid Beta (Abeta) 42 Concentrations",
+     "type": "SECONDARY",
+     "unitOfMeasure": "ng/mL"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-2.01",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.89",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.622",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-0.56"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.444",
+           "value": "-2.71"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.345",
+           "value": "-2.15"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "4"
+        },
+        {
+         "groupId": "OG001",
+         "value": "4"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Percentage Change in Whole Brain Volume will be measured over time and descriptive summary statistics will include the arithmetic mean, median, range, SD, and coefficient of variation, as appropriate. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 105",
+     "title": "Percentage Change From Baseline to Week 105 in Whole Brain Volume as Determined by Magnetic Resonance Imaging (MRI)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-1.70",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "4.90",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.668",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "1.60"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "1.343",
+           "value": "18.78"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "1.145",
+           "value": "17.18"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "4"
+        },
+        {
+         "groupId": "OG001",
+         "value": "4"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Percentage Change in Ventricle Volume will be measured over time and descriptive summary statistics will include the arithmetic mean, median, range, SD, and coefficient of variation, as appropriate. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 105",
+     "title": "Percentage Change From Baseline to Week 105 in Ventricle Volume as Determined by Magnetic Resonance Imaging (MRI)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-1.13",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.41",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.373",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "paramType": "Least Squares Mean Difference",
+       "paramValue": "-0.36"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.338",
+           "value": "-6.34"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.290",
+           "value": "-5.98"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "2"
+        },
+        {
+         "groupId": "OG001",
+         "value": "2"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Percentage Change in Hippocampal Volume will be measured over time and descriptive summary statistics will include the arithmetic mean, median, range, SD, and coefficient of variation, as appropriate. Mixed model repeated measures (MMRMs) adjusting for disease severity, APOEe4 status, geographic region, and the use or non-use of anti-dementia medications at baseline were used to estimate the mean change from baseline.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG000",
+       "title": "Placebo"
+      },
+      {
+       "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+       "id": "OG001",
+       "title": "Crenezumab"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "The Modified Intent-To-Treat population (Placebo (n = 398); Cren (n = 404)) was defined as all randomized participants who received at least 1 dose of study drug, with participants grouped according to the treatment assigned at randomization. Data presented below is only for participants that were included in the actual analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline, Week 105",
+     "title": "Percentage Change From Baseline to Week 105 in Hippocampal Volume as Determined by Magnetic Resonance Imaging (MRI)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage"
+    }
+   ]
+  },
+  "participantFlowModule": {
+   "groups": [
+    {
+     "description": "Participants received intravenous (IV) infusion of Placebo every 4 weeks (Q4W) for 100 weeks.",
+     "id": "FG000",
+     "title": "Placebo"
+    },
+    {
+     "description": "Participants received intravenous (IV) infusion of Crenezumab every 4 weeks (Q4W) for 100 weeks.",
+     "id": "FG001",
+     "title": "Crenezumab"
+    }
+   ],
+   "periods": [
+    {
+     "dropWithdraws": [
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "9"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "6"
+        }
+       ],
+       "type": "Adverse Event"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "4"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Death"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "1"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "2"
+        }
+       ],
+       "type": "Multiple Reasons"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "2"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "2"
+        }
+       ],
+       "type": "Physician Decision"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "355"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "374"
+        }
+       ],
+       "type": "Study Terminated By Sponsor"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        }
+       ],
+       "type": "Symptomatic Deterioration"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "28"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "22"
+        }
+       ],
+       "type": "Withdrawal by Subject"
+      }
+     ],
+     "milestones": [
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "399"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "407"
+        }
+       ],
+       "type": "STARTED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "COMPLETED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "399"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "407"
+        }
+       ],
+       "type": "NOT COMPLETED"
+      }
+     ],
+     "title": "Overall Study"
+    }
+   ],
+   "preAssignmentDetails": "A total of 806 participants were enrolled at 209 centers. 4 participants did not receive any study treatment meaning that the modified intent-to-treat and safety populations consisted of 802 participants.",
+   "recruitmentDetails": "The study was conducted at 209 centers in 27 countries."
+  }
+ }
+}

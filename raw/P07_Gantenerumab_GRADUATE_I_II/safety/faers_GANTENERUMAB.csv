@@ -1,0 +1,11 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+GANTENERUMAB,patient.drug.medicinalproduct,3,AMYLOID RELATED IMAGING ABNORMALITY-MICROHAEMORRHAGES AND HAEMOSIDERIN DEPOSITS,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,AMYLOID RELATED IMAGING ABNORMALITY-OEDEMA/EFFUSION,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,ANXIETY,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,CEREBRAL MICROHAEMORRHAGE,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,COGNITIVE DISORDER,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,CONFUSIONAL STATE,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,DISORIENTATION,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,DRUG INEFFECTIVE,2
+GANTENERUMAB,patient.drug.medicinalproduct,3,FALL,1
+GANTENERUMAB,patient.drug.medicinalproduct,3,FEMUR FRACTURE,1

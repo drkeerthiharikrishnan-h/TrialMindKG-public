@@ -1,0 +1,33 @@
+id: T-007
+title: Pruning deliverables and the headline threshold
+owner: science
+classification: science
+status: open
+closes:
+- spotcheck_precision
+- threshold_choice
+- calibration_report
+objective: prune_compare -> prune_kg (v1.1) -> verdict file -> prune_calibration -> make_spotcheck; after the owner's 200-edge
+  check, choose the headline threshold from the injected-error test + Open Targets calibration + spot-check precision, and
+  publish verdicts at three thresholds with the continuous confidence kept.
+read_first:
+- docs/NEXT_STEPS.md steps 7g, 8, 17
+- outputs/pharos/prune_calibration.md
+- outputs/pharos/prune_metrics.json
+editable_paths:
+- outputs/pharos/
+- data/curated/spotcheck.xlsx
+- docs/sessions/
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- threshold_choice.md states the rule used and why, with the three operating points (precision, recall on injected errors,
+  share pruned)
+- never chosen using the NCATS gold set, which we have not seen
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_prune.py tests/test_prune_calibration.py
+stop_rule: v1.1 is the final pruner; no v2.
+handoff: Owner does the spot check (about 3 h); then spotcheck_results.md.

@@ -1,0 +1,31 @@
+id: T-006
+title: Meta-path prediction export (the explainable predictor) for the app card
+owner: code
+classification: coding
+status: open
+closes:
+- metapath_predictions
+objective: predict.py currently trains the GNN only. Add a meta-path scorer export that writes predicted gene-disease links
+  with the supporting named paths and provenance edge ids to outputs/linkpred/predictions_metapath.tsv.gz, with the same
+  preparation flags as run.py.
+read_first:
+- pipelines/linkpred/predict.py
+- pipelines/linkpred/metapaths.py
+- tests/test_linkpred_predict.py
+editable_paths:
+- pipelines/linkpred/predict.py
+- pipelines/linkpred/metapaths.py
+- tests/test_linkpred_predict.py
+- tests/test_linkpred_metapaths.py
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py
+acceptance:
+- 'fixture test: a toy graph returns the expected path and edge ids'
+- no change to run.py or to any frozen result
+- the real-data run is a separate science step after the Nov 6 freeze
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_linkpred_predict.py tests/test_linkpred_metapaths.py
+stop_rule: Predictions are generated only after the link-prediction freeze (Nov 6 18:00).
+handoff: Commit [loop T-006]; science runs it on the winning graph.

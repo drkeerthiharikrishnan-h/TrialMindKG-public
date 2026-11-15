@@ -1,0 +1,21 @@
+{
+ "bottom_line": "",
+ "checked_by": "nvidia/nemotron-3.5-lightning-30b-a3b",
+ "created": "2026-11-13T15:52:10Z",
+ "dropped": [
+  {
+   "reason": "Sentence claims no additional targets/mechanisms, but line 1 provides a target and mechanism.",
+   "sentence": "No additional targets or mechanisms are provided."
+  }
+ ],
+ "key": "a8e9d5d12e2fd1df",
+ "lines": [
+  "[1] target name: Mitogen-activated protein kinase kinase kinase 5; mechanism: Mitogen-activated protein kinase kinase kinase 5 inhibitor. Links: SELONSERTIB interacts with Mitogen-activated protein kinase kinase kinase 5. Sources: ChEMBL (curated)."
+ ],
+ "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+ "prompt_version": "pk4-1",
+ "question": "Which targets does selonsertib bind, and by which mechanism?",
+ "raw": "Selonsertib binds Mitogen-activated protein kinase kinase kinase 5 [1]. The mechanism is Mitogen-activated protein kinase kinase kinase 5 inhibition [1]. The interaction between selonsertib and Mitogen-activated protein kinase kinase kinase 5 is curated by ChEMBL [1]. The lines do not show statistical, text-mined, or predicted evidence. No additional targets or mechanisms are provided.",
+ "sentences": 4,
+ "text": "Selonsertib binds Mitogen-activated protein kinase kinase kinase 5 [1]. The mechanism is Mitogen-activated protein kinase kinase kinase 5 inhibition [1]. The interaction between selonsertib and Mitogen-activated protein kinase kinase kinase 5 is curated by ChEMBL [1]. The lines do not show statistical, text-mined, or predicted evidence."
+}

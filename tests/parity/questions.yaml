@@ -1,0 +1,34 @@
+# The 25 pinned questions of the offline-vs-hosted parity suite (tests/parity/parity_suite.py), trial graph (outputs/kg_*.csv).
+# Each names the kg_query.py function and parameters that answer it. The answer of ANY backend must (1) use that function's
+# relationships (parity_suite.classify) and (2) return exactly its evidence edge ids (relation: equal), a non-empty subset of
+# them (subset) or a subset touching every reference row (covers), the same notes as data/curated/cypher_gold.csv.
+# Nothing here is a fact about a trial: the expected ids are computed from the graph by the function at test time.
+# Q01-Q10 are the ten gold questions of data/curated/cypher_gold.csv; Q11-Q25 are new wordings of the same functions.
+# The same 25 are what `python tests/parity/run_parity.py --warm` sends to the hosted model once, so they are afterwards
+# answered from data/snapshots_llm without the API (an answer cache for the demo; meta.cached = true).
+questions:
+  - {id: Q01, function: program_trials,     params: {pid: P19},                            relation: equal,  question: "Which trials belong to the anifrolumab TULIP-1 program?"}
+  - {id: Q02, function: trial_outcomes,     params: {nct: NCT02446912, kind: PRIMARY},     relation: equal,  question: "What was the primary outcome of TULIP-1 and its statistical analysis?"}
+  - {id: Q03, function: program_history,    params: {pid: P19},                            relation: subset, question: "What happened after the TULIP-1 failure?"}
+  - {id: Q04, function: drug_targets,       params: {drug: "CHEMBL:CHEMBL2108429"},        relation: covers, question: "Which proteins does mepolizumab target?"}
+  - {id: Q05, function: trial_drugs,        params: {nct: NCT02105961},                    relation: equal,  question: "Which drugs were given in the METREO trial and in which role?"}
+  - {id: Q06, function: trial_publications, params: {nct: NCT02525939},                    relation: equal,  question: "What publications report the dal-GenE trial?"}
+  - {id: Q07, function: trial_safety,       params: {nct: NCT02105961},                    relation: equal,  question: "What were the serious adverse events and deaths per arm in METREO?"}
+  - {id: Q08, function: shared_targets,     params: {},                                    relation: equal,  question: "Which failed programs share a drug target?"}
+  - {id: Q09, function: trial_outcomes,     params: {nct: NCT02105961, kind: PRIMARY},     relation: equal,  question: "What was the primary outcome of METREO?"}
+  - {id: Q10, function: program_trials,     params: {pid: P25},                            relation: equal,  question: "Which trials are in the dalcetrapib dal-GenE program?"}
+  - {id: Q11, function: program_trials,     params: {pid: P28},                            relation: equal,  question: "Which trials belong to the fordadistrogene movaparvovec CIFFREO program?"}
+  - {id: Q12, function: program_trials,     params: {pid: P10},                            relation: equal,  question: "Which trials belong to the semaglutide evoke program?"}
+  - {id: Q13, function: program_trials,     params: {pid: P06},                            relation: equal,  question: "Which trials belong to the tominersen GENERATION HD1 program?"}
+  - {id: Q14, function: program_trials,     params: {pid: P05},                            relation: equal,  question: "Which trials belong to the aducanumab ENGAGE program?"}
+  - {id: Q15, function: program_trials,     params: {pid: P13},                            relation: equal,  question: "Which trials belong to the tofersen VALOR program?"}
+  - {id: Q16, function: program_trials,     params: {pid: P33},                            relation: equal,  question: "Which trials belong to the pelacarsen Lp(a)HORIZON program?"}
+  - {id: Q17, function: program_trials,     params: {pid: P20},                            relation: equal,  question: "Which trials belong to the mepolizumab METREO program?"}
+  - {id: Q18, function: program_history,    params: {pid: P06},                            relation: subset, question: "What happened after the tominersen GENERATION HD1 failure?"}
+  - {id: Q19, function: trial_safety,       params: {nct: NCT01739348},                    relation: equal,  question: "What were the serious adverse events and deaths per arm in EPOCH?"}
+  - {id: Q20, function: drug_targets,       params: {drug: "CHEMBL:CHEMBL1888176"},        relation: covers, question: "What is the mechanism of trospium?"}
+  - {id: Q21, function: trial_drugs,        params: {nct: NCT02446912},                    relation: equal,  question: "Which drugs were given in the TULIP-1 trial and in which role?"}
+  - {id: Q22, function: trial_publications, params: {nct: NCT02446912},                    relation: equal,  question: "What publications report the TULIP-1 trial?"}
+  - {id: Q23, function: trial_outcomes,     params: {nct: NCT01739348, kind: PRIMARY},     relation: equal,  question: "What was the primary outcome of EPOCH?"}
+  - {id: Q24, function: trial_drugs,        params: {nct: NCT01739348},                    relation: equal,  question: "Which drugs were given in the EPOCH trial and in which role?"}
+  - {id: Q25, function: trial_safety,       params: {nct: NCT02446912},                    relation: equal,  question: "What were the serious adverse events and deaths per arm in TULIP-1?"}

@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f6f2">
+<title>TrialMindKG</title>
+<style>
+  /* Self-contained: no build step, no CDN, works offline. Visual system: an 8-point spacing grid, one accent colour
+     per role (--uc), soft elevation on cards, a type ramp (12/13/15/18/24/32), verdict words in colour. The persona
+     cards, question pills, eyebrow label and accent bars follow the owner's FACET front end, ported to plain CSS.
+     Mobile (<= 760px): bottom navigation, single-column role cards, stacked evidence rows, 44px touch targets. */
+  :root { --bg:#f7f6f2; --card:#fff; --ink:#1d2433; --muted:#5b6475; --line:#e6e3dc; --accent:#1f5fae; --uc:#1f5fae;
+          --ok:#1e7b4f; --warn:#9a6700; --bad:#b42318; --pred:#6f42c1; --r:14px;
+          --sh:0 1px 2px rgba(20,24,40,.05), 0 6px 18px rgba(20,24,40,.06); --sh2:0 10px 28px rgba(20,24,40,.12); }
+  @media (prefers-color-scheme: dark) { :root { --bg:#13161b; --card:#1b1f26; --ink:#e7e9ee; --muted:#9aa3b2; --line:#2b313b;
+          --accent:#6ea8fe; --ok:#56c48b; --warn:#e3b341; --bad:#f47067; --pred:#b197fc; --sh:0 1px 2px rgba(0,0,0,.4); --sh2:0 10px 28px rgba(0,0,0,.5); } }
+  * { box-sizing:border-box; } html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body { margin:0; font:15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--ink); padding-bottom:env(safe-area-inset-bottom); }
+  a { color:var(--accent); } .mono { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; }
+  :focus-visible { outline:2px solid var(--uc); outline-offset:2px; }
+  /* header */
+  header.top { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--card) 88%, transparent); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  header.top .in { max-width:1100px; margin:auto; padding:10px 16px; display:flex; align-items:center; gap:12px; min-height:56px; }
+  .brand { font-weight:700; font-size:18px; letter-spacing:-.01em; white-space:nowrap; } .brand small { color:var(--muted); font-weight:400; font-size:13px; margin-left:10px; }
+  .badge { margin-left:auto; display:flex; align-items:center; gap:6px; border:1.5px solid var(--uc); border-radius:999px; padding:6px 12px 6px 10px; min-height:40px;
+           background:color-mix(in srgb, var(--uc) 10%, var(--card)); font-size:13px; cursor:pointer; white-space:nowrap; position:relative; }
+  .badge b { color:var(--uc); }
+  .pop { position:absolute; right:0; top:46px; background:var(--card); border:1px solid var(--line); border-radius:12px; box-shadow:var(--sh2); padding:6px; min-width:250px; z-index:30; }
+  .pop button { display:flex; align-items:center; gap:10px; width:100%; background:transparent; color:var(--ink); border:0; border-radius:8px; padding:9px 10px; text-align:left; font-size:14px; }
+  .pop button:hover { background:color-mix(in srgb, var(--uc) 10%, var(--card)); } .pop button.on { font-weight:600; } .pop .sep { border-top:1px solid var(--line); margin:4px 0; }
+  main { max-width:1100px; margin:auto; padding:0 16px 56px; }
+  /* start here */
+  .eyebrow { font-family:ui-monospace, Menlo, monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); }
+  .hero { text-align:center; padding:56px 0 16px; background:radial-gradient(ellipse 60% 50% at 50% 0%, color-mix(in srgb, var(--uc) 12%, transparent), transparent); }
+  .hero h1 { font-size:34px; line-height:1.15; letter-spacing:-.02em; margin:12px 0 10px; }
+  .hero p { max-width:720px; margin:0 auto 8px; color:var(--muted); }
+  .personas { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin:24px 0 12px; }
+  .persona { border:1.5px solid var(--line); border-top:4px solid var(--uc); border-radius:var(--r); padding:18px 16px; background:var(--card); cursor:pointer; text-align:left;
+             transition:transform .18s ease, box-shadow .18s ease, border-color .18s; color:var(--ink); font:inherit; box-shadow:var(--sh); }
+  .persona:hover { border-color:var(--uc); transform:translateY(-3px); box-shadow:var(--sh2); }
+  .persona .em { font-size:28px; line-height:1; } .persona b { display:block; margin:10px 0 4px; color:var(--uc); font-size:16px; } .persona small { color:var(--muted); font-size:13px; line-height:1.45; display:block; }
+  /* pills, forms, buttons */
+  .search1 { max-width:640px; margin:22px auto 6px; display:flex; gap:8px; text-align:left; } .search1 input { font-size:17px; padding:14px 16px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:8px auto 0; max-width:820px; }
+  .rolehint { margin:26px 0 0; font-size:13px; color:var(--muted); }
+  .modelbadge { font-size:11.5px; border:1px solid var(--line); border-radius:999px; padding:3px 10px; color:var(--muted); white-space:nowrap; }
+  .modelbadge.off { color:var(--warn); border-color:var(--warn); background:color-mix(in srgb, var(--warn) 8%, var(--card)); }
+  .answerlabel { margin:8px 0; padding:8px 12px; border-radius:8px; font-size:13px; border:1px solid var(--line); }
+  .answerlabel.offline, .answerlabel.fallback { color:var(--warn); border-color:var(--warn); background:color-mix(in srgb, var(--warn) 8%, var(--card)); }
+  .answerlabel.cached { color:var(--muted); }
+  .backendsw { display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--muted); margin:6px 0; } .backendsw { flex-wrap:wrap; } .backendsw select { max-width:100%; min-width:0; } /* CC-43: long option labels made the phone page 550+ px wide */ .backendsw select { width:auto; min-height:32px; padding:2px 8px; }
+  .elapsed { font-size:11.5px; color:var(--muted); }
+  .pills { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 14px; }
+  .pill { border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-size:13px; background:var(--card); cursor:pointer; color:var(--ink); min-height:40px;
+          transition:all .15s; max-width:100%; text-align:left; box-shadow:var(--sh); }
+  .pill:hover { border-color:var(--uc); background:color-mix(in srgb, var(--uc) 10%, var(--card)); transform:translateX(2px); }
+  .pill .t { font-size:10.5px; color:var(--uc); text-transform:uppercase; letter-spacing:.08em; margin-right:6px; font-weight:600; }
+  .welcome { border-left:4px solid var(--uc); background:color-mix(in srgb, var(--uc) 7%, var(--card)); padding:10px 14px; border-radius:10px; margin:12px 0; font-size:14px; }
+  form { display:flex; gap:8px; margin:12px 0; flex-wrap:nowrap; align-items:stretch; }
+  form .grow { flex:1 1 auto; min-width:0; position:relative; }
+  input[type=text] { width:100%; padding:11px 14px; border:1px solid var(--line); border-radius:12px; background:var(--card); color:var(--ink); font-size:15px; min-height:44px; box-shadow:var(--sh); }
+  input[type=text]:focus { border-color:var(--uc); box-shadow:0 0 0 3px color-mix(in srgb, var(--uc) 20%, transparent); outline:none; }
+  button { padding:10px 16px; border:0; border-radius:12px; background:var(--uc); color:#fff; cursor:pointer; font-size:14px; font:inherit; min-height:44px; box-shadow:var(--sh); white-space:nowrap; }
+  button:hover { filter:brightness(1.06); } button:active { transform:translateY(1px); }
+  button.secondary { background:var(--card); color:var(--uc); border:1px solid var(--line); }
+  .persona, .pill { white-space:normal; line-height:1.4; }      /* role cards and pills are buttons that must wrap */
+  button.small { font-size:12px; padding:5px 10px; min-height:32px; box-shadow:none; }
+  /* navigation */
+  .tabs { display:flex; gap:6px; margin:16px 0 8px; flex-wrap:wrap; }
+  .tabs button { background:var(--card); color:var(--ink); border:1px solid var(--line); box-shadow:none; } .tabs button.active { background:var(--uc); color:#fff; border-color:var(--uc); }
+  nav.bottom { display:none; }
+  /* cards and content */
+  .banner { font-size:13px; color:var(--muted); margin:8px 0 14px; }
+  section.card { background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; margin:14px 0; box-shadow:var(--sh); }
+  section.card.accent { border-top:3px solid var(--uc); }
+  section h2 { font-size:20px; margin:0 0 10px; letter-spacing:-.01em; line-height:1.25; } section h3 { font-size:15px; margin:18px 0 6px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .dot { width:10px; height:10px; border-radius:50%; display:inline-block; flex:none; }
+  .band { display:grid; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr)); gap:8px; margin:12px 0 6px; }
+  .tile { border:1px solid var(--line); border-radius:12px; padding:10px 12px; background:var(--bg); }
+  .tile b { display:block; font-size:24px; line-height:1.1; letter-spacing:-.02em; } .tile span { font-size:12px; color:var(--muted); }
+  .jump { display:flex; gap:6px; flex-wrap:wrap; margin:8px 0 2px; } .jump a { font-size:12px; border:1px solid var(--line); border-radius:999px; padding:4px 10px; text-decoration:none; color:var(--muted); background:var(--bg); }
+  .jump a:hover { color:var(--uc); border-color:var(--uc); } [id^="sec-"] { scroll-margin-top:72px; }
+  .word { display:inline-block; font-size:11px; padding:1px 8px; border-radius:10px; border:1px solid; font-weight:600; white-space:nowrap; line-height:1.6; }
+  .w-kept { color:var(--ok); border-color:var(--ok); background:color-mix(in srgb, var(--ok) 8%, transparent); } .w-pruned { color:var(--bad); border-color:var(--bad); background:color-mix(in srgb, var(--bad) 8%, transparent); }
+  .w-predicted { color:var(--pred); border-color:var(--pred); border-style:dashed; } .w-unscored { color:var(--muted); border-color:var(--line); font-weight:400; }
+  .idtag { font-family:ui-monospace, Menlo, monospace; font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:6px; padding:0 5px; margin-left:4px; }
+  body.ids-never .idtag { display:none; } body.ids-hover .idtag { display:none; } body.ids-hover tr:hover .idtag, body.ids-hover h2:hover .idtag, body.ids-hover .evcard .idtag { display:inline; }
+  body.ids-never .tech, body.w-plain .tech { display:none; }
+  .claim { border-top:1px solid var(--line); padding:12px 0; cursor:pointer; } .claim:first-of-type { border-top:0; } .claim.sel { background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  .tags { margin-top:6px; } .tag { display:inline-block; font-size:11px; padding:1px 8px; border-radius:10px; border:1px solid var(--line); color:var(--muted); margin:2px 4px 2px 0; }
+  .tag.prespecified,.tag.prospectively_confirmed,.tag.s_supported { color:var(--ok); border-color:var(--ok); }
+  .tag.post_hoc,.tag.hypothesis_generating,.tag.s_hypothesis_generating { color:var(--warn); border-color:var(--warn); }
+  .tag.s_mixed { color:var(--bad); border-color:var(--bad); }
+  .links { font-size:12px; color:var(--muted); margin-top:3px; } .path { font-size:12px; margin:2px 0 0 10px; }
+  #steps div { font-size:13px; color:var(--muted); } #steps div::before { content:"\2713  "; color:var(--ok); }
+  details.ev { margin-top:6px; font-size:13px; } details.ev summary { cursor:pointer; color:var(--accent); min-height:28px; }
+  .evcard { background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:8px 10px; margin:6px 0; overflow-wrap:anywhere; }
+  .evcard dt { color:var(--muted); font-size:12px; } .evcard dd { margin:0 0 4px; }
+  .rejected { color:var(--bad); font-size:13px; } .muted { color:var(--muted); }
+  .flow { display:flex; gap:6px; flex-wrap:wrap; font-size:12px; color:var(--muted); margin:6px 0 0; } .flow span { border:1px solid var(--line); border-radius:6px; padding:2px 8px; }
+  svg.graph { width:100%; height:400px; background:var(--bg); border:1px solid var(--line); border-radius:12px; margin-top:8px; touch-action:pan-y; }
+  svg.graph line { stroke:var(--line); stroke-width:1.4; } svg.graph line.hl { stroke:var(--accent); stroke-width:3.5; }
+  svg.graph line.pred { stroke:var(--pred); stroke-dasharray:6 4; stroke-width:2; } svg.graph line.pruned { stroke:var(--bad); opacity:.5; }
+  svg.graph text { font-size:10px; fill:var(--ink); pointer-events:none; } svg.graph circle { stroke:var(--card); stroke-width:1.5; cursor:pointer; }
+  .legend { font-size:11px; color:var(--muted); display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; } .legend i { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:3px; vertical-align:middle; }
+  .results { position:absolute; left:0; right:0; top:48px; background:var(--card); border:1px solid var(--line); border-radius:12px; box-shadow:var(--sh2); z-index:15; max-height:320px; overflow:auto; }
+  .results:empty { display:none; } .results div { padding:10px 14px; cursor:pointer; color:var(--ink); display:flex; gap:8px; align-items:center; border-top:1px solid var(--line); min-height:44px; }
+  .results div:first-child { border-top:0; } .results div:hover { background:color-mix(in srgb, var(--uc) 8%, var(--card)); } .results .tag { margin-left:auto; }
+  #props { font-size:12px; overflow-wrap:anywhere; }
+  .tscroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  table { border-collapse:collapse; width:100%; font-size:13px; } td,th { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; vertical-align:top; }
+  th { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:600; }
+  tr:hover td { background:color-mix(in srgb, var(--uc) 4%, transparent); }
+  a.nl { color:var(--ink); font-weight:600; text-decoration:none; border-bottom:1px dotted var(--accent); }
+  .why { font-size:12px; white-space:nowrap; font-weight:600; }
+  .glossary { font-size:12.5px; color:var(--muted); margin:2px 0 6px; }
+  .empty { border:1.5px dashed var(--line); border-radius:var(--r); padding:22px 16px; text-align:center; color:var(--muted); font-size:14px; margin:14px 0; }
+  .skel { background:linear-gradient(90deg, var(--line) 25%, color-mix(in srgb, var(--line) 50%, var(--card)) 50%, var(--line) 75%); background-size:200% 100%; animation:sh 1.2s infinite; border-radius:8px; height:14px; margin:10px 0; }
+  @keyframes sh { from { background-position:200% 0; } to { background-position:-200% 0; } }
+  .toast { position:fixed; left:50%; bottom:84px; transform:translateX(-50%); background:var(--ink); color:var(--bg); padding:8px 14px; border-radius:999px; font-size:13px; z-index:40; box-shadow:var(--sh2); }
+  /* explain drawer (slide-over on desktop, bottom sheet on phones) */
+  .overlay { position:fixed; inset:0; background:rgba(10,12,20,.35); z-index:45; opacity:0; transition:opacity .2s; }
+  .overlay.on { opacity:1; }
+  aside.drawer { position:fixed; top:0; right:0; bottom:0; width:min(520px, 100%); background:var(--card); z-index:46; box-shadow:var(--sh2);
+                 transform:translateX(100%); transition:transform .25s ease; display:flex; flex-direction:column; }
+  aside.drawer.on { transform:none; }
+  .dhead { display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid var(--line); }
+  .dhead h2 { font-size:16px; margin:0; flex:1; } .dbody { overflow:auto; padding:12px 16px 24px; flex:1; }
+  .dbody td { overflow-wrap:anywhere; } .dbody td:first-child { white-space:nowrap; width:40%; }
+  /* workflow strip and recent trail */
+  .steps { display:flex; gap:6px; flex-wrap:wrap; margin:10px 0 6px; }
+  .step { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:4px 10px 4px 6px; background:var(--card); cursor:pointer; }
+  .step i { font-style:normal; width:18px; height:18px; border-radius:50%; background:var(--line); color:var(--ink); font-size:11px; display:inline-flex; align-items:center; justify-content:center; font-weight:700; }
+  .step.done i { background:var(--ok); color:#fff; } .step.now { border-color:var(--uc); color:var(--uc); } .step.now i { background:var(--uc); color:#fff; }
+  .trail { font-size:12.5px; color:var(--muted); margin:6px 0; display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  .trail a { color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:2px 10px; background:var(--card); }
+  .trail a:hover { border-color:var(--uc); color:var(--uc); }
+  .results div.k { background:color-mix(in srgb, var(--uc) 10%, var(--card)); }
+  .view { animation:fadeIn .18s ease-out; } @keyframes fadeIn { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
+  kbd { font:11px ui-monospace, Menlo, monospace; border:1px solid var(--line); border-bottom-width:2px; border-radius:5px; padding:0 5px; color:var(--muted); background:var(--bg); }
+  .delta.up { color:var(--ok); font-weight:600; } .delta.down { color:var(--bad); font-weight:600; }
+  @media (max-width: 760px) { aside.drawer { top:auto; left:0; width:100%; height:86vh; border-radius:18px 18px 0 0; transform:translateY(100%); } .kbdhint { display:none; } }
+  @media (prefers-reduced-motion: reduce) { * { transition:none !important; animation:none !important; } html { scroll-behavior:auto; } }
+  /* phones */
+  @media (max-width: 760px) {
+    body { font-size:14.5px; } main { padding:0 12px 92px; }
+    .brand small { display:none; } .badge span.lbl { display:none; } .badge { padding:6px 10px; }
+    /* CC-43: brand + model badge + role badge must fit 390 px; a wider header made the whole page 404-417 px wide (zoomed out, taps off) */
+    header.top .in { gap:8px; padding:8px 10px; } .brand { flex-shrink:0; }
+    code { overflow-wrap:anywhere; }   /* long commands (Generalization tab) wrap instead of widening the page */
+    .modelbadge { min-width:0; max-width:30vw; overflow:hidden; text-overflow:ellipsis; font-size:11px; padding:3px 8px; }
+    .hero { padding:28px 0 8px; } .hero h1 { font-size:26px; } .hero p { font-size:14px; } .eyebrow { font-size:10px; letter-spacing:.16em; }
+    .personas { grid-template-columns:1fr; gap:10px; }
+    .persona { display:grid; grid-template-columns:40px 1fr; gap:4px 12px; padding:14px; border-top:1.5px solid var(--line); border-left:4px solid var(--uc); }
+    .persona .em { grid-row:1 / span 2; font-size:26px; } .persona b { margin:0; } .persona small { font-size:12.5px; }
+    .tabs { display:none; }
+    nav.bottom { display:flex; position:fixed; left:0; right:0; bottom:0; z-index:25; background:color-mix(in srgb, var(--card) 94%, transparent); backdrop-filter:blur(12px);
+                 border-top:1px solid var(--line); padding:6px 4px calc(6px + env(safe-area-inset-bottom)); }
+    body { padding-bottom:calc(72px + env(safe-area-inset-bottom)); }   /* CC-43: the fixed bottom bar never covers the last content */
+    nav.bottom button { flex:1; background:transparent; color:var(--muted); box-shadow:none; border-radius:10px; padding:4px 2px; font-size:11px; display:flex; flex-direction:column; align-items:center; gap:2px; min-height:48px; }
+    nav.bottom button i { font-style:normal; font-size:20px; line-height:1; } nav.bottom button.active { color:var(--uc); background:color-mix(in srgb, var(--uc) 10%, transparent); font-weight:600; }
+    section.card { padding:14px; margin:12px 0; border-radius:12px; } section h2 { font-size:18px; }
+    .band { grid-template-columns:repeat(3, 1fr); gap:6px; } .tile { padding:8px 10px; } .tile b { font-size:20px; } .tile span { font-size:11px; }
+    svg.graph { height:300px; }
+    form.wrap { flex-wrap:wrap; } form.wrap button { flex:1 1 auto; }
+    .flow { display:none; }
+    /* evidence tables become stacked rows: each cell shows its header as a small label */
+    table.stack, table.stack tbody, table.stack tr, table.stack td { display:block; width:100%; }
+    table.stack thead { display:none; }
+    table.stack tr { border:1px solid var(--line); border-radius:12px; padding:8px 10px; margin:8px 0; background:var(--card); }
+    table.stack td { border:0; padding:3px 0; } table.stack td[data-l]::before { content:attr(data-l); display:block; font-size:10.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+    table.stack td.inl { display:inline-block; width:auto; margin-right:12px; } table.stack td.inl[data-l]::before { display:inline; margin-right:4px; }
+    .idtag { display:none !important; } body.ids-always .idtag { display:inline !important; }
+  }
+  footer.attrib { max-width:1100px; margin:28px auto 24px; padding:14px 18px; border-top:1px solid var(--line); color:var(--muted); font-size:12.5px; line-height:1.5; }
+  footer.attrib summary { cursor:pointer; font-weight:600; } footer.attrib ul { margin:8px 0 0; padding-left:18px; } footer.attrib a { color:inherit; }
+  /* CC-46: the sticky status line of an ask and the busy state of the clicked button */
+  .askline { position:sticky; top:64px; z-index:14; display:flex; align-items:center; gap:8px; margin:8px 0; padding:8px 12px; border-radius:10px; border:1px solid var(--line);
+             background:var(--card); box-shadow:var(--sh); font-size:14px; }
+  .askline.busy { border-color:var(--uc); } .askline.ok { border-color:var(--line); } .askline.err { border-color:#c92a2a; color:#c92a2a; }
+  .spin { display:inline-block; width:12px; height:12px; margin-right:6px; border:2px solid currentColor; border-right-color:transparent; border-radius:50%; animation:spin .8s linear infinite; vertical-align:-1px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .spin { animation:none; border-right-color:currentColor; opacity:.6; } }
+  button.busy, .pill.busy { opacity:.75; cursor:progress; }
+  .askleft { font-size:12.5px; color:var(--muted); align-self:center; }
+  #pansw, #pcard, #out { scroll-margin-top:120px; }
+</style>
+</head>
+<body class="ids-hover w-mechanistic">
+<header class="top"><div class="in">
+  <div class="brand">TrialMindKG <small>a knowledge graph that answers with its evidence</small></div>
+  <span class="modelbadge" id="modelbadge" title="which model answers questions" hidden></span>
+  <div class="badge" id="badge" title="change role" role="button" tabindex="0"><span id="bEmoji">👤</span><span class="lbl">Role: </span><b id="bName">choose</b><span class="muted">&#9662;</span>
+    <div class="pop" id="pop" hidden></div></div>
+</div></header>
+<main>
+  <div id="start" class="hero">
+    <div class="eyebrow">TrialMindKG &middot; NVIDIA-AWS BioAgentKG Challenge</div>
+    <h1>Ask the graph</h1>
+    <p id="about">Loading the graph...</p>
+    <form class="search1" id="hf" autocomplete="off"><input type="text" id="hq" placeholder="A gene, a disease, a compound, or a question" aria-label="Search the graph" autofocus>
+      <button type="submit">Go</button></form>
+    <div class="chips" id="hchips" aria-label="Examples"></div>
+    <p id="safarinote">If this page shows as plain text with a Summarise button, you are in Safari Reader view - click the Reader icon and choose Hide Reader. Cmd-Shift-R in Safari opens Reader; use Option-reload to reload.</p>
+    <div class="rolehint">Or start as a role: same graph and evidence, a different first screen and wording. Roles are files in <span class="mono">personas/</span>.</div>
+    <div class="personas" id="personaCards"></div>
+  </div>
+
+  <div id="mainview" hidden>
+  <div class="tabs"><button id="tabPharos">Pharos graph</button><button id="tabTrials">Failed trials</button>
+    <button id="tabExplore">Explore the trial graph</button><button id="tabNumbers">Numbers</button><button id="tabGeneralize">Generalization</button><button id="tabJudges">For judges</button><button id="tabBuild">Build &amp; validation</button></div>
+  <div class="welcome" id="welcome"></div>
+
+  <div id="pharos" hidden>
+    <div class="askline" id="paskline" role="status" aria-live="polite" hidden></div>
+    <div class="banner" id="pstatus">Loading the Pharos graph (first call reads the layer tables; this can take a minute)...</div>
+    <div class="steps" id="steps">
+      <span class="step" data-s="find"><i>1</i>Find an entity</span><span class="step" data-s="card"><i>2</i>Read its card</span>
+      <span class="step" data-s="why"><i>3</i>Ask why a link exists</span><span class="step" data-s="pred"><i>4</i>See what is predicted</span>
+      <span class="step" data-s="trials"><i>5</i>Check the failed trials</span></div>
+    <div class="pills" id="ppills"></div>
+    <form id="pf" autocomplete="off" class="kbdrow"><div class="grow"><input type="text" id="pq" placeholder="Find a target, gene, disease or compound" aria-label="Find an entity"><div class="results" id="presults"></div></div>
+      <button type="submit">Find</button></form>
+    <div class="trail" id="trail"></div>
+    <div id="pcard"><div class="empty">Open an entity from a pill above or the search box: its card shows every known link by kind of evidence, what the model predicts next, and the failed trials that mention it.</div></div>
+    <section class="card"><h2>Ask the Pharos graph a question</h2>
+      <div class="backendsw"><label for="backendsel">Graph</label><select id="backendsel" aria-label="Graph backend"></select><span>same question, same evidence ids on either</span></div>
+      <form id="pask" class="wrap"><div class="grow"><input type="text" id="pquestion" placeholder="e.g. Which genes are associated with both Alzheimer disease and type 2 diabetes mellitus?" aria-label="Question"></div>
+        <button type="submit">Ask</button> <button type="button" class="secondary" id="pdemo">Run the 5 demo questions</button><span class="askleft" hidden></span></form>
+      <div class="glossary">Every row cites the links it rests on; tap "why" to see the evidence behind one.</div>
+      <div class="pills" id="pstrip" aria-label="Tested questions"></div>
+      <div id="pansw"></div></section>
+  </div>
+
+  <div id="trials" hidden>
+    <div class="askline" id="taskline" role="status" aria-live="polite" hidden></div>
+    <div class="pills" id="tpills"></div>
+    <form id="f" class="wrap"><div class="grow"><input type="text" id="q" placeholder="e.g. Why did TULIP-1 miss its primary endpoint, and what changed later?" required aria-label="Question"></div>
+      <button type="submit">Ask</button><span class="askleft" hidden></span><button type="button" class="secondary" id="pdf">PDF</button>
+      <button type="button" class="secondary" id="json">JSON</button>
+      <button type="button" class="secondary" id="sub" title="Neptune bulk-load files of the evidence behind this report">Subgraph</button></form>
+    <div class="banner" id="status">Loading graph status...</div>
+    <div class="flow"><span>Failure Diagnosis</span>&rarr;<span>Candidate Responder Population</span>&rarr;<span>Related Indications</span>&rarr;<span>Evidence-Supported Redesign Options</span></div>
+    <div id="out"><div class="empty">Ask why a trial failed. The report has four sections, every claim carries its evidence, and claims the verifier rejects are listed, not hidden.</div></div>
+  </div>
+
+  <div id="explore" hidden>
+    <form id="sf" autocomplete="off"><div class="grow"><input type="text" id="sq" placeholder="Search a trial, program, drug, gene or disease" aria-label="Search"><div class="results" id="results"></div></div>
+      <button type="submit">Search</button></form>
+    <section class="card"><h2 id="gtitle">Graph</h2>
+      <div class="glossary">Tap a node to add its neighbours. Hover or long-press a line for its relationship.</div>
+      <svg class="graph" id="eg"></svg><div class="legend" id="elegend"></div><div id="props"></div></section>
+  </div>
+  <div id="numbers" hidden></div>
+  <div id="generalize" hidden></div>
+  <div id="judges" hidden></div>
+  <div id="build" hidden></div>
+  </div>
+</main>
+<footer class="attrib" id="attribution" aria-label="Data sources and licences"><details><summary>Data sources and licences</summary><p id="attnotice">The MIT licence covers the code only; each data source keeps its own licence. See <a href="/DATA_LICENSES.md">DATA_LICENSES.md</a>.</p><ul id="attlist"></ul></details></footer>
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Why this link" hidden>
+  <div class="dhead"><button type="button" class="secondary small" id="dback" hidden>&#8592; back</button><h2>Why this link</h2><span class="kbdhint muted" style="font-size:11px"><kbd>Esc</kbd> closes</span>
+    <button type="button" class="secondary small" id="dclose" aria-label="close">&#10005;</button></div>
+  <div class="dbody" id="pexplain"></div></aside>
+<nav class="bottom" id="bnav">
+  <button data-t="pharos"><i>🔭</i>Pharos</button><button data-t="trials"><i>🧪</i>Trials</button>
+  <button data-t="explore"><i>🕸️</i>Explore</button><button data-t="numbers"><i>📊</i>Numbers</button><button data-t="generalize"><i>🧩</i>Beyond</button><button data-t="judges"><i>⚖️</i>Judges</button><button data-t="build"><i>🛠️</i>Build</button></nav>
+<script>
+const $ = s => document.querySelector(s);
+const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+// SEC-14: data-derived links open only when http(s) or a path on this site (whitespace/control characters removed before the check)
+const safeUrl = u => { const t = String(u ?? "").trim(), c = t.replace(/[\u0000-\u0020\u007f-\u009f]/g, ""); if (!c || c.startsWith("//")) return ""; return /^https?:\/\//i.test(c) || !/^[a-z][a-z0-9+.\-]*:/i.test(c) ? t : ""; };
+const num = n => Number(n || 0).toLocaleString("en-US");
+const LABEL = {prespecified:"Prespecified", post_hoc:"Post hoc", prospectively_confirmed:"Prospectively confirmed",
+  hypothesis_generating:"Hypothesis-generating", registry_record:"Registry record", curated_summary:"Curated summary"};
+let last = null, PERSONAS = [], P = null, W = {predicates:{}, knowledge_levels:{}, categories:{}, evidence_kinds:[], confidence_words:{}};
+const short = c => String(c || "").split(":").pop();
+const noun = c => W.categories[short(c)] || short(c).replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
+const word = w => `<span class="word w-${esc(w)}" title="${esc(W.confidence_words[w] || "")}">${esc(w)}</span>`;
+const idtag = id => `<span class="idtag">${esc(id)}</span>`;
+
+// ---------------------------------------------------------------- personas (Start here)
+async function loadPersonas() {
+  [PERSONAS, W] = await Promise.all([fetch("/api/personas").then(r => r.json()).then(j => j.personas), fetch("/api/wording").then(r => r.json())]);
+  $("#personaCards").innerHTML = PERSONAS.map(p => `<button class="persona" style="--uc:${esc(p.color)}" data-id="${esc(p.id)}">
+    <span class="em">${esc(p.emoji)}</span><b>${esc(p.name)}</b><small>${esc(p.description)}</small></button>`).join("");
+  document.querySelectorAll(".persona").forEach(b => b.addEventListener("click", () => choose(b.dataset.id)));
+  const want = new URLSearchParams(location.search).get("persona") || localStorage.getItem("tmkg_persona");
+  loadLanding();
+  loadAttribution();
+  if (want && PERSONAS.some(p => p.id === want)) choose(want, true);
+  // a shared link (#pharos/node/<id>, ?node=, #trials/q/...) opens for a first-time visitor too: the first role is chosen
+  // quietly, as the one search box does (7 Nov: such links showed the start page, no card and no graph)
+  else if (PERSONAS.length && (location.hash.length > 1 || new URLSearchParams(location.search).get("node"))) choose(PERSONAS[0].id, true);
+}
+// CC-40: the data attribution footer (pipelines/attribution.py via /api/attribution); every source's licence and the text it asks for
+async function loadAttribution() {
+  let f; try { f = await (await fetch("/api/attribution")).json(); } catch (e) { return; }
+  if (!f || !f.items) return;
+  $("#attnotice").innerHTML = `${esc(f.notice)} Full record: <a href="/${esc(f.licences_file)}">${esc(f.licences_file)}</a>.`;
+  $("#attlist").innerHTML = f.items.map(i => `<li><a href="${esc(safeUrl(i.url))}" target="_blank" rel="noopener">${esc(i.source)}</a> (${esc(i.licence)}): ${esc(i.text)}${i.conditions ? ` <span class="muted">Conditions: ${esc(i.conditions)}.</span>` : ""}</li>`).join("");
+}
+let LANDING = {chips: [], model: null, backends: [], backend_default: "local"};
+async function loadLanding() {
+  try { LANDING = await (await fetch("/api/landing")).json(); } catch (e) { return; }
+  $("#hchips").innerHTML = LANDING.chips.map(c => `<button class="pill" data-kind="${esc(c.kind)}" data-q="${esc(c.text)}" title="${esc(c.label)}"><span class="t">${c.kind === "card" ? "open" : "ask"}</span>${esc(c.text)}</button>`).join("");
+  $("#hchips").querySelectorAll(".pill").forEach(b => b.addEventListener("click", () => quickStart(b.dataset.q, b.dataset.kind, b)));
+  const m = LANDING.model;
+  if (m) { const el = $("#modelbadge"); el.hidden = false; el.textContent = m.label; el.title = m.note; el.classList.toggle("off", m.offline); }
+  const sel = $("#backendsel");
+  if (sel) { sel.innerHTML = LANDING.backends.map(o => `<option value="${esc(o.id)}" ${o.available ? "" : "disabled"} title="${esc(o.reason)}">${esc(o.label)}${o.available ? "" : " (not available)"}</option>`).join("");
+    sel.value = LANDING.backend_default; }
+}
+// the one search box: no role needed. A role is chosen quietly (the saved one, else the first) so the card page has its wording
+function quickStart(text, kind, btn) {
+  if (!text.trim()) { toast("Type a gene, a disease, a compound or a question first"); return; }
+  const saved = localStorage.getItem("tmkg_persona");
+  choose(PERSONAS.some(p => p.id === saved) ? saved : PERSONAS[0].id, true);
+  if (kind === "trials") { tab("trials"); ask(text, false, btn); }
+  else if (kind === "pharos") { tab("pharos"); $("#pquestion").value = text; pharosAsk(text, btn); }
+  else { tab("pharos"); $("#pq").value = text; pharosFind(text, true, btn); }
+}
+$("#hf").addEventListener("submit", e => { e.preventDefault(); const t = $("#hq").value;
+  // a sentence goes to the question box, a short name to the entity search
+  quickStart(t, /\s/.test(t.trim()) && t.trim().split(/\s+/).length > 3 ? "pharos" : "card", e.submitter); });
+function popover() {
+  const pop = $("#pop");
+  if (!pop.hidden) { pop.hidden = true; return; }
+  pop.innerHTML = PERSONAS.map(p => `<button data-id="${esc(p.id)}" class="${P && P.id === p.id ? "on" : ""}" style="--uc:${esc(p.color)}">${esc(p.emoji)} ${esc(p.name)}</button>`).join("") +
+    `<div class="sep"></div><button data-id="">&#8592; Back to the role page</button>`;
+  pop.hidden = false;
+  pop.querySelectorAll("button").forEach(b => b.addEventListener("click", e => { e.stopPropagation(); pop.hidden = true;
+    if (b.dataset.id) choose(b.dataset.id); else { $("#start").hidden = false; $("#mainview").hidden = true; window.scrollTo({top: 0}); } }));
+}
+// ---- hash routes: #pharos | #pharos/node/<id> | #trials/q/<question> | #explore | #numbers | #generalize | #judges | #build (back button works)
+let routing = false;
+function setHash(h) { if (location.hash.slice(1) !== h) { routing = true; location.hash = h; setTimeout(() => routing = false, 0); } }
+function route() {
+  if (routing) return;
+  if (!P) { if (PERSONAS.length && location.hash.length > 1) choose(PERSONAS[0].id, true); return; }   // choose() routes again
+  const parts = location.hash.slice(1).split("/");
+  const t = parts[0] || P.start_tab;
+  if (t === "pharos" && parts[1] === "node" && parts[2]) { tab("pharos", true); pharosCard(decodeURIComponent(parts.slice(2).join("/")), true); }
+  else if (t === "trials" && parts[1] === "q" && parts[2]) { tab("trials", true); const q = decodeURIComponent(parts.slice(2).join("/")); if (!last || last.question !== q) ask(q, true); }
+  else if (["pharos", "trials", "explore", "numbers", "generalize", "judges", "build"].includes(t)) tab(t, true);
+}
+window.addEventListener("hashchange", route);
+// ---- the guided workflow strip and the recent-cards trail
+const DONE = new Set();
+function step(name) { DONE.add(name); document.querySelectorAll(".step").forEach(el => { el.classList.toggle("done", DONE.has(el.dataset.s) && el.dataset.s !== name); el.classList.toggle("now", el.dataset.s === name); }); }
+document.querySelectorAll(".step").forEach(el => el.addEventListener("click", () => {
+  const s = el.dataset.s, target = {card: "#pcardsec", why: "#sec-known", pred: "#sec-predicted", trials: "#sec-trials"}[s];
+  if (s === "find") $("#pq").focus(); else if (target && $(target)) $(target).scrollIntoView({behavior: "smooth", block: "start"}); else toast("Open an entity first"); }));
+function trail(id, label) {
+  let t = JSON.parse(localStorage.getItem("tmkg_trail") || "[]").filter(x => x.id !== id);
+  t.unshift({id, label}); t = t.slice(0, 6); localStorage.setItem("tmkg_trail", JSON.stringify(t)); drawTrail();
+}
+function drawTrail() {
+  const t = JSON.parse(localStorage.getItem("tmkg_trail") || "[]");
+  $("#trail").innerHTML = t.length ? "Recent: " + t.map(x => `<a href="#pharos/node/${encodeURIComponent(x.id)}" data-nid="${esc(x.id)}">${esc(x.label)}</a>`).join("") : "";
+  wireNodes($("#trail"));
+}
+function toast(msg) { const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 1800); }
+// ---------------------------------------------------------------- CC-46: every ask answers where the person is looking
+// askBegin(where, question, button, container, verb) -> {done(text), fail(text)}: the clicked button turns busy ("asking..."),
+// the answer container scrolls into view BEFORE the request, and the sticky status line at the top of the section
+// (#paskline for the Pharos tab, #taskline for the trials tab) says "Asking: <question> ... N s"; done() / fail() turn that
+// line into "<question>: <outcome>" (CC-46b: the question is echoed while busy and when done, so two identical answers
+// to two different questions still differ visibly) and give the button back. askFetch(url, options) -> parsed JSON or throws an
+// Error whose message is what the person should read (429 with "try again in N min", no answer, a server error).
+const ASKLINE = {pharos: "#paskline", trials: "#taskline"};
+let ASKSEQ = 0;
+function askBegin(where, q, btn, container, verb) {
+  const line = $(ASKLINE[where]), seq = String(++ASKSEQ), t0 = Date.now();
+  if (btn && btn.dataset && btn.dataset.idle === undefined) {
+    btn.dataset.idle = btn.innerHTML; btn.disabled = true; btn.classList.add("busy"); btn.setAttribute("aria-busy", "true");
+    btn.innerHTML = `<span class="spin" aria-hidden="true"></span>asking&hellip;`;
+  }
+  const c = typeof container === "string" ? $(container) : container;
+  if (c && c.scrollIntoView) c.scrollIntoView({block: "start"});
+  if (line) { line.hidden = false; line.className = "askline busy"; line.dataset.seq = seq;
+    line.innerHTML = `<span class="spin" aria-hidden="true"></span><span>${esc(verb || "Asking")}: <b>${esc(q)}</b> &hellip; <span class="t">0 s</span></span>`; }
+  const timer = setInterval(() => { const t = line && line.dataset.seq === seq && line.querySelector(".t"); if (t) t.textContent = Math.round((Date.now() - t0) / 1000) + " s"; }, 1000);
+  let ended = false;
+  const end = (cls, text) => {
+    if (ended) return; ended = true; clearInterval(timer);
+    if (btn && btn.dataset && btn.dataset.idle !== undefined) { btn.innerHTML = btn.dataset.idle; delete btn.dataset.idle; btn.disabled = false; btn.classList.remove("busy"); btn.removeAttribute("aria-busy"); }
+    if (line && line.dataset.seq === seq) { line.className = "askline " + cls; line.innerHTML = `<span><b>${esc(q)}</b>: ${esc(text)}</span>`; }
+  };
+  return {done: text => end("ok", text), fail: text => end("err", text)};
+}
+function askError(msg, limited) { const e = new Error(msg); e.ask = true; e.limited = !!limited; return e; }
+const askMessage = e => (e && e.ask) ? e.message : "The server did not answer (" + ((e && e.message) || "no response") + "). Check the connection and try again.";
+const retryWords = s => `Try again in ${Math.max(1, Math.ceil((+s || 0) / 60))} min.`;
+async function askFetch(url, opts) {
+  let resp;
+  try { resp = await fetch(url, opts); } catch (e) { throw askError("The server did not answer. Check the connection and try again."); }
+  const hdr = k => (resp.headers && resp.headers.get) ? resp.headers.get(k) : null;
+  const left = hdr("X-Ask-Remaining"); if (left !== null && left !== undefined && left !== "") askLeft(+left);
+  let body = null; try { body = await resp.json(); } catch (e) {}
+  if (resp.status === 429) { askLeft(0); throw askError(`${(body && body.detail) || "Too many questions this hour."} ${retryWords(hdr("Retry-After") || (body && body.retry_after))}`, true); }
+  if (!resp.ok) throw askError((body && body.detail) || `The server answered ${resp.status}.`);
+  if (body === null) throw askError("The server's answer could not be read.");
+  return body;
+}
+// "N questions left this hour" next to the ask boxes, shown only when N <= 5 (X-Ask-Remaining; /api/ask_quota on load)
+function askLeft(n) {
+  document.querySelectorAll(".askleft").forEach(el => { const show = Number.isFinite(n) && n <= 5; el.hidden = !show;
+    el.textContent = show ? `${n} question${n === 1 ? "" : "s"} left this hour` : ""; });
+}
+async function askQuota() { try { const r = await fetch("/api/ask_quota"); if (!r.ok) return null; const q = await r.json(); if (q && q.remaining !== null && q.remaining !== undefined) askLeft(q.remaining); return q; } catch (e) { return null; } }
+// what an EventSource error means: the ask limit (asked of /api/ask_quota, which does not count) or a lost connection
+async function streamError() {
+  const q = await askQuota();
+  return q && q.remaining === 0 ? `${q.detail || "This demo's question limit for this hour is used up."} ${retryWords(q.retry_after)}` : "The server did not answer (connection lost). Try again.";
+}
+const headlineOf = (r, fallback) => (r && r.summary && r.summary.headline) || fallback;
+// rowsLine(result) -> "no rows" / "1 row" / "N rows", plus " - <headline>" when the answer has one (the status line's outcome)
+const rowsWord = n => !n ? "no rows" : n === 1 ? "1 row" : `${n} rows`;
+const rowsLine = r => { const n = r && r.rows ? r.rows.length : 0, h = r && r.summary && r.summary.headline; return rowsWord(n) + (h ? " - " + h : ""); };
+function choose(id, quiet) {
+  P = PERSONAS.find(p => p.id === id); localStorage.setItem("tmkg_persona", id);
+  document.querySelector('meta[name="theme-color"]').setAttribute("content", P.color);
+  document.documentElement.style.setProperty("--uc", P.color);
+  document.body.className = `ids-${P.show_ids} w-${P.wording}`;
+  $("#bEmoji").textContent = P.emoji; $("#bName").textContent = P.name;
+  $("#welcome").textContent = `${P.emoji} ${P.welcome}`;
+  const pill = q => `<button class="pill" data-tab="${esc(q.tab)}" data-q="${esc(q.text)}"><span class="t">${q.tab === "card" ? "open" : "ask"}</span>${esc(q.text)}</button>`;
+  $("#ppills").innerHTML = P.questions.filter(q => q.tab !== "trials").map(pill).join("");
+  $("#tpills").innerHTML = P.questions.filter(q => q.tab === "trials").map(pill).join("");
+  document.querySelectorAll(".pill[data-tab]").forEach(b => b.addEventListener("click", () => runPill(b.dataset.tab, b.dataset.q, b)));
+  $("#start").hidden = true; $("#mainview").hidden = false;
+  drawTrail(); step("find");
+  const node = new URLSearchParams(location.search).get("node");
+  if (node && quiet) { tab("pharos"); pharosCard(node); }
+  else if (location.hash.length > 1 && quiet) route();
+  else tab(P.start_tab === "card" ? "pharos" : P.start_tab);
+  if (!quiet) window.scrollTo({top: 0});
+}
+function runPill(t, q, btn) {
+  if (t === "trials") { tab("trials"); ask(q, false, btn); }
+  else if (t === "card") { tab("pharos"); $("#pq").value = q; pharosFind(q, true, btn); }
+  else { tab("pharos"); $("#pquestion").value = q; pharosAsk(q, btn); }
+}
+$("#badge").addEventListener("click", e => { e.stopPropagation(); if (PERSONAS.length) popover(); });
+$("#badge").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); popover(); } });
+document.addEventListener("click", () => { $("#pop").hidden = true; $("#presults").innerHTML = ""; $("#results").innerHTML = ""; });
+
+async function loadStatus() {
+  let trial = null, ph = null;
+  try { trial = await (await fetch("/api/status")).json(); } catch (e) {}
+  try { const r = await fetch("/api/pharos/status"); if (r.ok) ph = await r.json(); } catch (e) {}
+  let s = "";
+  if (ph) s += `A graph of ${num(ph.nodes)} nodes and ${num(ph.edges)} links built from Pharos${ph.layers.length > 1 ? ` and ${ph.layers.length - 1} enrichment layer${ph.layers.length > 2 ? "s" : ""}` : ""} (${ph.layers.join(", ")}), ` +
+    `with a keep-or-prune verdict on every Pharos link (${num(ph.verdicts.keep)} kept, ${num(ph.verdicts.prune)} pruned)` +
+    (ph.predictions && !(ph.novelty && ph.novelty.sentence) ? ` and ${num(ph.predictions.rows)} scored link predictions` : "") + ". " +
+    (ph.novelty && ph.novelty.sentence ? ph.novelty.sentence + " " : "");
+  else s += "The Pharos graph is not loaded on this machine (it is built on the owner's Mac; the trial layer below still works). ";
+  if (trial) s += `Plus a trial layer of 34 failed drug programs: ${num(trial.counts.nodes)} nodes, ${num(trial.counts.edges)} links, every claim traced to its source record.`;
+  $("#about").textContent = s;
+  if (trial) { const q = trial.quality;
+    $("#status").innerHTML = `Trial graph ${esc(String(trial.graph_version.snapshot).slice(0,12))}: ${num(trial.counts.nodes)} nodes, ${num(trial.counts.edges)} links &middot; ` +
+      `schema-valid ${q.schema_valid_edge_rate.value} &middot; provenance complete ${q.provenance_completeness.value} &middot; models: <b>${trial.backend === "nim" ? "NVIDIA NIM" : "offline stand-in"}</b>`; }
+  else $("#status").textContent = "Status unavailable";
+}
+
+// ---------------------------------------------------------------- failed-trial report (unchanged logic)
+const SHOWN = ["pgx_level","pgx_types","variant","ot_datasource","n_pathogenic_or_likely","mutated_samples","ot_score",
+  "max_research_phase","nct_ids","match_rule","chembl_match","dose_text"];
+async function card(id, el) {
+  if (el.dataset.loaded) return;
+  const c = await (await fetch("/api/evidence/" + id + "?seeds=" + encodeURIComponent((last?.seeds || []).join(",")))).json();
+  const extra = SHOWN.filter(k => c.details[k] !== undefined).map(k => `${esc(k)}: ${esc(c.details[k])}`).join(" &middot; ");
+  const b = c.biolink;
+  el.innerHTML = `<dl>
+    <dt>Statement</dt><dd>${esc(c.statement)}</dd>
+    <dt>Source record</dt><dd>${esc(c.source)} &middot; ${esc(c.source_record)}${c.via ? " (via " + esc(c.via) + ")" : ""}</dd>
+    <dt>Evidence type / retrieved</dt><dd>${esc(c.evidence_type)} &middot; ${esc(c.retrieved)}</dd>
+    <dt>Knowledge source</dt><dd>${esc(b.primary_knowledge_source)}${b.aggregator_knowledge_source.length ? " via " + esc(b.aggregator_knowledge_source.join(", ")) : ""}</dd>
+    <dt>Knowledge level / agent</dt><dd>${esc(W.knowledge_levels[b.knowledge_level] || b.knowledge_level)} <span class="tech muted">(${esc(b.knowledge_level)})</span> &middot; ${esc(b.agent_type)}</dd>
+    <dt>Id matching confidence</dt><dd>${esc(c.mapping_confidence || "-")}</dd>
+    ${extra ? `<dt>Details</dt><dd>${extra}</dd>` : ""}
+    <dt>Graph path from the question</dt><dd>${c.graph_path.length ? c.graph_path.map(p => `<div class="path">&rarr; ${esc(p.statement)}</div>`).join("") : "the edge touches an entity named in the question"}</dd>
+    <dt>Frozen raw response</dt><dd>${esc(c.raw_response || "-")}</dd>
+    <dt>Edge id</dt><dd>${esc(c.id)}</dd></dl>`;
+  el.dataset.loaded = 1;
+}
+function render(r) {
+  last = r;
+  let h = answerLabel(r.label) + `<div class="banner">${esc(r.run.note)} Seeds: ${esc(r.seeds.join(", "))}. ${r.run.seconds ?? ""} s.</div>`;
+  const TITLE = Object.fromEntries(r.sections.map(s => [s.role, s.title]));
+  const linksOf = (role, i) => (r.flow_links || []).filter(l => (l.source.role === role && l.source.index === i) ||
+      (l.target.role === role && l.target.index === i)).map(l => { const o = l.source.role === role && l.source.index === i ? l.target : l.source;
+      return `${esc(TITLE[o.role])} #${o.index + 1}`; });
+  for (const s of r.sections) {
+    h += `<section class="card accent"><h2>${esc(s.title)}</h2>`;
+    if (!s.claims.length) h += `<div class="muted">${esc(s.note)}</div>`;
+    s.claims.forEach((c, i) => {
+      const ind = c.indicators || {}, links = linksOf(s.role, i);
+      h += `<div class="claim" data-ev='${esc(JSON.stringify(c.evidence.map(e => e.id)))}'>#${i + 1} ${esc(c.claim)}
+        <div class="tags">${c.support_status ? `<span class="tag s_${esc(c.support_status)}">${esc(c.support_status.replace("_", "-"))}</span>` : ""}
+        <span class="tag ${esc(c.evidence_status)}">${esc(LABEL[c.evidence_status] || c.evidence_status)}</span>
+        <span class="tag" title="weakest cited source (BioLink knowledge level)">source strength: ${esc(ind.evidence_strength ?? "-")}</span>
+        <span class="tag" title="how sure the identifiers of the cited edges are">id matching: ${esc(ind.mapping_confidence ?? "-")}</span>
+        <span class="tag">model uncertainty: ${esc(c.uncertainty)}</span>
+        ${c.repaired_from ? `<span class="tag" title="${esc(c.repaired_from)}">rewritten once after a failed check</span>` : ""}
+        ${c.also_in ? `<span class="tag">also in: ${esc(c.also_in.map(x => TITLE[x] || x).join(", "))}</span>` : ""}</div>
+        ${links.length ? `<div class="links">shares evidence with: ${links.join("; ")}</div>` : ""}
+        <details class="ev"><summary>Evidence (${c.evidence.length})</summary>
+        ${c.evidence.map(e => `<div class="evcard" data-id="${esc(e.id)}">${esc(e.source)} &middot; ${esc(e.source_record)} &middot; ${esc(e.id)} (click to expand)</div>`).join("")}
+        </details></div>`;
+    });
+    h += `<details class="ev" data-sec="${esc(s.role)}"><summary>Subgraph used (${s.subgraph.nodes} nodes, ${s.subgraph.edges} edges) - click a claim to highlight its evidence</summary>
+          <svg class="graph" id="g_${esc(s.role)}"></svg><div class="legend" id="l_${esc(s.role)}"></div></details></section>`;
+  }
+  if (r.rejected.length) h += `<section class="card"><h2>Claims removed by the verifier</h2>` +
+    r.rejected.map(c => `<div class="rejected">(${esc(c.role)}) ${esc(c.claim)} &mdash; ${esc(c.reasons.join("; "))}</div>`).join("") + `</section>`;
+  $("#out").innerHTML = h;
+  document.querySelectorAll(".evcard").forEach(el => el.addEventListener("click", e => { e.stopPropagation(); card(el.dataset.id, el); }));
+  for (const s of r.sections) { const svg = document.getElementById("g_" + s.role);
+    if (svg && s.graph) document.getElementById("l_" + s.role).innerHTML = legend(drawGraph(svg, s.graph)); }
+  document.querySelectorAll(".claim").forEach(el => el.addEventListener("click", () => {
+    const sec = el.closest("section"), d = sec.querySelector("details[data-sec]"), s = r.sections.find(x => x.role === d.dataset.sec);
+    sec.querySelectorAll(".claim").forEach(c => c.classList.remove("sel")); el.classList.add("sel");
+    d.open = true; drawGraph(document.getElementById("g_" + s.role), s.graph, {highlight: JSON.parse(el.dataset.ev)}); }));
+}
+async function ask(q, fromRoute, btn) {
+  if (!q || !q.trim()) { toast("Type a question first"); return; }
+  $("#q").value = q; if (!fromRoute) setHash("trials/q/" + encodeURIComponent(q));
+  const st = askBegin("trials", q, btn, "#out");
+  $("#out").innerHTML = `<div class="banner">Working...</div><div id="steps"></div>`;
+  let es, got = false;
+  try { es = new EventSource("/api/ask_stream?q=" + encodeURIComponent(q)); }
+  catch (e) { const m = askMessage(e); $("#out").innerHTML = `<div class="rejected">${esc(m)}</div>`; st.fail(m); return; }
+  es.addEventListener("step", e => { const d = JSON.parse(e.data); const s = $("#steps"); if (s) s.insertAdjacentHTML("beforeend", `<div>${esc(d.label)}</div>`); });
+  es.addEventListener("report", e => { got = true; es.close(); const r = JSON.parse(e.data); render(r);
+    st.done(headlineOf(r, `report ready, ${(r.sections || []).length} sections`)); askQuota(); });
+  es.onerror = async () => { es.close(); if (got) return;
+    const m = await streamError(); $("#out").innerHTML = `<div class="muted">${esc(q)}</div><div class="rejected" data-askfail-msg>${esc(m)}</div>`; st.fail(m); };
+}
+$("#f").addEventListener("submit", e => { e.preventDefault(); ask($("#q").value, false, e.submitter); });
+$("#pdf").addEventListener("click", () => { if (!$("#q").value) toast("Type a question first: PDF writes the report for it"); else location.href = "/api/report.pdf?q=" + encodeURIComponent($("#q").value); });
+$("#sub").addEventListener("click", () => { if (!$("#q").value) toast("Type a question first: Subgraph downloads the evidence behind its report"); else location.href = "/api/report_subgraph.zip?q=" + encodeURIComponent($("#q").value); });
+$("#json").addEventListener("click", () => { if (!last) { toast("Ask a question first: JSON downloads the report on screen"); return; }   // CC-43: never a silent no-op
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify(last, null, 1)], {type:"application/json"}));
+  a.download = "trialmindkg_report.json"; a.click(); });
+
+// ---------------------------------------------------------------- graph drawing (no library)
+const COLORS = {"biolink:ClinicalTrial":"#1f5fae","tmkg:ClinicalTrialProgram":"#6f42c1","biolink:Drug":"#d9480f","biolink:SmallMolecule":"#d9480f",
+  "biolink:Protein":"#2f9e44","biolink:Gene":"#0b7285","biolink:Disease":"#c2255c","biolink:Pathway":"#868e96","biolink:BiologicalProcess":"#9a6700",
+  "tmkg:OutcomeMeasure":"#e67700","tmkg:DevelopmentEvent":"#5c940d","biolink:Publication":"#495057"};
+const color = c => COLORS[c] || "#adb5bd";
+function layout(nodes, edges, W, H) {
+  const ns = [...nodes].sort((a,b) => a.id < b.id ? -1 : 1), idx = {};
+  ns.forEach((n,i) => { idx[n.id] = i; const a = 2*Math.PI*i/ns.length; n.x = W/2 + 160*Math.cos(a); n.y = H/2 + 140*Math.sin(a); });
+  const es = edges.filter(e => e.source in idx && e.target in idx);
+  for (let it = 0; it < 260; it++) {
+    const f = ns.map(() => [0,0]);
+    for (let i = 0; i < ns.length; i++) for (let j = i+1; j < ns.length; j++) {
+      let dx = ns[i].x-ns[j].x, dy = ns[i].y-ns[j].y, d2 = dx*dx+dy*dy+0.01, r = 1800/d2;
+      f[i][0]+=dx*r; f[i][1]+=dy*r; f[j][0]-=dx*r; f[j][1]-=dy*r; }
+    for (const e of es) { const a = idx[e.source], b = idx[e.target];
+      let dx = ns[b].x-ns[a].x, dy = ns[b].y-ns[a].y, d = Math.sqrt(dx*dx+dy*dy)+0.01, k = (d-80)*0.02;
+      f[a][0]+=dx/d*k*d; f[a][1]+=dy/d*k*d; f[b][0]-=dx/d*k*d; f[b][1]-=dy/d*k*d; }
+    const t = 0.08*(1 - it/260) + 0.01;
+    ns.forEach((n,i) => { n.x += Math.max(-20, Math.min(20, (f[i][0] + (W/2-n.x)*0.01)*t*10));
+                          n.y += Math.max(-20, Math.min(20, (f[i][1] + (H/2-n.y)*0.01)*t*10)); });
+  }
+  return {ns, es, idx};
+}
+function drawGraph(svg, g, opts = {}) {
+  const Wd = 900, H = 420, {ns, es, idx} = layout(g.nodes, g.edges, Wd, H), hl = new Set(opts.highlight || []);
+  const xs = ns.map(n => n.x), ys = ns.map(n => n.y), pad = 40;
+  const busy = ns.filter(n => n.category === "tmkg:OutcomeMeasure").length > 8;
+  const minx = Math.min(...xs)-pad, miny = Math.min(...ys)-pad, w = Math.max(...xs)-minx+pad, h = Math.max(...ys)-miny+pad;
+  svg.setAttribute("viewBox", `${minx} ${miny} ${Math.max(w,200)} ${Math.max(h,150)}`);
+  let out = es.map(e => `<line data-id="${esc(e.id)}" class="${hl.has(e.id) ? "hl" : ""} ${e.predicated || e.predicted ? "pred" : ""} ${e.word === "pruned" ? "pruned" : ""}" x1="${ns[idx[e.source]].x}" y1="${ns[idx[e.source]].y}"
+      x2="${ns[idx[e.target]].x}" y2="${ns[idx[e.target]].y}"><title>${esc(e.predicted ? "predicted link" : W.predicates[short(e.predicate)] || short(e.predicate))} (${esc(e.evidence_type)}) ${esc(e.id)}</title></line>`).join("");
+  out += ns.map(n => `<g data-id="${esc(n.id)}"><circle cx="${n.x}" cy="${n.y}" r="${n.id === opts.center ? 10 : 6}" fill="${color(n.category)}">
+      <title>${esc(n.label)} (${esc(noun(n.category))})</title></circle>
+      ${busy && n.category === "tmkg:OutcomeMeasure" && n.id !== opts.center ? "" :
+        `<text x="${n.x+8}" y="${n.y+3}">${esc(n.label.length > 30 ? n.label.slice(0,29) + "…" : n.label)}</text>`}</g>`).join("");
+  svg.innerHTML = out;
+  if (opts.onNode) svg.querySelectorAll("g").forEach(el => el.addEventListener("click", () => opts.onNode(el.dataset.id)));
+  return [...new Set(ns.map(n => n.category))];
+}
+const legend = cats => cats.map(c => `<span><i style="background:${color(c)}"></i>${esc(noun(c))}</span>`).join("");
+
+// ---------------------------------------------------------------- explorer (trial graph)
+let G = {nodes:[], edges:[]};
+function merge(g) { const ids = new Set(G.nodes.map(n => n.id)), eids = new Set(G.edges.map(e => e.id));
+  g.nodes.forEach(n => { if (!ids.has(n.id)) G.nodes.push(n); }); g.edges.forEach(e => { if (!eids.has(e.id)) G.edges.push(e); }); }
+async function expand(id, reset) {
+  const r = await (await fetch("/api/neighbourhood/" + encodeURIComponent(id))).json();
+  if (reset) G = {nodes:[], edges:[]};
+  merge(r);
+  $("#gtitle").textContent = `Graph: ${G.nodes.length} nodes, ${G.edges.length} links`;
+  $("#elegend").innerHTML = legend(drawGraph($("#eg"), G, {center:id, onNode: nid => expand(nid, false)}));
+  $("#props").innerHTML = "<b>" + esc(r.node.name || r.node.id) + "</b> " + Object.entries(r.node)
+     .filter(([k]) => !["analyses","measurements","groups","denoms","ae_groups"].includes(k))
+     .map(([k,v]) => `<span class="muted">${esc(k)}:</span> ${esc(String(v).slice(0,160))}`).join(" &middot; ");
+}
+$("#sf").addEventListener("submit", async e => { e.preventDefault();
+  const hits = await (await fetch("/api/search?q=" + encodeURIComponent($("#sq").value))).json();
+  $("#results").innerHTML = hits.map(h => `<div data-id="${esc(h.id)}">${esc(h.label)}${idtag(h.id)}<span class="tag">${esc(noun(h.category))}</span></div>`).join("") || "<div class='muted'>No match</div>";
+  $("#results").querySelectorAll("div[data-id]").forEach(d => d.addEventListener("click", () => { $("#results").innerHTML = ""; expand(d.dataset.id, true); })); });
+function tab(name, fromRoute) {
+  for (const t of ["pharos", "trials", "explore", "numbers", "generalize", "judges", "build"]) { const el = $("#" + t); const was = el.hidden; el.hidden = t !== name;
+    if (was && t === name) { el.classList.remove("view"); void el.offsetWidth; el.classList.add("view"); }
+    $("#tab" + t[0].toUpperCase() + t.slice(1)).classList.toggle("active", t === name); }
+  if (!fromRoute && !["pharos", "trials"].includes(name)) setHash(name);
+  if (!fromRoute && name === "pharos" && !location.hash.startsWith("#pharos")) setHash("pharos");
+  if (!fromRoute && name === "trials" && !location.hash.startsWith("#trials")) setHash("trials");
+  if (name === "numbers") showNumbers();
+  if (name === "generalize") showGeneralization();
+  if (name === "judges") showJudges();
+  document.querySelectorAll("#bnav button").forEach(b => b.classList.toggle("active", b.dataset.t === name));
+  if (name === "build") showBuild();
+  if (name === "pharos") pharosStatus();
+}
+["Pharos", "Trials", "Explore", "Numbers", "Generalize", "Judges", "Build"].forEach(t => $("#tab" + t).addEventListener("click", () => tab(t.toLowerCase())));
+// CC-43: on the role page no tab is on screen, so the bottom bar first opens the main view (the saved role, else the first)
+document.querySelectorAll("#bnav button").forEach(b => b.addEventListener("click", () => {
+  if (!$("#start").hidden && PERSONAS.length) { const saved = localStorage.getItem("tmkg_persona"); choose(PERSONAS.some(p => p.id === saved) ? saved : PERSONAS[0].id, true); }
+  tab(b.dataset.t); window.scrollTo({top: 0}); }));
+const rows = obj => Object.entries(obj || {}).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${esc(typeof v === "object" ? JSON.stringify(v) : v)}</td></tr>`).join("");
+async function showBuild() {
+  const s = await (await fetch("/api/status")).json();
+  let ph = null; try { const r = await fetch("/api/pharos/status"); if (r.ok) ph = await r.json(); } catch (e) {}
+  $("#build").innerHTML = (ph ? `
+    <section class="card accent"><h2>Pharos graph</h2><div class="muted">${num(ph.nodes)} nodes &middot; ${num(ph.edges)} links &middot; layers: ${esc(ph.layers.join(", "))}${ph.layers_missing.length ? " (not built: " + esc(ph.layers_missing.join(", ")) + ")" : ""}</div>
+      <div class="band"><div class="tile"><b>${num(ph.verdicts.keep)}</b><span>links kept by pruning</span></div><div class="tile"><b>${num(ph.verdicts.prune)}</b><span>links pruned</span></div>
+      <div class="tile"><b>${ph.predictions ? num(ph.predictions.rows) : 0}</b><span>predicted links</span></div></div>
+      <div class="tscroll"><table>${rows(ph.edges_by_layer)}</table><br><table>${rows(ph.nodes_by_category)}</table><br><table>${rows(ph.edges_by_predicate)}</table></div></section>` : "") + `
+    <section class="card"><h2>Trial graph construction</h2><div class="muted">version ${esc(String(s.graph_version.snapshot).slice(0,12))} &middot; ${num(s.counts.nodes)} nodes &middot; ${num(s.counts.edges)} links</div>
+      <table>${rows(s.counts.by_category)}</table><br><table>${rows(s.counts.by_predicate)}</table></section>
+    <section class="card"><h2>Quality</h2><table>${Object.entries(s.quality).map(([k, m]) => `<tr><td>${esc(k)}</td><td>${esc(m.value)} (n=${m.n})</td><td class="muted">${esc(m.definition)}</td></tr>`).join("")}</table>
+      <h2 style="margin-top:12px">Mapping coverage by entity type</h2><table>${Object.entries(s.coverage_by_type || {}).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${esc(v.rate)} (n=${v.n})</td></tr>`).join("")}</table></section>
+    <section class="card"><h2>Validation failures (${s.validation_failures.length})</h2>${s.validation_failures.length ? s.validation_failures.map(p => `<div class="rejected">${esc(p)}</div>`).join("") : "<div class='muted'>none: every node and edge passes the schema gate</div>"}</section>
+    <section class="card"><h2>Cross-source checks (${s.contradictions.length})</h2><div class="muted">curated text vs registry status and numbers; "check" rows need a human look, none is changed automatically</div>
+      <table>${s.contradictions.map(c => `<tr><td>${esc(c.program)}</td><td>${esc(c.check)}</td><td>${esc(c.statement.slice(0,90))}</td><td class="muted">${esc(c.result)}</td></tr>`).join("")}</table></section>
+    <section class="card"><h2>Open review queue (${s.review_queue.length})</h2><table>${s.review_queue.map(r => `<tr><td>${esc(r.program)}</td><td>${esc(r.entity_type)}</td><td>${esc(r.query)}</td><td class="muted">${esc(r.rule)}</td></tr>`).join("")}</table></section>
+    <section class="card"><h2>Sources and versions</h2><table>${rows(s.sources)}</table></section>`;
+}
+
+// ---------------------------------------------------------------- Numbers (the judge's page)
+const pm = (m) => m ? `${m.mean.toFixed(3)}<span class="muted" style="font-size:11px"> &plusmn;${m.ci95.toFixed(3)}</span>` : "&mdash;";
+async function showNumbers() {
+  const r = await (await fetch("/api/results")).json();
+  const src = (name, text) => r.sources[name] ? `<a href="/api/file?name=${encodeURIComponent(name)}" class="nl mono" style="font-size:11px" title="the file this number comes from">${esc(text || name)}</a>` : `<span class="muted mono" style="font-size:11px">${esc(text || name)}</span>`;
+  const f3 = m => m ? m.mean.toFixed(3) : "&mdash;";
+  const sg = (x, d = 4) => x === null || x === undefined ? "&mdash;" : (x >= 0 ? "+" : "") + x.toFixed(d);
+  const B = r.benchmark;
+  const lp = B.runs.length ? B.tags.map(tag => {
+      const runs = B.runs.filter(x => x.tag === tag);
+      const comps = B.comparisons.filter(c => c.tag === tag);
+      return `<h3>Run <span class="mono">${esc(tag)}</span></h3>
+      <div class="tscroll"><table class="stack"><thead><tr><th>graph</th><th>AUROC (GNN)</th><th>meta-path model</th><th>disease popularity alone</th><th>test pairs with a named path</th><th>folds</th><th>source file</th></tr></thead><tbody>` +
+      runs.map(x => x.error ? `<tr><td><b>${esc(x.graph)}</b></td><td colspan="5" class="muted">${esc(x.error)}</td><td>${src(x.file)}</td></tr>` :
+        `<tr><td><b>${esc(x.graph)}</b>${x.graph === "G0" ? ' <span class="tag">Pharos alone</span>' : ""}${x.deviations.length ? ` <span class="tag" title="${esc(x.deviations.join("; "))}">differs from protocol</span>` : ""}</td>
+         <td class="inl" data-l="AUROC">${x.seeds > 1 ? pm(x.auroc) : f3(x.auroc)}</td><td class="inl" data-l="meta-path">${f3(x.metapath)}</td><td class="inl" data-l="popularity">${f3(x.degree_baseline)}</td>
+         <td class="inl" data-l="with a path">${x.metapath_coverage ? (100 * x.metapath_coverage.mean).toFixed(1) + "%" : "&mdash;"}</td><td class="inl" data-l="folds">${x.folds}</td><td>${src(x.file)}</td></tr>`).join("") +
+      `</tbody></table></div>` +
+      comps.map(c => `<h3>Each graph minus ${esc(c.base)} <span class="muted" style="font-weight:400">(task ${esc(c.task)}, ${esc(c.split)}; paired over the same folds, 95% interval)</span></h3>
+        <div class="tscroll"><table class="stack"><thead><tr><th>graph</th><th>model</th><th>difference</th><th>95% interval</th><th>folds higher</th><th>same test pairs</th></tr></thead><tbody>` +
+        [...c.rows.map(d => [d, "GNN"]), ...c.metapath_rows.map(d => [d, "meta-path"])].map(([d, model]) => `<tr><td><b>${esc(d.variant)}</b></td><td class="inl" data-l="model">${model}</td>
+          <td class="inl" data-l="difference"><span class="delta ${d.ci_low > 0 ? "up" : d.ci_high < 0 ? "down" : ""}">${sg(d.mean)}</span></td>
+          <td class="inl" data-l="95% interval">${d.ci_low === null ? "&mdash;" : sg(d.ci_low) + " to " + sg(d.ci_high)}</td><td class="inl" data-l="folds higher">${d.wins} of ${d.n}</td><td class="inl" data-l="same pairs">${d.digest_match ? "yes" : "<b>NO</b>"}</td></tr>`).join("") +
+        `</tbody></table></div><ul>${[...c.rows, ...c.metapath_rows].map(d => `<li>${esc(d.verdict)}</li>`).join("")}</ul><div class="muted">computed from the files above; also in ${src("compare.md")}</div>`).join("");
+    }).join("")
+    : `<div class="empty">Benchmark results are not loaded on this server. Only the frozen benchmark is ever shown here, never trial or exploratory runs.</div>`;
+  const fx = (x, d = 3) => x === null || x === undefined ? "&mdash;" : x.toFixed(d);
+  const ci = d => !d ? "&mdash;" : `<span class="delta ${d.ci_low > 0 ? "up" : d.ci_high < 0 ? "down" : ""}">${sg(d.mean)}</span> <span class="muted">(${d.ci_low === null ? "n/a" : sg(d.ci_low) + " to " + sg(d.ci_high)}; ${d.wins} of ${d.n})</span>`;
+  const expHtml = (r.experiments || []).map(e => {
+    const tag = `<span class="tag" ${e.exploratory ? 'style="background:#fde68a;color:#78350f"' : ""}>${esc(e.status)}</span>`;
+    if (!e.available) return `<h3>${esc(e.id)} ${esc(e.title)} ${tag}</h3><div class="muted">${esc(e.question)} This result is not loaded on this server.</div>`;
+    const ms = e.metrics;
+    return `<h3>${esc(e.id)} ${esc(e.title)} ${tag}</h3><div class="muted">${esc(e.question)}${e.base ? ` Compared with ${esc(e.base.label)}.` : ""}</div>
+      <div class="tscroll"><table class="stack"><thead><tr><th>run</th>${e.overlap ? "<th>layer removed</th>" : ""}${ms.map(m => `<th>${esc(m[1])}</th><th>vs base</th>`).join("")}${e.overlap ? "<th>gain left</th>" : ""}<th>file</th></tr></thead><tbody>` +
+      e.rows.map(x => `<tr><td><b>${esc(x.label)}</b></td>${e.overlap ? `<td class="inl" data-l="removed">${x.dropped_layers.length ? esc(x.dropped_layers.join(", ")) : "none"}</td>` : ""}${ms.map(m => `<td class="inl" data-l="${esc(m[1])}">${fx(x.means[m[0]])}</td><td class="inl" data-l="vs base">${ci(x.deltas[m[0]])}</td>`).join("")}${e.overlap ? `<td class="inl" data-l="gain left">${x.gain_left === undefined ? "&mdash;" : (100 * x.gain_left).toFixed(0) + "%"}</td>` : ""}<td>${src(x.file)}</td></tr>`).join("") +
+      `</tbody></table></div><ul>${e.sentences.map(t => `<li>${esc(t)}</li>`).join("")}</ul>${e.note_file ? `<div class="muted">full write-up: ${src(e.note_file)}</div>` : ""}`;
+  }).join("");
+  const cal = r.calibration;
+  const calHtml = cal ? `<div class="glossary">${cal.sentences.map(esc).join(" ")}</div>
+    <div class="tscroll"><table class="stack"><thead><tr><th>confidence tenth</th><th>confidence range</th><th>edges</th><th>in Open Targets</th><th>Open Targets score &ge; ${esc(String(cal.ot_threshold))}</th></tr></thead><tbody>${cal.by_decile.map(d => `<tr><td><b>${d.decile}</b>${d.decile === 1 ? ' <span class="muted">least confident</span>' : d.decile === cal.by_decile.length ? ' <span class="muted">most confident</span>' : ""}</td><td class="inl" data-l="range">${d.conf_min.toFixed(3)} &ndash; ${d.conf_max.toFixed(3)}</td><td class="inl" data-l="edges">${num(d.n)}</td>
+      <td class="inl" data-l="in OT"><span class="bar" style="display:inline-block;width:${Math.round(100 * d.in_ot)}px;height:8px;background:var(--uc);opacity:.35;border-radius:4px"></span> ${(100 * d.in_ot).toFixed(1)}%</td>
+      <td class="inl" data-l="OT strong"><span class="bar" style="display:inline-block;width:${Math.round(100 * d.ot_strong)}px;height:8px;background:var(--uc);border-radius:4px"></span> ${(100 * d.ot_strong).toFixed(1)}%</td></tr>`).join("")}</tbody></table></div>
+    <div class="muted">source: ${src("prune_calibration.json")} &middot; ${src("prune_calibration.md")}</div>`
+    : "<div class='muted'>The pruning calibration result is not loaded on this server.</div>";
+  const vd = r.verdicts;
+  const pr = (vd ? `<div class="band"><div class="tile"><b>${num(vd.keep)}</b><span>edges kept</span></div><div class="tile"><b>${num(vd.prune)}</b><span>edges pruned (shown greyed, never deleted)</span></div></div>` : "") +
+    `<h3>Does the confidence mean something? Agreement with Open Targets, which the pruner never saw</h3>${calHtml}`;
+  const iris = r.brief_iris ? `<div class="glossary irisbox"><b>The brief's three IRIs: where they are.</b><table class="stack"><tbody>${r.brief_iris.map(x => `<tr><td class="mono">${esc(x.iri)}</td><td>${esc(x.meaning)}</td><td class="inl" data-l="where">${esc(x.where)}</td><td class="inl" data-l="in the graph">${x.in_graph === true ? "in the loaded graph" : x.in_graph === false ? "in the source card; in the graph from the next rebuild" : x.in_card ? "in the source card" : "missing"}</td></tr>`).join("")}</tbody></table></div>` : "";
+  const sc = r.schema;
+  const schema = sc ? `<div class="band"><div class="tile"><b>${sc.n_classes}</b><span>node classes (BioLink)</span></div><div class="tile"><b>${sc.n_predicates}</b><span>predicates (BioLink)</span></div><div class="tile"><b>${sc.patterns.length}</b><span>subject-predicate-object patterns</span></div></div>
+    <div class="glossary">${esc(sc.note)}. Every class and predicate is a real BioLink term with an IRI; the trial layer's custom tmkg: classes are documented separately.</div>
+    <div class="tscroll"><table class="stack"><thead><tr><th>class</th><th>IRI</th><th>nodes</th><th>properties</th></tr></thead><tbody>${sc.classes.map(c => `<tr><td><b>${esc(c.name)}</b>${(c.terms || []).slice(0, 2).map(t => ` <span class="tag mono" style="font-size:11px">${esc(t)}</span>`).join("")}</td><td class="inl" data-l="IRI"><a href="${esc(safeUrl(c.iri))}" target="_blank" rel="noopener" class="mono" style="font-size:12px">${esc(c.iri)}</a></td><td class="inl" data-l="nodes">${num(c.n_nodes)}</td><td class="inl muted" data-l="properties">${esc(c.properties.join(", "))}</td></tr>`).join("")}</tbody></table></div>
+    <h3>Predicates</h3><div class="tscroll"><table class="stack"><thead><tr><th>predicate</th><th>IRI</th><th>edges</th></tr></thead><tbody>${sc.predicates.map(c => `<tr><td><b>${esc(c.name)}</b> <span class="muted">(${esc(W.predicates[c.name] || c.name.replace(/_/g, " "))})</span></td><td class="inl" data-l="IRI"><a href="${esc(safeUrl(c.iri))}" target="_blank" rel="noopener" class="mono" style="font-size:12px">${esc(c.iri)}</a></td><td class="inl" data-l="edges">${num(c.n_edges)}</td></tr>`).join("")}</tbody></table></div>
+    <details class="ev"><summary>all ${sc.patterns.length} patterns with counts</summary><div class="tscroll"><table>${sc.patterns.map(p => `<tr><td>${esc(p.subject)}</td><td>${esc(p.predicate)}</td><td>${esc(p.object)}</td><td>${num(p.n)}</td></tr>`).join("")}</table></div></details>`
+    : "<div class='muted'>The schema card is not loaded on this server.</div>";
+  const files = r.files.length ? `<table class="stack"><tbody>${r.files.map(f => `<tr><td><a href="/api/file?name=${encodeURIComponent(f.name)}" class="nl">${esc(f.name)}</a> <span class="muted">${f.bytes > 1048576 ? (f.bytes / 1048576).toFixed(0) + " MB" : (f.bytes / 1024).toFixed(0) + " KB"}</span></td><td class="muted inl">${esc(f.what)}</td></tr>`).join("")}</tbody></table>` : "<div class='muted'>No result files are loaded on this server.</div>";
+  $("#numbers").innerHTML = `<section class="card accent"><h2>The numbers behind the four criteria</h2>
+      <div class="glossary">Usability is this app. Accuracy and pruning are the link-prediction comparison and the verdict file. Explainability is the "why" on every row. Standards are the schema below.</div></section>
+    ${r.headline ? `<section class="card"><h2>The result in one paragraph</h2><div class="glossary">${esc(r.headline.text)}</div><div class="muted">computed from ${r.headline.files.map(esc).join(", ")}</div></section>` : ""}
+    <section class="card"><h2>Link prediction: Pharos alone vs the enriched graph (frozen benchmark)</h2><div class="glossary">${esc(B.protocol)} G0 = Pharos alone, G2 = Pharos + enrichment layers, G3 = G2 pruned. Every number links to the result file it was read from.</div>${lp}</section>
+    <section class="card"><h2>Further link-prediction results <span class="tag" style="background:#fde68a;color:#78350f">EXPLORATORY unless marked</span></h2><div class="glossary">Cap-matched check of the frozen result, then diagnostic runs that are not part of the frozen protocol. They are shown next to the frozen R-GCN result, never instead of it; a gain of the path-based model is partly the MONDO disease hierarchy restating known gene-disease links at a neighbouring level.</div>${expHtml || "<div class='muted'>These results are not loaded on this server.</div>"}</section>
+    <section class="card"><h2>Pruning</h2>${pr}</section>
+    <section class="card"><h2>Standards: the schema with IRIs</h2>${iris}${schema}</section>
+    <section class="card"><h2>Downloads</h2><div class="glossary">The files a reviewer can join to a gold set or load into PyG / Neptune.</div>${files}</section>`;
+}
+
+// ---------------------------------------------------------------- Generalization: the machinery is not specific to Pharos
+async function showGeneralization() {
+  $("#generalize").innerHTML = "<div class='banner'>Reading the repository files...</div>";
+  const g = await (await fetch("/api/generalization")).json();
+  const t = g.trial_layer, b = g.byo, a = g.adc;
+  const built = b.built ? `<div class="band"><div class="tile"><b>${b.built.nodes}</b><span>nodes built just now</span></div><div class="tile"><b>${b.built.edges}</b><span>edges, each with its source</span></div>
+      <div class="tile"><b>${b.built.problems.length}</b><span>problems found by the BioLink check</span></div></div>
+      <div class="muted">classes: ${b.built.classes.map(esc).join(", ")} &middot; predicate: ${b.built.predicates.map(esc).join(", ")} &middot; knowledge source: ${b.built.sources.map(esc).join(", ")}</div>`
+    : `<div class="muted">The example could not be built on this server (${esc(b.reason)}). The steps below still apply.</div>`;
+  $("#generalize").innerHTML = `<section class="card accent"><h2>The same machinery on other science</h2>
+      <div class="glossary">Pharos is the core, not the limit: a graph is a set of source cards, and every edge carries where it came from. Three demonstrations, each read from the repository files.</div></section>
+    <section class="card"><h2>1. A second graph: failed clinical-trial programs</h2>
+      <div class="band"><div class="tile"><b>${num(t.programs)}</b><span>failed drug programs</span></div><div class="tile"><b>${num(t.nodes)}</b><span>nodes</span></div><div class="tile"><b>${num(t.edges)}</b><span>edges</span></div>
+      <div class="tile"><b>${num(t.classes)} / ${num(t.predicates)}</b><span>classes / predicates</span></div></div>
+      <div class="muted">${esc(t.shows)}. Counts from <span class="mono">${esc(t.source)}</span>. Ask it in the <a href="#trials" data-go="trials">Failed trials</a> tab.</div></section>
+    <section class="card"><h2>2. Bring your own source: a table becomes a graph in five steps</h2>
+      <div class="glossary"><span class="tag">SYNTHETIC</span> ${esc(b.label[0].toUpperCase() + b.label.slice(1))}. Tutorial: <span class="mono">${esc(b.doc)}</span>; card: <span class="mono">${esc(b.card)}</span>.</div>
+      <ol>${b.steps.map(x => `<li><b>${esc(x.title)}</b>${x.command ? ` <code class="mono">${esc(x.command)}</code>` : ""}</li>`).join("")}</ol>${built}
+      <details class="ev"><summary>the ${g.cards.length} source cards in this repository</summary><div class="tscroll"><table>${g.cards.map(c => `<tr><td class="mono">${esc(c.card)}</td><td>${esc(c.name)}</td><td>${esc(c.layer)}</td></tr>`).join("")}</table></div></details></section>
+    <section class="card"><h2>3. A sponsor's question: planning a pivotal trial</h2>
+      ${a.available ? `<div class="glossary"><span class="tag">SYNTHETIC</span> ${esc(a.label[0].toUpperCase() + a.label.slice(1))}. The public evidence is real and cited; the internal tables are made up to show the join.</div>
+        <div class="muted">${esc(a.title)}</div><blockquote>${esc(a.question)}</blockquote>
+        <div class="muted">The frozen answer has these sections: ${a.sections.map(esc).join("; ")}. Full text: <span class="mono">${esc(a.file)}</span> (${a.synthetic_lines} lines mark synthetic data).</div>`
+      : "<div class='muted'>the ADC example file is not on this server</div>"}</section>`;
+  $("#generalize").querySelectorAll("[data-go]").forEach(x => x.addEventListener("click", e => { e.preventDefault(); tab(x.dataset.go); }));
+}
+
+// ---------------------------------------------------------------- For judges: the brief's agent loop mapped to this repository
+async function showJudges() {
+  $("#judges").innerHTML = "<div class='banner'>Reading docs/AGENT_LOOP.md...</div>";
+  const a = await (await fetch("/api/agent-loop")).json();
+  if (!a.available) { $("#judges").innerHTML = `<div class="empty">${esc(a.doc)} is not on this server.</div>`; return; }
+  $("#judges").innerHTML = `<section class="card accent"><h2>The agent loop in the brief, step by step</h2>
+      <div class="glossary">The organisers ask whether an agent can <b>Ingest, Filter, Clean, Limit and Maintain</b> a knowledge graph. For each step: what it does in plain words, the module, the command, and the test that exercises it. Read from <span class="mono">${esc(a.doc)}</span>; the brief is <span class="mono">${esc(a.brief)}</span>.</div></section>` +
+    a.steps.map((x, i) => `<section class="card"><h2>${i + 1}. ${esc(x.step)}</h2><div class="muted">brief: ${esc(x.brief)}</div><p>${esc(x.plain)}</p>
+      <table class="stack"><tbody><tr><td>module</td><td class="mono">${esc(x.module)} <span class="muted">(${x.functions.map(esc).join(", ")})</span></td></tr>
+      <tr><td>command</td><td class="mono">${esc(x.command)}</td></tr><tr><td>tested by</td><td class="mono">${x.tests.map(esc).join(", ")}</td></tr></tbody></table>
+      ${x.also ? `<div class="muted">${esc(x.also)}</div>` : ""}</section>`).join("") +
+    `<section class="card"><h2>What is autonomous and what is not</h2><ul>${a.honest.map(h => `<li>${esc(h)}</li>`).join("")}</ul></section>`;
+  const dl = await (await fetch("/api/downloads")).json();
+  if (dl.available) $("#judges").insertAdjacentHTML("beforeend", `<section class="card" id="downloads"><h2>Downloads</h2>
+      <div class="glossary">Files that go with the graph: the pruned graph with the trial layer (G4) as load files for Amazon Neptune, the pruned graph as KGX tables, and the verdict for every Pharos edge.</div>
+      <table class="stack"><tbody>${dl.files.map(f => `<tr><td><a href="${esc(safeUrl(f.url))}" class="nl" rel="noopener">${esc(f.title)}</a>${f.folder ? ' <span class="muted">(folder)</span>' : ""}</td>
+        <td class="muted">${esc(f.what)}${f.bytes ? ` &middot; ${f.bytes > 1048576 ? (f.bytes / 1048576).toFixed(0) + " MB" : Math.max(1, Math.round(f.bytes / 1024)) + " KB"}` : ""}${f.sha256 ? ` &middot; sha256 <span class="mono">${esc(String(f.sha256).slice(0, 12))}...</span>` : ""}</td></tr>`).join("")}</tbody></table></section>`);
+}
+
+// ---------------------------------------------------------------- Pharos graph tab
+const why = id => `<a href="#" class="why" data-eid="${esc(id)}">why</a>`;
+const nodeLink = (id, label) => `<a href="#" class="nl" data-nid="${esc(id)}">${esc(label)}</a>${idtag(id)}`;
+const phaseTxt = p => p == null ? "" : ` <span class="muted" style="font-size:11px">max phase ${p}</span>`;
+const hopsTxt = hs => (hs || []).map(h => h.edge ? `${esc(h.statement)} ${why(h.edge)}` : esc(h.statement)).join(" &rarr; ");
+// mechanism neighbours (CC-23): stored edges walked at index-build time; each hop links to "why"
+function mechanismHtml(m) {
+  if (!m) return "";
+  let body = "";
+  if (m.empty) body = `<div class="muted">${esc(m.empty)}</div>`;
+  else if (m.kind === "gene") {
+    const f = m.family;
+    body = `<div class="glossary">Family: <b>${esc(f.name)}</b> (${f.size} proteins; ${esc(f.source)})${f.edge ? " " + why(f.edge) : ""}${m.lead && m.lead.length ? " &middot; " + hopsTxt(m.lead) : ""}. ${m.n_members > m.members.length ? `First ${m.members.length} of ${m.n_members} members with a drug shown.` : `${m.n_members} member${m.n_members === 1 ? "" : "s"} with a drug.`}</div>
+      <table class="stack"><thead><tr><th>family member</th><th>drugs acting on it, and what they treat</th></tr></thead><tbody>` +
+      m.members.map(x => `<tr><td>${nodeLink(x.id, x.label)}${x.family_edge ? " " + why(x.family_edge) : ""}</td><td>${x.drugs.map(d => `<div style="margin-bottom:8px">${nodeLink(d.id, d.label)}${d.action_type ? ` <span class="tech muted">${esc(d.action_type)}</span>` : ""}${phaseTxt(d.max_phase)}<div class="muted" style="font-size:11px">${hopsTxt(d.hops)}</div>` +
+        `<div style="font-size:13px">treats: ${d.indications.length ? d.indications.map(i => `${nodeLink(i.id, i.label)}${phaseTxt(i.max_phase)} ${why(i.edge)}`).join("; ") + (d.n_indications > d.indications.length ? ` <span class="muted">and ${d.n_indications - d.indications.length} more</span>` : "") : "<span class='muted'>no MONDO indication in the loaded layers</span>"}</div></div>`).join("")}${x.n_drugs > x.drugs.length ? `<div class="muted">and ${x.n_drugs - x.drugs.length} more drugs</div>` : ""}</td></tr>`).join("") + "</tbody></table>";
+  } else {
+    body = `<div class="glossary">${m.n_drugs > m.drugs.length ? `First ${m.drugs.length} of ${m.n_drugs} drugs shown.` : `${m.n_drugs} drug${m.n_drugs === 1 ? "" : "s"}.`}</div>
+      <table class="stack"><thead><tr><th>drug</th><th>proteins it acts on</th><th>their family</th></tr></thead><tbody>` +
+      m.drugs.map(d => `<tr><td>${nodeLink(d.id, d.label)}${phaseTxt(d.max_phase)} ${why(d.edge)}</td><td>${d.targets.map(t => `${nodeLink(t.id, t.label)}${t.action_type ? ` <span class="tech muted">${esc(t.action_type)}</span>` : ""}<div class="muted" style="font-size:11px">${hopsTxt(t.hops)}</div>`).join("")}</td>
+        <td>${d.targets.map(t => t.family ? `${esc(t.family.name)} <span class="muted">(${t.family.size})</span>` : "<span class='muted'>no family</span>").join("<br>")}</td></tr>`).join("") + "</tbody></table>";
+  }
+  return `<h3 id="sec-mechanism">${esc(m.header)}</h3><div class="glossary"><b>${esc(m.note)}</b></div>${body}`;
+}
+function wireEdges(root) { root.querySelectorAll("a[data-eid]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); pharosExplain(a.dataset.eid); })); }
+function wireNodes(root) { root.querySelectorAll("[data-nid]").forEach(d => d.addEventListener("click", e => { e.preventDefault(); $("#presults").innerHTML = ""; pharosCard(d.dataset.nid); })); }
+async function pharosStatus() {
+  const r = await fetch("/api/pharos/status");
+  if (!r.ok) { $("#pstatus").innerHTML = `<span class="rejected">${esc((await r.json()).detail)}</span>`; return; }
+  const s = await r.json();
+  $("#pstatus").innerHTML = `Pharos graph: ${num(s.nodes)} nodes, ${num(s.edges)} links from ${esc(s.layers.join(", "))}` +
+    ` &middot; ${num(s.verdicts.keep)} kept, ${num(s.verdicts.prune)} pruned` + (s.predictions ? ` &middot; ${num(s.predictions.rows)} predicted links (${esc(s.predictions.graphs.join(", "))})` : " &middot; no predictions file yet");
+}
+async function pharosFind(q, openFirst, btn) {
+  // typing (openFirst false): a quiet suggestion list; opening (a pill, Find, Go): the status line and the card area respond
+  const st = openFirst ? askBegin("pharos", q, btn, "#pcard", "Opening") : null;
+  let hits;
+  try { hits = await askFetch("/api/pharos/search?q=" + encodeURIComponent(q)); }
+  catch (e) { const m = `Could not look up "${q}": search is not available right now. ` + askMessage(e);           // CC-43: never a silent no-op
+    if (openFirst) { $("#pcard").innerHTML = `<div class="rejected" data-searchfail>${esc(m)}</div>`; st.fail(m); } else $("#presults").innerHTML = `<div class="rejected" data-searchfail>${esc(m)}</div>`; return; }
+  if (openFirst && hits.length) { const exact = hits.find(h => h.label.toLowerCase() === q.toLowerCase()) || hits[0];
+    try { await pharosCard(exact.id); } catch (e) { const m = `Could not open the card of ${exact.label}: ` + askMessage(e); $("#pcard").innerHTML = `<div class="rejected">${esc(m)}</div>`; st.fail(m); return; }
+    if ($("#pcard .empty")) st.fail($("#pcard .empty").textContent); else st.done(`opened the card of ${exact.label}.`); return; }
+  $("#presults").innerHTML = hits.map(h => `<div data-nid="${esc(h.id)}">${esc(h.label)}${idtag(h.id)}<span class="tag">${esc(noun(h.category))}</span></div>`).join("") || "<div class='muted'>No match</div>";
+  wireNodes($("#presults"));
+  if (st) st.fail("no match in the graph. Try another name or a shorter one.");
+}
+$("#pf").addEventListener("submit", e => { e.preventDefault(); const k = $("#presults div.k"); if (k && k.dataset.nid) k.click(); else pharosFind($("#pq").value, true, e.submitter); });
+let tmr = null;
+$("#pq").addEventListener("input", () => { clearTimeout(tmr); const q = $("#pq").value.trim(); if (q.length < 2) { $("#presults").innerHTML = ""; return; } tmr = setTimeout(() => pharosFind(q, false), 220); });
+$("#pq").addEventListener("keydown", e => {
+  const items = [...$("#presults").querySelectorAll("div[data-nid]")]; if (!items.length) return;
+  let i = items.findIndex(d => d.classList.contains("k"));
+  if (e.key === "ArrowDown") { e.preventDefault(); i = Math.min(items.length - 1, i + 1); } else if (e.key === "ArrowUp") { e.preventDefault(); i = Math.max(0, i - 1); }
+  else if (e.key === "Escape") { $("#presults").innerHTML = ""; return; } else return;
+  items.forEach((d, j) => d.classList.toggle("k", j === i)); items[i].scrollIntoView({block: "nearest"}); });
+document.addEventListener("keydown", e => {
+  if (e.key === "/" && !/input|textarea/i.test(document.activeElement.tagName) && !$("#mainview").hidden) { e.preventDefault(); tab("pharos"); $("#pq").focus(); }
+  if (e.key === "Escape") closeDrawer(); });
+
+function kindRow(r) {
+  const other = nodeLink(r.other, r.other_label);
+  const sentence = r.outgoing ? `<b>${esc(r.sentence.split(" " + r.phrase + " ")[0])}</b> ${esc(r.phrase)} ${other}` : `${other} ${esc(r.phrase)} <b>${esc(r.sentence.split(" " + r.phrase + " ").pop())}</b>`;
+  return `<tr><td>${sentence} <span class="tech muted">(${esc(short(r.predicate))})</span></td><td class="muted inl" data-l="source">${safeUrl(r.source_url) ? `<a href="${esc(safeUrl(r.source_url))}" target="_blank" rel="noopener" title="this row on the source site">${esc(r.source || "")}</a>` : esc(r.source || "")} <span style="font-size:11px">${esc(r.layer || "")} ${esc(r.source_version || "")}</span></td>
+    <td class="muted inl" data-l="evidence" title="${esc(r.knowledge_level || "")}">${esc(r.level_words || "")}</td><td class="inl" data-l="verdict">${word(r.word)}${r.confidence != null ? ` <span class="muted" style="font-size:11px">${r.confidence.toFixed(2)}</span>` : ""}</td><td class="inl">${why(r.id)}</td></tr>`;
+}
+async function pharosCard(id, fromRoute) {
+  if (!fromRoute) setHash("pharos/node/" + encodeURIComponent(id));
+  closeDrawer();
+  $("#pcard").innerHTML = `<section class="card accent"><div class="skel" style="width:40%;height:22px"></div><div class="skel" style="width:90%"></div><div class="skel" style="width:70%"></div><div class="skel" style="height:200px"></div></section>`;
+  const r = await fetch("/api/pharos/card/" + encodeURIComponent(id));
+  if (!r.ok) { $("#pcard").innerHTML = `<div class="empty">No entity ${esc(id)} in the loaded graph.</div>`; return; }
+  const c = await r.json(), a = c.about, s = c.summary;
+  step("card"); trail(a.id, a.label);
+  const sec = {};
+  sec.about = `<h3 id="sec-about">What it is</h3><div>${esc(a.label)} is a ${esc(a.type_word)}${a.properties.tdl ? ` with target development level <b>${esc(a.properties.tdl)}</b>` : ""}${a.properties.symbol && a.properties.symbol !== a.label ? ` (symbol ${esc(a.properties.symbol)})` : ""}.` +
+    (Object.keys(a.properties).length ? ` <details class="ev"><summary>all properties (${Object.keys(a.properties).length})</summary><table>${rows(a.properties)}</table></details>` : "") + `</div>` +
+    (c.elapsed_ms !== undefined ? `<div class="elapsed" id="elapsed">card ready in ${c.elapsed_ms < 1000 ? Math.round(c.elapsed_ms) + " ms" : (c.elapsed_ms / 1000).toFixed(1) + " s"}${c.served_from ? " from the " + esc(c.served_from) : ""}</div>` : "");
+  sec.known = `<h3 id="sec-known">Known links, by kind of evidence</h3>` + (c.known.length ? c.known.map(k => `<h3><span class="dot" style="background:${esc(k.color)}"></span>${esc(k.kind)} <span class="muted" style="font-weight:400">${k.n} link${k.n === 1 ? "" : "s"}${k.n_pruned ? `, ${k.n_pruned} pruned` : ""}${k.n > k.rows.length ? `, first ${k.rows.length} shown` : ""}</span></h3>
+      <div class="glossary">${esc(k.meaning)}</div><table class="stack"><thead><tr><th>link</th><th>source</th><th>evidence level</th><th>verdict</th><th></th></tr></thead><tbody>${k.rows.map(kindRow).join("")}</tbody></table>`).join("") : "<div class='muted'>no links in the loaded layers</div>");
+  sec.known += mechanismHtml(c.mechanism_neighbours);
+  sec.predicted = `<h3 id="sec-predicted"><span class="dot" style="background:var(--pred)"></span>Predicted links no source states yet <span class="muted" style="font-weight:400">${c.predicted.length ? "top " + c.predicted.length + " from the link-prediction model" : ""}</span></h3>` +
+    (c.predicted.length ? `<div class="glossary">${esc(W.confidence_words.predicted)}; "known in" names layers that already hold the pair; the paths are the graph's own evidence behind the prediction. Model: ${esc(c.predicted[0].model || "link prediction")}.</div><table class="stack"><thead><tr><th>link</th><th>score</th><th>status</th><th>supporting paths</th></tr></thead><tbody>` +
+      c.predicted.map(x => `<tr><td><b>${esc(a.label)}</b> &harr; ${nodeLink(x.other, x.other_label)}</td><td class="inl" data-l="score">${x.score}</td><td class="inl" data-l="status">${x.known_in.length ? "known in " + esc(x.known_in.join(", ")) : word("predicted")} <span class="tech muted">${esc(x.graph)}/${esc(x.task)}</span></td>
+        <td data-l="supporting paths">${x.paths.map(pa => (pa.shape ? `<div class="muted tech" title="the named meta-path this prediction rests on">${esc(pa.shape)}</div>` : "") + pa.edges.map(e => `${esc(e.statement)} ${why(e.id)}`).join(" &rarr; ")).join("<br>") || "<span class='muted'>no path</span>"}</td></tr>`).join("") + "</tbody></table>"
+     : `<div class="muted">${esc(c.prediction_note || "no prediction involves this node")}</div>`);
+  sec.trials = `<h3 id="sec-trials"><span class="dot" style="background:#1f5fae"></span>Failed trials that mention it</h3><div id="ctrials" class="muted">looking in the trial layer...</div>`;
+  const order = P ? P.card_sections : ["about", "known", "predicted", "trials"];
+  const JUMP = {about: "What it is", known: "Known links", predicted: "Predicted", trials: "Failed trials"};
+  $("#pcard").innerHTML = `<section class="card accent" id="pcardsec"><h2>${esc(a.label)} <span class="tag">${esc(a.type_word)}</span>${a.ids.map(idtag).join("")}
+      <span style="float:right;display:flex;gap:6px"><button type="button" class="secondary small" id="clink" title="copy a link to this card">Link</button><button type="button" class="secondary small" id="cjson">JSON</button></span></h2>
+    <div class="jump">${order.map(k => `<a href="#sec-${k}">${JUMP[k]}</a>`).join("")}</div>
+    <div class="band"><div class="tile"><b>${num(s.known)}</b><span>known links</span></div><div class="tile"><b>${s.kinds}</b><span>kinds of evidence</span></div>
+      <div class="tile"><b>${num(s.kept)}</b><span>kept by pruning</span></div><div class="tile"><b>${num(s.pruned)}</b><span>pruned</span></div>
+      <div class="tile"><b>${s.predicted}</b><span>predicted, in no source yet</span></div><div class="tile" id="ttile"><b>&hellip;</b><span>failed trials</span></div></div>
+    <svg class="graph" id="cg"></svg><div class="legend" id="cl"></div>
+    <div class="glossary">Solid lines are links in the sources (red: pruned); dashed purple lines are predicted. Click a node to open its card.</div>
+    ${order.map(k => sec[k]).join("")}</section>`;
+  $("#cl").innerHTML = legend(drawGraph($("#cg"), c.picture, {center: a.id, onNode: nid => pharosCard(nid)})) + `<span><i style="background:var(--pred)"></i>predicted</span>`;
+  wireEdges($("#pcard")); wireNodes($("#pcard"));
+  $("#cjson").addEventListener("click", () => { const el = document.createElement("a");
+    el.href = URL.createObjectURL(new Blob([JSON.stringify(c, null, 1)], {type:"application/json"})); el.download = `${a.label}_card.json`; el.click(); });
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { const m = {"sec-predicted": "pred", "sec-trials": "trials"}[e.target.id]; if (m && !DONE.has(m)) step(m); } }), {threshold: .4});
+  ["sec-predicted", "sec-trials"].forEach(i => { const el = document.getElementById(i); if (el) io.observe(el); });
+  $("#clink").addEventListener("click", () => { const u = `${location.origin}${location.pathname}?persona=${encodeURIComponent(P ? P.id : "")}&node=${encodeURIComponent(a.id)}`;
+    (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(() => toast("Link copied"), () => prompt("Link to this card", u)); });
+  $("#pcardsec").scrollIntoView({behavior: "smooth", block: "start"});
+  const names = [a.label, a.properties.symbol].filter(Boolean);
+  const t = await (await fetch(`/api/trials_for?ids=${encodeURIComponent(a.ids.join(","))}&names=${encodeURIComponent(names.join(","))}`)).json();
+  $("#ttile").innerHTML = `<b>${t.trials.length}</b><span>failed trials</span>`;
+  $("#ctrials").innerHTML = t.trials.length ? `<table class="stack"><tbody>${t.trials.map(x => `<tr><td><a href="#" class="nl" data-trial="${esc(x.label)}">${esc(x.label)}</a> <span class="muted">(${esc(noun(x.category))})</span></td><td class="muted inl" data-l="via">${esc(x.via.join(" &rarr; "))}</td></tr>`).join("")}</tbody></table>` : "none in the trial layer (34 programs)";
+  $("#ctrials").querySelectorAll("a[data-trial]").forEach(el => el.addEventListener("click", e => { e.preventDefault(); tab("trials");
+    ask(`Why did ${el.dataset.trial} fail, and what did the evidence support afterwards?`); }));
+}
+const DSTACK = [];
+function openDrawer() { $("#overlay").hidden = false; $("#drawer").hidden = false; requestAnimationFrame(() => { $("#overlay").classList.add("on"); $("#drawer").classList.add("on"); }); }
+function closeDrawer() { if ($("#drawer").hidden) return; $("#overlay").classList.remove("on"); $("#drawer").classList.remove("on"); DSTACK.length = 0; $("#dback").hidden = true;
+  setTimeout(() => { $("#overlay").hidden = true; $("#drawer").hidden = true; }, 220); }
+$("#overlay").addEventListener("click", closeDrawer); $("#dclose").addEventListener("click", closeDrawer);
+$("#dback").addEventListener("click", () => { DSTACK.pop(); const prev = DSTACK.pop(); if (prev) pharosExplain(prev); });
+async function pharosExplain(id) {
+  const r = await fetch("/api/pharos/explain/" + encodeURIComponent(id));
+  if (!r.ok) return;
+  const x = await r.json(), v = x.verdict;
+  const vb = c => c.verdict ? word(c.verdict === "prune" ? "pruned" : "kept") : word("unscored");
+  step("why"); DSTACK.push(id); $("#dback").hidden = DSTACK.length < 2; openDrawer();
+  $("#pexplain").innerHTML = `<p><b>${esc(x.subject.name || x.subject.id)}</b> ${esc(W.predicates[short(x.predicate)] || short(x.predicate))} <b>${esc(x.object.name || x.object.id)}</b>${idtag(x.id)}</p>
+    <p>${v ? `${word(v.verdict === "prune" ? "pruned" : "kept")} with confidence ${esc(v.confidence)}${v.reasons ? ` &mdash; ${esc(v.reasons)}` : ""}` : word("unscored")}</p>
+    <h3>Where it comes from</h3><div class="tscroll"><table>${rows(x.provenance)}</table></div>
+    ${Object.keys(x.properties).length ? `<h3>Measured values</h3><table>${rows(x.properties)}</table>` : ""}
+    <h3>The same pair in other sources (${x.corroboration.length})</h3>` +
+    (x.corroboration.length ? x.corroboration.map(c => `<div style="display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;padding:8px 0;border-top:1px solid var(--line)"><span>${esc(c.source || "")} <span class="muted">${esc(c.layer)} ${esc(c.source_version || "")}</span></span><span class="muted">${esc(W.knowledge_levels[c.knowledge_level] || c.knowledge_level || "")}</span><span>${vb(c)}</span><span style="margin-left:auto">${why(c.id)}</span></div>`).join("") : "<div class='muted'>none</div>") +
+    `<h3>Timeline</h3>${timelineSvg(x.timeline.events)}<div class="muted">first seen ${esc(x.timeline.summary.first_seen)} &middot; last confirmed ${esc(x.timeline.summary.last_confirmed)} &middot; ${x.timeline.summary.n_supporting} supporting, ${x.timeline.summary.n_contradicting} contradicting &middot; trend ${esc(x.timeline.summary.trend)}</div>
+    ${x.timeline.events.map(e => `<div style="display:flex;flex-wrap:wrap;gap:2px 10px;padding:8px 0;border-top:1px solid var(--line)"><b style="min-width:60px">${esc(e.date)}</b><span>${esc(e.source)}</span><span class="muted">${esc(String(e.event).replace(/_/g, " "))}</span><span class="muted mono" style="font-size:11px;word-break:break-all;flex-basis:100%">${esc(e.reference || "")}</span></div>`).join("")}`;
+  wireEdges($("#pexplain")); $("#drawer .dbody").scrollTop = 0;
+}
+// a drawn timeline: one dot per dated event on a year axis (green supports, red contradicts, grey neutral)
+function timelineSvg(events) {
+  const pts = (events || []).map(e => { const m = /^(\d{4})(?:-(\d{2}))?/.exec(e.date || ""); return m ? { t: +m[1] + (m[2] ? (+m[2] - 1) / 12 : 0), e } : null; }).filter(Boolean);
+  if (!pts.length) return "";
+  let lo = Math.floor(Math.min(...pts.map(p => p.t))), hi = Math.ceil(Math.max(...pts.map(p => p.t)));
+  if (hi - lo < 2) { lo -= 1; hi += 1; }
+  const W = 560, L = 24, R = 24, x = t => L + (W - L - R) * (t - lo) / (hi - lo);
+  const col = d => d === "supports" ? "var(--teal)" : d === "contradicts" ? "var(--rose)" : "var(--c-unspecified)";
+  const mark = (d, cx, cy, t) => d === "supports" ? `<circle cx="${cx}" cy="${cy}" r="5" fill="${col(d)}">${t}</circle>`
+    : d === "contradicts" ? `<path d="M${cx} ${cy - 6.5}L${cx + 6.5} ${cy}L${cx} ${cy + 6.5}L${cx - 6.5} ${cy}Z" fill="${col(d)}">${t}</path>`
+    : `<rect x="${cx - 4.5}" y="${cy - 4.5}" width="9" height="9" fill="none" stroke="${col(d)}" stroke-width="2">${t}</rect>`;
+  const step = Math.max(1, Math.ceil((hi - lo) / 6)), ticks = [];
+  for (let y = lo; y <= hi; y += step) ticks.push(y);
+  const lanes = {}; // stack events that fall in the same spot
+  const dots = pts.map(p => { const k = Math.round(x(p.t) / 8); lanes[k] = (lanes[k] || 0) + 1; const yy = 34 - 11 * (lanes[k] - 1);
+    return mark(p.e.direction, x(p.t).toFixed(1), Math.max(7, yy), `<title>${esc(p.e.date)} ${esc(p.e.source)} (${esc(p.e.event)}, ${esc(p.e.direction)})</title>`); }).join("");
+  return `<svg viewBox="0 0 ${W} 64" width="100%" style="max-width:${W}px;display:block;margin:4px 0 6px" role="img" aria-label="${esc(`timeline of ${pts.length} dated events from ${lo} to ${hi}: ` + [["supports", "support"], ["contradicts", "contradict"]].map(([k, w]) => pts.filter(p => p.e.direction === k).length + " " + w).join(", ") + ", " + pts.filter(p => p.e.direction !== "supports" && p.e.direction !== "contradicts").length + " seen but not counted")}">
+    <line x1="${L}" y1="44" x2="${W - R}" y2="44" stroke="currentColor" stroke-opacity=".35"/>
+    ${ticks.map(y => `<line x1="${x(y)}" y1="41" x2="${x(y)}" y2="47" stroke="currentColor" stroke-opacity=".35"/><text x="${x(y)}" y="60" font-size="10" text-anchor="middle" fill="currentColor" fill-opacity=".6">${y}</text>`).join("")}
+    ${dots}</svg><div class="muted" style="font-size:12px"><span style="color:var(--teal)">&#9679;</span> circle: supports &nbsp;<span style="color:var(--rose)">&#9670;</span> diamond: contradicts &nbsp;<span style="color:var(--c-unspecified)">&#9633;</span> open square: seen, not counted (pruned or neutral)</div>`;
+}
+// download the nodes and edges behind an answer: KGX tables + PyG-ready tables in one zip
+async function downloadSubgraph(edges, title) {
+  const r = await fetch("/api/pharos/subgraph.zip", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({edges, title})});
+  if (!r.ok) { alert((await r.json()).detail || "download failed"); return; }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(await r.blob()); a.download = "trialmindkg_pharos_subgraph.zip"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+const ANSWERS = {};
+function subgraphButton(r) {
+  if (!r.evidence || !r.evidence.length) return "";
+  const k = "a" + Object.keys(ANSWERS).length; ANSWERS[k] = r;
+  return `<button type="button" class="secondary" data-sub="${k}" style="margin-top:8px">Download these ${r.evidence.length} links (KGX + PyG)</button>`;
+}
+function wireSub(root) { root.querySelectorAll("button[data-sub]").forEach(b => b.addEventListener("click", () => { const r = ANSWERS[b.dataset.sub]; downloadSubgraph(r.evidence, r.question); })); }
+function answerTable(r) {
+  if (r.problems && r.problems.length) return `<div class="rejected">Question not accepted: ${esc(r.problems.join("; "))}</div>`;
+  if (!r.rows.length) return "<div class='muted'>No rows</div>";
+  const cell = v => Array.isArray(v) ? v.map(cell).join(", ") : (/^e[0-9a-f]{16}$/.test(String(v)) ? why(v) : esc(v));
+  return `<div class="tscroll"><table><tr>${r.columns.map(c => `<th>${esc(c.replace(/_/g, " "))}</th>`).join("")}</tr>` +
+    r.rows.map(row => `<tr>${r.columns.map(c => `<td>${cell(row[c])}</td>`).join("")}</tr>`).join("") + `</table></div>
+    ${subgraphButton(r)}
+    <details class="ev"><summary>the exact question the graph answered</summary><div class="mono muted" style="font-size:12px">${esc(r.cypher)}</div></details>`;
+}
+const answerLabel = l => l && l.text ? `<div class="answerlabel ${esc(l.kind)}" role="status"><b>${l.kind === "cached" ? "Stored answer" : "Not the hosted model"}.</b> ${esc(l.text)}</div>` : "";
+async function pharosAsk(q, btn) {
+  if (!q || !q.trim()) { toast("Type a question first"); return; }
+  const st = askBegin("pharos", q, btn, "#pansw");
+  $("#pansw").innerHTML = "<div class='banner'>Working...</div>";
+  const sel = $("#backendsel"), backend = sel && sel.value ? sel.value : "local";
+  let r;
+  try { r = await askFetch("/api/pharos/ask", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({question: q, backend})}); }
+  catch (e) { const m = askMessage(e); $("#pansw").innerHTML = `<div class="muted">${esc(q)}</div><div class="rejected" data-askfail-msg>${esc(m)}</div>`; st.fail(m); return; }
+  st.done(rowsLine(r));
+  $("#pansw").innerHTML = answerLabel(r.label) + `<div class="muted" style="font-size:13px">${r.rows ? r.rows.length + " rows" : ""} &middot; entities found: ${esc((r.entities || []).join(", ") || "none")} <span class="tech">&middot; model ${esc(r.backend)} &middot; graph ${esc(r.graph_backend || "local")}</span></div>` + answerTable(r);
+  wireEdges($("#pansw")); wireSub($("#pansw"));
+}
+$("#pask").addEventListener("submit", e => { e.preventDefault(); pharosAsk($("#pquestion").value, e.submitter); });
+// the strip of tested questions: each runs its fixed query and shows whether the answer has the expected shape
+const demoHtml = (d, open = true) => `<details ${open || !d.passed ? "open" : ""}><summary><b>${esc(d.question)}</b> <span class="${d.passed ? "muted" : "rejected"}">${d.passed ? "&#10003; check passed: " + d.rows.length + " rows" : "check failed: " + esc(d.note)}</span></summary>
+    <div class="muted">${esc(d.why)}</div>${answerTable(d)}</details>`;
+async function runDemo(id, label, btn) {
+  $("#pquestion").value = label;
+  const st = askBegin("pharos", label, btn, "#pansw", "Running the tested question");
+  $("#pansw").innerHTML = "<div class='banner'>Running...</div>";
+  let d;
+  try { d = await askFetch("/api/pharos/demo/" + encodeURIComponent(id)); }
+  catch (e) { const m = askMessage(e); $("#pansw").innerHTML = `<div class="muted">${esc(label)}</div><div class="rejected" data-askfail-msg>${esc(m)}</div>`; st.fail(m); return; }
+  $("#pansw").innerHTML = demoHtml(d); wireEdges($("#pansw")); wireSub($("#pansw"));
+  st.done((d.passed ? "check passed, " : `check failed (${d.note}), `) + rowsLine(d));
+}
+async function loadStrip() {
+  try { const qs = await (await fetch("/api/pharos/demo_questions")).json();
+    $("#pstrip").innerHTML = qs.map(q => `<button type="button" class="pill" data-demo="${esc(q.id)}" title="${esc(q.why)}"><span class="t">tested</span>${esc(q.question)}</button>`).join("");
+    $("#pstrip").querySelectorAll("[data-demo]").forEach(b => b.addEventListener("click", () => runDemo(b.dataset.demo, b.textContent.replace(/^tested/, ""), b)));
+  } catch (e) {}
+}
+$("#pdemo").addEventListener("click", async () => {
+  const st = askBegin("pharos", "the 5 demo questions", $("#pdemo"), "#pansw", "Running");
+  $("#pansw").innerHTML = "<div class='banner'>Running the demo questions...</div>";
+  let demos;
+  try { demos = await askFetch("/api/pharos/demo"); }
+  catch (e) { const m = askMessage(e); $("#pansw").innerHTML = `<div class="rejected" data-askfail-msg>${esc(m)}</div>`; st.fail(m); return; }
+  const ok = demos.filter(d => d.passed).length;
+  $("#pansw").innerHTML = `<div class="banner">${ok} of ${demos.length} checks passed</div>` + demos.map(d => demoHtml(d, false)).join("");
+  wireEdges($("#pansw")); wireSub($("#pansw")); st.done(`${ok} of ${demos.length} checks passed`); });
+
+loadPersonas(); loadStatus(); loadStrip(); askQuota();
+</script>
+</body>
+</html>

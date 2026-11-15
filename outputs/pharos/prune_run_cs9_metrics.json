@@ -1,0 +1,57 @@
+{
+ "auprc_by_trust_weight": {
+  "0.0": 0.005304512441463199,
+  "0.1": 0.005160533934032295,
+  "0.2": 0.004885907086207239
+ },
+ "auprc_corroboration": 0.0027474161474292436,
+ "auprc_errors": 0.004885907086207239,
+ "auprc_learned": 0.00534066903911489,
+ "auprc_plausibility": 0.003938382208008394,
+ "auprc_plausibility_only": 0.00534066903911489,
+ "auprc_trust": 0.0018171985957229466,
+ "error_base_rate": 0.0018330039070992372,
+ "f1": 0.018117720558704094,
+ "n_edges": 26462802,
+ "n_hard_pruned": 19165,
+ "n_injected": 48699,
+ "n_protected": 35310,
+ "n_protected_below_threshold": 11,
+ "precision": 0.010719350653269365,
+ "pruned_by_predicate": {
+  "biolink:actively_involved_in": 0.008,
+  "biolink:capable_of": 0.008,
+  "biolink:directly_physically_interacts_with": 0.008,
+  "biolink:gene_associated_with_condition": 0.001,
+  "biolink:genetically_associated_with": 0.001,
+  "biolink:has_gene_product": 0.0,
+  "biolink:has_phenotype": 0.0,
+  "biolink:located_in": 0.013,
+  "biolink:physically_interacts_with": 0.02
+ },
+ "pruned_real_fraction": 0.009698103776009812,
+ "recall": 0.05847977283015762,
+ "recall_by_predicate": {
+  "biolink:actively_involved_in": 0.202,
+  "biolink:capable_of": 0.144,
+  "biolink:directly_physically_interacts_with": 0.242,
+  "biolink:gene_associated_with_condition": 0.005,
+  "biolink:genetically_associated_with": 0.0,
+  "biolink:has_gene_product": 0.979,
+  "biolink:has_phenotype": 0.0,
+  "biolink:located_in": 0.14,
+  "biolink:physically_interacts_with": 0.098
+ },
+ "settings": {
+  "plausibility_by": "all",
+  "protect_curated_corroborated": true,
+  "svd_k": 32,
+  "trust_weight": 0.2,
+  "version": "v1.1"
+ },
+ "threshold": 0.3040655844630597,
+ "weights": {
+  "corroboration": 0.600796068780985,
+  "plausibility": 2.7490872311929735
+ }
+}

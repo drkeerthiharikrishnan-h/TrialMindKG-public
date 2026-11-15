@@ -1,0 +1,364 @@
+{
+  "settings": {
+    "epochs": 300,
+    "hidden": 64,
+    "seeds": 1,
+    "max_edges_per_type": 1000000,
+    "sample_fraction": null,
+    "wiring": {
+      "reverse_edges": true,
+      "learn_embeddings": true,
+      "num_bases": 30,
+      "neg_pool": "training",
+      "positives": "assertions",
+      "baselines": true,
+      "min_type_edges": 0,
+      "metapaths": true,
+      "metapath_len": 3,
+      "neg_match": "degree",
+      "strata": true,
+      "keep_layers": [],
+      "drop_layers": [],
+      "shuffle_layers": [],
+      "random_drop": 0.0,
+      "keep_whole": [
+        "has_gene_product"
+      ],
+      "test_levels": [
+        "knowledge_assertion"
+      ],
+      "drop_levels": [
+        "text_co_occurrence"
+      ]
+    },
+    "tag": "diag_gnnpath_1m_gpu",
+    "test_set": {
+      "from": "G0",
+      "digest": "24f5864cc07ad723",
+      "layer": "pharos",
+      "excluded_knowledge_levels": [
+        "text_co_occurrence"
+      ],
+      "included_knowledge_levels": [
+        "knowledge_assertion"
+      ]
+    },
+    "gnnpath": {
+      "fit_frac": 0.1,
+      "head": "logistic",
+      "l2": 1.0,
+      "encoder": "R-GCN (run.py's own)",
+      "note": "EXPLORATORY (ledger E008); auroc = plain R-GCN on the smaller graph, auroc_gnnpath = logistic head on GNN pair vector + meta-path counts"
+    }
+  },
+  "per_seed": [
+    {
+      "auroc": 0.5667764375353455,
+      "auprc": 0.5612509771972334,
+      "gnnpath_fit_pairs": 3094.4,
+      "auroc_gnnpath": 0.7916027461703747,
+      "auroc_gnnhead": 0.556227679632587,
+      "auroc_pathhead": 0.789783102554666,
+      "gnnpath_n_path_features": 200.0,
+      "stratum_gnnpath_disease_1-5_n": 1841.0,
+      "stratum_gnnpath_disease_1-5": 0.8739870160735974,
+      "stratum_gnnpath_disease_101-500_n": 2131.2,
+      "stratum_gnnpath_disease_101-500": 0.802739874837757,
+      "stratum_gnnpath_disease_21-100_n": 2329.6,
+      "stratum_gnnpath_disease_21-100": 0.8186404496031473,
+      "stratum_gnnpath_disease_6-20_n": 1375.8,
+      "stratum_gnnpath_disease_6-20": 0.8595811876224474,
+      "stratum_gnnpath_disease_>500_n": 225.0,
+      "stratum_gnnpath_disease_>500": 0.8900770128035986,
+      "stratum_gnnpath_gene_1-5_n": 2857.0,
+      "stratum_gnnpath_gene_1-5": 0.7775950415930021,
+      "stratum_gnnpath_gene_101-500_n": 146.6,
+      "stratum_gnnpath_gene_101-500": 0.7679455199358066,
+      "stratum_gnnpath_gene_21-100_n": 1800.0,
+      "stratum_gnnpath_gene_21-100": 0.7991027127428418,
+      "stratum_gnnpath_gene_6-20_n": 3099.0,
+      "stratum_gnnpath_gene_6-20": 0.8099163579252865,
+      "n_test": 7902.6,
+      "n_test_missing_node": 0.0,
+      "n_train_task": 41792.0,
+      "n_leak_edges_removed": 10047.8,
+      "folds": [
+        {
+          "auroc": 0.5661234289423506,
+          "auprc": 0.5588536920001743,
+          "gnnpath_fit_pairs": 3119,
+          "auroc_gnnpath": 0.7927230313602986,
+          "auroc_gnnhead": 0.5585637875775894,
+          "auroc_pathhead": 0.790198466469228,
+          "gnnpath_n_path_features": 200,
+          "stratum_gnnpath_disease_1-5_n": 1820,
+          "stratum_gnnpath_disease_1-5": 0.8672174254317111,
+          "stratum_gnnpath_disease_101-500_n": 2137,
+          "stratum_gnnpath_disease_101-500": 0.819593020798731,
+          "stratum_gnnpath_disease_21-100_n": 2351,
+          "stratum_gnnpath_disease_21-100": 0.8196792553771791,
+          "stratum_gnnpath_disease_6-20_n": 1308,
+          "stratum_gnnpath_disease_6-20": 0.8636513480907893,
+          "stratum_gnnpath_disease_>500_n": 234,
+          "stratum_gnnpath_disease_>500": 0.88614946307254,
+          "stratum_gnnpath_gene_1-5_n": 2866,
+          "stratum_gnnpath_gene_1-5": 0.7760502978102147,
+          "stratum_gnnpath_gene_101-500_n": 152,
+          "stratum_gnnpath_gene_101-500": 0.7420792936288089,
+          "stratum_gnnpath_gene_21-100_n": 1778,
+          "stratum_gnnpath_gene_21-100": 0.8099952424394645,
+          "stratum_gnnpath_gene_6-20_n": 3054,
+          "stratum_gnnpath_gene_6-20": 0.8092149645177463,
+          "n_test": 7850,
+          "n_test_missing_node": 0,
+          "n_train_task": 41945,
+          "n_leak_edges_removed": 9950
+        },
+        {
+          "auroc": 0.5633593202255753,
+          "auprc": 0.5547598090293675,
+          "gnnpath_fit_pairs": 3073,
+          "auroc_gnnpath": 0.7876716506630087,
+          "auroc_gnnhead": 0.5491108215211096,
+          "auroc_pathhead": 0.7858627038561194,
+          "gnnpath_n_path_features": 200,
+          "stratum_gnnpath_disease_1-5_n": 1878,
+          "stratum_gnnpath_disease_1-5": 0.8727063322751755,
+          "stratum_gnnpath_disease_101-500_n": 2155,
+          "stratum_gnnpath_disease_101-500": 0.7877285328998014,
+          "stratum_gnnpath_disease_21-100_n": 2364,
+          "stratum_gnnpath_disease_21-100": 0.8226547894102456,
+          "stratum_gnnpath_disease_6-20_n": 1476,
+          "stratum_gnnpath_disease_6-20": 0.8467503543599122,
+          "stratum_gnnpath_disease_>500_n": 227,
+          "stratum_gnnpath_disease_>500": 0.8856566205437715,
+          "stratum_gnnpath_gene_1-5_n": 2946,
+          "stratum_gnnpath_gene_1-5": 0.7789812690893655,
+          "stratum_gnnpath_gene_101-500_n": 161,
+          "stratum_gnnpath_gene_101-500": 0.7978858840322518,
+          "stratum_gnnpath_gene_21-100_n": 1874,
+          "stratum_gnnpath_gene_21-100": 0.7805651452386132,
+          "stratum_gnnpath_gene_6-20_n": 3119,
+          "stratum_gnnpath_gene_6-20": 0.8083208121247171,
+          "n_test": 8100,
+          "n_test_missing_node": 0,
+          "n_train_task": 41552,
+          "n_leak_edges_removed": 10371
+        },
+        {
+          "auroc": 0.575738218208687,
+          "auprc": 0.5697510517551166,
+          "gnnpath_fit_pairs": 3089,
+          "auroc_gnnpath": 0.7956950563058137,
+          "auroc_gnnhead": 0.5630588245274784,
+          "auroc_pathhead": 0.7921855927956349,
+          "gnnpath_n_path_features": 200,
+          "stratum_gnnpath_disease_1-5_n": 1829,
+          "stratum_gnnpath_disease_1-5": 0.8762178868428313,
+          "stratum_gnnpath_disease_101-500_n": 2066,
+          "stratum_gnnpath_disease_101-500": 0.8044188441638889,
+          "stratum_gnnpath_disease_21-100_n": 2246,
+          "stratum_gnnpath_disease_21-100": 0.8135811245320661,
+          "stratum_gnnpath_disease_6-20_n": 1354,
+          "stratum_gnnpath_disease_6-20": 0.8699798616277826,
+          "stratum_gnnpath_disease_>500_n": 228,
+          "stratum_gnnpath_disease_>500": 0.9045283164050477,
+          "stratum_gnnpath_gene_1-5_n": 2756,
+          "stratum_gnnpath_gene_1-5": 0.7763242778389833,
+          "stratum_gnnpath_gene_101-500_n": 137,
+          "stratum_gnnpath_gene_101-500": 0.7680217379721882,
+          "stratum_gnnpath_gene_21-100_n": 1708,
+          "stratum_gnnpath_gene_21-100": 0.8068087084336556,
+          "stratum_gnnpath_gene_6-20_n": 3122,
+          "stratum_gnnpath_gene_6-20": 0.8148466730495613,
+          "n_test": 7723,
+          "n_test_missing_node": 0,
+          "n_train_task": 41998,
+          "n_leak_edges_removed": 9882
+        },
+        {
+          "auroc": 0.5626626149732253,
+          "auprc": 0.5595101049657546,
+          "gnnpath_fit_pairs": 3079,
+          "auroc_gnnpath": 0.7908745805768458,
+          "auroc_gnnhead": 0.5527814725093718,
+          "auroc_pathhead": 0.7896844641045144,
+          "gnnpath_n_path_features": 200,
+          "stratum_gnnpath_disease_1-5_n": 1828,
+          "stratum_gnnpath_disease_1-5": 0.8760447141236013,
+          "stratum_gnnpath_disease_101-500_n": 2111,
+          "stratum_gnnpath_disease_101-500": 0.7994511616196409,
+          "stratum_gnnpath_disease_21-100_n": 2356,
+          "stratum_gnnpath_disease_21-100": 0.8201645691670438,
+          "stratum_gnnpath_disease_6-20_n": 1399,
+          "stratum_gnnpath_disease_6-20": 0.8590502457335757,
+          "stratum_gnnpath_disease_>500_n": 215,
+          "stratum_gnnpath_disease_>500": 0.864835045970795,
+          "stratum_gnnpath_gene_1-5_n": 2884,
+          "stratum_gnnpath_gene_1-5": 0.7794392900906238,
+          "stratum_gnnpath_gene_101-500_n": 146,
+          "stratum_gnnpath_gene_101-500": 0.7839650966410209,
+          "stratum_gnnpath_gene_21-100_n": 1815,
+          "stratum_gnnpath_gene_21-100": 0.7989812474861311,
+          "stratum_gnnpath_gene_6-20_n": 3064,
+          "stratum_gnnpath_gene_6-20": 0.8067146948646456,
+          "n_test": 7909,
+          "n_test_missing_node": 0,
+          "n_train_task": 41752,
+          "n_leak_edges_removed": 10003
+        },
+        {
+          "auroc": 0.5659986053268894,
+          "auprc": 0.5633802282357541,
+          "gnnpath_fit_pairs": 3112,
+          "auroc_gnnpath": 0.7910494119459064,
+          "auroc_gnnhead": 0.5576234920273858,
+          "auroc_pathhead": 0.7909842855478331,
+          "gnnpath_n_path_features": 200,
+          "stratum_gnnpath_disease_1-5_n": 1850,
+          "stratum_gnnpath_disease_1-5": 0.8777487216946677,
+          "stratum_gnnpath_disease_101-500_n": 2187,
+          "stratum_gnnpath_disease_101-500": 0.8025078147067229,
+          "stratum_gnnpath_disease_21-100_n": 2331,
+          "stratum_gnnpath_disease_21-100": 0.817122509529202,
+          "stratum_gnnpath_disease_6-20_n": 1342,
+          "stratum_gnnpath_disease_6-20": 0.858474128300177,
+          "stratum_gnnpath_disease_>500_n": 221,
+          "stratum_gnnpath_disease_>500": 0.909215618025839,
+          "stratum_gnnpath_gene_1-5_n": 2833,
+          "stratum_gnnpath_gene_1-5": 0.7771800731358234,
+          "stratum_gnnpath_gene_101-500_n": 137,
+          "stratum_gnnpath_gene_101-500": 0.7477755874047631,
+          "stratum_gnnpath_gene_21-100_n": 1825,
+          "stratum_gnnpath_gene_21-100": 0.7991632201163446,
+          "stratum_gnnpath_gene_6-20_n": 3136,
+          "stratum_gnnpath_gene_6-20": 0.8104846450697626,
+          "n_test": 7931,
+          "n_test_missing_node": 0,
+          "n_train_task": 41713,
+          "n_leak_edges_removed": 10033
+        }
+      ],
+      "test_from": "G0",
+      "test_set_digest": "24f5864cc07ad723"
+    }
+  ],
+  "summary": {
+    "auroc": {
+      "mean": 0.5668,
+      "ci95": 0.0
+    },
+    "auprc": {
+      "mean": 0.5613,
+      "ci95": 0.0
+    },
+    "gnnpath_fit_pairs": {
+      "mean": 3094.4,
+      "ci95": 0.0
+    },
+    "auroc_gnnpath": {
+      "mean": 0.7916,
+      "ci95": 0.0
+    },
+    "auroc_gnnhead": {
+      "mean": 0.5562,
+      "ci95": 0.0
+    },
+    "auroc_pathhead": {
+      "mean": 0.7898,
+      "ci95": 0.0
+    },
+    "gnnpath_n_path_features": {
+      "mean": 200.0,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_1-5_n": {
+      "mean": 1841.0,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_1-5": {
+      "mean": 0.874,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_101-500_n": {
+      "mean": 2131.2,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_101-500": {
+      "mean": 0.8027,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_21-100_n": {
+      "mean": 2329.6,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_21-100": {
+      "mean": 0.8186,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_6-20_n": {
+      "mean": 1375.8,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_6-20": {
+      "mean": 0.8596,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_>500_n": {
+      "mean": 225.0,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_disease_>500": {
+      "mean": 0.8901,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_1-5_n": {
+      "mean": 2857.0,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_1-5": {
+      "mean": 0.7776,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_101-500_n": {
+      "mean": 146.6,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_101-500": {
+      "mean": 0.7679,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_21-100_n": {
+      "mean": 1800.0,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_21-100": {
+      "mean": 0.7991,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_6-20_n": {
+      "mean": 3099.0,
+      "ci95": 0.0
+    },
+    "stratum_gnnpath_gene_6-20": {
+      "mean": 0.8099,
+      "ci95": 0.0
+    },
+    "n_test": {
+      "mean": 7902.6,
+      "ci95": 0.0
+    },
+    "n_test_missing_node": {
+      "mean": 0.0,
+      "ci95": 0.0
+    },
+    "n_train_task": {
+      "mean": 41792.0,
+      "ci95": 0.0
+    },
+    "n_leak_edges_removed": {
+      "mean": 10047.8,
+      "ci95": 0.0
+    }
+  }
+}

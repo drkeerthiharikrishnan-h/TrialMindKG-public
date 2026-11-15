@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,FATIGUE,15729
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,WHITE BLOOD CELL COUNT DECREASED,11437
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,NEOPLASM PROGRESSION,10619
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,NAUSEA,8548
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,DEATH,7897
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,NEUTROPENIA,6728
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,ALOPECIA,6369
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,DIARRHOEA,5984
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,ASTHENIA,3797
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,OFF LABEL USE,3669
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,DECREASED APPETITE,3488
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,PAIN,3483
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,MALAISE,3353
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,DYSPNOEA,3293
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,VOMITING,3161
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,ARTHRALGIA,3100
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,STOMATITIS,2817
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,CONSTIPATION,2790
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,HEADACHE,2771
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,DIZZINESS,2533
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,MALIGNANT NEOPLASM PROGRESSION,2388
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,COUGH,2331
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,RASH,2325
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,PLATELET COUNT DECREASED,2308
+PALBOCICLIB,patient.drug.openfda.generic_name,94825,NEUTROPHIL COUNT DECREASED,2284

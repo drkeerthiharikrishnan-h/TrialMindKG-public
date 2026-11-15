@@ -1,0 +1,35 @@
+# TrialMindKG demo query - TUB-040 (NaPi2b ADC)
+
+*Evidence as of 2026-10-05 (newest source record in the graph). Internal layer: data/synthetic - SYNTHETIC, not sponsor data.*
+
+## Question
+
+> We are planning the registrational trial of TUB-040 in platinum-resistant ovarian cancer. Two NaPi2b ADCs failed before us. What killed them, do our phase 1b data show the same risks, and what should we change in patient selection, sample size and safety monitoring?
+
+Evidence tags: **[EXT]** public source (identifier given) · **[INT]** sponsor internal table (in this demo: SYNTHETIC) · **[KG]** derived by joining both layers.
+
+## 1. What killed the previous NaPi2b ADCs
+
+- **Lifastuzumab vedotin** (Genentech, MMAE payload): phase 2 NCT01991210 is *TERMINATED*; the registry gives the reason as: "The primary objective of PFS did not meet pre-specified criteria." [EXT: ClinicalTrials.gov]
+- **Upifitamab rilsodotin** (Mersana, auristatin payload): UPLIFT: investigator ORR 15.6% (95% CI 10.0-22.7%) in NaPi2b-positive (TPS>=75%, n=141); lower CI bound did not exclude the 12% ORR of single-agent chemotherapy. [EXT: LIT1]. UPLIFT efficacy failed to replicate the ~100-patient phase 1b dose-expansion data (sponsor statement). [EXT: LIT2]. Phase 3 maintenance trial UP-NEXT (NCT05329545) is *TERMINATED* [EXT: ClinicalTrials.gov]. Upifitamab rilsodotin was placed on partial clinical hold over risk of bleeding events. [EXT: LIT5]
+- Failure modes recorded in the graph (claim types of findings LIT1-LIT3): **(a) phase 1b over-estimation**, **(b) biomarker cut-off that did not enrich** (UPLIFT overall ORR 13.1%; no indication that NaPi2b positivity (TPS>=75%) enriched for response. [EXT: LIT3]), **(c) a single-arm bar set at 12% ORR that a modest true effect could not clear**. Both prior agents used microtubule-inhibitor payloads; TUB-040 carries a TOP1 inhibitor at DAR 8 [EXT: LIT7], so failure mode (a)-(c) transfer but payload-specific toxicity does not.
+
+## 2. Do our phase 1b data show the same risks?
+
+- **Efficacy and replication risk.** Confirmed ORR 39.6% (95% CI 29.7-50.1%, n=96); at the two highest dose levels 50.0% (37.4-62.6%, n=66) [INT: ADRS, ADSL]. UpRi's expansion cohort also looked strong and did not replicate [EXT: LIT2]. Public TUB-040 data report 50% confirmed ORR [EXT: LIT6]. [KG] Plan on the lower bound, not the point estimate.
+- **Biomarker.** ORR by NaPi2b tumour proportion score [INT: ADBM, ADRS]: TPS <10: 20.0% (1/5, 95% CI 0.5-71.6%); TPS 10-74: 41.7% (20/48, 95% CI 27.6-56.8%); TPS >=75: 39.5% (17/43, 95% CI 25.0-55.6%). [KG] No enrichment at the UPLIFT cut-off is detected (TPS >=75% vs 10-74%: Fisher p = 1.0), matching UPLIFT [EXT: LIT3]. Applying TPS>=75% (node EXT:UPLIFT_cutoff) would exclude 53 of 96 patients without a demonstrated gain. The TPS <10% band has only 5 patients, too few to say whether NaPi2b-low tumours respond; this is the open question for the pivotal design.
+- **Prior therapy.** Prior FRalpha ADC (mirvetuximab): ORR 42.9% (n=14) vs 39.0% without (n=82), Fisher p = 0.78; >=4 prior lines 36.4% (n=22) vs <=3 lines 40.5% (n=74), Fisher p = 0.81 [INT: ADSL]. [KG] Neither difference is distinguishable from chance at this sample size, so neither can be ruled in or out. Our cohort: median 2 prior lines, 68% prior PARPi, 73% prior bevacizumab; UPLIFT: median 3 prior lines (31% had 4), 69% prior PARP inhibitor, 84% prior bevacizumab. [EXT: LIT4]. [KG] Our phase 1b is less heavily pretreated than UPLIFT (median 2 vs 3 prior lines). This is a second replication risk: a pivotal population that matches UPLIFT may respond less than our phase 1b did. UPLIFT's reported characteristics do not include prior FRalpha-ADC exposure, so the graph has no external comparator for that covariate.
+- **Lung safety, three independent signals.** (1) NaPi2b is most highly expressed in lung: 324.7 TPM, rank 1 of 54 GTEx tissues, about 5x the next tissue [EXT: GTEx v8]. (2) Loss of SLC34A2 causes pulmonary alveolar microlithiasis (Open Targets score 0.78) [EXT: Open Targets MONDO:0009928]. (3) The DXd TOP1-inhibitor ADC trastuzumab deruxtecan has ILD/pneumonitis in 13.7% of its FAERS reports, versus 3.9% for MMAE-based enfortumab vedotin [EXT: openFDA FAERS; reporting proportion, not incidence]. Our data: ILD/pneumonitis in 6/96 patients (6.2%; grade >=3: 2), by cycle-1 exposure tertile low: 0/32, mid: 1/33, high: 5/31 [INT: ADAE, ADPC]. [KG] Target biology and payload class point at the same organ; the graph flags lung as the priority safety risk for the pivotal protocol.
+- **Bleeding (the UpRi hold signal).** 2/96 patients (1 grade >=3) [INT: ADAE] versus the partial hold for UpRi [EXT: LIT5]. [KG] This sample cannot exclude a true rate up to 7% (upper 95% bound). Bleeding stays a pre-specified adverse event of special interest, but nothing here makes it a design driver.
+- **Ocular.** 2/96 keratopathy [INT: ADAE]; NaPi2b RNA is high in conjunctival epithelium (Tabula Sapiens via Open Targets) [EXT]; DM4-based mirvetuximab has ocular terms in 12.5% of FAERS reports [EXT]. [KG] Proportionate eye monitoring, not mandatory ophthalmology as for DM4.
+
+## 3. Recommended changes to the registrational design
+
+1. **Size the trial on the lower confidence bound.** To make the exact 95% CI lower bound exceed the 12% chemotherapy ORR with 80% power, a single-arm cohort needs **N = 23** if the true ORR equals our lower bound (37%) [KG: computed]. If the true ORR is half our point estimate, N = 66. If TUB-040 performs like UpRi in UPLIFT (16%), N = 588; UPLIFT's 141 NaPi2b-positive patients could not clear the bar at that effect size. A randomised comparison against investigator's-choice chemotherapy removes the dependence on a historical 12% benchmark.
+2. **Do not copy the UPLIFT cut-off.** Enrol all NaPi2b-evaluable patients, stratify by TPS (<10 / 10-74 / >=75), and pre-specify the TPS>=75% subgroup as a secondary analysis. The biomarker question is then answered by a prespecified analysis rather than a post-hoc one.
+3. **Make lung safety a protocol feature.** Exclude prior or active ILD; baseline and scheduled chest CT; an ILD adjudication committee; dose-modification rules tied to exposure. Lung is supported by target biology, human genetics, payload class and internal events at once.
+4. **Stratify randomisation by prior FRalpha-ADC exposure and number of prior lines.** Our phase 1b is too small to exclude an effect of either, UPLIFT gives no external comparator for prior FRalpha-ADC exposure, and pretreatment intensity is itself a replication risk; the pivotal trial should be able to measure both.
+
+## Provenance
+
+Every [EXT] statement links to a registry record, API record or published source in `outputs/adc/kg_edges.csv`. Every [INT] statement is computed from the CDISC-style tables (`SYN_*.csv`). **The internal tables in this demo are synthetic** (see `adc_demo.py`, GENERATOR_ASSUMPTIONS); the biomarker, prior-therapy and exposure patterns were set by the generator, so the [INT] numbers illustrate the method and are not findings about TUB-040.

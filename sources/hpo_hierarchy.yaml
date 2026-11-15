@@ -1,0 +1,38 @@
+# Source card: Human Phenotype Ontology hierarchy (L2 context layer on top of Pharos L0).
+# Data: data/external/hpo/hp.json (scripts/download_latest_layers.sh, Mac) ->
+#       python pipelines/ontology_prepare.py hpo -> data/ontologies/hpo/{terms,relations}.tsv.gz
+# Read by the generic builder pipelines/kgbuilder/engine.py.
+#
+# What it adds: every live HP term as a biolink:PhenotypicFeature node, and the is_a tree as biolink:subclass_of
+# edges (child -> parent). The Open Targets card (sources/opentargets_layer.yaml) adds disease -> HP phenotype
+# edges; this tree lets a phenotype reach its parents (e.g. "Seizure" -> "Abnormality of the nervous system"),
+# which is what the multi-hop questions and the GNN need. Not a claim about biology: never pruned.
+# The release is written by ontology_prepare.py to data/ontologies/hpo/version.txt and outputs/hpo_hierarchy/prepare.md.
+name: hpo_hierarchy
+version: "download 2026-10-25 (release IRI in data/ontologies/hpo/version.txt)"
+tables_dir: data/ontologies/hpo
+aggregator: infores:hpo
+layer: L2
+
+nodes:
+  - table: terms
+    id: {column: id}                  # HP:0001250 (already a CURIE)
+    category: biolink:PhenotypicFeature
+    name: name
+
+edges:
+  - name: hpo_is_a
+    table: relations
+    filter: {relation: is_a}
+    subject: {column: subject, category: biolink:PhenotypicFeature}
+    predicate: biolink:subclass_of
+    object: {column: object, category: biolink:PhenotypicFeature}
+    record_columns: [subject, object]
+    source: "HPO is_a"
+    primary_knowledge_source: "infores:hpo"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "rdfs:subClassOf"}
+
+prune:
+  never_prune_predicates: [biolink:subclass_of]

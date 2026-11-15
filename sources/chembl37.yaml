@@ -1,0 +1,98 @@
+# Source card: ChEMBL 37 (L1 layer: a newer release of a source Pharos already holds, ChEMBL 31 era).
+# Data: ChEMBL SQLite (scripts/download_external_data.sh, Mac) -> python pipelines/chembl_prepare.py ->
+#       data/chembl37/{activities,mechanisms,indications}.tsv.gz. Read by pipelines/kgbuilder/engine.py.
+#
+# What it adds, as separate edges tagged chembl_37 (Pharos L0 edges are never overwritten):
+#   - compound -> human protein activities (max pChEMBL, number of measurements, first publication year):
+#     the same predicate as Pharos's ligand_activity, so task A (ligand-target prediction) sees the pair twice
+#     when both releases hold it (corroboration for pruning; the leakage rule in linkpred/run.py keeps a held-out
+#     pair out of training whichever layer states it) and the first_year feeds the prospective split
+#   - drug mechanisms of action (action type) with the protein target
+#   - drug indications (EFO/MONDO disease, max phase) - drug-disease context Pharos lacks
+# Ids: CHEMBL.COMPOUND (compounds), UniProtKB (proteins); indications -> MONDO via exact EFO, else exact MeSH
+#      equivalents (edge property object_mapped_from), else EFO/MONDO/HP as given by ChEMBL (HP terms -> phenotype).
+name: chembl37
+version: "37"
+tables_dir: data/chembl37
+aggregator: infores:chembl
+layer: L1
+
+lookups:
+  efo_to_mondo: {ref_file: data/reference/mondo_efo_exact.tsv, key: efo_id, value: mondo_id, skip_ambiguous: true}
+  # ChEMBL gives MeSH ids bare ('D006255'); the MONDO table holds 'MESH:D006255' (exact equivalents only).
+  # A MeSH id equivalent to several MONDO classes is skipped (skip_ambiguous), never guessed.
+  # skip_keys (owner decision 2026-11-07, review outputs/chembl37/mesh_to_mondo_review.tsv): MONDO's "exact" xref is wrong
+  # or far too narrow and MONDO has no correct term, so these rows keep ChEMBL's EFO id (route as_given):
+  #   MESH:D012772 Septic shock -> MONDO:0001881 toxic shock syndrome: a different disease (66 drugs affected)
+  #   MESH:D020817 Asperger syndrome -> MONDO:0100610 autism spectrum disorder 1: one numbered subtype, too narrow
+  #   MESH:D011213 Poxviridae infections -> MONDO:0005850 milker's nodule: one poxvirus disease (tecovirimat), too narrow
+  #   MESH:D000258 Human adenovirus infections -> MONDO:0005911 pharyngoconjunctival fever: one adenovirus disease, too narrow
+  #   MESH:D004416 Dysplastic nevus syndrome -> MONDO:0007964 melanoma, cutaneous malignant, susceptibility to, 2: one locus
+  mesh_to_mondo: {ref_file: data/reference/mondo_mesh_exact.tsv, key: mesh_id, value: mondo_id, skip_ambiguous: true,
+                  key_prefix: MESH,
+                  skip_keys: [MESH:D012772, MESH:D020817, MESH:D011213, MESH:D000258, MESH:D004416]}
+
+edges:
+  - name: chembl_activity
+    table: activities
+    subject: {column: molecule_chembl_id, prefix: CHEMBL.COMPOUND, category: biolink:SmallMolecule}
+    predicate: biolink:directly_physically_interacts_with
+    object: {column: uniprot, prefix: UniProtKB, category: biolink:Protein}
+    record_columns: [molecule_chembl_id, uniprot]
+    source: "ChEMBL 37 activity"
+    primary_knowledge_source: "infores:chembl"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    properties: {pchembl_max: pchembl_max, n_activities: n_activities, first_year: first_year,
+                 standard_types: standard_types}
+
+  - name: chembl_mechanism
+    table: mechanisms
+    subject: {column: molecule_chembl_id, prefix: CHEMBL.COMPOUND, category: biolink:SmallMolecule}
+    predicate: biolink:directly_physically_interacts_with
+    object: {column: uniprot, prefix: UniProtKB, category: biolink:Protein}
+    record_columns: [molecule_chembl_id, uniprot, mechanism_of_action]
+    source: "ChEMBL 37 mechanism"
+    primary_knowledge_source: "infores:chembl"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    properties: {mechanism: mechanism_of_action, action_type: action_type, target_name: target_name,
+                 max_phase: max_phase}
+
+  - name: chembl_indication
+    table: indications
+    subject: {column: molecule_chembl_id, prefix: CHEMBL.COMPOUND, category: biolink:SmallMolecule}
+    predicate: biolink:treats_or_applied_or_studied_to_treat
+    object:
+      # one disease vocabulary: EFO -> MONDO first (wins when both map); ids ChEMBL already gives as MONDO or HP are
+      # kept (HP:0001250 'Seizure' has MeSH D012640, which MONDO lists as exact for 'visual epilepsy': a phenotype
+      # must not become a narrower disease); then MeSH -> MONDO; then the id as given (EFO, Orphanet ...)
+      columns: [{column: efo_id, lookup: efo_to_mondo}, {column: efo_id, only_prefix: [MONDO, HP]},
+                {column: mesh_id, lookup: mesh_to_mondo}, {column: efo_id}]
+      route_property: object_mapped_from     # efo_to_mondo | mesh_to_mondo | as_given (counted in the build report)
+      # EFO:0000311, MONDO:0005015, HP:0001250 ... as ChEMBL gives them
+      category_by_prefix: {EFO: biolink:Disease, MONDO: biolink:Disease, HP: biolink:PhenotypicFeature}
+      name: efo_term
+    record_columns: [molecule_chembl_id, efo_id]
+    source: "ChEMBL 37 drug indication"
+    primary_knowledge_source: "infores:chembl"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    properties: {max_phase_for_ind: max_phase_for_ind, mesh_id: mesh_id, mesh_heading: mesh_heading}
+
+prune:
+  score_columns: {pchembl_max: higher, n_activities: higher, max_phase: higher, max_phase_for_ind: higher}
+
+# Corrections made when a product is WRITTEN (pipelines/export_graph_kgx.py, block "export fixes"); the layer file is unchanged.
+export_overrides:
+  rename_ids:
+    # A few ChEMBL targets are described by an Ensembl GENE accession (RNA targets), which the card wrote into the
+    # UniProt column: UniProtKB:ENSG... is not a UniProt accession. The accession itself is kept and given its own
+    # prefix and class; via_hgnc then writes the NCBI Gene id when HGNC maps the Ensembl id (data/reference/hgnc_gene_ids.tsv,
+    # the rule the Open Targets and trial layers use), so the node joins the gene the other layers hold.
+    - name: Ensembl gene accession written as a UniProt id
+      match: '^UniProtKB:(ENSG\d+)$'
+      to: 'ENSEMBL:\1'
+      via_hgnc: true
+      category: biolink:Gene
+      why: "an Ensembl gene accession is a gene, not a protein"

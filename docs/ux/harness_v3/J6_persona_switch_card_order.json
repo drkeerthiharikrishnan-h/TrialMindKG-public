@@ -1,0 +1,408 @@
+{
+ "page": "/",
+ "where": "#pharos/node/NCBIGene%3A1956",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 29,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/card/NCBIGene%3A1956",
+  "GET /api/pharos/status",
+  "GET /api/pharos/explain/e0b6983d3fd0b0cb2",
+  "GET /api/pharos/explain/eabc65f1fa3eafe87",
+  "GET /api/pharos/explain/eb64dd7e1737b5e70",
+  "GET /api/pharos/explain/ebf0fc47fc18c06d1",
+  "GET /api/pharos/explain/e577fb71eaffd9e18",
+  "GET /api/pharos/explain/e085eb22eaf18c23b",
+  "GET /api/pharos/explain/ee005d8d2ac95a06e",
+  "GET /api/pharos/explain/e3f28e1689e4bda94",
+  "GET /api/pharos/explain/e5bb678f67f37cae7",
+  "GET /api/pharos/explain/e763600084ae60be4",
+  "GET /api/pharos/compare/card/NCBIGene%3A1956"
+ ],
+ "api_calls_last": [
+  "GET /api/pharos/explain/e0b6983d3fd0b0cb2",
+  "GET /api/pharos/explain/eabc65f1fa3eafe87",
+  "GET /api/pharos/explain/eb64dd7e1737b5e70",
+  "GET /api/pharos/explain/ebf0fc47fc18c06d1",
+  "GET /api/pharos/explain/e577fb71eaffd9e18",
+  "GET /api/pharos/explain/e085eb22eaf18c23b",
+  "GET /api/pharos/explain/ee005d8d2ac95a06e",
+  "GET /api/pharos/explain/e3f28e1689e4bda94",
+  "GET /api/pharos/explain/e5bb678f67f37cae7",
+  "GET /api/pharos/explain/e763600084ae60be4",
+  "GET /api/pharos/compare/card/NCBIGene%3A1956",
+  "GET /api/trials_for?ids=NCBIGene%3A1956%2CHGNC%3A3236&names=EGFR",
+  "GET /api/pharos/compare/card/NCBIGene%3A1956",
+  "GET /api/pharos/compare/card/NCBIGene%3A1956",
+  "GET /api/pharos/compare/card/NCBIGene%3A1956"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "first_role",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 51,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "bench_scientist",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "bench_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Bench scientist: Mechanism first: pathways, processes and binding partners; then disease links and predictions.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,mechanism,known,predicted,trials",
+    "sections": [
+     "about",
+     "mechanism",
+     "known",
+     "predicted",
+     "trials"
+    ],
+    "kinds": [
+     "annotation",
+     "binding or activity",
+     "human genetics",
+     "curated",
+     "expression or statistics",
+     "clinical",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 52,
+    "links": 1049,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "clinician",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "clinician",
+   "errors_so_far": 0,
+   "lens": "Ordered for Clinician: The trial record first; then curated and clinical links. Plain words, no identifiers.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Mepolizumab — METREOP20 Exacerbation-prone eosinophilic COPD · GSK · 2017 Stated failure (program record)Phase III: primary comparisons did not meet multiplicity-adjusted significance. METREX was mixed/positive in its eosinophilic population and is not counted"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,trials,known,predicted,mechanism",
+    "sections": [
+     "about",
+     "trials",
+     "known",
+     "predicted",
+     "mechanism"
+    ],
+    "kinds": [
+     "clinical",
+     "curated",
+     "human genetics",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 51,
+    "links": 1048,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  },
+  {
+   "name": "drug_developer",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": "drug_developer",
+   "errors_so_far": 0,
+   "lens": "Ordered for Drug-development lead: Failed programs and redesign options first; then compounds and potency; then how strong the evidence is.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Dalcetrapib — dal-GenEP25 Genetically selected patients after acute coronary syndrome · DalCor · 2022 Stated failure (program record)Phase III: primary intention-to-treat cardiovascular endpoint not significant. dal-GenE NCT:NCT02525939 · phase 3 · completed D"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236",
+    "order": "about,trials,predicted,mechanism,known",
+    "sections": [
+     "about",
+     "trials",
+     "predicted",
+     "mechanism",
+     "known"
+    ],
+    "kinds": [
+     "binding or activity",
+     "clinical",
+     "curated",
+     "human genetics",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 225,
+    "strength_chips": 188,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 10,
+    "hops_kept": 10,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "EGFR → is associated with → gastric cancer ← is associated with ← KRAS → is associated with → childhood cerebral astrocytoma",
+    "weakest": "· weakest hop: confidence 0.52 (Monarch, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 50,
+    "links": 1047,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  }
+ ]
+}

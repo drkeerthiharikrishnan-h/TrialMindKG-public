@@ -1,0 +1,25 @@
+program,registry_name,context,rank,chembl_id,pref_name,score,method,status
+P26,Asundexian,,1,CHEMBL4112929,MILVEXIAN,0.203067,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P26,Asundexian,,2,CHEMBL1743072,SOLANEZUMAB,0.193403,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P26,Asundexian,,3,CHEMBL231779,APIXABAN,0.17106,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P10,Semagludtide,NCT04777396; arms: EXPERIMENTAL,1,CHEMBL2108724,SEMAGLUTIDE,0.461846,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P10,Semagludtide,NCT04777396; arms: EXPERIMENTAL,2,CHEMBL490129,SANGUINARIUM CHLORIDE,0.216595,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P10,Semagludtide,NCT04777396; arms: EXPERIMENTAL,3,CHEMBL3084748,TROSPIUM CHLORIDE,0.203479,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P17,Steroidal Eye Drops,NCT04778397; arms: ACTIVE_COMPARATOR,1,CHEMBL3301585,PINATUZUMAB VEDOTIN,0.210411,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P17,Steroidal Eye Drops,NCT04778397; arms: ACTIVE_COMPARATOR,2,CHEMBL221753,BENZETHONIUM CHLORIDE,0.209554,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P17,Steroidal Eye Drops,NCT04778397; arms: ACTIVE_COMPARATOR,3,CHEMBL2364621,PALBOCICLIB ISETHIONATE,0.208519,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P24,K-877,NCT03071692; possibly a code name of the investigational drug,1,CHEMBL3545412,K-877,0.487363,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P24,K-877,NCT03071692; possibly a code name of the investigational drug,2,CHEMBL1469,PHENYLBUTANOIC ACID,0.174334,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P24,K-877,NCT03071692; possibly a code name of the investigational drug,3,CHEMBL465,DRONABINOL,0.166893,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P26,Asundexian (BAY2433334),NCT05643573; arms: EXPERIMENTAL,1,CHEMBL1743072,SOLANEZUMAB,0.267804,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P26,Asundexian (BAY2433334),NCT05643573; arms: EXPERIMENTAL,2,CHEMBL1743004,CRENEZUMAB,0.209041,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P26,Asundexian (BAY2433334),NCT05643573; arms: EXPERIMENTAL,3,CHEMBL107217,DITIOCARB SODIUM,0.194276,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P31,LHRH Agonist,"NCT04546009; arms: ACTIVE_COMPARATOR,EXPERIMENTAL",1,CHEMBL1200939,AMMONIUM CHLORIDE,0.266414,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P31,LHRH Agonist,"NCT04546009; arms: ACTIVE_COMPARATOR,EXPERIMENTAL",2,CHEMBL1200574,SODIUM CHLORIDE,0.163572,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P31,LHRH Agonist,"NCT04546009; arms: ACTIVE_COMPARATOR,EXPERIMENTAL",3,CHEMBL1746,SODIUM PHENYLBUTYRATE,0.163476,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P33,TQJ230,NCT04023552; arms: EXPERIMENTAL,1,CHEMBL3545310,SORAVTANSINE,0.163717,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P33,TQJ230,NCT04023552; arms: EXPERIMENTAL,2,CHEMBL428647,PACLITAXEL,0.142091,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P33,TQJ230,NCT04023552; arms: EXPERIMENTAL,3,CHEMBL6068595,DFO-ATEZOLIZUMAB ZR-89,0.112769,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P34,AOC 1001 (del-desiran),NCT06411288; arms: EXPERIMENTAL,1,CHEMBL5314669,DELPACIBART ETEDESIRAN,0.346937,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P34,AOC 1001 (del-desiran),NCT06411288; arms: EXPERIMENTAL,2,CHEMBL6068230,DELPACIBART BRAXLOSIRAN,0.316803,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv
+P34,AOC 1001 (del-desiran),NCT06411288; arms: EXPERIMENTAL,3,CHEMBL107217,DITIOCARB SODIUM,0.256957,embedding+rerank (offline-stand-in),PROPOSED - confirm by copying to data/curated/drug_overrides.csv

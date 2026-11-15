@@ -1,0 +1,18 @@
+# Pinned so the graph rebuilds byte-identically on any machine (tests/test_reproducible.py).
+# Verified with Python 3.11. Change a version only together with a rebuild + commit of outputs/.
+requests==2.34.2
+pandas==3.0.6
+pyarrow==26.0.0          # parquet reader for kgbuilder/engine.py and ot_prepare.py (added 2026-10-30)
+numpy==2.4.6
+scipy==1.17.1
+networkx==3.6.1
+matplotlib==3.11.2
+pytest==9.1.1
+PyYAML==6.0.1
+openpyxl==3.1.5
+langgraph==1.2.12
+fastapi==0.142.2
+uvicorn==0.50.2
+psycopg2-binary==2.9.10
+pypdf==6.21.4
+fpdf2==2.8.9

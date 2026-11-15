@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+DURVALUMAB,patient.drug.openfda.generic_name,20225,DEATH,3854
+DURVALUMAB,patient.drug.openfda.generic_name,20225,MALIGNANT NEOPLASM PROGRESSION,1599
+DURVALUMAB,patient.drug.openfda.generic_name,20225,PNEUMONITIS,875
+DURVALUMAB,patient.drug.openfda.generic_name,20225,RADIATION PNEUMONITIS,807
+DURVALUMAB,patient.drug.openfda.generic_name,20225,DIARRHOEA,647
+DURVALUMAB,patient.drug.openfda.generic_name,20225,PYREXIA,638
+DURVALUMAB,patient.drug.openfda.generic_name,20225,OFF LABEL USE,580
+DURVALUMAB,patient.drug.openfda.generic_name,20225,DYSPNOEA,481
+DURVALUMAB,patient.drug.openfda.generic_name,20225,INTERSTITIAL LUNG DISEASE,480
+DURVALUMAB,patient.drug.openfda.generic_name,20225,PNEUMONIA,474
+DURVALUMAB,patient.drug.openfda.generic_name,20225,FATIGUE,452
+DURVALUMAB,patient.drug.openfda.generic_name,20225,RASH,437
+DURVALUMAB,patient.drug.openfda.generic_name,20225,ASTHENIA,434
+DURVALUMAB,patient.drug.openfda.generic_name,20225,ANAEMIA,425
+DURVALUMAB,patient.drug.openfda.generic_name,20225,NEUTROPHIL COUNT DECREASED,413
+DURVALUMAB,patient.drug.openfda.generic_name,20225,COLITIS,375
+DURVALUMAB,patient.drug.openfda.generic_name,20225,PLATELET COUNT DECREASED,353
+DURVALUMAB,patient.drug.openfda.generic_name,20225,DISEASE PROGRESSION,352
+DURVALUMAB,patient.drug.openfda.generic_name,20225,MYELOSUPPRESSION,341
+DURVALUMAB,patient.drug.openfda.generic_name,20225,METASTASES TO CENTRAL NERVOUS SYSTEM,337
+DURVALUMAB,patient.drug.openfda.generic_name,20225,NAUSEA,334
+DURVALUMAB,patient.drug.openfda.generic_name,20225,THROMBOCYTOPENIA,326
+DURVALUMAB,patient.drug.openfda.generic_name,20225,FEBRILE NEUTROPENIA,315
+DURVALUMAB,patient.drug.openfda.generic_name,20225,HYPOTHYROIDISM,305
+DURVALUMAB,patient.drug.openfda.generic_name,20225,DECREASED APPETITE,300

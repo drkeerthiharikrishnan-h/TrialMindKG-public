@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+PEMAFIBRATE,patient.drug.medicinalproduct,376,DECREASED APPETITE,21
+PEMAFIBRATE,patient.drug.medicinalproduct,376,NAUSEA,20
+PEMAFIBRATE,patient.drug.medicinalproduct,376,RENAL IMPAIRMENT,20
+PEMAFIBRATE,patient.drug.medicinalproduct,376,DIARRHOEA,17
+PEMAFIBRATE,patient.drug.medicinalproduct,376,OFF LABEL USE,16
+PEMAFIBRATE,patient.drug.medicinalproduct,376,VOMITING,16
+PEMAFIBRATE,patient.drug.medicinalproduct,376,PYREXIA,15
+PEMAFIBRATE,patient.drug.medicinalproduct,376,ANAEMIA,12
+PEMAFIBRATE,patient.drug.medicinalproduct,376,INTERSTITIAL LUNG DISEASE,12
+PEMAFIBRATE,patient.drug.medicinalproduct,376,ACUTE KIDNEY INJURY,11
+PEMAFIBRATE,patient.drug.medicinalproduct,376,DEHYDRATION,11
+PEMAFIBRATE,patient.drug.medicinalproduct,376,PNEUMONIA,11
+PEMAFIBRATE,patient.drug.medicinalproduct,376,RASH,11
+PEMAFIBRATE,patient.drug.medicinalproduct,376,ASPARTATE AMINOTRANSFERASE INCREASED,10
+PEMAFIBRATE,patient.drug.medicinalproduct,376,DIZZINESS,10
+PEMAFIBRATE,patient.drug.medicinalproduct,376,DRUG INEFFECTIVE,10
+PEMAFIBRATE,patient.drug.medicinalproduct,376,HEPATIC FUNCTION ABNORMAL,10
+PEMAFIBRATE,patient.drug.medicinalproduct,376,MALAISE,10
+PEMAFIBRATE,patient.drug.medicinalproduct,376,NEPHROTIC SYNDROME,10
+PEMAFIBRATE,patient.drug.medicinalproduct,376,DRUG-INDUCED LIVER INJURY,9
+PEMAFIBRATE,patient.drug.medicinalproduct,376,HYPERTENSION,9
+PEMAFIBRATE,patient.drug.medicinalproduct,376,HYPOMAGNESAEMIA,9
+PEMAFIBRATE,patient.drug.medicinalproduct,376,ALANINE AMINOTRANSFERASE INCREASED,8
+PEMAFIBRATE,patient.drug.medicinalproduct,376,CARDIAC FAILURE,8
+PEMAFIBRATE,patient.drug.medicinalproduct,376,DIABETES MELLITUS,8

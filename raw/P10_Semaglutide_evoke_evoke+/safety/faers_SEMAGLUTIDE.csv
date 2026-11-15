@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,NAUSEA,10674
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,OFF LABEL USE,7325
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,VOMITING,6964
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,DIARRHOEA,6462
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,DECREASED APPETITE,4905
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,CONSTIPATION,4724
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,WEIGHT DECREASED,4487
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,IMPAIRED GASTRIC EMPTYING,3558
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,PRODUCT USE IN UNAPPROVED INDICATION,3483
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,BLOOD GLUCOSE INCREASED,3303
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,HEADACHE,3099
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,FATIGUE,3063
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,ABDOMINAL PAIN UPPER,3039
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,WRONG TECHNIQUE IN PRODUCT USAGE PROCESS,3016
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,WEIGHT INCREASED,2612
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,DIZZINESS,2587
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION,2446
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,ABDOMINAL PAIN,2361
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,ASTHENIA,1991
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,DEHYDRATION,1968
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,MALAISE,1884
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,ILLNESS,1724
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,ABDOMINAL DISTENSION,1691
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,DRUG INEFFECTIVE,1666
+SEMAGLUTIDE,patient.drug.openfda.generic_name,73001,DYSPEPSIA,1661

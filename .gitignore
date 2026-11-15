@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.dev-controller/
+
+# Secrets - NEVER commit
+.env
+
+# Confidential sponsor data - NEVER commit
+data/internal/*
+!data/internal/README.md
+
+
+# OS
+.DS_Store
+
+# Downloaded reference data (large, re-creatable with scripts/download_external_data.sh)
+data/external/*
+!data/external/README.md
+!data/external/DATA_MANIFEST.tsv
+
+# Review documents: downloaded third-party files stay on your computer (size, copyright);
+# generated text files (summaries, abstracts, full-text .md, CSV lists, index, catalogue) are committed
+raw/**/*.pdf
+raw/*/trials/*/documents/
+raw/*/trials/*/other_registries/
+raw/*/sources/
+raw/*/web/
+raw/*/supplementary/
+raw/*/figures/
+raw/*/regulatory/fda/
+data/snapshots_raw/fulltext/
+aws/config.env
+data/snapshots_raw/supplementary/
+
+# Pharos bulk pull (large; re-create with python pipelines/pharos.py pull; checksums in data/reference/pharos_manifest.tsv)
+data/snapshots_pharos/
+data/pharos/
+data/kg/
+
+# PyG graphs built by pipelines/make_graphs.py (large; summary.md next to them is committed)
+outputs/g[0-9]/heterodata.pt
+data/ontologies/
+data/chembl37/
+outputs/demo/
+data/snapshots_downloads/
+# weekly source check (pipelines/maintain.py source-check): reports and raw responses are run output
+outputs/source_check/
+
+# lock files written next to the Pharos outputs while a build runs
+outputs/pharos/*.lock
+
+# pip build (pyproject.toml)
+build/
+dist/
+*.egg-info/

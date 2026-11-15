@@ -1,0 +1,141 @@
+{
+ "page": "/",
+ "where": "",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 22,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/demo/pharos_demo_1",
+  "GET /api/pharos/compare/demo/pharos_demo_1",
+  "GET /api/neptune/status",
+  "POST /api/neptune/wake",
+  "GET /api/neptune/status",
+  "GET /api/neptune/status",
+  "GET /api/neptune/status",
+  "POST /api/pharos/ask"
+ ],
+ "api_calls_last": [
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/demo/pharos_demo_1",
+  "GET /api/pharos/compare/demo/pharos_demo_1",
+  "GET /api/neptune/status",
+  "POST /api/neptune/wake",
+  "GET /api/neptune/status",
+  "GET /api/neptune/status",
+  "GET /api/neptune/status",
+  "POST /api/pharos/ask"
+ ],
+ "evals": [
+  "{\"state\":\"asleep\",\"control\":\"Wake it (about 4 minutes)This answer comes from this server's copy of the graph. The same question can also run on Amazon Neptune (asleep to save cost; waking takes about 4 minutes).\",\"rows\":50,\"status_line\":\"askline ok: Which diseases is the gene PTGS2 associated with, and which source says so?: check passed, 50 rows - PTGS2 is associated with rheumatoid arthritis, esophageal squamous cell carcinoma and duodenal ulcer (CTD, DrugCentral Indication); 3,705 diseases in all, 3,373 text-mined only.\",\"runson\":true}",
+  "{\"state\":\"waking\",\"control\":\"Amazon Neptune is waking up (about 4 minutes). This question runs there by itself when it is ready; the answer above stays.\",\"rows\":50,\"status_line\":\"askline ok: Amazon Neptune: Amazon Neptune is waking up (about 4 minutes)\",\"runson\":true}",
+  "{\"state\":\"available\",\"control\":\"Run this on Amazon NeptuneSame question on Amazon Neptune: 50 rows in 0.3 s; 23 of 215 evidence links identical (Amazon Neptune returned 50).\",\"rows\":50,\"status_line\":\"askline ok: Which diseases is the gene PTGS2 associated with, and which source says so?: Same question on Amazon Neptune: 50 rows in 0.3 s; 23 of 215 evidence links identical (Amazon Neptune returned 50).\",\"runson\":true}"
+ ],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "neptune_woken_and_answered",
+   "hash": "#pharos",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": {
+    "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "summary",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "PTGS2 is associated with rheumatoid arthritis, esophageal squamous cell carcinoma and duodenal ulcer (CTD, DrugCentral Indication); 3,705 diseases in all, 3,373 text-mined only.",
+    "confidence": "confidence: high",
+    "confidence_reason": "50 of 50 rows shown have curated or measured support, from 8 sources; pruned links are not counted. 3,655 more answers are not shown, 3,373 of them text-mined only.",
+    "points": [],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 16,
+    "rows": 50,
+    "evidence_chips": 215,
+    "first_chip": "CTD · curated kept 0.65",
+    "checks": [
+     "ok: tested-question shape check: passed",
+     "ok: query validation: the query passed validation"
+    ],
+    "abstain": ""
+   },
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 59,
+    "links": 111,
+    "sections": 8,
+    "tables": 1
+   },
+   "headings": [
+    "Ask the Pharos graph a question",
+    "Graph of the answer 40 entities, 39 links",
+    "Summary",
+    "Evidence 50 rows, 215 links",
+    "What is not known",
+    "Downloads and the query"
+   ]
+  }
+ ]
+}

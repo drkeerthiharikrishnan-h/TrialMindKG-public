@@ -1,0 +1,20 @@
+order: 4          # position on the Start-here page (1 = first)
+name: Drug-development lead
+short: Drug developer
+emoji: "💊"
+color: "#d9480f"
+description: >-
+  Translational or portfolio lead starting from a compound or program. Wants mechanism, targets, the failed trials and their reasons, predicted repurposing and evidence-supported redesign options.
+welcome: >-
+  Your view leads with the failed-trial intelligence report, then the compound's targets and predicted links.
+facet_persona: >-
+  medicinal_chemist (FACET) adapted to development decisions
+start_tab: trials
+wording: plain
+show_ids: hover
+card_sections: [about, trials, predicted, known]
+questions:
+  - {tab: trials, text: "Why did TULIP-1 miss its primary endpoint, and what changed later?"}
+  - {tab: trials, text: "Did a genotype-defined population rescue dalcetrapib in dal-GenE?"}
+  - {tab: card, text: "ibuprofen"}
+  - {tab: pharos, text: "Which diseases is the gene PTGS2 associated with, and which source says so?"}

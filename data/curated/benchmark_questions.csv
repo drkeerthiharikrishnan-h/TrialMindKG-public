@@ -1,0 +1,4 @@
+id,program,kind,question,expectation
+B01,P19,benchmark,"Why did TULIP-1 miss its primary endpoint, and what changed later?","Failure diagnosis cites the registry primary outcome; redesign cites the curated BICLA / TULIP-2 record"
+B02,P20,benchmark,"Why did mepolizumab fail in METREO for COPD, and which patients might respond?","Failure diagnosis cites the METREO primary outcome; any responder population is labelled prespecified or post hoc, never prospectively confirmed without a confirmatory trial in the graph"
+B03,P25,negative_control,"Did a genotype-defined population rescue dalcetrapib in dal-GenE?","No claim may be labelled prospectively_confirmed: dal-GenE tested the genotype hypothesis prospectively and missed"

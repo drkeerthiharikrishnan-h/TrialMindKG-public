@@ -1,0 +1,6841 @@
+{
+ "backend": "offline",
+ "n": 522,
+ "top1": 0.299,
+ "top3": 0.416,
+ "mrr": 0.374,
+ "top1_same_active_ingredient": 0.333,
+ "by_type": {
+  "RESEARCH_CODE": {
+   "n": 271,
+   "top1": 0.232,
+   "top3": 0.343,
+   "mrr": 0.299,
+   "top1_same_active_ingredient": 0.255
+  },
+  "TRADE_NAME": {
+   "n": 251,
+   "top1": 0.371,
+   "top3": 0.494,
+   "mrr": 0.455,
+   "top1_same_active_ingredient": 0.418
+  }
+ },
+ "by_top1_channel": {
+  "embedding+lexical+rerank": {
+   "n": 150,
+   "correct": 110,
+   "precision": 0.733
+  },
+  "embedding+rerank": {
+   "n": 372,
+   "correct": 46,
+   "precision": 0.124
+  }
+ },
+ "rows": [
+  {
+   "query": "NSC-38583",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL107217",
+   "accept": [
+    "CHEMBL107217"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL191491",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CIS-DDP",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL11359",
+   "accept": [
+    "CHEMBL11359"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL11359",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CISPLATIN COMPONENT OF INT-230-6",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL11359",
+   "accept": [
+    "CHEMBL11359"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL11359",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-119875",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL11359",
+   "accept": [
+    "CHEMBL11359"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3039540",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Platinol",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL11359",
+   "accept": [
+    "CHEMBL11359"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL11359",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Platinol-aq",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL11359",
+   "accept": [
+    "CHEMBL11359"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL11359",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Daunoxome",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200475",
+   "accept": [
+    "CHEMBL1200475",
+    "CHEMBL178"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL178",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Aqsia (balanced salt soln)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Askina",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Askina jet",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "B1655",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL6068230",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Balanced salt",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Broncho saline",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL2336050",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Bss (balanced salt soln)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Flowfusor",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095331",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Fresenius",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545132",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Hypromellose in ringers soln",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 9,
+   "hit_rank_moiety": 9,
+   "top1": "CHEMBL1351",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Iocare (balanced salt soln)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL414996",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Irriclens",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108722",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Isot saline",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL972",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LS-1700",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Labmist",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3544923",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Lockes",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL888",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Macoperf",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314669",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Miniversol",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2336050",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Muro 128",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297627",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-77364",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095315",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Nine lives",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2336050",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Normasol",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5315053",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Oft cusi antiedema",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Optiflo s",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297844",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Physiomer",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL197200",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ringer's",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL189963",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ringer-locke",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL393820",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "S-chlor sf",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SALINE SOLUTION",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4594334",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SODIUM CHLORIDE COMPONENT OF RNS-60  SALINE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Salex",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL972",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Saline",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL972",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Saline steripoule",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL972",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Salinex",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL972",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Slow sod",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL93268",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodiclor",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4594335",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride 14.6%",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride 23.4%",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of colyte",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of golytely",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of halflytely",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of moviprep",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of navstel",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of nulytely",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of plenvu",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of procalamine",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of suclear",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium chloride component of suflave",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sterac",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL6050371",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Steri-wash",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1743028",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sterijet",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301589",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Syrisal",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095446",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Table salt",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Topiclens",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Tubilux",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL178",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Uriflex-s",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Uriflex-sp",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Uroclens",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": 7,
+   "hit_rank_moiety": 7,
+   "top1": "CHEMBL69710",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Vitaclean",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200574",
+   "accept": [
+    "CHEMBL1200574"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "B1653",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1231821",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Diffu-k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL189963",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Duro-k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 8,
+   "hit_rank_moiety": 8,
+   "top1": "CHEMBL3301587",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "E 508",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095331",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "INS NO.508",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL93268",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "INS-508",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2177913",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "K+10",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "K+8",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545412",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "K-contin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4594216",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "K-dur 20",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545412",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "K-lease",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4225966",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "K-tab",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301582",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kaleorid",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kaleorid lp",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1256472",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kaon cl",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kaon cl-10",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kay-cee-l",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3137309",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klor-con",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL4556788",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klor-con 10",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4556788",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klor-con 10meq",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klor-con 8",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4556788",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klor-con m10",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 7,
+   "hit_rank_moiety": 7,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klor-con m15",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klor-con m20",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kloref",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kloref-s",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Klotrix",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1351",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Leo k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL247951",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Micro k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Micro-k 10",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Micro-k ls",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL69710",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-77368",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL225072",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Nu-k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108628",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pokonza",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 7,
+   "hit_rank_moiety": 7,
+   "top1": "CHEMBL4297517",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pot chlor (pot 12mmol)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pot chlor strong",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of colyte",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of golytely",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of halflytely",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of moviprep",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of navstel",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of nulytely",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of plenvu",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of procalamine",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of suclear",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of suflave",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of sutab",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of tham-e",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Potassium chloride component of tis-u-sol",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sando-k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545412",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Slow-k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3542210",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ten-k",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200731",
+   "accept": [
+    "CHEMBL1200731"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL189963",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Chlorammonic",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200939",
+   "accept": [
+    "CHEMBL1200939"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "FEMA NO. 4494",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200939",
+   "accept": [
+    "CHEMBL1200939"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL313006",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Tussi ammon co",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200939",
+   "accept": [
+    "CHEMBL1200939"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IMI 30",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200976",
+   "accept": [
+    "CHEMBL1200976"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545132",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Idamycin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200976",
+   "accept": [
+    "CHEMBL1200976"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200976",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Idamycin pfs",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200976",
+   "accept": [
+    "CHEMBL1200976"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200976",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Idarubicin hydrochloride pfs",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200976",
+   "accept": [
+    "CHEMBL1200976"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200976",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-256439",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1200976",
+   "accept": [
+    "CHEMBL1200976"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL6068230",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Zavedos",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1200976",
+   "accept": [
+    "CHEMBL1200976"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4225966",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "4D5V8",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108628",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ABP 980",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4112929",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DMB-3111 (TRASTUZUMAB BIOSIMILAR)",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1201585",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "EG-12014",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL4578881",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "HLX-02",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4298077",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Herceptin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL11359",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Herwenda",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314669",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Herzuma",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4298050",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kadcyla",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585",
+    "CHEMBL1743082"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL3301579",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kanjinti",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ogivri",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ontruzant",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3544923",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "R-597",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1201585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RHUMABHER2",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 8,
+   "hit_rank_moiety": 8,
+   "top1": "CHEMBL4298101",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-0452317",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4650316",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SYD-977",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301589",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Trastuzumab component of herceptin hylecta",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1201585",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Trastuzumab component of phesgo",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1201585",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Trazimera",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Zercepac",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1201585",
+   "accept": [
+    "CHEMBL1201585"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL5314875",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "E-507",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1231821",
+   "accept": [
+    "CHEMBL1231821"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "INS NO.507",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1231821",
+   "accept": [
+    "CHEMBL1231821"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL93268",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "INS-507",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1231821",
+   "accept": [
+    "CHEMBL1231821"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-77365",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1231821",
+   "accept": [
+    "CHEMBL1231821"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-63878",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1256472",
+   "accept": [
+    "CHEMBL1256472"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": 7,
+   "top1": "CHEMBL95606",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "U-19920A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1256472",
+   "accept": [
+    "CHEMBL1256472",
+    "CHEMBL803"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL5095329",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Elvetil",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1257065",
+   "accept": [
+    "CHEMBL1257065"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297851",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "M.G. 624",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1257065",
+   "accept": [
+    "CHEMBL1257065",
+    "CHEMBL191491"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL191491",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "JM-8",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1351",
+   "accept": [
+    "CHEMBL1351"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL21536",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-201345",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1351",
+   "accept": [
+    "CHEMBL1351"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL221753",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-241240",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1351",
+   "accept": [
+    "CHEMBL1351"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL225072",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Paraplatin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1351",
+   "accept": [
+    "CHEMBL1351"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL11359",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CGS 20267",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1444",
+   "accept": [
+    "CHEMBL1444"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301589",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Femara",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1444",
+   "accept": [
+    "CHEMBL1444"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1444",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Letrozole component of kisqali femara co-pack",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1444",
+   "accept": [
+    "CHEMBL1444"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1444",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-759652",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1444",
+   "accept": [
+    "CHEMBL1444"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL95606",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Azacitidine accord",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1489",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Azacitidine betapharm",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1489",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Azacitidine celgene",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1489",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Azacitidine kabi",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1489",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Azacitidine mylan",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1489",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-102816",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095315",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Onureg",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1257065",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "U-18,496",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4298178",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Vidaza",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1489",
+   "accept": [
+    "CHEMBL1489"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5956825",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "OSI-7836",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1631221",
+   "accept": [
+    "CHEMBL1631221"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200475",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Gemzar",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1637",
+   "accept": [
+    "CHEMBL1637",
+    "CHEMBL888"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL888",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Infugem",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1637",
+   "accept": [
+    "CHEMBL1637"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": 8,
+   "top1": "CHEMBL221753",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-188011 HYDROCHLORIDE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1637",
+   "accept": [
+    "CHEMBL1637"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Afaxin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108358",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Alphalin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Aquasol a",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3137343",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Del-vi-a",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL218650",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-758478",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1875805",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Vi-dom-a",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Vitamin a palmitate component of vitaped",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Vitamin a solubilized",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1675",
+   "accept": [
+    "CHEMBL1675"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Adcetris",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1742994",
+   "accept": [
+    "CHEMBL1742994"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3039540",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CAC-10",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1742994",
+   "accept": [
+    "CHEMBL1742994"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CAC10-VCMMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1742994",
+   "accept": [
+    "CHEMBL1742994"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1742994",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SGN-35",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1742994",
+   "accept": [
+    "CHEMBL1742994"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL3989948",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MABT-5102A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743004",
+   "accept": [
+    "CHEMBL1743004"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1256472",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-7412",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743004",
+   "accept": [
+    "CHEMBL1743004"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4298077",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "R-04909832",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743025",
+   "accept": [
+    "CHEMBL1743025"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "R-1450",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743025",
+   "accept": [
+    "CHEMBL1743025"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-1450",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743025",
+   "accept": [
+    "CHEMBL1743025"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-4909832 R-1450",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743025",
+   "accept": [
+    "CHEMBL1743025"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ro-4909832",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743025",
+   "accept": [
+    "CHEMBL1743025"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CDX-011",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743028",
+   "accept": [
+    "CHEMBL1743028"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095312",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CR-011-VCMMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743028",
+   "accept": [
+    "CHEMBL1743028"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-2062430",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743072",
+   "accept": [
+    "CHEMBL1743072"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108628",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Kadcyla",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1743082",
+   "accept": [
+    "CHEMBL1201585",
+    "CHEMBL1743082"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL3301579",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PRO-132365",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743082",
+   "accept": [
+    "CHEMBL1743082"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3236428",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-3502",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743082",
+   "accept": [
+    "CHEMBL1743082"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1875805",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "TDM-1",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743082",
+   "accept": [
+    "CHEMBL1743082"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314627",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "TRASTUZUMAB-MCC-DM1 T-DM1",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1743082",
+   "accept": [
+    "CHEMBL1743082"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1201585",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ACER-001",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1875805",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ambutyrate",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL2105745",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ammonaps",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Buphenyl",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1746",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-657802",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301601",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Olpruva",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pheburane",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1746",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SODIUM PHENYLBUTYRATE COMPONENT OF AMX-0035",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1746",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium phenylbutyrate component of albrioza",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1746",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium phenylbutyrate component of relyvrio",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL1746",
+   "accept": [
+    "CHEMBL1746"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1746",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Daunorubicin component of vyxeos",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL178",
+   "accept": [
+    "CHEMBL178"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL178",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Daunoxome",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL178",
+   "accept": [
+    "CHEMBL1200475",
+    "CHEMBL178"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1200475",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "FI 6339",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL178",
+   "accept": [
+    "CHEMBL178"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4578881",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-83142",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL178",
+   "accept": [
+    "CHEMBL178"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RP 13057",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL178",
+   "accept": [
+    "CHEMBL178"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4650316",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-122020",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1875805",
+   "accept": [
+    "CHEMBL1875805"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-758152",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL1875805",
+   "accept": [
+    "CHEMBL1875805"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ibrance",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL189963",
+   "accept": [
+    "CHEMBL189963"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL247951",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PD-0332991",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL189963",
+   "accept": [
+    "CHEMBL189963"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2364621",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "M.G.-624",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL191491",
+   "accept": [
+    "CHEMBL1257065",
+    "CHEMBL191491"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1257065",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MG 4833",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2104299",
+   "accept": [
+    "CHEMBL2104299"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314922",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Verecolene",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2104299",
+   "accept": [
+    "CHEMBL2104299"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314668",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CP 4055",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2105665",
+   "accept": [
+    "CHEMBL2105665"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3301601",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "P-4055",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2105665",
+   "accept": [
+    "CHEMBL2105665"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2105665",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "HPN-100",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2105745",
+   "accept": [
+    "CHEMBL2105745"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ravicti",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2105745",
+   "accept": [
+    "CHEMBL2105745"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RLX-030",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108358",
+   "accept": [
+    "CHEMBL2108358"
+   ],
+   "hit_rank": 8,
+   "hit_rank_moiety": 8,
+   "top1": "CHEMBL4297517",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Bosatria",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108429",
+   "accept": [
+    "CHEMBL2108429"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3707227",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Nucala",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108429",
+   "accept": [
+    "CHEMBL2108429"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3707395",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SB-240563",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108429",
+   "accept": [
+    "CHEMBL2108429"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1201585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CT-2103",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108628",
+   "accept": [
+    "CHEMBL2108628"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545369",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PG-TXL",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108628",
+   "accept": [
+    "CHEMBL2108628"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL247951",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Xyotax",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108628",
+   "accept": [
+    "CHEMBL2108628"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL218650",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CP-675,206",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108658",
+   "accept": [
+    "CHEMBL2108658"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Imjudo",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108658",
+   "accept": [
+    "CHEMBL2108658"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PF-06753388",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108658",
+   "accept": [
+    "CHEMBL2108658"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4552554",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "TICILIMUMAB",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108658",
+   "accept": [
+    "CHEMBL2108658"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108658",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Tremelimumab astrazeneca",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108658",
+   "accept": [
+    "CHEMBL2108658"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108658",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pegadricase component of sel-212",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108722",
+   "accept": [
+    "CHEMBL2108722"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108722",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEL-037",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108722",
+   "accept": [
+    "CHEMBL2108722"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "URICASE-PEG 20",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108722",
+   "accept": [
+    "CHEMBL2108722"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108722",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NN-9535",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108724",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NNC 0113-0217",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1631221",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ozempic",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1469",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Rybelsus",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4650230",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Semaglutide component of cagrisema",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108724",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Semaglutide component of nn1535 icosema",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108724",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Semaglutide component of nn1535 laisema",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108724",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Wegovy",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108724",
+   "accept": [
+    "CHEMBL2108724"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297844",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BMS-936558",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4112929",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BMS-986298",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4112929",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MDX-1106",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Nivolumab bms",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108738",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Nivolumab component of bms-986213",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108738",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Nivolumab component of opdualag",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2108738",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ONO-4538",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Opdivo",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2108738",
+   "accept": [
+    "CHEMBL2108738"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL1231821",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-246708",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL21536",
+   "accept": [
+    "CHEMBL21536"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL21536",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-246708 FREE BASE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL21536",
+   "accept": [
+    "CHEMBL21536"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4225966",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Deltyba",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL218650",
+   "accept": [
+    "CHEMBL218650"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4594611",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "OPC-67683",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL218650",
+   "accept": [
+    "CHEMBL218650"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-20200",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL221753",
+   "accept": [
+    "CHEMBL221753"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108722",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Phemerol chloride",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL221753",
+   "accept": [
+    "CHEMBL221753"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL221753",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Alimta",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL225072",
+   "accept": [
+    "CHEMBL225072",
+    "CHEMBL2360464"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL3039516",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-231514",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL225072",
+   "accept": [
+    "CHEMBL225072"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1743072",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-698037",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL225072",
+   "accept": [
+    "CHEMBL225072"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1256472",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemfexy",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL225072",
+   "accept": [
+    "CHEMBL225072"
+   ],
+   "hit_rank": 7,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Apixaban accord",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL231779",
+   "accept": [
+    "CHEMBL231779"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL231779",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BMS-562247",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL231779",
+   "accept": [
+    "CHEMBL231779"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL231779",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BMS-562247-01",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL231779",
+   "accept": [
+    "CHEMBL231779"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL231779",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Eliquis",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL231779",
+   "accept": [
+    "CHEMBL231779"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3966364",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-246708 TARTRATE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2336050",
+   "accept": [
+    "CHEMBL2336050"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL21536",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Xanomeline tartrate component of cobenfy",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2336050",
+   "accept": [
+    "CHEMBL2336050"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2336050",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Alimta",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2360464",
+   "accept": [
+    "CHEMBL225072",
+    "CHEMBL2360464"
+   ],
+   "hit_rank": 8,
+   "hit_rank_moiety": 8,
+   "top1": "CHEMBL3039516",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-231514 DISODIUM SALT",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2360464",
+   "accept": [
+    "CHEMBL2360464"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL4594335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed baxter",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2360464",
+   "accept": [
+    "CHEMBL2360464"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989962",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed lilly",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2360464",
+   "accept": [
+    "CHEMBL2360464"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed sandoz",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2360464",
+   "accept": [
+    "CHEMBL2360464"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PD 0332991-0054",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2364621",
+   "accept": [
+    "CHEMBL189963",
+    "CHEMBL2364621"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL189963",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PF-00080665-73",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2364621",
+   "accept": [
+    "CHEMBL189963",
+    "CHEMBL2364621"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4594336",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MEDI-546",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL2364653",
+   "accept": [
+    "CHEMBL2364653"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301587",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Saphnelo",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL2364653",
+   "accept": [
+    "CHEMBL2364653"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095331",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "(R)-K-13675",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL247951",
+   "accept": [
+    "CHEMBL247951"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL247951",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Taurursodiol component of relyvrio",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL272427",
+   "accept": [
+    "CHEMBL272427"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL1200574",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CO-1.01",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3039516",
+   "accept": [
+    "CHEMBL3039516"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1444",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "CP-4126",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3039516",
+   "accept": [
+    "CHEMBL3039516"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2105665",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Aduhelm",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3039540",
+   "accept": [
+    "CHEMBL3039540"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3039540",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BIIB-037",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3039540",
+   "accept": [
+    "CHEMBL3039540"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108358",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Flotros",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 7,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL4297985",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IP-631",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297627",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Regurin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4518706",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Regurin xl",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sanctura",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL2177913",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sanctura xr",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL2177913",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Spasmo-lyt",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 10,
+   "hit_rank_moiety": 10,
+   "top1": "CHEMBL272427",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Spasmoplex",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Trospium chloride component of cobenfy",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Uraplex",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3084748",
+   "accept": [
+    "CHEMBL3084748"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "JTT-705",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL313006",
+   "accept": [
+    "CHEMBL313006"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-4607381",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL313006",
+   "accept": [
+    "CHEMBL313006"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4298077",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ABT-199",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3137309",
+   "accept": [
+    "CHEMBL3137309"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL189963",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "GDC-0199",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3137309",
+   "accept": [
+    "CHEMBL3137309"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-7601",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3137309",
+   "accept": [
+    "CHEMBL3137309"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1444",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Venclexta",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3137309",
+   "accept": [
+    "CHEMBL3137309"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL3542210",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Venclyxto",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3137309",
+   "accept": [
+    "CHEMBL3137309"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4297938",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Keytruda",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3137343",
+   "accept": [
+    "CHEMBL3137343"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3989942",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MK-3475",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3137343",
+   "accept": [
+    "CHEMBL3137343"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314875",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PEMBROLIZUMAB COMPONENT OF KEYLYNK-010",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3137343",
+   "accept": [
+    "CHEMBL3137343"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3137343",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pembrolizumab component of mk 7684a",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3137343",
+   "accept": [
+    "CHEMBL3137343"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3137343",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pembrolizumab component of mk-1308a",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3137343",
+   "accept": [
+    "CHEMBL3137343"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3137343",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SCH-900475",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3137343",
+   "accept": [
+    "CHEMBL3137343"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301601",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AGS-22C3",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301579",
+   "accept": [
+    "CHEMBL3301579"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301589",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ACD-79B-VCMMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301582",
+   "accept": [
+    "CHEMBL3301582"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DCDS-4501A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301582",
+   "accept": [
+    "CHEMBL3301582"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL178",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "FCU-2711",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301582",
+   "accept": [
+    "CHEMBL3301582"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3137309",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Polivy",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3301582",
+   "accept": [
+    "CHEMBL3301582"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-7596",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301582",
+   "accept": [
+    "CHEMBL3301582"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-5541077-000",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301582",
+   "accept": [
+    "CHEMBL3301582"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ACD-22-VCMMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301585",
+   "accept": [
+    "CHEMBL3301585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301582",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DCDT-2980S",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301585",
+   "accept": [
+    "CHEMBL3301585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL231779",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "FCU-2703",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301585",
+   "accept": [
+    "CHEMBL3301585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301587",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-7593",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301585",
+   "accept": [
+    "CHEMBL3301585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-5541072-000",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301585",
+   "accept": [
+    "CHEMBL3301585"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301582",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Imfinzi",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3301587",
+   "accept": [
+    "CHEMBL3301587"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MEDI-4736",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301587",
+   "accept": [
+    "CHEMBL3301587"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL490129",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AGS-22CE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301589",
+   "accept": [
+    "CHEMBL3301589"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3301579",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AGS-22M6E",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301589",
+   "accept": [
+    "CHEMBL3301589"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3301589",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AGS-22ME",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301589",
+   "accept": [
+    "CHEMBL3301589"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3301589",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AGS-22MSE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301589",
+   "accept": [
+    "CHEMBL3301589"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3301579",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ASG-22ME",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301589",
+   "accept": [
+    "CHEMBL3301589"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Padcev",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3301589",
+   "accept": [
+    "CHEMBL3301589"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297517",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MK-8931",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301601",
+   "accept": [
+    "CHEMBL3301601"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3301601",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SCH 900931",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3301601",
+   "accept": [
+    "CHEMBL3301601"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3301601",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IMMU-130",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3544923",
+   "accept": [
+    "CHEMBL3544923"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1742994",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Elahere",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3545132",
+   "accept": [
+    "CHEMBL3545132"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL218650",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IMGN-853",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545132",
+   "accept": [
+    "CHEMBL3545132"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1231821",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "M-9346A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545192",
+   "accept": [
+    "CHEMBL3545192"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2336050",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MNIB-2126A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545260",
+   "accept": [
+    "CHEMBL3545260"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3989948",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NAPI-3B",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545260",
+   "accept": [
+    "CHEMBL3545260",
+    "CHEMBL4297938"
+   ],
+   "hit_rank": 8,
+   "hit_rank_moiety": 8,
+   "top1": "CHEMBL3707227",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "HRS7-SN38",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545262",
+   "accept": [
+    "CHEMBL3545262"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3545262",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "HRS7-SN38-ANTIBODY-DRUG-CONJUGATE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545262",
+   "accept": [
+    "CHEMBL3545262"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL5314669",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IMMU-132",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545262",
+   "accept": [
+    "CHEMBL3545262"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3989962",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Trodelvy",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3545262",
+   "accept": [
+    "CHEMBL3545262"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314668",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DM-4-SULFO-TBA",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545310",
+   "accept": [
+    "CHEMBL3545310"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108358",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "INCB-024360",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3545369",
+   "accept": [
+    "CHEMBL3545369"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297985",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Anti-PD-L1",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3707227",
+   "accept": [
+    "CHEMBL3707227"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL490129",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Atezolizumab component of tecentriq hybreza",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3707227",
+   "accept": [
+    "CHEMBL3707227"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3137343",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MPDL-3280A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3707227",
+   "accept": [
+    "CHEMBL3707227"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2177913",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-7446",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3707227",
+   "accept": [
+    "CHEMBL3707227"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4298077",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Tecentriq",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3707227",
+   "accept": [
+    "CHEMBL3707227"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL465",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "GFT-505",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3707395",
+   "accept": [
+    "CHEMBL3707395"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4112929",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Iqirvo",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3707395",
+   "accept": [
+    "CHEMBL3707395"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4297517",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "HRS7",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3707405",
+   "accept": [
+    "CHEMBL3707405"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545262",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BIIB-067",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3833346",
+   "accept": [
+    "CHEMBL3833346"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297234",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS-SOD1Rx",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3833346",
+   "accept": [
+    "CHEMBL3833346"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4298203",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Qalsody",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3833346",
+   "accept": [
+    "CHEMBL3833346"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1743028",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "GS-4997",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3916717",
+   "accept": [
+    "CHEMBL3916717"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545260",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NM-283",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL393820",
+   "accept": [
+    "CHEMBL393820"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1746",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MG-516",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3989926",
+   "accept": [
+    "CHEMBL3989926"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989926",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MG-91516",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3989926",
+   "accept": [
+    "CHEMBL3989926"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989926",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MGCD-516",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3989926",
+   "accept": [
+    "CHEMBL3989926"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989926",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AZD-3293 CAMSYLATE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3989942",
+   "accept": [
+    "CHEMBL3989942"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989942",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-3314814 CAMSYLATE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3989942",
+   "accept": [
+    "CHEMBL3989942"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989942",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AZD-3293",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3989948",
+   "accept": [
+    "CHEMBL3989948"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL2177913",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-3314814",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL3989948",
+   "accept": [
+    "CHEMBL3989948"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989942",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed pfizer (previously known as pemetrexed hospira uk limited)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL3989962",
+   "accept": [
+    "CHEMBL3989962"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BMS 986177",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4112929",
+   "accept": [
+    "CHEMBL4112929"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108738",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "JNJ-70033093",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4112929",
+   "accept": [
+    "CHEMBL4112929"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3084748",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ABI-007",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL189963",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Abraxane",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL596186",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Apealea",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545412",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Apexelsin",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL317956",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BMS 181339-01",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL231779",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DHP 107",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MBT 0206",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1875805",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NK 105",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL4578881",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-125973",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Naveruclif",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PACLITAXEL COMPONENT OF ABI-007",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pacitaxel",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Paclitaxel component of abraxane",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Paclitaxel component of nab-",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Paclitaxel component of oraxol",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Paxene",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1631221",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pazenir",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 9,
+   "hit_rank_moiety": 9,
+   "top1": "CHEMBL4594216",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "QW-8184",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1256472",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Taxol",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Taxol 100",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL428647",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Zisu",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL428647",
+   "accept": [
+    "CHEMBL428647"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BIIB-067 SODIUM",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297234",
+   "accept": [
+    "CHEMBL4297234"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL3833346",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Camzyos",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL4297517",
+   "accept": [
+    "CHEMBL4297517"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3989942",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MYK-461",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297517",
+   "accept": [
+    "CHEMBL4297517"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SAR-439152",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297517",
+   "accept": [
+    "CHEMBL4297517"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL189963",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS-443139 FREE ACID",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297581",
+   "accept": [
+    "CHEMBL4297581"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-6042 FREE ACID",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297581",
+   "accept": [
+    "CHEMBL4297581"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG6042",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297581",
+   "accept": [
+    "CHEMBL4297581"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LOXO-195",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297627",
+   "accept": [
+    "CHEMBL4297627"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Adakveo",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL4297734",
+   "accept": [
+    "CHEMBL4297734"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3039540",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NVP-LXI-262",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297734",
+   "accept": [
+    "CHEMBL4297734"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2105745",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEG-101",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297734",
+   "accept": [
+    "CHEMBL4297734"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEL-G1",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297734",
+   "accept": [
+    "CHEMBL4297734"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "GCT1015-04",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297841",
+   "accept": [
+    "CHEMBL4297841"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108658",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "HuMax-TF-ADC",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297841",
+   "accept": [
+    "CHEMBL4297841"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3039540",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IGG1-1015-011-1006",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297841",
+   "accept": [
+    "CHEMBL4297841"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "TF-011-MMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297841",
+   "accept": [
+    "CHEMBL4297841"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4594216",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Tivdak",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL4297841",
+   "accept": [
+    "CHEMBL4297841"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3545369",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DS-8201",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297844",
+   "accept": [
+    "CHEMBL4297844"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095331",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DS-8201a",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297844",
+   "accept": [
+    "CHEMBL4297844"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095331",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Enhertu",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL4297844",
+   "accept": [
+    "CHEMBL4297844"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4298058",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Q4MDA7821L",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297851",
+   "accept": [
+    "CHEMBL4297851"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1200475",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DNIB-0600A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297938",
+   "accept": [
+    "CHEMBL4297938"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095329",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NAPI3B",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297938",
+   "accept": [
+    "CHEMBL3545260",
+    "CHEMBL4297938"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3545260",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-7599",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297938",
+   "accept": [
+    "CHEMBL4297938"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL393820",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ADC DS-1062A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297939",
+   "accept": [
+    "CHEMBL4297939"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4297939",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DS-1062",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297939",
+   "accept": [
+    "CHEMBL4297939"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4297939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DS-1062a",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297939",
+   "accept": [
+    "CHEMBL4297939"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4297939",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Dato-DXd",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297939",
+   "accept": [
+    "CHEMBL4297939"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL490129",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Hu5F9-G4",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4297985",
+   "accept": [
+    "CHEMBL4297985"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108724",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MTIG-7192A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298050",
+   "accept": [
+    "CHEMBL4298050"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2108658",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-6058",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298050",
+   "accept": [
+    "CHEMBL4298050"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1743004",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-7092284",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298050",
+   "accept": [
+    "CHEMBL4298050"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL313006",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NKTR-214",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298058",
+   "accept": [
+    "CHEMBL4298058"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NKTR-214 PRODRUG",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298058",
+   "accept": [
+    "CHEMBL4298058"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4298058",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PRX002",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298077",
+   "accept": [
+    "CHEMBL4298077"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL393820",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RG-7935",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298077",
+   "accept": [
+    "CHEMBL4298077"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297938",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-7046015",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298077",
+   "accept": [
+    "CHEMBL4298077"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL313006",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SGN-LIV1A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298101",
+   "accept": [
+    "CHEMBL4298101"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL178",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SYD-985",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298178",
+   "accept": [
+    "CHEMBL4298178"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3989926",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AKCEA-APO(a)-LRx",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298202",
+   "accept": [
+    "CHEMBL4298202"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4594334",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS 681257",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298202",
+   "accept": [
+    "CHEMBL4298202",
+    "CHEMBL4298203"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4298203",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS-681257 FREE ACID",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298202",
+   "accept": [
+    "CHEMBL4298202"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AKCEA-APO(a)-LRx salt",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298203",
+   "accept": [
+    "CHEMBL4298203"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL4298202",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS 681257 salt",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298203",
+   "accept": [
+    "CHEMBL4298203"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4298203",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS-681257",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298203",
+   "accept": [
+    "CHEMBL4298202",
+    "CHEMBL4298203"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4298202",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS-681257 SODIUM",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4298203",
+   "accept": [
+    "CHEMBL4298203"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4298203",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEL-24",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4467168",
+   "accept": [
+    "CHEMBL4467168"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEL-24 FREE BASE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4467168",
+   "accept": [
+    "CHEMBL4467168"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4225966",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEL24-B289",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4467168",
+   "accept": [
+    "CHEMBL4467168"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEL24-B489",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4467168",
+   "accept": [
+    "CHEMBL4467168"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4467168",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SE-120-34A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4578881",
+   "accept": [
+    "CHEMBL4578881"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4578881",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SEL120-34A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4578881",
+   "accept": [
+    "CHEMBL4578881"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4578881",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594216",
+   "accept": [
+    "CHEMBL4594216"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MONOMETHYL AURISTATIN E",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594216",
+   "accept": [
+    "CHEMBL4594216"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3137309",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PAB-MMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594216",
+   "accept": [
+    "CHEMBL4594216"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SGD-1010",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594216",
+   "accept": [
+    "CHEMBL4594216"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "conjugated form of mc-vc-PAB-MMAE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594216",
+   "accept": [
+    "CHEMBL4594216"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MAAA-1162a (pyrrole derivative)",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594266",
+   "accept": [
+    "CHEMBL4594266"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL197200",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AKCEA-TTR-LRx",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594334",
+   "accept": [
+    "CHEMBL4594334"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 3,
+   "top1": "CHEMBL4594335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ION-682884",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594334",
+   "accept": [
+    "CHEMBL4594334"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4594335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ION-682884 FREE ACID",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594334",
+   "accept": [
+    "CHEMBL4594334"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IONIS-TTR-LRx",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594334",
+   "accept": [
+    "CHEMBL4594334"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4594334",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS-682884 FREE ACID",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594334",
+   "accept": [
+    "CHEMBL4594334"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL4297581",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "AKCEA-TTR-LRX SODIUM",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594335",
+   "accept": [
+    "CHEMBL4594335"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4594334",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ION-682884 ICOSASODIUM SALT",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594335",
+   "accept": [
+    "CHEMBL4594335"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4594335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ION-682884 SODIUM",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594335",
+   "accept": [
+    "CHEMBL4594335"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4594335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "IONIS-TTR-LRX SODIUM",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594335",
+   "accept": [
+    "CHEMBL4594335"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL4594334",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ISIS-682884",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594335",
+   "accept": [
+    "CHEMBL4594335"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 4,
+   "top1": "CHEMBL4298203",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Wainua",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL4594335",
+   "accept": [
+    "CHEMBL4594335"
+   ],
+   "hit_rank": 9,
+   "hit_rank_moiety": 9,
+   "top1": "CHEMBL4297734",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Wainua (autoinjector)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL4594335",
+   "accept": [
+    "CHEMBL4594335"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL3545209",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PF-06939926",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594336",
+   "accept": [
+    "CHEMBL4594336"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1746",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "U3 1402",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594611",
+   "accept": [
+    "CHEMBL4594611"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4594611",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "U3-1402A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4594611",
+   "accept": [
+    "CHEMBL4594611"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4594611",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "ABBOTT 40566",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL465",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Dronabinol component of ad-313",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Dronabinol component of sci-110",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1200731",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "J882F",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL2108658",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Marinol",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL465",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-134454",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL247951",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "QCD 84924",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": 10,
+   "hit_rank_moiety": 10,
+   "top1": "CHEMBL4297939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SP 104",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1743072",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Syndros",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL465",
+   "accept": [
+    "CHEMBL465"
+   ],
+   "hit_rank": 8,
+   "hit_rank_moiety": 8,
+   "top1": "CHEMBL4298101",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "C-0105",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650230",
+   "accept": [
+    "CHEMBL4650230"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 5,
+   "top1": "CHEMBL4578881",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "C0105M",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650230",
+   "accept": [
+    "CHEMBL4650230"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4650230",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Filora",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL4650230",
+   "accept": [
+    "CHEMBL4650230"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PTI-125",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650230",
+   "accept": [
+    "CHEMBL4650230"
+   ],
+   "hit_rank": 5,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PTI-910",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650230",
+   "accept": [
+    "CHEMBL4650230"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PTI-125 DIHYDROCHLORIDE MONOHYDRATE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650231",
+   "accept": [
+    "CHEMBL4650231"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PTI-125 hydrochloride",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650231",
+   "accept": [
+    "CHEMBL4650231"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PTI-910 DIHYDROCHLORIDE MONOHYDRATE",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650231",
+   "accept": [
+    "CHEMBL4650231"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "PTI-910 hydrochloride",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650231",
+   "accept": [
+    "CHEMBL4650231"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "GDC-9545",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650316",
+   "accept": [
+    "CHEMBL4650316"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL2105665",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "RO-7197597",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL4650316",
+   "accept": [
+    "CHEMBL4650316"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BA-3011",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5095312",
+   "accept": [
+    "CHEMBL5095312"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3545132",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "BDC-1001",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5095315",
+   "accept": [
+    "CHEMBL5095315"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4650231",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DS-6000A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5095329",
+   "accept": [
+    "CHEMBL5095329"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4297939",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DS-7300A",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5095331",
+   "accept": [
+    "CHEMBL5095331"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5095329",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "HMI-102",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5095446",
+   "accept": [
+    "CHEMBL5095446"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MAAP-9001a",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5314627",
+   "accept": [
+    "CHEMBL5314627"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL178",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MK2870",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5314875",
+   "accept": [
+    "CHEMBL5314875"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL490129",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "SKB-264",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL5314875",
+   "accept": [
+    "CHEMBL5314875"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL5314668",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Armisarte (previously pemetrexed actavis)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL5315053",
+   "accept": [
+    "CHEMBL5315053"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed fresenius kabi",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL5315053",
+   "accept": [
+    "CHEMBL5315053"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-99445",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL596186",
+   "accept": [
+    "CHEMBL596186"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL262845",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "DP-303C",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL6068184",
+   "accept": [
+    "CHEMBL6068184"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3707227",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Ciambra",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL6068335",
+   "accept": [
+    "CHEMBL6068335"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL6068230",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed accord",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL6068335",
+   "accept": [
+    "CHEMBL6068335"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL2360464",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed krka",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL6068335",
+   "accept": [
+    "CHEMBL6068335"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL6068335",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed medac",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL6068335",
+   "accept": [
+    "CHEMBL6068335"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989962",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Pemetrexed pfizer (previously pemetrexed hospira)",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL6068335",
+   "accept": [
+    "CHEMBL6068335"
+   ],
+   "hit_rank": 4,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL3989962",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Alexan",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": 10,
+   "hit_rank_moiety": 10,
+   "top1": "CHEMBL2105665",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Alexan 100",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": 11,
+   "hit_rank_moiety": 11,
+   "top1": "CHEMBL2105665",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Cytarabine component of vyxeos",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL803",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Cytosar",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": 3,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1256472",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Cytosar-u",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1256472",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Depocyt",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3833346",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Depocyte",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3833346",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-287459",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL95606",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Tarabine pfs",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL803",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "U-19,920",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL803",
+   "accept": [
+    "CHEMBL803"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL4578881",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Gemzar",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL888",
+   "accept": [
+    "CHEMBL1637",
+    "CHEMBL888"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1637",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "LY-188011",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL888",
+   "accept": [
+    "CHEMBL888"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL1637",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-613327",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL888",
+   "accept": [
+    "CHEMBL888"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1675",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "INS NO.250",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL93268",
+   "accept": [
+    "CHEMBL93268"
+   ],
+   "hit_rank": 2,
+   "hit_rank_moiety": 2,
+   "top1": "CHEMBL1743025",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "INS-250",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL93268",
+   "accept": [
+    "CHEMBL93268"
+   ],
+   "hit_rank": 6,
+   "hit_rank_moiety": 6,
+   "top1": "CHEMBL5314922",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-77391",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL93268",
+   "accept": [
+    "CHEMBL93268"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL1875805",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Sodium nitrite component of nithiodote",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL93268",
+   "accept": [
+    "CHEMBL93268"
+   ],
+   "hit_rank": 1,
+   "hit_rank_moiety": 1,
+   "top1": "CHEMBL93268",
+   "top1_method": "embedding+lexical+rerank",
+   "suggested": []
+  },
+  {
+   "query": "MMV638723",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL95606",
+   "accept": [
+    "CHEMBL95606"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3039540",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "NSC-20258",
+   "syn_type": "RESEARCH_CODE",
+   "target": "CHEMBL95606",
+   "accept": [
+    "CHEMBL95606"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL93268",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  },
+  {
+   "query": "Emsam",
+   "syn_type": "TRADE_NAME",
+   "target": "CHEMBL972",
+   "accept": [
+    "CHEMBL972"
+   ],
+   "hit_rank": null,
+   "hit_rank_moiety": null,
+   "top1": "CHEMBL3301585",
+   "top1_method": "embedding+rerank",
+   "suggested": []
+  }
+ ]
+}

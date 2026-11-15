@@ -1,0 +1,12 @@
+group	model	list	rows	targets	sha256	version	retrieved
+diseases	Target	Associated Diseases	678	4	0f3e25734296caf938cada07a1a7a3b8c1fbe908d916b553bf3baf3aa31ef2ca	pharos319	2026-11-09T19:08:08Z
+dto	Target	DTO Classes	24	4	e49707ce657ac5169398acc73ec82be318306f43756f838f866703c4e2b57c25	pharos319	2026-11-09T19:08:08Z
+gene_ids	Target	Gene RIFs	4	4	91ac9592848b261e5d95bd907da45fc29956ebf1dfd67c7db920b6d370613366	pharos319	2026-11-09T19:08:08Z
+go	Target	GO Terms	325	4	7161f79e7c412d0047969de7b630e25a3e515a59d7c0924a8d70185fa05dbf28	pharos319	2026-11-09T19:08:08Z
+ligands	Target	Drugs and Ligands	5082	4	95c89bdff33d4ac4490bfbcd55e456751b7699a1c85a6de15e54f91234093dda	pharos319	2026-11-09T19:08:08Z
+pathways	Target	Pathways	453	4	8361148b00f41118907b25c10fc3453c5ef4b895ad9db6300bbf4a7a1fa84a47	pharos319	2026-11-09T19:08:08Z
+phenotypes	Target	Phenotype	65	4	5e1c16dec0de34b697db4df5e7561362cbce51f287ccf1d8138cddc9ef2e1fb0	pharos319	2026-11-09T19:08:08Z
+ppi	Target	Interacting Targets	13226	4	bb3eb5af4638eaf9276fe98586f76ba91204d25fd3d04335d5852bc91dd89f20	pharos319	2026-11-09T19:08:08Z
+targets	Target	Single Value Fields	4	4	9a4e26549dbc7a02acab194ed011c48e35a867fc473c2214e71425127f570a2a	pharos319	2026-11-09T19:08:08Z
+tiga	Target	GWAS Analytics (TIGA)	175	4	994b1d629ff3f28a2a43c33ec816d404d2ce47702915e3e2cad88be9b96a5e6f	pharos319	2026-11-09T19:08:08Z
+tinx	Target	TINX Disease Associations	13870	4	2791b2d220abd1e639df17815fb818514031112e457848c5283b85f94ed175d2	pharos319	2026-11-09T19:08:08Z

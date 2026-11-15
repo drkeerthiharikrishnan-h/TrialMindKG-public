@@ -1,0 +1,36 @@
+id: T-009
+title: 'NVIDIA: model pre-flight, plain-English question box, parity suite'
+owner: any
+classification: coding
+status: open
+progress: '2026-11-04: NVIDIA_API_KEY is a Claude Science credential; pre-flight done by hand -> outputs/nim_check/preflight.md
+  (all configured models OK; 3 catalogue-listed backups 404 for this account, so a listing is not proof: the check must make a
+  real call). Code part = Claude Code packet CC-8 in docs/MASTER_PLAN.md; live parity run = Claude Science.'
+closes:
+- nl_question_parity
+objective: agent-cli nim-check calls each model id in config/nim_models.yaml once; the Pharos question box maps a typed
+  question to a fixed kg_query function; tests/parity runs 25 fixed questions on stand-in vs hosted NIM and requires identical
+  evidence edge-id sets (text may differ).
+read_first:
+- pipelines/nim.py
+- pipelines/querier.py
+- config/nim_models.yaml
+editable_paths:
+- bin/agent-cli
+- pipelines/querier.py
+- pipelines/pharos_app.py
+- tests/parity/
+- outputs/parity/
+- tests/test_agent_cli.py
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- parity report lists function-selection agreement and edge-id Jaccard per question
+- verify_answer passes on every cited edge
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_nim.py tests/test_querier.py
+stop_rule: 'Blocked on: NVIDIA_API_KEY as a credential (the sandbox cannot read .env).'
+handoff: outputs/parity/report.md.

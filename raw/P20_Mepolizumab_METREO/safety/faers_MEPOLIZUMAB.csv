@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,ASTHMA,12767
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,DYSPNOEA,10576
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,WHEEZING,7131
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,PRODUCT DOSE OMISSION ISSUE,6636
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,COUGH,5100
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,THERAPEUTIC PRODUCT EFFECT INCOMPLETE,5051
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,PNEUMONIA,4644
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,DRUG INEFFECTIVE,4622
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES,4241
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,SLEEP DISORDER DUE TO A GENERAL MEDICAL CONDITION,3118
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,FATIGUE,3078
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,OFF LABEL USE,3073
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,MALAISE,2776
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,CONDITION AGGRAVATED,2743
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,HEADACHE,2696
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,PAIN,2530
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,PRODUCTIVE COUGH,2321
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,NASOPHARYNGITIS,2241
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,OBSTRUCTIVE AIRWAYS DISORDER,2175
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,HOSPITALISATION,2094
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,CHEST DISCOMFORT,1975
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,ARTHRALGIA,1968
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION,1866
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,RASH,1843
+MEPOLIZUMAB,patient.drug.openfda.generic_name,49399,FULL BLOOD COUNT ABNORMAL,1832

@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+MAGROLIMAB,patient.drug.medicinalproduct,110,FEBRILE NEUTROPENIA,13
+MAGROLIMAB,patient.drug.medicinalproduct,110,NEUTROPENIA,12
+MAGROLIMAB,patient.drug.medicinalproduct,110,CATHETER SITE INFECTION,10
+MAGROLIMAB,patient.drug.medicinalproduct,110,CORYNEBACTERIUM BACTERAEMIA,10
+MAGROLIMAB,patient.drug.medicinalproduct,110,HALLUCINATION,10
+MAGROLIMAB,patient.drug.medicinalproduct,110,FALL,7
+MAGROLIMAB,patient.drug.medicinalproduct,110,NAUSEA,7
+MAGROLIMAB,patient.drug.medicinalproduct,110,TREATMENT FAILURE,7
+MAGROLIMAB,patient.drug.medicinalproduct,110,ANAEMIA,6
+MAGROLIMAB,patient.drug.medicinalproduct,110,DISEASE PROGRESSION,6
+MAGROLIMAB,patient.drug.medicinalproduct,110,INFUSION RELATED REACTION,6
+MAGROLIMAB,patient.drug.medicinalproduct,110,PNEUMONIA,6
+MAGROLIMAB,patient.drug.medicinalproduct,110,ACUTE MYELOID LEUKAEMIA,5
+MAGROLIMAB,patient.drug.medicinalproduct,110,DRUG INEFFECTIVE,5
+MAGROLIMAB,patient.drug.medicinalproduct,110,CARDIAC ARREST,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,COLITIS,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,DRUG INTERACTION,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,GENERALISED TONIC-CLONIC SEIZURE,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,LUNG DISORDER,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,PNEUMOTHORAX,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,RESPIRATORY DISTRESS,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,SEIZURE,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,WHITE BLOOD CELL COUNT DECREASED,4
+MAGROLIMAB,patient.drug.medicinalproduct,110,ACUTE KIDNEY INJURY,3
+MAGROLIMAB,patient.drug.medicinalproduct,110,BRADYPNOEA,3

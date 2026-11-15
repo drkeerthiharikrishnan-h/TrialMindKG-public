@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+DALCETRAPIB,patient.drug.medicinalproduct,15,GASTROINTESTINAL HAEMORRHAGE,3
+DALCETRAPIB,patient.drug.medicinalproduct,15,ANGINA PECTORIS,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,ASTHENIA,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,CHEST PAIN,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,DIZZINESS,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,FALL,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,LIVER FUNCTION TEST ABNORMAL,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,NAUSEA,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,SYNCOPE,2
+DALCETRAPIB,patient.drug.medicinalproduct,15,ANGIOEDEMA,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,ANKLE FRACTURE,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,BARRETT^S OESOPHAGUS,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,BENIGN SALIVARY GLAND NEOPLASM,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,BLISTER,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,CARDIAC STRESS TEST ABNORMAL,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,DECREASED APPETITE,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,FAECES DISCOLOURED,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,FATIGUE,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,FRACTURE DISPLACEMENT,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,GASTRIC HAEMORRHAGE,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,GASTRITIS,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,HAEMATOMA,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,HAEMATURIA,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,HIATUS HERNIA,1
+DALCETRAPIB,patient.drug.medicinalproduct,15,HYPERHIDROSIS,1

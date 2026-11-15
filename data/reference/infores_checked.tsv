@@ -1,0 +1,30 @@
+# source: Biolink information resource registry infores_catalog.yaml, https://raw.githubusercontent.com/biolink/information-resource-registry/main/infores_catalog.yaml, retrieved 2026-11-12, sha256 f1691165e038d8f404ce4780e16506e29e1a3ac9c688c766eb84ae4a292f2e7a
+# content: every infores id named in sources/*.yaml, plus the candidates looked up for TIN-X and Open Targets; registry_status 'not in registry' = no entry with that id
+infores_id	registry_status	registry_name	registry_knowledge_level	registry_agent_type
+infores:amyco	released	The Amyloidoses Collection (AmyCo) Database	knowledge_assertion	manual_agent
+infores:bioplex	not in registry			
+infores:chembl	released	ChEMBL	knowledge_assertion	manual_agent
+infores:ctd	released	Comparative Toxicogenomics Database	knowledge_assertion	not_provided
+infores:diseases	released	DISEASES	prediction	text_mining_agent
+infores:disgenet	released	DisGeNET	prediction	automated_agent
+infores:drugcentral	released	DrugCentral	knowledge_assertion	manual_agent
+infores:eram	released	eRAM: encyclopedia of rare disease annotations for precision medicine	knowledge_assertion	not_provided
+infores:go	released	Gene Ontology	knowledge_assertion	manual_agent
+infores:goa	released	Gene Ontology Annotations	knowledge_assertion	manual_validation_of_automated_agent
+infores:gtopdb	released	Guide to Pharmacology Database	knowledge_assertion	not_provided
+infores:hpo	released	Human Phenotype Ontology	knowledge_assertion	manual_agent
+infores:kegg	released	Kyoto Encyclopedia of Genes and Genomes (KEGG)	knowledge_assertion	manual_agent
+infores:medlineplus	released	MedlinePlus (from UMLS)	knowledge_assertion	manual_agent
+infores:mgi	released	Mouse Genome Informatics	knowledge_assertion	not_provided
+infores:monarchinitiative	released	Monarch Initiative	knowledge_assertion	not_provided
+infores:mondo	released	MONDO Disease Ontology	knowledge_assertion	manual_validation_of_automated_agent
+infores:open-targets	released	Open Targets	knowledge_assertion	not_provided
+infores:opentargets	not in registry			
+infores:pharos	released	Pharos	knowledge_assertion	not_provided
+infores:reactome	released	Reactome	knowledge_assertion	manual_agent
+infores:string	released	Search Tool for the Retrieval of Interacting Genes/Proteins	knowledge_assertion	not_provided
+infores:tiga	released	Target Illumination GWAS Analytics	knowledge_assertion	not_provided
+infores:tin-x	not in registry			
+infores:tinx	not in registry			
+infores:uniprot	released	UniProt Knowledgebase	knowledge_assertion	manual_agent
+infores:wikipathways	released	WikiPathways	knowledge_assertion	not_provided

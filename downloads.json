@@ -1,0 +1,36 @@
+{
+  "_about": "What the hosted app offers as downloads. base_url is set at deploy time: the hosted app's own /downloads/ folder (served by Caddy on the instance from s3://<bucket>/app/downloads/; TMKG_DOWNLOADS_BASE, set by the instance's first-boot script, overrides base_url). While it is empty the Downloads section is hidden in the app and in the README. Each path is relative to base_url; a path ending in / is a folder with a SHA256SUMS file. bytes and sha256 are optional.",
+  "base_url": "https://tmkg.16-178-197-241.sslip.io/downloads/",
+  "files": [
+    {
+      "title": "A small sample to open first: EGFR / Epidermal growth factor receptor and its neighbourhood",
+      "path": "sample/",
+      "what": "2,663 nodes and 4,705 edges cut from the pruned graph, as KGX tables and as PyTorch Geometric index tables, with a README that shows how to open them in pandas in five lines. SHA256SUMS lists a checksum for every file.",
+      "bytes": 2337491
+    },
+    {
+      "title": "The pruned graph with the trial layer as Amazon Neptune load files",
+      "path": "neptune/",
+      "what": "openCypher bulk-load CSV (gzip, at most 1,000,000 rows per file) for every node and every kept edge of the pruned graph with the trial layer (Pharos, the enrichment layers and the trial layer; pruned edges left out), README.md, and manifest.json with the counts, checksums and check questions. The same graph is loaded in Amazon Neptune, which this site uses on request (asleep to save cost; waking takes about 11 minutes); these files load it into your own Neptune. SHA256SUMS lists a checksum for every file.",
+      "bytes": 689300193
+    },
+    {
+      "title": "The pruned graph as KGX tables",
+      "path": "kgx/",
+      "what": "nodes.tsv.gz and edges.tsv.gz in the KGX format, every edge with verdict, confidence and reasons. SHA256SUMS lists a checksum for every file.",
+      "bytes": 1518572383
+    },
+    {
+      "title": "The verdict file",
+      "path": "verdicts/",
+      "what": "One row per Pharos source row with Pharos's own identifiers, the keep / prune verdict, the confidence and the reasons. SHA256SUMS lists a checksum for every file.",
+      "bytes": 1058218861
+    },
+    {
+      "title": "The pruned graph for PyTorch Geometric",
+      "path": "pyg/",
+      "what": "heterodata_G3.pt: the pruned release graph as a PyG HeteroData object (torch_geometric 2.8.1), the graph the link-prediction results were scored on. SHA256SUMS lists a checksum for every file.",
+      "bytes": 1600616456
+    }
+  ]
+}

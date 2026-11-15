@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,SYSTEMIC LUPUS ERYTHEMATOSUS,149
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,FATIGUE,137
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,ARTHRALGIA,94
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,HEADACHE,93
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,NAUSEA,83
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,PAIN,74
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,RASH,72
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,HERPES ZOSTER,66
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,DRUG INEFFECTIVE,63
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,CONDITION AGGRAVATED,58
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,PRODUCT DOSE OMISSION ISSUE,53
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,COVID-19,51
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,DYSPNOEA,49
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,DIZZINESS,48
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,PYREXIA,48
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,VOMITING,45
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,ILLNESS,44
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,PRURITUS,44
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,FEELING ABNORMAL,43
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,ASTHENIA,39
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,DEATH,38
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,OFF LABEL USE,38
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,CHEST PAIN,34
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,COUGH,34
+ANIFROLUMAB,patient.drug.openfda.generic_name,1745,DIARRHOEA,34

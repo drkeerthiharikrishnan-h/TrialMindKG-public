@@ -1,0 +1,5114 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D020734",
+     "term": "Parkinsonian Disorders"
+    },
+    {
+     "id": "D001480",
+     "term": "Basal Ganglia Diseases"
+    },
+    {
+     "id": "D001927",
+     "term": "Brain Diseases"
+    },
+    {
+     "id": "D002493",
+     "term": "Central Nervous System Diseases"
+    },
+    {
+     "id": "D009422",
+     "term": "Nervous System Diseases"
+    },
+    {
+     "id": "D009069",
+     "term": "Movement Disorders"
+    },
+    {
+     "id": "D000080874",
+     "term": "Synucleinopathies"
+    },
+    {
+     "id": "D019636",
+     "term": "Neurodegenerative Diseases"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D010300",
+     "term": "Parkinson Disease"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "removedCountries": [
+    "Argentina",
+    "Australia",
+    "Belgium",
+    "Brazil",
+    "Bulgaria",
+    "Chile",
+    "China",
+    "Colombia",
+    "Croatia",
+    "Czechia",
+    "Germany",
+    "Hungary",
+    "Portugal"
+   ],
+   "submissionTracking": {
+    "firstMcpInfo": {
+     "postDateStruct": {
+      "date": "2025-09-30",
+      "type": "ACTUAL"
+     }
+    }
+   },
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "documentSection": {
+  "largeDocumentModule": {
+   "largeDocs": [
+    {
+     "date": "2025-04-15",
+     "filename": "Prot_000.pdf",
+     "hasIcf": false,
+     "hasProtocol": true,
+     "hasSap": false,
+     "label": "Study Protocol",
+     "size": 15666327,
+     "typeAbbrev": "Prot",
+     "uploadDate": "2025-09-09T17:47"
+    },
+    {
+     "date": "2024-08-05",
+     "filename": "SAP_001.pdf",
+     "hasIcf": false,
+     "hasProtocol": false,
+     "hasSap": true,
+     "label": "Statistical Analysis Plan",
+     "size": 690539,
+     "typeAbbrev": "SAP",
+     "uploadDate": "2025-09-09T17:47"
+    }
+   ]
+  }
+ },
+ "hasResults": true,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "description": "Participants will receive an IV infusion of prasinezumab every 4 weeks (Q4W).\n\nParticipants will enter into the optional Open Label Extension (OLE) once the double-blind treatment period has completed.",
+     "interventionNames": [
+      "Drug: Prasinezumab"
+     ],
+     "label": "Prasinezumab",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "Participants will receive placebo as an IV infusion Q4W.",
+     "interventionNames": [
+      "Drug: Placebo"
+     ],
+     "label": "Placebo",
+     "type": "PLACEBO_COMPARATOR"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Prasinezumab"
+     ],
+     "description": "Prasinezumab will be administered as an IV infusion to participants Q4W.",
+     "name": "Prasinezumab",
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Placebo"
+     ],
+     "description": "Prasinezumab placebo will be administered to participants.",
+     "name": "Placebo",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Parkinsons Disease"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Birmingham",
+     "country": "United States",
+     "facility": "University of Alabama at Birmingham",
+     "geoPoint": {
+      "lat": 33.52066,
+      "lon": -86.80249
+     },
+     "state": "Alabama",
+     "zip": "35294"
+    },
+    {
+     "city": "Phoenix",
+     "country": "United States",
+     "facility": "Barrow Neurological Institute",
+     "geoPoint": {
+      "lat": 33.44838,
+      "lon": -112.07404
+     },
+     "state": "Arizona",
+     "zip": "85013"
+    },
+    {
+     "city": "Fullerton",
+     "country": "United States",
+     "facility": "Neurology Center of North Orange County",
+     "geoPoint": {
+      "lat": 33.87029,
+      "lon": -117.92534
+     },
+     "state": "California",
+     "zip": "92835"
+    },
+    {
+     "city": "La Jolla",
+     "country": "United States",
+     "facility": "UC San Diego",
+     "geoPoint": {
+      "lat": 32.84727,
+      "lon": -117.2742
+     },
+     "state": "California",
+     "zip": "92037"
+    },
+    {
+     "city": "Los Angeles",
+     "country": "United States",
+     "facility": "Keck School of Medicine of USC",
+     "geoPoint": {
+      "lat": 34.05223,
+      "lon": -118.24368
+     },
+     "state": "California",
+     "zip": "90033"
+    },
+    {
+     "city": "Los Angeles",
+     "country": "United States",
+     "facility": "Cedars Sinai Medical Center",
+     "geoPoint": {
+      "lat": 34.05223,
+      "lon": -118.24368
+     },
+     "state": "California",
+     "zip": "90048"
+    },
+    {
+     "city": "San Francisco",
+     "country": "United States",
+     "facility": "University of California San Francisco",
+     "geoPoint": {
+      "lat": 37.77493,
+      "lon": -122.41942
+     },
+     "state": "California",
+     "zip": "94143"
+    },
+    {
+     "city": "Englewood",
+     "country": "United States",
+     "facility": "CenExel Rocky Mountain Clinical Research, LLC",
+     "geoPoint": {
+      "lat": 39.64777,
+      "lon": -104.98776
+     },
+     "state": "Colorado",
+     "zip": "80113"
+    },
+    {
+     "city": "New Haven",
+     "country": "United States",
+     "facility": "Institute for Neurodegenerative Disorders",
+     "geoPoint": {
+      "lat": 41.30815,
+      "lon": -72.92816
+     },
+     "state": "Connecticut",
+     "zip": "06510"
+    },
+    {
+     "city": "Atlantis",
+     "country": "United States",
+     "facility": "JEM Research LLC",
+     "geoPoint": {
+      "lat": 26.5909,
+      "lon": -80.10088
+     },
+     "state": "Florida",
+     "zip": "33462"
+    },
+    {
+     "city": "Boca Raton",
+     "country": "United States",
+     "facility": "Parkinson's Disease and Movement Disorders Center of Boca Raton",
+     "geoPoint": {
+      "lat": 26.35869,
+      "lon": -80.0831
+     },
+     "state": "Florida",
+     "zip": "33486"
+    },
+    {
+     "city": "Ocala",
+     "country": "United States",
+     "facility": "Renstar Medical Research",
+     "geoPoint": {
+      "lat": 29.1872,
+      "lon": -82.14009
+     },
+     "state": "Florida",
+     "zip": "34470"
+    },
+    {
+     "city": "Tampa",
+     "country": "United States",
+     "facility": "University of South Florida",
+     "geoPoint": {
+      "lat": 27.94752,
+      "lon": -82.45843
+     },
+     "state": "Florida",
+     "zip": "33613-4706"
+    },
+    {
+     "city": "Winter Park",
+     "country": "United States",
+     "facility": "Charter Research - Winter Park/Orlando",
+     "geoPoint": {
+      "lat": 28.6,
+      "lon": -81.33924
+     },
+     "state": "Florida",
+     "zip": "32792"
+    },
+    {
+     "city": "Chicago",
+     "country": "United States",
+     "facility": "Northwestern University Feinberg School Of Medicine",
+     "geoPoint": {
+      "lat": 41.85003,
+      "lon": -87.65005
+     },
+     "state": "Illinois",
+     "zip": "60611"
+    },
+    {
+     "city": "Springfield",
+     "country": "United States",
+     "facility": "Southern Illinois University, School of Medicine",
+     "geoPoint": {
+      "lat": 39.80172,
+      "lon": -89.64371
+     },
+     "state": "Illinois",
+     "zip": "62702"
+    },
+    {
+     "city": "Kansas City",
+     "country": "United States",
+     "facility": "University of Kansas Medical Center",
+     "geoPoint": {
+      "lat": 39.11417,
+      "lon": -94.62746
+     },
+     "state": "Kansas",
+     "zip": "66160"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Massachusetts General Hospital",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02114-2759"
+    },
+    {
+     "city": "Farmington Hills",
+     "country": "United States",
+     "facility": "Quest Research Institute",
+     "geoPoint": {
+      "lat": 42.48531,
+      "lon": -83.37716
+     },
+     "state": "Michigan",
+     "zip": "48334"
+    },
+    {
+     "city": "West Bloomfield",
+     "country": "United States",
+     "facility": "Henry Ford Hospital",
+     "geoPoint": {
+      "lat": 42.56891,
+      "lon": -83.38356
+     },
+     "state": "Michigan",
+     "zip": "48322"
+    },
+    {
+     "city": "Amherst",
+     "country": "United States",
+     "facility": "Dent Neurological Institute",
+     "geoPoint": {
+      "lat": 42.97839,
+      "lon": -78.79976
+     },
+     "state": "New York",
+     "zip": "14226"
+    },
+    {
+     "city": "Cleveland",
+     "country": "United States",
+     "facility": "Cleveland Clinic",
+     "geoPoint": {
+      "lat": 41.4995,
+      "lon": -81.69541
+     },
+     "state": "Ohio",
+     "zip": "44195"
+    },
+    {
+     "city": "Tulsa",
+     "country": "United States",
+     "facility": "The Movement Disorder Clinic of Oklahoma",
+     "geoPoint": {
+      "lat": 36.15398,
+      "lon": -95.99277
+     },
+     "state": "Oklahoma",
+     "zip": "74136"
+    },
+    {
+     "city": "Philadelphia",
+     "country": "United States",
+     "facility": "University Pennsylvania Hospital",
+     "geoPoint": {
+      "lat": 39.95238,
+      "lon": -75.16362
+     },
+     "state": "Pennsylvania",
+     "zip": "19107"
+    },
+    {
+     "city": "Dallas",
+     "country": "United States",
+     "facility": "Texas Neurology PA",
+     "geoPoint": {
+      "lat": 32.78306,
+      "lon": -96.80667
+     },
+     "state": "Texas",
+     "zip": "75206"
+    },
+    {
+     "city": "Houston",
+     "country": "United States",
+     "facility": "Baylor College of Medicine Medical Center",
+     "geoPoint": {
+      "lat": 29.76328,
+      "lon": -95.36327
+     },
+     "state": "Texas",
+     "zip": "77030"
+    },
+    {
+     "city": "Round Rock",
+     "country": "United States",
+     "facility": "Central Texas Neurology Consultants",
+     "geoPoint": {
+      "lat": 30.50826,
+      "lon": -97.6789
+     },
+     "state": "Texas",
+     "zip": "78681"
+    },
+    {
+     "city": "Burlington",
+     "country": "United States",
+     "facility": "University of Vermont Medical Center",
+     "geoPoint": {
+      "lat": 44.47588,
+      "lon": -73.21207
+     },
+     "state": "Vermont",
+     "zip": "05401"
+    },
+    {
+     "city": "Norfolk",
+     "country": "United States",
+     "facility": "Sentara Neurology Specialists",
+     "geoPoint": {
+      "lat": 36.84681,
+      "lon": -76.28522
+     },
+     "state": "Virginia",
+     "zip": "23507"
+    },
+    {
+     "city": "Kirkland",
+     "country": "United States",
+     "facility": "EvergreenHealth Investigational Drug Services",
+     "geoPoint": {
+      "lat": 47.68149,
+      "lon": -122.20874
+     },
+     "state": "Washington",
+     "zip": "98034"
+    },
+    {
+     "city": "Spokane",
+     "country": "United States",
+     "facility": "Inland Northwest Research",
+     "geoPoint": {
+      "lat": 47.65966,
+      "lon": -117.42908
+     },
+     "state": "Washington",
+     "zip": "99202"
+    },
+    {
+     "city": "Graz",
+     "country": "Austria",
+     "facility": "Medizinische Universität Graz",
+     "geoPoint": {
+      "lat": 47.06733,
+      "lon": 15.44197
+     },
+     "zip": "8036"
+    },
+    {
+     "city": "Innsbruck",
+     "country": "Austria",
+     "facility": "Uniklinik fuer Neurologie, Medizinische Universitaet Innsbruck",
+     "geoPoint": {
+      "lat": 47.26266,
+      "lon": 11.39454
+     },
+     "zip": "6020"
+    },
+    {
+     "city": "Vienna",
+     "country": "Austria",
+     "facility": "Klinik Ottakring",
+     "geoPoint": {
+      "lat": 48.20849,
+      "lon": 16.37208
+     },
+     "zip": "1160"
+    },
+    {
+     "city": "Toronto",
+     "country": "Canada",
+     "facility": "Toronto Memory Program",
+     "geoPoint": {
+      "lat": 43.70643,
+      "lon": -79.39864
+     },
+     "state": "Ontario",
+     "zip": "M3B 2S7"
+    },
+    {
+     "city": "Toronto",
+     "country": "Canada",
+     "facility": "Toronto Western Hospital",
+     "geoPoint": {
+      "lat": 43.70643,
+      "lon": -79.39864
+     },
+     "state": "Ontario",
+     "zip": "M5T 2S8"
+    },
+    {
+     "city": "Gatineau",
+     "country": "Canada",
+     "facility": "Clinique Neuro Outaouais",
+     "geoPoint": {
+      "lat": 45.47723,
+      "lon": -75.70164
+     },
+     "state": "Quebec",
+     "zip": "J8Y 1W2"
+    },
+    {
+     "city": "Montreal",
+     "country": "Canada",
+     "facility": "Montreal Neurological Institute and Hospital",
+     "geoPoint": {
+      "lat": 45.50884,
+      "lon": -73.58781
+     },
+     "state": "Quebec",
+     "zip": "H3A 2B4"
+    },
+    {
+     "city": "Bordeaux",
+     "country": "France",
+     "facility": "Groupe Hospitalier Pellegrin",
+     "geoPoint": {
+      "lat": 44.84124,
+      "lon": -0.58046
+     },
+     "zip": "33000"
+    },
+    {
+     "city": "Bron",
+     "country": "France",
+     "facility": "Groupement Hospitalier Est - Hôpital Neurologique",
+     "geoPoint": {
+      "lat": 45.73865,
+      "lon": 4.91303
+     },
+     "zip": "69677"
+    },
+    {
+     "city": "Clermont-Ferrand",
+     "country": "France",
+     "facility": "Hopital Gabriel Montpied",
+     "geoPoint": {
+      "lat": 45.77969,
+      "lon": 3.08682
+     },
+     "zip": "63003"
+    },
+    {
+     "city": "Créteil",
+     "country": "France",
+     "facility": "Hôpital Henri Mondor",
+     "geoPoint": {
+      "lat": 48.79266,
+      "lon": 2.46569
+     },
+     "zip": "94000"
+    },
+    {
+     "city": "Grenoble",
+     "country": "France",
+     "facility": "Hôpital Michallon - Centre d'Investigation Clinique",
+     "geoPoint": {
+      "lat": 45.17869,
+      "lon": 5.71479
+     },
+     "zip": "38043"
+    },
+    {
+     "city": "Limoges",
+     "country": "France",
+     "facility": "CHU de Limoges - Hôpital Dupuytren",
+     "geoPoint": {
+      "lat": 45.83362,
+      "lon": 1.24759
+     },
+     "zip": "87042"
+    },
+    {
+     "city": "Marseille",
+     "country": "France",
+     "facility": "hopital de la Timone",
+     "geoPoint": {
+      "lat": 43.29695,
+      "lon": 5.38107
+     },
+     "zip": "13385"
+    },
+    {
+     "city": "Montpellier",
+     "country": "France",
+     "facility": "CHU Gui de Chauliac",
+     "geoPoint": {
+      "lat": 43.61093,
+      "lon": 3.87635
+     },
+     "zip": "34000"
+    },
+    {
+     "city": "Nice",
+     "country": "France",
+     "facility": "CHU de Nice Hopital Pasteur",
+     "geoPoint": {
+      "lat": 43.70313,
+      "lon": 7.26608
+     },
+     "zip": "06002"
+    },
+    {
+     "city": "Paris",
+     "country": "France",
+     "facility": "Hopital Pitie-Salpetriere APHP",
+     "geoPoint": {
+      "lat": 48.85341,
+      "lon": 2.3488
+     },
+     "zip": "75013"
+    },
+    {
+     "city": "Poitiers",
+     "country": "France",
+     "facility": "CHU Poitiers",
+     "geoPoint": {
+      "lat": 46.58261,
+      "lon": 0.34348
+     },
+     "zip": "86021"
+    },
+    {
+     "city": "Rouen",
+     "country": "France",
+     "facility": "CHU Rouen Charles Nicolle",
+     "geoPoint": {
+      "lat": 49.44313,
+      "lon": 1.09932
+     },
+     "zip": "76031"
+    },
+    {
+     "city": "Saint-Herblain",
+     "country": "France",
+     "facility": "CHU de Nantes - Hopital Laennec",
+     "geoPoint": {
+      "lat": 47.21154,
+      "lon": -1.651
+     },
+     "zip": "44800"
+    },
+    {
+     "city": "Strasbourg",
+     "country": "France",
+     "facility": "CHU Strasbourg Hpital Hautepierre",
+     "geoPoint": {
+      "lat": 48.58392,
+      "lon": 7.74553
+     },
+     "zip": "67098"
+    },
+    {
+     "city": "Toulouse",
+     "country": "France",
+     "facility": "CIC - Hôpital Purpan",
+     "geoPoint": {
+      "lat": 43.60426,
+      "lon": 1.44367
+     },
+     "zip": "31059"
+    },
+    {
+     "city": "Naples",
+     "country": "Italy",
+     "facility": "Università degli studi della Campania Luigi Vanvitelli",
+     "geoPoint": {
+      "lat": 40.85216,
+      "lon": 14.26811
+     },
+     "state": "Campania",
+     "zip": "80138"
+    },
+    {
+     "city": "Salerno",
+     "country": "Italy",
+     "facility": "Az. Osp. OO.RR. S. Giovanni di Dio e Ruggi D' Aragona",
+     "geoPoint": {
+      "lat": 40.67545,
+      "lon": 14.79328
+     },
+     "state": "Campania",
+     "zip": "84131"
+    },
+    {
+     "city": "Bologna",
+     "country": "Italy",
+     "facility": "Ospedale Bellaria",
+     "geoPoint": {
+      "lat": 44.49381,
+      "lon": 11.33875
+     },
+     "state": "Emilia-Romagna",
+     "zip": "40139"
+    },
+    {
+     "city": "Rome",
+     "country": "Italy",
+     "facility": "IRCCS San Raffaele;Clinical Trial Center",
+     "geoPoint": {
+      "lat": 41.89193,
+      "lon": 12.51133
+     },
+     "state": "Lazio",
+     "zip": "00166"
+    },
+    {
+     "city": "Rome",
+     "country": "Italy",
+     "facility": "Policlinico Universitario Agostino Gemelli",
+     "geoPoint": {
+      "lat": 41.89193,
+      "lon": 12.51133
+     },
+     "state": "Lazio",
+     "zip": "00168"
+    },
+    {
+     "city": "Genoa",
+     "country": "Italy",
+     "facility": "Irccs A.O.U.San Martino Ist",
+     "geoPoint": {
+      "lat": 44.40478,
+      "lon": 8.94439
+     },
+     "state": "Liguria",
+     "zip": "16132"
+    },
+    {
+     "city": "Brescia",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera Spedali Civili",
+     "geoPoint": {
+      "lat": 45.53558,
+      "lon": 10.21472
+     },
+     "state": "Lombardy",
+     "zip": "25100"
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "IRCCS Ospedale San Raffaele",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     },
+     "state": "Lombardy",
+     "zip": "20132"
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "IRCCS Istituto Neurologico Carlo Besta",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     },
+     "state": "Lombardy",
+     "zip": "20133"
+    },
+    {
+     "city": "Pozzilli (IS)",
+     "country": "Italy",
+     "facility": "IRCCS Neuromed",
+     "geoPoint": {
+      "lat": 41.51142,
+      "lon": 14.06252
+     },
+     "state": "Molise",
+     "zip": "86077"
+    },
+    {
+     "city": "Catania",
+     "country": "Italy",
+     "facility": "A.O.U. Policlinico \"G.Rodolico - San Marco\"",
+     "geoPoint": {
+      "lat": 37.49223,
+      "lon": 15.07041
+     },
+     "state": "Sicily",
+     "zip": "95123"
+    },
+    {
+     "city": "Pisa",
+     "country": "Italy",
+     "facility": "A.O. Universitaria Pisana",
+     "geoPoint": {
+      "lat": 43.70853,
+      "lon": 10.4036
+     },
+     "state": "Tuscany",
+     "zip": "56126"
+    },
+    {
+     "city": "Perugia",
+     "country": "Italy",
+     "facility": "AO di Perugia - Ospedale S. Maria della Misericordia",
+     "geoPoint": {
+      "lat": 43.1122,
+      "lon": 12.38878
+     },
+     "state": "Umbria",
+     "zip": "06156"
+    },
+    {
+     "city": "Terni",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera S. Maria",
+     "geoPoint": {
+      "lat": 42.56335,
+      "lon": 12.64329
+     },
+     "state": "Umbria",
+     "zip": "05100"
+    },
+    {
+     "city": "Padova",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera di Padova",
+     "geoPoint": {
+      "lat": 45.26618,
+      "lon": 11.77208
+     },
+     "state": "Veneto",
+     "zip": "35128"
+    },
+    {
+     "city": "Luxembourg",
+     "country": "Luxembourg",
+     "facility": "Centre Hospitalier de Luxembourg",
+     "geoPoint": {
+      "lat": 49.60982,
+      "lon": 6.13268
+     },
+     "zip": "1210"
+    },
+    {
+     "city": "?ód?",
+     "country": "Poland",
+     "facility": "NeuroKlinika Gabinet Lekarski Prof. Andrzej Bogucki",
+     "zip": "90-640"
+    },
+    {
+     "city": "Bydgoszcz",
+     "country": "Poland",
+     "facility": "NZOZ Vitamed",
+     "geoPoint": {
+      "lat": 53.1235,
+      "lon": 18.00762
+     },
+     "zip": "85-079"
+    },
+    {
+     "city": "Gda?sk",
+     "country": "Poland",
+     "facility": "Szpital Sw. Wojciecha",
+     "zip": "80-462"
+    },
+    {
+     "city": "Krakow",
+     "country": "Poland",
+     "facility": "Krakowska Akademia Neurologii Sp z o.o. Centrum Neurologii K",
+     "geoPoint": {
+      "lat": 50.06143,
+      "lon": 19.93658
+     },
+     "zip": "31-505"
+    },
+    {
+     "city": "Lublin",
+     "country": "Poland",
+     "facility": "Indywidualna Praktyka Lekarska Prof. Dr Hab. N. Med. Konrad Rejdak.",
+     "geoPoint": {
+      "lat": 51.25058,
+      "lon": 22.57009
+     },
+     "zip": "20-016"
+    },
+    {
+     "city": "Rzeszów",
+     "country": "Poland",
+     "facility": "Nmedis sp. z o.o.",
+     "geoPoint": {
+      "lat": 50.04132,
+      "lon": 21.99901
+     },
+     "zip": "35-232"
+    },
+    {
+     "city": "Warsaw",
+     "country": "Poland",
+     "facility": "Samodzielny Publiczny Szpital Kliniczny im. prof. Orlowskiego",
+     "geoPoint": {
+      "lat": 52.22977,
+      "lon": 21.01178
+     },
+     "zip": "00-416"
+    },
+    {
+     "city": "Warsaw",
+     "country": "Poland",
+     "facility": "Centrum Medyczne NeuroProtect",
+     "geoPoint": {
+      "lat": 52.22977,
+      "lon": 21.01178
+     },
+     "zip": "01-684"
+    },
+    {
+     "city": "Warsaw",
+     "country": "Poland",
+     "facility": "Mazowiecki Szpital Bródnowski w Warszawie Sp. z o.o.",
+     "geoPoint": {
+      "lat": 52.22977,
+      "lon": 21.01178
+     },
+     "zip": "03-242"
+    },
+    {
+     "city": "Elche",
+     "country": "Spain",
+     "facility": "Hospital General Universitario de Elche",
+     "geoPoint": {
+      "lat": 38.26218,
+      "lon": -0.70107
+     },
+     "state": "Alicante",
+     "zip": "03203"
+    },
+    {
+     "city": "Sant Cugat del Vallès",
+     "country": "Spain",
+     "facility": "Hospital General De Catalunya",
+     "geoPoint": {
+      "lat": 41.47063,
+      "lon": 2.08611
+     },
+     "state": "Barcelona",
+     "zip": "8195"
+    },
+    {
+     "city": "Donosti-San Sebastián",
+     "country": "Spain",
+     "facility": "Policlínica Guipuzkoa",
+     "state": "Guipuzcoa",
+     "zip": "20014"
+    },
+    {
+     "city": "A Coruña",
+     "country": "Spain",
+     "facility": "Complejo Hospitalario Universitario A Coruña (CHUAC)",
+     "geoPoint": {
+      "lat": 43.37135,
+      "lon": -8.396
+     },
+     "state": "LA Coruna",
+     "zip": "15006"
+    },
+    {
+     "city": "Alcorcón",
+     "country": "Spain",
+     "facility": "Hospital Universitario Fundación Alcorcón",
+     "geoPoint": {
+      "lat": 40.34582,
+      "lon": -3.82487
+     },
+     "state": "Madrid",
+     "zip": "28922"
+    },
+    {
+     "city": "Móstoles",
+     "country": "Spain",
+     "facility": "HM Universitario Puerta del Sur CINAC (C.Integ.Neuroc);",
+     "geoPoint": {
+      "lat": 40.32234,
+      "lon": -3.86496
+     },
+     "state": "Madrid",
+     "zip": "28938"
+    },
+    {
+     "city": "Pozuelo de Alarcón",
+     "country": "Spain",
+     "facility": "Hospital Quiron de Madrid",
+     "geoPoint": {
+      "lat": 40.43293,
+      "lon": -3.81338
+     },
+     "state": "Madrid",
+     "zip": "28223"
+    },
+    {
+     "city": "Pamplona",
+     "country": "Spain",
+     "facility": "Clinica Universidad de Navarra",
+     "geoPoint": {
+      "lat": 42.81687,
+      "lon": -1.64323
+     },
+     "state": "Navarre",
+     "zip": "31008"
+    },
+    {
+     "city": "Plasencia",
+     "country": "Spain",
+     "facility": "Hospital Virgen del Puerto",
+     "geoPoint": {
+      "lat": 40.03116,
+      "lon": -6.08845
+     },
+     "state": "Palencia",
+     "zip": "10600"
+    },
+    {
+     "city": "Barakaldo",
+     "country": "Spain",
+     "facility": "Hospital de Cruces",
+     "geoPoint": {
+      "lat": 43.29639,
+      "lon": -2.98813
+     },
+     "state": "Vizcaya",
+     "zip": "48903"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital Vall d'Hebron",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08035"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital Clinic Servicio de Neurologia",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08036"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital de la Santa Creu i Sant Pau",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08041"
+    },
+    {
+     "city": "Burgos",
+     "country": "Spain",
+     "facility": "Hospital Universitario de Burgos. Servicio de Neurología",
+     "geoPoint": {
+      "lat": 42.34106,
+      "lon": -3.70184
+     },
+     "zip": "09006"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Ruber Juan Bravo",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28006"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Universitario de la Princesa",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28006"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital General Universitario Gregorio Marañon",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28007"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Universitario Clínico San Carlos",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28040"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Universitario 12 de Octubre",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28041"
+    },
+    {
+     "city": "Málaga",
+     "country": "Spain",
+     "facility": "Hospital Regional Universitario Carlos Haya",
+     "geoPoint": {
+      "lat": 36.72016,
+      "lon": -4.42034
+     },
+     "zip": "29010"
+    },
+    {
+     "city": "Seville",
+     "country": "Spain",
+     "facility": "Hospital Universitario Virgen Macarena",
+     "geoPoint": {
+      "lat": 37.38283,
+      "lon": -5.97317
+     },
+     "zip": "41009"
+    },
+    {
+     "city": "Seville",
+     "country": "Spain",
+     "facility": "Hospital Virgen del Rocío",
+     "geoPoint": {
+      "lat": 37.38283,
+      "lon": -5.97317
+     },
+     "zip": "41013"
+    },
+    {
+     "city": "Valencia",
+     "country": "Spain",
+     "facility": "Hospital Universitario Dr. Peset",
+     "geoPoint": {
+      "lat": 39.47391,
+      "lon": -0.37966
+     },
+     "zip": "46017"
+    },
+    {
+     "city": "Valencia",
+     "country": "Spain",
+     "facility": "Hospital Universitari i Politecnic La Fe",
+     "geoPoint": {
+      "lat": 39.47391,
+      "lon": -0.37966
+     },
+     "zip": "46026"
+    },
+    {
+     "city": "Zaragoza",
+     "country": "Spain",
+     "facility": "Servicio de Neurología Hospital Viamed Montecanal.",
+     "geoPoint": {
+      "lat": 41.65606,
+      "lon": -0.87734
+     },
+     "zip": "50012"
+    },
+    {
+     "city": "Dundee",
+     "country": "United Kingdom",
+     "facility": "Ninewells Hospital, Dundee- Scotland",
+     "geoPoint": {
+      "lat": 56.46913,
+      "lon": -2.97489
+     },
+     "zip": "DD2 1SY"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "Kings College Hospital",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "SE5 9RS"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "Charing Cross Hospital",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "W6 8RF"
+    },
+    {
+     "city": "Newcastle",
+     "country": "United Kingdom",
+     "facility": "Campus for Ageing and Vitality",
+     "geoPoint": {
+      "lat": 54.21804,
+      "lon": -5.88979
+     },
+     "zip": "NE4 5PL"
+    },
+    {
+     "city": "Oxford",
+     "country": "United Kingdom",
+     "facility": "Oxford University Hospitals NHS Foundation Trust",
+     "geoPoint": {
+      "lat": 51.75222,
+      "lon": -1.25596
+     },
+     "zip": "OX3 7LE"
+    },
+    {
+     "city": "Peterborough",
+     "country": "United Kingdom",
+     "facility": "North West Anglia NHS Foundation Trust",
+     "geoPoint": {
+      "lat": 52.57364,
+      "lon": -0.24777
+     },
+     "zip": "PE3 9GZ"
+    },
+    {
+     "city": "Plymouth",
+     "country": "United Kingdom",
+     "facility": "Derriford Hospital",
+     "geoPoint": {
+      "lat": 50.37153,
+      "lon": -4.14305
+     },
+     "zip": "PL6 8DH"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "affiliation": "Hoffmann-La Roche",
+     "name": "Clinical Trials",
+     "role": "STUDY_DIRECTOR"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "This is a multicenter, randomized, double-blind, placebo-controlled study that will evaluate the efficacy and safety of intravenous (IV) prasinezumab versus placebo in participants with Early Parkinson's Disease (PD) who are on stable symptomatic PD medication."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "DOUBLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "INVESTIGATOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 586,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE2"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Diagnosis of idiopathic PD based on MDS criteria with bradykinesia plus one of the other cardinal signs of PD (resting tremor, rigidity), without any other known or suspected cause of parkinsonism\n* On symptomatic PD medication, with stable doses for at least 3 months prior to baseline\n* A diagnosis of PD for at least 3 months to maximum 3 years at screening\n* MDS-UPDRS Part IV score of 0 at screening and prior to randomization\n* Hoehn and Yahr (H\\&Y) Stage I or II in OFF medication state at screening and prior to randomization\n* Dopamine transporter imaging with single photon emission computed tomography (DaT-SPECT) imaging consistent with dopamine transporter deficit, as assessed by the central reader\n* No anticipated changes in PD medication from baseline throughout the study duration based on clinical status during screening\n* Willingness and ability to use a smartphone application to measure PD-related symptoms for the duration of the study\n* Willingness and ability to wear a smartwatch to measure PD-related motor signs\n\nExclusion Criteria:\n\n* Medical history indicating a Parkinsonian syndrome other than idiopathic PD\n* Diagnosis of PD dementia\n* Diagnosis of a significant neurologic disease other than PD\n* Within the last year, unstable or clinically significant cardiovascular disease\n* Uncontrolled hypertension\n* Drug and/or alcohol abuse within 12 months prior to screening, in the investigator's judgment (Nicotine is allowed, Marijuana use is not allowed)\n* Clinically significant abnormalities in laboratory test results at the screening visit, including hepatic and renal panels, complete blood count, chemistry panel and urinalysis\n* Allergy to any of the components of prasinezumab, a known hypersensitivity, or a previous IRR following administration of any other monoclonal antibody\n* Any contraindications to obtaining a brain magnetic resonance imaging (MRI)\n* Any contraindications to DaT-SPECT imaging",
+   "healthyVolunteers": false,
+   "maximumAge": "85 Years",
+   "minimumAge": "50 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "acronym": "PADOVA",
+   "briefTitle": "A Study to Evaluate the Efficacy and Safety of Intravenous Prasinezumab in Participants With Early Parkinson's Disease",
+   "nctId": "NCT04777331",
+   "officialTitle": "A Phase IIB, Randomized, Double-Blind, Placebo-Controlled, Multicenter Study to Evaluate the Efficacy and Safety of Intravenous Prasinezumab in Participants With Early Parkinson's Disease",
+   "orgStudyIdInfo": {
+    "id": "BN42358"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Hoffmann-La Roche"
+   },
+   "secondaryIdInfos": [
+    {
+     "id": "2020-004997-23",
+     "type": "EUDRACT_NUMBER"
+    },
+    {
+     "id": "2023-507132-21-00",
+     "type": "CTIS"
+    },
+    {
+     "id": "2023",
+     "link": "https://reporter.nih.gov/quickSearch/2023",
+     "type": "NIH"
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "description": "For eligible studies, qualified researchers may request access to individual patient level clinical data. See Roche's commitment to transparency of clinical study information here: https://go.roche.com/data\\_sharing",
+   "ipdSharing": "YES"
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "description": "Time to confirmed motor progression event was the first time point of a worsening event defined as either \\>= 5 points increase in MDS-UPDRS Part III score (assessed in \"OFF\" medication state) from baseline sustained over 2 consecutive assessments or a change in medication after first occurrence of \\>= 5 points increase in MDS-UPDRS Part III score from baseline \\& before follow-up assessment. MDS-UPDRS Part III is a clinician rater scale that assessed the motor signs of PD. The scale is composed of 18 clinical domains or tasks, which yield 33 distinct scores or ratings. For each distinct rating, a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, and 4 = Severe. The total MDS-UPDRS Part III score (ranging from 0 to 132) is calculated by summing these 33 individual ratings, with higher scores indicating severe impairment.",
+     "measure": "DBT Period: Time to Confirmed Motor Progression Event Assessed by Movement Disorder Society - Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part III",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "description": "Time to worsening of the motor function was defined as ≥3 points increase in MDS-UPDRS Part II score from baseline in the presence of a confirmed motor progression event. For the confirmed motor progression event the definition is as per primary endpoint definition. MDS-UPDRS Part II assesses motor experiences of daily living \\& contained 13 questions answered by participant. For each question a numeric score is assigned between 0-4, 0 = Normal, 1=Slight, 2=Mild, 3=Moderate, 4=Severe. Score range: 0 to 52 with higher score=severe impairment.",
+     "measure": "DBT Period: Time-to-worsening of Participant's Motor Function as Reported by the Participant in the Presence of a Confirmed Motor Progression Event",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "The PGI is a measure commonly used in PD clinical trials to provide a concise assessment of overall health state. The change component (PGI-C) was intended to measure health state changes as reported by the participant on a 7-point scale (1=Very much improved to 7=Very much worse). The meaningfulness of the change was assessed and reported by the participant.",
+     "measure": "DBT Period: Time to Meaningful Worsening in Participant Global Impression of Change (PGI-C) Overall Disease Subscale",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "The CGI was a measure commonly used in PD clinical trials to provide a concise assessment of overall health state. The change component (CGI-C) was intended to measure health state changes as reported by the clinician on a 7-point scale (1=Very much improved to 7=Very much worse).",
+     "measure": "DBT Period: Time to Meaningful Worsening in Clinician Global Impression of Change (CGI-C) Overall Disease Subscale",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "MDS-UPDRS Part IV assessed motor complications of symptomatic treatment, dyskinesias, and motor fluctuations. The rater completed this assessment only for participants on L-Dopa treatment.",
+     "measure": "DBT Period: Time to Onset of Motor Complications as Assessed Through MDS-UPDRS Part IV",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "MDS-UPDRS Part III is a clinician rater scale that assessed the motor signs of PD. The scale is composed of 18 clinical domains or tasks, which yield 33 distinct scores or ratings. For each distinct rating, a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, and 4 = Severe. The total MDS-UPDRS Part III score (ranging from 0 to 132) is calculated by summing these 33 individual ratings, with higher scores indicating severe impairment.",
+     "measure": "DBT Period: Change in Motor Function From Baseline to Week 76, as Measured by the MDS-UPDRS Part III Score",
+     "timeFrame": "From baseline up to Week 76"
+    },
+    {
+     "description": "MDS-UPDRS Part III is a clinician rater scale that assessed the motor signs of PD. The scale is composed of 18 clinical domains or tasks, which yield 33 distinct scores or ratings. For each distinct rating, a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, and 4 = Severe. For bradykinesia, subscore ranges from 0 to 52, while rigidity subscore ranges from 0 to 20, with higher scores indicating greater impairment. Change in bradykinesia and rigidity was assessed in \"OFF\" medication state. Adjusted mean is reported here.",
+     "measure": "DBT Period: Change in Bradykinesia and Rigidity From Baseline to Week 76, as Measured by the MDS-UPDRS Part III Bradykinesia and Rigidity Subscore",
+     "timeFrame": "From baseline up to Week 76"
+    },
+    {
+     "description": "An AE was any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An AE can therefore be any unfavorable and unintended sign (including abnormal laboratory values or abnormal clinical test results), symptoms, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. SAE is any significant hazard, contraindication, or side effect that is fatal or life-threatening, requires hospitalization or prolongation of an existing hospitalization, results in persistent or significant disability/incapacity, is a congenital anomaly/birth defect, is medically significant or requires intervention. Number of participants with atleast 1 AE and SAE are reported here.",
+     "measure": "DBT Period: Number of Participants With Adverse Events (AEs) and Serious Adverse Events (SAEs)",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "An AE was any untoward medical occurrence in participant administered a pharmaceutical product \\& which does not necessarily have to have a causal relationship with treatment. It can therefore be any unfavorable and unintended sign (including abnormal laboratory values/ abnormal clinical test results), symptoms/disease temporally associated with use of pharmaceutical product, whether/not considered related to product. AESIs included potential drug-induced liver injury that include an elevated alanine transaminase (ALT) \\& aspartate aminotransferase (AST) in combination with either an elevated bilirubin/clinical jaundice defined by Hy's law and suspected transmission of an infectious agent by study drug.",
+     "measure": "DBT Period: Number of Participants With Adverse Events of Special Interest (AESI)",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "An AE was any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An AE can therefore be any unfavorable and unintended sign (including abnormal laboratory values or abnormal clinical test results), symptoms, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product.",
+     "measure": "DBT Period: Number of Participants With Treatment Discontinuation Due to AEs",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "IRRs were defined as any signs and symptoms (AEs) occurring during infusion and/or within 24 hours administration after the end of infusion and were considered related to study treatment by the investigator. Symptoms include flushing, rash, respiratory difficulty, hypotension, tachycardia.",
+     "measure": "DBT Period: Number of Participants With Infusion Related Reactions (IRRs)",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "C-SSRS=assessment tool used to assess lifetime suicidality of participant (at baseline) as well as any new instances of suicidality (C-SSRS since last visit). Structured interview prompts recollection of suicidal ideation, including intensity of ideation, behavior, and attempts with actual/potential lethality. Categories have binary responses (yes/no) and include Wish to be Dead; Non-specific Active Suicidal Thoughts; Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act; Active Suicidal Ideation with Some Intent to Act, without Specific Plan; Active Suicidal Ideation with Specific Plan and Intent, Preparatory Acts and Behavior; Aborted Attempt; Interrupted Attempt; Actual Attempt (non-fatal); Completed Suicide. Suicidal ideation/behavior is indicated by a \"yes\" answer to any of the listed categories. Score of 0 is assigned if no suicide risk is present. Score of 1 or higher= suicidal ideation or behavior. Categories with non-zero values are only reported here.",
+     "measure": "DBT Period: Number of Participants With in Suicidal Ideation, as Measured by the Columbia-Suicide Severity Rating Scale (C-SSRS)",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "measure": "DBT Period: Maximum Observed Concentration at Steady-state (Cmax,SS)",
+     "timeFrame": "Day 1 of Weeks 1, 2, 4, 8, 12, 24, 36, 52, 64, 76"
+    },
+    {
+     "measure": "DBT Period: Minimum Observed Concentration at Steady-state (Cmin,SS)",
+     "timeFrame": "Day 1 of Weeks 1, 2, 4, 8, 12, 24, 36, 52, 64, 76"
+    },
+    {
+     "measure": "DBT Period: Area Under the Serum Concentration Time Curve Over the Dosing Interval (AUCTau,SS)",
+     "timeFrame": "Day 1 of Weeks 1, 2, 4, 8, 12, 24, 36, 52, 64, 76"
+    },
+    {
+     "measure": "DBT Period: Percentage of Participants With Anti-Drug Antibodies (ADAs) at Baseline and Post-Treatment",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks"
+    },
+    {
+     "description": "An AE was any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An AE can therefore be any unfavorable and unintended sign (including abnormal laboratory values or abnormal clinical test results), symptoms, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. SAE is any significant hazard, contraindication, or side effect that is fatal or life-threatening, requires hospitalization or prolongation of an existing hospitalization, results in persistent or significant disability/incapacity, is a congenital anomaly/birth defect, is medically significant or requires intervention.",
+     "measure": "OLE Period: Number of Participants With AEs and SAEs",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)"
+    },
+    {
+     "description": "An AE was any untoward medical occurrence in participant administered a pharmaceutical product \\& which does not necessarily have to have a causal relationship with treatment. It can therefore be any unfavorable and unintended sign (including abnormal laboratory values/ abnormal clinical test results), symptoms/disease temporally associated with use of pharmaceutical product, whether/not considered related to product. AESIs included potential drug-induced liver injury that include an elevated ALT \\& AST in combination with either an elevated bilirubin/clinical jaundice defined by Hy's law and suspected transmission of an infectious agent by study drug.",
+     "measure": "OLE Period: Number of Participants With AESI",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)"
+    },
+    {
+     "description": "IRRs were defined as any signs and symptoms (AEs) occurring during infusion and/or within 24 hours administration after the end of infusion and were considered related to study treatment by the investigator. Symptoms include flushing, rash, respiratory difficulty, hypotension, tachycardia.",
+     "measure": "OLE Period: Number of Participants With IRRs",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)"
+    },
+    {
+     "description": "C-SSRS=assessment tool used to assess lifetime suicidality of participant (at baseline) as well as any new instances of suicidality (C-SSRS since last visit). Structured interview prompts recollection of suicidal ideation, including intensity of ideation, behavior, and attempts with actual/potential lethality. Categories have binary responses (yes/no) and include Wish to be Dead; Non-specific Active Suicidal Thoughts; Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act; Active Suicidal Ideation with Some Intent to Act, without Specific Plan; Active Suicidal Ideation with Specific Plan and Intent, Preparatory Acts and Behavior; Aborted Attempt; Interrupted Attempt; Actual Attempt (non-fatal); Completed Suicide. Suicidal ideation/behavior is indicated by a \"yes\" answer to any of the listed categories. Score of 0 is assigned if no suicide risk is present. Score of 1 or higher= suicidal ideation or behavior.",
+     "measure": "OLE Period: Number of Participants With in Suicidal Ideation, as Measured by the C-SSRS",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true,
+   "oversightHasDmc": true
+  },
+  "referencesModule": {
+   "references": [
+    {
+     "citation": "Nikolcheva T, Pagano G, Anzures-Cabrera J, Trundell D, Kustermann T, Simuni T, Marek K, Pavese N, Seppi K, Stocchi F, Postuma RB, Pross N, Monnet A, Respondek G, Schlegel V, Boak L, Rutten-Jacobs L, Kerchner GA, Brundin P, Svoboda H, Bonni A; PADOVA Investigators; Prasinezumab Study Group. Efficacy and safety of intravenous prasinezumab in individuals with early-stage Parkinson's disease on stable symptomatic monotherapy (PADOVA): a phase 2b, multicentre, randomised, double-blind, placebo-controlled study. Lancet. 2026 May 30;407(10544):2227-2240. doi: 10.1016/S0140-6736(26)00865-2.",
+     "pmid": "42208564",
+     "type": "DERIVED"
+    }
+   ]
+  },
+  "sponsorCollaboratorsModule": {
+   "collaborators": [
+    {
+     "class": "INDUSTRY",
+     "name": "Prothena Biosciences Limited"
+    }
+   ],
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Hoffmann-La Roche"
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2031-06-30",
+    "type": "ESTIMATED"
+   },
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "lastUpdatePostDateStruct": {
+    "date": "2026-09-04",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-09-02",
+   "overallStatus": "ACTIVE_NOT_RECRUITING",
+   "primaryCompletionDateStruct": {
+    "date": "2024-09-11",
+    "type": "ACTUAL"
+   },
+   "resultsFirstPostDateStruct": {
+    "date": "2025-12-02",
+    "type": "ACTUAL"
+   },
+   "resultsFirstSubmitDate": "2025-09-09",
+   "resultsFirstSubmitQcDate": "2025-11-17",
+   "startDateStruct": {
+    "date": "2021-05-05",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2026-09",
+   "studyFirstPostDateStruct": {
+    "date": "2021-03-02",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2021-02-26",
+   "studyFirstSubmitQcDate": "2021-02-26"
+  }
+ },
+ "resultsSection": {
+  "adverseEventsModule": {
+   "description": "SAS included all participants who received at least one dose of study drug, with participants grouped according to treatment received. Data collected up to primary completion date is reported. Final data would be reported 1 year after study completion. 3 participants in the prasinezumab arm and 1 participant in the placebo arm were randomized but not treated and 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis.",
+   "eventGroups": [
+    {
+     "deathsNumAffected": 2,
+     "deathsNumAtRisk": 290,
+     "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+     "id": "EG000",
+     "otherNumAffected": 205,
+     "otherNumAtRisk": 290,
+     "seriousNumAffected": 34,
+     "seriousNumAtRisk": 290,
+     "title": "DBT Period: Placebo"
+    },
+    {
+     "deathsNumAffected": 1,
+     "deathsNumAtRisk": 292,
+     "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+     "id": "EG001",
+     "otherNumAffected": 206,
+     "otherNumAtRisk": 292,
+     "seriousNumAffected": 34,
+     "seriousNumAtRisk": 292,
+     "title": "DBT Period: Prasinezumab"
+    }
+   ],
+   "frequencyThreshold": "5",
+   "otherEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 15,
+       "numAtRisk": 290,
+       "numEvents": 16
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 19,
+       "numAtRisk": 292,
+       "numEvents": 26
+      }
+     ],
+     "term": "Constipation"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 13,
+       "numAtRisk": 290,
+       "numEvents": 17
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 15,
+       "numAtRisk": 292,
+       "numEvents": 21
+      }
+     ],
+     "term": "Diarrhoea"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 11,
+       "numAtRisk": 290,
+       "numEvents": 11
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 21,
+       "numAtRisk": 292,
+       "numEvents": 23
+      }
+     ],
+     "term": "Fatigue"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 68,
+       "numAtRisk": 290,
+       "numEvents": 77
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 84,
+       "numAtRisk": 292,
+       "numEvents": 96
+      }
+     ],
+     "term": "COVID-19"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 16,
+       "numAtRisk": 290,
+       "numEvents": 16
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 21,
+       "numAtRisk": 292,
+       "numEvents": 23
+      }
+     ],
+     "term": "Influenza"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 31,
+       "numAtRisk": 290,
+       "numEvents": 46
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 36,
+       "numAtRisk": 292,
+       "numEvents": 48
+      }
+     ],
+     "term": "Nasopharyngitis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 19,
+       "numAtRisk": 290,
+       "numEvents": 21
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 21,
+       "numAtRisk": 292,
+       "numEvents": 30
+      }
+     ],
+     "term": "Upper respiratory tract infection"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 32,
+       "numAtRisk": 290,
+       "numEvents": 44
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 24,
+       "numAtRisk": 292,
+       "numEvents": 36
+      }
+     ],
+     "term": "Urinary tract infection"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 30,
+       "numAtRisk": 290,
+       "numEvents": 60
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 34,
+       "numAtRisk": 292,
+       "numEvents": 58
+      }
+     ],
+     "term": "Fall"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 36,
+       "numAtRisk": 290,
+       "numEvents": 87
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 31,
+       "numAtRisk": 292,
+       "numEvents": 55
+      }
+     ],
+     "term": "Infusion related reaction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 25,
+       "numAtRisk": 290,
+       "numEvents": 31
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 26,
+       "numAtRisk": 292,
+       "numEvents": 37
+      }
+     ],
+     "term": "Arthralgia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 40,
+       "numAtRisk": 290,
+       "numEvents": 45
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 46,
+       "numAtRisk": 292,
+       "numEvents": 66
+      }
+     ],
+     "term": "Back pain"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 18,
+       "numAtRisk": 290,
+       "numEvents": 20
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 20,
+       "numAtRisk": 292,
+       "numEvents": 22
+      }
+     ],
+     "term": "Pain in extremity"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 18,
+       "numAtRisk": 290,
+       "numEvents": 23
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 13,
+       "numAtRisk": 292,
+       "numEvents": 17
+      }
+     ],
+     "term": "Dizziness"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 18,
+       "numAtRisk": 290,
+       "numEvents": 20
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 27,
+       "numAtRisk": 292,
+       "numEvents": 45
+      }
+     ],
+     "term": "Headache"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 18,
+       "numAtRisk": 290,
+       "numEvents": 18
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 17,
+       "numAtRisk": 292,
+       "numEvents": 22
+      }
+     ],
+     "term": "Anxiety"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 16,
+       "numAtRisk": 290,
+       "numEvents": 19
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 17,
+       "numAtRisk": 292,
+       "numEvents": 19
+      }
+     ],
+     "term": "Insomnia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 20,
+       "numAtRisk": 290,
+       "numEvents": 21
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 14,
+       "numAtRisk": 292,
+       "numEvents": 14
+      }
+     ],
+     "term": "Hypertension"
+    }
+   ],
+   "seriousEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Blood and lymphatic system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Anaemia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 4,
+       "numAtRisk": 292,
+       "numEvents": 4
+      }
+     ],
+     "term": "Acute myocardial infarction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Angina pectoris"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Atrial fibrillation"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Bradycardia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Cardiac disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Myocardial infarction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Eye disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Epiretinal membrane"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 3,
+       "numAtRisk": 290,
+       "numEvents": 3
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 2,
+       "numAtRisk": 292,
+       "numEvents": 2
+      }
+     ],
+     "term": "Inguinal hernia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Large intestine polyp"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Oesophageal food impaction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Oesophageal perforation"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Pancreatitis acute"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Cyst"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Infusion site reaction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "General disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Oedema"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Hepatobiliary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Bile duct stone"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Hepatobiliary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Cholangitis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Hepatobiliary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Cholecystitis acute"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Hepatobiliary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Hepatitis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Appendicitis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Bacteraemia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "COVID-19 pneumonia"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Diverticulitis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Endocarditis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Erysipelas"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Pneumonia influenzal"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Pneumonia pneumococcal"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Sinusitis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 3,
+       "numAtRisk": 292,
+       "numEvents": 3
+      }
+     ],
+     "term": "Urinary tract infection"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Infections and infestations",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Urosepsis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 2,
+       "numAtRisk": 292,
+       "numEvents": 2
+      }
+     ],
+     "term": "Fall"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Femoral neck fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 2,
+       "numAtRisk": 292,
+       "numEvents": 2
+      }
+     ],
+     "term": "Femur fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Humerus fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Infusion related reaction"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 2
+      }
+     ],
+     "term": "Joint dislocation"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Meniscus injury"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Shoulder fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Spinal compression fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Tibia fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 290,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Back pain"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 290,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Osteoarthritis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Osteoporosis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Spinal stenosis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Musculoskeletal and connective tissue disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Tendon disorder"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Adenocarcinoma"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Breast cancer"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Invasive ductal breast carcinoma"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Malignant melanoma"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Metastatic malignant melanoma"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 290,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Prostate cancer"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Transitional cell carcinoma"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Cerebrospinal fluid leakage"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Haemorrhage intracranial"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Ischaemic stroke"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Loss of consciousness"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Migraine with aura"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Presyncope"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Seizure"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Syncope"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Transient ischaemic attack"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Delirium"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Mental status changes"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Renal and urinary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Acute kidney injury"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Renal and urinary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Haematuria"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Renal and urinary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Nephrolithiasis"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Renal and urinary disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Urinary retention"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 2,
+       "numAtRisk": 290,
+       "numEvents": 2
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Dyspnoea"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Haemothorax"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Respiratory, thoracic and mediastinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Pulmonary embolism"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Surgical and medical procedures",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Appendicectomy"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Aortic aneurysm"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Haemorrhage"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 290,
+       "numEvents": 1
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 292,
+       "numEvents": 0
+      }
+     ],
+     "term": "Hypotension"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Vascular disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 290,
+       "numEvents": 0
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 292,
+       "numEvents": 1
+      }
+     ],
+     "term": "Peripheral arterial occlusive disease"
+    }
+   ],
+   "timeFrame": "From study start until the end of DBT period for at least 76 weeks"
+  },
+  "baselineCharacteristicsModule": {
+   "denoms": [
+    {
+     "counts": [
+      {
+       "groupId": "BG000",
+       "value": "293"
+      },
+      {
+       "groupId": "BG001",
+       "value": "293"
+      },
+      {
+       "groupId": "BG002",
+       "value": "586"
+      }
+     ],
+     "units": "Participants"
+    }
+   ],
+   "groups": [
+    {
+     "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+     "id": "BG000",
+     "title": "DBT Period: Placebo"
+    },
+    {
+     "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+     "id": "BG001",
+     "title": "DBT Period: Prasinezumab"
+    },
+    {
+     "description": "Total of all reporting groups",
+     "id": "BG002",
+     "title": "Total"
+    }
+   ],
+   "measures": [
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "spread": "7.5",
+           "value": "64.4"
+          },
+          {
+           "groupId": "BG001",
+           "spread": "7.2",
+           "value": "64.0"
+          },
+          {
+           "groupId": "BG002",
+           "spread": "7.3",
+           "value": "64.2"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "dispersionType": "STANDARD_DEVIATION",
+     "paramType": "MEAN",
+     "title": "Age, Continuous",
+     "unitOfMeasure": "years"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "104"
+          },
+          {
+           "groupId": "BG001",
+           "value": "110"
+          },
+          {
+           "groupId": "BG002",
+           "value": "214"
+          }
+         ],
+         "title": "Female"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "189"
+          },
+          {
+           "groupId": "BG001",
+           "value": "183"
+          },
+          {
+           "groupId": "BG002",
+           "value": "372"
+          }
+         ],
+         "title": "Male"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Sex: Female, Male",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "31"
+          },
+          {
+           "groupId": "BG001",
+           "value": "33"
+          },
+          {
+           "groupId": "BG002",
+           "value": "64"
+          }
+         ],
+         "title": "Hispanic or Latino"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "246"
+          },
+          {
+           "groupId": "BG001",
+           "value": "241"
+          },
+          {
+           "groupId": "BG002",
+           "value": "487"
+          }
+         ],
+         "title": "Not Hispanic or Latino"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "16"
+          },
+          {
+           "groupId": "BG001",
+           "value": "19"
+          },
+          {
+           "groupId": "BG002",
+           "value": "35"
+          }
+         ],
+         "title": "Unknown or Not Reported"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Ethnicity (NIH/OMB)",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "0"
+          },
+          {
+           "groupId": "BG001",
+           "value": "0"
+          },
+          {
+           "groupId": "BG002",
+           "value": "0"
+          }
+         ],
+         "title": "American Indian or Alaska Native"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "2"
+          },
+          {
+           "groupId": "BG001",
+           "value": "4"
+          },
+          {
+           "groupId": "BG002",
+           "value": "6"
+          }
+         ],
+         "title": "Asian"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "0"
+          },
+          {
+           "groupId": "BG001",
+           "value": "0"
+          },
+          {
+           "groupId": "BG002",
+           "value": "0"
+          }
+         ],
+         "title": "Native Hawaiian or Other Pacific Islander"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "2"
+          },
+          {
+           "groupId": "BG001",
+           "value": "0"
+          },
+          {
+           "groupId": "BG002",
+           "value": "2"
+          }
+         ],
+         "title": "Black or African American"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "278"
+          },
+          {
+           "groupId": "BG001",
+           "value": "275"
+          },
+          {
+           "groupId": "BG002",
+           "value": "553"
+          }
+         ],
+         "title": "White"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "0"
+          },
+          {
+           "groupId": "BG001",
+           "value": "0"
+          },
+          {
+           "groupId": "BG002",
+           "value": "0"
+          }
+         ],
+         "title": "More than one race"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "11"
+          },
+          {
+           "groupId": "BG001",
+           "value": "14"
+          },
+          {
+           "groupId": "BG002",
+           "value": "25"
+          }
+         ],
+         "title": "Unknown or Not Reported"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Race (NIH/OMB)",
+     "unitOfMeasure": "Participants"
+    }
+   ],
+   "populationDescription": "Full Analysis Set (FAS) included all randomized participants, with participants grouped according to their randomized treatment."
+  },
+  "moreInfoModule": {
+   "certainAgreement": {
+    "otherDetails": "The Study being conducted under this Agreement is part of the Overall Study. Investigator is free to publish in reputable journals or to present at professional conferences the results of the Study, but only after the first publication or presentation that involves the Overall Study. The Sponsor may request that Confidential Information be deleted and/or the publication be postponed in order to protect the Sponsor's intellectual property rights.",
+    "piSponsorEmployee": false,
+    "restrictionType": "OTHER",
+    "restrictiveAgreement": true
+   },
+   "pointOfContact": {
+    "email": "genentech@druginfo.com",
+    "organization": "Hoffmann-La Roche",
+    "phone": "800 821-8590",
+    "title": "Medical Communications"
+   }
+  },
+  "outcomeMeasuresModule": {
+   "outcomeMeasures": [
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.69",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.01",
+       "groupDescription": "Stratified Analysis",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.0657",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "0.84",
+       "statisticalMethod": "Log Rank"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "40.1",
+           "upperLimit": "58.1",
+           "value": "49.7"
+          },
+          {
+           "groupId": "OG001",
+           "lowerLimit": "52.3",
+           "upperLimit": "71.9",
+           "value": "61.1"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "293"
+        },
+        {
+         "groupId": "OG001",
+         "value": "293"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Time to confirmed motor progression event was the first time point of a worsening event defined as either \\>= 5 points increase in MDS-UPDRS Part III score (assessed in \"OFF\" medication state) from baseline sustained over 2 consecutive assessments or a change in medication after first occurrence of \\>= 5 points increase in MDS-UPDRS Part III score from baseline \\& before follow-up assessment. MDS-UPDRS Part III is a clinician rater scale that assessed the motor signs of PD. The scale is composed of 18 clinical domains or tasks, which yield 33 distinct scores or ratings. For each distinct rating, a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, and 4 = Severe. The total MDS-UPDRS Part III score (ranging from 0 to 132) is calculated by summing these 33 individual ratings, with higher scores indicating severe impairment.",
+     "dispersionType": "95% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "FAS included all randomized participants, with participants grouped according to their randomized treatment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Time to Confirmed Motor Progression Event Assessed by Movement Disorder Society - Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part III",
+     "type": "PRIMARY",
+     "unitOfMeasure": "weeks"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.66",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.03",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.0914",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "0.82",
+       "statisticalMethod": "Cox-regression adjusted"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "62.7",
+           "upperLimit": "105.1",
+           "value": "88.3"
+          },
+          {
+           "comment": "Upper limit of 95 % confidence interval (CI) was not estimable due to insufficient follow-up duration to observe events and a very small number of individuals at risk by the end of the DBT period.",
+           "groupId": "OG001",
+           "lowerLimit": "81.1",
+           "upperLimit": "NA",
+           "value": "112.1"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "293"
+        },
+        {
+         "groupId": "OG001",
+         "value": "293"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Time to worsening of the motor function was defined as ≥3 points increase in MDS-UPDRS Part II score from baseline in the presence of a confirmed motor progression event. For the confirmed motor progression event the definition is as per primary endpoint definition. MDS-UPDRS Part II assesses motor experiences of daily living \\& contained 13 questions answered by participant. For each question a numeric score is assigned between 0-4, 0 = Normal, 1=Slight, 2=Mild, 3=Moderate, 4=Severe. Score range: 0 to 52 with higher score=severe impairment.",
+     "dispersionType": "95% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "FAS included all randomized participants, with participants grouped according to their randomized treatment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Time-to-worsening of Participant's Motor Function as Reported by the Participant in the Presence of a Confirmed Motor Progression Event",
+     "type": "SECONDARY",
+     "unitOfMeasure": "weeks"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.73",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.05",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.1574",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "0.88",
+       "statisticalMethod": "Cox-regression adjusted"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "29.9",
+           "upperLimit": "42.1",
+           "value": "36.1"
+          },
+          {
+           "groupId": "OG001",
+           "lowerLimit": "38.1",
+           "upperLimit": "52.1",
+           "value": "44.4"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "293"
+        },
+        {
+         "groupId": "OG001",
+         "value": "293"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The PGI is a measure commonly used in PD clinical trials to provide a concise assessment of overall health state. The change component (PGI-C) was intended to measure health state changes as reported by the participant on a 7-point scale (1=Very much improved to 7=Very much worse). The meaningfulness of the change was assessed and reported by the participant.",
+     "dispersionType": "95% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "FAS included all randomized participants, with participants grouped according to their randomized treatment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Time to Meaningful Worsening in Participant Global Impression of Change (PGI-C) Overall Disease Subscale",
+     "type": "SECONDARY",
+     "unitOfMeasure": "weeks"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.69",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.01",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.0622",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "0.83",
+       "statisticalMethod": "Cox-regression adjusted"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "44.1",
+           "upperLimit": "59.9",
+           "value": "52.1"
+          },
+          {
+           "groupId": "OG001",
+           "lowerLimit": "56.1",
+           "upperLimit": "67.3",
+           "value": "60.6"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "293"
+        },
+        {
+         "groupId": "OG001",
+         "value": "293"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The CGI was a measure commonly used in PD clinical trials to provide a concise assessment of overall health state. The change component (CGI-C) was intended to measure health state changes as reported by the clinician on a 7-point scale (1=Very much improved to 7=Very much worse).",
+     "dispersionType": "95% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "FAS included all randomized participants, with participants grouped according to their randomized treatment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Time to Meaningful Worsening in Clinician Global Impression of Change (CGI-C) Overall Disease Subscale",
+     "type": "SECONDARY",
+     "unitOfMeasure": "weeks"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "0.75",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.17",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.5515",
+       "paramType": "Hazard Ratio (HR)",
+       "paramValue": "0.94",
+       "statisticalMethod": "Cox-regression adjusted"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "77.0",
+           "upperLimit": "107.6",
+           "value": "91.1"
+          },
+          {
+           "groupId": "OG001",
+           "lowerLimit": "81.0",
+           "upperLimit": "117.1",
+           "value": "100.1"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "293"
+        },
+        {
+         "groupId": "OG001",
+         "value": "293"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "MDS-UPDRS Part IV assessed motor complications of symptomatic treatment, dyskinesias, and motor fluctuations. The rater completed this assessment only for participants on L-Dopa treatment.",
+     "dispersionType": "95% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "FAS included all randomized participants, with participants grouped according to their randomized treatment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Time to Onset of Motor Complications as Assessed Through MDS-UPDRS Part IV",
+     "type": "SECONDARY",
+     "unitOfMeasure": "weeks"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-1.84",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.05",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.5944",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "-0.39",
+       "statisticalMethod": "Mixed-model for Repeated Measures (MMRM)"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.592",
+           "value": "4.00"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.597",
+           "value": "3.61"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "266"
+        },
+        {
+         "groupId": "OG001",
+         "value": "266"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "MDS-UPDRS Part III is a clinician rater scale that assessed the motor signs of PD. The scale is composed of 18 clinical domains or tasks, which yield 33 distinct scores or ratings. For each distinct rating, a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, and 4 = Severe. The total MDS-UPDRS Part III score (ranging from 0 to 132) is calculated by summing these 33 individual ratings, with higher scores indicating severe impairment.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEAN",
+     "populationDescription": "FAS included all randomized participants, with participants grouped according to their randomized treatment. Overall number analyzed is the number of participants with data available for analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline up to Week 76",
+     "title": "DBT Period: Change in Motor Function From Baseline to Week 76, as Measured by the MDS-UPDRS Part III Score",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-1.08",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.24",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.8955",
+       "paramType": "Difference in Adjusted Means",
+       "paramValue": "0.08",
+       "statisticalMethod": "MMRM"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.476",
+           "value": "2.77"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.479",
+           "value": "2.85"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "267"
+        },
+        {
+         "groupId": "OG001",
+         "value": "266"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "MDS-UPDRS Part III is a clinician rater scale that assessed the motor signs of PD. The scale is composed of 18 clinical domains or tasks, which yield 33 distinct scores or ratings. For each distinct rating, a numeric score is assigned between 0-4, where 0 = Normal, 1 = Slight, 2 = Mild, 3 = Moderate, and 4 = Severe. For bradykinesia, subscore ranges from 0 to 52, while rigidity subscore ranges from 0 to 20, with higher scores indicating greater impairment. Change in bradykinesia and rigidity was assessed in \"OFF\" medication state. Adjusted mean is reported here.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEAN",
+     "populationDescription": "FAS included all randomized participants, with participants grouped according to their randomized treatment. Overall number analyzed is the number of participants with data available for analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From baseline up to Week 76",
+     "title": "DBT Period: Change in Bradykinesia and Rigidity From Baseline to Week 76, as Measured by the MDS-UPDRS Part III Bradykinesia and Rigidity Subscore",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Units on a scale"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "260"
+          },
+          {
+           "groupId": "OG001",
+           "value": "267"
+          }
+         ]
+        }
+       ],
+       "title": "AEs"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "34"
+          },
+          {
+           "groupId": "OG001",
+           "value": "34"
+          }
+         ]
+        }
+       ],
+       "title": "SAEs"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        },
+        {
+         "groupId": "OG001",
+         "value": "292"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "An AE was any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An AE can therefore be any unfavorable and unintended sign (including abnormal laboratory values or abnormal clinical test results), symptoms, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. SAE is any significant hazard, contraindication, or side effect that is fatal or life-threatening, requires hospitalization or prolongation of an existing hospitalization, results in persistent or significant disability/incapacity, is a congenital anomaly/birth defect, is medically significant or requires intervention. Number of participants with atleast 1 AE and SAE are reported here.",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "populationDescription": "Safety Analysis Set (SAS) included all participants who received at least one dose of study drug, with participants grouped according to treatment received. 3 participants in the prasinezumab arm and 1 participant in the placebo arm were randomized but not treated and 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Number of Participants With Adverse Events (AEs) and Serious Adverse Events (SAEs)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "0"
+          },
+          {
+           "groupId": "OG001",
+           "value": "0"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        },
+        {
+         "groupId": "OG001",
+         "value": "292"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "An AE was any untoward medical occurrence in participant administered a pharmaceutical product \\& which does not necessarily have to have a causal relationship with treatment. It can therefore be any unfavorable and unintended sign (including abnormal laboratory values/ abnormal clinical test results), symptoms/disease temporally associated with use of pharmaceutical product, whether/not considered related to product. AESIs included potential drug-induced liver injury that include an elevated alanine transaminase (ALT) \\& aspartate aminotransferase (AST) in combination with either an elevated bilirubin/clinical jaundice defined by Hy's law and suspected transmission of an infectious agent by study drug.",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "populationDescription": "SAS included all participants who received at least one dose of study drug, with participants grouped according to treatment received. 3 participants in the prasinezumab arm and 1 participant in the placebo arm were randomized but not treated and 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Number of Participants With Adverse Events of Special Interest (AESI)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "3"
+          },
+          {
+           "groupId": "OG001",
+           "value": "2"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        },
+        {
+         "groupId": "OG001",
+         "value": "292"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "An AE was any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An AE can therefore be any unfavorable and unintended sign (including abnormal laboratory values or abnormal clinical test results), symptoms, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product.",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "populationDescription": "SAS included all participants who received at least one dose of study drug, with participants grouped according to treatment received. 3 participants in the prasinezumab arm and 1 participant in the placebo arm were randomized but not treated and 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Number of Participants With Treatment Discontinuation Due to AEs",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "37"
+          },
+          {
+           "groupId": "OG001",
+           "value": "32"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        },
+        {
+         "groupId": "OG001",
+         "value": "292"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "IRRs were defined as any signs and symptoms (AEs) occurring during infusion and/or within 24 hours administration after the end of infusion and were considered related to study treatment by the investigator. Symptoms include flushing, rash, respiratory difficulty, hypotension, tachycardia.",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "populationDescription": "SAS included all participants who received at least one dose of study drug, with participants grouped according to treatment received. 3 participants in the prasinezumab arm and 1 participant in the placebo arm were randomized but not treated and 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Number of Participants With Infusion Related Reactions (IRRs)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "6"
+          },
+          {
+           "groupId": "OG001",
+           "value": "5"
+          }
+         ]
+        }
+       ],
+       "title": "Passive: Wish to be Dead"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "2"
+          },
+          {
+           "groupId": "OG001",
+           "value": "2"
+          }
+         ]
+        }
+       ],
+       "title": "Non-specific Active Suicidal Thoughts"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "3"
+          },
+          {
+           "groupId": "OG001",
+           "value": "0"
+          }
+         ]
+        }
+       ],
+       "title": "Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "0"
+          },
+          {
+           "groupId": "OG001",
+           "value": "1"
+          }
+         ]
+        }
+       ],
+       "title": "Self-injurious Behavior, no Suicidal Intent"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        },
+        {
+         "groupId": "OG001",
+         "value": "292"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "C-SSRS=assessment tool used to assess lifetime suicidality of participant (at baseline) as well as any new instances of suicidality (C-SSRS since last visit). Structured interview prompts recollection of suicidal ideation, including intensity of ideation, behavior, and attempts with actual/potential lethality. Categories have binary responses (yes/no) and include Wish to be Dead; Non-specific Active Suicidal Thoughts; Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act; Active Suicidal Ideation with Some Intent to Act, without Specific Plan; Active Suicidal Ideation with Specific Plan and Intent, Preparatory Acts and Behavior; Aborted Attempt; Interrupted Attempt; Actual Attempt (non-fatal); Completed Suicide. Suicidal ideation/behavior is indicated by a \"yes\" answer to any of the listed categories. Score of 0 is assigned if no suicide risk is present. Score of 1 or higher= suicidal ideation or behavior. Categories with non-zero values are only reported here.",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab matching placebo as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Placebo"
+      },
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG001",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "populationDescription": "SAS included all participants who received at least one dose of study drug, with participants grouped according to treatment received.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Number of Participants With in Suicidal Ideation, as Measured by the Columbia-Suicide Severity Rating Scale (C-SSRS)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "217.3",
+           "upperLimit": "514.9",
+           "value": "313.5"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "dispersionType": "90% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "Pharmacokinetic (PK) Analysis Set (PAS) included all randomized participants exposed to study treatment with sufficient dosing information and at least one adequately documented and quantifiable prasinezumab concentration.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Day 1 of Weeks 1, 2, 4, 8, 12, 24, 36, 52, 64, 76",
+     "title": "DBT Period: Maximum Observed Concentration at Steady-state (Cmax,SS)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "micrograms/milliliter (µg/mL)"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "12.1",
+           "upperLimit": "60.9",
+           "value": "28.7"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "dispersionType": "90% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "PAS included all randomized participants exposed to study treatment with sufficient dosing information and at least one adequately documented and quantifiable prasinezumab concentration.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Day 1 of Weeks 1, 2, 4, 8, 12, 24, 36, 52, 64, 76",
+     "title": "DBT Period: Minimum Observed Concentration at Steady-state (Cmin,SS)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "µg/mL"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "lowerLimit": "34850",
+           "upperLimit": "82330",
+           "value": "49384"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "290"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "dispersionType": "90% Confidence Interval",
+     "groups": [
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "MEDIAN",
+     "populationDescription": "PAS included all randomized participants exposed to study treatment with sufficient dosing information and at least one adequately documented and quantifiable prasinezumab concentration.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Day 1 of Weeks 1, 2, 4, 8, 12, 24, 36, 52, 64, 76",
+     "title": "DBT Period: Area Under the Serum Concentration Time Curve Over the Dosing Interval (AUCTau,SS)",
+     "type": "SECONDARY",
+     "unitOfMeasure": "hours*microgram/milliter (h*µg/mL)"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "0.3"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "289"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "groups": [
+      {
+       "description": "Participants received prasinezumab, 1500 mg, as an IV infusion, Q4W up to at least 76 weeks.",
+       "id": "OG000",
+       "title": "DBT Period: Prasinezumab"
+      }
+     ],
+     "paramType": "NUMBER",
+     "populationDescription": "Immunogenicity population included all participants on active treatment with at least one ADA assessment. Percentages have been rounded off.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "From study start to end of DBT period to at least 76 weeks",
+     "title": "DBT Period: Percentage of Participants With Anti-Drug Antibodies (ADAs) at Baseline and Post-Treatment",
+     "type": "SECONDARY",
+     "unitOfMeasure": "percentage of participants"
+    },
+    {
+     "anticipatedPostingDate": "2027-12",
+     "denomUnitsSelected": "Participants",
+     "description": "An AE was any untoward medical occurrence in a participant administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An AE can therefore be any unfavorable and unintended sign (including abnormal laboratory values or abnormal clinical test results), symptoms, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. SAE is any significant hazard, contraindication, or side effect that is fatal or life-threatening, requires hospitalization or prolongation of an existing hospitalization, results in persistent or significant disability/incapacity, is a congenital anomaly/birth defect, is medically significant or requires intervention.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)",
+     "title": "OLE Period: Number of Participants With AEs and SAEs",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-12",
+     "denomUnitsSelected": "Participants",
+     "description": "An AE was any untoward medical occurrence in participant administered a pharmaceutical product \\& which does not necessarily have to have a causal relationship with treatment. It can therefore be any unfavorable and unintended sign (including abnormal laboratory values/ abnormal clinical test results), symptoms/disease temporally associated with use of pharmaceutical product, whether/not considered related to product. AESIs included potential drug-induced liver injury that include an elevated ALT \\& AST in combination with either an elevated bilirubin/clinical jaundice defined by Hy's law and suspected transmission of an infectious agent by study drug.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)",
+     "title": "OLE Period: Number of Participants With AESI",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-12",
+     "denomUnitsSelected": "Participants",
+     "description": "IRRs were defined as any signs and symptoms (AEs) occurring during infusion and/or within 24 hours administration after the end of infusion and were considered related to study treatment by the investigator. Symptoms include flushing, rash, respiratory difficulty, hypotension, tachycardia.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)",
+     "title": "OLE Period: Number of Participants With IRRs",
+     "type": "SECONDARY"
+    },
+    {
+     "anticipatedPostingDate": "2027-12",
+     "denomUnitsSelected": "Participants",
+     "description": "C-SSRS=assessment tool used to assess lifetime suicidality of participant (at baseline) as well as any new instances of suicidality (C-SSRS since last visit). Structured interview prompts recollection of suicidal ideation, including intensity of ideation, behavior, and attempts with actual/potential lethality. Categories have binary responses (yes/no) and include Wish to be Dead; Non-specific Active Suicidal Thoughts; Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act; Active Suicidal Ideation with Some Intent to Act, without Specific Plan; Active Suicidal Ideation with Specific Plan and Intent, Preparatory Acts and Behavior; Aborted Attempt; Interrupted Attempt; Actual Attempt (non-fatal); Completed Suicide. Suicidal ideation/behavior is indicated by a \"yes\" answer to any of the listed categories. Score of 0 is assigned if no suicide risk is present. Score of 1 or higher= suicidal ideation or behavior.",
+     "reportingStatus": "NOT_POSTED",
+     "timeFrame": "From signing of informed consent form up to 70 days after final dose of study treatment (Up to 66.6 months)",
+     "title": "OLE Period: Number of Participants With in Suicidal Ideation, as Measured by the C-SSRS",
+     "type": "SECONDARY"
+    }
+   ]
+  },
+  "participantFlowModule": {
+   "groups": [
+    {
+     "description": "Participants received prasinezumab matching placebo as an intravenous (IV) infusion, every 4 weeks (Q4W) up to at least 76 weeks.",
+     "id": "FG000",
+     "title": "DBT Period: Placebo"
+    },
+    {
+     "description": "Participants received prasinezumab, 1500 milligrams (mg), as an intravenous (IV) infusion, Q4W up to at least 76 weeks.",
+     "id": "FG001",
+     "title": "DBT Period: Prasinezumab"
+    },
+    {
+     "description": "Eligible and consenting participants who completed the DBT period enrolled in the OLE period, to receive prasinezumab, 1500 mg, as an IV infusion, Q4W up to 104 weeks.",
+     "id": "FG002",
+     "title": "OLE Period: Prasinezumab"
+    }
+   ],
+   "periods": [
+    {
+     "dropWithdraws": [
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "2"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Death"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "1"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Reason not Specified"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "4"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Physician Decision"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "12"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "11"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Withdrawal by Subject"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "1"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "3"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Randomized but not Treated"
+      }
+     ],
+     "milestones": [
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "293"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "293"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "STARTED"
+      },
+      {
+       "achievements": [
+        {
+         "comment": "3 participants in prasinezumab arm and 1 participant in placebo arm were randomized but not treated. 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis.",
+         "groupId": "FG000",
+         "numSubjects": "290"
+        },
+        {
+         "comment": "3 participants in prasinezumab arm and 1 participant in placebo arm were randomized but not treated. 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis.",
+         "groupId": "FG001",
+         "numSubjects": "292"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "comment": "SAS included all participants who received at least one dose of study drug, with participants grouped according to treatment received.",
+       "type": "Safety Analysis Set (SAS)"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "273"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "277"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "COMPLETED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "20"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "16"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "NOT COMPLETED"
+      }
+     ],
+     "title": "DBT Period"
+    },
+    {
+     "dropWithdraws": [
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "534"
+        }
+       ],
+       "type": "Ongoing in OLE"
+      }
+     ],
+     "milestones": [
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "534"
+        }
+       ],
+       "type": "STARTED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "COMPLETED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG002",
+         "numSubjects": "534"
+        }
+       ],
+       "type": "NOT COMPLETED"
+      }
+     ],
+     "title": "OLE Period"
+    }
+   ],
+   "preAssignmentDetails": "After completing the DBT period, consenting \\& eligible participants entered the OLE period to receive prasinezumab. 3 participants in the prasinezumab arm and 1 participant in the placebo arm were randomized but not treated and 2 participants randomized to placebo arm received 1 dose of prasinezumab and were included in the prasinezumab arm for safety analysis. The study is still ongoing.",
+   "recruitmentDetails": "A total of 586 participants with early-stage Parkinson's disease (PD) took part in the study across 110 investigative sites in 9 countries. The study consisted of double-blind treatment (DBT), where participants were randomized in 1:1 ratio to receive prasinezumab or placebo and an optional open-label extension (OLE)."
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "g2_edges": 29680679,
+ "g3_edges": 29290179,
+ "g3_removed": 390500,
+ "layers": [
+  "pharos",
+  "dto",
+  "opentargets_layer",
+  "chembl37",
+  "hpo_hierarchy",
+  "go_hierarchy",
+  "mondo_hierarchy"
+ ],
+ "source": "outputs/g2/summary.md, outputs/g3/summary.md"
+}

@@ -1,0 +1,12 @@
+edge_spec	reason	rows
+gene_has_product	no subject identifier	285
+gene_disease	no subject identifier	425
+gene_disease	no usable object identifier	47376
+ligand_activity	no subject identifier	17737
+gene_mouse_phenotype	no subject identifier	3
+gene_gwas_trait	no subject identifier	285
+gene_gwas_trait	no usable object identifier	2122
+gene_gwas_trait	object prefix has no class	2146
+gene_disease_textmining_tinx	no subject identifier	13194
+gene_disease_textmining_tinx	no usable object identifier	275776
+protein_protein_interaction	no usable object identifier	1247

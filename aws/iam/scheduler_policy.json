@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Sid": "StartStopTheProjectNeptune", "Effect": "Allow", "Action": ["rds:StopDBCluster", "rds:StartDBCluster"],
+     "Resource": "arn:aws:rds:REGION:ACCOUNT_ID:cluster:tmkg-*"},
+    {"Sid": "StartStopTheAppInstance", "Effect": "Allow", "Action": ["ec2:StopInstances", "ec2:StartInstances"],
+     "Resource": "arn:aws:ec2:REGION:ACCOUNT_ID:instance/*",
+     "Condition": {"StringEquals": {"aws:ResourceTag/project": "TAG_VALUE"}}},
+    {"Sid": "InvokeTheIdleStopSweep", "Effect": "Allow", "Action": ["lambda:InvokeFunction"],
+     "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:tmkg-idle-stop"}
+  ]
+}

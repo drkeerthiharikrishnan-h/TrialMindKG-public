@@ -1,0 +1,448 @@
+program,entity_type,query,resolved,identifier,rule,n_candidates,detail
+,atc,ADUCANUMAB,True,N06DX03,chembl_atc_classification,,
+,atc,ANIFROLUMAB,True,L04AG11,chembl_atc_classification,,
+,atc,APIXABAN,True,B01AF02,chembl_atc_classification,,
+,atc,ATEZOLIZUMAB,True,L01FF05,chembl_atc_classification,,
+,atc,AZACITIDINE,True,L01BC07,chembl_atc_classification,,
+,atc,Asundexian,False,,chembl_atc_classification,,
+,atc,BEMPEGALDESLEUKIN,False,,chembl_atc_classification,,
+,atc,CARBOPLATIN,True,L01XA02,chembl_atc_classification,,
+,atc,CISPLATIN,True,L01XA01,chembl_atc_classification,,
+,atc,CRENEZUMAB,False,,chembl_atc_classification,,
+,atc,CYTARABINE,True,L01BC01,chembl_atc_classification,,
+,atc,DALCETRAPIB,False,,chembl_atc_classification,,
+,atc,DAUNORUBICIN,True,L01DB02,chembl_atc_classification,,
+,atc,DELPACIBART ETEDESIRAN,False,,chembl_atc_classification,,
+,atc,DURVALUMAB,True,L01FF03,chembl_atc_classification,,
+,atc,ELAFIBRANOR,True,A05AX06,chembl_atc_classification,,
+,atc,EPACADOSTAT,True,L01XX58,chembl_atc_classification,,
+,atc,EPLONTERSEN,True,N07XX21,chembl_atc_classification,,
+,atc,FORDADISTROGENE MOVAPARVOVEC,False,,chembl_atc_classification,,
+,atc,GANTENERUMAB,False,,chembl_atc_classification,,
+,atc,GEMCITABINE,True,L01BC05,chembl_atc_classification,,
+,atc,GIREDESTRANT,False,,chembl_atc_classification,,
+,atc,IDARUBICIN,True,L01DB06,chembl_atc_classification,,
+,atc,LANABECESTAT,False,,chembl_atc_classification,,
+,atc,LETROZOLE,True,L02BG04,chembl_atc_classification,,
+,atc,MAGROLIMAB,False,,chembl_atc_classification,,
+,atc,MAVACAMTEN,True,C01EB24,chembl_atc_classification,,
+,atc,MEPOLIZUMAB,True,R03DX09,chembl_atc_classification,,
+,atc,MILVEXIAN,False,,chembl_atc_classification,,
+,atc,NIVOLUMAB,True,L01FF01,chembl_atc_classification,,
+,atc,PACLITAXEL,True,L01CD01,chembl_atc_classification,,
+,atc,PALBOCICLIB,True,L01EF01,chembl_atc_classification,,
+,atc,PELACARSEN,False,,chembl_atc_classification,,
+,atc,PEMAFIBRATE,True,C10AB12,chembl_atc_classification,,
+,atc,PEMBROLIZUMAB,True,L01FF02,chembl_atc_classification,,
+,atc,PEMETREXED,True,L01BA04,chembl_atc_classification,,
+,atc,PRASINEZUMAB,False,,chembl_atc_classification,,
+,atc,SELONSERTIB,False,,chembl_atc_classification,,
+,atc,SEMAGLUTIDE,True,A10BJ06,chembl_atc_classification,,
+,atc,SERELAXIN,True,C01DX21,chembl_atc_classification,,
+,atc,SIMUFILAM,False,,chembl_atc_classification,,
+,atc,SODIUM PHENYLBUTYRATE,True,A16AX03,chembl_atc_classification,,
+,atc,SOLANEZUMAB,False,,chembl_atc_classification,,
+,atc,TAURURSODIOL,True,A05AA05,chembl_atc_classification,,
+,atc,TIRAGOLUMAB,False,,chembl_atc_classification,,
+,atc,TOFERSEN,True,N07XX22,chembl_atc_classification,,
+,atc,TOMINERSEN,False,,chembl_atc_classification,,
+,atc,TREMELIMUMAB,True,L01FX20,chembl_atc_classification,,
+,atc,TROSPIUM,True,G04BD09,chembl_atc_classification,,
+,atc,VENETOCLAX,True,L01XX52,chembl_atc_classification,,
+,atc,VERUBECESTAT,False,,chembl_atc_classification,,
+,atc,XANOMELINE,False,,chembl_atc_classification,,
+,babel_same_concept,EFO:1001248 = MESH:D065626,False,MONDO:0013209,babel_same_concept_not_linked_NEEDS_REVIEW,,metabolic dysfunction-associated steatotic liver disease
+,babel_same_concept,EFO:1001248 = MONDO:0013209,False,MONDO:0013209,babel_same_concept_not_linked_NEEDS_REVIEW,,metabolic dysfunction-associated steatotic liver disease
+,babel_same_concept,MESH:D000544 = MONDO:0004975,True,MONDO:0004975,babel_same_concept_linked,,Alzheimer disease
+,babel_same_concept,MESH:D000686 = MONDO:0019065,True,MONDO:0019065,babel_same_concept_linked,,amyloidosis
+,babel_same_concept,MESH:D000690 = MONDO:0004976,True,MONDO:0004976,babel_same_concept_linked,,amyotrophic lateral sclerosis
+,babel_same_concept,MESH:D001281 = MONDO:0004981,True,MONDO:0004981,babel_same_concept_linked,,atrial fibrillation
+,babel_same_concept,MESH:D001523 = MONDO:0002025,True,MONDO:0002025,babel_same_concept_linked,,psychiatric disorder
+,babel_same_concept,MESH:D001927 = MONDO:0005560,True,MONDO:0005560,babel_same_concept_linked,,brain disorder
+,babel_same_concept,MESH:D001943 = MONDO:0021100,True,MONDO:0021100,babel_same_concept_linked,,breast neoplasm
+,babel_same_concept,MESH:D002289 = MONDO:0005233,True,MONDO:0005233,babel_same_concept_linked,,non-small cell lung carcinoma
+,babel_same_concept,MESH:D002312 = MONDO:0005045,True,MONDO:0005045,babel_same_concept_linked,,hypertrophic cardiomyopathy
+,babel_same_concept,MESH:D002318 = MONDO:0004995,True,MONDO:0004995,babel_same_concept_linked,,cardiovascular disorder
+,babel_same_concept,MESH:D002493 = MONDO:0002602,True,MONDO:0002602,babel_same_concept_linked,,central nervous system disorder
+,babel_same_concept,MESH:D002819 = MONDO:0001595,True,MONDO:0001595,babel_same_concept_linked,,choreatic disease
+,babel_same_concept,MESH:D003072 = MESH:D019965,False,MONDO:0002039,babel_same_concept_not_linked_NEEDS_REVIEW,,cognitive disorder
+,babel_same_concept,MESH:D003072 = MONDO:0002039,True,MONDO:0002039,babel_same_concept_linked,,cognitive disorder
+,babel_same_concept,MESH:D003693 = MONDO:0045057,True,MONDO:0045057,babel_same_concept_linked,,delirium
+,babel_same_concept,MESH:D003704 = MONDO:0001627,True,MONDO:0001627,babel_same_concept_linked,,dementia
+,babel_same_concept,MESH:D008545 = MONDO:0005105,True,MONDO:0005105,babel_same_concept_linked,,melanoma
+,babel_same_concept,MESH:D009190 = MONDO:0018881,True,MONDO:0018881,babel_same_concept_linked,,myelodysplastic syndrome
+,babel_same_concept,MESH:D009202 = MONDO:0004994,True,MONDO:0004994,babel_same_concept_linked,,cardiomyopathy
+,babel_same_concept,MESH:D009203 = MONDO:0005068,True,MONDO:0005068,babel_same_concept_linked,,myocardial infarction
+,babel_same_concept,MESH:D009223 = MONDO:0016107,True,MONDO:0016107,babel_same_concept_linked,,myotonic dystrophy
+,babel_same_concept,MESH:D009422 = MONDO:0005071,True,MONDO:0005071,babel_same_concept_linked,,nervous system disorder
+,babel_same_concept,MESH:D010300 = MONDO:0005180,True,MONDO:0005180,babel_same_concept_linked,,Parkinson disease
+,babel_same_concept,MESH:D012559 = MONDO:0005090,True,MONDO:0005090,babel_same_concept_linked,,schizophrenia
+,babel_same_concept,MESH:D015470 = MONDO:0018874,True,MONDO:0018874,babel_same_concept_linked,,acute myeloid leukemia
+,babel_same_concept,MESH:D019636 = MONDO:0005559,True,MONDO:0005559,babel_same_concept_linked,,neurodegenerative disease
+,babel_same_concept,MESH:D019965 = MONDO:0002039,True,MONDO:0002039,babel_same_concept_linked,,cognitive disorder
+,babel_same_concept,MESH:D020388 = MONDO:0010679,True,MONDO:0010679,babel_same_concept_linked,,Duchenne muscular dystrophy
+,babel_same_concept,MESH:D020521 = MONDO:0005098,True,MONDO:0005098,babel_same_concept_linked,,stroke disorder
+,babel_same_concept,MESH:D020967 = MONDO:0016120,True,MONDO:0016120,babel_same_concept_linked,,myotonic syndrome
+,babel_same_concept,MESH:D024801 = MONDO:0005574,True,MONDO:0005574,babel_same_concept_linked,,tauopathy
+,babel_same_concept,MESH:D029424 = MONDO:0005002,True,MONDO:0005002,babel_same_concept_linked,,chronic obstructive pulmonary disease
+,babel_same_concept,MESH:D054058 = MONDO:0005542,True,MONDO:0005542,babel_same_concept_linked,,acute coronary syndrome
+,babel_same_concept,MESH:D065626 = MONDO:0013209,True,MONDO:0013209,babel_same_concept_linked,,metabolic dysfunction-associated steatotic liver disease
+P08,condition,MESH:D003072 Cognition Disorders,True,MONDO:0002039,curator_override,,
+P10,condition,Early Alzheimer´s Disease,True,MONDO:0004975,curator_override,,
+P17,condition,MESH:D009190 Myelodysplastic Syndromes,True,MONDO:0018881,mesh_term_exact_MONDO_name,,
+P19,condition,Active Systemic Lupus Erythematosus,True,MONDO:0007915,curator_override,,
+P22,condition,MESH:D005355 Fibrosis,True,,curator_confirmed_no_MONDO_term,,Confirmed by owner 2026-10-05: MeSH Fibrosis has no MONDO equivalent; left unmapped
+P23,condition,Acute Heart Failure,True,MONDO:0005252,curator_override,,
+P24,condition,MESH:D050171 Dyslipidemias,True,MONDO:0005347,curator_override,,
+P29,condition,MESH:D012559 Schizophrenia,True,MONDO:0005090,mesh_term_exact_MONDO_name,,
+P34,condition,MESH:D009222 Myotonia,True,MONDO:0008056,curator_override,,
+P01,drug,Solanezumab,True,CHEMBL1743072,exact_name_or_synonym,,
+P02,drug,Verubecestat,True,CHEMBL3301601,exact_name_or_synonym,,
+P03,drug,Lanabecestat,True,CHEMBL3989948,exact_name_or_synonym,,
+P04,drug,Crenezumab,True,CHEMBL1743004,exact_name_or_synonym,,
+P05,drug,Aducanumab,True,CHEMBL3039540,exact_name_or_synonym,,
+P06,drug,Tominersen,True,CHEMBL4297581,exact_name_or_synonym,,
+P07,drug,Gantenerumab,True,CHEMBL1743025,exact_name_or_synonym,,
+P08,drug,Solanezumab,True,CHEMBL1743072,exact_name_or_synonym,,
+P09,drug,Simufilam,True,CHEMBL4650230,exact_name_or_synonym,,
+P10,drug,Semaglutide,True,CHEMBL2108724,exact_name_or_synonym,,
+P11,drug,Prasinezumab,True,CHEMBL4298077,exact_name_or_synonym,,
+P12,drug,sodium phenylbutyrate,True,CHEMBL1746,exact_name_or_synonym+curated_alias,,
+P12,drug,ursodoxicoltaurine,True,CHEMBL272427,exact_name_or_synonym+curated_alias,,
+P13,drug,Tofersen,True,CHEMBL3833346,exact_name_or_synonym,,
+P14,drug,Epacadostat,True,CHEMBL3545369,exact_name_or_synonym,,
+P14,drug,pembrolizumab,True,CHEMBL3137343,exact_name_or_synonym,,
+P15,drug,Durvalumab,True,CHEMBL3301587,exact_name_or_synonym,,
+P15,drug,tremelimumab,True,CHEMBL2108658,exact_name_or_synonym,,
+P16,drug,Bempegaldesleukin,True,CHEMBL4298058,exact_name_or_synonym,,
+P16,drug,nivolumab,True,CHEMBL2108738,exact_name_or_synonym,,
+P17,drug,Magrolimab,True,CHEMBL4297985,exact_name_or_synonym,,
+P18,drug,Tiragolumab,True,CHEMBL4298050,exact_name_or_synonym,,
+P18,drug,atezolizumab,True,CHEMBL3707227,exact_name_or_synonym,,
+P19,drug,Anifrolumab,True,CHEMBL2364653,exact_name_or_synonym,,
+P20,drug,Mepolizumab,True,CHEMBL2108429,exact_name_or_synonym,,
+P21,drug,Selonsertib,True,CHEMBL3916717,exact_name_or_synonym,,
+P22,drug,Elafibranor,True,CHEMBL3707395,exact_name_or_synonym,,
+P23,drug,Serelaxin,True,CHEMBL2108358,exact_name_or_synonym,,
+P24,drug,Pemafibrate,True,CHEMBL247951,exact_name_or_synonym,,
+P25,drug,Dalcetrapib,True,CHEMBL313006,exact_name_or_synonym,,
+P26,drug,Asundexian,True,CHEMBL5427131,unnamed_top_hit+curator_confirmed,,
+P27,drug,Milvexian,True,CHEMBL4112929,exact_name_or_synonym,,
+P28,drug,Fordadistrogene movaparvovec,True,CHEMBL4594336,exact_name_or_synonym,,
+P29,drug,Xanomeline,True,CHEMBL21536,exact_name_or_synonym,,
+P29,drug,trospium,True,CHEMBL1888176,exact_name_or_synonym,,
+P30,drug,Mavacamten,True,CHEMBL4297517,exact_name_or_synonym,,
+P31,drug,Giredestrant,True,CHEMBL4650316,exact_name_or_synonym,,
+P31,drug,palbociclib,True,CHEMBL189963,exact_name_or_synonym,,
+P32,drug,Eplontersen,True,CHEMBL4594334,exact_name_or_synonym,,
+P33,drug,Pelacarsen,True,CHEMBL4298202,exact_name_or_synonym,,
+P34,drug,Delpacibart etedesiran,True,CHEMBL5314669,exact_name_or_synonym,,
+P01,genetic_evidence,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,eva;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P02,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0004975,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0001627,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 53bf2d35be886ebe
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0002025,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 40beb71fc5fe68ed
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0002039,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 6a250f4296088f69
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0002602,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 6c7ccedbf07f0eb6
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0004975,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0005071,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot a8f3453e17681a6b
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0005559,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 66c761cb5f206d9c
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0005560,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 03d580d180569c55
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0005574,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot d640de829779d0f9
+P03,genetic_evidence,ENSEMBL:ENSG00000186318 | MONDO:0045057,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 66d46699982714a7
+P04,genetic_evidence,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,eva;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P05,genetic_evidence,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,eva;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P06,genetic_evidence,ENSEMBL:ENSG00000197386 | MONDO:0001595,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 94133267a7464909
+P07,genetic_evidence,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,eva;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P08,genetic_evidence,ENSEMBL:ENSG00000142192 | MONDO:0002039,True,eva;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 6a250f4296088f69
+P09,genetic_evidence,ENSEMBL:ENSG00000196924 | MONDO:0004975,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P10,genetic_evidence,ENSEMBL:ENSG00000112164 | MONDO:0004975,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 93e2ce4123fe4a19
+P11,genetic_evidence,ENSEMBL:ENSG00000145335 | MONDO:0005180,True,clingen;eva;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 3f3343c48a105930
+P13,genetic_evidence,ENSEMBL:ENSG00000142168 | MONDO:0004976,True,clingen;eva;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 69bceddd6cd48e32
+P14,genetic_evidence,ENSEMBL:ENSG00000131203 | MONDO:0005105,True,eva,open_targets_genetic_evidence,,Open Targets 26.09; snapshot a1da26142be1e3fb
+P14,genetic_evidence,ENSEMBL:ENSG00000188389 | MONDO:0005105,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot a1da26142be1e3fb
+P15,genetic_evidence,ENSEMBL:ENSG00000120217 | MONDO:0005233,True,cancer_gene_census,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 83cae4adbb7b5f51
+P15,genetic_evidence,ENSEMBL:ENSG00000163599 | MONDO:0005233,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 83cae4adbb7b5f51
+P16,genetic_evidence,ENSEMBL:ENSG00000188389 | MONDO:0005105,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot a1da26142be1e3fb
+P17,genetic_evidence,ENSEMBL:ENSG00000196776 | MONDO:0018874,True,eva,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 3b109441179994b0
+P17,genetic_evidence,ENSEMBL:ENSG00000196776 | MONDO:0018881,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot e3ed912025f4b7a9
+P18,genetic_evidence,ENSEMBL:ENSG00000120217 | MONDO:0005233,True,cancer_gene_census,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 83cae4adbb7b5f51
+P18,genetic_evidence,ENSEMBL:ENSG00000181847 | MONDO:0005233,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 83cae4adbb7b5f51
+P19,genetic_evidence,ENSEMBL:ENSG00000142166 | MONDO:0007915,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 3e86756ce2a96288
+P20,genetic_evidence,ENSEMBL:ENSG00000113525 | MONDO:0005002,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot e4eb2851ef259be4
+P21,genetic_evidence,ENSEMBL:ENSG00000197442 | MONDO:0013209,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 42e72ff5d8c67f40
+P22,genetic_evidence,ENSEMBL:ENSG00000112033 | MONDO:0013209,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 42e72ff5d8c67f40
+P22,genetic_evidence,ENSEMBL:ENSG00000186951 | MONDO:0013209,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 42e72ff5d8c67f40
+P23,genetic_evidence,ENSEMBL:ENSG00000133105 | MONDO:0005252,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 0ce6f6996bf4abc3
+P23,genetic_evidence,ENSEMBL:ENSG00000171509 | MONDO:0005252,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 0ce6f6996bf4abc3
+P24,genetic_evidence,ENSEMBL:ENSG00000186951 | MONDO:0005347,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot e281487ba27144d3
+P25,genetic_evidence,ENSEMBL:ENSG00000087237 | MONDO:0005542,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 715a931769233c47
+P27,genetic_evidence,ENSEMBL:ENSG00000088926 | MONDO:0005542,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 715a931769233c47
+P29,genetic_evidence,ENSEMBL:ENSG00000133019 | MONDO:0005090,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 631078f9898f0a9b
+P29,genetic_evidence,ENSEMBL:ENSG00000168539 | MONDO:0005090,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 631078f9898f0a9b
+P29,genetic_evidence,ENSEMBL:ENSG00000180720 | MONDO:0005090,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 631078f9898f0a9b
+P29,genetic_evidence,ENSEMBL:ENSG00000181072 | MONDO:0005090,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 631078f9898f0a9b
+P30,genetic_evidence,ENSEMBL:ENSG00000078814 | MONDO:0005045,True,eva,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 6929cc0ae2585450
+P30,genetic_evidence,ENSEMBL:ENSG00000092054 | MONDO:0005045,True,clingen;eva;gene2phenotype;gene_burden;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 6929cc0ae2585450
+P30,genetic_evidence,ENSEMBL:ENSG00000106631 | MONDO:0005045,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 6929cc0ae2585450
+P30,genetic_evidence,ENSEMBL:ENSG00000111245 | MONDO:0005045,True,clingen;eva;gene2phenotype;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 6929cc0ae2585450
+P30,genetic_evidence,ENSEMBL:ENSG00000160808 | MONDO:0005045,True,clingen;eva;gene2phenotype;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 6929cc0ae2585450
+P30,genetic_evidence,ENSEMBL:ENSG00000197616 | MONDO:0005045,True,eva;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 6929cc0ae2585450
+P30,genetic_evidence,ENSEMBL:ENSG00000198336 | MONDO:0005045,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 6929cc0ae2585450
+P31,genetic_evidence,ENSEMBL:ENSG00000091831 | MONDO:0021100,True,cancer_gene_census;eva;eva_somatic;intogen,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 0e357804b28768dd
+P31,genetic_evidence,ENSEMBL:ENSG00000105810 | MONDO:0021100,True,cancer_gene_census,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 0e357804b28768dd
+P31,genetic_evidence,ENSEMBL:ENSG00000110092 | MONDO:0021100,True,cancer_gene_census;eva,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 0e357804b28768dd
+P31,genetic_evidence,ENSEMBL:ENSG00000135446 | MONDO:0021100,True,cancer_gene_census;eva,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 0e357804b28768dd
+P32,genetic_evidence,ENSEMBL:ENSG00000118271 | MONDO:0004994,True,eva;gene2phenotype;orphanet,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 5bdb1e186ea25bda
+P32,genetic_evidence,ENSEMBL:ENSG00000118271 | MONDO:0019065,True,clingen;eva;eva_somatic;gene2phenotype;gene_burden;orphanet;uniprot_literature;uniprot_variants,open_targets_genetic_evidence,,Open Targets 26.09; snapshot 4b7627c91ba08f42
+P33,genetic_evidence,ENSEMBL:ENSG00000198670 | MONDO:0004995,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot b2624d070caa52da
+P33,genetic_evidence,ENSEMBL:ENSG00000198670 | MONDO:0005068,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot 61b0e2da0656f4af
+P33,genetic_evidence,ENSEMBL:ENSG00000198670 | MONDO:0005098,False,,no_genetic_evidence_in_open_targets,,Open Targets 26.09; snapshot bb2a126a9d7ec874
+,gwas,CCND1,True,8 disease traits; 37 other associations,gwas_catalog_genome_wide,,snapshot 8db3813a5362cb3e
+,gwas,ESR1,True,39 disease traits; 533 other associations,gwas_catalog_genome_wide,,snapshot 8d26154a1cd6a245
+P12,mechanism,ursodoxicoltaurine,False,,no_mechanism_in_ChEMBL_or_OpenTargets_NEEDS_REVIEW,,
+P16,mechanism,Bempegaldesleukin,False,,no_mechanism_in_ChEMBL_or_OpenTargets_NEEDS_REVIEW,,
+P26,mechanism,Asundexian,False,,no_mechanism_in_ChEMBL_or_OpenTargets_NEEDS_REVIEW,,
+P28,mechanism,Fordadistrogene movaparvovec,False,,no_mechanism_in_ChEMBL_or_OpenTargets_NEEDS_REVIEW,,
+P29,mechanism,trospium,True,CHRM3;CHRM2,open_targets_fallback,,
+P34,mechanism,Delpacibart etedesiran,False,,no_mechanism_in_ChEMBL_or_OpenTargets_NEEDS_REVIEW,,
+,pharmacogenomics,ADUCANUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot e12a6b8f29f5b558
+,pharmacogenomics,ANIFROLUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 47bffe225d416b4c
+,pharmacogenomics,APIXABAN,True,3,clinpgx_clinical_annotations,,levels ['3']; snapshot 7f2b388aba364f5f
+,pharmacogenomics,ATEZOLIZUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 0417729dc9aadb94
+,pharmacogenomics,AZACITIDINE,False,0,clinpgx_clinical_annotations,,levels []; snapshot aaf4d5bc6bca7b1e
+,pharmacogenomics,Asundexian,False,0,clinpgx_clinical_annotations,,levels []; snapshot dcd5a1a8eb5b9b22
+,pharmacogenomics,BEMPEGALDESLEUKIN,False,0,clinpgx_clinical_annotations,,levels []; snapshot a1dfdebbb7b35708
+,pharmacogenomics,CARBOPLATIN,True,65,clinpgx_clinical_annotations,,levels ['3']; snapshot 43ce8488e203e76a
+,pharmacogenomics,CISPLATIN,True,123,clinpgx_clinical_annotations,,"levels ['3', '4']; snapshot 13982c4a703aac58"
+,pharmacogenomics,CRENEZUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 5d33ce7b53511d12
+,pharmacogenomics,CYTARABINE,True,33,clinpgx_clinical_annotations,,levels ['3']; snapshot 9541ec95d17cd98d
+,pharmacogenomics,DALCETRAPIB,True,1,clinpgx_clinical_annotations,,levels ['3']; snapshot cda79af131efcaa9
+,pharmacogenomics,DAUNORUBICIN,True,16,clinpgx_clinical_annotations,,"levels ['2B', '3']; snapshot 945c4f13230eb01f"
+,pharmacogenomics,DELPACIBART ETEDESIRAN,False,0,clinpgx_clinical_annotations,,levels []; snapshot a46f25f4e7964156
+,pharmacogenomics,DURVALUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 6b4399b6d398b4bc
+,pharmacogenomics,ELAFIBRANOR,False,0,clinpgx_clinical_annotations,,levels []; snapshot f2ba44f9389f15fc
+,pharmacogenomics,EPACADOSTAT,False,0,clinpgx_clinical_annotations,,levels []; snapshot 2c1dded58f933475
+,pharmacogenomics,EPLONTERSEN,False,0,clinpgx_clinical_annotations,,levels []; snapshot e25144bcb141b089
+,pharmacogenomics,FORDADISTROGENE MOVAPARVOVEC,False,0,clinpgx_clinical_annotations,,levels []; snapshot be27f467153ec970
+,pharmacogenomics,GANTENERUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 9fdea69d49be35da
+,pharmacogenomics,GEMCITABINE,True,90,clinpgx_clinical_annotations,,"levels ['3', '4']; snapshot 5779d38fe8d53ccd"
+,pharmacogenomics,GIREDESTRANT,False,0,clinpgx_clinical_annotations,,levels []; snapshot c760bf51584c6c80
+,pharmacogenomics,IDARUBICIN,True,15,clinpgx_clinical_annotations,,levels ['3']; snapshot 575e7acf7a8db26a
+,pharmacogenomics,LANABECESTAT,False,0,clinpgx_clinical_annotations,,levels []; snapshot f4f9aa68eacb4bd2
+,pharmacogenomics,LETROZOLE,True,19,clinpgx_clinical_annotations,,levels ['3']; snapshot a9cbabafd3b3a454
+,pharmacogenomics,MAGROLIMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot d30055f93981bc9c
+,pharmacogenomics,MAVACAMTEN,False,0,clinpgx_clinical_annotations,,levels []; snapshot 33fcb6634507a4b2
+,pharmacogenomics,MEPOLIZUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 93bacb7c374b50a4
+,pharmacogenomics,MILVEXIAN,False,0,clinpgx_clinical_annotations,,levels []; snapshot ddb3dcb956a18598
+,pharmacogenomics,NIVOLUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot c47e6fe419dd9d33
+,pharmacogenomics,PACLITAXEL,True,45,clinpgx_clinical_annotations,,"levels ['3', '4']; snapshot 9a4311609a2d7d7e"
+,pharmacogenomics,PALBOCICLIB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 0beacaf978c8debf
+,pharmacogenomics,PELACARSEN,False,0,clinpgx_clinical_annotations,,levels []; snapshot 36346e0090b241c1
+,pharmacogenomics,PEMAFIBRATE,False,0,clinpgx_clinical_annotations,,levels []; snapshot 1a3f8720a8492c53
+,pharmacogenomics,PEMBROLIZUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 9236d303ae1ec985
+,pharmacogenomics,PEMETREXED,True,12,clinpgx_clinical_annotations,,levels ['3']; snapshot 079c090d09d2eff6
+,pharmacogenomics,PRASINEZUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot ba12cb4530436ec8
+,pharmacogenomics,SELONSERTIB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 1c380b7110bcd37e
+,pharmacogenomics,SEMAGLUTIDE,False,0,clinpgx_clinical_annotations,,levels []; snapshot 2998961120e30c41
+,pharmacogenomics,SERELAXIN,False,0,clinpgx_clinical_annotations,,levels []; snapshot d90bd84688763dc7
+,pharmacogenomics,SIMUFILAM,False,0,clinpgx_clinical_annotations,,levels []; snapshot a5fb2dcf5553506c
+,pharmacogenomics,SODIUM PHENYLBUTYRATE,False,0,clinpgx_clinical_annotations,,levels []; snapshot 80211f93a2107795
+,pharmacogenomics,SOLANEZUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 0c5f23d01faad9af
+,pharmacogenomics,TAURURSODIOL,False,0,clinpgx_clinical_annotations,,levels []; snapshot 41e0d2f45e9fbe6e
+,pharmacogenomics,TIRAGOLUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 15b77b66b587f0a9
+,pharmacogenomics,TOFERSEN,False,0,clinpgx_clinical_annotations,,levels []; snapshot ecc6646917d58407
+,pharmacogenomics,TOMINERSEN,False,0,clinpgx_clinical_annotations,,levels []; snapshot 53e35867113e5e17
+,pharmacogenomics,TREMELIMUMAB,False,0,clinpgx_clinical_annotations,,levels []; snapshot 36af12ef513bbb7a
+,pharmacogenomics,TROSPIUM,False,0,clinpgx_clinical_annotations,,levels []; snapshot f3255d474362c7fb
+,pharmacogenomics,VENETOCLAX,False,0,clinpgx_clinical_annotations,,levels []; snapshot 0b5c42b076e32232
+,pharmacogenomics,VERUBECESTAT,False,0,clinpgx_clinical_annotations,,levels []; snapshot 1a31c52a3d77593a
+,pharmacogenomics,XANOMELINE,False,0,clinpgx_clinical_annotations,,levels []; snapshot 0a824cd8d6bf5aa2
+,pharmacogenomics_gene,GSTT1,False,,no_exact_symbol_in_open_targets_NEEDS_REVIEW,,
+,publication,41001450,False,,no_Europe_PMC_record,,
+,raw_items,ADUCANUMAB,True,1 FDA applications; 104 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,ANIFROLUMAB,True,2 FDA applications; 1745 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,ATEZOLIZUMAB,True,3 FDA applications; 38623 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,Asundexian,True,0 FDA applications; 6 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,BEMPEGALDESLEUKIN,True,0 FDA applications; 128 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,CRENEZUMAB,True,0 FDA applications; 12 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,DALCETRAPIB,True,0 FDA applications; 15 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,DELPACIBART ETEDESIRAN,True,0 FDA applications; 0 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,DURVALUMAB,True,1 FDA applications; 20225 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,ELAFIBRANOR,True,1 FDA applications; 744 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,EPACADOSTAT,True,0 FDA applications; 58 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,EPLONTERSEN,True,1 FDA applications; 168 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,FORDADISTROGENE MOVAPARVOVEC,True,0 FDA applications; 6 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,GANTENERUMAB,True,0 FDA applications; 3 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,GIREDESTRANT,True,0 FDA applications; 26 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,LANABECESTAT,True,0 FDA applications; 2 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,MAGROLIMAB,True,0 FDA applications; 110 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,MAVACAMTEN,True,1 FDA applications; 5081 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,MEPOLIZUMAB,True,2 FDA applications; 49399 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,MILVEXIAN,True,0 FDA applications; 2 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,NIVOLUMAB,True,5 FDA applications; 96645 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,PALBOCICLIB,True,2 FDA applications; 94825 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,PELACARSEN,True,0 FDA applications; 38 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,PEMAFIBRATE,True,0 FDA applications; 376 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,PEMBROLIZUMAB,True,2 FDA applications; 104614 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,PRASINEZUMAB,True,0 FDA applications; 0 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,SELONSERTIB,True,0 FDA applications; 16 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,SEMAGLUTIDE,True,5 FDA applications; 73001 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,SERELAXIN,True,0 FDA applications; 11 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,SIMUFILAM,True,0 FDA applications; 0 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,SODIUM PHENYLBUTYRATE,True,5 FDA applications; 420 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,SOLANEZUMAB,True,0 FDA applications; 5 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,TAURURSODIOL,True,1 FDA applications; 46 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,TIRAGOLUMAB,True,0 FDA applications; 659 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,TOFERSEN,True,1 FDA applications; 503 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,TOMINERSEN,True,0 FDA applications; 0 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,TREMELIMUMAB,True,2 FDA applications; 4216 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,TROSPIUM,True,3 FDA applications; 4362 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,VERUBECESTAT,True,0 FDA applications; 1 FAERS reports,raw_items_from_discovery_snapshot,,
+,raw_items,XANOMELINE,True,1 FDA applications; 2089 FAERS reports,raw_items_from_discovery_snapshot,,
+P01,target_indication,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,0.8743,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P02,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0004975,True,0.4223,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0001627,True,0.425,open_targets_association,,Open Targets 26.09; snapshot 2529f088c04dc22d
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0002025,True,0.425,open_targets_association,,Open Targets 26.09; snapshot 51b26149676b3017
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0002039,True,0.425,open_targets_association,,Open Targets 26.09; snapshot 28b9e6d93d305920
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0002602,True,0.4651,open_targets_association,,Open Targets 26.09; snapshot f876ce756305bd24
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0004975,True,0.4223,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0005071,True,0.4651,open_targets_association,,Open Targets 26.09; snapshot 0600d2ca9fa75536
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0005559,True,0.4627,open_targets_association,,Open Targets 26.09; snapshot e617f803e2ae1624
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0005560,True,0.4284,open_targets_association,,Open Targets 26.09; snapshot e83b3fd6932c5254
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0005574,True,0.4223,open_targets_association,,Open Targets 26.09; snapshot 0ab030e5dbbd384d
+P03,target_indication,ENSEMBL:ENSG00000186318 | MONDO:0045057,True,0.0018,open_targets_association,,Open Targets 26.09; snapshot 061f53a7278bd1e6
+P04,target_indication,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,0.8743,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P05,target_indication,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,0.8743,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P06,target_indication,ENSEMBL:ENSG00000197386 | MONDO:0001595,True,0.0547,open_targets_association,,Open Targets 26.09; snapshot 076f8e0ca96780a2
+P07,target_indication,ENSEMBL:ENSG00000142192 | MONDO:0004975,True,0.8743,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P08,target_indication,ENSEMBL:ENSG00000142192 | MONDO:0002039,True,0.8819,open_targets_association,,Open Targets 26.09; snapshot 28b9e6d93d305920
+P09,target_indication,ENSEMBL:ENSG00000196924 | MONDO:0004975,True,0.3805,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P10,target_indication,ENSEMBL:ENSG00000112164 | MONDO:0004975,True,0.4056,open_targets_association,,Open Targets 26.09; snapshot c5e6d18d6cb2aa84
+P11,target_indication,ENSEMBL:ENSG00000145335 | MONDO:0005180,True,0.8706,open_targets_association,,Open Targets 26.09; snapshot 2dcabae598a46819
+P13,target_indication,ENSEMBL:ENSG00000142168 | MONDO:0004976,True,0.888,open_targets_association,,Open Targets 26.09; snapshot 321b055997cdfbd8
+P14,target_indication,ENSEMBL:ENSG00000131203 | MONDO:0005105,True,0.3911,open_targets_association,,Open Targets 26.09; snapshot 67a00f1a3582c894
+P14,target_indication,ENSEMBL:ENSG00000188389 | MONDO:0005105,True,0.6293,open_targets_association,,Open Targets 26.09; snapshot 67a00f1a3582c894
+P15,target_indication,ENSEMBL:ENSG00000120217 | MONDO:0005233,True,0.7018,open_targets_association,,Open Targets 26.09; snapshot 0374d18830cb0dc9
+P15,target_indication,ENSEMBL:ENSG00000163599 | MONDO:0005233,True,0.6093,open_targets_association,,Open Targets 26.09; snapshot 0374d18830cb0dc9
+P16,target_indication,ENSEMBL:ENSG00000188389 | MONDO:0005105,True,0.6293,open_targets_association,,Open Targets 26.09; snapshot 67a00f1a3582c894
+P17,target_indication,ENSEMBL:ENSG00000196776 | MONDO:0018874,True,0.3535,open_targets_association,,Open Targets 26.09; snapshot b210691e2a2dced2
+P17,target_indication,ENSEMBL:ENSG00000196776 | MONDO:0018881,True,0.3774,open_targets_association,,Open Targets 26.09; snapshot ee00626c7ace9fa4
+P18,target_indication,ENSEMBL:ENSG00000120217 | MONDO:0005233,True,0.7018,open_targets_association,,Open Targets 26.09; snapshot 0374d18830cb0dc9
+P18,target_indication,ENSEMBL:ENSG00000181847 | MONDO:0005233,True,0.4336,open_targets_association,,Open Targets 26.09; snapshot 0374d18830cb0dc9
+P19,target_indication,ENSEMBL:ENSG00000142166 | MONDO:0007915,True,0.5795,open_targets_association,,Open Targets 26.09; snapshot 70d6002f4d35f8f3
+P20,target_indication,ENSEMBL:ENSG00000113525 | MONDO:0005002,True,0.4322,open_targets_association,,Open Targets 26.09; snapshot ac75f60140afd205
+P21,target_indication,ENSEMBL:ENSG00000197442 | MONDO:0013209,False,,disease_not_in_open_targets,,Open Targets 26.09; snapshot 89621c1d9f533f47
+P22,target_indication,ENSEMBL:ENSG00000112033 | MONDO:0013209,False,,disease_not_in_open_targets,,Open Targets 26.09; snapshot 89621c1d9f533f47
+P22,target_indication,ENSEMBL:ENSG00000186951 | MONDO:0013209,False,,disease_not_in_open_targets,,Open Targets 26.09; snapshot 89621c1d9f533f47
+P23,target_indication,ENSEMBL:ENSG00000133105 | MONDO:0005252,True,0.4135,open_targets_association,,Open Targets 26.09; snapshot f25bc4a5c8623258
+P23,target_indication,ENSEMBL:ENSG00000171509 | MONDO:0005252,True,0.3727,open_targets_association,,Open Targets 26.09; snapshot f25bc4a5c8623258
+P24,target_indication,ENSEMBL:ENSG00000186951 | MONDO:0005347,True,0.4143,open_targets_association,,Open Targets 26.09; snapshot 7cd0e6db7364212b
+P25,target_indication,ENSEMBL:ENSG00000087237 | MONDO:0005542,True,0.3291,open_targets_association,,Open Targets 26.09; snapshot 563c07fd6543fa9f
+P27,target_indication,ENSEMBL:ENSG00000088926 | MONDO:0005542,True,0.0299,open_targets_association,,Open Targets 26.09; snapshot 563c07fd6543fa9f
+P29,target_indication,ENSEMBL:ENSG00000133019 | MONDO:0005090,True,0.4925,open_targets_association,,Open Targets 26.09; snapshot 56137c11c6456af2
+P29,target_indication,ENSEMBL:ENSG00000168539 | MONDO:0005090,True,0.4308,open_targets_association,,Open Targets 26.09; snapshot 56137c11c6456af2
+P29,target_indication,ENSEMBL:ENSG00000180720 | MONDO:0005090,True,0.4813,open_targets_association,,Open Targets 26.09; snapshot 56137c11c6456af2
+P29,target_indication,ENSEMBL:ENSG00000181072 | MONDO:0005090,True,0.4352,open_targets_association,,Open Targets 26.09; snapshot 56137c11c6456af2
+P30,target_indication,ENSEMBL:ENSG00000078814 | MONDO:0005045,True,0.7065,open_targets_association,,Open Targets 26.09; snapshot c7a6004a48e138af
+P30,target_indication,ENSEMBL:ENSG00000092054 | MONDO:0005045,True,0.9086,open_targets_association,,Open Targets 26.09; snapshot c7a6004a48e138af
+P30,target_indication,ENSEMBL:ENSG00000106631 | MONDO:0005045,True,0.5951,open_targets_association,,Open Targets 26.09; snapshot c7a6004a48e138af
+P30,target_indication,ENSEMBL:ENSG00000111245 | MONDO:0005045,True,0.8476,open_targets_association,,Open Targets 26.09; snapshot c7a6004a48e138af
+P30,target_indication,ENSEMBL:ENSG00000160808 | MONDO:0005045,True,0.8409,open_targets_association,,Open Targets 26.09; snapshot c7a6004a48e138af
+P30,target_indication,ENSEMBL:ENSG00000197616 | MONDO:0005045,True,0.8108,open_targets_association,,Open Targets 26.09; snapshot c7a6004a48e138af
+P30,target_indication,ENSEMBL:ENSG00000198336 | MONDO:0005045,True,0.5835,open_targets_association,,Open Targets 26.09; snapshot c7a6004a48e138af
+P31,target_indication,ENSEMBL:ENSG00000091831 | MONDO:0021100,True,0.8615,open_targets_association,,Open Targets 26.09; snapshot 8e099f2c7887453c
+P31,target_indication,ENSEMBL:ENSG00000105810 | MONDO:0021100,True,0.7447,open_targets_association,,Open Targets 26.09; snapshot 8e099f2c7887453c
+P31,target_indication,ENSEMBL:ENSG00000110092 | MONDO:0021100,True,0.7401,open_targets_association,,Open Targets 26.09; snapshot 8e099f2c7887453c
+P31,target_indication,ENSEMBL:ENSG00000135446 | MONDO:0021100,True,0.7331,open_targets_association,,Open Targets 26.09; snapshot 8e099f2c7887453c
+P32,target_indication,ENSEMBL:ENSG00000118271 | MONDO:0004994,True,0.8082,open_targets_association,,Open Targets 26.09; snapshot 3debb7e79e0fd7ca
+P32,target_indication,ENSEMBL:ENSG00000118271 | MONDO:0019065,True,0.9087,open_targets_association,,Open Targets 26.09; snapshot cca0a295d4dce0b7
+P33,target_indication,ENSEMBL:ENSG00000198670 | MONDO:0004995,True,0.6863,open_targets_association,,Open Targets 26.09; snapshot c60d0a010a141543
+P33,target_indication,ENSEMBL:ENSG00000198670 | MONDO:0005068,True,0.5548,open_targets_association,,Open Targets 26.09; snapshot 1c2c9bb6a034c7a5
+P33,target_indication,ENSEMBL:ENSG00000198670 | MONDO:0005098,True,0.3823,open_targets_association,,Open Targets 26.09; snapshot b4a3e26a78e581f8
+,target_landscape,ENSEMBL:ENSG00000078814,True,1,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 413d777953b1a54d"
+,target_landscape,ENSEMBL:ENSG00000087237,True,9,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot 3fe0838f0df89a6f"
+,target_landscape,ENSEMBL:ENSG00000088926,True,9,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot 2431dcb146400018"
+,target_landscape,ENSEMBL:ENSG00000091831,True,10,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 9c4b2bd73c3f0b43"
+,target_landscape,ENSEMBL:ENSG00000092054,True,10,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 8a8961262d76d7cd"
+,target_landscape,ENSEMBL:ENSG00000105810,True,6,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot b76821573995e150"
+,target_landscape,ENSEMBL:ENSG00000106631,True,1,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 054acc9a510ab5bb"
+,target_landscape,ENSEMBL:ENSG00000110092,True,7,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 477939dbb2544631"
+,target_landscape,ENSEMBL:ENSG00000111245,True,6,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot f860255326683524"
+,target_landscape,ENSEMBL:ENSG00000112033,True,1,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot a8a455abb255627c"
+,target_landscape,ENSEMBL:ENSG00000112164,True,6,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot cb30f9196f1c22f8"
+,target_landscape,ENSEMBL:ENSG00000113525,True,2,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 0769e03efa74437d"
+,target_landscape,ENSEMBL:ENSG00000118271,True,9,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot 5eb62bc7d378037c"
+,target_landscape,ENSEMBL:ENSG00000120217,True,9,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 12d9020a1ee1626a"
+,target_landscape,ENSEMBL:ENSG00000131203,False,0,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 7e9f0552d188511a"
+,target_landscape,ENSEMBL:ENSG00000133019,True,8,open_targets_top_diseases,,"top 10, score >= 0.5; 2 non-MONDO/EFO ids skipped; snapshot 939b4a95c902c5c7"
+,target_landscape,ENSEMBL:ENSG00000133105,True,1,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot 1c2673093713f761"
+,target_landscape,ENSEMBL:ENSG00000135446,True,10,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 838cb10139643b10"
+,target_landscape,ENSEMBL:ENSG00000142166,True,10,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot c5f4bcde7a5b3336"
+,target_landscape,ENSEMBL:ENSG00000142168,True,5,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 05196edf8d841ac1"
+,target_landscape,ENSEMBL:ENSG00000142192,True,9,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot cc2a5b24c6dd4995"
+,target_landscape,ENSEMBL:ENSG00000145335,True,4,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot bf30915599659f0b"
+,target_landscape,ENSEMBL:ENSG00000160808,True,1,open_targets_top_diseases,,"top 10, score >= 0.5; 2 non-MONDO/EFO ids skipped; snapshot 455e822494e9ffbb"
+,target_landscape,ENSEMBL:ENSG00000163599,True,10,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot dc574140286e68b4"
+,target_landscape,ENSEMBL:ENSG00000168539,True,7,open_targets_top_diseases,,"top 10, score >= 0.5; 3 non-MONDO/EFO ids skipped; snapshot 4012123d461b7893"
+,target_landscape,ENSEMBL:ENSG00000171509,False,0,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 6582bfc11eae7dad"
+,target_landscape,ENSEMBL:ENSG00000180720,True,3,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot 02730cf4f9d6cef9"
+,target_landscape,ENSEMBL:ENSG00000181072,True,6,open_targets_top_diseases,,"top 10, score >= 0.5; 4 non-MONDO/EFO ids skipped; snapshot 706cda57b639c884"
+,target_landscape,ENSEMBL:ENSG00000181847,False,0,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 3947094fb466b614"
+,target_landscape,ENSEMBL:ENSG00000186318,False,0,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot d05ad34eb4925326"
+,target_landscape,ENSEMBL:ENSG00000186951,True,5,open_targets_top_diseases,,"top 10, score >= 0.5; 2 non-MONDO/EFO ids skipped; snapshot 0a0f019314dc3faa"
+,target_landscape,ENSEMBL:ENSG00000188389,True,10,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 614449e8e57da6fc"
+,target_landscape,ENSEMBL:ENSG00000196776,False,0,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 5861f4ec695fd45b"
+,target_landscape,ENSEMBL:ENSG00000196924,True,9,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot db8aeb76c65c00a0"
+,target_landscape,ENSEMBL:ENSG00000197386,True,4,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot 0e17832d1b10584a"
+,target_landscape,ENSEMBL:ENSG00000197442,False,0,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot f119b8a2750daa47"
+,target_landscape,ENSEMBL:ENSG00000197616,True,7,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot a8044ca406f8f2bf"
+,target_landscape,ENSEMBL:ENSG00000198336,True,2,open_targets_top_diseases,,"top 10, score >= 0.5; 0 non-MONDO/EFO ids skipped; snapshot a949e3bae9f99d22"
+,target_landscape,ENSEMBL:ENSG00000198670,True,9,open_targets_top_diseases,,"top 10, score >= 0.5; 1 non-MONDO/EFO ids skipped; snapshot c3be53dfd6d365f5"
+P01,trial,EXPEDITION3,True,NCT01900665,acronym_exact,1.0,
+P02,trial,APECS,True,NCT01953601,acronym_exact,1.0,
+P02,trial,EPOCH,True,NCT01739348,acronym_exact,1.0,
+P03,trial,AMARANTH,True,NCT02245737,acronym_exact,1.0,
+P03,trial,DAYBREAK-ALZ,True,NCT02783573,acronym_exact,1.0,
+P04,trial,CREAD,True,NCT02670083,acronym_exact,1.0,
+P04,trial,CREAD2,True,NCT03114657,acronym_exact,1.0,
+P05,trial,EMERGE,True,NCT02484547,acronym_exact,1.0,
+P05,trial,ENGAGE,True,NCT02477800,acronym_exact,1.0,
+P06,trial,GENERATION HD1,True,NCT03761849,secondary_id_exact,1.0,
+P07,trial,GRADUATE I,True,NCT03444870,curator_override:high,1.0,
+P07,trial,GRADUATE II,True,NCT03443973,curator_override:high,1.0,
+P08,trial,A4,True,NCT02008357,acronym_exact,1.0,
+P09,trial,REFOCUS-ALZ,True,NCT05026177,acronym_exact,1.0,
+P09,trial,RETHINK-ALZ,True,NCT04994483,acronym_exact,1.0,
+P10,trial,evoke,True,NCT04777396,acronym_exact,1.0,
+P10,trial,evoke+,True,NCT04777409,acronym_exact,1.0,
+P11,trial,PADOVA,True,NCT04777331,acronym_exact,1.0,
+P11,trial,PASADENA,True,NCT03100149,acronym_exact,1.0,
+P12,trial,PHOENIX,True,NCT05021536,acronym_exact,1.0,
+P13,trial,VALOR,True,NCT02623699,acronym_contains,1.0,
+P14,trial,ECHO-301,True,NCT02752074,title_word,1.0,
+P14,trial,KEYNOTE-252,True,NCT02752074,title_word,1.0,
+P15,trial,MYSTIC,True,NCT02453282,acronym_exact,1.0,
+P16,trial,PIVOT IO-001,True,NCT03635983,curator_override:high,1.0,
+P17,trial,ENHANCE,True,NCT04313881,acronym_exact,1.0,
+P17,trial,ENHANCE-2,True,NCT04778397,acronym_exact,1.0,
+P17,trial,ENHANCE-3,True,NCT05079230,acronym_exact,1.0,
+P18,trial,SKYSCRAPER-01,True,NCT04294810,acronym_exact,1.0,
+P19,trial,TULIP-1,True,NCT02446912,curator_override:high,1.0,
+P20,trial,METREO,True,NCT02105961,curator_override:high,1.0,
+P21,trial,STELLAR-3,True,NCT03053050,acronym_exact,1.0,
+P21,trial,STELLAR-4,True,NCT03053063,acronym_exact,1.0,
+P22,trial,RESOLVE-IT,True,NCT02704403,acronym_exact,1.0,
+P23,trial,RELAX-AHF-2,True,NCT01870778,acronym_exact,1.0,
+P24,trial,PROMINENT,True,NCT03071692,acronym_exact,1.0,
+P25,trial,dal-GenE,True,NCT02525939,acronym_exact,1.0,
+P26,trial,OCEANIC-AF,True,NCT05643573,acronym_exact,1.0,
+P27,trial,LIBREXIA ACS,True,NCT05754957,acronym_exact,1.0,
+P28,trial,CIFFREO,True,NCT04281485,curator_override:high,1.0,
+P29,trial,ARISE,True,NCT05145413,acronym_exact,1.0,
+P30,trial,ODYSSEY-HCM,True,NCT05582395,acronym_exact,1.0,
+P31,trial,persevERA,True,NCT04546009,title_word,1.0,
+P32,trial,CARDIO-TTRansform,True,NCT04136171,title_word,1.0,
+P33,trial,Lp(a)HORIZON,True,NCT04023552,acronym_exact,1.0,
+P34,trial,HARBOR,True,NCT06411288,acronym_exact,1.0,
+P17,trial_intervention,Steroidal Eye Drops,True,,curator_confirmed_not_a_single_drug,,"NCT04778397; Confirmed by owner 2026-10-05: drug class (comparator in NCT04778397), not a single molecule"
+P31,trial_intervention,LHRH Agonist,True,,curator_confirmed_not_a_single_drug,,"NCT04546009; Confirmed by owner 2026-10-05: drug class (NCT04546009), not a single molecule"

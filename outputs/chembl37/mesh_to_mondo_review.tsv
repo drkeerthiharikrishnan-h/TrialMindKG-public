@@ -1,0 +1,176 @@
+overlap	mesh_id	mesh_heading	mondo_id	mondo_name	rows	drugs
+0.0	D002056	Burns	MONDO:0043519	burn	62	62
+0.0	D007511	Ischemia	MONDO:0005053	ischemic disease	27	27
+0.0	D018352	Coronavirus Infections	MONDO:0020753	Orthocoronavirinae infectious disease	16	16
+0.0	D009135	Muscular Diseases	MONDO:0003939	muscle tissue disorder	15	15
+0.0	D016889	Endometrial Neoplasms	MONDO:0021251	endometrium neoplasm	15	15
+0.0	D009293	Opioid-Related Disorders	MONDO:0005530	opiate dependence	12	12
+0.0	D013716	Tennis Elbow	MONDO:0001875	epicondylitis	11	11
+0.0	D009164	Mycobacterium Infections	MONDO:0020590	mycobacterial infectious disease	10	10
+0.0	D020817	Asperger Syndrome	MONDO:0100610	autism spectrum disorder 1	9	9
+0.0	D004761	Enterocolitis, Pseudomembranous	MONDO:0000705	Clostridium difficile colitis	8	8
+0.0	D004387	Dupuytren Contracture	MONDO:0006345	palmar fibromatosis	5	5
+0.0	D014245	Trichomonas Infections	MONDO:0002154	trichomoniasis	3	3
+0.0	D004402	Dysautonomia, Familial	MONDO:0009131	Riley-Day syndrome	3	3
+0.0	D008072	Hyperlipoproteinemia Type I	MONDO:0009387	familial lipoprotein lipase deficiency	2	2
+0.0	D046589	CADASIL	MONDO:0000914	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1	1	1
+0.0	D012734	Disorders of Sex Development	MONDO:0002145	disorder of sexual differentiation	1	1
+0.0	D011213	Poxviridae Infections	MONDO:0005850	milker's nodule	1	1
+0.0	D000258	Adenovirus Infections, Human	MONDO:0005911	pharyngoconjunctival fever	1	1
+0.0	D004814	Epidermal Cyst	MONDO:0007547	epidermoid cysts	1	1
+0.0	D004416	Dysplastic Nevus Syndrome	MONDO:0007964	melanoma, cutaneous malignant, susceptibility to, 2	1	1
+0.0	D020162	Hyperargininemia	MONDO:0008814	arginase deficiency	1	1
+0.0	D001206	Ascorbic Acid Deficiency	MONDO:0009412	scurvy	1	1
+0.0	D000542	Alveolitis, Extrinsic Allergic	MONDO:0017853	hypersensitivity pneumonitis	1	1
+0.0	D007647	Kernicterus	MONDO:0018477	bilirubin encephalopathy	1	1
+0.0	D000083083	Laminopathies	MONDO:0021106	laminopathy	1	1
+0.12	D065626	Non-alcoholic Fatty Liver Disease	MONDO:0013209	metabolic dysfunction-associated steatotic liver disease	1	1
+0.2	D015266	Carcinoma, Merkel Cell	MONDO:0019210	cutaneous neuroendocrine carcinoma	37	37
+0.2	D008105	Liver Cirrhosis, Biliary	MONDO:0005388	primary biliary cholangitis	3	3
+0.2	D054989	Nephrogenic Fibrosing Dermopathy	MONDO:0015294	nephrogenic systemic fibrosis	1	1
+0.2	D045745	Scleroderma, Limited	MONDO:0016358	limited cutaneous systemic sclerosis	1	1
+0.25	D017240	Mitochondrial Myopathies	MONDO:0009637	inborn mitochondrial myopathy	5	5
+0.33	D012772	Shock, Septic	MONDO:0001881	toxic shock syndrome	66	66
+0.33	D006323	Heart Arrest	MONDO:0000745	cardiac arrest	31	31
+0.33	D013736	Testicular Neoplasms	MONDO:0005447	testicular cancer	13	13
+0.33	D011695	IgA Vasculitis	MONDO:0019167	immunoglobulin A vasculitis	10	10
+0.33	D012131	Respiratory Insufficiency	MONDO:0021113	respiratory failure	7	7
+0.33	D003668	Pressure Ulcer	MONDO:0004646	decubitus ulcer	6	6
+0.33	D004915	Leukemia, Erythroblastic, Acute	MONDO:0017858	acute erythroid leukemia	5	5
+0.33	D011018	Pneumonia, Pneumococcal	MONDO:0005972	streptococcal pneumonia	3	3
+0.33	D017094	Porphyrias, Hepatic	MONDO:0002520	hepatic porphyria	2	2
+0.33	D012003	Rectal Fistula	MONDO:0000754	anal fistula	1	1
+0.33	D001764	Blepharospasm	MONDO:0011728	benign essential blepharospasm	1	1
+0.33	D020151	Protein C Deficiency	MONDO:0019145	hereditary thrombophilia due to congenital protein C deficiency	1	1
+0.5	D015817	Eye Infections	MONDO:0043885	eye infectious disorder	65	65
+0.5	D015658	HIV Infections	MONDO:0005109	HIV infectious disease	28	28
+0.5	D013119	Spinal Cord Injuries	MONDO:0043797	spinal cord injury	21	21
+0.5	D003015	Clostridium Infections	MONDO:0024388	Clostridium infectious disease	13	13
+0.5	D005715	Gambling	MONDO:0011662	pathological gambling	10	10
+0.5	D009102	Multiple Organ Failure	MONDO:0043726	multiple organ dysfunction syndrome	8	8
+0.5	D012468	Salivary Gland Neoplasms	MONDO:0004669	salivary gland cancer	4	4
+0.5	D002538	Intracranial Arteriovenous Malformations	MONDO:0007154	arteriovenous malformations of the brain	4	4
+0.5	D006432	Hemochromatosis	MONDO:0006507	hereditary hemochromatosis	3	3
+0.5	D053098	Familial Hypophosphatemic Rickets	MONDO:0020720	X-linked hypophosphatemic rickets	3	3
+0.5	D014842	von Willebrand Diseases	MONDO:0024574	von Willebrand disease (hereditary or acquired)	3	3
+0.5	D005265	Femoral Neck Fractures	MONDO:0043589	femoral neck fracture	3	3
+0.5	D050030	Andersen Syndrome	MONDO:0008222	Andersen-Tawil syndrome	2	2
+0.5	D007710	Klebsiella Infections	MONDO:0030603	Klebsiella infectious disease	2	2
+0.5	D000694	Anal Gland Neoplasms	MONDO:0003045	anal gland neoplasm	1	1
+0.5	D007676	Kidney Failure, Chronic	MONDO:0005300	chronic kidney disease	1	1
+0.5	D065632	Chikungunya Fever	MONDO:0017941	chikungunya	1	1
+0.5	D017496	Hypopigmentation	MONDO:0019290	hypopigmentation of the skin	1	1
+0.5	D015211	Zellweger Syndrome	MONDO:0019609	Zellweger spectrum disorders	1	1
+0.6	D019571	Arrhythmogenic Right Ventricular Dysplasia	MONDO:0016587	arrhythmogenic right ventricular cardiomyopathy	2	2
+0.67	D006086	Graft vs Host Disease	MONDO:0013730	graft versus host disease	31	31
+0.67	D012735	Sexual Dysfunction, Physiological	MONDO:0002134	physiological sexual disorder	21	21
+0.67	D059268	Atrophic Vaginitis	MONDO:0001410	postmenopausal atrophic vaginitis	4	4
+0.67	D005953	Glycogen Storage Disease Type I	MONDO:0002413	glycogen storage disease I	4	4
+0.67	D014247	Trichomonas Vaginitis	MONDO:0005993	Trichomonas vaginitis urogenital infection	1	1
+0.67	D017085	alpha-Thalassemia	MONDO:0011399	alpha thalassemia spectrum	1	1
+0.67	D000182	ACTH Syndrome, Ectopic	MONDO:0043472	ectopic ACTH secretion syndrome	1	1
+0.8	D056486	Chemical and Drug Induced Liver Injury	MONDO:0005359	drug-induced liver injury	4	4
+1.0	D001007	Anxiety	MONDO:0011918	anxiety	169	169
+1.0	D000740	Anemia	MONDO:0002280	anemia	101	101
+1.0	D054990	Idiopathic Pulmonary Fibrosis	MONDO:0800504	idiopathic pulmonary fibrosis	93	93
+1.0	D009437	Neuralgia	MONDO:0021667	neuralgia	89	89
+1.0	D024821	Metabolic Syndrome	MONDO:0011565	metabolic syndrome X	51	51
+1.0	D000072657	ST Elevation Myocardial Infarction	MONDO:0041656	ST-elevation myocardial infarction	44	44
+1.0	D061325	Hereditary Breast and Ovarian Cancer Syndrome	MONDO:0003582	hereditary breast ovarian cancer syndrome	35	35
+1.0	D017086	beta-Thalassemia	MONDO:0019402	beta thalassemia	34	34
+1.0	D013280	Stomatitis	MONDO:0004842	stomatitis	33	33
+1.0	D017676	Lichen Planus, Oral	MONDO:0043923	lichen planus, oral	27	27
+1.0	D005128	Eye Diseases	MONDO:0005328	eye disorder	26	26
+1.0	D052016	Mucositis	MONDO:0020579	mucositis	25	25
+1.0	D001024	Aortic Valve Stenosis	MONDO:0042981	aortic valve stenosis	23	23
+1.0	D061686	Premature Ejaculation	MONDO:0001780	premature ejaculation	22	22
+1.0	D006069	Gonorrhea	MONDO:0004277	gonorrhea	19	19
+1.0	D014352	Trypanosomiasis	MONDO:0000940	trypanosomiasis	17	17
+1.0	D000741	Anemia, Aplastic	MONDO:0015909	aplastic anemia	16	16
+1.0	D011565	Psoriasis	MONDO:0005083	psoriasis	15	15
+1.0	D018149	Glucose Intolerance	MONDO:0001076	glucose intolerance	13	13
+1.0	D010523	Peripheral Nervous System Diseases	MONDO:0003620	peripheral nervous system disorder	12	12
+1.0	D056833	Central Serous Chorioretinopathy	MONDO:0018616	central serous chorioretinopathy	11	11
+1.0	D058387	Candidemia	MONDO:0044070	candidemia	11	11
+1.0	D058365	Candidiasis, Invasive	MONDO:0044067	candidiasis, invasive	10	10
+1.0	D017565	Sarcoidosis, Pulmonary	MONDO:0001708	pulmonary sarcoidosis	9	9
+1.0	D036981	Fasciitis, Plantar	MONDO:0004833	plantar fasciitis	9	9
+1.0	D009041	Motion Sickness	MONDO:0008015	motion sickness	9	9
+1.0	D006560	Herpes Labialis	MONDO:0043653	herpes labialis	9	9
+1.0	D014808	Vitamin D Deficiency	MONDO:0100471	vitamin D deficiency	9	9
+1.0	D001714	Bipolar Disorder	MONDO:0004985	bipolar disorder	8	8
+1.0	D062788	Adenomyosis	MONDO:0010888	adenomyosis	8	8
+1.0	D060831	Hand-Foot Syndrome	MONDO:0700048	hand-foot syndrome	8	8
+1.0	D020391	Muscular Dystrophy, Facioscapulohumeral	MONDO:0001347	facioscapulohumeral muscular dystrophy	7	7
+1.0	D018630	Vitreoretinopathy, Proliferative	MONDO:0700115	proliferative vitreoretinopathy	7	7
+1.0	D007169	Impetigo	MONDO:0004592	impetigo	6	6
+1.0	D017241	MELAS Syndrome	MONDO:0010789	MELAS syndrome	6	6
+1.0	D011553	Pseudomyxoma Peritonei	MONDO:0017048	pseudomyxoma peritonei	6	6
+1.0	D000326	Adrenoleukodystrophy	MONDO:0018544	adrenoleukodystrophy	6	6
+1.0	D047728	Myopia, Degenerative	MONDO:0001383	degenerative myopia	5	5
+1.0	D009133	Muscular Atrophy	MONDO:0004323	muscular atrophy	5	5
+1.0	D019896	alpha 1-Antitrypsin Deficiency	MONDO:0013282	alpha 1-antitrypsin deficiency	5	5
+1.0	D041881	Cholecystitis, Acute	MONDO:0043994	acute cholecystitis	5	5
+1.0	D012002	Rectal Diseases	MONDO:0001593	rectal disorder	4	4
+1.0	D000568	Amenorrhea	MONDO:0001836	amenorrhea	4	4
+1.0	D014627	Vaginitis	MONDO:0002234	vaginitis	4	4
+1.0	D020147	Coagulation Protein Disorders	MONDO:0002242	coagulation protein disease	4	4
+1.0	D019522	Vaginal Discharge	MONDO:0002770	vaginal discharge	4	4
+1.0	D016108	Epidermolysis Bullosa Dystrophica	MONDO:0006543	epidermolysis bullosa dystrophica	4	4
+1.0	D001327	Autoimmune Diseases	MONDO:0007179	autoimmune disease	4	4
+1.0	D017827	Machado-Joseph Disease	MONDO:0007182	Machado-Joseph disease	4	4
+1.0	D005776	Gaucher Disease	MONDO:0018150	Gaucher disease	4	4
+1.0	D018856	Cystitis, Interstitial	MONDO:0018301	interstitial cystitis	4	4
+1.0	D014235	Trichinellosis	MONDO:0019444	trichinellosis	4	4
+1.0	D002821	Chorioamnionitis	MONDO:0000409	chorioamnionitis	3	3
+1.0	D010018	Osteomalacia	MONDO:0001068	osteomalacia	3	3
+1.0	D018318	Neurofibroma, Plexiform	MONDO:0003304	plexiform neurofibroma	3	3
+1.0	D016727	Orbital Pseudotumor	MONDO:0004769	orbital pseudotumor	3	3
+1.0	D000505	Alopecia	MONDO:0004907	alopecia	3	3
+1.0	D006726	Hordeolum	MONDO:0005800	hordeolum	3	3
+1.0	D008010	Lichen Planus	MONDO:0006572	lichen planus	3	3
+1.0	D015275	Tumor Lysis Syndrome	MONDO:0043875	tumor lysis syndrome	3	3
+1.0	D000080424	Cytokine Release Syndrome	MONDO:0600008	cytokine release syndrome	3	3
+1.0	D001862	Bone Resorption	MONDO:0000837	bone resorption disease	2	2
+1.0	D005873	Giardiasis	MONDO:0001103	giardiasis	2	2
+1.0	D001161	Arteriosclerosis	MONDO:0002277	arteriosclerosis disorder	2	2
+1.0	D007418	Intestinal Pseudo-Obstruction	MONDO:0002803	intestinal pseudo-obstruction	2	2
+1.0	D007970	Leukopenia	MONDO:0003785	leukopenia	2	2
+1.0	D002340	Carotid Artery Diseases	MONDO:0005269	carotid artery disorder	2	2
+1.0	D005642	Fuchs' Endothelial Dystrophy	MONDO:0005321	Fuchs' endothelial dystrophy	2	2
+1.0	D003139	Common Cold	MONDO:0005709	common cold	2	2
+1.0	D020953	Neuroaspergillosis	MONDO:0005873	neuroaspergillosis	2	2
+1.0	D020194	Unverricht-Lundborg Syndrome	MONDO:0009698	Unverricht-Lundborg syndrome	2	2
+1.0	D008232	Lymphoproliferative Disorders	MONDO:0016537	lymphoproliferative syndrome	2	2
+1.0	D015624	Lambert-Eaton Myasthenic Syndrome	MONDO:0018556	Lambert-Eaton myasthenic syndrome	2	2
+1.0	D017511	Pyoderma Gangrenosum	MONDO:0018824	pyoderma gangrenosum	2	2
+1.0	D020294	Myasthenic Syndromes, Congenital	MONDO:0018940	congenital myasthenic syndrome	2	2
+1.0	D003789	Dental Pulp Exposure	MONDO:0020812	exposure, dental pulp	2	2
+1.0	D002275	Carcinoid Heart Disease	MONDO:0043529	carcinoid heart disease	2	2
+1.0	D055665	Purpura Fulminans	MONDO:0000809	purpura fulminans	1	1
+1.0	D009134	Muscular Atrophy, Spinal	MONDO:0001516	spinal muscular atrophy	1	1
+1.0	D002114	Calcinosis	MONDO:0002123	calcinosis	1	1
+1.0	D014615	Vaccinia	MONDO:0002595	vaccinia	1	1
+1.0	D012532	Scabies	MONDO:0004525	scabies	1	1
+1.0	D002971	Cleft Lip	MONDO:0004747	cleft lip	1	1
+1.0	D002311	Cardiomyopathy, Dilated	MONDO:0005021	dilated cardiomyopathy	1	1
+1.0	D018344	T-Lymphocytopenia, Idiopathic CD4-Positive	MONDO:0005807	idiopathic CD4-positive T-lymphocytopenia	1	1
+1.0	D015001	Yaws	MONDO:0006019	yaws	1	1
+1.0	D020925	Hypoxia-Ischemia, Brain	MONDO:0006685	brain hypoxia - ischemia	1	1
+1.0	D016111	Sjogren-Larsson Syndrome	MONDO:0010031	Sjogren-Larsson syndrome	1	1
+1.0	D020803	Encephalitis, Herpes Simplex	MONDO:0012521	herpes simplex encephalitis	1	1
+1.0	D012778	Short Bowel Syndrome	MONDO:0015183	short bowel syndrome	1	1
+1.0	D002178	Candidiasis, Chronic Mucocutaneous	MONDO:0015279	chronic mucocutaneous candidiasis	1	1
+1.0	D056587	Cryopyrin-Associated Periodic Syndromes	MONDO:0016168	cryopyrin-associated periodic syndrome	1	1
+1.0	D009455	Neurofibroma	MONDO:0016755	neurofibroma	1	1
+1.0	D013494	Supranuclear Palsy, Progressive	MONDO:0019037	progressive supranuclear palsy	1	1
+1.0	D010930	Plague	MONDO:0019095	plague	1	1
+1.0	D011547	Pseudohypoparathyroidism	MONDO:0019992	pseudohypoparathyroidism	1	1
+1.0	D020511	Neuromuscular Junction Diseases	MONDO:0020124	neuromuscular junction disease	1	1
+1.0	D015822	Eye Infections, Parasitic	MONDO:0020947	parasitic eye infection	1	1
+1.0	D025861	Blood Coagulation Disorders, Inherited	MONDO:0021181	inherited blood coagulation disorder	1	1
+1.0	D004283	Dog Diseases	MONDO:0024919	dog disease	1	1
+1.0	D003968	Diarrhea, Infantile	MONDO:0043555	infantile diarrhea	1	1
+1.0	D010025	Osteoradionecrosis	MONDO:0043735	osteoradionecrosis	1	1
+1.0	D020211	Autonomic Dysreflexia	MONDO:0043975	autonomic dysreflexia	1	1
+1.0	D058249	Birt-Hogg-Dube Syndrome	MONDO:0800445	Birt-Hogg-Dube syndrome 1	1	1

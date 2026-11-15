@@ -1,0 +1,36 @@
+id: T-004
+title: Verdict file with gold-set identifiers (UniProt, HGNC, MONDO, Node Normalizer preferred) and a DTO source card
+owner: science
+classification: science
+status: open
+closes:
+- verdict_file_gold_ids
+- dto_source_card
+objective: Add explicit UniProt, HGNC, MONDO and Node-Normalizer-preferred id columns to the verdict file; add sources/dto.yaml
+  so the Drug Target Ontology (data/pharos/dto.tsv.gz, 54,242 rows) becomes graph classes with provenance; report coverage
+  per id column.
+read_first:
+- pipelines/verdict_file.py
+- pipelines/babel.py
+- sources/pharos.yaml
+- docs/SCHEMA_CARD.md
+editable_paths:
+- pipelines/verdict_file.py
+- sources/dto.yaml
+- tests/test_verdict_file.py
+- tests/test_kgbuilder.py
+- outputs/pharos/verdict_file_report.md
+- docs/SCHEMA_CARD.md
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- verdict_file_report.md reports the share of rows with each id (UniProt, HGNC, MONDO, NodeNorm)
+- unmapped rows are listed with the reason, never guessed (CLAUDE.md rule 3)
+- DTO classes carry provenance fields and pass kg_schema.validate
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_verdict_file.py tests/test_kgbuilder.py tests/test_kg_schema.py
+stop_rule: Node Normalizer reachable only from the Mac; if unreachable, ship the other three id columns and say so.
+handoff: Commit + ledger row.

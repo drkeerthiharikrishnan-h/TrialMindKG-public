@@ -1,0 +1,1115 @@
+{
+ "backend": "offline",
+ "graph_version": {
+  "edges_sha256": "6c8fd0fb58e56c645f1a3f29d6076717d09b0f4bf865db0c1b45e9d37e798a5a",
+  "snapshot": "709dc1af3df8d592cb1bb278b7baed298ebe20f2388ce70e3f4d7615f24787ba",
+  "sources": {
+   "Babel node normalizer": "RENCI Node Normalizer, 678 of 687 nodes mapped (responses frozen)",
+   "ChEMBL": "ChEMBL_37 (2026-05-01)",
+   "ClinicalTrials.gov via AACT": "AACT flat-file export, records frozen 2026-10-05 to 2026-10-05",
+   "Europe PMC": "live search (responses frozen in snapshot)",
+   "MONDO": "http://purl.obolibrary.org/obo/mondo/releases/2026-09-01/mondo.owl",
+   "Open Targets Platform": "26.09",
+   "Reactome": "v97",
+   "curated dataset": "failed_clinical_trials_2016_2026.md as of 2026-09-08 sha256 e248402b4b4c59cd",
+   "infores registry": "biolink/information-resource-registry infores_catalog.yaml (frozen in snapshot)"
+  }
+ },
+ "note": "offline stand-ins: rule-based placeholders that prove the pipeline runs; these are NOT model scores",
+ "graph": {
+  "schema_valid_edge_rate": {
+   "value": 1.0,
+   "n": 4336,
+   "definition": "edges passing kg_schema.validate (domain/range, ids, evidence type, dates)",
+   "status": "computed",
+   "node_problems": 0
+  },
+  "provenance_completeness": {
+   "value": 1.0,
+   "n": 4336,
+   "definition": "edges with every provenance field filled: id, subject, predicate, object, source, source_record, evidence_type, retrieved, primary_knowledge_source, knowledge_level, agent_type, mapping_confidence",
+   "status": "computed"
+  },
+  "entity_mapping_coverage": {
+   "value": 0.94,
+   "n": 166,
+   "definition": "entities resolved automatically without a NEEDS_REVIEW flag",
+   "status": "computed",
+   "by_type": {
+    "condition": {
+     "rate": 1.0,
+     "n": 9
+    },
+    "drug": {
+     "rate": 1.0,
+     "n": 41
+    },
+    "mechanism": {
+     "rate": 0.167,
+     "n": 6
+    },
+    "pharmacogenomics_gene": {
+     "rate": 0.0,
+     "n": 1
+    },
+    "publication": {
+     "rate": 0.0,
+     "n": 1
+    },
+    "target_indication": {
+     "rate": 0.95,
+     "n": 60
+    },
+    "trial": {
+     "rate": 1.0,
+     "n": 46
+    },
+    "trial_intervention": {
+     "rate": 1.0,
+     "n": 2
+    }
+   }
+  },
+  "entity_mapping_precision": {
+   "value": null,
+   "n": 0,
+   "definition": "pipeline ids that match the reviewer's confirmed ids (Trials, Drugs sheets)",
+   "status": "pending ground truth"
+  }
+ },
+ "agents": {
+  "golden_pass_rate": {
+   "value": 1.0,
+   "n": 11,
+   "definition": "golden questions whose expected value is returned (data/curated/golden_questions.csv)",
+   "status": "computed",
+   "failed": []
+  },
+  "querier_execution_accuracy": {
+   "value": 1.0,
+   "n": 10,
+   "definition": "generated Cypher returns exactly the gold query's evidence edges",
+   "status": "computed",
+   "valid_rate": 1.0,
+   "first_try_valid": 1.0
+  },
+  "resolver_top1": {
+   "value": 0.944,
+   "n": 522,
+   "definition": "ChEMBL research code / trade name -> correct molecule at rank 1 (leave-one-out)",
+   "status": "computed",
+   "top3": 0.977,
+   "mrr": 0.963
+  },
+  "resolver_top1_same_active_ingredient": {
+   "value": 0.964,
+   "n": 522,
+   "definition": "as resolver_top1, but a salt / parent form of the correct molecule also counts (the graph compares drugs by parent)",
+   "status": "computed",
+   "by_channel": {
+    "embedding+lexical+rerank": {
+     "n": 56,
+     "correct": 45,
+     "precision": 0.804
+    },
+    "embedding+rerank": {
+     "n": 22,
+     "correct": 11,
+     "precision": 0.5
+    },
+    "external+exact": {
+     "n": 444,
+     "correct": 437,
+     "precision": 0.984
+    }
+   }
+  },
+  "stop_reason_quote_verified": {
+   "value": 1.0,
+   "n": 90,
+   "definition": "extractions whose evidence quote appears word for word in the text",
+   "status": "computed"
+  },
+  "stop_reason_agreement": {
+   "value": null,
+   "n": 0,
+   "definition": "category agrees with reviewer's failure category",
+   "status": "pending ground truth"
+  }
+ },
+ "reports": {
+  "evidence_supported_claim_rate": {
+   "value": 1.0,
+   "n": 26,
+   "definition": "drafted claims that end up passing every verifier check (citations in subgraph, numbers in cited evidence, verifier model), after at most one rewrite of a rejected claim",
+   "status": "computed",
+   "ci95": [
+    0.871,
+    1.0
+   ]
+  },
+  "first_draft_supported_rate": {
+   "value": 1.0,
+   "n": 26,
+   "definition": "drafted claims passing every check as first written",
+   "status": "computed",
+   "ci95": [
+    0.871,
+    1.0
+   ]
+  },
+  "unsupported_claim_rate": {
+   "value": 0.0,
+   "n": 26,
+   "definition": "drafted claims removed by the verifier (never shown)",
+   "status": "computed",
+   "ci95": [
+    0.0,
+    0.129
+   ]
+  },
+  "repaired_claims": {
+   "value": 0,
+   "n": 26,
+   "definition": "rejected claims rewritten once and then passing",
+   "status": "computed"
+  },
+  "mixed_claims": {
+   "value": 0,
+   "n": 26,
+   "definition": "shown claims the judge finds contradicted by other facts retrieved for the question",
+   "status": "computed"
+  },
+  "causal_wording_rejections": {
+   "value": 0,
+   "n": 26,
+   "definition": "claims still rejected for causal wording on post hoc / curated evidence",
+   "status": "computed"
+  },
+  "nct_id_mismatches": {
+   "value": 0,
+   "n": 26,
+   "definition": "shown claims giving a trial an NCT id the registry assigns to another trial",
+   "status": "computed"
+  },
+  "negative_control_overclaims": {
+   "value": 0,
+   "n": 1,
+   "definition": "claims labelled prospectively_confirmed on negative-control questions",
+   "status": "computed"
+  },
+  "latency_seconds": {
+   "value": 0.24,
+   "n": 3,
+   "definition": "mean seconds per report",
+   "status": "computed",
+   "per_question": {
+    "B01": 0.28,
+    "B02": 0.19,
+    "B03": 0.24
+   }
+  },
+  "llm_only_baseline_supported_rate": {
+   "value": null,
+   "n": 0,
+   "definition": "LLM-only claims supported by the graph evidence",
+   "status": "needs NIM"
+  },
+  "per_question": [
+   {
+    "id": "B01",
+    "kind": "benchmark",
+    "drafted": 12,
+    "supported": 12,
+    "first_draft_supported": 12,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 9,
+     "hypothesis_generating": 3,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.28,
+    "empty_sections": []
+   },
+   {
+    "id": "B02",
+    "kind": "benchmark",
+    "drafted": 7,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.19,
+    "empty_sections": []
+   },
+   {
+    "id": "B03",
+    "kind": "negative_control",
+    "drafted": 7,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.24,
+    "empty_sections": []
+   }
+  ]
+ },
+ "reports_all_programs": {
+  "evidence_supported_claim_rate": {
+   "value": 0.99,
+   "n": 206,
+   "definition": "drafted claims that end up passing every verifier check (citations in subgraph, numbers in cited evidence, verifier model), after at most one rewrite of a rejected claim",
+   "status": "computed",
+   "ci95": [
+    0.965,
+    0.997
+   ]
+  },
+  "first_draft_supported_rate": {
+   "value": 0.99,
+   "n": 206,
+   "definition": "drafted claims passing every check as first written",
+   "status": "computed",
+   "ci95": [
+    0.965,
+    0.997
+   ]
+  },
+  "unsupported_claim_rate": {
+   "value": 0.01,
+   "n": 206,
+   "definition": "drafted claims removed by the verifier (never shown)",
+   "status": "computed",
+   "ci95": [
+    0.003,
+    0.035
+   ]
+  },
+  "repaired_claims": {
+   "value": 0,
+   "n": 206,
+   "definition": "rejected claims rewritten once and then passing",
+   "status": "computed"
+  },
+  "mixed_claims": {
+   "value": 0,
+   "n": 204,
+   "definition": "shown claims the judge finds contradicted by other facts retrieved for the question",
+   "status": "computed"
+  },
+  "causal_wording_rejections": {
+   "value": 2,
+   "n": 206,
+   "definition": "claims still rejected for causal wording on post hoc / curated evidence",
+   "status": "computed"
+  },
+  "nct_id_mismatches": {
+   "value": 0,
+   "n": 204,
+   "definition": "shown claims giving a trial an NCT id the registry assigns to another trial",
+   "status": "computed"
+  },
+  "negative_control_overclaims": {
+   "value": 0,
+   "n": 1,
+   "definition": "claims labelled prospectively_confirmed on negative-control questions",
+   "status": "computed"
+  },
+  "latency_seconds": {
+   "value": 0.23,
+   "n": 34,
+   "definition": "mean seconds per report",
+   "status": "computed",
+   "per_question": {
+    "B01": 0.28,
+    "B02": 0.19,
+    "B03": 0.24,
+    "QP01": 0.24,
+    "QP02": 0.27,
+    "QP03": 0.22,
+    "QP04": 0.23,
+    "QP05": 0.22,
+    "QP06": 0.29,
+    "QP07": 0.23,
+    "QP08": 0.17,
+    "QP09": 0.21,
+    "QP10": 0.3,
+    "QP11": 0.22,
+    "QP12": 0.21,
+    "QP13": 0.21,
+    "QP14": 0.24,
+    "QP15": 0.2,
+    "QP16": 0.21,
+    "QP17": 0.29,
+    "QP18": 0.23,
+    "QP21": 0.21,
+    "QP22": 0.21,
+    "QP23": 0.32,
+    "QP24": 0.24,
+    "QP26": 0.25,
+    "QP27": 0.28,
+    "QP28": 0.04,
+    "QP29": 0.23,
+    "QP30": 0.24,
+    "QP31": 0.32,
+    "QP32": 0.22,
+    "QP33": 0.22,
+    "QP34": 0.05
+   }
+  },
+  "llm_only_baseline_supported_rate": {
+   "value": null,
+   "n": 0,
+   "definition": "LLM-only claims supported by the graph evidence",
+   "status": "needs NIM"
+  },
+  "per_question": [
+   {
+    "id": "B01",
+    "kind": "benchmark",
+    "drafted": 12,
+    "supported": 12,
+    "first_draft_supported": 12,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 9,
+     "hypothesis_generating": 3,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.28,
+    "empty_sections": []
+   },
+   {
+    "id": "B02",
+    "kind": "benchmark",
+    "drafted": 7,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.19,
+    "empty_sections": []
+   },
+   {
+    "id": "B03",
+    "kind": "negative_control",
+    "drafted": 7,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.24,
+    "empty_sections": []
+   },
+   {
+    "id": "QP01",
+    "kind": "program",
+    "drafted": 2,
+    "supported": 2,
+    "first_draft_supported": 2,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 2,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.24,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP02",
+    "kind": "program",
+    "drafted": 10,
+    "supported": 10,
+    "first_draft_supported": 10,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 10,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.27,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP03",
+    "kind": "program",
+    "drafted": 8,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 1,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 1,
+    "overclaims": [],
+    "seconds": 0.22,
+    "empty_sections": []
+   },
+   {
+    "id": "QP04",
+    "kind": "program",
+    "drafted": 3,
+    "supported": 3,
+    "first_draft_supported": 3,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 3,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.23,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP05",
+    "kind": "program",
+    "drafted": 7,
+    "supported": 6,
+    "first_draft_supported": 6,
+    "repaired": 0,
+    "rejected": 1,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 1,
+    "overclaims": [],
+    "seconds": 0.22,
+    "empty_sections": [
+     "population_stratifier"
+    ]
+   },
+   {
+    "id": "QP06",
+    "kind": "program",
+    "drafted": 7,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.29,
+    "empty_sections": []
+   },
+   {
+    "id": "QP07",
+    "kind": "program",
+    "drafted": 7,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 7,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.23,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP08",
+    "kind": "program",
+    "drafted": 1,
+    "supported": 1,
+    "first_draft_supported": 1,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 1,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.17,
+    "empty_sections": [
+     "failure_diagnostician",
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP09",
+    "kind": "program",
+    "drafted": 6,
+    "supported": 6,
+    "first_draft_supported": 6,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.21,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP10",
+    "kind": "program",
+    "drafted": 5,
+    "supported": 5,
+    "first_draft_supported": 5,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 5,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.3,
+    "empty_sections": [
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP11",
+    "kind": "program",
+    "drafted": 6,
+    "supported": 6,
+    "first_draft_supported": 6,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.22,
+    "empty_sections": [
+     "population_stratifier"
+    ]
+   },
+   {
+    "id": "QP12",
+    "kind": "program",
+    "drafted": 3,
+    "supported": 3,
+    "first_draft_supported": 3,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 3,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.21,
+    "empty_sections": [
+     "indication_explorer"
+    ]
+   },
+   {
+    "id": "QP13",
+    "kind": "program",
+    "drafted": 12,
+    "supported": 12,
+    "first_draft_supported": 12,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 12,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.21,
+    "empty_sections": [
+     "indication_explorer"
+    ]
+   },
+   {
+    "id": "QP14",
+    "kind": "program",
+    "drafted": 8,
+    "supported": 8,
+    "first_draft_supported": 8,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 2,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.24,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP15",
+    "kind": "program",
+    "drafted": 7,
+    "supported": 7,
+    "first_draft_supported": 7,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.2,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP16",
+    "kind": "program",
+    "drafted": 6,
+    "supported": 6,
+    "first_draft_supported": 6,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 5,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.21,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP17",
+    "kind": "program",
+    "drafted": 8,
+    "supported": 8,
+    "first_draft_supported": 8,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 7,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.29,
+    "empty_sections": [
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP18",
+    "kind": "program",
+    "drafted": 8,
+    "supported": 8,
+    "first_draft_supported": 8,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 8,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.23,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP21",
+    "kind": "program",
+    "drafted": 6,
+    "supported": 6,
+    "first_draft_supported": 6,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.21,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP22",
+    "kind": "program",
+    "drafted": 12,
+    "supported": 12,
+    "first_draft_supported": 12,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 10,
+     "hypothesis_generating": 2,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.21,
+    "empty_sections": []
+   },
+   {
+    "id": "QP23",
+    "kind": "program",
+    "drafted": 8,
+    "supported": 8,
+    "first_draft_supported": 8,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 6,
+     "hypothesis_generating": 2,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.32,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP24",
+    "kind": "program",
+    "drafted": 5,
+    "supported": 5,
+    "first_draft_supported": 5,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 5,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.24,
+    "empty_sections": [
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP26",
+    "kind": "program",
+    "drafted": 4,
+    "supported": 4,
+    "first_draft_supported": 4,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 4,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.25,
+    "empty_sections": [
+     "population_stratifier",
+     "indication_explorer"
+    ]
+   },
+   {
+    "id": "QP27",
+    "kind": "program",
+    "drafted": 3,
+    "supported": 3,
+    "first_draft_supported": 3,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 3,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.28,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP28",
+    "kind": "program",
+    "drafted": 1,
+    "supported": 1,
+    "first_draft_supported": 1,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 1,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.04,
+    "empty_sections": [
+     "population_stratifier",
+     "indication_explorer",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP29",
+    "kind": "program",
+    "drafted": 11,
+    "supported": 11,
+    "first_draft_supported": 11,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 3,
+     "hypothesis_generating": 8,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.23,
+    "empty_sections": [
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP30",
+    "kind": "program",
+    "drafted": 6,
+    "supported": 6,
+    "first_draft_supported": 6,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 2,
+     "hypothesis_generating": 4,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.24,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP31",
+    "kind": "program",
+    "drafted": 4,
+    "supported": 4,
+    "first_draft_supported": 4,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 2,
+     "hypothesis_generating": 2,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.32,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP32",
+    "kind": "program",
+    "drafted": 2,
+    "supported": 2,
+    "first_draft_supported": 2,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 2,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.22,
+    "empty_sections": [
+     "indication_explorer",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP33",
+    "kind": "program",
+    "drafted": 3,
+    "supported": 3,
+    "first_draft_supported": 3,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 2,
+     "hypothesis_generating": 1,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.22,
+    "empty_sections": [
+     "population_stratifier",
+     "redesign_advisor"
+    ]
+   },
+   {
+    "id": "QP34",
+    "kind": "program",
+    "drafted": 1,
+    "supported": 1,
+    "first_draft_supported": 1,
+    "repaired": 0,
+    "rejected": 0,
+    "nct_mismatches": 0,
+    "support_status": {
+     "supported": 1,
+     "hypothesis_generating": 0,
+     "mixed": 0
+    },
+    "causal_rejections": 0,
+    "overclaims": [],
+    "seconds": 0.05,
+    "empty_sections": [
+     "population_stratifier",
+     "indication_explorer",
+     "redesign_advisor"
+    ]
+   }
+  ]
+ }
+}

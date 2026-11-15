@@ -1,0 +1,51 @@
+# Source card: Drug Target Ontology (DTO) protein classes, as delivered by Pharos 3.19.2 / TCRD 6.13.5
+# (pipelines/pharos.py group "dto" -> data/pharos/dto.tsv.gz; one row per target and DTO class, e.g. P32929 CTH
+# -> DTO:05007652 "Lyase"). Read by the generic builder pipelines/kgbuilder/engine.py. Layer L0: Pharos content, kept
+# in its own card so the DTO terms can be left out of a graph without touching sources/pharos.yaml.
+#
+# Modelling (BioLink 4.4.5): Protein (UniProtKB) -member_of-> ProteinFamily (DTO class). A DTO class is a class of
+# proteins (Kinase, Lyase, Enzyme ...), which is BioLink's ProteinFamily; the original DTO relation is a class
+# membership, kept as original_predicate. The DTO hierarchy itself (class is_a class) is NOT in the Pharos table
+# and is not invented here. Rows without a DTO ID (about 1 in 4 in the table) have no object and are listed by
+# pipelines/verdict_file.py as "no usable object identifier", never dropped silently.
+name: dto
+version: pharos319 (Pharos 3.19.2 / TCRD 6.13.5), DTO classes
+tables_dir: data/pharos
+aggregator: infores:pharos
+layer: L0
+# BioLink lists no id prefix for ProteinFamily; DTO is the OBO Foundry prefix of the Drug Target Ontology
+extra_prefixes: {"biolink:ProteinFamily": [DTO]}
+
+nodes:
+  - table: dto
+    id: {column: DTO ID}                       # already a CURIE, DTO:05007652
+    category: biolink:ProteinFamily
+    name: DTO Class
+    properties: {definition: DTO Definition}
+
+edges:
+  - name: protein_dto_class
+    table: dto
+    subject: {column: UniProt, prefix: UniProtKB, category: biolink:Protein}
+    predicate: biolink:member_of
+    object: {column: DTO ID, category: biolink:ProteinFamily, name: DTO Class}
+    record_columns: [UniProt, DTO ID]
+    source: Drug Target Ontology class
+    primary_knowledge_source: "infores:pharos"
+    knowledge_level: knowledge_assertion
+    agent_type: manual_agent
+    constants: {original_predicate: "rdf:type"}
+
+prune:
+  never_prune_predicates: [biolink:member_of]
+
+# Corrections made when a product is WRITTEN (pipelines/export_graph_kgx.py, block "export fixes"); the layer file is unchanged.
+export_overrides:
+  retype_nodes:
+    # The Pharos DTO table also lists a few ChEBI chemical classes ("Chemical entity", "Peptide") among the classes.
+    # They are chemical classes, not protein families: BioLink's ChemicalEntity (ChEBI is one of its listed prefixes).
+    - name: ChEBI classes in the DTO table are chemical entities
+      prefixes: [CHEBI]
+      from: biolink:ProteinFamily
+      to: biolink:ChemicalEntity
+      why: "ChEBI terms (e.g. CHEBI:24431 chemical entity) are not protein families"

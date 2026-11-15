@@ -1,0 +1,26 @@
+# Source card for a lab's own screening table (EXAMPLE: the identifiers are real, the hits and signal values are
+# SYNTHETIC illustrations, not measurements). Copy this file, change the names and columns, run:
+#     python pipelines/build_kg.py examples/byo_source/lab_screen.yaml
+# Walk-through: docs/BRING_YOUR_OWN_SOURCE.md
+name: lab_screen_example
+version: "SYNTHETIC example, 2026-11-04"
+tables_dir: examples/byo_source          # the folder holding screen.tsv.gz (a tab-separated table, gzipped)
+aggregator: infores:example-lab-screen
+layer: L1                                # your data sit on top of the Pharos core
+
+edges:
+  - name: lab_screen_hit
+    table: screen                        # the file screen.tsv.gz
+    filter: {hit: "yes"}                 # only rows where the column `hit` equals yes become edges
+    subject: {column: compound_chembl, prefix: CHEMBL.COMPOUND, category: biolink:SmallMolecule}
+    predicate: biolink:directly_physically_interacts_with
+    object: {column: target_uniprot, prefix: UniProtKB, category: biolink:Protein}   # same ids as the Pharos core
+    record_columns: [compound_chembl, target_uniprot, assay]
+    source: "SYNTHETIC example screen"
+    primary_knowledge_source: "infores:example-lab-screen"
+    knowledge_level: observation
+    agent_type: manual_agent
+    properties: {signal_pct: signal_pct, assay: assay}
+
+prune:
+  score_columns: {signal_pct: higher}    # a higher signal gives the edge a higher keep-confidence

@@ -1,0 +1,10 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+Asundexian,patient.drug.medicinalproduct,6,UPPER GASTROINTESTINAL HAEMORRHAGE,3
+Asundexian,patient.drug.medicinalproduct,6,ABDOMINAL PAIN,2
+Asundexian,patient.drug.medicinalproduct,6,PANCREATITIS NECROTISING,2
+Asundexian,patient.drug.medicinalproduct,6,SPLENIC VEIN THROMBOSIS,2
+Asundexian,patient.drug.medicinalproduct,6,COLON CANCER,1
+Asundexian,patient.drug.medicinalproduct,6,DUODENAL ULCER HAEMORRHAGE,1
+Asundexian,patient.drug.medicinalproduct,6,LOWER GASTROINTESTINAL HAEMORRHAGE,1
+Asundexian,patient.drug.medicinalproduct,6,PROCEDURAL COMPLICATION,1
+Asundexian,patient.drug.medicinalproduct,6,PROCEDURAL HAEMORRHAGE,1

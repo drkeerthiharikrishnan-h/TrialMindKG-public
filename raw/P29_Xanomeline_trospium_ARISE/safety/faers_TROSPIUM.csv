@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+TROSPIUM,patient.drug.openfda.generic_name,4362,NAUSEA,546
+TROSPIUM,patient.drug.openfda.generic_name,4362,VOMITING,423
+TROSPIUM,patient.drug.openfda.generic_name,4362,CONSTIPATION,235
+TROSPIUM,patient.drug.openfda.generic_name,4362,OFF LABEL USE,219
+TROSPIUM,patient.drug.openfda.generic_name,4362,FATIGUE,198
+TROSPIUM,patient.drug.openfda.generic_name,4362,DIZZINESS,194
+TROSPIUM,patient.drug.openfda.generic_name,4362,URINARY RETENTION,187
+TROSPIUM,patient.drug.openfda.generic_name,4362,DRUG INEFFECTIVE,185
+TROSPIUM,patient.drug.openfda.generic_name,4362,FALL,183
+TROSPIUM,patient.drug.openfda.generic_name,4362,URINARY TRACT INFECTION,150
+TROSPIUM,patient.drug.openfda.generic_name,4362,HEADACHE,147
+TROSPIUM,patient.drug.openfda.generic_name,4362,DIARRHOEA,136
+TROSPIUM,patient.drug.openfda.generic_name,4362,DYSPNOEA,127
+TROSPIUM,patient.drug.openfda.generic_name,4362,DYSPEPSIA,126
+TROSPIUM,patient.drug.openfda.generic_name,4362,ASTHENIA,125
+TROSPIUM,patient.drug.openfda.generic_name,4362,DRY MOUTH,111
+TROSPIUM,patient.drug.openfda.generic_name,4362,VISION BLURRED,111
+TROSPIUM,patient.drug.openfda.generic_name,4362,GAIT DISTURBANCE,108
+TROSPIUM,patient.drug.openfda.generic_name,4362,HYPERHIDROSIS,100
+TROSPIUM,patient.drug.openfda.generic_name,4362,MALAISE,95
+TROSPIUM,patient.drug.openfda.generic_name,4362,PAIN,95
+TROSPIUM,patient.drug.openfda.generic_name,4362,ARTHRALGIA,92
+TROSPIUM,patient.drug.openfda.generic_name,4362,ABDOMINAL DISCOMFORT,88
+TROSPIUM,patient.drug.openfda.generic_name,4362,DECREASED APPETITE,88
+TROSPIUM,patient.drug.openfda.generic_name,4362,INSOMNIA,87

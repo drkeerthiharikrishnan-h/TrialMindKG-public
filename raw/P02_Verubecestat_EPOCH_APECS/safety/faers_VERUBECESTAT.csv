@@ -1,0 +1,3 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+VERUBECESTAT,patient.drug.medicinalproduct,1,OVERDOSE,1
+VERUBECESTAT,patient.drug.medicinalproduct,1,TOXICITY TO VARIOUS AGENTS,1

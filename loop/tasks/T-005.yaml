@@ -1,0 +1,31 @@
+id: T-005
+title: Build the Pharos card index and exercise the app on the real graph
+owner: science
+classification: science
+status: open
+closes:
+- card_index_built
+- real_graph_app_check
+objective: Run pharos_index.py on the Mac, time it, start app.py on the real graph, exercise the Pharos card, the tested-question
+  strip, 'why' with timeline, subgraph download and the Numbers page by HTTP; write a list of slow (>2 s), wrong or empty
+  answers with exact ids for the code owner.
+read_first:
+- docs/NEXT_STEPS.md step 11
+- docs/USABILITY_PLAN.md
+- docs/archive/BUILD_ROLES.md section 3
+editable_paths:
+- outputs/app_check/
+- docs/sessions/
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- card index timing recorded
+- outputs/app_check/questions_report.md lists every pinned question with latency and verdict (ok/slow/wrong/empty)
+- first card <= 2 s
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_pharos_index.py tests/test_pharos_app.py
+stop_rule: Do not run while run B is training (memory); start after T-001 ends or when the Mac has > 20 GB free.
+handoff: Report file is the handoff to whoever fixes the UI.

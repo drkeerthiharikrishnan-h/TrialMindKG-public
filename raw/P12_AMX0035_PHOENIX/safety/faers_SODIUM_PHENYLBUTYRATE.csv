@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,HYPERAMMONAEMIA,56
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,OFF LABEL USE,48
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,VOMITING,42
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,DEATH,35
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,AMMONIA INCREASED,32
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,NAUSEA,28
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,DIARRHOEA,27
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,DECREASED APPETITE,25
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,FATIGUE,17
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,HYPERAMMONAEMIC CRISIS,16
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,RETCHING,16
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,DRUG INEFFECTIVE,14
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,PRODUCT USE COMPLAINT,13
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,SEIZURE,13
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,ABDOMINAL PAIN UPPER,12
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,HEADACHE,12
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,PYREXIA,12
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,CONDITION AGGRAVATED,11
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,ABDOMINAL DISCOMFORT,10
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,ABDOMINAL PAIN,10
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,ALOPECIA,10
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,LETHARGY,10
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,RASH,10
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,SEPSIS,10
+SODIUM PHENYLBUTYRATE,patient.drug.openfda.generic_name,420,DISEASE PROGRESSION,9

@@ -1,0 +1,43 @@
+# Scorecard: the organizers' four judging criteria as runnable checks (weights sum to 100).
+# `python3 loop/loop.py score` runs them. A check that cannot be run counts as FAIL: the score is only what was shown.
+# Weights are ours (the organizers publish criterion weights, not sub-weights); change them in a commit with a reason.
+# Each check names the task packet (loop/tasks/T-*.yaml) that closes it in that packet's `closes:` list.
+criteria:
+  usability:
+    weight: 40
+    checks:
+      - {id: hosted_demo_live,        weight: 15, kind: url, state_key: hosted_url, max_seconds: 5}
+      - {id: card_index_built,        weight: 5,  kind: file_exists, path: data/kg/pharos_index/card_index.sqlite}
+      - {id: app_unit_tests,          weight: 5,  kind: command, argv: [".venv/bin/python", "-m", "pytest", "-q", "-p", "no:cacheprovider", "--ignore=.env", "tests/test_pharos_app.py"]}
+      - {id: real_graph_app_check,    weight: 5,  kind: file_exists, path: outputs/app_check/questions_report.md}
+      - {id: stranger_test_logged,    weight: 5,  kind: stranger_results, path: docs/STRANGER_TEST_RESULTS.md}
+      - {id: bring_your_own_source,   weight: 3,  kind: file_exists, path: docs/BRING_YOUR_OWN_SOURCE.md}
+      - {id: nl_question_parity,      weight: 2,  kind: file_exists, path: outputs/parity/report.md}
+  accuracy_pruning:
+    weight: 30
+    checks:
+      - {id: verdict_file_gold_ids,   weight: 8,  kind: grep, file: outputs/pharos/verdict_file_report.md, pattern: "HGNC"}
+      - {id: calibration_report,      weight: 4,  kind: file_exists, path: outputs/pharos/prune_calibration.md}
+      - {id: spotcheck_precision,     weight: 8,  kind: file_exists, path: outputs/pharos/spotcheck_results.md}
+      - {id: threshold_choice,        weight: 5,  kind: file_exists, path: outputs/pharos/threshold_choice.md}
+      - {id: frozen_benchmark_report, weight: 5,  kind: file_exists, path: outputs/linkpred/compare.md}
+  explainability:
+    weight: 20
+    checks:
+      - {id: provenance_tests,        weight: 5,  kind: command, argv: [".venv/bin/python", "-m", "pytest", "-q", "-p", "no:cacheprovider", "--ignore=.env", "tests/test_provenance.py"]}
+      - {id: timeline_tests,          weight: 5,  kind: command, argv: [".venv/bin/python", "-m", "pytest", "-q", "-p", "no:cacheprovider", "--ignore=.env", "tests/test_timeline.py"]}
+      - {id: metapath_predictions,    weight: 5,  kind: file_exists, path: outputs/linkpred/predictions_metapath.tsv.gz}
+      - {id: judge_status_fixed,      weight: 5,  kind: command, argv: [".venv/bin/python", "-m", "pytest", "-q", "-p", "no:cacheprovider", "--ignore=.env", "tests/test_judge_status.py"]}
+  standards:
+    weight: 10
+    checks:
+      - {id: schema_card,             weight: 3,  kind: file_exists, path: docs/SCHEMA_CARD.md}
+      - {id: dto_source_card,         weight: 4,  kind: file_exists, path: sources/dto.yaml}
+      - {id: kg_schema_tests,         weight: 3,  kind: command, argv: [".venv/bin/python", "-m", "pytest", "-q", "-p", "no:cacheprovider", "--ignore=.env", "tests/test_kg_schema.py"]}
+# Gates that are not points: all must hold before any submission step (checked by hand or by T-010).
+gates:
+  - repository public with a licence
+  - "no .env, key or data/internal file other than data/internal/README.md was ever committed (git log --all --name-only -- .env data/internal lists only data/internal/README.md)"
+  - every number in the submission text is copied from a committed result file
+  - synthetic data is labelled SYNTHETIC wherever it is shown
+  - pytest -q green on the Mac

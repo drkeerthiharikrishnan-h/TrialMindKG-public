@@ -1,0 +1,40 @@
+source,evidence_type,predicate,primary_knowledge_source,aggregator_knowledge_source,supporting_data_source,knowledge_level,agent_type,note
+*,synthetic,*,tmkg:SYNTHETIC-internal,,,observation,data_analysis_pipeline,SYNTHETIC internal data (CDISC-style); not real sponsor data
+*,internal,*,tmkg:sponsor-internal,,,observation,data_analysis_pipeline,REAL internal sponsor data (confidential; never committed)
+ClinicalTrials.gov,curator_confirmed,tmkg:has_trial,tmkg:trialmindkg,,infores:clinicaltrials-gov,knowledge_assertion,manual_validation_of_automated_agent,program -> trial match proposed by the pipeline and confirmed by the curator (curated_overrides.csv)
+ClinicalTrials.gov,registry,tmkg:has_trial,tmkg:trialmindkg,,infores:clinicaltrials-gov,knowledge_assertion,automated_agent,program -> trial match made by the pipeline's deterministic rules on registry fields
+ClinicalTrials.gov,registry,tmkg:tests_intervention,infores:clinicaltrials-gov,tmkg:trialmindkg,infores:chembl,knowledge_assertion,automated_agent,drug listed in the registry arms; name matched to ChEMBL by the pipeline
+ClinicalTrials.gov,registry,tmkg:has_comparator_drug,infores:clinicaltrials-gov,tmkg:trialmindkg,infores:chembl,knowledge_assertion,automated_agent,comparator listed in the registry arms; name matched to ChEMBL by the pipeline
+ClinicalTrials.gov,registry,tmkg:has_background_drug,infores:clinicaltrials-gov,tmkg:trialmindkg,infores:chembl,knowledge_assertion,automated_agent,background drug listed in the registry arms; name matched to ChEMBL by the pipeline
+ClinicalTrials.gov,registry,tmkg:has_publication,infores:clinicaltrials-gov,tmkg:trialmindkg,infores:pubmed,knowledge_assertion,not_provided,registry reference list (sponsor-entered or derived by ClinicalTrials.gov)
+ClinicalTrials.gov,registry,*,infores:clinicaltrials-gov,tmkg:trialmindkg,,knowledge_assertion,manual_agent,registry record entered by the sponsor
+ChEMBL,curated,biolink:interacts_with,infores:chembl,tmkg:trialmindkg,,knowledge_assertion,manual_agent,ChEMBL drug mechanism (manually curated)
+ChEMBL,*,*,infores:chembl,tmkg:trialmindkg,,knowledge_assertion,not_provided,ChEMBL target components
+Open Targets Platform,curated,biolink:interacts_with,infores:chembl,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,drug mechanism served by Open Targets from ChEMBL (fallback when the ChEMBL API had none)
+Open Targets Platform,database,biolink:associated_with,infores:open-targets,tmkg:trialmindkg,,statistical_association,data_analysis_pipeline,Open Targets integrated target-disease association score
+Open Targets Platform,*,*,infores:open-targets,tmkg:trialmindkg,,knowledge_assertion,not_provided,Open Targets target annotation (gene / complex members)
+Reactome,*,*,infores:reactome,tmkg:trialmindkg,,knowledge_assertion,manual_agent,Reactome expert-curated pathway membership
+MONDO,*,*,infores:mondo,tmkg:trialmindkg,,knowledge_assertion,not_provided,MONDO cross-reference to MeSH
+MeSH term name + MONDO,computed,*,tmkg:trialmindkg,,infores:mesh|infores:mondo,prediction,automated_agent,exact-name match between a MeSH term and a MONDO label (no MONDO xref)
+curated: sponsor press release*,*,*,tmkg:trialmindkg,,,knowledge_assertion,manual_agent,statement curated from a sponsor press release (not peer reviewed)
+curated:*,*,*,tmkg:trialmindkg,,,knowledge_assertion,manual_agent,curated table in failed_clinical_trials_2016_2026.md (owner review)
+GTEx v8,*,*,infores:gtex,tmkg:trialmindkg,,observation,data_analysis_pipeline,GTEx median tissue expression
+openFDA FAERS,*,*,infores:faers,tmkg:trialmindkg,,observation,not_provided,spontaneous adverse-event reports (counts are not incidence)
+Open Targets,*,*,infores:open-targets,tmkg:trialmindkg,,statistical_association,data_analysis_pipeline,Open Targets genetic association score
+curated literature*,*,*,tmkg:trialmindkg,,infores:pubmed,knowledge_assertion,manual_agent,statement curated from a cited publication
+biomarker dictionary,*,*,tmkg:trialmindkg,,,knowledge_assertion,manual_agent,curated biomarker definition mapping
+TrialMindKG derivation,computed,biolink:in_clinical_trials_for,tmkg:trialmindkg,,infores:clinicaltrials-gov|infores:mondo,logical_entailment,data_analysis_pipeline,drug-disease pair derived from a registry trial that names the drug in its arms and lists the condition
+Open Targets Platform: ClinVar*,database,biolink:gene_associated_with_condition,infores:clinvar,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,ClinVar germline/somatic variant-disease assertions (submitter curated) served by Open Targets (EVA)
+Open Targets Platform: COSMIC*,database,biolink:gene_associated_with_condition,infores:cosmic,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,COSMIC Cancer Gene Census (expert curated) served by Open Targets
+Open Targets Platform: ClinGen,database,biolink:gene_associated_with_condition,infores:clingen,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,ClinGen gene-disease validity curation served by Open Targets
+Open Targets Platform: Gene2Phenotype,database,biolink:gene_associated_with_condition,infores:gene2phenotype,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,Gene2Phenotype curated gene-disease panel served by Open Targets
+Open Targets Platform: Orphanet,database,biolink:gene_associated_with_condition,infores:orphanet,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,Orphanet rare disease gene annotation served by Open Targets
+Open Targets Platform: UniProt*,database,biolink:gene_associated_with_condition,infores:uniprot,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,UniProt curated variant/literature disease annotation served by Open Targets
+Open Targets Platform: IntOGen,database,biolink:gene_associated_with_condition,infores:open-targets,tmkg:trialmindkg,,statistical_association,data_analysis_pipeline,IntOGen cancer driver analysis (IntOGen is not in the infores registry) served by Open Targets
+Open Targets Platform: gene burden,database,biolink:gene_associated_with_condition,infores:open-targets,tmkg:trialmindkg,,statistical_association,data_analysis_pipeline,rare-variant gene burden tests (several cohorts) served by Open Targets
+ClinicalTrials.gov,computed,tmkg:endpoint_result,tmkg:trialmindkg,,infores:clinicaltrials-gov,logical_entailment,automated_agent,registered endpoint linked to its posted result by identical (normalised) titles in the same registry record
+ClinPGx (PharmGKB),database,biolink:associated_with_response_to,infores:pharmgkb,infores:clinpgx|tmkg:trialmindkg,,knowledge_assertion,manual_agent,PharmGKB clinical annotation (curated; level of evidence 1A-4) served by the ClinPGx API
+Open Targets Platform: Gene Ontology,database,biolink:participates_in,infores:goa,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,GO annotation with experimental or traceable-author evidence (GOA) served by Open Targets
+openFDA Drugs@FDA,database,tmkg:has_regulatory_application,tmkg:fda-drugsatfda,tmkg:trialmindkg,,knowledge_assertion,manual_agent,Drugs@FDA application and its posted documents (via openFDA; Drugs@FDA has no infores id)
+GWAS Catalog,database,biolink:gene_associated_with_condition,infores:gwas-catalog,tmkg:trialmindkg,,statistical_association,manual_agent,genome-wide significant associations (p <= 5e-8) curated by the GWAS Catalog; gene = the catalogue mapped (nearby) gene - not a proven causal gene
+Open Targets Platform: HPO annotations,database,biolink:has_phenotype,infores:hpo-annotations,infores:open-targets|tmkg:trialmindkg,,knowledge_assertion,manual_agent,HPO disease-phenotype annotation (published clinical study / traceable author statement) served by Open Targets

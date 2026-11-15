@@ -1,0 +1,8 @@
+# The frozen link-prediction protocol: every flag of `python -m pipelines.linkpred.run` except --graphs and --tag.
+# Source: docs/STRATEGY_REVIEW_RESPONSE_2026-11-02.md section 3 (runs A and B; frozen 6 Nov 18:00). ONE file, read by
+# scripts/benchmark_frozen.sh (the full run) and scripts/demo.py (`make demo`, which changes --epochs only).
+# Checked against the protocol text by tests/test_demo.py. Do not edit.
+--tasks B --splits kfold --seeds 1 --epochs 300 --hidden 64
+--drop-levels text_co_occurrence --test-levels knowledge_assertion --positives assertions --max-edges 2000000
+--reverse-edges --learn-embeddings --num-bases 30 --neg-pool training --neg-match degree
+--baselines --metapaths --strata

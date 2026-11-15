@@ -1,0 +1,3 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+LANABECESTAT,patient.drug.medicinalproduct,2,CELLULITIS,1
+LANABECESTAT,patient.drug.medicinalproduct,2,ELECTROCARDIOGRAM QT PROLONGED,1

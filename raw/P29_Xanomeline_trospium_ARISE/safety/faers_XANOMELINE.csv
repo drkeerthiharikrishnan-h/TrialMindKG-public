@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+XANOMELINE,patient.drug.openfda.generic_name,2089,NAUSEA,441
+XANOMELINE,patient.drug.openfda.generic_name,2089,VOMITING,340
+XANOMELINE,patient.drug.openfda.generic_name,2089,CONSTIPATION,157
+XANOMELINE,patient.drug.openfda.generic_name,2089,OFF LABEL USE,138
+XANOMELINE,patient.drug.openfda.generic_name,2089,URINARY RETENTION,130
+XANOMELINE,patient.drug.openfda.generic_name,2089,DIZZINESS,94
+XANOMELINE,patient.drug.openfda.generic_name,2089,DYSPEPSIA,81
+XANOMELINE,patient.drug.openfda.generic_name,2089,HYPERHIDROSIS,75
+XANOMELINE,patient.drug.openfda.generic_name,2089,VISION BLURRED,74
+XANOMELINE,patient.drug.openfda.generic_name,2089,DRY MOUTH,57
+XANOMELINE,patient.drug.openfda.generic_name,2089,TREATMENT NONCOMPLIANCE,55
+XANOMELINE,patient.drug.openfda.generic_name,2089,DRUG INEFFECTIVE,54
+XANOMELINE,patient.drug.openfda.generic_name,2089,DROOLING,48
+XANOMELINE,patient.drug.openfda.generic_name,2089,GASTROOESOPHAGEAL REFLUX DISEASE,46
+XANOMELINE,patient.drug.openfda.generic_name,2089,SOMNOLENCE,45
+XANOMELINE,patient.drug.openfda.generic_name,2089,DIARRHOEA,44
+XANOMELINE,patient.drug.openfda.generic_name,2089,HEART RATE INCREASED,44
+XANOMELINE,patient.drug.openfda.generic_name,2089,ABDOMINAL DISCOMFORT,43
+XANOMELINE,patient.drug.openfda.generic_name,2089,PSYCHOTIC DISORDER,42
+XANOMELINE,patient.drug.openfda.generic_name,2089,ADVERSE EVENT,41
+XANOMELINE,patient.drug.openfda.generic_name,2089,INSOMNIA,41
+XANOMELINE,patient.drug.openfda.generic_name,2089,"HALLUCINATION, AUDITORY",39
+XANOMELINE,patient.drug.openfda.generic_name,2089,ABDOMINAL PAIN UPPER,38
+XANOMELINE,patient.drug.openfda.generic_name,2089,HEADACHE,37
+XANOMELINE,patient.drug.openfda.generic_name,2089,FATIGUE,35

@@ -1,0 +1,8 @@
+nct,condition,mondo_id,justification
+NCT04777409,Early Alzheimer´s Disease,MONDO:0004975,Confirmed by owner 2026-10-05: Alzheimer disease
+NCT02446912,Active Systemic Lupus Erythematosus,MONDO:0007915,Confirmed by owner 2026-10-05: systemic lupus erythematosus
+NCT01870778,Acute Heart Failure,MONDO:0005252,Confirmed by owner 2026-10-05: heart failure (MONDO has no acute-specific term)
+*,MESH:D003072,MONDO:0002039,Confirmed by owner 2026-10-05: MeSH Cognition Disorders = cognitive disorder
+*,MESH:D009222,MONDO:0008056,Confirmed by owner 2026-10-05: MeSH Myotonia in HARBOR = myotonic dystrophy type 1
+*,MESH:D050171,MONDO:0005347,Confirmed by owner 2026-10-05: MeSH Dyslipidemias in PROMINENT = hypertriglyceridemia (MONDO has no dyslipidemia term)
+*,MESH:D005355,NONE,Confirmed by owner 2026-10-05: MeSH Fibrosis has no MONDO equivalent; left unmapped

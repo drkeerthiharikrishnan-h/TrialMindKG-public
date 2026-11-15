@@ -1,0 +1,73 @@
+{
+ "id": "q_d12e4bf2e4",
+ "question": "Is there any evidence linking MAP3K5 and metabolic dysfunction-associated steatotic liver disease?",
+ "kind": "query",
+ "endpoint": "/api/query",
+ "recorded": "2026-11-13T00:00:00Z",
+ "backend": "offline",
+ "model": "fixed rules",
+ "answer": {
+  "question": "Is there any evidence linking MAP3K5 and metabolic dysfunction-associated steatotic liver disease?",
+  "entities": [
+   "ENSEMBL:ENSG00000197442",
+   "MONDO:0013209"
+  ],
+  "cypher": "MATCH (g:Gene {id:'ENSEMBL:ENSG00000197442'})-[r:associated_with]-(d:Disease {id:'MONDO:0013209'}) RETURN r.id AS evidence ORDER BY evidence LIMIT 50",
+  "problems": [],
+  "columns": [
+   "evidence"
+  ],
+  "rows": [],
+  "evidence": [],
+  "attempts": [],
+  "backend": "offline",
+  "model": "fixed rules",
+  "dropped_constraints": [],
+  "cached": false,
+  "gap": {
+   "statement": "No evidence in this graph for MAP3K5 and metabolic dysfunction-associated steatotic liver disease.",
+   "subject": {
+    "id": "ENSEMBL:ENSG00000197442",
+    "label": "MAP3K5"
+   },
+   "object": {
+    "id": "MONDO:0013209",
+    "label": "metabolic dysfunction-associated steatotic liver disease"
+   },
+   "nearest": [
+    {
+     "text": "Selonsertib (inhibitor) is recorded in ChEMBL as acting on Mitogen-activated protein kinase kinase kinase 5, whose gene is MAP3K5: the graph holds MAP3K5 as the target of Selonsertib.",
+     "edges": [
+      "ef097cc6df99f491a",
+      "e2458426dcfb66308"
+     ]
+    },
+    {
+     "text": "The same program tests Selonsertib in 2 registered trials; 2 of them list Non-alcoholic Fatty Liver Disease as the condition, which the graph maps to metabolic dysfunction-associated steatotic liver disease (MONDO:0013209).",
+     "edges": [
+      "e05352ba668622e74",
+      "e86f3a40afc28912e",
+      "ecd4b2f08f600e1cb"
+     ]
+    },
+    {
+     "text": "Open Targets 26.09 ranks metabolic dysfunction-associated steatohepatitis (MONDO:0007027) number 3 of the 10 diseases it lists for MAP3K5, with an overall association score of 0.1975. The trial titles of this program say NASH, which MONDO lists as a synonym of metabolic dysfunction-associated steatohepatitis, not of metabolic dysfunction-associated steatotic liver disease.",
+     "edges": []
+    }
+   ],
+   "why": [
+    "Open Targets, the graph's source of gene-disease associations, has no disease record under the identifier the graph uses for metabolic dysfunction-associated steatotic liver disease (MONDO:0013209), so the association lookup for this pair returned nothing.",
+    "The graph also adds a gene-disease link from the top 10 diseases Open Targets lists for a target, but only at an overall score of 0.5 or higher; for MAP3K5 the highest score in that list is 0.3127 (smoking initiation), so 0 links were written.",
+    "The genetic-evidence lookup (germline and somatic sources in Open Targets) for MAP3K5 and metabolic dysfunction-associated steatotic liver disease found no record either.",
+    "None of the 217 genes in the trial graph has an association link to metabolic dysfunction-associated steatotic liver disease: the gap is about this pair and this identifier, and says nothing about whether the two are related in biology."
+   ],
+   "data_needed": [
+    "A gene-disease statement for MAP3K5 and metabolic dysfunction-associated steatotic liver disease from a source the graph reads (an Open Targets association at or above the cut-off, or a curated statement), under an identifier the graph can match to MONDO:0013209.",
+    "If the disease should be read as metabolic dysfunction-associated steatohepatitis (MONDO:0007027) instead, a decision by a person to map the program's trials to that identifier (it is a different disease node, so the graph does not do it on its own).",
+    "Measurements from the program itself that name MAP3K5 together with the disease (for example a biomarker or pathway analysis from the Selonsertib trials), added through the curated tables."
+   ],
+   "retrieved": "2026-10-05"
+  },
+  "explanation": "Look for an association link between MAP3K5 (ENSEMBL:ENSG00000197442) and metabolic dysfunction-associated steatotic liver disease (MONDO:0013209) in the trial graph."
+ }
+}

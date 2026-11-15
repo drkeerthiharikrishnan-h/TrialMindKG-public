@@ -1,0 +1,37 @@
+id: T-001
+title: 'Run B: frozen benchmark on the rebuilt G2/G3 at the 2M cap, then compare incl. meta-path'
+owner: science
+classification: science
+status: done
+outcome: 'Superseded 2026-11-04. Run B (2M cap) stopped at 13:51, no fold after ~2.5 h (ledger E002). Its stop-rule fallback
+  was run instead: G0 at 1M (tag frozen_a_g0_1m), cap-matched against run A G2/G3 at 1M -> ledger E003,
+  outputs/linkpred/compare_capmatched.md (meta-path paired difference computed with compare.paired_delta). Replication on the
+  rebuilt G2/G3 = --epochs 0 diag runs (tag diag_rebuilt_1m, ledger E004), see docs/MASTER_PLAN.md STATUS.'
+closes:
+- frozen_benchmark_report
+objective: Run the frozen command on G2,G3 (OT layer rebuilt with score >= 0.1, EFO/Orphanet tables regenerated, rebuilt
+  2026-11-04 09:20) with tag frozen_b, copy G0's run-A file to @frozen_b, then compare --base G0@frozen_b. Add the meta-path
+  paired difference to compare.py output so it is reproducible.
+read_first:
+- docs/STRATEGY_REVIEW_RESPONSE_2026-11-02.md section 3 and 5
+- logs/linkpred_frozen_b.log
+editable_paths:
+- pipelines/linkpred/compare.py
+- tests/test_linkpred_compare.py
+- outputs/linkpred/
+- docs/sessions/
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+acceptance:
+- G2 and G3 @frozen_b JSON exist with test digest 24f5864cc07ad723 and max_edges_per_type 2000000 (or the report states
+  the cap actually used)
+- degree_dst within 0.49-0.51 every fold
+- compare.md lists GNN and meta-path paired differences with 95% intervals
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_linkpred.py
+stop_rule: 'No fold line within 60 minutes of start, or compressor thrash: stop, rerun G2,G3 at --max-edges 1000000 and
+  also run G0 at 1M for a cap-matched pair. If no frozen_b results by 2026-11-05 18:00, run A stands.'
+handoff: Result files + a docs/sessions/ note + a ledger row (E002). Remove the RUNNING line (logs/RUNNING_frozen_b.txt)
+  when finished.

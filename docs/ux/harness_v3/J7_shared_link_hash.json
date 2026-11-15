@@ -1,0 +1,143 @@
+{
+ "page": "/",
+ "where": "#pharos/node/MONDO%3A0005148",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 27,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/card/MONDO%3A0005148",
+  "GET /api/pharos/status",
+  "GET /api/pharos/explain/eeeb9224ae867dbc0",
+  "GET /api/pharos/explain/e47ff43d2c2cb850b",
+  "GET /api/pharos/explain/eb91c2a3b2dd9356b",
+  "GET /api/pharos/explain/e35592deb69f15c12",
+  "GET /api/pharos/explain/e48cbe0e33d2942a5",
+  "GET /api/pharos/explain/e84eb0dc885ac5f81",
+  "GET /api/pharos/explain/e57c656fffc5f128a",
+  "GET /api/pharos/explain/e66a1aee99427b7a1",
+  "GET /api/pharos/explain/e8320a67238bdbc51",
+  "GET /api/pharos/explain/e396009f69a6586a8",
+  "GET /api/pharos/explain/eb8e97053af6364b3"
+ ],
+ "api_calls_last": [
+  "GET /api/pharos/card/MONDO%3A0005148",
+  "GET /api/pharos/status",
+  "GET /api/pharos/explain/eeeb9224ae867dbc0",
+  "GET /api/pharos/explain/e47ff43d2c2cb850b",
+  "GET /api/pharos/explain/eb91c2a3b2dd9356b",
+  "GET /api/pharos/explain/e35592deb69f15c12",
+  "GET /api/pharos/explain/e48cbe0e33d2942a5",
+  "GET /api/pharos/explain/e84eb0dc885ac5f81",
+  "GET /api/pharos/explain/e57c656fffc5f128a",
+  "GET /api/pharos/explain/e66a1aee99427b7a1",
+  "GET /api/pharos/explain/e8320a67238bdbc51",
+  "GET /api/pharos/explain/e396009f69a6586a8",
+  "GET /api/pharos/explain/eb8e97053af6364b3",
+  "GET /api/pharos/compare/card/MONDO%3A0005148",
+  "GET /api/trials_for?ids=MONDO%3A0005148&names=type%202%20diabetes%20mellitus"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "shared_hash",
+   "hash": "#pharos/node/MONDO%3A0005148",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "type 2 diabetes mellitus diseaseMONDO:0005148",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 249,
+    "strength_chips": 207,
+    "why": 272,
+    "cg_nodes": 42,
+    "cg_lines": 41,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:1 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 41 of 41 links. Predicted links have no pruning confidence and always show.",
+    "legend": "diseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "EVOKE Plus (NCT04777409) (clinical trial)NCT:NCT04777409type 2 diabetes mellitus → GLP1R → Alzheimer disease Program cardMYSTIC (NCT02453282) (clinical trial)NCT:NCT02453282type 2 diabetes mellitus → ",
+    "plist": 1,
+    "pathboxes": 3,
+    "hops": 13,
+    "hops_kept": 13,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "POLR2L → encodes → DNA-directed RNA polymerases I, II, and III subunit RPABC5 ← interacts with ← Peroxisome proliferator-activated receptor gamma coactivator 1-alpha ← encodes ← PPARGC1A → is associated with → type 2 diabetes mellitus",
+    "weakest": "· weakest hop: confidence 0.46 (STRINGDB, statistical association)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 57,
+    "links": 1094,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "type 2 diabetes mellitus diseaseMONDO:0005148",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  }
+ ]
+}

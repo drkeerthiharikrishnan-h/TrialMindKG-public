@@ -1,0 +1,41 @@
+# pip install for TrialMindKG (FIX6 M7, owner 15 Nov). The import packages are installed as they are: `pipelines` (the import
+# name; a rename is after-submission work) and `harness`, plus the small folders the code reads at run time next to them
+# (personas/, static/, config/; the code finds them relative to its own folder). Dependencies come from requirements.txt,
+# the extra `ml` from requirements-ml.txt (one source of truth each). Not carried: data/, outputs/, raw/, the card index;
+# the full reproduction needs a clone and HOW_TO_RUN.md.
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trialmindkg"
+version = "1.0.0"
+description = "Agents that build, prune and query a drug-target and clinical-trial knowledge graph, with provenance on every edge"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "Keerthi Harikrishnan" }]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[project.scripts]
+trialmindkg = "trialmindkg_cli:main"
+
+[tool.setuptools]
+py-modules = ["trialmindkg_cli"]
+include-package-data = false
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+optional-dependencies = { ml = { file = ["requirements-ml.txt"] } }
+
+[tool.setuptools.packages.find]
+where = ["."]
+namespaces = true
+include = ["pipelines", "pipelines.kgbuilder", "pipelines.linkpred", "harness", "personas", "static", "static.fonts", "config"]
+
+[tool.setuptools.package-data]
+pipelines = ["*.html"]
+personas = ["*.yaml"]
+"static.fonts" = ["*.css", "*.txt", "*.woff2"]
+config = ["*.yaml", "*.json"]

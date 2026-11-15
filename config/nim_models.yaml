@@ -1,0 +1,80 @@
+# NVIDIA NIM models used by each agent role. CHECK ON KICKOFF DAY: open build.nvidia.com and confirm each
+# model id still exists (newer Nemotron versions appear often). Changing a model id changes the request key,
+# so frozen answers are never mixed between models.
+#
+# Endpoints follow the OpenAI format. Hosted (build.nvidia.com): base_url below + NVIDIA_API_KEY in .env.
+# Self-hosted NIM on AWS (EC2 / SageMaker): set NIM_BASE_URL in .env to your endpoint (e.g. http://<host>:8000/v1).
+base_url: https://integrate.api.nvidia.com/v1
+rerank_url: https://ai.api.nvidia.com/v1/retrieval/nvidia/llama-nemotron-rerank-vl-1b-v2/reranking
+
+# Checked 2026-10-05 against the live catalogue with this account's key (tiny test call each). Retired since the
+# application was written: llama-3.3-nemotron-super-49b-v1 (2026-08-26), nv-embedqa-1b-v2 and nv-rerankqa-1b-v2
+# (2026-05-18), llama-nemotron-rerank-1b-v2 (2026-08-25). nemotron-nano-3-30b-a3b is not enabled for this account.
+# 2026-10-31: nemotron-3-super-120b-a12b now answers 404 "not found for account" (still listed by /v1/models; found when
+# the app's METREO question went live). Replaced by nemotron-3.5-super-vl-120b-a12b (same 120B-A12B class, newer; tiny
+# structured-output call with thinking off: OK, 0.7 s). Also tested OK: nemotron-3-ultra-550b-a55b, nemotron-3.5-lightning-30b-a3b,
+# nemotron-3-nano-omni-30b-a3b-reasoning; llama-3.1-nemotron-ultra-253b-v1 404. Frozen answers keyed by the old model id
+# (data/snapshots_llm) stay as they are; new questions use the new model. The 2026-10-06 evaluation numbers were made
+# with the old model and are not re-run (owner decision pending; NEXT_STEPS).
+roles:
+  extractor:   nvidia/nemotron-3.5-super-vl-120b-a12b          # stop-reason categories (structured output)
+  querier:     nvidia/nemotron-3.5-super-vl-120b-a12b          # question -> openCypher
+  specialist:  nvidia/nemotron-3.5-super-vl-120b-a12b          # 4 reasoning specialists (larger reasoning model)
+  verifier:    nvidia/nemotron-3.5-lightning-30b-a3b      # claim-support check (smaller model)
+  baseline:    nvidia/nemotron-3.5-super-vl-120b-a12b          # LLM-only comparison (no graph)
+  repair:      nvidia/nemotron-3.5-super-vl-120b-a12b          # one rewrite of a rejected claim from the same facts
+  namer:       nvidia/nemotron-3.5-super-vl-120b-a12b          # resolver: research code / trade name -> generic name
+  judge:       nvidia/nemotron-3.5-lightning-30b-a3b      # comparison judge: supported / contradicted / not addressed
+  biomarker:   nvidia/nemotron-3.5-super-vl-120b-a12b          # biomarker subgroups named in outcome titles (proposals)
+  protocol:    nvidia/nemotron-3.5-super-vl-120b-a12b          # design facts from protocol / SAP passages (proposals)
+
+# Verdict-blind raters of the pruner spot check and audit sample (scripts/audit_spotcheck.py; pre-registered in
+# outputs/pharos/spotcheck_rule.md, Amendment 1, addition A5). Not app roles, so the pre-flight does not call them.
+# Rater C is from another model family: the first candidate that answers a structured-output test call on the day.
+# Ids taken from the live catalogue on 2026-11-12.
+spotcheck_raters:
+  judge_a: nvidia/nemotron-3.5-super-vl-120b-a12b
+  judge_b: nvidia/nemotron-3.5-lightning-30b-a3b
+  rater_c_candidates:
+    - mistralai/mistral-large-4-1t-a52b
+    - google/gemma-4-31b-it
+    - deepseek-ai/deepseek-v4.1-flash
+  # Extra request options per rater model. The Mistral model reasons before it answers: with the app's 2048-token
+  # limit it returned no answer on 61 of 200 rows of the first run (finish_reason length), so it gets a larger limit
+  # (rule file, A11). The NVIDIA judges answer without reasoning (model_options below) and keep the app's limit.
+  options:
+    mistralai/mistral-large-4-1t-a52b: {max_tokens: 8192}
+
+embedding: nvidia/nemotron-3-embed-1b
+reranker:  nvidia/llama-nemotron-rerank-vl-1b-v2
+
+generation:          # deterministic settings for every chat call
+  temperature: 0
+  top_p: 1
+  max_tokens: 2048
+  seed: 2026
+
+# Extra request options per model. Nemotron 3 reasons before answering unless told not to; for structured outputs
+# we switch it off (tested: same JSON answer, ~10x fewer tokens, no hidden reasoning to audit).
+model_options:
+  nvidia/nemotron-3.5-super-vl-120b-a12b:     {chat_template_kwargs: {enable_thinking: false}}
+  nvidia/nemotron-3.5-lightning-30b-a3b: {chat_template_kwargs: {enable_thinking: false}}
+system_prefix: {}
+
+# How the JSON shape of a reply is enforced by the server: response_format (OpenAI json_schema; tested on hosted
+# Nemotron 3 Super 2026-10-05), guided_json (nvext, older/self-hosted NIM), or none (prompt + local check only).
+structured_output: response_format
+
+# What to do when a hosted chat call fails (API down, rate limit, 404 for this account, no stored snapshot in offline replay):
+#   none     raise (default: evaluations and benchmark runs must never mix stand-in answers into NIM numbers)
+#   offline  answer with the role's offline stand-in; the result says backend='offline-stand-in' and why (meta.fallback_from,
+#            meta.reason). The app turns this on (TMKG_NIM_FALLBACK=offline or NIM(fallback="offline")).
+# A pinned question already in data/snapshots_llm is answered from there without calling the API (meta.cached = true).
+fallback: none
+
+# Second model (CC-36): with fallback on (the app), a failing hosted chat call is tried ONCE with the backup id named here
+# before the offline stand-in answers. nemotron-3.5-lightning-30b-a3b: tested OK 2026-10-31 (see above) and already the
+# verifier / judge model. The answer says which model answered (meta.model_fallback_from). Evaluations (fallback none)
+# never use it.
+fallback_models:
+  nvidia/nemotron-3.5-super-vl-120b-a12b: nvidia/nemotron-3.5-lightning-30b-a3b

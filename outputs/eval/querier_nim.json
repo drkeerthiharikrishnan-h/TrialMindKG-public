@@ -1,0 +1,119 @@
+{
+ "backend": "nim",
+ "n": 10,
+ "valid_rate": 1.0,
+ "execution_accuracy": 0.9,
+ "first_try_valid": 0.9,
+ "rows": [
+  {
+   "id": "C01",
+   "question": "Which trials belong to the anifrolumab TULIP-1 program?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 2,
+   "cypher": "MATCH (p:ClinicalTrialProgram {id:'P19'})-[r:has_trial]->(t:ClinicalTrial) RETURN t.id AS trial_id, t.name AS trial_name, r.id AS evidence ORDER BY trial_id LIMIT 50",
+   "problems": []
+  },
+  {
+   "id": "C02",
+   "question": "What was the primary outcome of TULIP-1 and its statistical analysis?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 1,
+   "cypher": "MATCH (p:ClinicalTrialProgram {id:'P19'})-[r:has_trial]->(t:ClinicalTrial)-[r2:has_outcome_measure]->(o:OutcomeMeasure) WHERE o.kind = 'PRIMARY' RETURN o.name AS outcome, o.time_frame AS time_frame, o.analyses AS analyses, r2.id AS evidence ORDER BY outcome LIMIT 50",
+   "problems": []
+  },
+  {
+   "id": "C03",
+   "question": "What happened after the TULIP-1 failure?",
+   "valid": true,
+   "exact_evidence": false,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 1,
+   "cypher": "MATCH (p:ClinicalTrialProgram {id:'P19'})-[r:has_trial]->(t:ClinicalTrial) RETURN t.why_stopped AS why_stopped, r.id AS evidence LIMIT 10",
+   "problems": []
+  },
+  {
+   "id": "C04",
+   "question": "Which proteins does mepolizumab target?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 1,
+   "cypher": "MATCH (d:Drug {id:'CHEMBL:CHEMBL2108429'})-[r:interacts_with]->(p:Protein) RETURN p.id AS protein, p.name AS name, r.id AS evidence ORDER BY protein LIMIT 50",
+   "problems": []
+  },
+  {
+   "id": "C05",
+   "question": "Which drugs were given in the METREO trial and in which role?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 1,
+   "cypher": "MATCH (t:ClinicalTrial {id:'NCT:NCT02105961'})-[r:tests_intervention|has_comparator_drug|has_background_drug]->(d:Drug) RETURN d.name AS drug, type(r) AS role, r.id AS evidence ORDER BY drug LIMIT 50",
+   "problems": []
+  },
+  {
+   "id": "C06",
+   "question": "What publications report the dal-GenE trial?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 3,
+   "n_got": 3,
+   "attempts": 1,
+   "cypher": "MATCH (p:ClinicalTrialProgram {id:'P25'})-[r:has_trial]->(t:ClinicalTrial {id:'NCT:NCT02525939'})-[r2:has_publication]->(pub:Publication) RETURN pub.id AS publication, pub.name AS name, pub.doi AS doi, r2.id AS evidence ORDER BY publication LIMIT 50",
+   "problems": []
+  },
+  {
+   "id": "C07",
+   "question": "What were the serious adverse events and deaths per arm in METREO?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 1,
+   "cypher": "MATCH (p:ClinicalTrialProgram {id:'P20'})-[r:has_trial]->(t:ClinicalTrial {id:'NCT:NCT02105961'}) RETURN t.ae_groups AS adverse_event_groups, t.ae_time_frame AS time_frame, r.id AS evidence LIMIT 10",
+   "problems": []
+  },
+  {
+   "id": "C08",
+   "question": "Which failed programs share a drug target?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 25,
+   "n_got": 25,
+   "attempts": 1,
+   "cypher": "MATCH (p1:ClinicalTrialProgram)-[r1:has_intervention]->(d1:Drug)-[r2:interacts_with]->(t), (p2:ClinicalTrialProgram)-[r3:has_intervention]->(d2:Drug)-[r4:interacts_with]->(t) WHERE p1.id < p2.id RETURN t.name AS target, p1.id AS program_1, p2.id AS program_2, r1.id AS e1, r2.id AS e2, r3.id AS e3, r4.id AS e4 ORDER BY target LIMIT 100",
+   "problems": []
+  },
+  {
+   "id": "C09",
+   "question": "What was the primary outcome of METREO?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 1,
+   "cypher": "MATCH (t:ClinicalTrial {id:'NCT:NCT02105961'})-[r:has_outcome_measure]->(o:OutcomeMeasure) WHERE o.kind = 'PRIMARY' RETURN o.name AS outcome, o.time_frame AS time_frame, o.analyses AS analyses, r.id AS evidence ORDER BY outcome LIMIT 50",
+   "problems": []
+  },
+  {
+   "id": "C10",
+   "question": "Which trials are in the dalcetrapib dal-GenE program?",
+   "valid": true,
+   "exact_evidence": true,
+   "n_gold": 1,
+   "n_got": 1,
+   "attempts": 1,
+   "cypher": "MATCH (p:ClinicalTrialProgram {id:'P25'})-[r:has_trial]->(t:ClinicalTrial) RETURN t.id AS trial, t.acronym AS acronym, t.name AS name, t.status AS status, t.phase AS phase, r.id AS evidence ORDER BY trial LIMIT 50",
+   "problems": []
+  }
+ ]
+}

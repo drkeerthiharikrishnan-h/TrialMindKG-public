@@ -1,0 +1,22 @@
+{
+ "bottom_line": "",
+ "checked_by": "nvidia/nemotron-3.5-lightning-30b-a3b",
+ "created": "2026-11-14T12:21:33Z",
+ "dropped": [
+  {
+   "reason": "Lines show OS and CR endpoints, not ENHANCE.",
+   "sentence": "The provided lines do not identify the primary endpoint of ENHANCE."
+  }
+ ],
+ "key": "ad95f01bcb1d3edf",
+ "lines": [
+  "[1] endpoint name: Overall Survival (OS); kind: PRIMARY; time frame: From randomization up to 32.62 months. Links: Magrolimab + Azacitidine Versus Azacitidine + Placebo in Untreated Participants With Myelodysplastic Syndrome (MDS) has registered endpoint Overall Survival…. Sources: ClinicalTrials.gov (curated).",
+  "[2] endpoint name: Percentage of Participants With Complete Remission (CR); kind: PRIMARY; time frame: From randomization up to 31.01 months. Links: Magrolimab + Azacitidine Versus Azacitidine + Placebo in Untreated Participants With Myelodysplastic Syndrome (MDS) has registered endpoint Percentage of…. Sources: ClinicalTrials.gov (curated)."
+ ],
+ "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+ "prompt_version": "pk4-1",
+ "question": "What was the primary endpoint of ENHANCE?",
+ "raw": "The provided lines do not identify the primary endpoint of ENHANCE. They describe two primary endpoints—Overall Survival (OS) [1] and Percentage of Participants With Complete Remission (CR) [2]—for a trial of Magrolimab plus Azacitidine versus Azacitidine plus Placebo in untreated MDS participants. Both endpoints are curated from ClinicalTrials.gov [1][2]. The lines do not state whether these values are statistical, text-mined, or predicted, nor do they link either endpoint to ENHANCE.",
+ "sentences": 3,
+ "text": "They describe two primary endpoints—Overall Survival (OS) [1] and Percentage of Participants With Complete Remission (CR) [2]—for a trial of Magrolimab plus Azacitidine versus Azacitidine plus Placebo in untreated MDS participants. Both endpoints are curated from ClinicalTrials.gov [1][2]. The lines do not state whether these values are statistical, text-mined, or predicted, nor do they link either endpoint to ENHANCE."
+}

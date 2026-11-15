@@ -1,0 +1,353 @@
+{
+ "page": "/",
+ "where": "",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 20,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/stored_answer/x01",
+  "SSE /api/ask_stream?q=Why%20did%20Mepolizumab%20%E2%80%94%20METREO%20fail%2C%20and%20what%20did%20the%20evidence%20support%20afterwards%3F",
+  "GET /api/ask_quota",
+  "GET /api/search?q=dalcetrapib",
+  "GET /api/search?q=dalcetrapib",
+  "GET /api/neighbourhood/P25",
+  "GET /api/trial/NCT%3ANCT02525939"
+ ],
+ "api_calls_last": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/stored_answer/x01",
+  "SSE /api/ask_stream?q=Why%20did%20Mepolizumab%20%E2%80%94%20METREO%20fail%2C%20and%20what%20did%20the%20evidence%20support%20afterwards%3F",
+  "GET /api/ask_quota",
+  "GET /api/search?q=dalcetrapib",
+  "GET /api/search?q=dalcetrapib",
+  "GET /api/neighbourhood/P25",
+  "GET /api/trial/NCT%3ANCT02525939"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "metreo_report",
+   "hash": "#trials/q/Why%20did%20mepolizumab%20fail%20in%20METREO%20for%20COPD%2C%20and%20which%20patients%20might%20respond%3F",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 12,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": {
+    "user": "Why did mepolizumab fail in METREO for COPD, and which patients might respond?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "summary",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "Mepolizumab — METREO. Stated failure: Phase III: primary comparisons did not meet multiplicity-adjusted significance. METREX was mixed/positive in its eosinophilic population and is not counted as a separate failure here. Diagnosis (claim 1.2, supported): For mepolizumab 100 mg versus placebo, the p",
+    "confidence": "confidence: high",
+    "confidence_reason": "19 of 20 claims cite strong sources (registry or curated records) and at most a quarter are hypothesis-generating.",
+    "points": [
+     "The report keeps 20 verified claims in 4 of 4 sections; the verifier removed 3. 1.11.21.31.41.51.61.72.1 +12",
+     "Failure Diagnosis: 7 claims, 7 supported (claims 1.1-1.7). 1.11.21.31.41.51.61.7",
+     "Candidate Responder Population: 5 claims, 4 supported, 1 hypothesis-generating (2.5) (claims 2.1-2.5). 2.12.22.32.42.5"
+    ],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 20,
+    "rows": 0,
+    "evidence_chips": 0,
+    "first_chip": "",
+    "checks": [
+     "ok: verifier: kept 20 claims, removed 3",
+     "ok: rewrites: 2 claims rewritten once after a failed check"
+    ],
+    "abstain": "",
+    "sections": [
+     "failure_diagnostician",
+     "population_stratifier",
+     "indication_explorer",
+     "redesign_advisor"
+    ],
+    "claims": 20,
+    "claim_evidence_chips": 23,
+    "subgraphs": 5
+   },
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 225,
+    "links": 112,
+    "sections": 13,
+    "tables": 0
+   },
+   "headings": [
+    "Graph of the report",
+    "Summary",
+    "Evidence 20 claims in 4 sections, 9 evidence records",
+    "Failure Diagnosis",
+    "Candidate Responder Population",
+    "Related Indications",
+    "Evidence-Supported Redesign Options",
+    "What is not known",
+    "Claims removed by the verifier",
+    "Downloads and how it ran",
+    "Failed drug programs"
+   ]
+  },
+  {
+   "name": "program_card_ask",
+   "hash": "#trials/q/Why%20did%20Mepolizumab%20%E2%80%94%20METREO%20fail%2C%20and%20what%20did%20the%20evidence%20support%20afterwards%3F",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 12,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": {
+    "user": "Why did Mepolizumab — METREO fail, and what did the evidence support afterwards?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "Mepolizumab — METREO. Stated failure: Phase III: primary comparisons did not meet multiplicity-adjusted significance. METREX was mixed/positive in its eosinophilic population and is not counted as a separate failure here. Diagnosis (claim 1.1, supported): METREO (NCT02105961): primary outcome 'Rate ",
+    "confidence": "confidence: high",
+    "confidence_reason": "6 of 7 claims cite strong sources (registry or curated records) and at most a quarter are hypothesis-generating.",
+    "points": [
+     "The report keeps 7 verified claims in 4 of 4 sections; the verifier removed 0. 1.11.22.13.13.24.14.2",
+     "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+     "Candidate Responder Population: 1 claim, 1 supported (claim 2.1). 2.1"
+    ],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 10,
+    "rows": 0,
+    "evidence_chips": 0,
+    "first_chip": "",
+    "checks": [
+     "ok: verifier: kept 7 claims, removed 0",
+     "ok: rewrites: 0 claims rewritten once after a failed check"
+    ],
+    "abstain": "",
+    "sections": [
+     "failure_diagnostician",
+     "population_stratifier",
+     "indication_explorer",
+     "redesign_advisor"
+    ],
+    "claims": 7,
+    "claim_evidence_chips": 7,
+    "subgraphs": 5
+   },
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 121,
+    "links": 80,
+    "sections": 11,
+    "tables": 0
+   },
+   "headings": [
+    "Graph of the report",
+    "Evidence 7 claims in 4 sections, 4 evidence records",
+    "Failure Diagnosis",
+    "Candidate Responder Population",
+    "Related Indications",
+    "Evidence-Supported Redesign Options",
+    "What is not known",
+    "Downloads and how it ran",
+    "Failed drug programs"
+   ]
+  },
+  {
+   "name": "program_search_panel",
+   "hash": "#trials/q/Why%20did%20Mepolizumab%20%E2%80%94%20METREO%20fail%2C%20and%20what%20did%20the%20evidence%20support%20afterwards%3F",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 12,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": {
+    "user": "Why did Mepolizumab — METREO fail, and what did the evidence support afterwards?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "Mepolizumab — METREO. Stated failure: Phase III: primary comparisons did not meet multiplicity-adjusted significance. METREX was mixed/positive in its eosinophilic population and is not counted as a separate failure here. Diagnosis (claim 1.1, supported): METREO (NCT02105961): primary outcome 'Rate ",
+    "confidence": "confidence: high",
+    "confidence_reason": "6 of 7 claims cite strong sources (registry or curated records) and at most a quarter are hypothesis-generating.",
+    "points": [
+     "The report keeps 7 verified claims in 4 of 4 sections; the verifier removed 0. 1.11.22.13.13.24.14.2",
+     "Failure Diagnosis: 2 claims, 2 supported (claims 1.1-1.2). 1.11.2",
+     "Candidate Responder Population: 1 claim, 1 supported (claim 2.1). 2.1"
+    ],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 10,
+    "rows": 0,
+    "evidence_chips": 0,
+    "first_chip": "",
+    "checks": [
+     "ok: verifier: kept 7 claims, removed 0",
+     "ok: rewrites: 0 claims rewritten once after a failed check"
+    ],
+    "abstain": "",
+    "sections": [
+     "failure_diagnostician",
+     "population_stratifier",
+     "indication_explorer",
+     "redesign_advisor"
+    ],
+    "claims": 7,
+    "claim_evidence_chips": 7,
+    "subgraphs": 5
+   },
+   "drawer": {
+    "open": true,
+    "title": "Failed program",
+    "lead": "",
+    "raw": null,
+    "headings": [
+     "Dalcetrapib — dal-GenEP25"
+    ]
+   },
+   "visible": {
+    "buttons": 125,
+    "links": 83,
+    "sections": 11,
+    "tables": 0
+   },
+   "headings": [
+    "Graph of the report",
+    "Evidence 7 claims in 4 sections, 4 evidence records",
+    "Failure Diagnosis",
+    "Candidate Responder Population",
+    "Related Indications",
+    "Evidence-Supported Redesign Options",
+    "What is not known",
+    "Downloads and how it ran",
+    "Failed drug programs"
+   ]
+  }
+ ]
+}

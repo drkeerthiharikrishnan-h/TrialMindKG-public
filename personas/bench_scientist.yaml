@@ -1,0 +1,20 @@
+order: 3          # position on the Start-here page (1 = first)
+name: Bench scientist
+short: Bench scientist
+emoji: "🧬"
+color: "#2f9e44"
+description: >-
+  Molecular or cell biologist starting from a gene or protein. Wants the target development level, ligands with potency, pathways, interactors and the disease links worth testing next.
+welcome: >-
+  Your view leads with the molecule: product, ligands, pathways and processes, then disease links and predictions.
+facet_persona: >-
+  cell_molecular_biologist (FACET)
+start_tab: pharos
+wording: mechanistic
+show_ids: always
+card_sections: [about, known, predicted, trials]
+questions:
+  - {tab: card, text: "PTGS2"}
+  - {tab: pharos, text: "Which compounds bind the protein encoded by PTGS2, and how strongly?"}
+  - {tab: pharos, text: "Which biological processes involve the protein encoded by PTGS2?"}
+  - {tab: card, text: "SOD1"}

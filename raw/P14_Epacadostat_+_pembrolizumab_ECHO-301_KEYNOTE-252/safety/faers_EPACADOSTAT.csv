@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+EPACADOSTAT,patient.drug.medicinalproduct,58,ABDOMINAL PAIN,7
+EPACADOSTAT,patient.drug.medicinalproduct,58,DIARRHOEA,7
+EPACADOSTAT,patient.drug.medicinalproduct,58,FEBRILE NEUTROPENIA,7
+EPACADOSTAT,patient.drug.medicinalproduct,58,DYSPNOEA,6
+EPACADOSTAT,patient.drug.medicinalproduct,58,OFF LABEL USE,6
+EPACADOSTAT,patient.drug.medicinalproduct,58,PYREXIA,6
+EPACADOSTAT,patient.drug.medicinalproduct,58,VOMITING,6
+EPACADOSTAT,patient.drug.medicinalproduct,58,ANAEMIA,5
+EPACADOSTAT,patient.drug.medicinalproduct,58,DEHYDRATION,4
+EPACADOSTAT,patient.drug.medicinalproduct,58,NAUSEA,4
+EPACADOSTAT,patient.drug.medicinalproduct,58,PLEURAL EFFUSION,4
+EPACADOSTAT,patient.drug.medicinalproduct,58,SEPSIS,4
+EPACADOSTAT,patient.drug.medicinalproduct,58,SYNCOPE,4
+EPACADOSTAT,patient.drug.medicinalproduct,58,DECREASED APPETITE,3
+EPACADOSTAT,patient.drug.medicinalproduct,58,FATIGUE,3
+EPACADOSTAT,patient.drug.medicinalproduct,58,PLATELET COUNT DECREASED,3
+EPACADOSTAT,patient.drug.medicinalproduct,58,RASH,3
+EPACADOSTAT,patient.drug.medicinalproduct,58,STOMATITIS,3
+EPACADOSTAT,patient.drug.medicinalproduct,58,ACUTE KIDNEY INJURY,2
+EPACADOSTAT,patient.drug.medicinalproduct,58,ARTHRALGIA,2
+EPACADOSTAT,patient.drug.medicinalproduct,58,BLOOD CREATININE INCREASED,2
+EPACADOSTAT,patient.drug.medicinalproduct,58,CONDITION AGGRAVATED,2
+EPACADOSTAT,patient.drug.medicinalproduct,58,CONFUSIONAL STATE,2
+EPACADOSTAT,patient.drug.medicinalproduct,58,CONSTIPATION,2
+EPACADOSTAT,patient.drug.medicinalproduct,58,DEEP VEIN THROMBOSIS,2

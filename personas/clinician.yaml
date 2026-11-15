@@ -1,0 +1,20 @@
+order: 2          # position on the Start-here page (1 = first)
+name: Clinician
+short: Clinician
+emoji: "🏥"
+color: "#1e7b4f"
+description: >-
+  Starts from a disease or a drug. Wants plain answers, "known or predicted", and source names a clinician recognises; no identifiers, no graph words.
+welcome: >-
+  Your view uses plain words, hides identifiers and shows the trial record before the mechanism.
+facet_persona: >-
+  pathologist (FACET) adapted to the treating physician
+start_tab: pharos
+wording: plain
+show_ids: never
+card_sections: [about, trials, known, predicted]
+questions:
+  - {tab: card, text: "Alzheimer disease"}
+  - {tab: card, text: "ibuprofen"}
+  - {tab: trials, text: "Why did mepolizumab fail in METREO for COPD, and which patients might respond?"}
+  - {tab: pharos, text: "Which compounds bind the protein encoded by PTGS2, and how strongly?"}

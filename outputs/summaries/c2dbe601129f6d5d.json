@@ -1,0 +1,28 @@
+{
+ "bottom_line": "SOD1 is genetically associated with low density lipoprotein cholesterol measurement, C-reactive protein measurement and apolipoprotein B measurement (TIGA (GWAS Catalog)); 8 traits in all.",
+ "checked_by": "nvidia/nemotron-3.5-lightning-30b-a3b",
+ "created": "2026-11-13T03:00:24Z",
+ "dropped": [
+  {
+   "reason": "Sentence claims eight traits, but only two are listed in the lines.",
+   "sentence": "SOD1 is genetically associated with eight GWAS traits, all supported by statistical evidence from TIGA (GWAS Catalog) and retained after pruning [1]–[8]."
+  }
+ ],
+ "key": "c2dbe601129f6d5d",
+ "lines": [
+  "[1] trait: low density lipoprotein cholesterol measurement; studies: 3; median neg log10 p: 10.0; rank score: 74.3. Links: SOD1 is genetically associated with low density lipoprotein cholesterol measurement. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.56). Row support: statistical support only.",
+  "[2] trait: C-reactive protein measurement; studies: 2; median neg log10 p: 9.96; rank score: 56.1. Links: SOD1 is genetically associated with C-reactive protein measurement. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.55). Row support: statistical support only.",
+  "[3] trait: apolipoprotein B measurement; studies: 2; median neg log10 p: 8.20; rank score: 53.2. Links: SOD1 is genetically associated with apolipoprotein B measurement. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.55). Row support: statistical support only.",
+  "[4] trait: educational attainment; studies: 1; median neg log10 p: 9.55; rank score: 38.2. Links: SOD1 is genetically associated with educational attainment. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.52). Row support: statistical support only.",
+  "[5] trait: alanine measurement; studies: 1; median neg log10 p: 8.10; rank score: 18.0. Links: SOD1 is genetically associated with alanine measurement. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.51). Row support: statistical support only.",
+  "[6] trait: self reported educational attainment; studies: 1; median neg log10 p: 8.15; rank score: 18.4. Links: SOD1 is genetically associated with self reported educational attainment. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.50). Row support: statistical support only.",
+  "[7] trait: sex hormone-binding globulin measurement; studies: 2; median neg log10 p: 9.07; rank score: 47.6. Links: SOD1 is genetically associated with sex hormone-binding globulin measurement. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.54). Row support: statistical support only.",
+  "[8] trait: smoking status measurement; studies: 1; median neg log10 p: 7.52; rank score: 0.267. Links: SOD1 is genetically associated with smoking status measurement. Sources: TIGA (GWAS Catalog) (statistical, kept by the pruning check, confidence 0.49). Row support: statistical support only."
+ ],
+ "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+ "prompt_version": "pk4-1",
+ "question": "Which GWAS traits are genetically associated with SOD1, and how strong is the evidence?",
+ "raw": "SOD1 is genetically associated with eight GWAS traits, all supported by statistical evidence from TIGA (GWAS Catalog) and retained after pruning [1]–[8]. The strongest associations are low density lipoprotein cholesterol measurement [1], C-reactive protein measurement [2], and apolipoprotein B measurement [3], followed by sex hormone-binding globulin measurement [7], educational attainment [4], self reported educational attainment [6], alanine measurement [5], and smoking status measurement [8]. All lines report study counts, median neg log10 p values, rank scores, and confidence scores. No curated, text-mined, or predicted associations are shown, and the lines do not demonstrate causality, effect direction, or biological mechanism.",
+ "sentences": 3,
+ "text": "The strongest associations are low density lipoprotein cholesterol measurement [1], C-reactive protein measurement [2], and apolipoprotein B measurement [3], followed by sex hormone-binding globulin measurement [7], educational attainment [4], self reported educational attainment [6], alanine measurement [5], and smoking status measurement [8]. All lines report study counts, median neg log10 p values, rank scores, and confidence scores. No curated, text-mined, or predicted associations are shown, and the lines do not demonstrate causality, effect direction, or biological mechanism."
+}

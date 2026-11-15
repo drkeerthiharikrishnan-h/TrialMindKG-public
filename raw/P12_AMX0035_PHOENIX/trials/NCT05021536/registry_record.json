@@ -1,0 +1,931 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D013118",
+     "term": "Spinal Cord Diseases"
+    },
+    {
+     "id": "D002493",
+     "term": "Central Nervous System Diseases"
+    },
+    {
+     "id": "D009422",
+     "term": "Nervous System Diseases"
+    },
+    {
+     "id": "D016472",
+     "term": "Motor Neuron Disease"
+    },
+    {
+     "id": "D019636",
+     "term": "Neurodegenerative Diseases"
+    },
+    {
+     "id": "D057177",
+     "term": "TDP-43 Proteinopathies"
+    },
+    {
+     "id": "D009468",
+     "term": "Neuromuscular Diseases"
+    },
+    {
+     "id": "D057165",
+     "term": "Proteostasis Deficiencies"
+    },
+    {
+     "id": "D008659",
+     "term": "Metabolic Diseases"
+    },
+    {
+     "id": "D009750",
+     "term": "Nutritional and Metabolic Diseases"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D000690",
+     "term": "Amyotrophic Lateral Sclerosis"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "C000723627",
+     "term": "sodium phenylbutyrate and taurursodiol"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "removedCountries": [
+    "Puerto Rico"
+   ],
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "hasResults": false,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "description": "Placebo administered by mouth or via feeding tube for 48 weeks: once daily for first 3 weeks and then twice daily for remainder of study if participant tolerating",
+     "interventionNames": [
+      "Other: Placebo"
+     ],
+     "label": "Placebo",
+     "type": "PLACEBO_COMPARATOR"
+    },
+    {
+     "description": "Placebo administered by mouth or via feeding tube for 48 weeks: once daily for first 3 weeks and then twice daily for remainder of study if participant tolerating",
+     "interventionNames": [
+      "Drug: AMX0035"
+     ],
+     "label": "AMX0035",
+     "type": "EXPERIMENTAL"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Placebo"
+     ],
+     "description": "Matching Placebo Comparator",
+     "name": "Placebo",
+     "type": "OTHER"
+    },
+    {
+     "armGroupLabels": [
+      "AMX0035"
+     ],
+     "description": "Proprietary formulation of taurursodiol and sodium phenylbutyrate",
+     "name": "AMX0035",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Amyotrophic Lateral Sclerosis"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Phoenix",
+     "country": "United States",
+     "facility": "Barrow Neurological Institute",
+     "geoPoint": {
+      "lat": 33.44838,
+      "lon": -112.07404
+     },
+     "state": "Arizona",
+     "zip": "85013"
+    },
+    {
+     "city": "Los Angeles",
+     "country": "United States",
+     "facility": "University of Southern California",
+     "geoPoint": {
+      "lat": 34.05223,
+      "lon": -118.24368
+     },
+     "state": "California",
+     "zip": "90033"
+    },
+    {
+     "city": "Orange",
+     "country": "United States",
+     "facility": "University of California Irvine",
+     "geoPoint": {
+      "lat": 33.78779,
+      "lon": -117.85311
+     },
+     "state": "California",
+     "zip": "92868"
+    },
+    {
+     "city": "San Francisco",
+     "country": "United States",
+     "facility": "California Pacific Medical Center Research Institute",
+     "geoPoint": {
+      "lat": 37.77493,
+      "lon": -122.41942
+     },
+     "state": "California",
+     "zip": "94109"
+    },
+    {
+     "city": "Aurora",
+     "country": "United States",
+     "facility": "University of Colorado",
+     "geoPoint": {
+      "lat": 39.72943,
+      "lon": -104.83192
+     },
+     "state": "Colorado",
+     "zip": "80045"
+    },
+    {
+     "city": "Gainesville",
+     "country": "United States",
+     "facility": "University of Florida",
+     "geoPoint": {
+      "lat": 29.65163,
+      "lon": -82.32483
+     },
+     "state": "Florida",
+     "zip": "32068"
+    },
+    {
+     "city": "Tampa",
+     "country": "United States",
+     "facility": "University of South Florida",
+     "geoPoint": {
+      "lat": 27.94752,
+      "lon": -82.45843
+     },
+     "state": "Florida",
+     "zip": "33612"
+    },
+    {
+     "city": "Atlanta",
+     "country": "United States",
+     "facility": "Emory University",
+     "geoPoint": {
+      "lat": 33.749,
+      "lon": -84.38798
+     },
+     "state": "Georgia",
+     "zip": "30322"
+    },
+    {
+     "city": "Augusta",
+     "country": "United States",
+     "facility": "Augusta University Neuroscience Center",
+     "geoPoint": {
+      "lat": 33.47097,
+      "lon": -81.97484
+     },
+     "state": "Georgia",
+     "zip": "30912"
+    },
+    {
+     "city": "Chicago",
+     "country": "United States",
+     "facility": "Northwestern University",
+     "geoPoint": {
+      "lat": 41.85003,
+      "lon": -87.65005
+     },
+     "state": "Illinois",
+     "zip": "60611"
+    },
+    {
+     "city": "Baltimore",
+     "country": "United States",
+     "facility": "Johns Hopkins University School of Medicine Outpatient Center",
+     "geoPoint": {
+      "lat": 39.29038,
+      "lon": -76.61219
+     },
+     "state": "Maryland",
+     "zip": "21287"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Healey & AMG Center for ALS Research at Massachusetts General Hospital",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02114"
+    },
+    {
+     "city": "Worcester",
+     "country": "United States",
+     "facility": "University of Massachusetts",
+     "geoPoint": {
+      "lat": 42.26259,
+      "lon": -71.80229
+     },
+     "state": "Massachusetts",
+     "zip": "01655"
+    },
+    {
+     "city": "Minneapolis",
+     "country": "United States",
+     "facility": "Hennepin Healthcare Research Institute",
+     "geoPoint": {
+      "lat": 44.97997,
+      "lon": -93.26384
+     },
+     "state": "Minnesota",
+     "zip": "55415"
+    },
+    {
+     "city": "St Louis",
+     "country": "United States",
+     "facility": "Washington University School of Medicine",
+     "geoPoint": {
+      "lat": 38.62727,
+      "lon": -90.19789
+     },
+     "state": "Missouri",
+     "zip": "63110"
+    },
+    {
+     "city": "Lincoln",
+     "country": "United States",
+     "facility": "Somnos Clinical Research",
+     "geoPoint": {
+      "lat": 40.8,
+      "lon": -96.66696
+     },
+     "state": "Nebraska",
+     "zip": "68510"
+    },
+    {
+     "city": "New Brunswick",
+     "country": "United States",
+     "facility": "Rutgers University",
+     "geoPoint": {
+      "lat": 40.48622,
+      "lon": -74.45182
+     },
+     "state": "New Jersey",
+     "zip": "08901"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Columbia University",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10032"
+    },
+    {
+     "city": "Chapel Hill",
+     "country": "United States",
+     "facility": "University of North Carolina at Chapel Hill",
+     "geoPoint": {
+      "lat": 35.9132,
+      "lon": -79.05584
+     },
+     "state": "North Carolina",
+     "zip": "27514"
+    },
+    {
+     "city": "Winston-Salem",
+     "country": "United States",
+     "facility": "Wake Forest University Health Sciences",
+     "geoPoint": {
+      "lat": 36.09986,
+      "lon": -80.24422
+     },
+     "state": "North Carolina",
+     "zip": "27109"
+    },
+    {
+     "city": "Columbus",
+     "country": "United States",
+     "facility": "The Ohio State University",
+     "geoPoint": {
+      "lat": 39.96118,
+      "lon": -82.99879
+     },
+     "state": "Ohio",
+     "zip": "43210"
+    },
+    {
+     "city": "Philadelphia",
+     "country": "United States",
+     "facility": "University of Pennsylvania",
+     "geoPoint": {
+      "lat": 39.95238,
+      "lon": -75.16362
+     },
+     "state": "Pennsylvania",
+     "zip": "19107"
+    },
+    {
+     "city": "Philadelphia",
+     "country": "United States",
+     "facility": "Lewis Katz School of Medicine at Temple University",
+     "geoPoint": {
+      "lat": 39.95238,
+      "lon": -75.16362
+     },
+     "state": "Pennsylvania",
+     "zip": "19140"
+    },
+    {
+     "city": "Austin",
+     "country": "United States",
+     "facility": "Austin Neuromuscular Center",
+     "geoPoint": {
+      "lat": 30.26715,
+      "lon": -97.74306
+     },
+     "state": "Texas",
+     "zip": "78756"
+    },
+    {
+     "city": "Dallas",
+     "country": "United States",
+     "facility": "Texas Neurology",
+     "geoPoint": {
+      "lat": 32.78306,
+      "lon": -96.80667
+     },
+     "state": "Texas",
+     "zip": "72506"
+    },
+    {
+     "city": "Henrico",
+     "country": "United States",
+     "facility": "Virginia Commonwealth University",
+     "geoPoint": {
+      "lat": 36.59264,
+      "lon": -78.61611
+     },
+     "state": "Virginia",
+     "zip": "23233"
+    },
+    {
+     "city": "Seattle",
+     "country": "United States",
+     "facility": "Swedish Neuroscience Institute",
+     "geoPoint": {
+      "lat": 47.60621,
+      "lon": -122.33207
+     },
+     "state": "Washington",
+     "zip": "98122"
+    },
+    {
+     "city": "Seattle",
+     "country": "United States",
+     "facility": "University of Washington",
+     "geoPoint": {
+      "lat": 47.60621,
+      "lon": -122.33207
+     },
+     "state": "Washington",
+     "zip": "98195"
+    },
+    {
+     "city": "Leuven",
+     "country": "Belgium",
+     "facility": "University Hospitals Leuven",
+     "geoPoint": {
+      "lat": 50.87959,
+      "lon": 4.70093
+     }
+    },
+    {
+     "city": "Bron",
+     "country": "France",
+     "facility": "Hospices Civils de Lyon Hôpital Neurologique Pierre Wertheimer Cellule Mutualisée de Recherche Clinique (CMRC)",
+     "geoPoint": {
+      "lat": 45.73865,
+      "lon": 4.91303
+     }
+    },
+    {
+     "city": "Clermont-Ferrand",
+     "country": "France",
+     "facility": "Hopital Gabriel Montpied Service de Neurologie",
+     "geoPoint": {
+      "lat": 45.77969,
+      "lon": 3.08682
+     }
+    },
+    {
+     "city": "Lille",
+     "country": "France",
+     "facility": "CHRU de Lille - Hôpital Roger Salengro",
+     "geoPoint": {
+      "lat": 50.63391,
+      "lon": 3.05512
+     }
+    },
+    {
+     "city": "Limoges",
+     "country": "France",
+     "facility": "CHU de Limoges - Hôpital Dupuytren",
+     "geoPoint": {
+      "lat": 45.83362,
+      "lon": 1.24759
+     }
+    },
+    {
+     "city": "Marseille",
+     "country": "France",
+     "facility": "Hôpitaux Universitaires de Marseille Timone",
+     "geoPoint": {
+      "lat": 43.29695,
+      "lon": 5.38107
+     }
+    },
+    {
+     "city": "Montpellier",
+     "country": "France",
+     "facility": "CHU de Montpellier",
+     "geoPoint": {
+      "lat": 43.61093,
+      "lon": 3.87635
+     }
+    },
+    {
+     "city": "Nice",
+     "country": "France",
+     "facility": "CHU Nice",
+     "geoPoint": {
+      "lat": 43.70313,
+      "lon": 7.26608
+     }
+    },
+    {
+     "city": "Paris",
+     "country": "France",
+     "facility": "Hôpital de la Salpêtrière",
+     "geoPoint": {
+      "lat": 48.85341,
+      "lon": 2.3488
+     }
+    },
+    {
+     "city": "Tours",
+     "country": "France",
+     "facility": "Le Centre Hospitalier Régional Universitaire de Tours",
+     "geoPoint": {
+      "lat": 47.39484,
+      "lon": 0.70398
+     }
+    },
+    {
+     "city": "Berlin",
+     "country": "Germany",
+     "facility": "Charité - Universitätsmedizin Berlin",
+     "geoPoint": {
+      "lat": 52.52437,
+      "lon": 13.41053
+     }
+    },
+    {
+     "city": "Dresden",
+     "country": "Germany",
+     "facility": "Uniklinikum Dresden",
+     "geoPoint": {
+      "lat": 51.05089,
+      "lon": 13.73832
+     }
+    },
+    {
+     "city": "Hanover",
+     "country": "Germany",
+     "facility": "Hannover Medical School",
+     "geoPoint": {
+      "lat": 52.37052,
+      "lon": 9.73322
+     }
+    },
+    {
+     "city": "Jena",
+     "country": "Germany",
+     "facility": "Jena University Hospital",
+     "geoPoint": {
+      "lat": 50.92878,
+      "lon": 11.5899
+     }
+    },
+    {
+     "city": "Mannheim",
+     "country": "Germany",
+     "facility": "Medizinische Fakultät Mannheim der Universität Heidelberg",
+     "geoPoint": {
+      "lat": 49.4891,
+      "lon": 8.46694
+     }
+    },
+    {
+     "city": "Rostock",
+     "country": "Germany",
+     "facility": "University Medical Center Rostock",
+     "geoPoint": {
+      "lat": 54.0887,
+      "lon": 12.14049
+     }
+    },
+    {
+     "city": "Ulm",
+     "country": "Germany",
+     "facility": "Ulm University Medical Centre",
+     "geoPoint": {
+      "lat": 48.39841,
+      "lon": 9.99155
+     }
+    },
+    {
+     "city": "Dublin",
+     "country": "Ireland",
+     "facility": "Trinity College Dublin/Beaumont Hospital",
+     "geoPoint": {
+      "lat": 53.33306,
+      "lon": -6.24889
+     }
+    },
+    {
+     "city": "Bari",
+     "country": "Italy",
+     "facility": "Università degli Studi di Bari Aldo Moro",
+     "geoPoint": {
+      "lat": 41.12066,
+      "lon": 16.86982
+     }
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "Centro Clinico NEMO",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     }
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "University of Milan Medical School",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     }
+    },
+    {
+     "city": "Modena",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliero Universitaria Di Modena",
+     "geoPoint": {
+      "lat": 44.64783,
+      "lon": 10.92539
+     }
+    },
+    {
+     "city": "Naples",
+     "country": "Italy",
+     "facility": "Università degli Studi della Campania Luigi Vanvitelli",
+     "geoPoint": {
+      "lat": 40.85216,
+      "lon": 14.26811
+     }
+    },
+    {
+     "city": "Padova",
+     "country": "Italy",
+     "facility": "University of Padua",
+     "geoPoint": {
+      "lat": 44.38225,
+      "lon": 11.14261
+     }
+    },
+    {
+     "city": "Turin",
+     "country": "Italy",
+     "facility": "University of Torino",
+     "geoPoint": {
+      "lat": 45.07049,
+      "lon": 7.68682
+     }
+    },
+    {
+     "city": "Utrecht",
+     "country": "Netherlands",
+     "facility": "University Medical Center Utrecht",
+     "geoPoint": {
+      "lat": 52.09083,
+      "lon": 5.12222
+     }
+    },
+    {
+     "city": "Krakow",
+     "country": "Poland",
+     "facility": "Centrum Medyczne Linden",
+     "geoPoint": {
+      "lat": 50.06143,
+      "lon": 19.93658
+     }
+    },
+    {
+     "city": "Warsaw",
+     "country": "Poland",
+     "facility": "City Clinic Warsaw",
+     "geoPoint": {
+      "lat": 52.22977,
+      "lon": 21.01178
+     }
+    },
+    {
+     "city": "Lisbon",
+     "country": "Portugal",
+     "facility": "Centro Hospitalar Universitário Lisboa-Norte",
+     "geoPoint": {
+      "lat": 38.72509,
+      "lon": -9.1498
+     }
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital del Mar",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     }
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital Universitari de Bellvitge-IDIBELL",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     }
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital San Rafael",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     }
+    },
+    {
+     "city": "San Sebastián",
+     "country": "Spain",
+     "facility": "Biodonostia Health Research Institute; Hospital Universitario Donostia",
+     "geoPoint": {
+      "lat": 43.56667,
+      "lon": -5.9
+     }
+    },
+    {
+     "city": "Valencia",
+     "country": "Spain",
+     "facility": "Hospital Universitario y Politécnico La Fe",
+     "geoPoint": {
+      "lat": 39.47391,
+      "lon": -0.37966
+     }
+    },
+    {
+     "city": "Stockholm",
+     "country": "Sweden",
+     "facility": "Karolinska Institutet",
+     "geoPoint": {
+      "lat": 59.32938,
+      "lon": 18.06871
+     }
+    },
+    {
+     "city": "Umeå",
+     "country": "Sweden",
+     "facility": "Umeå University Hospital",
+     "geoPoint": {
+      "lat": 63.82842,
+      "lon": 20.25972
+     }
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "King's College London",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     }
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "UCL Queen Square Institute of Neurology",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     }
+    },
+    {
+     "city": "Plymouth",
+     "country": "United Kingdom",
+     "facility": "University of Plymouth",
+     "geoPoint": {
+      "lat": 50.37153,
+      "lon": -4.14305
+     }
+    },
+    {
+     "city": "Salford",
+     "country": "United Kingdom",
+     "facility": "Salford Royal Hospital Barnes",
+     "geoPoint": {
+      "lat": 53.48771,
+      "lon": -2.29042
+     }
+    },
+    {
+     "city": "Sheffield",
+     "country": "United Kingdom",
+     "facility": "Sheffield Institute for Translational Neuroscience (SITraN)",
+     "geoPoint": {
+      "lat": 53.38297,
+      "lon": -1.4659
+     }
+    }
+   ],
+   "overallOfficials": [
+    {
+     "affiliation": "Amylyx Pharmaceuticals",
+     "name": "Amylyx Study Director",
+     "role": "STUDY_DIRECTOR"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "The Phoenix Trial is a randomized double blind placebo controlled Phase III trial to evaluate the safety and efficacy of AMX0035 for treatment of ALS",
+   "detailedDescription": "AMX0035 is a combination therapy designed to reduce neuronal death through blockade of key cellular death pathways originating in the mitochondria and endoplasmic reticulum (ER). This clinical trial is designed to demonstrate that treatment is safe, tolerable, and able to slow decline in function as measured by the ALSFRS-R and survival over 48 week. The trial will also assess the effects of AMX0035 on slow vital capacity, quality of life and plasma biomarkers of ALS."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "QUADRUPLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "CARE_PROVIDER",
+      "INVESTIGATOR",
+      "OUTCOMES_ASSESSOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 664,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE3"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Male or female, at least 18 years of age\n* Diagnosis of ALS (definite or clinically probable)\n* Time since onset of first symptom of ALS should be \\<24 months prior to randomization;\n* If the participant is to be treated with riluzole and/or edaravone during the course of the trial, then treatment with riluzole and/or edaravone was, at the time of the screening visit, started and maintained at a stable regimen for at least 14 days for riluzole and/or for a full treatment cycle for edaravone;\n* Capable of providing informed consent\n* Capable and willing to follow trial procedures including visits to the trial clinic and visit requirements;\n* Women of child bearing potential (e.g. not post-menopausal for at least one year or surgically sterile) must agree to use adequate birth control for the duration of the study and 3 months after last dose of study drug. Women must not be planning to become pregnant for the duration of the study and 3 months after last dose of study drug\n* Men must agree to practice contraception for the duration of the study and 3 months after last dose of study drug. Men must not plan to father a child or provide for sperm donation for the duration of the study and 3 months after last dose of study drug\n\nExclusion Criteria:\n\n* Presence of tracheostomy or permanent assisted ventilation(PAV)\n* Slow Vital Capacity (SVC) less than 55%\n* History of known allergy to phenyl butyrate or bile salts\n* Abnormal liver function defined as bilirubin levels and/or aspartate aminotransferase (AST) and/or alanine aminotransferase (ALT) \\> 5 times the upper limit of the normal (obtained within 12 weeks from first dose)\n* Renal insufficiency as defined by eGFR \\<60 mL/min/1.73m\\^2 (obtained within 12 weeks from first dose)\n* Pregnant women (confirmed by a pregnancy test within 7 days of first dose) or women currently breastfeeding\n* Current severe biliary disease which may result in the Investigator medical judgement in biliary obstruction including for example active cholecystitis, primary biliary cirrhosis, sclerosing cholangitis, gallbladder cancer, gangrene of the gallbladder, abscess of the gallbladder\n* History of Class III/IV heart failure (per New York Heart Association - NYHA)\n* Participant under severe salt restriction where the added salt intake due to treatment would put the participant at risk, in the Investigator clinical judgment\n* Presence of unstable psychiatric disease, cognitive impairment, dementia or substance abuse that would impair ability of the participant to provide informed consent, according to Investigator judgment\n* Clinically significant unstable medical condition (other than ALS) (e.g., cardiovascular instability, systemic infection, untreated thyroid dysfunction, severe laboratory test anomaly or clinically significant electrocardiogram \\[ECG\\] changes) that would pose a risk to the participant if he/she were to participate in the trial, according to Investigator judgment\n* Previous treatment for ALS with cellular therapies or gene therapies\n* Currently enrolled in another trial involving use of an investigational therapy\n* Previous treatment with PB or taurursodiol within 30 days from Screening\n* Implantation of Diaphragm Pacing System (DPS)\n* Currently or previously treated within the last 30 days or planned exposure to any prohibited medications listed in Section 6.8 of the protocol",
+   "healthyVolunteers": false,
+   "minimumAge": "18 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "acronym": "Phoenix",
+   "briefTitle": "Phase III Trial of AMX0035 for Amyotrophic Lateral Sclerosis Treatment",
+   "nctId": "NCT05021536",
+   "officialTitle": "A Phase III, Randomized, Double-Blind, Placebo-Controlled, Multicenter Trial to Evaluate the Safety and Efficacy of AMX0035 Versus Placebo for 48-week Treatment of Adult Patients With Amyotrophic Lateral Sclerosis (ALS)",
+   "orgStudyIdInfo": {
+    "id": "A35-004"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Amylyx Pharmaceuticals Inc."
+   }
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "description": "Change in slope of Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised (ALSFRS-R) over treatment duration. The ALSFRS-R consists of 12 items across 4 subdomains of function (bulbar, fine motor, gross motor, and breathing) with each item scored on a scale from 0 (total loss of function) to 4 (no loss of function). Total scores range from 0 to 48, with higher scores indicating better function.",
+     "measure": "Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised (ALSFRS-R) Slope Change",
+     "timeFrame": "48 weeks"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "description": "QOL will be measured using the 40-item Amyotrophic Lateral Sclerosis Assessment Questionnaire (ALSAQ-40) patient-reported outcome (PRO)",
+     "measure": "Participant Quality of Life (QOL)",
+     "timeFrame": "48 weeks"
+    },
+    {
+     "description": "Long-Term Survival will be obtained by monitoring of all-cause mortality",
+     "measure": "Assess Long-Term Survival",
+     "timeFrame": "3 years from LPI"
+    },
+    {
+     "description": "Respiratory muscle function will be assessed according to slow vital capacity (SVC). SVC is measured in an upright position for at least three trials per assessment. SVC volumes will be standardized to the percentage of predicted normal value based on age, sex, and height.",
+     "measure": "Rate of Decline in Slow Vital Capacity (SVC)",
+     "timeFrame": "48 weeks"
+    },
+    {
+     "description": "Change in slope of Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised (ALSFRS-R) over treatment duration. The ALSFRS-R consists of 12 items across 4 subdomains of function (bulbar, fine motor, gross motor, and breathing) with each item scored on a scale from 0 (total loss of function) to 4 (no loss of function). Total scores range from 0 to 48, with higher scores indicating better function.",
+     "measure": "Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised (ALSFRS-R) Slope Change",
+     "timeFrame": "24 weeks"
+    },
+    {
+     "description": "Comparison Between Groups of Number of Participants With Adverse Events Until Planned Completion",
+     "measure": "Number of Participants With Adverse Events",
+     "timeFrame": "48 weeks"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true,
+   "oversightHasDmc": true
+  },
+  "sponsorCollaboratorsModule": {
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Amylyx Pharmaceuticals Inc."
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2026-01-01",
+    "type": "ESTIMATED"
+   },
+   "lastKnownStatus": "ACTIVE_NOT_RECRUITING",
+   "lastUpdatePostDateStruct": {
+    "date": "2024-08-14",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2024-08-09",
+   "overallStatus": "UNKNOWN",
+   "primaryCompletionDateStruct": {
+    "date": "2024-01-19",
+    "type": "ACTUAL"
+   },
+   "startDateStruct": {
+    "date": "2021-10-28",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2024-08",
+   "studyFirstPostDateStruct": {
+    "date": "2021-08-25",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2021-08-20",
+   "studyFirstSubmitQcDate": "2021-08-20"
+  }
+ }
+}

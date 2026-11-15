@@ -1,0 +1,18 @@
+id: T-011
+title: Send the follow-up question to NCATS and the AWS account steps
+owner: owner
+classification: routine
+status: open
+closes: []
+objective: Send docs/ORGANIZER_FOLLOWUP_NCATS.md; redeem AWS credits and add billing alarms; add AWS and NVIDIA credentials
+  to Claude Science (Customize -> Credentials).
+read_first:
+- docs/ORGANIZER_FOLLOWUP_NCATS.md
+editable_paths: []
+do_not_touch: []
+acceptance:
+- message sent
+- credentials added
+validations: []
+stop_rule: None.
+handoff: Tell the agent when done; it records the answer in the ledger.

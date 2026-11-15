@@ -1,0 +1,652 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D009136",
+     "term": "Muscular Dystrophies"
+    },
+    {
+     "id": "D020966",
+     "term": "Muscular Disorders, Atrophic"
+    },
+    {
+     "id": "D009135",
+     "term": "Muscular Diseases"
+    },
+    {
+     "id": "D009140",
+     "term": "Musculoskeletal Diseases"
+    },
+    {
+     "id": "D020271",
+     "term": "Heredodegenerative Disorders, Nervous System"
+    },
+    {
+     "id": "D019636",
+     "term": "Neurodegenerative Diseases"
+    },
+    {
+     "id": "D009422",
+     "term": "Nervous System Diseases"
+    },
+    {
+     "id": "D009468",
+     "term": "Neuromuscular Diseases"
+    },
+    {
+     "id": "D030342",
+     "term": "Genetic Diseases, Inborn"
+    },
+    {
+     "id": "D009358",
+     "term": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+    },
+    {
+     "id": "D020879",
+     "term": "Neuromuscular Manifestations"
+    },
+    {
+     "id": "D009461",
+     "term": "Neurologic Manifestations"
+    },
+    {
+     "id": "D012816",
+     "term": "Signs and Symptoms"
+    },
+    {
+     "id": "D013568",
+     "term": "Pathological Conditions, Signs and Symptoms"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D009223",
+     "term": "Myotonic Dystrophy"
+    },
+    {
+     "id": "D009222",
+     "term": "Myotonia"
+    },
+    {
+     "id": "D020967",
+     "term": "Myotonic Disorders"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "removedCountries": [
+    "Ireland"
+   ],
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "hasResults": false,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "description": "Del-desiran (AOC 1001) will be administered seven times",
+     "interventionNames": [
+      "Drug: AOC 1001 (del-desiran)"
+     ],
+     "label": "Del-desiran",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "Saline will be administered seven times",
+     "interventionNames": [
+      "Drug: Placebo"
+     ],
+     "label": "Placebo",
+     "type": "PLACEBO_COMPARATOR"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Del-desiran"
+     ],
+     "description": "Del-desiran will be administered by intravenous (IV) infusion.",
+     "name": "AOC 1001 (del-desiran)",
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Placebo"
+     ],
+     "description": "Placebo will be administered by intravenous (IV) infusion.",
+     "name": "Placebo",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "DM1",
+    "Myotonic Dystrophy",
+    "Myotonic Dystrophy 1",
+    "Myotonia",
+    "Myotonic Dystrophy Type 1 (DM1)",
+    "Dystrophy Myotonic",
+    "Myotonic Disorders",
+    "Steinert Disease",
+    "Steinert",
+    "Myotonic Muscular Dystrophy"
+   ],
+   "keywords": [
+    "DM1",
+    "Myotonic Dystrophy",
+    "Myotonic Dystrophy 1",
+    "Myotonia",
+    "Myotonic Dystrophy Type 1 (DM1)",
+    "Dystrophy Myotonic",
+    "Myotonic Disorders",
+    "Steinert Disease",
+    "Steinert",
+    "Myotonic Muscular Dystrophy",
+    "HARBOR",
+    "Avidity Biosciences",
+    "Avidity",
+    "AOC 1001",
+    "Del-desiran",
+    "Delpacibart etedesiran"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Stanford",
+     "country": "United States",
+     "facility": "Stanford University",
+     "geoPoint": {
+      "lat": 37.42411,
+      "lon": -122.16608
+     },
+     "state": "California",
+     "zip": "94305"
+    },
+    {
+     "city": "Denver",
+     "country": "United States",
+     "facility": "University of Colorado",
+     "geoPoint": {
+      "lat": 39.73915,
+      "lon": -104.9847
+     },
+     "state": "Colorado",
+     "zip": "80045"
+    },
+    {
+     "city": "Gainesville",
+     "country": "United States",
+     "facility": "University of Florida",
+     "geoPoint": {
+      "lat": 29.65163,
+      "lon": -82.32483
+     },
+     "state": "Florida",
+     "zip": "32608"
+    },
+    {
+     "city": "Tampa",
+     "country": "United States",
+     "facility": "University Research Center of South Florida",
+     "geoPoint": {
+      "lat": 27.94752,
+      "lon": -82.45843
+     },
+     "state": "Florida",
+     "zip": "33612"
+    },
+    {
+     "city": "Indianapolis",
+     "country": "United States",
+     "facility": "Indiana University (IU)",
+     "geoPoint": {
+      "lat": 39.76838,
+      "lon": -86.15804
+     },
+     "state": "Indiana",
+     "zip": "46202"
+    },
+    {
+     "city": "Kansas City",
+     "country": "United States",
+     "facility": "Kansas University Medical Center",
+     "geoPoint": {
+      "lat": 39.11417,
+      "lon": -94.62746
+     },
+     "state": "Kansas",
+     "zip": "66205"
+    },
+    {
+     "city": "Baltimore",
+     "country": "United States",
+     "facility": "Kennedy Krieger Institute",
+     "geoPoint": {
+      "lat": 39.29038,
+      "lon": -76.61219
+     },
+     "state": "Maryland",
+     "zip": "21205"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Beth Israel Deaconess Medical Center",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02215"
+    },
+    {
+     "city": "Minneapolis",
+     "country": "United States",
+     "facility": "University of Minnesota",
+     "geoPoint": {
+      "lat": 44.97997,
+      "lon": -93.26384
+     },
+     "state": "Minnesota",
+     "zip": "55455"
+    },
+    {
+     "city": "Rochester",
+     "country": "United States",
+     "facility": "University of Rochester Medical Center",
+     "geoPoint": {
+      "lat": 43.15478,
+      "lon": -77.61556
+     },
+     "state": "New York",
+     "zip": "14642"
+    },
+    {
+     "city": "Durham",
+     "country": "United States",
+     "facility": "Duke University Medical Center",
+     "geoPoint": {
+      "lat": 35.99403,
+      "lon": -78.89862
+     },
+     "state": "North Carolina",
+     "zip": "27708"
+    },
+    {
+     "city": "Winston-Salem",
+     "country": "United States",
+     "facility": "Wake Forest",
+     "geoPoint": {
+      "lat": 36.09986,
+      "lon": -80.24422
+     },
+     "state": "North Carolina",
+     "zip": "27157"
+    },
+    {
+     "city": "Cincinnati",
+     "country": "United States",
+     "facility": "University of Cincinnati Gardner Neuroscience Institute",
+     "geoPoint": {
+      "lat": 39.12711,
+      "lon": -84.51439
+     },
+     "state": "Ohio",
+     "zip": "45219"
+    },
+    {
+     "city": "Columbus",
+     "country": "United States",
+     "facility": "Ohio State University",
+     "geoPoint": {
+      "lat": 39.96118,
+      "lon": -82.99879
+     },
+     "state": "Ohio",
+     "zip": "43221"
+    },
+    {
+     "city": "Philadelphia",
+     "country": "United States",
+     "facility": "University of Pennsylvania",
+     "geoPoint": {
+      "lat": 39.95238,
+      "lon": -75.16362
+     },
+     "state": "Pennsylvania",
+     "zip": "19104"
+    },
+    {
+     "city": "Houston",
+     "country": "United States",
+     "facility": "Houston Methodist Neurological Institute",
+     "geoPoint": {
+      "lat": 29.76328,
+      "lon": -95.36327
+     },
+     "state": "Texas",
+     "zip": "77030"
+    },
+    {
+     "city": "Richmond",
+     "country": "United States",
+     "facility": "Virginia Commonwealth University",
+     "geoPoint": {
+      "lat": 37.55376,
+      "lon": -77.46026
+     },
+     "state": "Virginia",
+     "zip": "23298"
+    },
+    {
+     "city": "Seattle",
+     "country": "United States",
+     "facility": "University of Washington",
+     "geoPoint": {
+      "lat": 47.60621,
+      "lon": -122.33207
+     },
+     "state": "Washington",
+     "zip": "98104"
+    },
+    {
+     "city": "Ottawa",
+     "country": "Canada",
+     "facility": "The Ottawa Hospital",
+     "geoPoint": {
+      "lat": 45.41117,
+      "lon": -75.69812
+     },
+     "state": "Ontario",
+     "zip": "K1Y 4E9"
+    },
+    {
+     "city": "Montreal",
+     "country": "Canada",
+     "facility": "Montreal Neurological Institute",
+     "geoPoint": {
+      "lat": 45.50884,
+      "lon": -73.58781
+     },
+     "state": "Quebec",
+     "zip": "H3A 2B4"
+    },
+    {
+     "city": "Aarhus N",
+     "country": "Denmark",
+     "facility": "Aarhus University Hospital",
+     "geoPoint": {
+      "lat": 56.20367,
+      "lon": 10.17317
+     },
+     "zip": "8200"
+    },
+    {
+     "city": "Copenhagen",
+     "country": "Denmark",
+     "facility": "Rigshospitalet",
+     "geoPoint": {
+      "lat": 55.67594,
+      "lon": 12.56553
+     },
+     "zip": "2100"
+    },
+    {
+     "city": "Paris",
+     "country": "France",
+     "facility": "AP-HP Hopital Pitie-Salpetriere",
+     "geoPoint": {
+      "lat": 48.85341,
+      "lon": 2.3488
+     },
+     "zip": "75013"
+    },
+    {
+     "city": "Munich",
+     "country": "Germany",
+     "facility": "Klinikum der Ludwig-Maximilians-Universitaet Muenchen",
+     "geoPoint": {
+      "lat": 48.13743,
+      "lon": 11.57549
+     },
+     "zip": "80336"
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "Fondazione Serena Onlus - Centro Clinico NeMO Milano",
+     "geoPoint": {
+      "lat": 42.78235,
+      "lon": 12.59836
+     },
+     "zip": "20162"
+    },
+    {
+     "city": "Aomori",
+     "country": "Japan",
+     "facility": "Aomori Hospital",
+     "geoPoint": {
+      "lat": 40.81667,
+      "lon": 140.73333
+     },
+     "state": "Aomori",
+     "zip": "038-1331"
+    },
+    {
+     "city": "Osaka",
+     "country": "Japan",
+     "facility": "National Hospital Organization Osaka Toneyama Medical Center",
+     "geoPoint": {
+      "lat": 34.69379,
+      "lon": 135.50107
+     },
+     "zip": "560-8552"
+    },
+    {
+     "city": "Osaka",
+     "country": "Japan",
+     "facility": "Osaka University Hospital",
+     "geoPoint": {
+      "lat": 34.69379,
+      "lon": 135.50107
+     },
+     "zip": "565-0871"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "National Center of Neurology and Psychiatry",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "187-8551"
+    },
+    {
+     "city": "Maastricht",
+     "country": "Netherlands",
+     "facility": "Maastricht University Medical Center",
+     "geoPoint": {
+      "lat": 50.84833,
+      "lon": 5.68889
+     },
+     "zip": "6229 HX"
+    },
+    {
+     "city": "Nijmegen",
+     "country": "Netherlands",
+     "facility": "Stichting Radboud Universitair Medisch Centrum",
+     "geoPoint": {
+      "lat": 51.8425,
+      "lon": 5.85278
+     },
+     "zip": "6525 GA"
+    },
+    {
+     "city": "Donostia / San Sebastian",
+     "country": "Spain",
+     "facility": "Hospital Universitario Donostia",
+     "geoPoint": {
+      "lat": 43.31283,
+      "lon": -1.97499
+     },
+     "zip": "20014"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "University College London Hospital",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "NW1 2BU"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "St. Georges University Hospitals NHS Foundation Trust",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "zip": "SW17 0QT"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "A Phase 3 Randomized, Double-Blind, Placebo-Controlled, Global Study to Evaluate the Efficacy and Safety of Intravenous Delpacibart Etedesiran (abbreviated del-desiran, formerly AOC 1001) for the Treatment of Myotonic Dystrophy Type 1",
+   "detailedDescription": "The study consists of a Screening Period of up to 6 weeks and 54-week Treatment Period. The anticipated duration is approximately 60 weeks.\n\nParticipants will be randomized to receive an intravenous infusion of either del-desiran or placebo at the clinical study site every 8 weeks for a total of 7 doses. The final dose will occur at Week 48, followed by a final assessment at Week 54.\n\nAfter completion of Week 54 assessments, eligible participants will have the option to enroll into an open label extension (OLE) study, pending regulatory approval.\n\nAn Independent Data Monitoring Committee (IDMC) comprised of members independent and external to the Sponsor will review safety, tolerability, and efficacy (as needed) data of this study at regular intervals."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "QUADRUPLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "CARE_PROVIDER",
+      "INVESTIGATOR",
+      "OUTCOMES_ASSESSOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 159,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE3"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Key Inclusion Criteria:\n\n* Clinical and genetic diagnosis (CTG repeat ≥ 100) of DM1\n* Ability to walk independently (orthoses and ankle braces allowed) for at least 10 meters at screening\n\nKey Exclusion Criteria:\n\n* Breastfeeding, pregnancy, or intent to become pregnant during the study\n* Unwilling or unable to comply with contraceptive requirements\n* Abnormal lab values, conditions or diseases that would make the participant unsuitable for the study\n* Diabetes that is not adequately controlled\n* History of decompensated heart failure within 3 months of screening. Participants with preexisting pacemaker/ICD are not excluded.\n* Body Mass Index \\> 35 kg/m2 at Screening\n* Recently treated with an investigational drug or biological agent\n* Treatment with anti-myotonic medication within 5 half-lives or 14 days of baseline, whichever is longer, prior to baseline.\n\nNote: Additional protocol defined Inclusion and Exclusion criteria apply",
+   "healthyVolunteers": false,
+   "maximumAge": "65 Years",
+   "minimumAge": "16 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "CHILD",
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "acronym": "HARBOR",
+   "briefTitle": "Global Study of Del-desiran for the Treatment of DM1",
+   "nctId": "NCT06411288",
+   "officialTitle": "A Phase 3 Randomized, Double-Blind, Placebo-Controlled, Global Study to Evaluate the Efficacy and Safety of Intravenous AOC 1001 for the Treatment of Myotonic Dystrophy Type 1",
+   "orgStudyIdInfo": {
+    "id": "AOC 1001-CS3"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Avidity Biosciences, Inc."
+   }
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "UNDECIDED"
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "description": "video Hand Opening Time (vHOT)",
+     "measure": "Hand function",
+     "timeFrame": "Through Week 54"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "description": "by dynamometer",
+     "measure": "Hand grip strength",
+     "timeFrame": "Through Week 54"
+    },
+    {
+     "description": "by dynamometer",
+     "measure": "Quantitative Muscle Testing composite score",
+     "timeFrame": "Through Week 54"
+    },
+    {
+     "measure": "Myotonic Dystrophy Type 1 activity and participation scale c",
+     "timeFrame": "Through Week 54"
+    },
+    {
+     "description": "Time (in seconds) to walk or run 10 meters",
+     "measure": "10-Meter Walk/Run Test",
+     "timeFrame": "Through Week 54"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true,
+   "oversightHasDmc": true
+  },
+  "sponsorCollaboratorsModule": {
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Avidity Biosciences, Inc."
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2026-07-29",
+    "type": "ACTUAL"
+   },
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "lastUpdatePostDateStruct": {
+    "date": "2026-09-01",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-08-28",
+   "overallStatus": "COMPLETED",
+   "primaryCompletionDateStruct": {
+    "date": "2026-07-23",
+    "type": "ACTUAL"
+   },
+   "startDateStruct": {
+    "date": "2024-05-30",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2026-08",
+   "studyFirstPostDateStruct": {
+    "date": "2024-05-13",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2024-05-08",
+   "studyFirstSubmitQcDate": "2024-05-08"
+  }
+ }
+}

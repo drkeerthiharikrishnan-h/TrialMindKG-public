@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+TAURURSODIOL,patient.drug.medicinalproduct,46,DIARRHOEA,8
+TAURURSODIOL,patient.drug.medicinalproduct,46,GASTROINTESTINAL DISORDER,6
+TAURURSODIOL,patient.drug.medicinalproduct,46,ABDOMINAL PAIN UPPER,5
+TAURURSODIOL,patient.drug.medicinalproduct,46,OFF LABEL USE,5
+TAURURSODIOL,patient.drug.medicinalproduct,46,PRODUCT DOSE OMISSION ISSUE,5
+TAURURSODIOL,patient.drug.medicinalproduct,46,ADVERSE EVENT,4
+TAURURSODIOL,patient.drug.medicinalproduct,46,DECREASED APPETITE,4
+TAURURSODIOL,patient.drug.medicinalproduct,46,DIZZINESS,4
+TAURURSODIOL,patient.drug.medicinalproduct,46,DYSPNOEA,4
+TAURURSODIOL,patient.drug.medicinalproduct,46,MALAISE,4
+TAURURSODIOL,patient.drug.medicinalproduct,46,NAUSEA,4
+TAURURSODIOL,patient.drug.medicinalproduct,46,PRODUCT USE COMPLAINT,4
+TAURURSODIOL,patient.drug.medicinalproduct,46,ABDOMINAL PAIN,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,ASTHENIA,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,BURNING SENSATION,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,ERYTHEMA,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,ILLNESS,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,INTENTIONAL DOSE OMISSION,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,MUSCULAR WEAKNESS,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,PRURITUS,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,RASH MACULO-PAPULAR,3
+TAURURSODIOL,patient.drug.medicinalproduct,46,ABDOMINAL DISTENSION,2
+TAURURSODIOL,patient.drug.medicinalproduct,46,ATRIAL FIBRILLATION,2
+TAURURSODIOL,patient.drug.medicinalproduct,46,CHOKING,2
+TAURURSODIOL,patient.drug.medicinalproduct,46,COUGH,2

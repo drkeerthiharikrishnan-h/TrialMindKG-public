@@ -1,0 +1,31 @@
+id: T-010
+title: Generalization demo, stranger test, video, submission text, final gates
+owner: any
+classification: routine
+status: open
+closes:
+- stranger_test_logged
+- bring_your_own_source
+objective: 'docs/BRING_YOUR_OWN_SOURCE.md: a non-Pharos source goes from CSV to a queryable KG with verdicts using the source-card
+  builder; docs/STRANGER_TEST.md from the owner''s colleague session; 3-5 minute video script; submission text with every
+  number copied from a committed file; run the scorecard gates.'
+read_first:
+- docs/archive/BUILD_ROLES.md section 3
+- CLAUDE.md UPDATE 2026-11-04
+editable_paths:
+- docs/BRING_YOUR_OWN_SOURCE.md
+- docs/STRANGER_TEST.md
+- docs/SUBMISSION.md
+- README.md
+do_not_touch:
+- data/internal/
+- .env
+- pipelines/linkpred/run.py (frozen protocol)
+- outputs/linkpred/*@frozen_a.json
+acceptance:
+- a new reader can follow BRING_YOUR_OWN_SOURCE.md without opening code
+- submission numbers all resolve to committed files
+validations:
+- .venv/bin/python -m pytest -q -p no:cacheprovider --ignore=.env tests/test_numbers_page.py
+stop_rule: Feature freeze Nov 12 18:00; submit Nov 16.
+handoff: Owner records the video Nov 12.

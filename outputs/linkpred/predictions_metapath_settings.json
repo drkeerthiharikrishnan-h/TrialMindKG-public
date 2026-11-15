@@ -1,0 +1,59 @@
+{
+  "settings": {
+    "graph": "G3",
+    "model": "metapath",
+    "max_len": 3,
+    "max_shapes": 200,
+    "batch": 512,
+    "tasks": [
+      "B"
+    ],
+    "top": null,
+    "top_subject": 10,
+    "top_object": 10,
+    "objects": "curated",
+    "workers": 16,
+    "start_method": "auto",
+    "explain_chunk": 2000,
+    "epochs": 200,
+    "hidden": 128,
+    "device": "cpu",
+    "reverse_edges": false,
+    "learn_embeddings": false,
+    "num_bases": 0,
+    "neg_pool": "all",
+    "positives": "assertions",
+    "drop_levels": [
+      "text_co_occurrence"
+    ],
+    "test_levels": [],
+    "max_edges": 0,
+    "sample_fraction": 0,
+    "keep_whole": null
+  },
+  "explain": {
+    "B": {
+      "objects": "curated",
+      "workers": 16,
+      "chunk": 2000,
+      "pairs": 269889,
+      "seconds": 2594.2,
+      "start_method": "fork",
+      "ms_per_pair": 9.61,
+      "candidate_objects": 7364
+    }
+  },
+  "preparation": {
+    "B": {
+      "dropped": {
+        "Gene|gene_associated_with_condition|Disease": 13093836
+      },
+      "moved_to_context": 501743,
+      "levels_moved": [
+        "not_provided",
+        "statistical_association"
+      ]
+    }
+  },
+  "rows": 277490
+}

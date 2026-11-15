@@ -1,0 +1,403 @@
+{
+ "question": "Why did TULIP-1 miss its primary endpoint, and what changed later?",
+ "seeds": [
+  "NCT:NCT02446912",
+  "P19"
+ ],
+ "sections": [
+  {
+   "role": "failure_diagnostician",
+   "title": "Failure Diagnosis",
+   "claims": [
+    {
+     "claim": "TULIP-1 missed its primary endpoint of SRI[4] at Week 52, with a mean difference of -4.2 (95% CI: -14.2 to 5.8) and p-value of 0.412 under the original analysis with restricted medication rules.",
+     "evidence_status": "prespecified",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "ee446698536cc3289",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:has_outcome_measure",
+       "object": "OUTCOME:NCT02446912:P1",
+       "source": "ClinicalTrials.gov",
+       "source_record": "NCT02446912",
+       "evidence_type": "registry",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      }
+     ]
+    },
+    {
+     "claim": "After TULIP-1 failed, AstraZeneca pivoted to using BICLA as the primary endpoint for TULIP-2, which succeeded and led to US approval of Saphnelo in 2021.",
+     "evidence_status": "curated_summary",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "ea1720c666f66cedf",
+       "subject": "P19",
+       "predicate": "tmkg:has_post_failure_analysis",
+       "object": "DEV:post_failure:1",
+       "source": "curated:failed_clinical_trials_2016_2026.md",
+       "source_record": "section 'How analysis after failure changed development' row 1",
+       "evidence_type": "curated",
+       "retrieved": "2026-09-08",
+       "raw_response": null
+      }
+     ]
+    },
+    {
+     "claim": "Post-hoc analyses of TULIP-1 with revised restricted medication rules showed a significant improvement in OCS reduction (mean difference 16.7, 95% CI: 3.5 to 29.8, p=0.013) and BICLA response (mean difference 16.4, 95% CI: 6.7 to 26.2), but these were not the original primary endpoint.",
+     "evidence_status": "post_hoc",
+     "uncertainty": "medium",
+     "evidence": [
+      {
+       "id": "e53a4ee1040daffb3",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:has_outcome_measure",
+       "object": "OUTCOME:NCT02446912:O3",
+       "source": "ClinicalTrials.gov",
+       "source_record": "NCT02446912",
+       "evidence_type": "registry",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      },
+      {
+       "id": "ef992580175db8f32",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:has_outcome_measure",
+       "object": "OUTCOME:NCT02446912:O6",
+       "source": "ClinicalTrials.gov",
+       "source_record": "NCT02446912",
+       "evidence_type": "registry",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      }
+     ]
+    }
+   ],
+   "subgraph": {
+    "nodes": 27,
+    "edges": 26
+   },
+   "note": null
+  },
+  {
+   "role": "population_stratifier",
+   "title": "Candidate Responder Population",
+   "claims": [
+    {
+     "claim": "TULIP-1 missed its primary endpoint of SRI[4] at Week 52, showing a mean difference of -4.2 (95% CI: -14.2 to 5.8, p=0.412) under original analysis with restricted medication rules.",
+     "evidence_status": "prespecified",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "ee446698536cc3289",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:has_outcome_measure",
+       "object": "OUTCOME:NCT02446912:P1",
+       "source": "ClinicalTrials.gov",
+       "source_record": "NCT02446912",
+       "evidence_type": "registry",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      }
+     ]
+    },
+    {
+     "claim": "Post-hoc analyses with revised restricted medication rules showed a significant improvement in OCS reduction (≤7.5 mg/day) in the subgroup with baseline OCS ≥10 mg/day, with a mean difference of 16.7 (95% CI: 3.5 to 29.8, p=0.013) at Week 52.",
+     "evidence_status": "post_hoc",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "e53a4ee1040daffb3",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:has_outcome_measure",
+       "object": "OUTCOME:NCT02446912:O3",
+       "source": "ClinicalTrials.gov",
+       "source_record": "NCT02446912",
+       "evidence_type": "registry",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      }
+     ]
+    },
+    {
+     "claim": "After TULIP-1's failure, AstraZeneca pivoted to using BICLA as the primary endpoint for TULIP-2, which succeeded, leading to US approval of Saphnelo in 2021.",
+     "evidence_status": "curated_summary",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "ea1720c666f66cedf",
+       "subject": "P19",
+       "predicate": "tmkg:has_post_failure_analysis",
+       "object": "DEV:post_failure:1",
+       "source": "curated:failed_clinical_trials_2016_2026.md",
+       "source_record": "section 'How analysis after failure changed development' row 1",
+       "evidence_type": "curated",
+       "retrieved": "2026-09-08",
+       "raw_response": null
+      }
+     ]
+    }
+   ],
+   "subgraph": {
+    "nodes": 27,
+    "edges": 26
+   },
+   "note": null
+  },
+  {
+   "role": "indication_explorer",
+   "title": "Related Indications",
+   "claims": [
+    {
+     "claim": "TULIP-1 (NCT02446912) tested anifrolumab for systemic lupus erythematosus but missed its primary endpoint.",
+     "evidence_status": "curated_summary",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "e569512e3239982e0",
+       "subject": "P19",
+       "predicate": "tmkg:has_intervention",
+       "object": "CHEMBL:CHEMBL2364653",
+       "source": "curated:failed_clinical_trials_2016_2026.md",
+       "source_record": "inventory row P19",
+       "evidence_type": "curated",
+       "retrieved": "2026-09-08",
+       "raw_response": null
+      },
+      {
+       "id": "e6db1558b36e97d96",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:studies_condition",
+       "object": "MONDO:0007915",
+       "source": "curated:condition_overrides.csv",
+       "source_record": "NCT02446912 | Active Systemic Lupus Erythematosus",
+       "evidence_type": "curator_confirmed",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      },
+      {
+       "id": "e7f2fa46f1d3a7646",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:tests_intervention",
+       "object": "CHEMBL:CHEMBL2364653",
+       "source": "ClinicalTrials.gov",
+       "source_record": "NCT02446912",
+       "evidence_type": "registry",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      }
+     ]
+    }
+   ],
+   "subgraph": {
+    "nodes": 6,
+    "edges": 5
+   },
+   "note": null
+  },
+  {
+   "role": "redesign_advisor",
+   "title": "Evidence-Supported Redesign Options",
+   "claims": [
+    {
+     "claim": "After TULIP-1's failure, AstraZeneca evaluated the data and chose BICLA as the primary endpoint for TULIP-2, based on a more favorable response observed with this measure.",
+     "evidence_status": "curated_summary",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "ea1720c666f66cedf",
+       "subject": "P19",
+       "predicate": "tmkg:has_post_failure_analysis",
+       "object": "DEV:post_failure:1",
+       "source": "curated:failed_clinical_trials_2016_2026.md",
+       "source_record": "section 'How analysis after failure changed development' row 1",
+       "evidence_type": "curated",
+       "retrieved": "2026-09-08",
+       "raw_response": null
+      }
+     ]
+    },
+    {
+     "claim": "TULIP-2 succeeded using BICLA as the primary endpoint, leading to the approval of Saphnelo (anifrolumab) in the US in 2021, confirming the revised endpoint choice prospectively.",
+     "evidence_status": "prospectively_confirmed",
+     "uncertainty": "low",
+     "evidence": [
+      {
+       "id": "ea1720c666f66cedf",
+       "subject": "P19",
+       "predicate": "tmkg:has_post_failure_analysis",
+       "object": "DEV:post_failure:1",
+       "source": "curated:failed_clinical_trials_2016_2026.md",
+       "source_record": "section 'How analysis after failure changed development' row 1",
+       "evidence_type": "curated",
+       "retrieved": "2026-09-08",
+       "raw_response": null
+      }
+     ]
+    },
+    {
+     "claim": "Post-hoc analyses of TULIP-1 with revised restricted medication rules showed a significant improvement in OCS reduction (≤7.5 mg/day) in the subgroup with baseline OCS ≥10 mg/day, with a mean difference of 16.7 (p=0.013) at Week 52.",
+     "evidence_status": "post_hoc",
+     "uncertainty": "medium",
+     "evidence": [
+      {
+       "id": "e53a4ee1040daffb3",
+       "subject": "NCT:NCT02446912",
+       "predicate": "tmkg:has_outcome_measure",
+       "object": "OUTCOME:NCT02446912:O3",
+       "source": "ClinicalTrials.gov",
+       "source_record": "NCT02446912",
+       "evidence_type": "registry",
+       "retrieved": "2026-10-05T14:35:12Z",
+       "raw_response": "data/snapshots/aact/7879b62670a33ec8.json.gz"
+      }
+     ]
+    }
+   ],
+   "subgraph": {
+    "nodes": 27,
+    "edges": 26
+   },
+   "note": null
+  }
+ ],
+ "rejected": [
+  {
+   "role": "redesign_advisor",
+   "claim": "TULIP-1 missed its primary endpoint of SRI[4] at Week 52, showing a mean difference of -4.2 (p=0.412) in the original analysis with restricted medication rules.",
+   "reasons": [
+    "verifier: The claim states that TULIP-1 missed its primary endpoint of SRI[4] at Week 52 with a mean difference of -4.2 (p=0.412). However, the FACTS show that the mean difference of -4.2 and p-value of 0.412 are associated with the 'Original Analysis With Restricted Medication Rules', not the overall primary analysis. The claim does not specify this restriction, making it potentially misleading or incomplete based solely on the provided facts."
+   ]
+  },
+  {
+   "role": "redesign_advisor",
+   "claim": "Post-hoc analyses of TULIP-1 with revised restricted medication rules showed a significant improvement in BICLA response at Week 52, with a mean difference of 16.4 (p_value null, but CI 6.7-26.2 excluding zero).",
+   "reasons": [
+    "numbers not in cited evidence: ['6']"
+   ]
+  }
+ ],
+ "run": {
+  "backend": "nim",
+  "models": [
+   [
+    "specialist",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   [
+    "verifier",
+    "nvidia/nemotron-3.5-lightning-30b-a3b"
+   ]
+  ],
+  "model_calls": [
+   {
+    "role": "specialist",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "backend": "nim",
+    "snapshot_key": "e23d81501afbc00b"
+   },
+   {
+    "role": "specialist",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "backend": "nim",
+    "snapshot_key": "e86cd363ddeded3f"
+   },
+   {
+    "role": "specialist",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "backend": "nim",
+    "snapshot_key": "32c00ca23ace91ac"
+   },
+   {
+    "role": "specialist",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "backend": "nim",
+    "snapshot_key": "92ce27ba3d2512b3"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "e9722d52e9472491"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "aec196751998722e"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "682b4fef2b568428"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "a93f7d0f44d7295c"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "9e1283515b24becb"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "bb8284be00007cae"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "5ce81213531394ba"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "4c1c5da223110fc8"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "cf409a5c994a5dae"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "267cf07aaf6d5c40"
+   },
+   {
+    "role": "verifier",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "backend": "nim",
+    "snapshot_key": "74e1439d0e916615"
+   }
+  ],
+  "graph_version": {
+   "edges_sha256": "9486b9ea20d91a1b436699f87aa5e92f78b2f48667226eeb799df81a3dba020e",
+   "snapshot": "9c447feedcabfed309ef71e507aae2f2949931fbf2bfba1c1ecef22fba69a62a",
+   "sources": {
+    "ChEMBL": "ChEMBL_37 (2026-05-01)",
+    "ClinicalTrials.gov via AACT": "AACT flat-file export, records frozen 2026-10-05 to 2026-10-05",
+    "Europe PMC": "live search (responses frozen in snapshot)",
+    "MONDO": "http://purl.obolibrary.org/obo/mondo/releases/2026-09-01/mondo.owl",
+    "Open Targets Platform": "26.09",
+    "Reactome": "v97",
+    "curated dataset": "failed_clinical_trials_2016_2026.md as of 2026-09-08 sha256 e248402b4b4c59cd",
+    "infores registry": "biolink/information-resource-registry infores_catalog.yaml (frozen in snapshot)"
+   }
+  },
+  "note": "Generated with NVIDIA NIM models listed above.",
+  "seconds": 0.14
+ }
+}

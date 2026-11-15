@@ -1,0 +1,3421 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D019967",
+     "term": "Schizophrenia Spectrum and Other Psychotic Disorders"
+    },
+    {
+     "id": "D001523",
+     "term": "Mental Disorders"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D012559",
+     "term": "Schizophrenia"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "C075257",
+     "term": "xanomeline"
+    },
+    {
+     "id": "C003330",
+     "term": "trospium chloride"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "submissionTracking": {
+    "firstMcpInfo": {
+     "postDateStruct": {
+      "date": "2026-04-06",
+      "type": "ACTUAL"
+     }
+    }
+   },
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "documentSection": {
+  "largeDocumentModule": {
+   "largeDocs": [
+    {
+     "date": "2024-07-30",
+     "filename": "Prot_SAP_001.pdf",
+     "hasIcf": false,
+     "hasProtocol": true,
+     "hasSap": true,
+     "label": "Study Protocol and Statistical Analysis Plan",
+     "size": 7089400,
+     "typeAbbrev": "Prot_SAP",
+     "uploadDate": "2026-04-15T11:42"
+    }
+   ]
+  }
+ },
+ "hasResults": true,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "interventionNames": [
+      "Drug: Xanomeline and Trospium Chloride Capsules"
+     ],
+     "label": "Drug: KarXT",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "interventionNames": [
+      "Drug: Placebo"
+     ],
+     "label": "Placebo",
+     "type": "PLACEBO_COMPARATOR"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Drug: KarXT"
+     ],
+     "description": "KarXT 50 mg/20 mg BID KarXT 75mg/20 mg BID KarXT 100mg/20 mg BID KarXT 125mg/30 mg BID",
+     "name": "Xanomeline and Trospium Chloride Capsules",
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Placebo"
+     ],
+     "description": "Placebo Capsules",
+     "name": "Placebo",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Schizophrenia"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Phoenix",
+     "country": "United States",
+     "facility": "IMA Clinical Research",
+     "geoPoint": {
+      "lat": 33.44838,
+      "lon": -112.07404
+     },
+     "state": "Arizona",
+     "zip": "85012"
+    },
+    {
+     "city": "Phoenix",
+     "country": "United States",
+     "facility": "Local Institution - 147",
+     "geoPoint": {
+      "lat": 33.44838,
+      "lon": -112.07404
+     },
+     "state": "Arizona",
+     "zip": "85012"
+    },
+    {
+     "city": "Little Rock",
+     "country": "United States",
+     "facility": "Pillar Clinical Research, LLC",
+     "geoPoint": {
+      "lat": 34.74648,
+      "lon": -92.28959
+     },
+     "state": "Arkansas",
+     "zip": "72204"
+    },
+    {
+     "city": "Little Rock",
+     "country": "United States",
+     "facility": "Woodland International Research Group, LLC",
+     "geoPoint": {
+      "lat": 34.74648,
+      "lon": -92.28959
+     },
+     "state": "Arkansas",
+     "zip": "72211"
+    },
+    {
+     "city": "Anaheim",
+     "country": "United States",
+     "facility": "Advanced Research Center, Inc.",
+     "geoPoint": {
+      "lat": 33.83529,
+      "lon": -117.9145
+     },
+     "state": "California",
+     "zip": "92805"
+    },
+    {
+     "city": "Bellflower",
+     "country": "United States",
+     "facility": "CITrials - Bellflower",
+     "geoPoint": {
+      "lat": 33.88168,
+      "lon": -118.11701
+     },
+     "state": "California",
+     "zip": "90706-7079"
+    },
+    {
+     "city": "Cerritos",
+     "country": "United States",
+     "facility": "Synexus Clinical Research US, Inc.",
+     "geoPoint": {
+      "lat": 33.85835,
+      "lon": -118.06479
+     },
+     "state": "California",
+     "zip": "90703"
+    },
+    {
+     "city": "Costa Mesa",
+     "country": "United States",
+     "facility": "Clinical Innovations Inc.",
+     "geoPoint": {
+      "lat": 33.64113,
+      "lon": -117.91867
+     },
+     "state": "California",
+     "zip": "92626"
+    },
+    {
+     "city": "Culver City",
+     "country": "United States",
+     "facility": "Proscience Research Group",
+     "geoPoint": {
+      "lat": 34.02112,
+      "lon": -118.39647
+     },
+     "state": "California",
+     "zip": "90230"
+    },
+    {
+     "city": "Garden Grove",
+     "country": "United States",
+     "facility": "CenExel Collaborative Neuroscience Research",
+     "geoPoint": {
+      "lat": 33.77391,
+      "lon": -117.94145
+     },
+     "state": "California",
+     "zip": "92845"
+    },
+    {
+     "city": "La Habra",
+     "country": "United States",
+     "facility": "Omega Clinical Trials",
+     "geoPoint": {
+      "lat": 33.93196,
+      "lon": -117.94617
+     },
+     "state": "California",
+     "zip": "90631"
+    },
+    {
+     "city": "Lafayette",
+     "country": "United States",
+     "facility": "Sunwise Clinical Research, LLC.",
+     "geoPoint": {
+      "lat": 37.88576,
+      "lon": -122.11802
+     },
+     "state": "California",
+     "zip": "94549"
+    },
+    {
+     "city": "Lemon Grove",
+     "country": "United States",
+     "facility": "Synergy Clinical Research of Escondido",
+     "geoPoint": {
+      "lat": 32.74255,
+      "lon": -117.03142
+     },
+     "state": "California",
+     "zip": "91945"
+    },
+    {
+     "city": "Los Angeles",
+     "country": "United States",
+     "facility": "Encino Hospital Medical Center",
+     "geoPoint": {
+      "lat": 34.05223,
+      "lon": -118.24368
+     },
+     "state": "California",
+     "zip": "91403"
+    },
+    {
+     "city": "Oceanside",
+     "country": "United States",
+     "facility": "Excell Research, Inc.",
+     "geoPoint": {
+      "lat": 33.19587,
+      "lon": -117.37948
+     },
+     "state": "California",
+     "zip": "92056"
+    },
+    {
+     "city": "Orange",
+     "country": "United States",
+     "facility": "Neuropsychiatric Research Center of Orange County",
+     "geoPoint": {
+      "lat": 33.78779,
+      "lon": -117.85311
+     },
+     "state": "California",
+     "zip": "92868"
+    },
+    {
+     "city": "Pico Rivera",
+     "country": "United States",
+     "facility": "CNRI - Los Angeles, LLC",
+     "geoPoint": {
+      "lat": 33.98307,
+      "lon": -118.09673
+     },
+     "state": "California",
+     "zip": "90660"
+    },
+    {
+     "city": "Riverside",
+     "country": "United States",
+     "facility": "CenExel Clinical Innovations, Inc.",
+     "geoPoint": {
+      "lat": 33.95335,
+      "lon": -117.39616
+     },
+     "state": "California",
+     "zip": "92506"
+    },
+    {
+     "city": "San Diego",
+     "country": "United States",
+     "facility": "Cnri-San Diego",
+     "geoPoint": {
+      "lat": 32.71571,
+      "lon": -117.16472
+     },
+     "state": "California",
+     "zip": "92123"
+    },
+    {
+     "city": "Stanford",
+     "country": "United States",
+     "facility": "Stanford University School of Medicine",
+     "geoPoint": {
+      "lat": 37.42411,
+      "lon": -122.16608
+     },
+     "state": "California",
+     "zip": "94305"
+    },
+    {
+     "city": "Torrance",
+     "country": "United States",
+     "facility": "CenExel Collaborative Neuroscience Research",
+     "geoPoint": {
+      "lat": 33.83585,
+      "lon": -118.34063
+     },
+     "state": "California",
+     "zip": "90504"
+    },
+    {
+     "city": "Coral Gables",
+     "country": "United States",
+     "facility": "Local Institution - 186",
+     "geoPoint": {
+      "lat": 25.72149,
+      "lon": -80.26838
+     },
+     "state": "Florida",
+     "zip": "33134"
+    },
+    {
+     "city": "Hialeah",
+     "country": "United States",
+     "facility": "Reliable Clinical Research LLC",
+     "geoPoint": {
+      "lat": 25.8576,
+      "lon": -80.27811
+     },
+     "state": "Florida",
+     "zip": "33012"
+    },
+    {
+     "city": "Hialeah",
+     "country": "United States",
+     "facility": "Galiz Research, LLC",
+     "geoPoint": {
+      "lat": 25.8576,
+      "lon": -80.27811
+     },
+     "state": "Florida",
+     "zip": "33016-1814"
+    },
+    {
+     "city": "Lauderhill",
+     "country": "United States",
+     "facility": "Adaptive Clinical Research, Inc",
+     "geoPoint": {
+      "lat": 26.14036,
+      "lon": -80.21338
+     },
+     "state": "Florida",
+     "zip": "33319-4985"
+    },
+    {
+     "city": "Miami",
+     "country": "United States",
+     "facility": "Behavioral Clinical Research , Inc",
+     "geoPoint": {
+      "lat": 25.77427,
+      "lon": -80.19366
+     },
+     "state": "Florida",
+     "zip": "33016"
+    },
+    {
+     "city": "Miami",
+     "country": "United States",
+     "facility": "Premier Clinical Research Institute, Inc.",
+     "geoPoint": {
+      "lat": 25.77427,
+      "lon": -80.19366
+     },
+     "state": "Florida",
+     "zip": "33122"
+    },
+    {
+     "city": "Miami Lakes",
+     "country": "United States",
+     "facility": "San Marcus Research Clinic, Inc.",
+     "geoPoint": {
+      "lat": 25.90871,
+      "lon": -80.30866
+     },
+     "state": "Florida",
+     "zip": "33014"
+    },
+    {
+     "city": "Miami Lakes",
+     "country": "United States",
+     "facility": "Assertive Research Center",
+     "geoPoint": {
+      "lat": 25.90871,
+      "lon": -80.30866
+     },
+     "state": "Florida",
+     "zip": "33016"
+    },
+    {
+     "city": "Miami Springs",
+     "country": "United States",
+     "facility": "Envision Trials LLC",
+     "geoPoint": {
+      "lat": 25.82232,
+      "lon": -80.2895
+     },
+     "state": "Florida",
+     "zip": "33166"
+    },
+    {
+     "city": "Orange City",
+     "country": "United States",
+     "facility": "Local Institution - 124",
+     "geoPoint": {
+      "lat": 28.94888,
+      "lon": -81.29867
+     },
+     "state": "Florida",
+     "zip": "32763"
+    },
+    {
+     "city": "Pembroke Pines",
+     "country": "United States",
+     "facility": "Pines Care Research Center, Inc.",
+     "geoPoint": {
+      "lat": 26.00315,
+      "lon": -80.22394
+     },
+     "state": "Florida",
+     "zip": "33024"
+    },
+    {
+     "city": "Tampa",
+     "country": "United States",
+     "facility": "Interventional Psychiatry of Tampa Bay",
+     "geoPoint": {
+      "lat": 27.94752,
+      "lon": -82.45843
+     },
+     "state": "Florida",
+     "zip": "33629"
+    },
+    {
+     "city": "Atlanta",
+     "country": "United States",
+     "facility": "Grady Memorial Hospital",
+     "geoPoint": {
+      "lat": 33.749,
+      "lon": -84.38798
+     },
+     "state": "Georgia",
+     "zip": "30303"
+    },
+    {
+     "city": "Atlanta",
+     "country": "United States",
+     "facility": "Synexus Clinical Research US, Inc.",
+     "geoPoint": {
+      "lat": 33.749,
+      "lon": -84.38798
+     },
+     "state": "Georgia",
+     "zip": "30328"
+    },
+    {
+     "city": "Atlanta",
+     "country": "United States",
+     "facility": "Local Institution - 192",
+     "geoPoint": {
+      "lat": 33.749,
+      "lon": -84.38798
+     },
+     "state": "Georgia",
+     "zip": "30331"
+    },
+    {
+     "city": "Augusta",
+     "country": "United States",
+     "facility": "Local Institution - 135",
+     "geoPoint": {
+      "lat": 33.47097,
+      "lon": -81.97484
+     },
+     "state": "Georgia",
+     "zip": "30912"
+    },
+    {
+     "city": "Decatur",
+     "country": "United States",
+     "facility": "CenExel iResearch Atlanta",
+     "geoPoint": {
+      "lat": 33.77483,
+      "lon": -84.29631
+     },
+     "state": "Georgia",
+     "zip": "30030"
+    },
+    {
+     "city": "Marietta",
+     "country": "United States",
+     "facility": "Psych Atlanta, P.C.",
+     "geoPoint": {
+      "lat": 33.9526,
+      "lon": -84.54993
+     },
+     "state": "Georgia",
+     "zip": "30060"
+    },
+    {
+     "city": "Savannah",
+     "country": "United States",
+     "facility": "CenExel iResearch, LLC",
+     "geoPoint": {
+      "lat": 32.08354,
+      "lon": -81.09983
+     },
+     "state": "Georgia",
+     "zip": "31405"
+    },
+    {
+     "city": "Chicago",
+     "country": "United States",
+     "facility": "Northwestern University",
+     "geoPoint": {
+      "lat": 41.85003,
+      "lon": -87.65005
+     },
+     "state": "Illinois",
+     "zip": "60611"
+    },
+    {
+     "city": "Chicago",
+     "country": "United States",
+     "facility": "American Medical Research, Inc.",
+     "geoPoint": {
+      "lat": 41.85003,
+      "lon": -87.65005
+     },
+     "state": "Illinois",
+     "zip": "60612-2307"
+    },
+    {
+     "city": "Chicago",
+     "country": "United States",
+     "facility": "Uptown Research Institute, LLC",
+     "geoPoint": {
+      "lat": 41.85003,
+      "lon": -87.65005
+     },
+     "state": "Illinois",
+     "zip": "60640"
+    },
+    {
+     "city": "Prairie Village",
+     "country": "United States",
+     "facility": "Phoenix Medical Research, Inc.",
+     "geoPoint": {
+      "lat": 38.99167,
+      "lon": -94.63357
+     },
+     "state": "Kansas",
+     "zip": "66208"
+    },
+    {
+     "city": "Monroe",
+     "country": "United States",
+     "facility": "IMA Clinical Research",
+     "geoPoint": {
+      "lat": 32.50931,
+      "lon": -92.1193
+     },
+     "state": "Louisiana",
+     "zip": "71201-2986"
+    },
+    {
+     "city": "Gaithersburg",
+     "country": "United States",
+     "facility": "CenExel Center for Behavioral Health",
+     "geoPoint": {
+      "lat": 39.14344,
+      "lon": -77.20137
+     },
+     "state": "Maryland",
+     "zip": "20877"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Local Institution - 158",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02114"
+    },
+    {
+     "city": "Boston",
+     "country": "United States",
+     "facility": "Local Institution - 187",
+     "geoPoint": {
+      "lat": 42.35843,
+      "lon": -71.05977
+     },
+     "state": "Massachusetts",
+     "zip": "02118"
+    },
+    {
+     "city": "Worcester",
+     "country": "United States",
+     "facility": "Local Institution - 185",
+     "geoPoint": {
+      "lat": 42.26259,
+      "lon": -71.80229
+     },
+     "state": "Massachusetts",
+     "zip": "01655"
+    },
+    {
+     "city": "Ann Arbor",
+     "country": "United States",
+     "facility": "Michigan Clinical Research Institute PC",
+     "geoPoint": {
+      "lat": 42.27756,
+      "lon": -83.74088
+     },
+     "state": "Michigan",
+     "zip": "48105"
+    },
+    {
+     "city": "Grand Rapids",
+     "country": "United States",
+     "facility": "Cherry Health",
+     "geoPoint": {
+      "lat": 42.96336,
+      "lon": -85.66809
+     },
+     "state": "Michigan",
+     "zip": "49548-6927"
+    },
+    {
+     "city": "Kalamazoo",
+     "country": "United States",
+     "facility": "Western Michigan University Homer Stryker M.D. School of Medicine",
+     "geoPoint": {
+      "lat": 42.29171,
+      "lon": -85.58723
+     },
+     "state": "Michigan",
+     "zip": "49001"
+    },
+    {
+     "city": "St Louis",
+     "country": "United States",
+     "facility": "Local Institution - 129",
+     "geoPoint": {
+      "lat": 38.62727,
+      "lon": -90.19789
+     },
+     "state": "Missouri",
+     "zip": "63128"
+    },
+    {
+     "city": "St Louis",
+     "country": "United States",
+     "facility": "Arch Clinical Trials LLC",
+     "geoPoint": {
+      "lat": 38.62727,
+      "lon": -90.19789
+     },
+     "state": "Missouri",
+     "zip": "63141"
+    },
+    {
+     "city": "Omaha",
+     "country": "United States",
+     "facility": "Omaha Insomnia and Psychiatric Services LLC",
+     "geoPoint": {
+      "lat": 41.25626,
+      "lon": -95.94043
+     },
+     "state": "Nebraska",
+     "zip": "68144"
+    },
+    {
+     "city": "Las Vegas",
+     "country": "United States",
+     "facility": "Altea Research Institute, Las Vegas",
+     "geoPoint": {
+      "lat": 36.17497,
+      "lon": -115.13722
+     },
+     "state": "Nevada",
+     "zip": "89102"
+    },
+    {
+     "city": "Berlin",
+     "country": "United States",
+     "facility": "CenExel Hassman Research Institute",
+     "geoPoint": {
+      "lat": 39.79123,
+      "lon": -74.92905
+     },
+     "state": "New Jersey",
+     "zip": "08009"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Synexus Clinical Research US, Inc.",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10017"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Manhattan Psychiatric Center",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10027"
+    },
+    {
+     "city": "New York",
+     "country": "United States",
+     "facility": "Manhattan Behavioral Medicine, PLLC",
+     "geoPoint": {
+      "lat": 40.71427,
+      "lon": -74.00597
+     },
+     "state": "New York",
+     "zip": "10036"
+    },
+    {
+     "city": "Rochester",
+     "country": "United States",
+     "facility": "Psychiatry and Alzheimer's Care of Rochester. PLLC",
+     "geoPoint": {
+      "lat": 43.15478,
+      "lon": -77.61556
+     },
+     "state": "New York",
+     "zip": "14623"
+    },
+    {
+     "city": "Staten Island",
+     "country": "United States",
+     "facility": "Richmond Behavioral Associates ERG Clinical Research - New York PLLC",
+     "geoPoint": {
+      "lat": 40.56233,
+      "lon": -74.13986
+     },
+     "state": "New York",
+     "zip": "10314"
+    },
+    {
+     "city": "Hickory",
+     "country": "United States",
+     "facility": "Clinical Trials of America - Psychiatry",
+     "geoPoint": {
+      "lat": 35.73319,
+      "lon": -81.3412
+     },
+     "state": "North Carolina",
+     "zip": "28601"
+    },
+    {
+     "city": "Cincinnati",
+     "country": "United States",
+     "facility": "University of Cincinnati Medical Center",
+     "geoPoint": {
+      "lat": 39.12711,
+      "lon": -84.51439
+     },
+     "state": "Ohio",
+     "zip": "45219"
+    },
+    {
+     "city": "Garfield Heights",
+     "country": "United States",
+     "facility": "Local Institution - 168",
+     "geoPoint": {
+      "lat": 41.417,
+      "lon": -81.60596
+     },
+     "state": "Ohio",
+     "zip": "44125"
+    },
+    {
+     "city": "Independence",
+     "country": "United States",
+     "facility": "Insight Clinical Trials LLC",
+     "geoPoint": {
+      "lat": 41.36866,
+      "lon": -81.6379
+     },
+     "state": "Ohio",
+     "zip": "44131"
+    },
+    {
+     "city": "Oklahoma City",
+     "country": "United States",
+     "facility": "The Rivus Wellness & Research Institute",
+     "geoPoint": {
+      "lat": 35.46756,
+      "lon": -97.51643
+     },
+     "state": "Oklahoma",
+     "zip": "73112"
+    },
+    {
+     "city": "Eugene",
+     "country": "United States",
+     "facility": "Prevention Science Institute",
+     "geoPoint": {
+      "lat": 44.05207,
+      "lon": -123.08675
+     },
+     "state": "Oregon",
+     "zip": "97403"
+    },
+    {
+     "city": "Austin",
+     "country": "United States",
+     "facility": "Community Clinical Research, Inc.",
+     "geoPoint": {
+      "lat": 30.26715,
+      "lon": -97.74306
+     },
+     "state": "Texas",
+     "zip": "78754"
+    },
+    {
+     "city": "DeSoto",
+     "country": "United States",
+     "facility": "InSite Clinical Research; LLC",
+     "geoPoint": {
+      "lat": 32.58986,
+      "lon": -96.85695
+     },
+     "state": "Texas",
+     "zip": "75115"
+    },
+    {
+     "city": "Fort Worth",
+     "country": "United States",
+     "facility": "JPS Health Network",
+     "geoPoint": {
+      "lat": 32.72541,
+      "lon": -97.32085
+     },
+     "state": "Texas",
+     "zip": "76104"
+    },
+    {
+     "city": "Houston",
+     "country": "United States",
+     "facility": "Ben Taub Hospital",
+     "geoPoint": {
+      "lat": 29.76328,
+      "lon": -95.36327
+     },
+     "state": "Texas",
+     "zip": "77030"
+    },
+    {
+     "city": "Houston",
+     "country": "United States",
+     "facility": "Clinical Trial Network LLC",
+     "geoPoint": {
+      "lat": 29.76328,
+      "lon": -95.36327
+     },
+     "state": "Texas",
+     "zip": "77074"
+    },
+    {
+     "city": "Irving",
+     "country": "United States",
+     "facility": "University Hills Clinical Research - Irving",
+     "geoPoint": {
+      "lat": 32.81402,
+      "lon": -96.94889
+     },
+     "state": "Texas",
+     "zip": "75062"
+    },
+    {
+     "city": "Richardson",
+     "country": "United States",
+     "facility": "Pillar Clinical Research, LLC",
+     "geoPoint": {
+      "lat": 32.94818,
+      "lon": -96.72972
+     },
+     "state": "Texas",
+     "zip": "75080"
+    },
+    {
+     "city": "Richmond",
+     "country": "United States",
+     "facility": "At Health Texas",
+     "geoPoint": {
+      "lat": 29.58218,
+      "lon": -95.76078
+     },
+     "state": "Texas",
+     "zip": "77407"
+    },
+    {
+     "city": "Richmond",
+     "country": "United States",
+     "facility": "Perceptive Pharma Research",
+     "geoPoint": {
+      "lat": 29.58218,
+      "lon": -95.76078
+     },
+     "state": "Texas",
+     "zip": "77407"
+    },
+    {
+     "city": "Rutland",
+     "country": "United States",
+     "facility": "Green Mountain Research Institute",
+     "geoPoint": {
+      "lat": 43.61062,
+      "lon": -72.97261
+     },
+     "state": "Vermont",
+     "zip": "05701"
+    },
+    {
+     "city": "Bellevue",
+     "country": "United States",
+     "facility": "Northwest Clinical Research Center",
+     "geoPoint": {
+      "lat": 47.61038,
+      "lon": -122.20068
+     },
+     "state": "Washington",
+     "zip": "98007"
+    },
+    {
+     "city": "Kazanlak",
+     "country": "Bulgaria",
+     "facility": "MHAT Dr. Hristo Stambolski, EOOD",
+     "geoPoint": {
+      "lat": 42.61667,
+      "lon": 25.4
+     },
+     "state": "Stara Zagora",
+     "zip": "6100"
+    },
+    {
+     "city": "Cherven Bryag",
+     "country": "Bulgaria",
+     "facility": "Ambulatory for Individual Practice for Specialized Medical Care in Psychiatry - Dr Ivo Natsov",
+     "geoPoint": {
+      "lat": 43.27884,
+      "lon": 24.08251
+     },
+     "zip": "5980"
+    },
+    {
+     "city": "Dupnitsa",
+     "country": "Bulgaria",
+     "facility": "Medical Centre 'Asklepii', OOD",
+     "geoPoint": {
+      "lat": 42.26478,
+      "lon": 23.11723
+     },
+     "zip": "2600"
+    },
+    {
+     "city": "Kardzhali",
+     "country": "Bulgaria",
+     "facility": "Medical Center Lifemed",
+     "geoPoint": {
+      "lat": 41.64502,
+      "lon": 25.36578
+     },
+     "zip": "6600"
+    },
+    {
+     "city": "Novi Iskar",
+     "country": "Bulgaria",
+     "facility": "State Psychiatric Hospital 'Sv. Ivan Rilski', Novi Iskar",
+     "geoPoint": {
+      "lat": 42.80191,
+      "lon": 23.34147
+     },
+     "zip": "1282"
+    },
+    {
+     "city": "Pleven",
+     "country": "Bulgaria",
+     "facility": "Medical Center Medconsult Pleven OOD",
+     "geoPoint": {
+      "lat": 43.41791,
+      "lon": 24.61666
+     },
+     "zip": "5800"
+    },
+    {
+     "city": "Pleven",
+     "country": "Bulgaria",
+     "facility": "UMHAT 'Dr. Georgi Stranski', EAD",
+     "geoPoint": {
+      "lat": 43.41791,
+      "lon": 24.61666
+     },
+     "zip": "5800"
+    },
+    {
+     "city": "Plovdiv",
+     "country": "Bulgaria",
+     "facility": "UMHAT Sv. Georgi, EAD",
+     "geoPoint": {
+      "lat": 42.15387,
+      "lon": 24.75001
+     },
+     "zip": "4002"
+    },
+    {
+     "city": "Plovdiv",
+     "country": "Bulgaria",
+     "facility": "Local Institution - 321",
+     "geoPoint": {
+      "lat": 42.15387,
+      "lon": 24.75001
+     },
+     "zip": "4004"
+    },
+    {
+     "city": "Razgrad",
+     "country": "Bulgaria",
+     "facility": "Local Institution - 313",
+     "geoPoint": {
+      "lat": 43.53331,
+      "lon": 26.51849
+     },
+     "zip": "7200"
+    },
+    {
+     "city": "Sliven",
+     "country": "Bulgaria",
+     "facility": "MHAT Dr Ivan Seliminski AD",
+     "geoPoint": {
+      "lat": 42.68607,
+      "lon": 26.32558
+     },
+     "zip": "8800"
+    },
+    {
+     "city": "Sofia",
+     "country": "Bulgaria",
+     "facility": "Medical Center 'Sv.Naum'",
+     "geoPoint": {
+      "lat": 42.69751,
+      "lon": 23.32415
+     },
+     "zip": "1113"
+    },
+    {
+     "city": "Sofia",
+     "country": "Bulgaria",
+     "facility": "MHC - Sofia, EOOD",
+     "geoPoint": {
+      "lat": 42.69751,
+      "lon": 23.32415
+     },
+     "zip": "1202"
+    },
+    {
+     "city": "Sofia",
+     "country": "Bulgaria",
+     "facility": "Local Institution - 320",
+     "geoPoint": {
+      "lat": 42.69751,
+      "lon": 23.32415
+     },
+     "zip": "1407"
+    },
+    {
+     "city": "Sofia",
+     "country": "Bulgaria",
+     "facility": "DCC 'Sv. Vrach and Sv. Sv. Kuzma and Damyan', OOD",
+     "geoPoint": {
+      "lat": 42.69751,
+      "lon": 23.32415
+     },
+     "zip": "1408"
+    },
+    {
+     "city": "Sofia",
+     "country": "Bulgaria",
+     "facility": "Medical Center Akademika EOOD",
+     "geoPoint": {
+      "lat": 42.69751,
+      "lon": 23.32415
+     },
+     "zip": "1431"
+    },
+    {
+     "city": "Sofia",
+     "country": "Bulgaria",
+     "facility": "Medical Center Hera EOOD",
+     "geoPoint": {
+      "lat": 42.69751,
+      "lon": 23.32415
+     },
+     "zip": "1510"
+    },
+    {
+     "city": "Sofia",
+     "country": "Bulgaria",
+     "facility": "Medical Center Intermedica, OOD",
+     "geoPoint": {
+      "lat": 42.69751,
+      "lon": 23.32415
+     },
+     "zip": "1680"
+    },
+    {
+     "city": "Targovishte",
+     "country": "Bulgaria",
+     "facility": "Medical Center VAS OOD",
+     "geoPoint": {
+      "lat": 43.2512,
+      "lon": 26.57215
+     },
+     "zip": "7700"
+    },
+    {
+     "city": "Varna",
+     "country": "Bulgaria",
+     "facility": "DCC Mladost M - Varna, OOD",
+     "geoPoint": {
+      "lat": 43.21912,
+      "lon": 27.91024
+     },
+     "zip": "9020"
+    },
+    {
+     "city": "Vratsa",
+     "country": "Bulgaria",
+     "facility": "Mental Health Center-Vratsa EOOD",
+     "geoPoint": {
+      "lat": 43.21052,
+      "lon": 23.56312
+     },
+     "zip": "3000"
+    },
+    {
+     "city": "Guwahati",
+     "country": "India",
+     "facility": "Local Institution - 616",
+     "geoPoint": {
+      "lat": 26.1844,
+      "lon": 91.7458
+     },
+     "state": "Assam",
+     "zip": "781032"
+    },
+    {
+     "city": "Ahmedabad",
+     "country": "India",
+     "facility": "Local Institution - 607",
+     "geoPoint": {
+      "lat": 23.02579,
+      "lon": 72.58727
+     },
+     "state": "Gujarat",
+     "zip": "380008"
+    },
+    {
+     "city": "Ahmedabad",
+     "country": "India",
+     "facility": "Local Institution - 604",
+     "geoPoint": {
+      "lat": 23.02579,
+      "lon": 72.58727
+     },
+     "state": "Gujarat",
+     "zip": "380013"
+    },
+    {
+     "city": "Surat",
+     "country": "India",
+     "facility": "Local Institution - 609",
+     "geoPoint": {
+      "lat": 21.19594,
+      "lon": 72.83023
+     },
+     "state": "Gujarat",
+     "zip": "395001"
+    },
+    {
+     "city": "Vadodara",
+     "country": "India",
+     "facility": "Local Institution - 613",
+     "geoPoint": {
+      "lat": 22.29941,
+      "lon": 73.20812
+     },
+     "state": "Gujarat",
+     "zip": "390021"
+    },
+    {
+     "city": "Belgavi",
+     "country": "India",
+     "facility": "Local Institution - 617",
+     "state": "Karnataka",
+     "zip": "590001"
+    },
+    {
+     "city": "Mangalore",
+     "country": "India",
+     "facility": "Local Institution - 614",
+     "geoPoint": {
+      "lat": 12.91723,
+      "lon": 74.85603
+     },
+     "state": "Karnataka",
+     "zip": "575003"
+    },
+    {
+     "city": "Mangalore",
+     "country": "India",
+     "facility": "Local Institution - 602",
+     "geoPoint": {
+      "lat": 12.91723,
+      "lon": 74.85603
+     },
+     "state": "Karnataka",
+     "zip": "575018"
+    },
+    {
+     "city": "Mysore",
+     "country": "India",
+     "facility": "Local Institution - 601",
+     "geoPoint": {
+      "lat": 12.29791,
+      "lon": 76.63925
+     },
+     "state": "Karnataka",
+     "zip": "570001"
+    },
+    {
+     "city": "Kozhikode",
+     "country": "India",
+     "facility": "Local Institution - 611",
+     "geoPoint": {
+      "lat": 11.24802,
+      "lon": 75.7804
+     },
+     "state": "Kerala",
+     "zip": "673009"
+    },
+    {
+     "city": "Aurangabad",
+     "country": "India",
+     "facility": "Local Institution - 610",
+     "geoPoint": {
+      "lat": 19.87757,
+      "lon": 75.34226
+     },
+     "state": "Maharashtra",
+     "zip": "431005"
+    },
+    {
+     "city": "Mumbai",
+     "country": "India",
+     "facility": "Local Institution - 619",
+     "geoPoint": {
+      "lat": 19.07283,
+      "lon": 72.88261
+     },
+     "state": "Maharashtra",
+     "zip": "400008"
+    },
+    {
+     "city": "Nagpur",
+     "country": "India",
+     "facility": "Local Institution - 603",
+     "geoPoint": {
+      "lat": 21.14631,
+      "lon": 79.08491
+     },
+     "state": "Maharashtra",
+     "zip": "440010"
+    },
+    {
+     "city": "Nashik",
+     "country": "India",
+     "facility": "Local Institution - 608",
+     "geoPoint": {
+      "lat": 19.99727,
+      "lon": 73.79096
+     },
+     "state": "Maharashtra",
+     "zip": "422001"
+    },
+    {
+     "city": "Nashik",
+     "country": "India",
+     "facility": "Local Institution - 605",
+     "geoPoint": {
+      "lat": 19.99727,
+      "lon": 73.79096
+     },
+     "state": "Maharashtra",
+     "zip": "422005"
+    },
+    {
+     "city": "Ajmer",
+     "country": "India",
+     "facility": "Local Institution - 615",
+     "geoPoint": {
+      "lat": 26.4521,
+      "lon": 74.63867
+     },
+     "state": "Rajasthan",
+     "zip": "305001"
+    },
+    {
+     "city": "Bikaner",
+     "country": "India",
+     "facility": "Local Institution - 618",
+     "geoPoint": {
+      "lat": 28.01762,
+      "lon": 73.31495
+     },
+     "state": "Rajasthan",
+     "zip": "334003"
+    },
+    {
+     "city": "Rajkot",
+     "country": "India",
+     "facility": "Local Institution - 606",
+     "geoPoint": {
+      "lat": 25.73681,
+      "lon": 75.58779
+     },
+     "state": "Rajasthan",
+     "zip": "360001"
+    },
+    {
+     "city": "Lucknow",
+     "country": "India",
+     "facility": "Local Institution - 612",
+     "geoPoint": {
+      "lat": 26.83928,
+      "lon": 80.92313
+     },
+     "state": "Uttar Pradesh",
+     "zip": "226003"
+    },
+    {
+     "city": "Kōnan",
+     "country": "Japan",
+     "facility": "Local Institution - 258",
+     "geoPoint": {
+      "lat": 35.33165,
+      "lon": 136.87042
+     },
+     "state": "Aichi-ken",
+     "zip": "483-8248"
+    },
+    {
+     "city": "Toyoake-shi",
+     "country": "Japan",
+     "facility": "Local Institution - 250",
+     "state": "Aichi-ken",
+     "zip": "470-1168"
+    },
+    {
+     "city": "Shirakawa",
+     "country": "Japan",
+     "facility": "Local Institution - 257",
+     "geoPoint": {
+      "lat": 37.11954,
+      "lon": 140.26211
+     },
+     "state": "Fukushima",
+     "zip": "961-0021"
+    },
+    {
+     "city": "Karatsu-shi",
+     "country": "Japan",
+     "facility": "Local Institution - 254",
+     "state": "Saga-ken",
+     "zip": "847-0031"
+    },
+    {
+     "city": "Fukuoka",
+     "country": "Japan",
+     "facility": "Local Institution - 255",
+     "geoPoint": {
+      "lat": 33.6,
+      "lon": 130.41667
+     },
+     "zip": "819-0037"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "Local Institution - 256",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "162-0843"
+    },
+    {
+     "city": "Bialystok",
+     "country": "Poland",
+     "facility": "Local Institution - 506",
+     "geoPoint": {
+      "lat": 53.13333,
+      "lon": 23.16433
+     },
+     "zip": "15-404"
+    },
+    {
+     "city": "Gdansk",
+     "country": "Poland",
+     "facility": "Local Institution - 507",
+     "geoPoint": {
+      "lat": 54.35227,
+      "lon": 18.64912
+     },
+     "zip": "80-546"
+    },
+    {
+     "city": "Grudziądz",
+     "country": "Poland",
+     "facility": "Local Institution - 509",
+     "geoPoint": {
+      "lat": 53.48411,
+      "lon": 18.75366
+     },
+     "zip": "86-300"
+    },
+    {
+     "city": "Kielce",
+     "country": "Poland",
+     "facility": "Local Institution - 501",
+     "geoPoint": {
+      "lat": 50.87033,
+      "lon": 20.62752
+     },
+     "zip": "25-411"
+    },
+    {
+     "city": "Lodz",
+     "country": "Poland",
+     "facility": "Local Institution - 503",
+     "geoPoint": {
+      "lat": 51.77058,
+      "lon": 19.47395
+     },
+     "zip": "90-227"
+    },
+    {
+     "city": "Lublin",
+     "country": "Poland",
+     "facility": "Local Institution - 505",
+     "geoPoint": {
+      "lat": 51.25058,
+      "lon": 22.57009
+     },
+     "zip": "20-109"
+    },
+    {
+     "city": "Siemianowice Śląskie",
+     "country": "Poland",
+     "facility": "Local Institution - 502",
+     "geoPoint": {
+      "lat": 50.32738,
+      "lon": 19.02901
+     },
+     "zip": "41-100"
+    },
+    {
+     "city": "Suchy Las",
+     "country": "Poland",
+     "facility": "Local Institution - 508",
+     "geoPoint": {
+      "lat": 52.47308,
+      "lon": 16.87745
+     },
+     "zip": "62-002"
+    },
+    {
+     "city": "Tuszyn",
+     "country": "Poland",
+     "facility": "Local Institution - 504",
+     "geoPoint": {
+      "lat": 51.60949,
+      "lon": 19.53009
+     },
+     "zip": "95-080"
+    },
+    {
+     "city": "Brasov",
+     "country": "Romania",
+     "facility": "Local Institution - 803",
+     "geoPoint": {
+      "lat": 45.64861,
+      "lon": 25.60613
+     },
+     "zip": "500123"
+    },
+    {
+     "city": "Bucharest",
+     "country": "Romania",
+     "facility": "Local Institution - 809",
+     "geoPoint": {
+      "lat": 44.43225,
+      "lon": 26.10626
+     },
+     "zip": "041914"
+    },
+    {
+     "city": "Bucharest",
+     "country": "Romania",
+     "facility": "Local Institution - 804",
+     "geoPoint": {
+      "lat": 44.43225,
+      "lon": 26.10626
+     },
+     "zip": "10825"
+    },
+    {
+     "city": "Bucharest",
+     "country": "Romania",
+     "facility": "Local Institution - 810",
+     "geoPoint": {
+      "lat": 44.43225,
+      "lon": 26.10626
+     },
+     "zip": "40874"
+    },
+    {
+     "city": "Bucharest",
+     "country": "Romania",
+     "facility": "Local Institution - 802",
+     "geoPoint": {
+      "lat": 44.43225,
+      "lon": 26.10626
+     },
+     "zip": "41914"
+    },
+    {
+     "city": "Bucharest",
+     "country": "Romania",
+     "facility": "Local Institution - 807",
+     "geoPoint": {
+      "lat": 44.43225,
+      "lon": 26.10626
+     },
+     "zip": "60222"
+    },
+    {
+     "city": "Craiova",
+     "country": "Romania",
+     "facility": "Local Institution - 808",
+     "geoPoint": {
+      "lat": 44.31667,
+      "lon": 23.8
+     },
+     "zip": "200157"
+    },
+    {
+     "city": "Galati",
+     "country": "Romania",
+     "facility": "Local Institution - 801",
+     "geoPoint": {
+      "lat": 45.43687,
+      "lon": 28.05028
+     },
+     "zip": "800179"
+    },
+    {
+     "city": "Iași",
+     "country": "Romania",
+     "facility": "Local Institution - 806",
+     "geoPoint": {
+      "lat": 47.16667,
+      "lon": 27.6
+     },
+     "zip": "700282"
+    },
+    {
+     "city": "Sibiu",
+     "country": "Romania",
+     "facility": "Local Institution - 805",
+     "geoPoint": {
+      "lat": 45.8,
+      "lon": 24.15
+     },
+     "zip": "550281"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "Clinical Center ' Dr Dragisa Misovic Dedinje'",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "Institute of Mental Health",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "Local Institution - 413",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "Local Institution - 417",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "University Clinical Center of Serbia",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Kovin",
+     "country": "Serbia",
+     "facility": "\"Special Hospital for Psychiatric Diseases \"\"Kovin\"\"\"",
+     "geoPoint": {
+      "lat": 44.7475,
+      "lon": 20.97611
+     },
+     "zip": "26220"
+    },
+    {
+     "city": "Kovin",
+     "country": "Serbia",
+     "facility": "Special Hospital for Psychiatric Diseases 'Kovin'",
+     "geoPoint": {
+      "lat": 44.7475,
+      "lon": 20.97611
+     },
+     "zip": "26220"
+    },
+    {
+     "city": "Kragujevac",
+     "country": "Serbia",
+     "facility": "University Clinical Center Kragujevac",
+     "geoPoint": {
+      "lat": 44.01667,
+      "lon": 20.91667
+     },
+     "zip": "34000"
+    },
+    {
+     "city": "Niš",
+     "country": "Serbia",
+     "facility": "University Clinical Center Nis",
+     "geoPoint": {
+      "lat": 43.32472,
+      "lon": 21.90333
+     },
+     "zip": "18000"
+    },
+    {
+     "city": "Niš",
+     "country": "Serbia",
+     "facility": "Special Hospital for Psychiatric Diseases 'Gornja Toponica'",
+     "geoPoint": {
+      "lat": 43.32472,
+      "lon": 21.90333
+     },
+     "zip": "18202"
+    },
+    {
+     "city": "Novi Kneževac",
+     "country": "Serbia",
+     "facility": "Special Hospital for Psychiatric Diseases 'Sveti Vracevi'",
+     "geoPoint": {
+      "lat": 46.05,
+      "lon": 20.1
+     },
+     "zip": "23330"
+    },
+    {
+     "city": "Vršac",
+     "country": "Serbia",
+     "facility": "Special Hospital for Psychiatric Disease 'Dr Slavoljub Bakalovic'",
+     "geoPoint": {
+      "lat": 45.11667,
+      "lon": 21.30361
+     },
+     "zip": "26300"
+    },
+    {
+     "city": "Pool, Reruth",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 707",
+     "geoPoint": {
+      "lat": 53.9,
+      "lon": -1.61667
+     },
+     "state": "Cornwall",
+     "zip": "TR15 3QE"
+    },
+    {
+     "city": "Brighton",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 705",
+     "geoPoint": {
+      "lat": 50.82838,
+      "lon": -0.13947
+     },
+     "state": "East Sussex",
+     "zip": "BN1 9RY"
+    },
+    {
+     "city": "London",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 701",
+     "geoPoint": {
+      "lat": 51.50853,
+      "lon": -0.12574
+     },
+     "state": "Greater London",
+     "zip": "SE5 8AF"
+    },
+    {
+     "city": "Ashton-under-Lyne",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 706",
+     "geoPoint": {
+      "lat": 53.48876,
+      "lon": -2.0989
+     },
+     "state": "Greater Manchester",
+     "zip": "OL6 7SR"
+    },
+    {
+     "city": "Manchester",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 710",
+     "geoPoint": {
+      "lat": 53.48095,
+      "lon": -2.23743
+     },
+     "state": "Greater Manchester",
+     "zip": "M8 5RB"
+    },
+    {
+     "city": "Maidstone",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 709",
+     "geoPoint": {
+      "lat": 51.26667,
+      "lon": 0.51667
+     },
+     "state": "Kent",
+     "zip": "ME16 9PH"
+    },
+    {
+     "city": "Oxford",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 708",
+     "geoPoint": {
+      "lat": 51.75222,
+      "lon": -1.25596
+     },
+     "state": "Oxfordshire",
+     "zip": "OX3 7JX"
+    },
+    {
+     "city": "Glasgow",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 704",
+     "geoPoint": {
+      "lat": 55.86515,
+      "lon": -4.25763
+     },
+     "state": "Strathclyde",
+     "zip": "G51 4TF"
+    },
+    {
+     "city": "Chertsey",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 702",
+     "geoPoint": {
+      "lat": 51.38812,
+      "lon": -0.50782
+     },
+     "state": "Surrey",
+     "zip": "KT16 9AU"
+    },
+    {
+     "city": "Birmingham",
+     "country": "United Kingdom",
+     "facility": "Local Institution - 703",
+     "geoPoint": {
+      "lat": 52.48142,
+      "lon": -1.89983
+     },
+     "state": "West Midlands",
+     "zip": "B4 6NH"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "affiliation": "Bristol-Myers Squibb",
+     "name": "Bristol-Myers Squibb",
+     "role": "STUDY_DIRECTOR"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "This is a Phase 3, 6-week, randomized, double-blind, placebo-controlled, multicenter, outpatient study in subjects with schizophrenia with an inadequate response to their current atypical antipsychotic treatment. The primary objective of the study is to assess the efficacy of adjunctive KarXT (a fixed dose combination of xanomeline and trospium chloride twice daily \\[BID\\]) versus placebo in the treatment of subjects with inadequately controlled symptoms of schizophrenia as measured by the Positive and Negative Syndrome Scale (PANSS) Total Score."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "QUADRUPLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "CARE_PROVIDER",
+      "INVESTIGATOR",
+      "OUTCOMES_ASSESSOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 396,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE3"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n1. Subject is aged ≥18 to \\<65 years at the time of randomization\n2. Subject is capable of providing signed Informed Consent Form before any study assessments will be performed\n3. Subject has a primary diagnosis of schizophrenia established by a comprehensive psychiatric evaluation based on the DSM-5 criteria and confirmed by Mini International Neuropsychiatric Interview for Schizophrenia and Psychotic Disorder Studies (MINI) version 7.0.2\n4. Subject is currently being treated with stable dosing of monotherapy risperidone, paliperidone, aripiprazole, or their LAIs ziprasidone, lurasidone, or cariprazine and has been taking this treatment with the same dosing regimen for at least 8 weeks at the time of Day 1 (Visit 3)\n5. The subject has had at least 1 previous inadequate response to above antipsychotics that was dosed appropriately (within the label) for at least 6 weeks\n6. The subject has not required psychiatric hospitalization, incarceration in prison, acute crisis intervention, or other increase in the level of care due to symptom exacerbation within 8 weeks of Screening and is psychiatrically stable in the opinion of the Investigator\n7. To be eligible for randomization, subjects need to have detectable levels of background antipsychotic medication (measured at Visit 1)\n8. Positive and Negative Syndrome Scale (PANSS) total score ≥ 70 at Screening and randomization\n9. Clinical Global Impression-Severity (CGI-S) scale with a score ≥ 4 (moderate) at Screening and randomization\n10. PANSS Marder Positive symptom factor ≥ 4 on 2 (or more) items (PANSS items, delusions, hallucinations, grandiosity, suspiciousness and persecution, stereotyped thinking, somatic concern, unusual thought content or lack of judgment and insight), at Screening and randomization\n11. Subjects with ≤ 20-point decrease in PANSS Total score between Visit 1 and Visit 3\n12. Subject is willing and able to visit the clinic in an outpatient setting for the study duration, follow instructions, and comply with the protocol requirements\n13. Body Mass Index (BMI) must be within 18 to 40 kg/m2 (inclusive of both values)\n14. Subject resides in a stable living situation in the opinion of the Investigator\n15. Subject has identified a reliable informant/ caregiver willing and able to assist with study activities as needed throughout the subject's participation in the study. The informant needs to be physically present at the Baseline visit, but can complete the remaining study visits assessments via phone (as needed and as per local regulations). In Bulgaria, the informant needs to physically present at the Baseline visit and should be physically present at all study visits where the Investigator determines that his/her input would be beneficial.\n16. Women of childbearing potential (WOCP), or men whose sexual partners are WOCP, must be able and willing to use at least 1 highly effective method of contraception during the study and for at least 1 menstrual cycle (e.g., 30 days) after the last dose of study drug. Sperm donation is not allowed for 30 days after the final dose of the study drug. A female subject is considered to be a WOCP after menarche and until she is in a postmenopausal state for 12 months or otherwise permanently sterile (for which acceptable methods include hysterectomy, bilateral salpingectomy, or bilateral oophorectomy)\n\nExclusion Criteria:\n\n1. Any primary DSM-5 disorder other than schizophrenia within 12 months before screening (confirmed using MINI version 7.0.2 at screening)\n2. The subject has a history of moderate to severe substance use disorder (other than nicotine) within the past 12 months\n\n   1. A Screening subject with mild substance use disorder within the 12 months before Screening must be discussed with the Medical Monitor before being allowed into the study\n   2. Subjects who test positive for cannabis at Screening may be permitted to enroll in consultation with the Medical Monitor if the subject's pattern of use is not indicative of a moderate to severe substance use disorder\n3. Subject has a history of treatment-resistant schizophrenia defined as:\n\n   a. Failure to minimally respond to 2 adequate courses of antipsychotic drug (APD) pharmacotherapy Note: Failure to minimally respond is defined as persistence symptoms of moderate severity in 2 or more psychotic symptom domains or persistence of severe symptoms in 1 or more psychotic symptom domains despite adequate dose and duration (6 weeks or longer) of APD treatment.\n4. History of symptom instability\n\n   a. \\> 3 psychiatric hospitalizations over the last 12 months or 2 over the last 6 months\n5. Current APD is other than aripiprazole, risperidone, paliperidone, or their LAI versions, ziprasidone, lurasidone, or cariprazine\n6. Subjects who are diagnosed with schizophreniform disorder or are experiencing their first treated episode of schizophrenia\n7. Significant or severe medical conditions including pulmonary, cardiovascular, hepatic, renal, hematologic, gastrointestinal, endocrine, immunologic, dermatologic, neurologic, or oncologic disease or any other condition that, in the opinion of the Investigator, could jeopardize the safety of the subject or the validity of the study results\n\n   1. eGFR \\< 60 mL/min\n   2. Alanine transaminase or aspartate transaminase (AST) \\> 1.5 x upper limit of normal (ULN)\n   3. Total bilirubin \\> 1.5 x ULN (Subjects with Gilbert's syndrome can be included as long as direct bilirubin is ≤ 1.5 x ULN)\n8. Subjects with human immunodeficiency virus (HIV), cirrhosis, biliary duct abnormalities, hepatobiliary carcinoma, and/or active hepatic viral infections as indicated by medical history, serologies or LFT results\n9. History or high risk of urinary retention, gastric retention, or narrow-angle glaucoma as evaluated by the Investigator\n10. History of irritable bowel syndrome (with or without constipation) or any serious constipation requiring treatment within the last 6 months\n11. Risk for suicidal behavior during the study as determined by the Investigator's clinical assessment and/or C-SSRS as confirmed by the following:\n\n    1. Answers \"Yes\" on items 4 or 5 (C-SSRS - ideation) with the most recent episode occurring within the 2 months before Screening or,\n    2. Answers \"Yes\" to any of the 5 items (C-SSRS behavior) with an episode occurring within the 12 months before Screening\n12. Clinically significant abnormal finding on the physical examination, medical history, ECG, or clinical laboratory results at Screening\n13. Urine toxicology screen is positive for phencyclidine, amphetamines, opiates, cocaine, or alcohol (clinically significant alcohol use in the opinion of the Investigator)\n14. Subject is currently taking, or plans to take while in the study, any prohibited concomitant medication.\n15. Pregnant, lactating, or less than 3 months postpartum\n16. If, in the opinion of the Investigator and/or Sponsor/Medical Monitor subject is unsuitable for enrollment in the study or subject has any finding that, in the view of the Investigator and/or Sponsor/Medical Monitor, may compromise the safety of the subject or affect his/her ability to adhere to the protocol visit schedule or fulfill visit requirements\n17. Positive test for coronavirus (COVID-19) within 2 weeks or at Screening\n18. Subjects with extreme concerns relating to global pandemics, such as COVID-19, that would obscure ratings or be expected to disrupt adherence to trial procedures\n19. Unable to taper and discontinue a concomitant medication that would preclude participation in the double-blind adjunctive treatment (e.g., cannot stop anticholinergic)\n20. Subjects with prior exposure to KarXT\n21. Subjects who experienced any adverse effects due to xanomeline or trospium\n22. Subjects who received investigational product as part of a clinical trial within 3 months of Screening\n23. Risk of violent or destructive behavior as per Investigator's judgment that would interfere with subject's participation\n24. Current involuntary hospitalization or incarcerationor on parole/probation\n25. For all male subjects only, any one of the following:\n\n    1. History of bladder stones\n    2. History of recurrent urinary tract infections\n    3. Serum prostate specific antigen (PSA) \\>10 ng/mL\n    4. An International Prostate Symptom Score (IPSS) of 5 (almost always) on either item 1, 3, 5, or 6\n    5. A sum of scores on IPSS items 1, 3, 5, and 6 of ≥9 Note: IPSS will be required only for male subjects ≥ 45 years of age. Subjects already enrolled in the study will have these assessments at their next clinic visit planned after re-consenting to determine current eligibility.",
+   "healthyVolunteers": false,
+   "maximumAge": "65 Years",
+   "minimumAge": "18 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "acronym": "ARISE",
+   "briefTitle": "A Study to Assess Efficacy and Safety of Adjunctive KarXT in Subjects With Inadequately Controlled Symptoms of Schizophrenia",
+   "nctId": "NCT05145413",
+   "officialTitle": "A Phase 3, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Safety and Efficacy of Adjunctive KarXT in Subjects With Inadequately Controlled Symptoms of Schizophrenia",
+   "orgStudyIdInfo": {
+    "id": "CN012-0008"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Karuna Therapeutics, Inc., a Bristol Myers Squibb company"
+   },
+   "secondaryIdInfos": [
+    {
+     "domain": "Bristol-Myers Squibb Protocol ID",
+     "id": "CN012-0008",
+     "type": "OTHER"
+    },
+    {
+     "domain": "Karuna Pharmaceuticals Protocol ID",
+     "id": "KAR-012",
+     "type": "OTHER"
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "ipdSharing": "NO"
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "description": "PANSS Total Score is a clinician administered measure of schizophrenia symptom severity used widely in antipsychotic research. It includes 30 items across 3 subscales:\n\n* Positive Symptoms (7 items) assessing excesses or distortions such as hallucinations, delusions, or grandiosity\n* Negative Symptoms (7 items) assessing diminished function such as social withdrawal or reduced motivation and\n* General Psychopathology (16 items) capturing broader symptoms like anxiety, depression, guilt, or cognitive impairment Each item is scored from 1 (absent) to 7 (extreme), producing a PANSS Total Score ranging from 30 to 210, with higher scores indicating more severe symptoms.\n\nBaseline is defined as the last non missing PANSS Total Score before first dose.\n\nThis endpoint evaluates change from Baseline to Week 6, with negative values indicating improvement.",
+     "measure": "Change From Baseline in Positive and Negative Syndrome Scale (PANSS) Total Score at Week 6",
+     "timeFrame": "Baseline to Week 6"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "description": "The Personal and Social Performance (PSP) Scale is a clinician administered assessment of personal and social functioning in individuals with schizophrenia. It evaluates functioning across four key dimensions:\n\n* Socially useful activities\n* Personal and social relationships\n* Self care and\n* Disturbing and aggressive behaviors The PSP is completed through a structured clinical interview and provides a total score ranging from 1 to 100, using a 6 point severity rating for each domain. Higher PSP scores indicate better personal and social functioning.\n\nThe endpoint measures change from Baseline to Week 6 in PSP score, with positive values indicating improved personal and social functioning.",
+     "measure": "Change From Baseline in Personal and Social Performance Scale (PSP) at Week 6",
+     "timeFrame": "Baseline to Week 6"
+    },
+    {
+     "description": "Change from baseline in the Clinical Global Impression-Severity (CGI-S) assesses change in overall illness severity over time as rated by the clinician. The CGI-S is a clinician-rated, single-item scale that evaluates the severity of the participant's illness at the time of assessment based on the clinician's total clinical experience with patients with the same diagnosis. Severity is rated on a 7-point scale ranging from 1 (normal, not at all ill) to 7 (among the most extremely ill), with higher scores indicating greater illness severity (worse outcome). Ratings are based on observed and reported symptoms, behavior, and functioning over the previous 7 days. Change from baseline is calculated as the difference between the CGI-S score at baseline and Week 6, with negative values indicating improvement and positive values indicating worsening.",
+     "measure": "Change From Baseline in Clinical Global Impression-Severity Scale (CGI-S) at Week 6",
+     "timeFrame": "Baseline to Week 6"
+    },
+    {
+     "description": "Change from baseline in PANSS M-Pos Symptom Factor Score assesses change in the severity of positive symptoms of schizophrenia over time as rated by the clinician. The PANSS is a clinician-administered scale that evaluates symptom severity based on observed and reported symptoms. The PANSS Marder Positive Symptom Factor score is derived from the following PANSS items: Delusions (P1), Hallucinations (P3), Grandiosity (P5), Suspiciousness/Persecution (P6), Stereotyped Thinking (N7), Somatic Concern (G1), Unusual Thought Content (G9), and Lack of Judgment and Insight (G12). Each item is rated on a 7-point scale (1 = absent to 7 = extreme). The PANSS M-Pos factor score is calculated by summing the relevant item scores, with higher scores indicating greater positive symptom severity (worse outcome). Change from baseline is calculated as the difference between the PANSS M-Pos score at baseline and Week 6, with negative values indicating improvement and positive values indicating worsening.",
+     "measure": "Change From Baseline in Positive and Negative Syndrome Scale Marder Positive (PANSS M-Pos) Symptom Factor Score at Week 6",
+     "timeFrame": "Baseline to Week 6"
+    },
+    {
+     "description": "Change from baseline in PANSS M-Neg Symptom Factor Score assesses change in the severity of negative symptoms of schizophrenia over time as rated by the clinician. The PANSS is a clinician-administered scale that evaluates symptom severity based on observed and reported symptoms. The PANSS Marder Negative Symptom Factor score is derived from the following PANSS items: Blunted Affect (N1), Emotional Withdrawal (N2), Poor Rapport (N3), Passive Social Withdrawal (N4), Lack of Spontaneity of Conversation (N6), Motor Retardation (G7), and Active Social Avoidance (G16). Each item is rated on a 7-point scale (1 = absent to 7 = extreme). The PANSS M-Neg factor score is calculated by summing the relevant item scores, with higher scores indicating greater negative symptom severity (worse outcome). Change from baseline is calculated as the difference between the PANSS M-Neg score at baseline and Week 6, with negative values indicating improvement and positive values indicating worsening.",
+     "measure": "Change From Baseline in Positive and Negative Syndrome Scale Marder Negative (PANSS M-Neg) Symptom Factor Score at Week 6",
+     "timeFrame": "Baseline to Week 6"
+    },
+    {
+     "description": "The Positive and Negative Syndrome Scale (PANSS) is a clinician administered scale that assesses symptom severity in schizophrenia and includes 30 items across three subscales: 7 positive symptoms, 7 negative symptoms, and 16 general psychopathology symptoms. Each item is scored from 1 (absent) to 7 (extreme), generating a PANSS Total Score ranging from 30 to 210, with higher scores indicating more severe symptoms. This endpoint evaluates the percentage of participants whose Week 6 PANSS Total Score decreased by at least 30% from Baseline, reflecting clinically meaningful improvement.",
+     "measure": "Percentage of Participants Achieving a ≥ 30% Improvement in Positive and Negative Syndrome Scale (PANSS) Total Score at Week 6",
+     "timeFrame": "At Week 6"
+    },
+    {
+     "description": "The Preference of Medication (POM) is a two item questionnaire assessing the participant's and informant's preference for the current antipsychotic compared with the most recent pre study antipsychotic. It evaluates perceived benefit or worsening relative to prior treatment. The POM uses a 5 point scale: 1 = \"much better, I prefer this medication,\" 2 = \"slightly better,\" 3 = \"about the same,\" 4 = \"slightly worse,\" 5 = \"much worse, I much prefer my previous medication.\" Based on this scale, responses are categorized as Better (scores 1-2) or Same or Worse (scores 3-5) for both participant and informant assessments.",
+     "measure": "Percentage of Participants With Preference of Medication (POM) at Week 6",
+     "timeFrame": "At Week 6"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true,
+   "oversightHasDmc": false
+  },
+  "referencesModule": {
+   "seeAlsoLinks": [
+    {
+     "label": "BMS Clinical Trial Information",
+     "url": "https://www.bms.com/researchers-and-partners/clinical-trials-and-research.html"
+    },
+    {
+     "label": "BMS Clinical Trial Patient Recruiting",
+     "url": "http://www.BMSClinicalTrials.com"
+    }
+   ]
+  },
+  "sponsorCollaboratorsModule": {
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Karuna Therapeutics, Inc., a Bristol Myers Squibb company"
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2025-03-19",
+    "type": "ACTUAL"
+   },
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "lastUpdatePostDateStruct": {
+    "date": "2026-05-05",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-04-15",
+   "overallStatus": "COMPLETED",
+   "primaryCompletionDateStruct": {
+    "date": "2025-03-19",
+    "type": "ACTUAL"
+   },
+   "resultsFirstPostDateStruct": {
+    "date": "2026-05-05",
+    "type": "ACTUAL"
+   },
+   "resultsFirstSubmitDate": "2026-03-17",
+   "resultsFirstSubmitQcDate": "2026-04-15",
+   "startDateStruct": {
+    "date": "2021-11-12",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2026-04",
+   "studyFirstPostDateStruct": {
+    "date": "2021-12-06",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2021-11-23",
+   "studyFirstSubmitQcDate": "2021-11-23"
+  }
+ },
+ "resultsSection": {
+  "adverseEventsModule": {
+   "description": "The number at Risk for All-Cause Mortality, Serious Adverse Events and Other (Not Including Serious) Adverse Events represents all participants that received at least 1 dose of study medication.",
+   "eventGroups": [
+    {
+     "deathsNumAffected": 0,
+     "deathsNumAtRisk": 194,
+     "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+     "id": "EG000",
+     "otherNumAffected": 60,
+     "otherNumAtRisk": 194,
+     "seriousNumAffected": 2,
+     "seriousNumAtRisk": 194,
+     "title": "KarXT"
+    },
+    {
+     "deathsNumAffected": 0,
+     "deathsNumAtRisk": 198,
+     "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+     "id": "EG001",
+     "otherNumAffected": 16,
+     "otherNumAtRisk": 198,
+     "seriousNumAffected": 3,
+     "seriousNumAtRisk": 198,
+     "title": "Placebo"
+    }
+   ],
+   "frequencyThreshold": "5",
+   "otherEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 17,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 3,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Dry mouth"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 30,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 6,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Nausea"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 22,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 2,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Vomiting"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Nervous system disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 12,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 7,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Somnolence"
+    }
+   ],
+   "seriousEvents": [
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Gastrointestinal disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Vomiting"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Injury, poisoning and procedural complications",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 0,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Lumbar vertebral fracture"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 1,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Psychotic disorder"
+    },
+    {
+     "assessmentType": "SYSTEMATIC_ASSESSMENT",
+     "organSystem": "Psychiatric disorders",
+     "sourceVocabulary": "MedDRA 27.1",
+     "stats": [
+      {
+       "groupId": "EG000",
+       "numAffected": 1,
+       "numAtRisk": 194
+      },
+      {
+       "groupId": "EG001",
+       "numAffected": 0,
+       "numAtRisk": 198
+      }
+     ],
+     "term": "Schizophrenia"
+    }
+   ],
+   "timeFrame": "Participants were assessed for All-Cause Mortality, SAEs and Other AEs from first dose of study medication until study completion (assessed up to approximately 175 weeks)."
+  },
+  "baselineCharacteristicsModule": {
+   "denoms": [
+    {
+     "counts": [
+      {
+       "groupId": "BG000",
+       "value": "197"
+      },
+      {
+       "groupId": "BG001",
+       "value": "199"
+      },
+      {
+       "groupId": "BG002",
+       "value": "396"
+      }
+     ],
+     "units": "Participants"
+    }
+   ],
+   "groups": [
+    {
+     "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+     "id": "BG000",
+     "title": "KarXT"
+    },
+    {
+     "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+     "id": "BG001",
+     "title": "Placebo"
+    },
+    {
+     "description": "Total of all reporting groups",
+     "id": "BG002",
+     "title": "Total"
+    }
+   ],
+   "measures": [
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "spread": "11.26",
+           "value": "41.6"
+          },
+          {
+           "groupId": "BG001",
+           "spread": "10.41",
+           "value": "41.8"
+          },
+          {
+           "groupId": "BG002",
+           "spread": "10.83",
+           "value": "41.7"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "dispersionType": "STANDARD_DEVIATION",
+     "paramType": "MEAN",
+     "title": "Age, Continuous",
+     "unitOfMeasure": "Years"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "70"
+          },
+          {
+           "groupId": "BG001",
+           "value": "72"
+          },
+          {
+           "groupId": "BG002",
+           "value": "142"
+          }
+         ],
+         "title": "Female"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "127"
+          },
+          {
+           "groupId": "BG001",
+           "value": "127"
+          },
+          {
+           "groupId": "BG002",
+           "value": "254"
+          }
+         ],
+         "title": "Male"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Sex: Female, Male",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "35"
+          },
+          {
+           "groupId": "BG001",
+           "value": "34"
+          },
+          {
+           "groupId": "BG002",
+           "value": "69"
+          }
+         ],
+         "title": "Hispanic or Latino"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "161"
+          },
+          {
+           "groupId": "BG001",
+           "value": "163"
+          },
+          {
+           "groupId": "BG002",
+           "value": "324"
+          }
+         ],
+         "title": "Not Hispanic or Latino"
+        },
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "1"
+          },
+          {
+           "groupId": "BG001",
+           "value": "2"
+          },
+          {
+           "groupId": "BG002",
+           "value": "3"
+          }
+         ],
+         "title": "Unknown or Not Reported"
+        }
+       ]
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Ethnicity (NIH/OMB)",
+     "unitOfMeasure": "Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "1"
+          },
+          {
+           "groupId": "BG001",
+           "value": "2"
+          },
+          {
+           "groupId": "BG002",
+           "value": "3"
+          }
+         ]
+        }
+       ],
+       "title": "American Indian or Alaska Native"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "7"
+          },
+          {
+           "groupId": "BG001",
+           "value": "5"
+          },
+          {
+           "groupId": "BG002",
+           "value": "12"
+          }
+         ]
+        }
+       ],
+       "title": "Asian"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "78"
+          },
+          {
+           "groupId": "BG001",
+           "value": "75"
+          },
+          {
+           "groupId": "BG002",
+           "value": "153"
+          }
+         ]
+        }
+       ],
+       "title": "Black or African American"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "1"
+          },
+          {
+           "groupId": "BG001",
+           "value": "0"
+          },
+          {
+           "groupId": "BG002",
+           "value": "1"
+          }
+         ]
+        }
+       ],
+       "title": "Native Hawaiian or Other Pacific Islander"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "99"
+          },
+          {
+           "groupId": "BG001",
+           "value": "112"
+          },
+          {
+           "groupId": "BG002",
+           "value": "211"
+          }
+         ]
+        }
+       ],
+       "title": "White"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "10"
+          },
+          {
+           "groupId": "BG001",
+           "value": "5"
+          },
+          {
+           "groupId": "BG002",
+           "value": "15"
+          }
+         ]
+        }
+       ],
+       "title": "Other"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "BG000",
+           "value": "1"
+          },
+          {
+           "groupId": "BG001",
+           "value": "0"
+          },
+          {
+           "groupId": "BG002",
+           "value": "1"
+          }
+         ]
+        }
+       ],
+       "title": "Not Reported"
+      }
+     ],
+     "paramType": "COUNT_OF_PARTICIPANTS",
+     "title": "Race/Ethnicity, Customized",
+     "unitOfMeasure": "Participants"
+    }
+   ]
+  },
+  "moreInfoModule": {
+   "certainAgreement": {
+    "otherDetails": "Bristol-Myers Squibb Co. agreements with investigators vary; constant is our right to embargo communications regarding trial results prior to public release for a period ≤60 days from submittal for review. We will not prohibit investigators from publishing, but will prohibit the disclosure of previously undisclosed confidential information other than study results, and request postponement of single-center publications until after disclosure of the clinical trial's primary publication.",
+    "piSponsorEmployee": false,
+    "restrictionType": "OTHER",
+    "restrictiveAgreement": true
+   },
+   "pointOfContact": {
+    "email": "Clinical.Trials@bms.com",
+    "organization": "Bristol-Myers Squibb",
+    "phone": "1-855-907-3286",
+    "title": "Bristol-Myers Squibb Study Director"
+   }
+  },
+  "outcomeMeasuresModule": {
+   "outcomeMeasures": [
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-4.510",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.470",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "1.27",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityComment": "Least-squares mean difference",
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.1115",
+       "paramType": "Least-squares mean difference",
+       "paramValue": "-2.0",
+       "statisticalComment": "MMRM includes PANSS change weeks 1-6; Fixed effects: (Treatment: Visit) interaction; Covariates: age, sex, baseline, stratification factors",
+       "statisticalMethod": "Mixed model repeated measure"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "1.01",
+           "value": "-14.3"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.98",
+           "value": "-12.2"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "190"
+        },
+        {
+         "groupId": "OG001",
+         "value": "196"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "PANSS Total Score is a clinician administered measure of schizophrenia symptom severity used widely in antipsychotic research. It includes 30 items across 3 subscales:\n\n* Positive Symptoms (7 items) assessing excesses or distortions such as hallucinations, delusions, or grandiosity\n* Negative Symptoms (7 items) assessing diminished function such as social withdrawal or reduced motivation and\n* General Psychopathology (16 items) capturing broader symptoms like anxiety, depression, guilt, or cognitive impairment Each item is scored from 1 (absent) to 7 (extreme), producing a PANSS Total Score ranging from 30 to 210, with higher scores indicating more severe symptoms.\n\nBaseline is defined as the last non missing PANSS Total Score before first dose.\n\nThis endpoint evaluates change from Baseline to Week 6, with negative values indicating improvement.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+       "id": "OG000",
+       "title": "KarXT"
+      },
+      {
+       "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+       "id": "OG001",
+       "title": "Placebo"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "All randomized participants who received at least one dose of study medication, had a baseline positive and negative syndrome scale (PANSS) assessment, and had at least one post baseline PANSS assessment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline to Week 6",
+     "title": "Change From Baseline in Positive and Negative Syndrome Scale (PANSS) Total Score at Week 6",
+     "type": "PRIMARY",
+     "unitOfMeasure": "Score on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-2.427",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "1.234",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.93",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityComment": "Least-squares mean difference",
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.5219",
+       "paramType": "Least-squares mean difference",
+       "paramValue": "-0.6",
+       "statisticalComment": "MMRM includes PSP Total Score weeks 1-6; Fixed effects: (Treatment: Visit) interaction; Covariates: age, sex, baseline, stratification factors",
+       "statisticalMethod": "Mixed model repeated measure"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.75",
+           "value": "5.3"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.73",
+           "value": "5.9"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "190"
+        },
+        {
+         "groupId": "OG001",
+         "value": "196"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The Personal and Social Performance (PSP) Scale is a clinician administered assessment of personal and social functioning in individuals with schizophrenia. It evaluates functioning across four key dimensions:\n\n* Socially useful activities\n* Personal and social relationships\n* Self care and\n* Disturbing and aggressive behaviors The PSP is completed through a structured clinical interview and provides a total score ranging from 1 to 100, using a 6 point severity rating for each domain. Higher PSP scores indicate better personal and social functioning.\n\nThe endpoint measures change from Baseline to Week 6 in PSP score, with positive values indicating improved personal and social functioning.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+       "id": "OG000",
+       "title": "KarXT"
+      },
+      {
+       "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+       "id": "OG001",
+       "title": "Placebo"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "All randomized participants who received at least one dose of study medication, had a baseline positive and negative syndrome scale (PANSS) assessment, and had at least one post baseline PANSS assessment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline to Week 6",
+     "title": "Change From Baseline in Personal and Social Performance Scale (PSP) at Week 6",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Score on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-0.254",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.035",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.07",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityComment": "Least-squares mean difference",
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.14",
+       "paramType": "Least-squares mean difference",
+       "paramValue": "-0.1",
+       "statisticalComment": "MMRM includes CGI-S Score weeks 1-6; Fixed effects: (Treatment: Visit) interaction; Covariates: age, sex, baseline, stratification factors",
+       "statisticalMethod": "Mixed model repeated measure"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.06",
+           "value": "-0.6"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.06",
+           "value": "-0.5"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "190"
+        },
+        {
+         "groupId": "OG001",
+         "value": "196"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Change from baseline in the Clinical Global Impression-Severity (CGI-S) assesses change in overall illness severity over time as rated by the clinician. The CGI-S is a clinician-rated, single-item scale that evaluates the severity of the participant's illness at the time of assessment based on the clinician's total clinical experience with patients with the same diagnosis. Severity is rated on a 7-point scale ranging from 1 (normal, not at all ill) to 7 (among the most extremely ill), with higher scores indicating greater illness severity (worse outcome). Ratings are based on observed and reported symptoms, behavior, and functioning over the previous 7 days. Change from baseline is calculated as the difference between the CGI-S score at baseline and Week 6, with negative values indicating improvement and positive values indicating worsening.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+       "id": "OG000",
+       "title": "KarXT"
+      },
+      {
+       "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+       "id": "OG001",
+       "title": "Placebo"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "All randomized participants who received at least one dose of study medication, had a baseline positive and negative syndrome scale (PANSS) assessment, and had at least one post baseline PANSS assessment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline to Week 6",
+     "title": "Change From Baseline in Clinical Global Impression-Severity Scale (CGI-S) at Week 6",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Score on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-1.729",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.042",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.45",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityComment": "Least-squares mean difference",
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.0618",
+       "paramType": "Least-squares mean difference",
+       "paramValue": "-0.8",
+       "statisticalComment": "MMRM includes PANSS M-Pos Score weeks 1-6; Fixed effects: (Treatment: Visit) interaction; Covariates: age, sex, baseline, stratification factors",
+       "statisticalMethod": "Mixed model repeated measure"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.36",
+           "value": "-5.0"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.35",
+           "value": "-4.2"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "190"
+        },
+        {
+         "groupId": "OG001",
+         "value": "196"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Change from baseline in PANSS M-Pos Symptom Factor Score assesses change in the severity of positive symptoms of schizophrenia over time as rated by the clinician. The PANSS is a clinician-administered scale that evaluates symptom severity based on observed and reported symptoms. The PANSS Marder Positive Symptom Factor score is derived from the following PANSS items: Delusions (P1), Hallucinations (P3), Grandiosity (P5), Suspiciousness/Persecution (P6), Stereotyped Thinking (N7), Somatic Concern (G1), Unusual Thought Content (G9), and Lack of Judgment and Insight (G12). Each item is rated on a 7-point scale (1 = absent to 7 = extreme). The PANSS M-Pos factor score is calculated by summing the relevant item scores, with higher scores indicating greater positive symptom severity (worse outcome). Change from baseline is calculated as the difference between the PANSS M-Pos score at baseline and Week 6, with negative values indicating improvement and positive values indicating worsening.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+       "id": "OG000",
+       "title": "KarXT"
+      },
+      {
+       "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+       "id": "OG001",
+       "title": "Placebo"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "All randomized participants who received at least one dose of study medication, had a baseline positive and negative syndrome scale (PANSS) assessment, and had at least one post baseline PANSS assessment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline to Week 6",
+     "title": "Change From Baseline in Positive and Negative Syndrome Scale Marder Positive (PANSS M-Pos) Symptom Factor Score at Week 6",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Score on a Scale"
+    },
+    {
+     "analyses": [
+      {
+       "ciLowerLimit": "-0.916",
+       "ciNumSides": "TWO_SIDED",
+       "ciPctValue": "95",
+       "ciUpperLimit": "0.723",
+       "dispersionType": "STANDARD_ERROR_OF_MEAN",
+       "dispersionValue": "0.42",
+       "groupIds": [
+        "OG000",
+        "OG001"
+       ],
+       "nonInferiorityComment": "Least-squares mean difference",
+       "nonInferiorityType": "SUPERIORITY",
+       "pValue": "0.8162",
+       "paramType": "Least-squares mean difference",
+       "paramValue": "-0.1",
+       "statisticalComment": "MMRM includes PANSS M-Neg Score weeks 1-6; Fixed effects: (Treatment: Visit) interaction; Covariates: age, sex, baseline, stratification factors",
+       "statisticalMethod": "Mixed model repeated measure"
+      }
+     ],
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "spread": "0.33",
+           "value": "-3.1"
+          },
+          {
+           "groupId": "OG001",
+           "spread": "0.32",
+           "value": "-3.0"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "190"
+        },
+        {
+         "groupId": "OG001",
+         "value": "196"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "Change from baseline in PANSS M-Neg Symptom Factor Score assesses change in the severity of negative symptoms of schizophrenia over time as rated by the clinician. The PANSS is a clinician-administered scale that evaluates symptom severity based on observed and reported symptoms. The PANSS Marder Negative Symptom Factor score is derived from the following PANSS items: Blunted Affect (N1), Emotional Withdrawal (N2), Poor Rapport (N3), Passive Social Withdrawal (N4), Lack of Spontaneity of Conversation (N6), Motor Retardation (G7), and Active Social Avoidance (G16). Each item is rated on a 7-point scale (1 = absent to 7 = extreme). The PANSS M-Neg factor score is calculated by summing the relevant item scores, with higher scores indicating greater negative symptom severity (worse outcome). Change from baseline is calculated as the difference between the PANSS M-Neg score at baseline and Week 6, with negative values indicating improvement and positive values indicating worsening.",
+     "dispersionType": "Standard Error",
+     "groups": [
+      {
+       "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+       "id": "OG000",
+       "title": "KarXT"
+      },
+      {
+       "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+       "id": "OG001",
+       "title": "Placebo"
+      }
+     ],
+     "paramType": "LEAST_SQUARES_MEAN",
+     "populationDescription": "All randomized participants who received at least one dose of study medication, had a baseline positive and negative syndrome scale (PANSS) assessment, and had at least one post baseline PANSS assessment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "Baseline to Week 6",
+     "title": "Change From Baseline in Positive and Negative Syndrome Scale Marder Negative (PANSS M-Neg) Symptom Factor Score at Week 6",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Score on a Scale"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "37.9"
+          },
+          {
+           "groupId": "OG001",
+           "value": "35.0"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "161"
+        },
+        {
+         "groupId": "OG001",
+         "value": "180"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The Positive and Negative Syndrome Scale (PANSS) is a clinician administered scale that assesses symptom severity in schizophrenia and includes 30 items across three subscales: 7 positive symptoms, 7 negative symptoms, and 16 general psychopathology symptoms. Each item is scored from 1 (absent) to 7 (extreme), generating a PANSS Total Score ranging from 30 to 210, with higher scores indicating more severe symptoms. This endpoint evaluates the percentage of participants whose Week 6 PANSS Total Score decreased by at least 30% from Baseline, reflecting clinically meaningful improvement.",
+     "groups": [
+      {
+       "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+       "id": "OG000",
+       "title": "KarXT"
+      },
+      {
+       "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+       "id": "OG001",
+       "title": "Placebo"
+      }
+     ],
+     "paramType": "NUMBER",
+     "populationDescription": "All randomized participants who received at least one dose of study medication, had a baseline positive and negative syndrome scale (PANSS) assessment, and had at least one post baseline PANSS assessment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "At Week 6",
+     "title": "Percentage of Participants Achieving a ≥ 30% Improvement in Positive and Negative Syndrome Scale (PANSS) Total Score at Week 6",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage of Participants"
+    },
+    {
+     "classes": [
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "58.5"
+          },
+          {
+           "groupId": "OG001",
+           "value": "50.0"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "159"
+          },
+          {
+           "groupId": "OG001",
+           "value": "180"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Participant Preference: Better (Scores 1-2)"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "41.5"
+          },
+          {
+           "groupId": "OG001",
+           "value": "50.0"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "159"
+          },
+          {
+           "groupId": "OG001",
+           "value": "180"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Participant Preference: Same or Worse (Scores 3-5)"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "64.3"
+          },
+          {
+           "groupId": "OG001",
+           "value": "52.2"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "157"
+          },
+          {
+           "groupId": "OG001",
+           "value": "178"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Informant Preference: Better (Scores 1-2)"
+      },
+      {
+       "categories": [
+        {
+         "measurements": [
+          {
+           "groupId": "OG000",
+           "value": "35.7"
+          },
+          {
+           "groupId": "OG001",
+           "value": "47.8"
+          }
+         ]
+        }
+       ],
+       "denoms": [
+        {
+         "counts": [
+          {
+           "groupId": "OG000",
+           "value": "157"
+          },
+          {
+           "groupId": "OG001",
+           "value": "178"
+          }
+         ],
+         "units": "Participants"
+        }
+       ],
+       "title": "Informant Preference: Same or Worse (Scores 3-5)"
+      }
+     ],
+     "denoms": [
+      {
+       "counts": [
+        {
+         "groupId": "OG000",
+         "value": "159"
+        },
+        {
+         "groupId": "OG001",
+         "value": "180"
+        }
+       ],
+       "units": "Participants"
+      }
+     ],
+     "description": "The Preference of Medication (POM) is a two item questionnaire assessing the participant's and informant's preference for the current antipsychotic compared with the most recent pre study antipsychotic. It evaluates perceived benefit or worsening relative to prior treatment. The POM uses a 5 point scale: 1 = \"much better, I prefer this medication,\" 2 = \"slightly better,\" 3 = \"about the same,\" 4 = \"slightly worse,\" 5 = \"much worse, I much prefer my previous medication.\" Based on this scale, responses are categorized as Better (scores 1-2) or Same or Worse (scores 3-5) for both participant and informant assessments.",
+     "groups": [
+      {
+       "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+       "id": "OG000",
+       "title": "KarXT"
+      },
+      {
+       "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+       "id": "OG001",
+       "title": "Placebo"
+      }
+     ],
+     "paramType": "NUMBER",
+     "populationDescription": "All randomized participants who received at least one dose of study medication, had a baseline positive and negative syndrome scale (PANSS) assessment, and had at least one post baseline PANSS assessment.",
+     "reportingStatus": "POSTED",
+     "timeFrame": "At Week 6",
+     "title": "Percentage of Participants With Preference of Medication (POM) at Week 6",
+     "type": "SECONDARY",
+     "unitOfMeasure": "Percentage of Participants"
+    }
+   ]
+  },
+  "participantFlowModule": {
+   "groups": [
+    {
+     "description": "Participants received oral KarXT (Xanomeline/Trospium Chloride) capsules twice daily (BID) for a treatment period of up to 6 weeks. During Week 1, participants received KarXT 50/20 mg BID, followed by KarXT 75/20 mg BID in Week 2. In Week 3, dosing became flexible based on individual tolerability and clinical response, with allowable doses of KarXT 75/20 mg or 100/20 mg BID. From Weeks 4 to 6, participants continued flexible dosing according to tolerability and clinical response, with allowable doses of KarXT 75/20 mg, 100/20 mg, or 125/30 mg BID.",
+     "id": "FG000",
+     "title": "KarXT"
+    },
+    {
+     "description": "Participants received matching placebo to KarXT orally twice daily (BID) for a treatment period of up to 6 weeks.",
+     "id": "FG001",
+     "title": "Placebo"
+    }
+   ],
+   "periods": [
+    {
+     "dropWithdraws": [
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "0"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        }
+       ],
+       "type": "Lost to Follow-up"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "1"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Physician Decision"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "2"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "0"
+        }
+       ],
+       "type": "Withdrawal by Subject"
+      }
+     ],
+     "milestones": [
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "197"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "199"
+        }
+       ],
+       "comment": "Randomized",
+       "type": "STARTED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "194"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "198"
+        }
+       ],
+       "type": "COMPLETED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "3"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        }
+       ],
+       "type": "NOT COMPLETED"
+      }
+     ],
+     "title": "Pre-treatment Period"
+    },
+    {
+     "dropWithdraws": [
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "10"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "8"
+        }
+       ],
+       "type": "Withdrawal by Subject"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "3"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        }
+       ],
+       "type": "Protocol Violation"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "5"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "1"
+        }
+       ],
+       "type": "Lost to Follow-up"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "4"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "2"
+        }
+       ],
+       "type": "Physician Decision"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "7"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "2"
+        }
+       ],
+       "type": "Adverse Event"
+      },
+      {
+       "reasons": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "4"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "4"
+        }
+       ],
+       "type": "Other Reasons"
+      }
+     ],
+     "milestones": [
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "194"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "198"
+        }
+       ],
+       "comment": "Treated",
+       "type": "STARTED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "161"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "180"
+        }
+       ],
+       "type": "COMPLETED"
+      },
+      {
+       "achievements": [
+        {
+         "groupId": "FG000",
+         "numSubjects": "33"
+        },
+        {
+         "groupId": "FG001",
+         "numSubjects": "18"
+        }
+       ],
+       "type": "NOT COMPLETED"
+      }
+     ],
+     "title": "Treatment Period"
+    }
+   ],
+   "preAssignmentDetails": "A total of 396 participants were randomized, with 197 assigned to the KarXT group and 199 assigned to the placebo group. Of these, 392 participants received at least one dose of study treatment, including 194 in the KarXT group and 198 in the placebo group."
+  }
+ }
+}

@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,CEREBROVASCULAR ACCIDENT,8
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,DIARRHOEA,6
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,ACUTE KIDNEY INJURY,5
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,CEREBRAL INFARCTION,5
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,EOSINOPHILIA,5
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,HYPOTENSION,5
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,ARTHRALGIA,4
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,ATRIAL FIBRILLATION,4
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,MYOCARDITIS,4
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,PLEURAL EFFUSION,4
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,PRURITUS,4
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,RASH,4
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,ALANINE AMINOTRANSFERASE INCREASED,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,ASPARTATE AMINOTRANSFERASE INCREASED,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,BURNING SENSATION,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,CARDIAC FAILURE,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,CEREBRAL ARTERY EMBOLISM,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,CYTOKINE RELEASE SYNDROME,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,DEEP VEIN THROMBOSIS,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,EATING DISORDER,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,HYPONATRAEMIA,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,INFLUENZA LIKE ILLNESS,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,INTESTINAL HAEMORRHAGE,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,LYMPHADENOPATHY,3
+BEMPEGALDESLEUKIN,patient.drug.medicinalproduct,128,METASTASES TO LUNG,3

@@ -1,0 +1,752 @@
+{
+ "cards_with_rules": [
+  "pharos",
+  "dto",
+  "opentargets_layer",
+  "chembl37"
+ ],
+ "edges": {
+  "chembl37": {
+   "ends rewritten to a corrected identifier (rows read)": 75
+  },
+  "opentargets_layer": {
+   "ends rewritten to a corrected identifier (rows read)": 1456
+  },
+  "pharos": {
+   "BioPlex probability rows are a statistical association": 70262,
+   "STRING score rows are a statistical association": 11565924,
+   "placeholder self-pairs have no knowledge level": 19165
+  }
+ },
+ "ids_renamed": {
+  "Ensembl gene accession written as a UniProt id": 44,
+  "Orphanet: written as ORDO:": 523
+ },
+ "ids_renamed_examples": [
+  [
+   "Orphanet:100049",
+   "ORDO:100049"
+  ],
+  [
+   "Orphanet:101042",
+   "ORDO:101042"
+  ],
+  [
+   "Orphanet:101052",
+   "ORDO:101052"
+  ],
+  [
+   "Orphanet:101435",
+   "ORDO:101435"
+  ],
+  [
+   "Orphanet:101685",
+   "ORDO:101685"
+  ],
+  [
+   "Orphanet:101940",
+   "ORDO:101940"
+  ],
+  [
+   "Orphanet:101953",
+   "ORDO:101953"
+  ],
+  [
+   "Orphanet:101960",
+   "ORDO:101960"
+  ],
+  [
+   "Orphanet:101988",
+   "ORDO:101988"
+  ],
+  [
+   "Orphanet:101992",
+   "ORDO:101992"
+  ],
+  [
+   "Orphanet:102010",
+   "ORDO:102010"
+  ],
+  [
+   "Orphanet:102020",
+   "ORDO:102020"
+  ],
+  [
+   "Orphanet:103912",
+   "ORDO:103912"
+  ],
+  [
+   "Orphanet:104006",
+   "ORDO:104006"
+  ],
+  [
+   "Orphanet:104009",
+   "ORDO:104009"
+  ],
+  [
+   "Orphanet:104013",
+   "ORDO:104013"
+  ],
+  [
+   "Orphanet:104078",
+   "ORDO:104078"
+  ],
+  [
+   "Orphanet:108987",
+   "ORDO:108987"
+  ],
+  [
+   "Orphanet:1256",
+   "ORDO:1256"
+  ],
+  [
+   "Orphanet:1266",
+   "ORDO:1266"
+  ],
+  [
+   "Orphanet:137653",
+   "ORDO:137653"
+  ],
+  [
+   "Orphanet:138041",
+   "ORDO:138041"
+  ],
+  [
+   "Orphanet:138047",
+   "ORDO:138047"
+  ],
+  [
+   "Orphanet:138050",
+   "ORDO:138050"
+  ],
+  [
+   "Orphanet:138055",
+   "ORDO:138055"
+  ],
+  [
+   "Orphanet:138063",
+   "ORDO:138063"
+  ],
+  [
+   "Orphanet:138066",
+   "ORDO:138066"
+  ],
+  [
+   "Orphanet:139027",
+   "ORDO:139027"
+  ],
+  [
+   "Orphanet:139030",
+   "ORDO:139030"
+  ],
+  [
+   "Orphanet:139373",
+   "ORDO:139373"
+  ],
+  [
+   "Orphanet:139380",
+   "ORDO:139380"
+  ],
+  [
+   "Orphanet:140462",
+   "ORDO:140462"
+  ],
+  [
+   "Orphanet:156005",
+   "ORDO:156005"
+  ],
+  [
+   "Orphanet:156202",
+   "ORDO:156202"
+  ],
+  [
+   "Orphanet:156237",
+   "ORDO:156237"
+  ],
+  [
+   "Orphanet:156532",
+   "ORDO:156532"
+  ],
+  [
+   "Orphanet:156601",
+   "ORDO:156601"
+  ],
+  [
+   "Orphanet:156610",
+   "ORDO:156610"
+  ],
+  [
+   "Orphanet:156619",
+   "ORDO:156619"
+  ],
+  [
+   "Orphanet:156622",
+   "ORDO:156622"
+  ],
+  [
+   "Orphanet:156638",
+   "ORDO:156638"
+  ],
+  [
+   "Orphanet:158038",
+   "ORDO:158038"
+  ],
+  [
+   "Orphanet:158300",
+   "ORDO:158300"
+  ],
+  [
+   "Orphanet:158665",
+   "ORDO:158665"
+  ],
+  [
+   "Orphanet:163209",
+   "ORDO:163209"
+  ],
+  [
+   "Orphanet:163631",
+   "ORDO:163631"
+  ],
+  [
+   "Orphanet:163988",
+   "ORDO:163988"
+  ],
+  [
+   "Orphanet:164001",
+   "ORDO:164001"
+  ],
+  [
+   "Orphanet:165652",
+   "ORDO:165652"
+  ],
+  [
+   "Orphanet:165655",
+   "ORDO:165655"
+  ],
+  [
+   "Orphanet:165661",
+   "ORDO:165661"
+  ],
+  [
+   "Orphanet:166466",
+   "ORDO:166466"
+  ],
+  [
+   "Orphanet:166475",
+   "ORDO:166475"
+  ],
+  [
+   "Orphanet:166478",
+   "ORDO:166478"
+  ],
+  [
+   "Orphanet:166487",
+   "ORDO:166487"
+  ],
+  [
+   "Orphanet:167762",
+   "ORDO:167762"
+  ],
+  [
+   "Orphanet:168612",
+   "ORDO:168612"
+  ],
+  [
+   "Orphanet:168615",
+   "ORDO:168615"
+  ],
+  [
+   "Orphanet:168778",
+   "ORDO:168778"
+  ],
+  [
+   "Orphanet:169346",
+   "ORDO:169346"
+  ],
+  [
+   "Orphanet:169355",
+   "ORDO:169355"
+  ],
+  [
+   "Orphanet:169361",
+   "ORDO:169361"
+  ],
+  [
+   "Orphanet:169443",
+   "ORDO:169443"
+  ],
+  [
+   "Orphanet:169446",
+   "ORDO:169446"
+  ],
+  [
+   "Orphanet:178025",
+   "ORDO:178025"
+  ],
+  [
+   "Orphanet:179490",
+   "ORDO:179490"
+  ],
+  [
+   "Orphanet:180766",
+   "ORDO:180766"
+  ],
+  [
+   "Orphanet:180772",
+   "ORDO:180772"
+  ],
+  [
+   "Orphanet:181368",
+   "ORDO:181368"
+  ],
+  [
+   "Orphanet:181387",
+   "ORDO:181387"
+  ],
+  [
+   "Orphanet:181390",
+   "ORDO:181390"
+  ],
+  [
+   "Orphanet:181396",
+   "ORDO:181396"
+  ],
+  [
+   "Orphanet:181399",
+   "ORDO:181399"
+  ],
+  [
+   "Orphanet:181402",
+   "ORDO:181402"
+  ],
+  [
+   "Orphanet:181422",
+   "ORDO:181422"
+  ],
+  [
+   "Orphanet:181431",
+   "ORDO:181431"
+  ],
+  [
+   "Orphanet:181441",
+   "ORDO:181441"
+  ],
+  [
+   "Orphanet:182043",
+   "ORDO:182043"
+  ],
+  [
+   "Orphanet:182073",
+   "ORDO:182073"
+  ],
+  [
+   "Orphanet:182076",
+   "ORDO:182076"
+  ],
+  [
+   "Orphanet:182083",
+   "ORDO:182083"
+  ],
+  [
+   "Orphanet:183422",
+   "ORDO:183422"
+  ],
+  [
+   "Orphanet:183426",
+   "ORDO:183426"
+  ],
+  [
+   "Orphanet:183438",
+   "ORDO:183438"
+  ],
+  [
+   "Orphanet:183441",
+   "ORDO:183441"
+  ],
+  [
+   "Orphanet:183444",
+   "ORDO:183444"
+  ],
+  [
+   "Orphanet:183463",
+   "ORDO:183463"
+  ],
+  [
+   "Orphanet:183466",
+   "ORDO:183466"
+  ],
+  [
+   "Orphanet:183469",
+   "ORDO:183469"
+  ],
+  [
+   "Orphanet:183478",
+   "ORDO:183478"
+  ],
+  [
+   "Orphanet:183481",
+   "ORDO:183481"
+  ],
+  [
+   "Orphanet:183484",
+   "ORDO:183484"
+  ],
+  [
+   "Orphanet:183487",
+   "ORDO:183487"
+  ],
+  [
+   "Orphanet:183494",
+   "ORDO:183494"
+  ],
+  [
+   "Orphanet:183497",
+   "ORDO:183497"
+  ],
+  [
+   "Orphanet:183506",
+   "ORDO:183506"
+  ],
+  [
+   "Orphanet:183509",
+   "ORDO:183509"
+  ],
+  [
+   "Orphanet:183512",
+   "ORDO:183512"
+  ],
+  [
+   "Orphanet:183515",
+   "ORDO:183515"
+  ],
+  [
+   "Orphanet:183521",
+   "ORDO:183521"
+  ]
+ ],
+ "kept_as_is": [
+  {
+   "layer": "pharos",
+   "what": "TIN-X text-mining rows: primary_knowledge_source infores:pharos",
+   "why": "the infores registry has no entry for TIN-X (infores:tinx and infores:tin-x looked up: data/reference/infores_checked.tsv), so the aggregator's id is kept; knowledge_level text_co_occurrence and agent_type text_mining_agent already say what the rows are"
+  },
+  {
+   "layer": "pharos",
+   "what": "Protein-protein rows whose source cell names Reactome (Reactome, 'Reactome,STRINGDB', 'BioPlex,Reactome', 'BioPlex,Reactome,STRINGDB'): knowledge_assertion + manual_agent",
+   "why": "Reactome is curated by people; the mixed rows keep the curated level although their primary source is written infores:string (the two cells with BioPlex: 2,480 and 6 of the 11,672,660 interaction rows of Pharos 3.19.2, counted in the IntAct corroboration report)"
+  },
+  {
+   "layer": "pharos",
+   "what": "BioPlex-only protein-protein rows: primary_knowledge_source infores:bioplex",
+   "why": "the infores registry has no entry for BioPlex (data/reference/infores_checked.tsv); the id is kept and listed"
+  },
+  {
+   "layer": "opentargets_layer",
+   "what": "primary and aggregator knowledge source infores:opentargets",
+   "why": "the infores registry spells it infores:open-targets (data/reference/infores_checked.tsv); the id is kept because the app, the tested questions and the verdict file name the layer by it"
+  }
+ ],
+ "nodes": {
+  "biotypes_without_term": {
+   "artifact": 19
+  },
+  "gene_type_basis": {
+   "biotype": 77695,
+   "biotype without a sequence-ontology gene term": 19,
+   "no biotype in any layer": 1114,
+   "type given by a source card": 55
+  },
+  "gene_type_changed": {
+   "SO:0001217 -> SO:0000043": 9,
+   "SO:0001217 -> SO:0001759": 2,
+   "SO:0001217 -> SO:0001760": 2,
+   "SO:0001217 -> SO:0002107": 33,
+   "SO:0001217 -> SO:0002108": 19,
+   "SO:0001217 -> SO:0002109": 11,
+   "SO:0001217 -> SO:0002123": 12,
+   "SO:0001217 -> SO:0002126": 13,
+   "SO:0001217 -> SO:0002127": 119,
+   "SO:0001217 -> SO:0002134": 2,
+   "SO:0001217 -> SO:0002135": 1,
+   "SO:0001217 -> SO:0002136": 1,
+   "SO:0001217 -> SO:0002137": 8
+  },
+  "gene_types": {
+   "SO:0000043": 9484,
+   "SO:0000336": 497,
+   "SO:0000704": 1133,
+   "SO:0001217": 20162,
+   "SO:0001263": 2212,
+   "SO:0001265": 1878,
+   "SO:0001267": 985,
+   "SO:0001268": 1901,
+   "SO:0001272": 22,
+   "SO:0001637": 47,
+   "SO:0001759": 90,
+   "SO:0001760": 1951,
+   "SO:0002098": 1,
+   "SO:0002100": 9,
+   "SO:0002101": 3,
+   "SO:0002102": 187,
+   "SO:0002103": 33,
+   "SO:0002104": 4,
+   "SO:0002105": 2,
+   "SO:0002107": 1584,
+   "SO:0002108": 206,
+   "SO:0002109": 1148,
+   "SO:0002123": 14,
+   "SO:0002124": 37,
+   "SO:0002125": 18,
+   "SO:0002126": 146,
+   "SO:0002127": 34866,
+   "SO:0002134": 6,
+   "SO:0002135": 5,
+   "SO:0002136": 79,
+   "SO:0002137": 107,
+   "SO:0002181": 8,
+   "SO:0002339": 52,
+   "SO:0002358": 4,
+   "SO:0002363": 2
+  },
+  "genes": 78883,
+  "named_from_chembl": 17997,
+  "retyped": {
+   "ChEBI classes in the DTO table are chemical entities": 17,
+   "Open Targets index terms that are not diseases": 37
+  },
+  "retyped_nodes": {
+   "ChEBI classes in the DTO table are chemical entities": [
+    [
+     "CHEBI:16670",
+     "Peptide"
+    ],
+    [
+     "CHEBI:23367",
+     "Molecular entity"
+    ],
+    [
+     "CHEBI:24431",
+     "Chemical entity"
+    ],
+    [
+     "CHEBI:3306",
+     "calcitonin"
+    ],
+    [
+     "CHEBI:34972",
+     "Secretin"
+    ],
+    [
+     "CHEBI:53461",
+     "Neuropeptide S"
+    ],
+    [
+     "CHEBI:5391",
+     "Glucagon"
+    ],
+    [
+     "CHEBI:80240",
+     "Endothelin-1"
+    ],
+    [
+     "CHEBI:80242",
+     "Endothelin-2"
+    ],
+    [
+     "CHEBI:80243",
+     "Endothelin-3"
+    ],
+    [
+     "CHEBI:80275",
+     "Tuberoinfundibular peptide of 39 residues"
+    ],
+    [
+     "CHEBI:80290",
+     "Humanin"
+    ],
+    [
+     "CHEBI:80328",
+     "Gastrin-releasing peptide"
+    ],
+    [
+     "CHEBI:80330",
+     "Peptide YY"
+    ],
+    [
+     "CHEBI:80336",
+     "Insulin-like 3"
+    ],
+    [
+     "CHEBI:80337",
+     "Calcitonin gene-related peptide 1"
+    ],
+    [
+     "CHEBI:80338",
+     "Calcitonin gene-related peptide 2"
+    ]
+   ],
+   "Open Targets index terms that are not diseases": [
+    [
+     "GSSO:000413",
+     "sexual behavior"
+    ],
+    [
+     "GSSO:000414",
+     "sexuality"
+    ],
+    [
+     "GSSO:000700",
+     "allosexuality"
+    ],
+    [
+     "GSSO:000701",
+     "monosexuality"
+    ],
+    [
+     "GSSO:000702",
+     "plurisexuality"
+    ],
+    [
+     "GSSO:000703",
+     "\u0431\u0438\u0441\u0435\u043a\u0441\u0443\u0430\u0301\u043b\u043d\u043e\u0441\u0442"
+    ],
+    [
+     "GSSO:000705",
+     "\u0445\u043e\u043c\u043e\u0441\u0435\u043a\u0441\u0443\u0430\u0301\u043b\u043d\u043e\u0441\u0442"
+    ],
+    [
+     "GSSO:000706",
+     "\u0445\u0435\u0442\u0435\u0440\u043e\u0441\u0435\u043a\u0441\u0443\u0430\u0301\u043b\u043d\u043e\u0441\u0442"
+    ],
+    [
+     "GSSO:000707",
+     "male homosexuality"
+    ],
+    [
+     "GSSO:000708",
+     "female homosexuality"
+    ],
+    [
+     "GSSO:000710",
+     "polysexuality"
+    ],
+    [
+     "GSSO:000711",
+     "gray asexuality"
+    ],
+    [
+     "GSSO:000712",
+     "demisexuality"
+    ],
+    [
+     "GSSO:001379",
+     "non-heterosexuality"
+    ],
+    [
+     "GSSO:004911",
+     "autochorisexuality"
+    ],
+    [
+     "GSSO:009263",
+     "megasexuality"
+    ],
+    [
+     "NCIT:C117245",
+     "decreased attention"
+    ],
+    [
+     "NCIT:C74532",
+     "nervousness"
+    ],
+    [
+     "NCIT:C95746",
+     "sleepiness"
+    ],
+    [
+     "OBI:0001620",
+     "latitude coordinate measurement datum"
+    ],
+    [
+     "OBI:0001621",
+     "longitude coordinate measurement datum"
+    ],
+    [
+     "OBI:0002197",
+     "tissue section thickness"
+    ],
+    [
+     "OBI:1110021",
+     "infection process"
+    ],
+    [
+     "OBI:1110122",
+     "pathologic process"
+    ],
+    [
+     "OGMS:0000063",
+     "disease course"
+    ],
+    [
+     "OTAR:0000003",
+     "cyst"
+    ],
+    [
+     "OTAR:0000006",
+     "musculoskeletal or connective tissue disease"
+    ],
+    [
+     "OTAR:0000009",
+     "injury, poisoning or other complication"
+    ],
+    [
+     "OTAR:0000010",
+     "respiratory or thoracic disease"
+    ],
+    [
+     "OTAR:0000014",
+     "pregnancy or perinatal disease"
+    ],
+    [
+     "OTAR:0000017",
+     "reproductive system or breast disease"
+    ],
+    [
+     "OTAR:0000018",
+     "genetic, familial or congenital disease"
+    ],
+    [
+     "OTAR:0000019",
+     "familial disease"
+    ],
+    [
+     "OTAR:0000020",
+     "nutritional or metabolic disease"
+    ],
+    [
+     "PATO:0000070",
+     "amount"
+    ],
+    [
+     "PATO:0000470",
+     "increased amount"
+    ],
+    [
+     "UBERON:0000104",
+     "life cycle"
+    ]
+   ]
+  },
+  "text_cells_cleaned": {},
+  "unnamed": {
+   "biolink:Gene": 98,
+   "biolink:PhenotypicFeature": 3,
+   "biolink:Protein": 11,
+   "biolink:SmallMolecule": 1072425
+  }
+ },
+ "product": "card index",
+ "totals": {
+  "edges": 29680679,
+  "nodes": 1324141
+ }
+}

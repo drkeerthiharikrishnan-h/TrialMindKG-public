@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,DEATH,379
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,DIARRHOEA,290
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,MALIGNANT NEOPLASM PROGRESSION,280
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,PYREXIA,224
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,COLITIS,186
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,CYTOKINE RELEASE SYNDROME,173
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,IMMUNE-MEDIATED ENTEROCOLITIS,154
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,RASH,141
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,LIVER DISORDER,128
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,PNEUMONIA,118
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,PNEUMONITIS,101
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,MYOCARDITIS,98
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,IMMUNE-MEDIATED HEPATIC DISORDER,95
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,ADRENAL INSUFFICIENCY,93
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,HEPATIC FUNCTION ABNORMAL,93
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,INTERSTITIAL LUNG DISEASE,91
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,SEPSIS,88
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,DECREASED APPETITE,87
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,FEBRILE NEUTROPENIA,87
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,PLATELET COUNT DECREASED,87
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,VOMITING,85
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,OFF LABEL USE,83
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,ANAEMIA,82
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,NAUSEA,76
+TREMELIMUMAB,patient.drug.openfda.generic_name,4216,ACUTE KIDNEY INJURY,72

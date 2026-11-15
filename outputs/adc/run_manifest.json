@@ -1,0 +1,73 @@
+{
+  "code": {
+    "git_commit": "11bbf4db84188c988e4d79f3bf683a099d5807a4",
+    "packages": {
+      "PyYAML": "6.0.1",
+      "networkx": "3.6.1",
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "requests": "2.34.2"
+    },
+    "python": "3.11.15",
+    "uncommitted_changes": true
+  },
+  "counts": {
+    "by_category": {
+      "biolink:AnatomicalEntity": 1,
+      "biolink:ClinicalTrial": 8,
+      "biolink:Disease": 1,
+      "biolink:Drug": 8,
+      "biolink:PhenotypicFeature": 4,
+      "biolink:Protein": 1,
+      "tmkg:BiomarkerDefinition": 1,
+      "tmkg:BiomarkerStratum": 3,
+      "tmkg:InternalStudy": 1,
+      "tmkg:LiteratureFinding": 8
+    },
+    "by_predicate": {
+      "biolink:expressed_in": 1,
+      "biolink:genetically_associated_with": 1,
+      "biolink:interacts_with": 3,
+      "tmkg:about": 8,
+      "tmkg:evaluates": 1,
+      "tmkg:has_stratum": 3,
+      "tmkg:internal_data_for": 1,
+      "tmkg:observed": 4,
+      "tmkg:reported_with": 15,
+      "tmkg:reports_on": 6,
+      "tmkg:same_definition_as": 1,
+      "tmkg:tests_intervention": 9
+    },
+    "edges": 53,
+    "needs_review": 0,
+    "nodes": 36
+  },
+  "outputs_sha256": {
+    "kg_edges.csv": "5cd50190223f9ab9126464c9074fa743706006bfbc47ac7f309d2064c700505f",
+    "kg_nodes.csv": "93dc23f3e74009cd1452ea047744bf79fd9e179fe6feaee8db791e40ff3f531c",
+    "kgx/edges.tsv": "634b82a935f3ea469753bd3555ed32e8bb61136504d6207018b0ebd87586c2ec",
+    "kgx/nodes.tsv": "0c5fc5aa2f6a448e35f690ab3b0f1aa854ca3ebe9a866fb89e04622643d52b19",
+    "load_neo4j.cypher": "e4c8d2e32f3e9d429517cd608eb4f74e7a99353b5f2028e2d5a58c33b1c127c7",
+    "neptune/gremlin/edges.csv": "4d6acd6220449df842ed645d4030544e3c507feeb48abbbd67cc738c3d054e8d",
+    "neptune/gremlin/nodes.csv": "6c3c6b9ade60269a97e0ac1de6f59e62c1a6c56971fc078dbc4c5d9b505a62ad",
+    "neptune/opencypher/edges.csv": "d5e8db79f4ebe610ef200b68a51bd850f7665d90cdc0df08d3e7ce80ac110b0e",
+    "neptune/opencypher/nodes.csv": "cef88b15834d37cbc4ed5e0d7a412b70175534fc04e358f074f35468825bb10c",
+    "resolution_report.csv": "67e2fe598fc4006338d2f1745d32af4e0b553d9ea758553388f2d3c8ac9b0ffa",
+    "seed_kg.graphml": "6131f0b6c24f3d7ca233d299bf4d1491e551d56801f1f3718eff80098cbd2411"
+  },
+  "snapshot": {
+    "directory": "data/snapshots",
+    "fingerprint": "0148b9875362070cc512a6b60d5da8d777ee731a933d8eaf1572ee2e114e8cf2",
+    "responses_used": 55
+  },
+  "snapshot_mode": "offline",
+  "sources": {
+    "ChEMBL / ClinicalTrials.gov": "responses frozen in snapshot",
+    "GTEx": "gtex_v8 (GTEx Portal API v2)",
+    "Open Targets Platform": "26.09",
+    "curated literature": "adc_demo.LITERATURE as of 2026-10-04",
+    "infores registry": "biolink/information-resource-registry infores_catalog.yaml (frozen in snapshot)",
+    "internal layer": "data/synthetic (SYNTHETIC)",
+    "openFDA FAERS": "drug/event counts (responses frozen in snapshot)"
+  }
+}

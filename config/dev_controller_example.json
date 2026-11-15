@@ -1,0 +1,11 @@
+{
+  "objective": "Create a short controller example document.",
+  "criteria": [{"id": "example", "text": "The document contains the exact line Controller example."}],
+  "editable_paths": ["docs/controller_example.txt"],
+  "evidence_paths": [],
+  "validations": [{"argv": ["python3", "-c", "from pathlib import Path; assert Path('docs/controller_example.txt').read_text() == 'Controller example\\n'"], "timeout_seconds": 10}],
+  "classification": "routine",
+  "backend": "codex",
+  "max_reworks": 2,
+  "model_timeout_seconds": 300
+}

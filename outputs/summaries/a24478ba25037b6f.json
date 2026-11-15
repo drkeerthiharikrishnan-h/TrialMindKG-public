@@ -1,0 +1,26 @@
+{
+ "bottom_line": "",
+ "checked_by": "nvidia/nemotron-3.5-lightning-30b-a3b",
+ "created": "2026-11-13T15:52:05Z",
+ "dropped": [
+  {
+   "reason": "The sentence claims the primary endpoint of RESOLVE-IT is not singularly defined, but the provided lines explicitly define two primary endpoints (lines 1 and…",
+   "sentence": "The primary endpoint of RESOLVE-IT is not singularly defined in the provided sources."
+  },
+  {
+   "reason": "The lines describe endpoints but do not designate which is primary versus secondary or exploratory.",
+   "sentence": "They also do not indicate which endpoint was designated as the primary efficacy measure versus a secondary or exploratory outcome, nor do they provide text-mined or predicted data."
+  }
+ ],
+ "key": "a24478ba25037b6f",
+ "lines": [
+  "[1] name: Number of Elafibranor-treated Participants Relative to Placebo Achieving Resolution of Nonalcoholic Steatohepatitis Without Worsening of Fibrosis; kind: PRIMARY; time frame: Measurement at 72 weeks. Links: Phase 3 Study to Evaluate the Efficacy and Safety of Elafibranor Versus Placebo in Patients With Nonalcoholic Steatohepatitis (NASH) has registered endpoint…. Sources: ClinicalTrials.gov (curated).",
+  "[2] name: Time to Long-term Outcome Composed of All-cause Mortality, Cirrhosis, and Liver-related Clinical Outcomes; kind: PRIMARY; time frame: From first randomization up to early termination of the study corresponding to 54 months (54 months being the longest duration for any given participant). Links: Phase 3 Study to Evaluate the Efficacy and Safety of Elafibranor Versus Placebo in Patients With Nonalcoholic Steatohepatitis (NASH) has registered endpoint…. Sources: ClinicalTrials.gov (curated)."
+ ],
+ "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+ "prompt_version": "pk4-1",
+ "question": "What was the primary endpoint of RESOLVE-IT?",
+ "raw": "The primary endpoint of RESOLVE-IT is not singularly defined in the provided sources. ClinicalTrials.gov lists two primary endpoints: resolution of nonalcoholic steatohepatitis without worsening of fibrosis at 72 weeks [1], and time to a long-term outcome composite of all-cause mortality, cirrhosis, and liver-related clinical outcomes over 54 months [2]. These entries are curated from ClinicalTrials.gov. The lines do not show statistical results, p-values, confidence intervals, or whether either endpoint was met. They also do not indicate which endpoint was designated as the primary efficacy measure versus a secondary or exploratory outcome, nor do they provide text-mined or predicted data.",
+ "sentences": 3,
+ "text": "ClinicalTrials.gov lists two primary endpoints: resolution of nonalcoholic steatohepatitis without worsening of fibrosis at 72 weeks [1], and time to a long-term outcome composite of all-cause mortality, cirrhosis, and liver-related clinical outcomes over 54 months [2]. These entries are curated from ClinicalTrials.gov. The lines do not show statistical results, p-values, confidence intervals, or whether either endpoint was met."
+}

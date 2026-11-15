@@ -1,0 +1,313 @@
+{
+ "page": "/",
+ "where": "",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 25,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/results",
+  "GET /api/neptune/status",
+  "GET /api/status",
+  "GET /api/pharos/status",
+  "GET /api/generalization",
+  "GET /api/byo/examples",
+  "GET /api/byo/example/screen",
+  "GET /api/agent-loop",
+  "GET /api/agent-log",
+  "GET /api/downloads",
+  "GET /api/search?q=TULIP",
+  "GET /api/neighbourhood/P19"
+ ],
+ "api_calls_last": [
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/results",
+  "GET /api/neptune/status",
+  "GET /api/status",
+  "GET /api/pharos/status",
+  "GET /api/generalization",
+  "GET /api/byo/examples",
+  "GET /api/byo/example/screen",
+  "GET /api/agent-loop",
+  "GET /api/agent-log",
+  "GET /api/downloads",
+  "GET /api/search?q=TULIP",
+  "GET /api/neighbourhood/P19"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "numbers",
+   "hash": "#numbers",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 21,
+    "links": 111,
+    "sections": 13,
+    "tables": 21
+   },
+   "headings": [
+    "The numbers behind the four criteria",
+    "The result in three rows",
+    "The graph in Amazon Neptune",
+    "What it does and does not mean",
+    "Pruning: a verdict on every link",
+    "Pruning: does the confidence mean anything?",
+    "Pruning: blinded spot check",
+    "Limits",
+    "Standards: the schema with IRIs",
+    "Downloads",
+    "The result in one paragraph",
+    "Link prediction: Pharos alone vs the enriched graph (frozen ",
+    "Further link-prediction results exploratory unless marked"
+   ]
+  },
+  {
+   "name": "build",
+   "hash": "#build",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 23,
+    "links": 76,
+    "sections": 7,
+    "tables": 10
+   },
+   "headings": [
+    "Pharos graph",
+    "Trial graph construction",
+    "Quality",
+    "Mapping coverage by entity type",
+    "Validation failures (0)",
+    "Cross-source checks (13)",
+    "Open review queue (9)",
+    "Sources and versions"
+   ]
+  },
+  {
+   "name": "generalize",
+   "hash": "#generalize",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 30,
+    "links": 40,
+    "sections": 4,
+    "tables": 3
+   },
+   "headings": [
+    "The same machinery on other science",
+    "1. A second graph: failed clinical-trial programs",
+    "2. Bring your own source: a table becomes a graph in five st",
+    "3. A sponsor's question: planning a pivotal trial"
+   ]
+  },
+  {
+   "name": "judges",
+   "hash": "#judges",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 26,
+    "links": 32,
+    "sections": 11,
+    "tables": 8
+   },
+   "headings": [
+    "What the agent did, in five steps",
+    "When the graph has nothing: an honest \"no evidence\"",
+    "The dated log",
+    "The agent loop in the brief, step by step",
+    "1. Ingest",
+    "2. Filter",
+    "3. Clean",
+    "4. Limit",
+    "5. Maintain",
+    "What is autonomous and what is not",
+    "Downloads"
+   ]
+  },
+  {
+   "name": "explore_hover",
+   "hash": "#explore",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": false,
+    "pinned": false,
+    "text": "ANIFROLUMABtype drug (biolink:Drug) · CHEMBL:CHEMBL2364653 1 link drawn heredouble-click or pin to add its neighbours click to pin; Esc closes"
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 25,
+    "links": 29,
+    "sections": 1,
+    "tables": 0
+   },
+   "headings": [
+    "Graph: 4 nodes, 3 links"
+   ]
+  }
+ ]
+}

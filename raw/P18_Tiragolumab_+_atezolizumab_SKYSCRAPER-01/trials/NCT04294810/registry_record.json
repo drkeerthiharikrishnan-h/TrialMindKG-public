@@ -1,0 +1,1675 @@
+{
+ "derivedSection": {
+  "conditionBrowseModule": {
+   "ancestors": [
+    {
+     "id": "D002283",
+     "term": "Carcinoma, Bronchogenic"
+    },
+    {
+     "id": "D001984",
+     "term": "Bronchial Neoplasms"
+    },
+    {
+     "id": "D008175",
+     "term": "Lung Neoplasms"
+    },
+    {
+     "id": "D012142",
+     "term": "Respiratory Tract Neoplasms"
+    },
+    {
+     "id": "D013899",
+     "term": "Thoracic Neoplasms"
+    },
+    {
+     "id": "D009371",
+     "term": "Neoplasms by Site"
+    },
+    {
+     "id": "D009369",
+     "term": "Neoplasms"
+    },
+    {
+     "id": "D008171",
+     "term": "Lung Diseases"
+    },
+    {
+     "id": "D012140",
+     "term": "Respiratory Tract Diseases"
+    }
+   ],
+   "meshes": [
+    {
+     "id": "D002289",
+     "term": "Carcinoma, Non-Small-Cell Lung"
+    }
+   ]
+  },
+  "interventionBrowseModule": {
+   "meshes": [
+    {
+     "id": "C000594389",
+     "term": "atezolizumab"
+    },
+    {
+     "id": "C000730814",
+     "term": "Tiragolumab"
+    }
+   ]
+  },
+  "miscInfoModule": {
+   "removedCountries": [
+    "Argentina",
+    "Denmark",
+    "France"
+   ],
+   "submissionTracking": {
+    "estimatedResultsFirstSubmitDate": "2026-08-18",
+    "submissionInfos": [
+     {
+      "mcpReleaseN": 47,
+      "releaseDate": "2026-08-18",
+      "resetDate": "2026-09-11"
+     },
+     {
+      "releaseDate": "2026-09-29"
+     }
+    ]
+   },
+   "versionHolder": "2026-10-02"
+  }
+ },
+ "hasResults": false,
+ "protocolSection": {
+  "armsInterventionsModule": {
+   "armGroups": [
+    {
+     "description": "Participants will receive atezolizumab followed by tiragolumab every 3 weeks (Q3W) on Day 1 of each 21-day cycle until disease progression, loss of clinical benefit or unacceptable toxicity.",
+     "interventionNames": [
+      "Drug: Atezolizumab",
+      "Drug: Tiragolumab"
+     ],
+     "label": "Tiragolumab + Atezolizumab",
+     "type": "EXPERIMENTAL"
+    },
+    {
+     "description": "Participants will receive atezolizumab followed by placebo Q3W on Day 1 of each 21-day cycle until disease progression, loss of clinical benefit or unacceptable toxicity.",
+     "interventionNames": [
+      "Drug: Atezolizumab",
+      "Drug: Matching Placebo"
+     ],
+     "label": "Placebo + Atezolizumab",
+     "type": "PLACEBO_COMPARATOR"
+    }
+   ],
+   "interventions": [
+    {
+     "armGroupLabels": [
+      "Placebo + Atezolizumab",
+      "Tiragolumab + Atezolizumab"
+     ],
+     "description": "Atezolizumab 1200 milligrams (mg) administered by intravenous (IV) infusion Q3W on Day 1 of each 21-day cycle.",
+     "name": "Atezolizumab",
+     "otherNames": [
+      "Tecentriq"
+     ],
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Tiragolumab + Atezolizumab"
+     ],
+     "description": "Tiragolumab 600 mg administered by IV infusion Q3W on Day 1 of each 21-day cycle.",
+     "name": "Tiragolumab",
+     "otherNames": [
+      "MTIG7192A"
+     ],
+     "type": "DRUG"
+    },
+    {
+     "armGroupLabels": [
+      "Placebo + Atezolizumab"
+     ],
+     "description": "Matching Placebo administered by IV infusion Q3W on Day 1 of each 21-day cycle.",
+     "name": "Matching Placebo",
+     "type": "DRUG"
+    }
+   ]
+  },
+  "conditionsModule": {
+   "conditions": [
+    "Non-Small Cell Lung Cancer"
+   ]
+  },
+  "contactsLocationsModule": {
+   "locations": [
+    {
+     "city": "Denver",
+     "country": "United States",
+     "facility": "Rocky Mountain Cancer Center - Denver",
+     "geoPoint": {
+      "lat": 39.73915,
+      "lon": -104.9847
+     },
+     "state": "Colorado",
+     "zip": "80220"
+    },
+    {
+     "city": "New Haven",
+     "country": "United States",
+     "facility": "Yale Cancer Center",
+     "geoPoint": {
+      "lat": 41.30815,
+      "lon": -72.92816
+     },
+     "state": "Connecticut",
+     "zip": "06520"
+    },
+    {
+     "city": "St. Petersburg",
+     "country": "United States",
+     "facility": "SCRI Florida Cancer Specialists North",
+     "geoPoint": {
+      "lat": 27.77086,
+      "lon": -82.67927
+     },
+     "state": "Florida",
+     "zip": "33705"
+    },
+    {
+     "city": "Tallahassee",
+     "country": "United States",
+     "facility": "SCRI Florida Cancer Specialists PAN",
+     "geoPoint": {
+      "lat": 30.43826,
+      "lon": -84.28073
+     },
+     "state": "Florida",
+     "zip": "32308"
+    },
+    {
+     "city": "Saint Paul",
+     "country": "United States",
+     "facility": "US oncology research at Minnesota Oncology",
+     "geoPoint": {
+      "lat": 44.94441,
+      "lon": -93.09327
+     },
+     "state": "Minnesota",
+     "zip": "55102"
+    },
+    {
+     "city": "Nashville",
+     "country": "United States",
+     "facility": "SCRI Oncology Partners",
+     "geoPoint": {
+      "lat": 36.16589,
+      "lon": -86.78444
+     },
+     "state": "Tennessee",
+     "zip": "37203"
+    },
+    {
+     "city": "Fairfax",
+     "country": "United States",
+     "facility": "Virginia Cancer Specialists (Fairfax) - USOR",
+     "geoPoint": {
+      "lat": 38.84622,
+      "lon": -77.30637
+     },
+     "state": "Virginia",
+     "zip": "22031"
+    },
+    {
+     "city": "Salem",
+     "country": "United States",
+     "facility": "Onc & Hem Assoc SW Virginia",
+     "geoPoint": {
+      "lat": 37.29347,
+      "lon": -80.05476
+     },
+     "state": "Virginia",
+     "zip": "24153"
+    },
+    {
+     "city": "Vancouver",
+     "country": "United States",
+     "facility": "Northwest Cancer Specialists - Vancouver",
+     "geoPoint": {
+      "lat": 45.63873,
+      "lon": -122.66149
+     },
+     "state": "Washington",
+     "zip": "98684"
+    },
+    {
+     "city": "Woolloongabba",
+     "country": "Australia",
+     "facility": "Princess Alexandra Hospital",
+     "geoPoint": {
+      "lat": -27.48855,
+      "lon": 153.03655
+     },
+     "state": "Queensland",
+     "zip": "4102"
+    },
+    {
+     "city": "Heidelberg",
+     "country": "Australia",
+     "facility": "Austin Hospital Olivia Newton John Cancer Centre",
+     "geoPoint": {
+      "lat": -37.75,
+      "lon": 145.06667
+     },
+     "state": "Victoria",
+     "zip": "3084"
+    },
+    {
+     "city": "Melbourne",
+     "country": "Australia",
+     "facility": "Peter Maccallum Cancer Centre",
+     "geoPoint": {
+      "lat": -37.814,
+      "lon": 144.96332
+     },
+     "state": "Victoria",
+     "zip": "3000"
+    },
+    {
+     "city": "Linz",
+     "country": "Austria",
+     "facility": "Ordensklinikum Linz Elisabethinen",
+     "geoPoint": {
+      "lat": 48.30639,
+      "lon": 14.28611
+     },
+     "zip": "4020"
+    },
+    {
+     "city": "Vienna",
+     "country": "Austria",
+     "facility": "Klinik Penzing",
+     "geoPoint": {
+      "lat": 48.20849,
+      "lon": 16.37208
+     },
+     "zip": "1140"
+    },
+    {
+     "city": "Vienna",
+     "country": "Austria",
+     "facility": "Krankenhaus Nord - Klinik Floridsdorf",
+     "geoPoint": {
+      "lat": 48.20849,
+      "lon": 16.37208
+     },
+     "zip": "1210"
+    },
+    {
+     "city": "Ijuí",
+     "country": "Brazil",
+     "facility": "Oncosite - Centro de Pesquisa Clinica Em Oncologia Ltda",
+     "geoPoint": {
+      "lat": -28.38778,
+      "lon": -53.91472
+     },
+     "state": "Rio Grande do Sul",
+     "zip": "98700-000"
+    },
+    {
+     "city": "Barretos",
+     "country": "Brazil",
+     "facility": "Hospital de Cancer de Barretos",
+     "geoPoint": {
+      "lat": -20.55722,
+      "lon": -48.56778
+     },
+     "state": "São Paulo",
+     "zip": "14784-400"
+    },
+    {
+     "city": "Beijing",
+     "country": "China",
+     "facility": "Beijing Cancer Hospital",
+     "geoPoint": {
+      "lat": 39.9075,
+      "lon": 116.39723
+     },
+     "zip": "100142"
+    },
+    {
+     "city": "Changchun",
+     "country": "China",
+     "facility": "The First Hospital of Jilin University",
+     "geoPoint": {
+      "lat": 43.88,
+      "lon": 125.32278
+     },
+     "zip": "130021"
+    },
+    {
+     "city": "Chengdu",
+     "country": "China",
+     "facility": "West China Hospital, Sichuan University",
+     "geoPoint": {
+      "lat": 30.66667,
+      "lon": 104.06667
+     },
+     "zip": "610041"
+    },
+    {
+     "city": "Chongqing",
+     "country": "China",
+     "facility": "Chongqing Cancer Hospital",
+     "geoPoint": {
+      "lat": 29.56026,
+      "lon": 106.55771
+     },
+     "zip": "400030"
+    },
+    {
+     "city": "Fuzhou",
+     "country": "China",
+     "facility": "Fujian Cancer Hospital",
+     "geoPoint": {
+      "lat": 26.06139,
+      "lon": 119.30611
+     },
+     "zip": "350014"
+    },
+    {
+     "city": "Haikou",
+     "country": "China",
+     "facility": "Hainan General Hospital",
+     "geoPoint": {
+      "lat": 20.03421,
+      "lon": 110.34651
+     },
+     "zip": "570311"
+    },
+    {
+     "city": "Hangzhou",
+     "country": "China",
+     "facility": "Sir Run Run Shaw Hospital Zhejiang University",
+     "geoPoint": {
+      "lat": 30.29365,
+      "lon": 120.16142
+     },
+     "zip": "310016"
+    },
+    {
+     "city": "Harbin",
+     "country": "China",
+     "facility": "Harbin Medical University Cancer Hospital",
+     "geoPoint": {
+      "lat": 45.75,
+      "lon": 126.65
+     },
+     "zip": "150081"
+    },
+    {
+     "city": "Jinan",
+     "country": "China",
+     "facility": "Jinan Central Hospital",
+     "geoPoint": {
+      "lat": 36.66833,
+      "lon": 116.99722
+     },
+     "zip": "250013"
+    },
+    {
+     "city": "Meizhou",
+     "country": "China",
+     "facility": "Meizhou People's Hospital",
+     "geoPoint": {
+      "lat": 24.28859,
+      "lon": 116.11768
+     },
+     "zip": "514031"
+    },
+    {
+     "city": "Nanchang",
+     "country": "China",
+     "facility": "The 1st Affiliated Hospital of Nanchang Unversity",
+     "geoPoint": {
+      "lat": 28.68396,
+      "lon": 115.85306
+     },
+     "zip": "330200"
+    },
+    {
+     "city": "Nantong",
+     "country": "China",
+     "facility": "Nantong Tumor Hospital",
+     "geoPoint": {
+      "lat": 32.03028,
+      "lon": 120.87472
+     },
+     "zip": "226361"
+    },
+    {
+     "city": "Shanghai",
+     "country": "China",
+     "facility": "Zhongshan Hospital Fudan University",
+     "geoPoint": {
+      "lat": 31.22222,
+      "lon": 121.45806
+     },
+     "zip": "200032"
+    },
+    {
+     "city": "Shanghai",
+     "country": "China",
+     "facility": "Fudan University Shanghai Cancer Center",
+     "geoPoint": {
+      "lat": 31.22222,
+      "lon": 121.45806
+     },
+     "zip": "200120"
+    },
+    {
+     "city": "Shanghai",
+     "country": "China",
+     "facility": "Shanghai Pulmonary Hospital",
+     "geoPoint": {
+      "lat": 31.22222,
+      "lon": 121.45806
+     },
+     "zip": "200433"
+    },
+    {
+     "city": "Xi'an",
+     "country": "China",
+     "facility": "First Affiliated Hospital of Medical College of Xi'an Jiaotong University",
+     "geoPoint": {
+      "lat": 34.25833,
+      "lon": 108.92861
+     },
+     "zip": "710061"
+    },
+    {
+     "city": "Xiamen",
+     "country": "China",
+     "facility": "The First Affiliated Hospital of Xiamen University",
+     "geoPoint": {
+      "lat": 24.47979,
+      "lon": 118.08187
+     },
+     "zip": "361003"
+    },
+    {
+     "city": "Zhejiang",
+     "country": "China",
+     "facility": "Zhejiang Cancer Hospital",
+     "geoPoint": {
+      "lat": 25.3238,
+      "lon": 105.583
+     },
+     "zip": "310022"
+    },
+    {
+     "city": "Frankfurt",
+     "country": "Germany",
+     "facility": "Krankenhaus Nordwest",
+     "geoPoint": {
+      "lat": 49.68333,
+      "lon": 10.53333
+     },
+     "zip": "60488"
+    },
+    {
+     "city": "Großhansdorf",
+     "country": "Germany",
+     "facility": "LungenClinic Großhansdorf GmbH",
+     "geoPoint": {
+      "lat": 53.66528,
+      "lon": 10.28552
+     },
+     "zip": "22927"
+    },
+    {
+     "city": "Halle",
+     "country": "Germany",
+     "facility": "Krankenhaus Martha-Maria Halle-Doelau gGmbH",
+     "geoPoint": {
+      "lat": 51.48158,
+      "lon": 11.97947
+     },
+     "zip": "06120"
+    },
+    {
+     "city": "Löwenstein",
+     "country": "Germany",
+     "facility": "SLK Kliniken Heilbronn GmbH, Standort Fachklinik Löwenstein",
+     "geoPoint": {
+      "lat": 49.09558,
+      "lon": 9.38
+     },
+     "zip": "74245"
+    },
+    {
+     "city": "Münster",
+     "country": "Germany",
+     "facility": "Gemeinschaftspraxis für Hämatologie und Onkologie",
+     "geoPoint": {
+      "lat": 51.96236,
+      "lon": 7.62571
+     },
+     "zip": "48153"
+    },
+    {
+     "city": "Stuttgart",
+     "country": "Germany",
+     "facility": "Klinik Schillerhöhe",
+     "geoPoint": {
+      "lat": 48.78232,
+      "lon": 9.17702
+     },
+     "zip": "70376"
+    },
+    {
+     "city": "Athens",
+     "country": "Greece",
+     "facility": "Sotiria Hospital",
+     "geoPoint": {
+      "lat": 37.98376,
+      "lon": 23.72784
+     },
+     "zip": "104 31"
+    },
+    {
+     "city": "Athens",
+     "country": "Greece",
+     "facility": "Metropolitan Hospital",
+     "geoPoint": {
+      "lat": 37.98376,
+      "lon": 23.72784
+     },
+     "zip": "185 47"
+    },
+    {
+     "city": "Larissa",
+     "country": "Greece",
+     "facility": "University Hospital of Larissa",
+     "geoPoint": {
+      "lat": 39.62847,
+      "lon": 22.42112
+     },
+     "zip": "411 10"
+    },
+    {
+     "city": "Budapest",
+     "country": "Hungary",
+     "facility": "Orszagos Koranyi TBC es Pulmonologiai Intezet",
+     "geoPoint": {
+      "lat": 47.49835,
+      "lon": 19.04045
+     },
+     "zip": "1121"
+    },
+    {
+     "city": "Mátraháza",
+     "country": "Hungary",
+     "facility": "Matrai Gyogyintezet",
+     "geoPoint": {
+      "lat": 47.87124,
+      "lon": 19.97981
+     },
+     "zip": "3233"
+    },
+    {
+     "city": "Szolnok",
+     "country": "Hungary",
+     "facility": "Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház",
+     "geoPoint": {
+      "lat": 47.18066,
+      "lon": 20.19835
+     },
+     "zip": "5004"
+    },
+    {
+     "city": "Avellino",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera San Giuseppe Moscati",
+     "geoPoint": {
+      "lat": 40.91494,
+      "lon": 14.79103
+     },
+     "state": "Campania",
+     "zip": "83100"
+    },
+    {
+     "city": "Naples",
+     "country": "Italy",
+     "facility": "Istituto Nazionale per lo Studio e la Cura dei Tumori Fondazione G. Pascale",
+     "geoPoint": {
+      "lat": 40.85216,
+      "lon": 14.26811
+     },
+     "state": "Campania",
+     "zip": "80131"
+    },
+    {
+     "city": "Rome",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera San Camillo Forlanini",
+     "geoPoint": {
+      "lat": 41.89193,
+      "lon": 12.51133
+     },
+     "state": "Lazio",
+     "zip": "00151"
+    },
+    {
+     "city": "Rome",
+     "country": "Italy",
+     "facility": "Policlinico Universitario \"Agostino Gemelli\"",
+     "geoPoint": {
+      "lat": 41.89193,
+      "lon": 12.51133
+     },
+     "state": "Lazio",
+     "zip": "00168"
+    },
+    {
+     "city": "Milan",
+     "country": "Italy",
+     "facility": "Irccs Istituto Europeo di Oncologia (IEO)",
+     "geoPoint": {
+      "lat": 45.46427,
+      "lon": 9.18951
+     },
+     "state": "Lombardy",
+     "zip": "20141"
+    },
+    {
+     "city": "Monza",
+     "country": "Italy",
+     "facility": "Asst Di Monza",
+     "geoPoint": {
+      "lat": 45.58005,
+      "lon": 9.27246
+     },
+     "state": "Lombardy",
+     "zip": "20900"
+    },
+    {
+     "city": "Rozzano",
+     "country": "Italy",
+     "facility": "Istituto Clinico Humanitas",
+     "geoPoint": {
+      "lat": 45.38193,
+      "lon": 9.1559
+     },
+     "state": "Lombardy",
+     "zip": "20089"
+    },
+    {
+     "city": "Orbassano",
+     "country": "Italy",
+     "facility": "Azienda Sanitaria Ospedaliera S Luigi Gonzaga",
+     "geoPoint": {
+      "lat": 45.00547,
+      "lon": 7.53813
+     },
+     "state": "Piedmont",
+     "zip": "10043"
+    },
+    {
+     "city": "Perugia",
+     "country": "Italy",
+     "facility": "Azienda Ospedaliera Di Perugia Ospedale s. Maria Della Misericordia",
+     "geoPoint": {
+      "lat": 43.1122,
+      "lon": 12.38878
+     },
+     "state": "Umbria",
+     "zip": "06156"
+    },
+    {
+     "city": "Padova",
+     "country": "Italy",
+     "facility": "IOV - Istituto Oncologico Veneto - IRCCS",
+     "geoPoint": {
+      "lat": 45.26618,
+      "lon": 11.77208
+     },
+     "state": "Veneto",
+     "zip": "35128"
+    },
+    {
+     "city": "Aichi",
+     "country": "Japan",
+     "facility": "Aichi Cancer Center",
+     "geoPoint": {
+      "lat": 32.51879,
+      "lon": 130.62158
+     },
+     "zip": "464-8681"
+    },
+    {
+     "city": "Chiba",
+     "country": "Japan",
+     "facility": "National Cancer Center Hospital East",
+     "geoPoint": {
+      "lat": 35.6,
+      "lon": 140.11667
+     },
+     "zip": "277-8577"
+    },
+    {
+     "city": "Fukuoka",
+     "country": "Japan",
+     "facility": "Kyushu University Hospital",
+     "geoPoint": {
+      "lat": 33.6,
+      "lon": 130.41667
+     },
+     "zip": "812-8582"
+    },
+    {
+     "city": "Miyagi",
+     "country": "Japan",
+     "facility": "Sendai Kousei Hospital",
+     "geoPoint": {
+      "lat": 26.62566,
+      "lon": 128.18236
+     },
+     "zip": "980-0873"
+    },
+    {
+     "city": "Niigata",
+     "country": "Japan",
+     "facility": "Niigata Cancer Center Hospital",
+     "geoPoint": {
+      "lat": 37.92259,
+      "lon": 139.04125
+     },
+     "zip": "951-8566"
+    },
+    {
+     "city": "Osaka",
+     "country": "Japan",
+     "facility": "Osaka International Cancer Institute",
+     "geoPoint": {
+      "lat": 34.69379,
+      "lon": 135.50107
+     },
+     "zip": "541-8567"
+    },
+    {
+     "city": "Osaka",
+     "country": "Japan",
+     "facility": "Kindai University Hospital",
+     "geoPoint": {
+      "lat": 34.69379,
+      "lon": 135.50107
+     },
+     "zip": "589-8511"
+    },
+    {
+     "city": "Saitama",
+     "country": "Japan",
+     "facility": "Saitama Cancer Center",
+     "geoPoint": {
+      "lat": 35.90807,
+      "lon": 139.65657
+     },
+     "zip": "362-0806"
+    },
+    {
+     "city": "Sakaishi",
+     "country": "Japan",
+     "facility": "NHO Kinki-Chuo Chest Medical Center",
+     "geoPoint": {
+      "lat": 33.41239,
+      "lon": 132.71218
+     },
+     "zip": "591-8555"
+    },
+    {
+     "city": "Shizuoka",
+     "country": "Japan",
+     "facility": "Shizuoka Cancer Center",
+     "geoPoint": {
+      "lat": 34.98333,
+      "lon": 138.38333
+     },
+     "zip": "411-8777"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "National Cancer Center Hospital",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "104-0045"
+    },
+    {
+     "city": "Tokyo",
+     "country": "Japan",
+     "facility": "The Cancer Institute Hospital of JFCR",
+     "geoPoint": {
+      "lat": 35.6895,
+      "lon": 139.69171
+     },
+     "zip": "135-8550"
+    },
+    {
+     "city": "CD Mexico",
+     "country": "Mexico",
+     "facility": "Health Pharma Professional Research",
+     "state": "Mexico CITY (federal District)",
+     "zip": "03810"
+    },
+    {
+     "city": "México",
+     "country": "Mexico",
+     "facility": "Cryptex Investigacion Clinica SA de CV",
+     "geoPoint": {
+      "lat": 25.80426,
+      "lon": -109.02397
+     },
+     "state": "Mexico CITY (federal District)",
+     "zip": "06100"
+    },
+    {
+     "city": "Monterrey",
+     "country": "Mexico",
+     "facility": "AVIX Investigación Clínica S.C",
+     "geoPoint": {
+      "lat": 25.68435,
+      "lon": -100.31721
+     },
+     "state": "Nuevo León",
+     "zip": "64710"
+    },
+    {
+     "city": "Querétaro City",
+     "country": "Mexico",
+     "facility": "Cuidados oncologicos",
+     "geoPoint": {
+      "lat": 20.58806,
+      "lon": -100.38806
+     },
+     "state": "Querétaro",
+     "zip": "76000"
+    },
+    {
+     "city": "Ede",
+     "country": "Netherlands",
+     "facility": "Ziekenhuis Gelderse Vallei",
+     "geoPoint": {
+      "lat": 52.03333,
+      "lon": 5.65833
+     },
+     "zip": "6716 RP"
+    },
+    {
+     "city": "Leeuwarden",
+     "country": "Netherlands",
+     "facility": "Medisch Centrum Leeuwarden",
+     "geoPoint": {
+      "lat": 53.20271,
+      "lon": 5.80973
+     },
+     "zip": "8934 AD"
+    },
+    {
+     "city": "The Hague",
+     "country": "Netherlands",
+     "facility": "Hagaziekenhuis, locatie Leyweg",
+     "geoPoint": {
+      "lat": 52.07667,
+      "lon": 4.29861
+     },
+     "zip": "2545 AA"
+    },
+    {
+     "city": "Arequipa",
+     "country": "Peru",
+     "facility": "Instituto Regional de Enfermedades Neoplásicas del Sur",
+     "geoPoint": {
+      "lat": -16.39899,
+      "lon": -71.53747
+     },
+     "zip": "5154"
+    },
+    {
+     "city": "Lima",
+     "country": "Peru",
+     "facility": "Instituto Nacional de Enfermedades Neoplasicas",
+     "geoPoint": {
+      "lat": -12.04318,
+      "lon": -77.02824
+     },
+     "zip": "15038"
+    },
+    {
+     "city": "Lima",
+     "country": "Peru",
+     "facility": "Clinica Internacional, Sede San Borja",
+     "geoPoint": {
+      "lat": -12.04318,
+      "lon": -77.02824
+     },
+     "zip": "Lima 41"
+    },
+    {
+     "city": "San Isidro",
+     "country": "Peru",
+     "facility": "Clinica Ricardo Palma",
+     "geoPoint": {
+      "lat": -12.09655,
+      "lon": -77.04258
+     },
+     "zip": "Lima 27"
+    },
+    {
+     "city": "Gda?sk",
+     "country": "Poland",
+     "facility": "Uniwersyteckie Centrum Kliniczne",
+     "zip": "80-214"
+    },
+    {
+     "city": "Olsztyn",
+     "country": "Poland",
+     "facility": "Warminsko-Mazurskie Centrum Chorób P?uc w Olsztynie",
+     "geoPoint": {
+      "lat": 53.78376,
+      "lon": 20.49272
+     },
+     "zip": "10-357"
+    },
+    {
+     "city": "Poznan",
+     "country": "Poland",
+     "facility": "Wielkopolskie Centrum Pulmonologii i Torakochirurgii w Poznaniu",
+     "geoPoint": {
+      "lat": 52.40692,
+      "lon": 16.92993
+     },
+     "zip": "60-569"
+    },
+    {
+     "city": "Moscow",
+     "country": "Russia",
+     "facility": "Main Military Clinical Hospital named after N.N. Burdenko",
+     "state": "Moscow Oblast",
+     "zip": "105229"
+    },
+    {
+     "city": "Moscow",
+     "country": "Russia",
+     "facility": "MEDSI Clinical Hospital on Pyatnitsky Highway",
+     "state": "Moscow Oblast",
+     "zip": "143422"
+    },
+    {
+     "city": "Saint Petersburg",
+     "country": "Russia",
+     "facility": "Institute of Oncology",
+     "geoPoint": {
+      "lat": 59.93863,
+      "lon": 30.31413
+     },
+     "state": "Sankt-Peterburg",
+     "zip": "189646"
+    },
+    {
+     "city": "Saint Petersburg",
+     "country": "Russia",
+     "facility": "St. Petersburg Med Univ",
+     "geoPoint": {
+      "lat": 59.93863,
+      "lon": 30.31413
+     },
+     "state": "Sankt-Peterburg",
+     "zip": "197089"
+    },
+    {
+     "city": "Saint Petersburg",
+     "country": "Russia",
+     "facility": "St. Petersburg Clinical Scientific Center of special services medical assis (oncology)",
+     "geoPoint": {
+      "lat": 59.93863,
+      "lon": 30.31413
+     },
+     "state": "Sankt-Peterburg",
+     "zip": "197758"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "Clinical Center of Serbia",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11000"
+    },
+    {
+     "city": "Belgrade",
+     "country": "Serbia",
+     "facility": "University Hospital Medical Center Bezanijska kosa",
+     "geoPoint": {
+      "lat": 44.80401,
+      "lon": 20.46513
+     },
+     "zip": "11080"
+    },
+    {
+     "city": "Cheongju-si",
+     "country": "South Korea",
+     "facility": "Chungbuk National University Hospital",
+     "geoPoint": {
+      "lat": 36.63722,
+      "lon": 127.48972
+     },
+     "zip": "28644"
+    },
+    {
+     "city": "Gyeonggi-do",
+     "country": "South Korea",
+     "facility": "Seoul National University Bundang Hospital",
+     "geoPoint": {
+      "lat": 37.58944,
+      "lon": 126.76917
+     },
+     "zip": "13620"
+    },
+    {
+     "city": "Gyeonggi-do",
+     "country": "South Korea",
+     "facility": "Ajou University Medical Center",
+     "geoPoint": {
+      "lat": 37.58944,
+      "lon": 126.76917
+     },
+     "zip": "16499"
+    },
+    {
+     "city": "Incheon",
+     "country": "South Korea",
+     "facility": "Gachon University Gil Medical Center",
+     "geoPoint": {
+      "lat": 37.45646,
+      "lon": 126.70515
+     },
+     "zip": "21565"
+    },
+    {
+     "city": "Jeollanam-do",
+     "country": "South Korea",
+     "facility": "Chonnam National University Hwasun Hospital",
+     "zip": "58128"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Seoul National University Hospital",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "03080"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Kangbuk Samsung Medical Center",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "03181"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Severance Hospital, Yonsei University Health System",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "03722"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Asan Medical Center",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "05505"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Korea University Guro Hospital",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "08308"
+    },
+    {
+     "city": "Seoul",
+     "country": "South Korea",
+     "facility": "Samsung Medical Center",
+     "geoPoint": {
+      "lat": 37.566,
+      "lon": 126.9784
+     },
+     "zip": "6351"
+    },
+    {
+     "city": "Suwon",
+     "country": "South Korea",
+     "facility": "St. Vincent's Hospital",
+     "geoPoint": {
+      "lat": 37.29111,
+      "lon": 127.00889
+     },
+     "zip": "442-723"
+    },
+    {
+     "city": "Badalona",
+     "country": "Spain",
+     "facility": "Hospital Universitario Germans Trias i Pujol",
+     "geoPoint": {
+      "lat": 41.45004,
+      "lon": 2.24741
+     },
+     "state": "Barcelona",
+     "zip": "08916"
+    },
+    {
+     "city": "Alicante",
+     "country": "Spain",
+     "facility": "Hospital General Universitario de Alicante",
+     "geoPoint": {
+      "lat": 38.34517,
+      "lon": -0.48149
+     },
+     "zip": "03010"
+    },
+    {
+     "city": "Barcelona",
+     "country": "Spain",
+     "facility": "Hospital Universitari Vall d'Hebron",
+     "geoPoint": {
+      "lat": 41.38879,
+      "lon": 2.15899
+     },
+     "zip": "08035"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital 12 de Octubre",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28041"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Universitario Puerta de Hierro - Majadahonda",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "28222"
+    },
+    {
+     "city": "Madrid",
+     "country": "Spain",
+     "facility": "Hospital Universitario Virgen del Rocío",
+     "geoPoint": {
+      "lat": 40.4165,
+      "lon": -3.70256
+     },
+     "zip": "41013"
+    },
+    {
+     "city": "Málaga",
+     "country": "Spain",
+     "facility": "Hospital Regional Universitario de Malaga",
+     "geoPoint": {
+      "lat": 36.72016,
+      "lon": -4.42034
+     },
+     "zip": "29010"
+    },
+    {
+     "city": "Zaragoza",
+     "country": "Spain",
+     "facility": "Hosp Clinico Univ Lozano Blesa",
+     "geoPoint": {
+      "lat": 41.65606,
+      "lon": -0.87734
+     },
+     "zip": "50009"
+    },
+    {
+     "city": "Bern",
+     "country": "Switzerland",
+     "facility": "Inselspital Bern",
+     "geoPoint": {
+      "lat": 46.94809,
+      "lon": 7.44744
+     },
+     "zip": "3010"
+    },
+    {
+     "city": "Lausanne",
+     "country": "Switzerland",
+     "facility": "CHUV",
+     "geoPoint": {
+      "lat": 46.516,
+      "lon": 6.63282
+     },
+     "zip": "1011"
+    },
+    {
+     "city": "Sankt Gallen",
+     "country": "Switzerland",
+     "facility": "HOCH Health Ostschweiz, Kantonsspital St. Gallen",
+     "geoPoint": {
+      "lat": 47.42391,
+      "lon": 9.37477
+     },
+     "zip": "9000"
+    },
+    {
+     "city": "Guishan Dist.",
+     "country": "Taiwan",
+     "facility": "Chang Gung Memorial Hospital - Linkou Branch",
+     "zip": "33305"
+    },
+    {
+     "city": "Kaohsiung City",
+     "country": "Taiwan",
+     "facility": "Kaohsiung Medical University Chung-Ho Memorial Hospital",
+     "geoPoint": {
+      "lat": 22.61626,
+      "lon": 120.31333
+     },
+     "zip": "807"
+    },
+    {
+     "city": "Kaohsiung City",
+     "country": "Taiwan",
+     "facility": "Kaohsiung Chang Gung Memorial Hospital",
+     "geoPoint": {
+      "lat": 22.61626,
+      "lon": 120.31333
+     },
+     "zip": "83301"
+    },
+    {
+     "city": "New Taipei City",
+     "country": "Taiwan",
+     "facility": "Taipei Medical University ?Shuang Ho Hospital",
+     "geoPoint": {
+      "lat": 25.06199,
+      "lon": 121.45703
+     },
+     "zip": "23561"
+    },
+    {
+     "city": "Taichung",
+     "country": "Taiwan",
+     "facility": "Taichung Veterans General Hospital",
+     "geoPoint": {
+      "lat": 24.1469,
+      "lon": 120.6839
+     },
+     "zip": "407"
+    },
+    {
+     "city": "Tainan",
+     "country": "Taiwan",
+     "facility": "National Cheng Kung Uni Hospital",
+     "geoPoint": {
+      "lat": 22.99083,
+      "lon": 120.21333
+     },
+     "zip": "704"
+    },
+    {
+     "city": "Taipei",
+     "country": "Taiwan",
+     "facility": "Taipei Veterans General Hospital",
+     "geoPoint": {
+      "lat": 25.05306,
+      "lon": 121.52639
+     },
+     "zip": "112"
+    },
+    {
+     "city": "Zhongzheng Dist.",
+     "country": "Taiwan",
+     "facility": "National Taiwan University Hospital",
+     "zip": "10048"
+    },
+    {
+     "city": "Bangkok",
+     "country": "Thailand",
+     "facility": "Chulalongkorn Hospital",
+     "geoPoint": {
+      "lat": 13.75398,
+      "lon": 100.50144
+     },
+     "zip": "10330"
+    },
+    {
+     "city": "Bangkok",
+     "country": "Thailand",
+     "facility": "Ramathibodi Hospital",
+     "geoPoint": {
+      "lat": 13.75398,
+      "lon": 100.50144
+     },
+     "zip": "10400"
+    },
+    {
+     "city": "Bangkok",
+     "country": "Thailand",
+     "facility": "Faculty of Med. Siriraj Hosp.",
+     "geoPoint": {
+      "lat": 13.75398,
+      "lon": 100.50144
+     },
+     "zip": "10700"
+    },
+    {
+     "city": "Songkhla",
+     "country": "Thailand",
+     "facility": "Songklanagarind Hospital",
+     "geoPoint": {
+      "lat": 7.19882,
+      "lon": 100.5951
+     },
+     "zip": "90110"
+    },
+    {
+     "city": "Adana",
+     "country": "Turkey (Türkiye)",
+     "facility": "Adana Baskent University Hospital",
+     "geoPoint": {
+      "lat": 36.98615,
+      "lon": 35.32531
+     },
+     "zip": "01120"
+    },
+    {
+     "city": "Ankara",
+     "country": "Turkey (Türkiye)",
+     "facility": "Hacettepe University Medical Faculty",
+     "geoPoint": {
+      "lat": 39.91987,
+      "lon": 32.85427
+     },
+     "zip": "06100"
+    },
+    {
+     "city": "Istanbul",
+     "country": "Turkey (Türkiye)",
+     "facility": "Istanbul University Cerrahpasa Faculty of Medicine",
+     "geoPoint": {
+      "lat": 41.01384,
+      "lon": 28.94966
+     },
+     "zip": "34098"
+    },
+    {
+     "city": "Izmir",
+     "country": "Turkey (Türkiye)",
+     "facility": "Izmir Dr. Suat Seren Gogus Hastaliklari ve Cerrahisi Egitim ve Arastirma Hastanesi",
+     "geoPoint": {
+      "lat": 38.41273,
+      "lon": 27.13838
+     },
+     "zip": "35110"
+    },
+    {
+     "city": "Kadiköy",
+     "country": "Turkey (Türkiye)",
+     "facility": "Goztepe Prof.Dr. Suleyman Yalcin City Hospital",
+     "geoPoint": {
+      "lat": 41.06639,
+      "lon": 41.01294
+     },
+     "zip": "34722"
+    },
+    {
+     "city": "Malatya",
+     "country": "Turkey (Türkiye)",
+     "facility": "Inonu University Medical Faculty of Medicine",
+     "geoPoint": {
+      "lat": 38.35018,
+      "lon": 38.31667
+     },
+     "zip": "44280"
+    },
+    {
+     "city": "Dnipropetrovsk",
+     "country": "Ukraine",
+     "facility": "City Clinical Hospital #4",
+     "geoPoint": {
+      "lat": 48.46664,
+      "lon": 35.04066
+     },
+     "zip": "49102"
+    },
+    {
+     "city": "Kryvyi Rih",
+     "country": "Ukraine",
+     "facility": "ME Kryviy Rih Oncology Dispensary of Dnipropetrovs?k Regional Council",
+     "geoPoint": {
+      "lat": 47.90572,
+      "lon": 33.39404
+     },
+     "zip": "50048"
+    },
+    {
+     "city": "Uzhhorod",
+     "country": "Ukraine",
+     "facility": "Uzhgorod Nat. University Central Municip Hosp",
+     "geoPoint": {
+      "lat": 48.6242,
+      "lon": 22.2947
+     },
+     "zip": "88000"
+    }
+   ],
+   "overallOfficials": [
+    {
+     "affiliation": "Hoffmann-La Roche",
+     "name": "Clinical Trial",
+     "role": "STUDY_DIRECTOR"
+    }
+   ]
+  },
+  "descriptionModule": {
+   "briefSummary": "The purpose of the study is to evaluate the efficacy and safety of tiragolumab plus atezolizumab compared with placebo plus atezolizumab in participants with previously untreated locally advanced, unresectable or metastatic PD-L1-selected non-small cell lung cancer (NSCLC), with no epidermal growth factor receptor (EGFR) mutation or anaplastic lymphoma kinase (ALK) translocation. Eligible participants will be randomized in a 1:1 ratio to receive either tiragolumab plus atezolizumab or placebo plus atezolizumab."
+  },
+  "designModule": {
+   "designInfo": {
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "maskingInfo": {
+     "masking": "TRIPLE",
+     "whoMasked": [
+      "PARTICIPANT",
+      "CARE_PROVIDER",
+      "INVESTIGATOR"
+     ]
+    },
+    "primaryPurpose": "TREATMENT"
+   },
+   "enrollmentInfo": {
+    "count": 620,
+    "type": "ACTUAL"
+   },
+   "phases": [
+    "PHASE3"
+   ],
+   "studyType": "INTERVENTIONAL"
+  },
+  "eligibilityModule": {
+   "eligibilityCriteria": "Inclusion Criteria:\n\n* Eastern Cooperative Oncology Group (ECOG) Performance Status of 0 or 1\n* Histologically or cytologically documented locally advanced or recurrent NSCLC not eligible for curative surgery and/or definitive radiotherapy with or without chemoradiotherapy, or metastatic Stage IV non-squamous or squamous NSCLC\n* No prior systemic treatment for metastatic NSCLC\n* High tumor tissue PD-L1 expression\n* Measurable disease per Response Evaluation Criteria in Solid Tumors, Version 1.1 (RECIST v1.1)\n* Adequate hematologic and end-organ function\n* For participants enrolled in the extended China enrollment phase: current resident of mainland China or Taiwan and of Chinese ancestry.\n\nExclusion Criteria:\n\n* Known mutation in the EGFR gene or an ALK fusion oncogene\n* Symptomatic, untreated, or actively progressing central nervous system metastases\n* Active or history of autoimmune disease or immune deficiency\n* History of idiopathic pulmonary fibrosis, organizing pneumonia, drug-induced pneumonitis, or idiopathic pneumonitis, or evidence of active pneumonitis\n* Malignancies other than NSCLC within 5 years, with the exception of those with a negligible risk of metastasis or death treated with expected curative outcome\n* Severe infection within 4 weeks prior to initiation of study treatment\n* Positive test result for human immunodeficiency virus (HIV)\n* Active hepatitis B or hepatitis C\n* Treatment with investigational therapy within 28 days prior to initiation of study treatment\n* Prior treatment with CD137 agonists or immune checkpoint blockade therapies, anti-CTLA-4, anti-TIGIT, anti-PD-1, and anti-PD-L1 therapeutic antibodies\n* Treatment with systemic immunostimulatory agents within 4 weeks or 5 drug elimination half-lives prior to initiation of study treatment.",
+   "healthyVolunteers": false,
+   "minimumAge": "18 Years",
+   "sex": "ALL",
+   "stdAges": [
+    "ADULT",
+    "OLDER_ADULT"
+   ]
+  },
+  "identificationModule": {
+   "acronym": "SKYSCRAPER-01",
+   "briefTitle": "A Study of Tiragolumab in Combination With Atezolizumab Compared With Placebo in Combination With Atezolizumab in Patients With Previously Untreated Locally Advanced Unresectable or Metastatic PD-L1-Selected Non-Small Cell Lung Cancer",
+   "nctId": "NCT04294810",
+   "officialTitle": "A Phase III, Randomized, Double-Blinded, Placebo-Controlled Study of Tiragolumab, an Anti-Tigit Antibody, in Combination With Atezolizumab Compared With Placebo in Combination With Atezolizumab in Patients With Previously Untreated Locally Advanced Unresectable or Metastatic PD-L1-Selected Non-Small Cell Lung Cancer",
+   "orgStudyIdInfo": {
+    "id": "GO41717"
+   },
+   "organization": {
+    "class": "INDUSTRY",
+    "fullName": "Hoffmann-La Roche"
+   },
+   "secondaryIdInfos": [
+    {
+     "id": "2019-002925-31",
+     "type": "EUDRACT_NUMBER"
+    },
+    {
+     "id": "2022-502482-17-00",
+     "type": "CTIS"
+    },
+    {
+     "id": "2019",
+     "link": "https://reporter.nih.gov/quickSearch/2019",
+     "type": "NIH"
+    }
+   ]
+  },
+  "ipdSharingStatementModule": {
+   "description": "For eligible studies, qualified researchers may request access to individual patient level clinical data. See Roche's commitment to transparency of clinical study information here: https://go.roche.com/data\\_sharing",
+   "ipdSharing": "YES"
+  },
+  "outcomesModule": {
+   "primaryOutcomes": [
+    {
+     "measure": "Investigator-Assessed Progression-Free Survival (PFS) in the Primary Analysis Set",
+     "timeFrame": "From randomization to the first occurrence of disease progression or death from any cause, whichever occurs first (up to approximately 59 months)"
+    },
+    {
+     "measure": "Overall Survival (OS) in the Primary Analysis Set",
+     "timeFrame": "From randomization to death from any cause (up to approximately 59 months)"
+    },
+    {
+     "measure": "Percentage of Participants With Adverse Events (AEs)",
+     "timeFrame": "Up to approximately 59 months"
+    },
+    {
+     "measure": "Percentage of Participants With Cytokine-Release Syndrome (CRS)",
+     "timeFrame": "Up to approximately 59 months"
+    }
+   ],
+   "secondaryOutcomes": [
+    {
+     "measure": "Investigator-Assessed PFS in the Secondary Analysis Set",
+     "timeFrame": "From randomization to the first occurrence of disease progression or death from any cause, whichever occurs first (up to approximately 59 months)"
+    },
+    {
+     "measure": "OS in the Secondary Analysis Set",
+     "timeFrame": "From randomization to death from any cause (up to approximately 59 months)"
+    },
+    {
+     "measure": "Investigator-Assessed Confirmed Objective Response Rate (ORR)",
+     "timeFrame": "From randomization up to approximately 59 months"
+    },
+    {
+     "measure": "Investigator-Assessed Duration of Response (DOR)",
+     "timeFrame": "From the first occurrence of a documented confirmed objective response to disease progression or death from any cause, whichever occurs first (up to approximately 59 months)"
+    },
+    {
+     "measure": "Investigator-Assessed PFS Rates at 6 Months and 12 Months",
+     "timeFrame": "6 months, 12 months"
+    },
+    {
+     "measure": "OS Rates at 12 Months and 24 Months",
+     "timeFrame": "12 months, 24 months"
+    },
+    {
+     "description": "TTCD using EORTC QLQ-C30 is an initial 10-point decrease in global health status (GHS)/quality of life (QoL) and functioning from baseline that must be held for at least two consecutive assessments or an initial clinically meaningful decrease above baseline followed by death. EORTC QLQ-C30: a self-reported measure, consisting of 30 questions that assess 5 aspects of participants functioning (physical, emotional, role, cognitive and social), 3 symptom scales (fatigue, nausea and vomiting and pain), GHS and QoL, and 6 single items (dyspnea, insomnia, appetite loss, constipation, diarrhea and financial difficulties) with a recall period of the previous week. Functioning items are scored on a 4-point scale: 1=Not at all to 4=Very much, with higher score indicating worse outcome. Symptom items (GHS and QoL) are scored on a 7-point scale: 1=Very poor to 7=Excellent. Scores will be linearly transformed with a minimum score of 0 and maximum score of 100. Higher score indicates better outcome.",
+     "measure": "Time to Confirmed Deterioration (TTCD) Assessed Using European Organisation for Research and Treatment of Cancer (EORTC) Quality of Life Questionnaire-Core (QLQ-C30) Score",
+     "timeFrame": "From randomization until the first confirmed clinically meaningful deterioration (up to approximately 59 months)"
+    }
+   ]
+  },
+  "oversightModule": {
+   "isFdaRegulatedDevice": false,
+   "isFdaRegulatedDrug": true,
+   "oversightHasDmc": true
+  },
+  "referencesModule": {
+   "references": [
+    {
+     "citation": "Peters S, Herbst R, Horinouchi H, Paz-Ares L, Johnson M, Solomon BJ, Gumus M, Erman M, Bondarenko I, Kim DW, Felip E, Morabito A, Bryl M, Urban L, Nosaki K, Reck M, Meng R, Stroud C, Kundu P, Wen X, Patil NS, Huang M, Troutman S, Matheny C, Cho BC. SKYSCRAPER-01: Tiragolumab in Combination With Atezolizumab in Previously Untreated PD-L1-High, Locally Advanced, Unresectable or Metastatic Non-Small Cell Lung Cancer. J Clin Oncol. 2026 Sep;44(25):2400-2408. doi: 10.1200/JCO-25-02777. Epub 2026 Jul 27.",
+     "pmid": "42507968",
+     "type": "DERIVED"
+    }
+   ]
+  },
+  "sponsorCollaboratorsModule": {
+   "leadSponsor": {
+    "class": "INDUSTRY",
+    "name": "Hoffmann-La Roche"
+   },
+   "responsibleParty": {
+    "type": "SPONSOR"
+   }
+  },
+  "statusModule": {
+   "completionDateStruct": {
+    "date": "2025-12-30",
+    "type": "ACTUAL"
+   },
+   "expandedAccessInfo": {
+    "hasExpandedAccess": false
+   },
+   "lastUpdatePostDateStruct": {
+    "date": "2026-01-30",
+    "type": "ACTUAL"
+   },
+   "lastUpdateSubmitDate": "2026-01-29",
+   "overallStatus": "COMPLETED",
+   "primaryCompletionDateStruct": {
+    "date": "2025-12-30",
+    "type": "ACTUAL"
+   },
+   "startDateStruct": {
+    "date": "2020-03-04",
+    "type": "ACTUAL"
+   },
+   "statusVerifiedDate": "2026-01",
+   "studyFirstPostDateStruct": {
+    "date": "2020-03-04",
+    "type": "ACTUAL"
+   },
+   "studyFirstSubmitDate": "2020-03-02",
+   "studyFirstSubmitQcDate": "2020-03-02"
+  }
+ }
+}

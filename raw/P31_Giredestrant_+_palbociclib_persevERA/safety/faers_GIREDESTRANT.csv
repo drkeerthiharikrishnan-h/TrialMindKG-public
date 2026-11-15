@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+GIREDESTRANT,patient.drug.medicinalproduct,26,COLITIS ULCERATIVE,7
+GIREDESTRANT,patient.drug.medicinalproduct,26,URINARY TRACT INFECTION,3
+GIREDESTRANT,patient.drug.medicinalproduct,26,ANAEMIA,2
+GIREDESTRANT,patient.drug.medicinalproduct,26,FATIGUE,2
+GIREDESTRANT,patient.drug.medicinalproduct,26,HYPERCALCAEMIA,2
+GIREDESTRANT,patient.drug.medicinalproduct,26,ACUTE KIDNEY INJURY,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,ADRENAL INSUFFICIENCY,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,AGITATED DEPRESSION,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,ANXIETY,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,ATRIAL FIBRILLATION,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,ATRIAL FLUTTER,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,BLOOD CREATININE INCREASED,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,CARDIAC FAILURE,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,CEREBRAL INFARCTION,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,CHRONIC KIDNEY DISEASE,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,CONFUSIONAL STATE,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,COUGH,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,DIARRHOEA,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,ELECTROLYTE IMBALANCE,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,EMBOLISM,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,ENCEPHALITIS,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,ESCHERICHIA SEPSIS,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,FALL,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,FIBRIN D DIMER INCREASED,1
+GIREDESTRANT,patient.drug.medicinalproduct,26,HAEMATOLOGICAL INFECTION,1

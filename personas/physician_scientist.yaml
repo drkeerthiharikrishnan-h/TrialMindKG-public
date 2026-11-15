@@ -1,0 +1,24 @@
+# Persona card (one file per user role; adding a role = adding a file, no code change). Pattern reused from the
+# owner's FACET repository (personas/*.yaml there): name, emoji, colour, description, sections. TrialMindKG adds
+# the start tab, the wording level, the card section order and the example questions, which must name entities
+# that exist in the graph (tests check that the demo entities are covered).
+order: 1          # position on the Start-here page (1 = first)
+name: Physician-scientist
+short: Physician-scientist
+emoji: "🩺"
+color: "#1f5fae"
+description: >-
+  Starts from a disease or a failed trial. Wants the targets credibly linked to the disease, by what kind of evidence, what the graph predicts next, and which trials failed and why.
+welcome: >-
+  Your view leads with targets by evidence kind, then predicted links, then the failed trials behind them.
+facet_persona: >-
+  none (the owner's own role; new in TrialMindKG)
+start_tab: pharos
+wording: mechanistic      # plain | mechanistic | technical
+show_ids: hover           # always | hover | never
+card_sections: [about, known, predicted, trials]
+questions:
+  - {tab: pharos, text: "Which diseases is the gene PTGS2 associated with, and which source says so?"}
+  - {tab: pharos, text: "Which genes are associated with both Alzheimer disease and type 2 diabetes mellitus?"}
+  - {tab: card, text: "Alzheimer disease"}
+  - {tab: trials, text: "Why did TULIP-1 miss its primary endpoint, and what changed later?"}

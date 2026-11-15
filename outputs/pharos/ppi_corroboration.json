@@ -1,0 +1,306 @@
+{
+ "bioplex_rows": {
+  "keep": 139776,
+  "prune": 8052
+ },
+ "by_source": [
+  {
+   "any": 61104,
+   "binary": 495,
+   "corroborated": 6193,
+   "independent": 6193,
+   "physical": 61104,
+   "rows": 65474,
+   "source": "BioPlex",
+   "verdict": "keep"
+  },
+  {
+   "any": 4,
+   "binary": 0,
+   "corroborated": 0,
+   "independent": 0,
+   "physical": 4,
+   "rows": 6,
+   "source": "BioPlex,Reactome",
+   "verdict": "keep"
+  },
+  {
+   "any": 2474,
+   "binary": 1210,
+   "corroborated": 2062,
+   "independent": 2062,
+   "physical": 2474,
+   "rows": 2480,
+   "source": "BioPlex,Reactome,STRINGDB",
+   "verdict": "keep"
+  },
+  {
+   "any": 70908,
+   "binary": 5785,
+   "corroborated": 21231,
+   "independent": 21231,
+   "physical": 70908,
+   "rows": 71816,
+   "source": "BioPlex,STRINGDB",
+   "verdict": "keep"
+  },
+  {
+   "any": 72,
+   "binary": 34,
+   "corroborated": 72,
+   "independent": 64,
+   "physical": 72,
+   "rows": 1896,
+   "source": "Reactome",
+   "verdict": "keep"
+  },
+  {
+   "any": 7555,
+   "binary": 4745,
+   "corroborated": 7515,
+   "independent": 7287,
+   "physical": 7515,
+   "rows": 31935,
+   "source": "Reactome,STRINGDB",
+   "verdict": "keep"
+  },
+  {
+   "any": 239467,
+   "binary": 93090,
+   "corroborated": 238295,
+   "independent": 218330,
+   "physical": 238295,
+   "rows": 11280433,
+   "source": "STRINGDB",
+   "verdict": "keep"
+  },
+  {
+   "any": 4106,
+   "binary": 7,
+   "corroborated": 213,
+   "independent": 213,
+   "physical": 4106,
+   "rows": 4788,
+   "source": "BioPlex",
+   "verdict": "prune"
+  },
+  {
+   "any": 3236,
+   "binary": 41,
+   "corroborated": 253,
+   "independent": 253,
+   "physical": 3236,
+   "rows": 3264,
+   "source": "BioPlex,STRINGDB",
+   "verdict": "prune"
+  },
+  {
+   "any": 9,
+   "binary": 3,
+   "corroborated": 9,
+   "independent": 9,
+   "physical": 9,
+   "rows": 157,
+   "source": "Reactome,STRINGDB",
+   "verdict": "prune"
+  },
+  {
+   "any": 2891,
+   "binary": 1828,
+   "corroborated": 2891,
+   "independent": 2718,
+   "physical": 2891,
+   "rows": 210411,
+   "source": "STRINGDB",
+   "verdict": "prune"
+  }
+ ],
+ "by_verdict": {
+  "keep": {
+   "any": 381584,
+   "any_hi": 0.03341844226231567,
+   "any_lo": 0.033210588674035056,
+   "any_share": 0.033314358951077525,
+   "binary": 105359,
+   "binary_hi": 0.00925386510797947,
+   "binary_lo": 0.009143291771772968,
+   "binary_share": 0.009198413834769216,
+   "corroborated": 275368,
+   "corroborated_hi": 0.024129991927545075,
+   "corroborated_lo": 0.023952576035520676,
+   "corroborated_share": 0.024041124354376272,
+   "independent": 255167,
+   "independent_hi": 0.022363096684667672,
+   "independent_lo": 0.022192158081484902,
+   "independent_share": 0.02227746716442408,
+   "physical": 380372,
+   "physical_hi": 0.0333124686047437,
+   "physical_lo": 0.0331049340164415,
+   "physical_share": 0.03320854475800678,
+   "rows": 11454040
+  },
+  "prune": {
+   "any": 10242,
+   "any_hi": 0.04774219478348981,
+   "any_lo": 0.04597055549189424,
+   "any_share": 0.04684841277101821,
+   "binary": 1879,
+   "binary_hi": 0.008990492687971325,
+   "binary_lo": 0.008216420491206446,
+   "binary_share": 0.00859482206568475,
+   "corroborated": 3366,
+   "corroborated_hi": 0.015921273596378887,
+   "corroborated_lo": 0.014888913499103885,
+   "corroborated_share": 0.015396578538102643,
+   "independent": 3193,
+   "independent_hi": 0.01511672611084983,
+   "independent_lo": 0.014110833958727923,
+   "independent_share": 0.014605251120665996,
+   "physical": 10242,
+   "physical_hi": 0.04774219478348981,
+   "physical_lo": 0.04597055549189424,
+   "physical_share": 0.04684841277101821,
+   "rows": 218620
+  }
+ },
+ "corroborated_rows_pruned_share": 0.012076029476131366,
+ "deciles": [
+  {
+   "corroborated": 16643,
+   "decile": 1,
+   "hi": 0.36970001459121704,
+   "lo": 0.19499999284744263,
+   "pruned": 218620,
+   "rows": 1167266,
+   "share": 0.014258103979726986
+  },
+  {
+   "corroborated": 17556,
+   "decile": 2,
+   "hi": 0.4147000014781952,
+   "lo": 0.36970001459121704,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.01504027359659238
+  },
+  {
+   "corroborated": 19559,
+   "decile": 3,
+   "hi": 0.4503999948501587,
+   "lo": 0.4147000014781952,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.016756249218258735
+  },
+  {
+   "corroborated": 21190,
+   "decile": 4,
+   "hi": 0.48170000314712524,
+   "lo": 0.4503999948501587,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.018153531414433384
+  },
+  {
+   "corroborated": 23129,
+   "decile": 5,
+   "hi": 0.5109000205993652,
+   "lo": 0.48170000314712524,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.019814678059671062
+  },
+  {
+   "corroborated": 25654,
+   "decile": 6,
+   "hi": 0.5389999747276306,
+   "lo": 0.5109000205993652,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.02197785252033384
+  },
+  {
+   "corroborated": 27814,
+   "decile": 7,
+   "hi": 0.5673999786376953,
+   "lo": 0.5389999747276306,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.0238283304748018
+  },
+  {
+   "corroborated": 31293,
+   "decile": 8,
+   "hi": 0.5978000164031982,
+   "lo": 0.5673999786376953,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.0268087993653546
+  },
+  {
+   "corroborated": 38417,
+   "decile": 9,
+   "hi": 0.6345000267028809,
+   "lo": 0.5978000164031982,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.03291194980407208
+  },
+  {
+   "corroborated": 57479,
+   "decile": 10,
+   "hi": 0.7479000091552734,
+   "lo": 0.6345000267028809,
+   "pruned": 0,
+   "rows": 1167266,
+   "share": 0.04924241775225184
+  }
+ ],
+ "distinct_pairs": 5836330,
+ "inputs": [
+  "`data/external/intact/human.zip` (1,215,044,675 bytes, modified 2026-11-12 02:32)",
+  "`data/kg/pharos/edge_verdicts.tsv.gz` (766,661,485 bytes, modified 2026-11-09 17:12)"
+ ],
+ "intact": {
+  "lines": 1266853,
+  "negative": 0,
+  "not_two_proteins": 78531,
+  "pairs": 687831,
+  "self": 10116,
+  "used": 1178206
+ },
+ "rows": 11672660,
+ "self_pair_rows": {
+  "prune": 19165
+ },
+ "within_source": [
+  {
+   "keep_rows": 11280433,
+   "keep_share": 0.021124632361186845,
+   "prune_rows": 210411,
+   "prune_share": 0.01373977596228334,
+   "source": "STRINGDB"
+  },
+  {
+   "keep_rows": 71816,
+   "keep_share": 0.2956305001670937,
+   "prune_rows": 3264,
+   "prune_share": 0.07751225490196079,
+   "source": "BioPlex,STRINGDB"
+  },
+  {
+   "keep_rows": 65474,
+   "keep_share": 0.09458716437058985,
+   "prune_rows": 4788,
+   "prune_share": 0.044486215538847115,
+   "source": "BioPlex"
+  },
+  {
+   "keep_rows": 31935,
+   "keep_share": 0.2353217472992015,
+   "prune_rows": 157,
+   "prune_share": 0.05732484076433121,
+   "source": "Reactome,STRINGDB"
+  }
+ ]
+}

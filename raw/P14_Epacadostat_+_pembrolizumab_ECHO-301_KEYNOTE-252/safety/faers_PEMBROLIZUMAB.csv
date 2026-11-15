@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,MALIGNANT NEOPLASM PROGRESSION,12012
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,DEATH,5848
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,DIARRHOEA,5719
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,FATIGUE,5113
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,OFF LABEL USE,4755
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,PYREXIA,3870
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,RASH,3719
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,NAUSEA,3563
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,PRODUCT USE IN UNAPPROVED INDICATION,3541
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,DECREASED APPETITE,3305
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,HYPERTENSION,3232
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,HYPOTHYROIDISM,2918
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,ASTHENIA,2774
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,DRUG INEFFECTIVE,2575
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,PRODUCT USE ISSUE,2565
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,INTERSTITIAL LUNG DISEASE,2532
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,ACUTE KIDNEY INJURY,2447
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,ANAEMIA,2417
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,MALAISE,2383
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,DYSPNOEA,2351
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,NEUTROPENIA,2336
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,PNEUMONIA,2223
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,PNEUMONITIS,2221
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,VOMITING,2206
+PEMBROLIZUMAB,patient.drug.openfda.generic_name,104614,NEUROPATHY PERIPHERAL,2052

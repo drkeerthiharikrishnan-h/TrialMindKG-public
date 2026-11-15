@@ -1,0 +1,16 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+SOLANEZUMAB,patient.drug.medicinalproduct,5,COUGH,2
+SOLANEZUMAB,patient.drug.medicinalproduct,5,LOSS OF CONSCIOUSNESS,2
+SOLANEZUMAB,patient.drug.medicinalproduct,5,ASPARTATE AMINOTRANSFERASE INCREASED,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,ASTHENIA,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,BLOOD CREATINE PHOSPHOKINASE INCREASED,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,BLOOD PRESSURE DECREASED,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,ENCEPHALOPATHY,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,FALL,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,HAEMOGLOBIN DECREASED,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,HYPERAMMONAEMIA,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,HYPOACUSIS,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,INCONTINENCE,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,INFECTION,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,RED BLOOD CELL COUNT DECREASED,1
+SOLANEZUMAB,patient.drug.medicinalproduct,5,UPPER LIMB FRACTURE,1

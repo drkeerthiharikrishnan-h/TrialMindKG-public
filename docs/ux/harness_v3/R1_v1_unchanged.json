@@ -1,0 +1,103 @@
+{
+ "page": "/classic",
+ "where": "#pharos/node/NCBIGene%3A1956",
+ "landed": "/classic",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 11,
+ "api_calls_first": [
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/landing",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/card/NCBIGene%3A1956",
+  "GET /api/pharos/status",
+  "GET /api/trials_for?ids=NCBIGene%3A1956%2CHGNC%3A3236&names=EGFR"
+ ],
+ "api_calls_last": [
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/landing",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/card/NCBIGene%3A1956",
+  "GET /api/pharos/status",
+  "GET /api/trials_for?ids=NCBIGene%3A1956%2CHGNC%3A3236&names=EGFR"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "v1_card",
+   "hash": "#pharos/node/NCBIGene%3A1956",
+   "persona": null,
+   "errors_so_far": 0,
+   "lens": "",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 0,
+   "programs": {
+    "cards": 0,
+    "first": ""
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "EGFR geneNCBIGene:1956HGNC:3236 LinkJSON",
+    "sections": [],
+    "kinds": [],
+    "rows": 206,
+    "strength_chips": 0,
+    "why": 257,
+    "cg_nodes": 34,
+    "cg_lines": 0,
+    "cg_lines_by_verdict": "kept:0 pruned:0 predicted:0 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider_info": "",
+    "legend": "disease or phenotypediseasegenepredicted",
+    "trials": "none in the trial layer (34 programs)",
+    "plist": 0,
+    "pathboxes": 0,
+    "hops": 0,
+    "hops_kept": 0,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "",
+    "weakest": ""
+   },
+   "hovercard": null,
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 27,
+    "links": 558,
+    "sections": 2,
+    "tables": 10
+   },
+   "headings": [
+    "EGFR geneNCBIGene:1956HGNC:3236\n      LinkJSON",
+    "Ask the Pharos graph a question"
+   ]
+  }
+ ]
+}

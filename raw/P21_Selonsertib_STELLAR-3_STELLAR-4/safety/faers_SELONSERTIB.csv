@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+SELONSERTIB,patient.drug.medicinalproduct,16,DIABETES MELLITUS INADEQUATE CONTROL,6
+SELONSERTIB,patient.drug.medicinalproduct,16,GASTROINTESTINAL HAEMORRHAGE,6
+SELONSERTIB,patient.drug.medicinalproduct,16,PYELONEPHRITIS,6
+SELONSERTIB,patient.drug.medicinalproduct,16,UROSEPSIS,6
+SELONSERTIB,patient.drug.medicinalproduct,16,ACUTE MYOCARDIAL INFARCTION,5
+SELONSERTIB,patient.drug.medicinalproduct,16,ARTERIOVENOUS MALFORMATION,3
+SELONSERTIB,patient.drug.medicinalproduct,16,BACK PAIN,3
+SELONSERTIB,patient.drug.medicinalproduct,16,CHILLS,3
+SELONSERTIB,patient.drug.medicinalproduct,16,HIATUS HERNIA,3
+SELONSERTIB,patient.drug.medicinalproduct,16,LARGE INTESTINE POLYP,3
+SELONSERTIB,patient.drug.medicinalproduct,16,ANGINA UNSTABLE,2
+SELONSERTIB,patient.drug.medicinalproduct,16,CHEST PAIN,2
+SELONSERTIB,patient.drug.medicinalproduct,16,INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION,2
+SELONSERTIB,patient.drug.medicinalproduct,16,SYNCOPE,2
+SELONSERTIB,patient.drug.medicinalproduct,16,ASTHENIA,1
+SELONSERTIB,patient.drug.medicinalproduct,16,BLOOD CREATININE INCREASED,1
+SELONSERTIB,patient.drug.medicinalproduct,16,BLOOD GLUCOSE INCREASED,1
+SELONSERTIB,patient.drug.medicinalproduct,16,CEREBROVASCULAR ACCIDENT,1
+SELONSERTIB,patient.drug.medicinalproduct,16,CLOSTRIDIUM DIFFICILE COLITIS,1
+SELONSERTIB,patient.drug.medicinalproduct,16,ESCHERICHIA URINARY TRACT INFECTION,1
+SELONSERTIB,patient.drug.medicinalproduct,16,FAECES DISCOLOURED,1
+SELONSERTIB,patient.drug.medicinalproduct,16,GASTRIC ULCER HAEMORRHAGE,1
+SELONSERTIB,patient.drug.medicinalproduct,16,HAEMOGLOBIN DECREASED,1
+SELONSERTIB,patient.drug.medicinalproduct,16,HYPERKALAEMIA,1
+SELONSERTIB,patient.drug.medicinalproduct,16,HYPERTENSION,1

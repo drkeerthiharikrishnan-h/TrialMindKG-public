@@ -1,0 +1,8 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+MILVEXIAN,patient.drug.medicinalproduct,2,BRONCHITIS,1
+MILVEXIAN,patient.drug.medicinalproduct,2,CHOLECYSTITIS ACUTE,1
+MILVEXIAN,patient.drug.medicinalproduct,2,HAIR DISORDER,1
+MILVEXIAN,patient.drug.medicinalproduct,2,PNEUMONIA,1
+MILVEXIAN,patient.drug.medicinalproduct,2,POST PROCEDURAL HAEMATOMA,1
+MILVEXIAN,patient.drug.medicinalproduct,2,PRURITUS,1
+MILVEXIAN,patient.drug.medicinalproduct,2,RASH MACULAR,1

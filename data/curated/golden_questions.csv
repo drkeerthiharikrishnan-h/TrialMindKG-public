@@ -1,0 +1,12 @@
+qid,function,params,field,expected,source_of_truth
+G01,program_trials,"{""pid"": ""P19""}",trial,NCT:NCT02446912,data/curated/curated_overrides.csv (TULIP-1)
+G02,program_trials,"{""pid"": ""P20""}",trial,NCT:NCT02105961,data/curated/curated_overrides.csv (METREO)
+G03,program_trials,"{""pid"": ""P16""}",trial,NCT:NCT03635983,data/curated/curated_overrides.csv (PIVOT IO-001)
+G04,program_trials,"{""pid"": ""P28""}",trial,NCT:NCT04281485,data/curated/curated_overrides.csv (CIFFREO)
+G05,program_trials,"{""pid"": ""P10""}",trial,NCT:NCT04777409,tests/test_seed_kg.py (evoke+)
+G06,program_trials,"{""pid"": ""P06""}",match_rule,secondary_id_exact,tests/test_seed_kg.py (GENERATION HD1)
+G07,drug_targets,"{""drug"": ""CHEMBL:CHEMBL1888176""}",target,ENSEMBL:ENSG00000133019,Open Targets 26.09 trospium mechanism (tests/fixtures)
+G08,trial_outcomes,"{""nct"": ""NCT02446912""}",p_value,0.412,ClinicalTrials.gov NCT02446912 posted results (TULIP-1 primary SRI-4 missed)
+G09,program_history,"{""pid"": ""P19""}",pivot_decision,contains:BICLA,data/curated/failed_clinical_trials_2016_2026.md (post-failure table: TULIP-1 -> BICLA -> TULIP-2)
+G10,program_history,"{""pid"": ""P07""}",trials,GRADUATE I / II,data/curated/failed_clinical_trials_2016_2026.md (data-access table: Vivli route)
+G11,trial_safety,"{""nct"": ""NCT01739348""}",serious_affected,134,ClinicalTrials.gov NCT01739348 posted adverse events (EPOCH verubecestat 12 mg)

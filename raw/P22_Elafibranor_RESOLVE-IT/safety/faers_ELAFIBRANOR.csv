@@ -1,0 +1,26 @@
+drug,query_field,total_reports,reaction_meddra_pt,report_count
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,FATIGUE,87
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,NAUSEA,69
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,PRURITUS,67
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,MYALGIA,59
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,CONSTIPATION,58
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,PRODUCT DOSE OMISSION ISSUE,56
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,ARTHRALGIA,53
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,WEIGHT INCREASED,53
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,DIARRHOEA,52
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,DIZZINESS,36
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,HEADACHE,33
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,MUSCLE SPASMS,33
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,OFF LABEL USE,33
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,ABDOMINAL PAIN UPPER,32
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,VOMITING,29
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,ABDOMINAL PAIN,26
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,PAIN,26
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,ABDOMINAL DISTENSION,24
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,RASH,22
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,DEATH,21
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,ABDOMINAL DISCOMFORT,20
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,DRY MOUTH,20
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,PAIN IN EXTREMITY,20
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,BACK PAIN,19
+ELAFIBRANOR,patient.drug.openfda.generic_name,744,DYSPNOEA,16

@@ -1,0 +1,417 @@
+{
+ "id": "screen",
+ "title": "A lab's compound screen (SYNTHETIC example)",
+ "label": "SYNTHETIC example: the hits and signal values are illustrations, not measurements; the identifiers are real.",
+ "source_named": "A synthetic example table written for this project.",
+ "hint": "SYNTHETIC example of a compound screen: each row is one compound tested against one protein target, with a signal value.",
+ "table": {
+  "header": [
+   "compound_chembl",
+   "target_uniprot",
+   "signal_pct",
+   "hit",
+   "assay"
+  ],
+  "rows": [
+   [
+    "CHEMBL939",
+    "P00533",
+    "91.2",
+    "yes",
+    "SYNTHETIC-example-screen"
+   ],
+   [
+    "CHEMBL553",
+    "P00533",
+    "88.5",
+    "yes",
+    "SYNTHETIC-example-screen"
+   ],
+   [
+    "CHEMBL554",
+    "P00533",
+    "74.0",
+    "yes",
+    "SYNTHETIC-example-screen"
+   ],
+   [
+    "CHEMBL554",
+    "P04626",
+    "93.1",
+    "yes",
+    "SYNTHETIC-example-screen"
+   ],
+   [
+    "CHEMBL941",
+    "P00519",
+    "95.4",
+    "yes",
+    "SYNTHETIC-example-screen"
+   ],
+   [
+    "CHEMBL1229517",
+    "P15056",
+    "96.0",
+    "yes",
+    "SYNTHETIC-example-screen"
+   ],
+   [
+    "CHEMBL939",
+    "P04626",
+    "41.3",
+    "no",
+    "SYNTHETIC-example-screen"
+   ],
+   [
+    "CHEMBL941",
+    "P15056",
+    "12.0",
+    "no",
+    "SYNTHETIC-example-screen"
+   ]
+  ]
+ },
+ "draft": {
+  "ok": true,
+  "card": {
+   "name": "lab_screen_example",
+   "version": "SYNTHETIC example, 2026-11-04",
+   "aggregator": "infores:example-lab-screen",
+   "layer": "L1",
+   "edges": [
+    {
+     "name": "relation_1",
+     "table": "table",
+     "filter": {
+      "hit": "yes"
+     },
+     "subject": {
+      "column": "compound_chembl",
+      "prefix": "CHEMBL.COMPOUND",
+      "category": "biolink:SmallMolecule"
+     },
+     "predicate": "biolink:directly_physically_interacts_with",
+     "object": {
+      "column": "target_uniprot",
+      "prefix": "UniProtKB",
+      "category": "biolink:Protein"
+     },
+     "record_columns": [
+      "compound_chembl",
+      "target_uniprot"
+     ],
+     "knowledge_level": "observation",
+     "agent_type": "not_provided",
+     "properties": {
+      "signal_pct": "signal_pct",
+      "assay": "assay"
+     },
+     "source": "SYNTHETIC example screen",
+     "primary_knowledge_source": "infores:example-lab-screen"
+    }
+   ],
+   "prune": {
+    "score_columns": {
+     "signal_pct": "higher"
+    }
+   }
+  },
+  "card_yaml": "name: lab_screen_example\nversion: SYNTHETIC example, 2026-11-04\naggregator: infores:example-lab-screen\nlayer: L1\nedges:\n- name: relation_1\n  table: table\n  filter:\n    hit: 'yes'\n  subject:\n    column: compound_chembl\n    prefix: CHEMBL.COMPOUND\n    category: biolink:SmallMolecule\n  predicate: biolink:directly_physically_interacts_with\n  object:\n    column: target_uniprot\n    prefix: UniProtKB\n    category: biolink:Protein\n  record_columns:\n  - compound_chembl\n  - target_uniprot\n  knowledge_level: observation\n  agent_type: not_provided\n  properties:\n    signal_pct: signal_pct\n    assay: assay\n  source: SYNTHETIC example screen\n  primary_knowledge_source: infores:example-lab-screen\nprune:\n  score_columns:\n    signal_pct: higher\n",
+  "report": {
+   "ok": true,
+   "rounds": [
+    {
+     "round": 1,
+     "drafted_by": "rules",
+     "problems": []
+    }
+   ],
+   "problems": [],
+   "sample": {
+    "rows": 8,
+    "nodes": 9,
+    "edges": 6,
+    "not_mapped": [],
+    "value_notes": []
+   }
+  },
+  "decisions": [
+   {
+    "column": "compound_chembl",
+    "mapped": true,
+    "text": "column compound_chembl -> small molecule (biolink:SmallMolecule), identifier written as CHEMBL.COMPOUND:<value>; the start of the edge",
+    "note": "values look like CHEMBL.COMPOUND identifiers; taken as compounds (a ChEMBL number can also name a target or an assay: check)"
+   },
+   {
+    "column": "target_uniprot",
+    "mapped": true,
+    "text": "column target_uniprot -> protein (biolink:Protein), identifier written as UniProtKB:<value>; the end of the edge",
+    "note": "values look like UniProtKB identifiers"
+   },
+   {
+    "column": "signal_pct",
+    "mapped": true,
+    "text": "column signal_pct kept on each edge as the property signal_pct; used as the score (higher = more confidence)",
+    "note": "numbers"
+   },
+   {
+    "column": "hit",
+    "mapped": true,
+    "text": "column hit decides which rows become edges: only rows with 'yes'",
+    "note": "yes / no values"
+   },
+   {
+    "column": "assay",
+    "mapped": true,
+    "text": "column assay kept on each edge as the property assay",
+    "note": "the same value in every row"
+   },
+   {
+    "column": null,
+    "mapped": true,
+    "note": "",
+    "text": "relation: each kept row becomes one edge, small molecule -[directly physically interacts with]-> protein (biolink:directly_physically_interacts_with)"
+   },
+   {
+    "column": null,
+    "mapped": true,
+    "text": "every edge will carry: source 'SYNTHETIC example screen', knowledge source infores:example-lab-screen, knowledge level observation, agent type not_provided, and the row it came from",
+    "note": ""
+   }
+  ],
+  "drafted_by": {
+   "kind": "rules",
+   "text": "Drafted by fixed rules that recognise identifier columns by their format, not by the language model, and checked by the builder's validator. Why the rules: this stored example was made without the language model.",
+   "model": null,
+   "reason": "this stored example was made without the language model"
+  },
+  "message": "The mapping passed every check. Read the decisions below; nothing is built until you approve the mapping."
+ },
+ "build": {
+  "ok": true,
+  "nodes": [
+   {
+    "id": "CHEMBL.COMPOUND:CHEMBL1229517",
+    "category": "biolink:SmallMolecule",
+    "name": null
+   },
+   {
+    "id": "CHEMBL.COMPOUND:CHEMBL553",
+    "category": "biolink:SmallMolecule",
+    "name": null
+   },
+   {
+    "id": "CHEMBL.COMPOUND:CHEMBL554",
+    "category": "biolink:SmallMolecule",
+    "name": null
+   },
+   {
+    "id": "CHEMBL.COMPOUND:CHEMBL939",
+    "category": "biolink:SmallMolecule",
+    "name": null
+   },
+   {
+    "id": "CHEMBL.COMPOUND:CHEMBL941",
+    "category": "biolink:SmallMolecule",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P00519",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P00533",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P04626",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P15056",
+    "category": "biolink:Protein",
+    "name": null
+   }
+  ],
+  "edges": [
+   {
+    "id": "e5bb0de966de5fc2e",
+    "subject": "CHEMBL.COMPOUND:CHEMBL1229517",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "object": "UniProtKB:P15056",
+    "provenance": {
+     "source": "SYNTHETIC example screen",
+     "source_record": "table|CHEMBL1229517|P15056",
+     "primary_knowledge_source": "infores:example-lab-screen",
+     "aggregator_knowledge_source": "infores:example-lab-screen",
+     "knowledge_level": "observation",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "SYNTHETIC example, 2026-11-04",
+     "retrieved": "2026-11-04",
+     "n_records": 1
+    },
+    "properties": {
+     "signal_pct": 96.0,
+     "assay": "SYNTHETIC-example-screen"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5558,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.6;source_score=0.958"
+    }
+   },
+   {
+    "id": "e2678792301347e26",
+    "subject": "CHEMBL.COMPOUND:CHEMBL553",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "object": "UniProtKB:P00533",
+    "provenance": {
+     "source": "SYNTHETIC example screen",
+     "source_record": "table|CHEMBL553|P00533",
+     "primary_knowledge_source": "infores:example-lab-screen",
+     "aggregator_knowledge_source": "infores:example-lab-screen",
+     "knowledge_level": "observation",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "SYNTHETIC example, 2026-11-04",
+     "retrieved": "2026-11-04",
+     "n_records": 1
+    },
+    "properties": {
+     "signal_pct": 88.5,
+     "assay": "SYNTHETIC-example-screen"
+    },
+    "verdict": {
+     "verdict": "prune",
+     "confidence": 0.4892,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.6;source_score=0.292"
+    }
+   },
+   {
+    "id": "e0161773d12defb63",
+    "subject": "CHEMBL.COMPOUND:CHEMBL554",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "object": "UniProtKB:P00533",
+    "provenance": {
+     "source": "SYNTHETIC example screen",
+     "source_record": "table|CHEMBL554|P00533",
+     "primary_knowledge_source": "infores:example-lab-screen",
+     "aggregator_knowledge_source": "infores:example-lab-screen",
+     "knowledge_level": "observation",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "SYNTHETIC example, 2026-11-04",
+     "retrieved": "2026-11-04",
+     "n_records": 1
+    },
+    "properties": {
+     "signal_pct": 74.0,
+     "assay": "SYNTHETIC-example-screen"
+    },
+    "verdict": {
+     "verdict": "prune",
+     "confidence": 0.4725,
+     "reasons": "plausibility=1.0;sources=1;reliability=0.6;source_score=0.125"
+    }
+   },
+   {
+    "id": "e0de5471a4ae230d0",
+    "subject": "CHEMBL.COMPOUND:CHEMBL554",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "object": "UniProtKB:P04626",
+    "provenance": {
+     "source": "SYNTHETIC example screen",
+     "source_record": "table|CHEMBL554|P04626",
+     "primary_knowledge_source": "infores:example-lab-screen",
+     "aggregator_knowledge_source": "infores:example-lab-screen",
+     "knowledge_level": "observation",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "SYNTHETIC example, 2026-11-04",
+     "retrieved": "2026-11-04",
+     "n_records": 1
+    },
+    "properties": {
+     "signal_pct": 93.1,
+     "assay": "SYNTHETIC-example-screen"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5225,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.6;source_score=0.625"
+    }
+   },
+   {
+    "id": "e1a850e54fa3f4f68",
+    "subject": "CHEMBL.COMPOUND:CHEMBL939",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "object": "UniProtKB:P00533",
+    "provenance": {
+     "source": "SYNTHETIC example screen",
+     "source_record": "table|CHEMBL939|P00533",
+     "primary_knowledge_source": "infores:example-lab-screen",
+     "aggregator_knowledge_source": "infores:example-lab-screen",
+     "knowledge_level": "observation",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "SYNTHETIC example, 2026-11-04",
+     "retrieved": "2026-11-04",
+     "n_records": 1
+    },
+    "properties": {
+     "signal_pct": 91.2,
+     "assay": "SYNTHETIC-example-screen"
+    },
+    "verdict": {
+     "verdict": "prune",
+     "confidence": 0.5058,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.6;source_score=0.458"
+    }
+   },
+   {
+    "id": "eec51041721b5885a",
+    "subject": "CHEMBL.COMPOUND:CHEMBL941",
+    "predicate": "biolink:directly_physically_interacts_with",
+    "object": "UniProtKB:P00519",
+    "provenance": {
+     "source": "SYNTHETIC example screen",
+     "source_record": "table|CHEMBL941|P00519",
+     "primary_knowledge_source": "infores:example-lab-screen",
+     "aggregator_knowledge_source": "infores:example-lab-screen",
+     "knowledge_level": "observation",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "SYNTHETIC example, 2026-11-04",
+     "retrieved": "2026-11-04",
+     "n_records": 1
+    },
+    "properties": {
+     "signal_pct": 95.4,
+     "assay": "SYNTHETIC-example-screen"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5392,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.6;source_score=0.792"
+    }
+   }
+  ],
+  "not_mapped": [],
+  "problems": [],
+  "counts": {
+   "rows": 8,
+   "nodes": 9,
+   "edges": 6,
+   "scored": 6,
+   "keep": 3,
+   "prune": 3,
+   "rows_not_mapped": 0
+  },
+  "verdict_note": "All 6 edges come from one source, so nothing corroborates them and the scorer has little to compare: read these verdicts as an illustration of the output, not as a judgement of your data.",
+  "value_notes": []
+ }
+}

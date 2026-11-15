@@ -1,0 +1,1066 @@
+{
+ "id": "gene_protein",
+ "title": "A public reference table: genes and their proteins",
+ "label": "Public data: the first 20 rows of the HGNC gene identifier table kept in this repository.",
+ "source_named": "HGNC (HUGO Gene Nomenclature Committee, genenames.org), complete gene set; the repository keeps the identifier columns as a reference table.",
+ "hint": "Gene identifier table: each row is one human gene with its identifiers and the UniProt accession of its protein.",
+ "table": {
+  "header": [
+   "hgnc_id",
+   "symbol",
+   "ensembl_id",
+   "ncbigene_id",
+   "uniprot_id",
+   "locus_group"
+  ],
+  "rows": [
+   [
+    "HGNC:100",
+    "ASIC1",
+    "ENSG00000110881",
+    "NCBIGene:41",
+    "P78348",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10000",
+    "RGS4",
+    "ENSG00000117152",
+    "NCBIGene:5999",
+    "P49798",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10001",
+    "RGS5",
+    "ENSG00000143248",
+    "NCBIGene:8490",
+    "O15539",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10002",
+    "RGS6",
+    "ENSG00000182732",
+    "NCBIGene:9628",
+    "P49758",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10003",
+    "RGS7",
+    "ENSG00000182901",
+    "NCBIGene:6000",
+    "P49802",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10004",
+    "RGS9",
+    "ENSG00000108370",
+    "NCBIGene:8787",
+    "O75916",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10006",
+    "RHAG",
+    "ENSG00000112077",
+    "NCBIGene:6005",
+    "Q02094",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10007",
+    "RHBDL1",
+    "ENSG00000103269",
+    "NCBIGene:9028",
+    "O75783",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10008",
+    "RHCE",
+    "ENSG00000188672",
+    "NCBIGene:6006",
+    "P18577",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10009",
+    "RHD",
+    "ENSG00000187010",
+    "NCBIGene:6007",
+    "Q02161",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:1001",
+    "BCL6",
+    "ENSG00000113916",
+    "NCBIGene:604",
+    "P41182",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10010",
+    "RHEBP1",
+    "ENSG00000229927",
+    "NCBIGene:6008",
+    "",
+    "pseudogene"
+   ],
+   [
+    "HGNC:10011",
+    "RHEB",
+    "ENSG00000106615",
+    "NCBIGene:6009",
+    "Q15382",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10012",
+    "RHO",
+    "ENSG00000163914",
+    "NCBIGene:6010",
+    "P08100",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10013",
+    "GRK1",
+    "ENSG00000185974",
+    "NCBIGene:6011",
+    "Q15835",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10017",
+    "RIT2",
+    "ENSG00000152214",
+    "NCBIGene:6014",
+    "Q99578",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10018",
+    "RING1",
+    "ENSG00000204227",
+    "NCBIGene:6015",
+    "Q06587",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10019",
+    "RIPK1",
+    "ENSG00000137275",
+    "NCBIGene:8737",
+    "Q13546",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:1002",
+    "BCL6B",
+    "ENSG00000161940",
+    "NCBIGene:255877",
+    "Q8N143",
+    "protein-coding gene"
+   ],
+   [
+    "HGNC:10020",
+    "RIPK2",
+    "ENSG00000104312",
+    "NCBIGene:8767",
+    "O43353",
+    "protein-coding gene"
+   ]
+  ]
+ },
+ "draft": {
+  "ok": true,
+  "card": {
+   "name": "hgnc_gene_protein_example",
+   "version": "HGNC complete set, first 20 rows of the reference table",
+   "aggregator": "infores:hgnc",
+   "layer": "L1",
+   "edges": [
+    {
+     "name": "relation_1",
+     "table": "table",
+     "subject": {
+      "column": "ncbigene_id",
+      "prefix": "NCBIGene",
+      "category": "biolink:Gene"
+     },
+     "predicate": "biolink:has_gene_product",
+     "object": {
+      "column": "uniprot_id",
+      "prefix": "UniProtKB",
+      "category": "biolink:Protein"
+     },
+     "record_columns": [
+      "ncbigene_id",
+      "uniprot_id"
+     ],
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "properties": {
+      "hgnc_id": "hgnc_id",
+      "symbol": "symbol",
+      "ensembl_id": "ensembl_id",
+      "locus_group": "locus_group"
+     },
+     "source": "HGNC gene identifier table",
+     "primary_knowledge_source": "infores:hgnc"
+    }
+   ]
+  },
+  "card_yaml": "name: hgnc_gene_protein_example\nversion: HGNC complete set, first 20 rows of the reference table\naggregator: infores:hgnc\nlayer: L1\nedges:\n- name: relation_1\n  table: table\n  subject:\n    column: ncbigene_id\n    prefix: NCBIGene\n    category: biolink:Gene\n  predicate: biolink:has_gene_product\n  object:\n    column: uniprot_id\n    prefix: UniProtKB\n    category: biolink:Protein\n  record_columns:\n  - ncbigene_id\n  - uniprot_id\n  knowledge_level: not_provided\n  agent_type: not_provided\n  properties:\n    hgnc_id: hgnc_id\n    symbol: symbol\n    ensembl_id: ensembl_id\n    locus_group: locus_group\n  source: HGNC gene identifier table\n  primary_knowledge_source: infores:hgnc\n",
+  "report": {
+   "ok": true,
+   "rounds": [
+    {
+     "round": 1,
+     "drafted_by": "rules",
+     "problems": []
+    }
+   ],
+   "problems": [],
+   "sample": {
+    "rows": 20,
+    "nodes": 38,
+    "edges": 19,
+    "not_mapped": [
+     {
+      "reason": "no usable object identifier",
+      "rows": 1
+     }
+    ],
+    "value_notes": []
+   }
+  },
+  "decisions": [
+   {
+    "column": "hgnc_id",
+    "mapped": true,
+    "text": "column hgnc_id kept on each edge as the property hgnc_id",
+    "note": "values look like HGNC identifiers"
+   },
+   {
+    "column": "symbol",
+    "mapped": true,
+    "text": "column symbol kept on each edge as the property symbol",
+    "note": "values are found in the lookup gene_symbol (approved human gene symbol -> NCBI Gene id (HGNC table))"
+   },
+   {
+    "column": "ensembl_id",
+    "mapped": true,
+    "text": "column ensembl_id kept on each edge as the property ensembl_id",
+    "note": "values look like ENSEMBL identifiers"
+   },
+   {
+    "column": "ncbigene_id",
+    "mapped": true,
+    "text": "column ncbigene_id -> gene (biolink:Gene), NCBIGene identifier used as written; the start of the edge",
+    "note": "values look like NCBIGene identifiers"
+   },
+   {
+    "column": "uniprot_id",
+    "mapped": true,
+    "text": "column uniprot_id -> protein (biolink:Protein), identifier written as UniProtKB:<value>; the end of the edge",
+    "note": "values look like UniProtKB identifiers"
+   },
+   {
+    "column": "locus_group",
+    "mapped": true,
+    "text": "column locus_group kept on each edge as the property locus_group",
+    "note": "a few labels that repeat"
+   },
+   {
+    "column": null,
+    "mapped": true,
+    "note": "",
+    "text": "relation: each kept row becomes one edge, gene -[has gene product]-> protein (biolink:has_gene_product)"
+   },
+   {
+    "column": null,
+    "mapped": true,
+    "text": "every edge will carry: source 'HGNC gene identifier table', knowledge source infores:hgnc, knowledge level not_provided, agent type not_provided, and the row it came from",
+    "note": ""
+   }
+  ],
+  "drafted_by": {
+   "kind": "rules",
+   "text": "Drafted by fixed rules that recognise identifier columns by their format, not by the language model, and checked by the builder's validator. Why the rules: this stored example was made without the language model.",
+   "model": null,
+   "reason": "this stored example was made without the language model"
+  },
+  "message": "The mapping passed every check. Read the decisions below; nothing is built until you approve the mapping."
+ },
+ "build": {
+  "ok": true,
+  "nodes": [
+   {
+    "id": "NCBIGene:255877",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:41",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:5999",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6000",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6005",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6006",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6007",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6009",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6010",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6011",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6014",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:6015",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:604",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:8490",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:8737",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:8767",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:8787",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:9028",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "NCBIGene:9628",
+    "category": "biolink:Gene",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:O15539",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:O43353",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:O75783",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:O75916",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P08100",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P18577",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P41182",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P49758",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P49798",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P49802",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:P78348",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q02094",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q02161",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q06587",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q13546",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q15382",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q15835",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q8N143",
+    "category": "biolink:Protein",
+    "name": null
+   },
+   {
+    "id": "UniProtKB:Q99578",
+    "category": "biolink:Protein",
+    "name": null
+   }
+  ],
+  "edges": [
+   {
+    "id": "e6f6c9018d66d45d0",
+    "subject": "NCBIGene:255877",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q8N143",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:255877|Q8N143",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:1002",
+     "symbol": "BCL6B",
+     "ensembl_id": "ENSG00000161940",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "e7d9cfb8802d7e471",
+    "subject": "NCBIGene:41",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:P78348",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:41|P78348",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:100",
+     "symbol": "ASIC1",
+     "ensembl_id": "ENSG00000110881",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "efc9cf3154f88c4bc",
+    "subject": "NCBIGene:5999",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:P49798",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:5999|P49798",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10000",
+     "symbol": "RGS4",
+     "ensembl_id": "ENSG00000117152",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "ef0997e7ffabbaebd",
+    "subject": "NCBIGene:6000",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:P49802",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6000|P49802",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10003",
+     "symbol": "RGS7",
+     "ensembl_id": "ENSG00000182901",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "e27a8280072af99d9",
+    "subject": "NCBIGene:6005",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q02094",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6005|Q02094",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10006",
+     "symbol": "RHAG",
+     "ensembl_id": "ENSG00000112077",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "eae8e2673b27aefa2",
+    "subject": "NCBIGene:6006",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:P18577",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6006|P18577",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10008",
+     "symbol": "RHCE",
+     "ensembl_id": "ENSG00000188672",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "efd6bd794aad6cb81",
+    "subject": "NCBIGene:6007",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q02161",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6007|Q02161",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10009",
+     "symbol": "RHD",
+     "ensembl_id": "ENSG00000187010",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "ee0496493d5d9e6c4",
+    "subject": "NCBIGene:6009",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q15382",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6009|Q15382",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10011",
+     "symbol": "RHEB",
+     "ensembl_id": "ENSG00000106615",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "ea130735a1c855c3c",
+    "subject": "NCBIGene:6010",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:P08100",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6010|P08100",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10012",
+     "symbol": "RHO",
+     "ensembl_id": "ENSG00000163914",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "e94a5087ae3fe9662",
+    "subject": "NCBIGene:6011",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q15835",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6011|Q15835",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10013",
+     "symbol": "GRK1",
+     "ensembl_id": "ENSG00000185974",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "e8e811cddb6be7aca",
+    "subject": "NCBIGene:6014",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q99578",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6014|Q99578",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10017",
+     "symbol": "RIT2",
+     "ensembl_id": "ENSG00000152214",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "ec5e6399694991919",
+    "subject": "NCBIGene:6015",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q06587",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:6015|Q06587",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10018",
+     "symbol": "RING1",
+     "ensembl_id": "ENSG00000204227",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "ebbdc2ddb247ef880",
+    "subject": "NCBIGene:604",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:P41182",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:604|P41182",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:1001",
+     "symbol": "BCL6",
+     "ensembl_id": "ENSG00000113916",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "eab502c0c713ff3b8",
+    "subject": "NCBIGene:8490",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:O15539",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:8490|O15539",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10001",
+     "symbol": "RGS5",
+     "ensembl_id": "ENSG00000143248",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "e1d10126c359a49f1",
+    "subject": "NCBIGene:8737",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:Q13546",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:8737|Q13546",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10019",
+     "symbol": "RIPK1",
+     "ensembl_id": "ENSG00000137275",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "e55501d1addbf5224",
+    "subject": "NCBIGene:8767",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:O43353",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:8767|O43353",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10020",
+     "symbol": "RIPK2",
+     "ensembl_id": "ENSG00000104312",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "eaab319c07f478597",
+    "subject": "NCBIGene:8787",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:O75916",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:8787|O75916",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10004",
+     "symbol": "RGS9",
+     "ensembl_id": "ENSG00000108370",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "e88df1d8de5a6a1fd",
+    "subject": "NCBIGene:9028",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:O75783",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:9028|O75783",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10007",
+     "symbol": "RHBDL1",
+     "ensembl_id": "ENSG00000103269",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   },
+   {
+    "id": "eb5f059882cd21dd1",
+    "subject": "NCBIGene:9628",
+    "predicate": "biolink:has_gene_product",
+    "object": "UniProtKB:P49758",
+    "provenance": {
+     "source": "HGNC gene identifier table",
+     "source_record": "table|NCBIGene:9628|P49758",
+     "primary_knowledge_source": "infores:hgnc",
+     "aggregator_knowledge_source": "infores:hgnc",
+     "knowledge_level": "not_provided",
+     "agent_type": "not_provided",
+     "layer": "L1",
+     "source_version": "HGNC complete set, first 20 rows of the reference table",
+     "retrieved": "2026-10-25",
+     "n_records": 1
+    },
+    "properties": {
+     "hgnc_id": "HGNC:10002",
+     "symbol": "RGS6",
+     "ensembl_id": "ENSG00000182732",
+     "locus_group": "protein-coding gene"
+    },
+    "verdict": {
+     "verdict": "keep",
+     "confidence": 0.5,
+     "reasons": "plausibility=0.0;sources=1;reliability=0.5;source_score=0.5"
+    }
+   }
+  ],
+  "not_mapped": [
+   {
+    "reason": "no usable object identifier",
+    "rows": 1
+   }
+  ],
+  "problems": [],
+  "counts": {
+   "rows": 20,
+   "nodes": 38,
+   "edges": 19,
+   "scored": 19,
+   "keep": 19,
+   "prune": 0,
+   "rows_not_mapped": 1
+  },
+  "verdict_note": "All 19 edges come from one source, so nothing corroborates them and the scorer has little to compare: read these verdicts as an illustration of the output, not as a judgement of your data.",
+  "value_notes": []
+ }
+}

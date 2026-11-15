@@ -1,0 +1,1216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d33" for="edge" attr.name="incidence" attr.type="string" />
+  <key id="d32" for="edge" attr.name="supporting_data_source" attr.type="string" />
+  <key id="d31" for="edge" attr.name="mapping_confidence" attr.type="string" />
+  <key id="d30" for="edge" attr.name="original_predicate" attr.type="string" />
+  <key id="d29" for="edge" attr.name="biolink_predicate" attr.type="string" />
+  <key id="d28" for="edge" attr.name="agent_type" attr.type="string" />
+  <key id="d27" for="edge" attr.name="knowledge_level" attr.type="string" />
+  <key id="d26" for="edge" attr.name="aggregator_knowledge_source" attr.type="string" />
+  <key id="d25" for="edge" attr.name="primary_knowledge_source" attr.type="string" />
+  <key id="d24" for="edge" attr.name="proportion" attr.type="string" />
+  <key id="d23" for="edge" attr.name="snapshot_key" attr.type="string" />
+  <key id="d22" for="edge" attr.name="layer" attr.type="string" />
+  <key id="d21" for="edge" attr.name="retrieved" attr.type="string" />
+  <key id="d20" for="edge" attr.name="evidence_type" attr.type="string" />
+  <key id="d19" for="edge" attr.name="source_record" attr.type="string" />
+  <key id="d18" for="edge" attr.name="source" attr.type="string" />
+  <key id="d17" for="edge" attr.name="predicate" attr.type="string" />
+  <key id="d16" for="edge" attr.name="id" attr.type="string" />
+  <key id="d15" for="node" attr.name="ensembl" attr.type="string" />
+  <key id="d14" for="node" attr.name="sponsor" attr.type="string" />
+  <key id="d13" for="node" attr.name="why_stopped" attr.type="string" />
+  <key id="d12" for="node" attr.name="status" attr.type="string" />
+  <key id="d11" for="node" attr.name="url" attr.type="string" />
+  <key id="d10" for="node" attr.name="claim_type" attr.type="string" />
+  <key id="d9" for="node" attr.name="orr" attr.type="string" />
+  <key id="d8" for="node" attr.name="dataclass" attr.type="string" />
+  <key id="d7" for="node" attr.name="n" attr.type="string" />
+  <key id="d6" for="node" attr.name="id_note" attr.type="string" />
+  <key id="d5" for="node" attr.name="payload_class" attr.type="string" />
+  <key id="d4" for="node" attr.name="payload" attr.type="string" />
+  <key id="d3" for="node" attr.name="biolink_category" attr.type="string" />
+  <key id="d2" for="node" attr.name="name" attr.type="string" />
+  <key id="d1" for="node" attr.name="layer" attr.type="string" />
+  <key id="d0" for="node" attr.name="category" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="AE:ILD/pneumonitis">
+      <data key="d0">biolink:PhenotypicFeature</data>
+      <data key="d1">shared</data>
+      <data key="d2">ILD/pneumonitis</data>
+      <data key="d3">biolink:PhenotypicFeature</data>
+    </node>
+    <node id="AE:bleeding">
+      <data key="d0">biolink:PhenotypicFeature</data>
+      <data key="d1">shared</data>
+      <data key="d2">bleeding</data>
+      <data key="d3">biolink:PhenotypicFeature</data>
+    </node>
+    <node id="AE:neutropenia">
+      <data key="d0">biolink:PhenotypicFeature</data>
+      <data key="d1">shared</data>
+      <data key="d2">neutropenia</data>
+      <data key="d3">biolink:PhenotypicFeature</data>
+    </node>
+    <node id="AE:ocular (keratopathy/vision)">
+      <data key="d0">biolink:PhenotypicFeature</data>
+      <data key="d1">shared</data>
+      <data key="d2">ocular (keratopathy/vision)</data>
+      <data key="d3">biolink:PhenotypicFeature</data>
+    </node>
+    <node id="CHEMBL:CHEMBL3301589">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">enfortumab vedotin</data>
+      <data key="d4">MMAE</data>
+      <data key="d5">microtubule inhibitor</data>
+      <data key="d6">ChEMBL exact match</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <node id="CHEMBL:CHEMBL3545132">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">mirvetuximab soravtansine</data>
+      <data key="d4">DM4</data>
+      <data key="d5">microtubule inhibitor</data>
+      <data key="d6">ChEMBL exact match</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <node id="CHEMBL:CHEMBL3545262">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">sacituzumab govitecan</data>
+      <data key="d4">SN-38</data>
+      <data key="d5">TOP1 inhibitor</data>
+      <data key="d6">ChEMBL exact match</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <node id="CHEMBL:CHEMBL4297844">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">trastuzumab deruxtecan</data>
+      <data key="d4">DXd</data>
+      <data key="d5">TOP1 inhibitor</data>
+      <data key="d6">ChEMBL exact match</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <node id="CHEMBL:CHEMBL4297851">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">upifitamab rilsodotin</data>
+      <data key="d4">auristatin F-HPA (dolaflexin)</data>
+      <data key="d5">microtubule inhibitor</data>
+      <data key="d6">ChEMBL exact match</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <node id="CHEMBL:CHEMBL4297938">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">lifastuzumab vedotin</data>
+      <data key="d4">MMAE</data>
+      <data key="d5">microtubule inhibitor</data>
+      <data key="d6">ChEMBL exact match</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <node id="CHEMBL:CHEMBL4297939">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">datopotamab deruxtecan</data>
+      <data key="d4">DXd</data>
+      <data key="d5">TOP1 inhibitor</data>
+      <data key="d6">ChEMBL exact match</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <node id="EXT:UPLIFT_cutoff">
+      <data key="d0">tmkg:BiomarkerDefinition</data>
+      <data key="d1">shared</data>
+      <data key="d2">NaPi2b TPS &gt;= 75% (UPLIFT definition)</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="INT:SYN-TUB040-PH1B">
+      <data key="d0">tmkg:InternalStudy</data>
+      <data key="d1">internal</data>
+      <data key="d2">TUB-040 phase 1b (SYNTHETIC)</data>
+      <data key="d7">96</data>
+      <data key="d8">SYNTHETIC - not sponsor data</data>
+      <data key="d3">biolink:Study</data>
+    </node>
+    <node id="INT:TPS_10-74">
+      <data key="d0">tmkg:BiomarkerStratum</data>
+      <data key="d1">internal</data>
+      <data key="d2">NaPi2b TPS 10-74</data>
+      <data key="d9">41.7</data>
+      <data key="d7">48</data>
+      <data key="d8">SYNTHETIC - not sponsor data</data>
+      <data key="d3">biolink:Cohort</data>
+    </node>
+    <node id="INT:TPS_&lt;10">
+      <data key="d0">tmkg:BiomarkerStratum</data>
+      <data key="d1">internal</data>
+      <data key="d2">NaPi2b TPS &lt;10</data>
+      <data key="d9">20.0</data>
+      <data key="d7">5</data>
+      <data key="d8">SYNTHETIC - not sponsor data</data>
+      <data key="d3">biolink:Cohort</data>
+    </node>
+    <node id="INT:TPS_&gt;=75">
+      <data key="d0">tmkg:BiomarkerStratum</data>
+      <data key="d1">internal</data>
+      <data key="d2">NaPi2b TPS &gt;=75</data>
+      <data key="d9">39.5</data>
+      <data key="d7">43</data>
+      <data key="d8">SYNTHETIC - not sponsor data</data>
+      <data key="d3">biolink:Cohort</data>
+    </node>
+    <node id="LIT1">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">UPLIFT: investigator ORR 15.6% (95% CI 10.0-22.7%) in NaPi2b-positive (TPS&gt;=75%, n=141); lower CI bound did not exclude the 12% ORR of single-agent chemotherapy.</data>
+      <data key="d10">efficacy_failure</data>
+      <data key="d11">https://www.targetedonc.com/view/upifitamab-rilsodotin-misses-primary-end-point-in-ovarian-cancer</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="LIT2">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">UPLIFT efficacy failed to replicate the ~100-patient phase 1b dose-expansion data (sponsor statement).</data>
+      <data key="d10">replication_failure</data>
+      <data key="d11">https://www.onclive.com/view/upifitamab-rilsodotin-fails-to-meet-orr-end-point-in-napi2b-platinum-resistant-ovarian-cancer</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="LIT3">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">UPLIFT overall ORR 13.1%; no indication that NaPi2b positivity (TPS&gt;=75%) enriched for response.</data>
+      <data key="d10">biomarker_non_enrichment</data>
+      <data key="d11">https://www.onclive.com/view/dr-richardson-on-the-uplift-trial-of-upifitamab-rilsodotin-in-ovarian-cancer</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="LIT4">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">UPLIFT population: median 3 prior lines (31% had 4), 69% prior PARP inhibitor, 84% prior bevacizumab.</data>
+      <data key="d10">population</data>
+      <data key="d11">https://www.cancernetwork.com/view/upifitamab-rilsodotin-does-not-improve-responses-in-ovarian-cancer</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="LIT5">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">Upifitamab rilsodotin was placed on partial clinical hold over risk of bleeding events.</data>
+      <data key="d10">safety_hold</data>
+      <data key="d11">https://www.oncologypipeline.com/apexonco/mersanas-discontinuation-was-long-time-coming</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="LIT6">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">TUB-040 phase 1 (ESMO): confirmed ORR 50%, unconfirmed 60% across dose levels, irrespective of target antigen expression.</data>
+      <data key="d10">early_efficacy</data>
+      <data key="d11">https://oncodaily.com/technology/tubulis481541</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="LIT7">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">TUB-040: NaPi2b-directed ADC carrying eight topoisomerase-I inhibitor payloads on a stable, cleavable linker (Tubutecan).</data>
+      <data key="d10">design</data>
+      <data key="d11">https://investors.gilead.com/news/news-details/2026/Gilead-Sciences-Completes-Acquisition-of-Tubulis-Further-Strengthening-Oncology-Portfolio/default.aspx</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="LIT8">
+      <data key="d0">tmkg:LiteratureFinding</data>
+      <data key="d1">external</data>
+      <data key="d2">ASCENT-07: TOP1-inhibitor ADC moved to first chemotherapy line in HR+/HER2- mBC did not meet PFS (median 8.3 vs 8.3 months).</data>
+      <data key="d10">earlier_line_failure</data>
+      <data key="d11">https://www.oncologynewscentral.com/breast-cancer/phase-3-failure-for-sacituzumab-govitecan-in-hr-positive-her2-negative-advanced-breast-cancer</data>
+      <data key="d3">biolink:InformationContentEntity</data>
+    </node>
+    <node id="MONDO:0009928">
+      <data key="d0">biolink:Disease</data>
+      <data key="d1">external</data>
+      <data key="d2">pulmonary alveolar microlithiasis</data>
+      <data key="d3">biolink:Disease</data>
+    </node>
+    <node id="NCT:NCT01991210">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">A Study of DNIB0600A in Comparison With Pegylated Liposomal Doxorubicin (PLD) in Participants With Platinum-Resistant Ovarian Cancer (PROC)</data>
+      <data key="d12">TERMINATED</data>
+      <data key="d13">The primary objective of PFS did not meet pre-specified criteria.</data>
+      <data key="d14">Genentech, Inc.</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="NCT:NCT03319628">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">First-in-Human Study of XMT-1536 in Cancers Likely to Express NaPi2b</data>
+      <data key="d12">ACTIVE_NOT_RECRUITING</data>
+      <data key="d13" />
+      <data key="d14">Mersana Therapeutics</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="NCT:NCT04907968">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">Study of Upifitamab Rilsodotin in Combination With Carboplatin in Participants With High-grade Serous Ovarian Cancer</data>
+      <data key="d12">TERMINATED</data>
+      <data key="d13">Study Terminated by Sponsor</data>
+      <data key="d14">Mersana Therapeutics</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="NCT:NCT05329545">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">Upifitamab Rilsodotin Maintenance in Platinum-Sensitive Recurrent Ovarian Cancer (UP-NEXT)</data>
+      <data key="d12">TERMINATED</data>
+      <data key="d13">Study Terminated by Sponsor</data>
+      <data key="d14">Mersana Therapeutics</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="NCT:NCT06303505">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">FiH Study to Investigate Safety, PK and Efficacy of the NaPi2b ADC TUB-040 in Patients With PROC or r/r Adenocarcinoma NSCLC</data>
+      <data key="d12">RECRUITING</data>
+      <data key="d13" />
+      <data key="d14">Gilead Sciences</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="NCT:NCT07736937">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">Study of TUB-040 Given With Standard Ovarian Cancer Drugs in Patients With Fast-growing Ovarian Cancer</data>
+      <data key="d12">RECRUITING</data>
+      <data key="d13" />
+      <data key="d14">Gilead Sciences</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="NCT:NCT07743541">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">Study of TUB-040 in Patients With Recurrent or Progressive Uterine Cancer After Chemotherapy and Immune Therapy</data>
+      <data key="d12">NOT_YET_RECRUITING</data>
+      <data key="d13" />
+      <data key="d14">Gilead Sciences</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="NCT:NCT07806773">
+      <data key="d0">biolink:ClinicalTrial</data>
+      <data key="d1">external</data>
+      <data key="d2">Study of TUB-040 in Participants With Unresectable or Metastatic Nonsquamous Non-small Cell Lung Cancer</data>
+      <data key="d12">NOT_YET_RECRUITING</data>
+      <data key="d13" />
+      <data key="d14">Gilead Sciences</data>
+      <data key="d3">biolink:ClinicalTrial</data>
+    </node>
+    <node id="UBERON:0002048">
+      <data key="d0">biolink:AnatomicalEntity</data>
+      <data key="d1">external</data>
+      <data key="d2">lung</data>
+      <data key="d3">biolink:AnatomicalEntity</data>
+    </node>
+    <node id="UniProtKB:O95436">
+      <data key="d0">biolink:Protein</data>
+      <data key="d1">external</data>
+      <data key="d2">NaPi2b (SLC34A2)</data>
+      <data key="d15">ENSG00000157765</data>
+      <data key="d3">biolink:Protein</data>
+    </node>
+    <node id="tmkg:TUB-040">
+      <data key="d0">biolink:Drug</data>
+      <data key="d1">external</data>
+      <data key="d2">TUB-040</data>
+      <data key="d4">topoisomerase-I inhibitor (Tubutecan, DAR 8)</data>
+      <data key="d5">TOP1 inhibitor</data>
+      <data key="d6">no verified ChEMBL record; project identifier</data>
+      <data key="d3">biolink:Drug</data>
+    </node>
+    <edge source="CHEMBL:CHEMBL3301589" target="AE:ILD/pneumonitis" id="e1b8c7f3358837cd3">
+      <data key="d16">e1b8c7f3358837cd3</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">285 of 7224 reports (3.9%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:28Z</data>
+      <data key="d22">external</data>
+      <data key="d23">04c8f7de23a52d9c</data>
+      <data key="d24">3.9</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3301589" target="AE:neutropenia" id="ef37b2d61cc6d4cf3">
+      <data key="d16">ef37b2d61cc6d4cf3</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">360 of 7224 reports (5.0%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:28Z</data>
+      <data key="d22">external</data>
+      <data key="d23">04c8f7de23a52d9c</data>
+      <data key="d24">5.0</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3301589" target="AE:ocular (keratopathy/vision)" id="ec6fe8a43f76cdc74">
+      <data key="d16">ec6fe8a43f76cdc74</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">66 of 7224 reports (0.9%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:28Z</data>
+      <data key="d22">external</data>
+      <data key="d23">04c8f7de23a52d9c</data>
+      <data key="d24">0.9</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3545132" target="AE:ILD/pneumonitis" id="e9b9de17247bd4315">
+      <data key="d16">e9b9de17247bd4315</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">115 of 1651 reports (7.0%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:24Z</data>
+      <data key="d22">external</data>
+      <data key="d23">b9f60793b813ced1</data>
+      <data key="d24">7.0</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3545132" target="AE:neutropenia" id="e955890d7100258b0">
+      <data key="d16">e955890d7100258b0</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">26 of 1651 reports (1.6%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:24Z</data>
+      <data key="d22">external</data>
+      <data key="d23">b9f60793b813ced1</data>
+      <data key="d24">1.6</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3545132" target="AE:ocular (keratopathy/vision)" id="ef81475c633a35e0d">
+      <data key="d16">ef81475c633a35e0d</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">207 of 1651 reports (12.5%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:24Z</data>
+      <data key="d22">external</data>
+      <data key="d23">b9f60793b813ced1</data>
+      <data key="d24">12.5</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3545262" target="AE:ILD/pneumonitis" id="e8456bb683191e15c">
+      <data key="d16">e8456bb683191e15c</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">116 of 4518 reports (2.6%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:15Z</data>
+      <data key="d22">external</data>
+      <data key="d23">8fce249e59533a03</data>
+      <data key="d24">2.6</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3545262" target="AE:neutropenia" id="ecef2e012ff38b61e">
+      <data key="d16">ecef2e012ff38b61e</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">804 of 4518 reports (17.8%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:15Z</data>
+      <data key="d22">external</data>
+      <data key="d23">8fce249e59533a03</data>
+      <data key="d24">17.8</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL3545262" target="AE:ocular (keratopathy/vision)" id="eef74c106d00835e7">
+      <data key="d16">eef74c106d00835e7</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">14 of 4518 reports (0.3%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:15Z</data>
+      <data key="d22">external</data>
+      <data key="d23">8fce249e59533a03</data>
+      <data key="d24">0.3</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297844" target="AE:ILD/pneumonitis" id="e5430ebf641de221d">
+      <data key="d16">e5430ebf641de221d</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">1374 of 10021 reports (13.7%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:11Z</data>
+      <data key="d22">external</data>
+      <data key="d23">6bd4093c7eecb289</data>
+      <data key="d24">13.7</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297844" target="AE:neutropenia" id="ea9b6cf87cb857ad3">
+      <data key="d16">ea9b6cf87cb857ad3</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">551 of 10021 reports (5.5%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:11Z</data>
+      <data key="d22">external</data>
+      <data key="d23">6bd4093c7eecb289</data>
+      <data key="d24">5.5</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297844" target="AE:ocular (keratopathy/vision)" id="e6fb3d305d7f9e5f7">
+      <data key="d16">e6fb3d305d7f9e5f7</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">78 of 10021 reports (0.8%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:11Z</data>
+      <data key="d22">external</data>
+      <data key="d23">6bd4093c7eecb289</data>
+      <data key="d24">0.8</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297851" target="UniProtKB:O95436" id="e067cfa4e5d905918">
+      <data key="d16">e067cfa4e5d905918</data>
+      <data key="d17">biolink:interacts_with</data>
+      <data key="d18">curated literature (ChEMBL has no mechanism record)</data>
+      <data key="d19">https://www.targetedonc.com/view/upifitamab-rilsodotin-misses-primary-end-point-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:interacts_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297938" target="UniProtKB:O95436" id="eac67a99e534ca1d9">
+      <data key="d16">eac67a99e534ca1d9</data>
+      <data key="d17">biolink:interacts_with</data>
+      <data key="d18">ChEMBL</data>
+      <data key="d19">ChEMBL mechanism 7731</data>
+      <data key="d20">curated</data>
+      <data key="d21">2026-10-05T02:12:36Z</data>
+      <data key="d22">external</data>
+      <data key="d23">8177b44754f735e7</data>
+      <data key="d25">infores:chembl</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:interacts_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297939" target="AE:ILD/pneumonitis" id="eaf473173c8b7d44c">
+      <data key="d16">eaf473173c8b7d44c</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">43 of 639 reports (6.7%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:20Z</data>
+      <data key="d22">external</data>
+      <data key="d23">28812ad5f8cc1d7d</data>
+      <data key="d24">6.7</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297939" target="AE:neutropenia" id="ec7d8f3d219964f4b">
+      <data key="d16">ec7d8f3d219964f4b</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">16 of 639 reports (2.5%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:20Z</data>
+      <data key="d22">external</data>
+      <data key="d23">28812ad5f8cc1d7d</data>
+      <data key="d24">2.5</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="CHEMBL:CHEMBL4297939" target="AE:ocular (keratopathy/vision)" id="ef619e8d2dfe8fba8">
+      <data key="d16">ef619e8d2dfe8fba8</data>
+      <data key="d17">tmkg:reported_with</data>
+      <data key="d18">openFDA FAERS</data>
+      <data key="d19">16 of 639 reports (2.5%)</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:20Z</data>
+      <data key="d22">external</data>
+      <data key="d23">28812ad5f8cc1d7d</data>
+      <data key="d24">2.5</data>
+      <data key="d25">infores:faers</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">not_provided</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:reported_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="INT:TPS_10-74" id="eb248fb505c4cadf6">
+      <data key="d16">eb248fb505c4cadf6</data>
+      <data key="d17">tmkg:has_stratum</data>
+      <data key="d18">ADBM+ADRS</data>
+      <data key="d19">10-74</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:has_part</data>
+      <data key="d30">tmkg:has_stratum</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="INT:TPS_&lt;10" id="effbcf72b8d3c401f">
+      <data key="d16">effbcf72b8d3c401f</data>
+      <data key="d17">tmkg:has_stratum</data>
+      <data key="d18">ADBM+ADRS</data>
+      <data key="d19">&lt;10</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:has_part</data>
+      <data key="d30">tmkg:has_stratum</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="INT:TPS_&gt;=75" id="ebee1ded8ce9c676c">
+      <data key="d16">ebee1ded8ce9c676c</data>
+      <data key="d17">tmkg:has_stratum</data>
+      <data key="d18">ADBM+ADRS</data>
+      <data key="d19">&gt;=75</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:has_part</data>
+      <data key="d30">tmkg:has_stratum</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="NCT:NCT06303505" id="eb01e0386274f2a87">
+      <data key="d16">eb01e0386274f2a87</data>
+      <data key="d17">tmkg:internal_data_for</data>
+      <data key="d18">sponsor mapping</data>
+      <data key="d19">SYN-TUB040-PH1B</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:internal_data_for</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="AE:ILD/pneumonitis" id="e057933c64514547c">
+      <data key="d16">e057933c64514547c</data>
+      <data key="d17">tmkg:observed</data>
+      <data key="d18">ADAE</data>
+      <data key="d19">6/96 patients</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d33">6.2</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:observed</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="AE:bleeding" id="ea06bd63c381e91be">
+      <data key="d16">ea06bd63c381e91be</data>
+      <data key="d17">tmkg:observed</data>
+      <data key="d18">ADAE</data>
+      <data key="d19">2/96 patients</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d33">2.1</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:observed</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="AE:neutropenia" id="e3c025bc915cb9a2e">
+      <data key="d16">e3c025bc915cb9a2e</data>
+      <data key="d17">tmkg:observed</data>
+      <data key="d18">ADAE</data>
+      <data key="d19">30/96 patients</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d33">31.2</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:observed</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="AE:ocular (keratopathy/vision)" id="e42582502fed2cdda">
+      <data key="d16">e42582502fed2cdda</data>
+      <data key="d17">tmkg:observed</data>
+      <data key="d18">ADAE</data>
+      <data key="d19">2/96 patients</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d33">2.1</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:observed</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:SYN-TUB040-PH1B" target="tmkg:TUB-040" id="e54b918449832a90c">
+      <data key="d16">e54b918449832a90c</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ADSL</data>
+      <data key="d19">SYN-TUB040-PH1B</data>
+      <data key="d20">synthetic</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">internal</data>
+      <data key="d25">tmkg:SYNTHETIC-internal</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="INT:TPS_&gt;=75" target="EXT:UPLIFT_cutoff" id="ea91419f7e28e1921">
+      <data key="d16">ea91419f7e28e1921</data>
+      <data key="d17">tmkg:same_definition_as</data>
+      <data key="d18">biomarker dictionary</data>
+      <data key="d19">TPS&gt;=75</data>
+      <data key="d20">curated</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">shared</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:related_to</data>
+      <data key="d30">tmkg:same_definition_as</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT1" target="CHEMBL:CHEMBL4297851" id="ef783aaf1dd2ecfab">
+      <data key="d16">ef783aaf1dd2ecfab</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.targetedonc.com/view/upifitamab-rilsodotin-misses-primary-end-point-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT1" target="NCT:NCT03319628" id="e53cb7a79fbad86d1">
+      <data key="d16">e53cb7a79fbad86d1</data>
+      <data key="d17">tmkg:reports_on</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.targetedonc.com/view/upifitamab-rilsodotin-misses-primary-end-point-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:reports_on</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT2" target="CHEMBL:CHEMBL4297851" id="eed0f8b2d1ff96255">
+      <data key="d16">eed0f8b2d1ff96255</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.onclive.com/view/upifitamab-rilsodotin-fails-to-meet-orr-end-point-in-napi2b-platinum-resistant-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT2" target="NCT:NCT03319628" id="e72d13e97b0189ce7">
+      <data key="d16">e72d13e97b0189ce7</data>
+      <data key="d17">tmkg:reports_on</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.onclive.com/view/upifitamab-rilsodotin-fails-to-meet-orr-end-point-in-napi2b-platinum-resistant-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:reports_on</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT3" target="CHEMBL:CHEMBL4297851" id="eda79e5eb2a823e05">
+      <data key="d16">eda79e5eb2a823e05</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.onclive.com/view/dr-richardson-on-the-uplift-trial-of-upifitamab-rilsodotin-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT3" target="EXT:UPLIFT_cutoff" id="e850088d0afc1d7ff">
+      <data key="d16">e850088d0afc1d7ff</data>
+      <data key="d17">tmkg:evaluates</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.onclive.com/view/dr-richardson-on-the-uplift-trial-of-upifitamab-rilsodotin-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:evaluates</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT3" target="NCT:NCT03319628" id="e2696b1c9fa949845">
+      <data key="d16">e2696b1c9fa949845</data>
+      <data key="d17">tmkg:reports_on</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.onclive.com/view/dr-richardson-on-the-uplift-trial-of-upifitamab-rilsodotin-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:reports_on</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT4" target="CHEMBL:CHEMBL4297851" id="e7fdd382d1fb0b27a">
+      <data key="d16">e7fdd382d1fb0b27a</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.cancernetwork.com/view/upifitamab-rilsodotin-does-not-improve-responses-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT4" target="NCT:NCT03319628" id="e9bd2972d39537522">
+      <data key="d16">e9bd2972d39537522</data>
+      <data key="d17">tmkg:reports_on</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.cancernetwork.com/view/upifitamab-rilsodotin-does-not-improve-responses-in-ovarian-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:reports_on</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT5" target="CHEMBL:CHEMBL4297851" id="e999f39dc7805f7b1">
+      <data key="d16">e999f39dc7805f7b1</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.oncologypipeline.com/apexonco/mersanas-discontinuation-was-long-time-coming</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT6" target="tmkg:TUB-040" id="e5bd01052898e2b0d">
+      <data key="d16">e5bd01052898e2b0d</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://oncodaily.com/technology/tubulis481541</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT6" target="NCT:NCT06303505" id="eb58efb724287e1c7">
+      <data key="d16">eb58efb724287e1c7</data>
+      <data key="d17">tmkg:reports_on</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://oncodaily.com/technology/tubulis481541</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:reports_on</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT7" target="tmkg:TUB-040" id="e26048581b845a18a">
+      <data key="d16">e26048581b845a18a</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://investors.gilead.com/news/news-details/2026/Gilead-Sciences-Completes-Acquisition-of-Tubulis-Further-Strengthening-Oncology-Portfolio/default.aspx</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT7" target="NCT:NCT06303505" id="ea642723e4c36dd6c">
+      <data key="d16">ea642723e4c36dd6c</data>
+      <data key="d17">tmkg:reports_on</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://investors.gilead.com/news/news-details/2026/Gilead-Sciences-Completes-Acquisition-of-Tubulis-Further-Strengthening-Oncology-Portfolio/default.aspx</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:reports_on</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="LIT8" target="CHEMBL:CHEMBL3545262" id="e82eb52c947804809">
+      <data key="d16">e82eb52c947804809</data>
+      <data key="d17">tmkg:about</data>
+      <data key="d18">curated literature</data>
+      <data key="d19">https://www.oncologynewscentral.com/breast-cancer/phase-3-failure-for-sacituzumab-govitecan-in-hr-positive-her2-negative-advanced-breast-cancer</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d32">["infores:pubmed"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:mentions</data>
+      <data key="d30">tmkg:about</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT01991210" target="CHEMBL:CHEMBL4297938" id="e134278cfd4fdfac7">
+      <data key="d16">e134278cfd4fdfac7</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT01991210</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:12:59Z</data>
+      <data key="d22">external</data>
+      <data key="d23">f3e043d07be38642</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT03319628" target="CHEMBL:CHEMBL4297851" id="ef2a5a6b0b4bb557f">
+      <data key="d16">ef2a5a6b0b4bb557f</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT03319628</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:12:57Z</data>
+      <data key="d22">external</data>
+      <data key="d23">4088fb2092fdf797</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT04907968" target="CHEMBL:CHEMBL4297851" id="ebb1cb4adaca728e5">
+      <data key="d16">ebb1cb4adaca728e5</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT04907968</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:12:59Z</data>
+      <data key="d22">external</data>
+      <data key="d23">34daecde9d5cf682</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT05329545" target="CHEMBL:CHEMBL4297851" id="e0413fe6ed7ed209c">
+      <data key="d16">e0413fe6ed7ed209c</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT05329545</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:12:58Z</data>
+      <data key="d22">external</data>
+      <data key="d23">b72497c136e4d771</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT06303505" target="tmkg:TUB-040" id="e8d0c73380597568a">
+      <data key="d16">e8d0c73380597568a</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT06303505</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:13:00Z</data>
+      <data key="d22">external</data>
+      <data key="d23">8bca7059756ecfbf</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT07736937" target="tmkg:TUB-040" id="eb105e2970dbc2f18">
+      <data key="d16">eb105e2970dbc2f18</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT07736937</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:13:02Z</data>
+      <data key="d22">external</data>
+      <data key="d23">27217c2b49e52b4e</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT07743541" target="tmkg:TUB-040" id="ec4867c2308eb70d0">
+      <data key="d16">ec4867c2308eb70d0</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT07743541</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:13:01Z</data>
+      <data key="d22">external</data>
+      <data key="d23">e902bf30a9357a1d</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="NCT:NCT07806773" target="tmkg:TUB-040" id="e740083ef5af34bef">
+      <data key="d16">e740083ef5af34bef</data>
+      <data key="d17">tmkg:tests_intervention</data>
+      <data key="d18">ClinicalTrials.gov</data>
+      <data key="d19">NCT07806773</data>
+      <data key="d20">registry</data>
+      <data key="d21">2026-10-05T02:13:02Z</data>
+      <data key="d22">external</data>
+      <data key="d23">3447fed367ab02f5</data>
+      <data key="d25">infores:clinicaltrials-gov</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d32">["infores:chembl"]</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">automated_agent</data>
+      <data key="d29">biolink:has_input</data>
+      <data key="d30">tmkg:tests_intervention</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="UniProtKB:O95436" target="UBERON:0002048" id="edd1aaf8536a8bcff">
+      <data key="d16">edd1aaf8536a8bcff</data>
+      <data key="d17">biolink:expressed_in</data>
+      <data key="d18">GTEx v8</data>
+      <data key="d19">median 324.7 TPM; rank 1 of 54 tissues; next Minor_Salivary_Gland 68.6 TPM</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:09Z</data>
+      <data key="d22">external</data>
+      <data key="d23">ea0c6c328cd716a5</data>
+      <data key="d25">infores:gtex</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">observation</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:expressed_in</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="UniProtKB:O95436" target="MONDO:0009928" id="e8e3a0a7c4e61d081">
+      <data key="d16">e8e3a0a7c4e61d081</data>
+      <data key="d17">biolink:genetically_associated_with</data>
+      <data key="d18">Open Targets</data>
+      <data key="d19">association score 0.78; genetic_association 0.82</data>
+      <data key="d20">database</data>
+      <data key="d21">2026-10-05T02:12:08Z</data>
+      <data key="d22">external</data>
+      <data key="d23">931329f745f5cf80</data>
+      <data key="d25">infores:open-targets</data>
+      <data key="d26">["tmkg:trialmindkg"]</data>
+      <data key="d27">statistical_association</data>
+      <data key="d28">data_analysis_pipeline</data>
+      <data key="d29">biolink:genetically_associated_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+    <edge source="tmkg:TUB-040" target="UniProtKB:O95436" id="ec96f022ae66fcf10">
+      <data key="d16">ec96f022ae66fcf10</data>
+      <data key="d17">biolink:interacts_with</data>
+      <data key="d18">curated: sponsor press release (no verified ChEMBL record)</data>
+      <data key="d19">https://investors.gilead.com/news/news-details/2026/Gilead-Sciences-Completes-Acquisition-of-Tubulis-Further-Strengthening-Oncology-Portfolio/default.aspx</data>
+      <data key="d20">literature</data>
+      <data key="d21">2026-10-04</data>
+      <data key="d22">external</data>
+      <data key="d25">tmkg:trialmindkg</data>
+      <data key="d27">knowledge_assertion</data>
+      <data key="d28">manual_agent</data>
+      <data key="d29">biolink:interacts_with</data>
+      <data key="d31">source_identifier</data>
+    </edge>
+  </graph>
+</graphml>

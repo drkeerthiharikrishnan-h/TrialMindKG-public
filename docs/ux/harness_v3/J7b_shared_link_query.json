@@ -1,0 +1,143 @@
+{
+ "page": "/",
+ "where": "?node=NCBIGene%3A5743",
+ "landed": "/?node=NCBIGene%3A5743",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 24,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/card/NCBIGene%3A5743",
+  "GET /api/pharos/status",
+  "GET /api/pharos/explain/ebf59bb619e82fe22",
+  "GET /api/pharos/explain/e5afb4793c0d3228b",
+  "GET /api/pharos/explain/e7b47c8955b0f23c1",
+  "GET /api/pharos/explain/e32a3b69147049203",
+  "GET /api/pharos/explain/e16c8f5046df83826",
+  "GET /api/pharos/explain/ebe82cb5a60450206",
+  "GET /api/pharos/explain/ee44e9784f6821f7d",
+  "GET /api/pharos/explain/ece1bfb0a7a61bb6c",
+  "GET /api/pharos/compare/card/NCBIGene%3A5743",
+  "GET /api/trials_for?ids=NCBIGene%3A5743%2CHGNC%3A9605&names=PTGS2"
+ ],
+ "api_calls_last": [
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/card/NCBIGene%3A5743",
+  "GET /api/pharos/status",
+  "GET /api/pharos/explain/ebf59bb619e82fe22",
+  "GET /api/pharos/explain/e5afb4793c0d3228b",
+  "GET /api/pharos/explain/e7b47c8955b0f23c1",
+  "GET /api/pharos/explain/e32a3b69147049203",
+  "GET /api/pharos/explain/e16c8f5046df83826",
+  "GET /api/pharos/explain/ebe82cb5a60450206",
+  "GET /api/pharos/explain/ee44e9784f6821f7d",
+  "GET /api/pharos/explain/ece1bfb0a7a61bb6c",
+  "GET /api/pharos/compare/card/NCBIGene%3A5743",
+  "GET /api/trials_for?ids=NCBIGene%3A5743%2CHGNC%3A9605&names=PTGS2"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "shared_query",
+   "hash": "#pharos/node/NCBIGene%3A5743",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": {
+    "title": "PTGS2 geneNCBIGene:5743HGNC:9605",
+    "order": "about,known,predicted,mechanism,trials",
+    "sections": [
+     "about",
+     "known",
+     "predicted",
+     "mechanism",
+     "trials"
+    ],
+    "kinds": [
+     "human genetics",
+     "curated",
+     "clinical",
+     "binding or activity",
+     "expression or statistics",
+     "annotation",
+     "text mining"
+    ],
+    "rows": 228,
+    "strength_chips": 184,
+    "why": 353,
+    "cg_nodes": 34,
+    "cg_lines": 42,
+    "cg_lines_by_verdict": "kept:40 pruned:0 predicted:2 unscored:0",
+    "cg_hidden": 0,
+    "cg_dimmed": 0,
+    "slider": "0",
+    "slider_info": "Showing 42 of 42 links. Predicted links have no pruning confidence and always show.",
+    "legend": "disease or phenotypediseasegenekept by pruningpruned (shown, never deleted)predictedno verdict curated statistical text-mined no level given",
+    "trials": "none in the trial layer",
+    "plist": 2,
+    "pathboxes": 3,
+    "hops": 11,
+    "hops_kept": 11,
+    "hops_pruned": 0,
+    "paths_thin": 0,
+    "first_chain": "PTGS2 → is associated with → thrombotic disease ← is associated with ← AGT → is associated with → diabetic kidney disease",
+    "weakest": "· weakest hop: confidence 0.62 (CTD, curated statement)"
+   },
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": null,
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 53,
+    "links": 1266,
+    "sections": 12,
+    "tables": 11
+   },
+   "headings": [
+    "PTGS2 geneNCBIGene:5743HGNC:9605",
+    "Graph of the card",
+    "What is not known",
+    "Downloads and sharing",
+    "Ask the Pharos graph a question"
+   ]
+  }
+ ]
+}

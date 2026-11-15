@@ -1,0 +1,7 @@
+program_id,trial_query,nct,justification,confidence
+P19,TULIP-1,NCT02446912,"Phase 3 anifrolumab SLE; official title 'Two Doses of Anifrolumab'; 3 arms (higher dose, lower dose, placebo); N=460. Sister record NCT02446899 is single-dose (2 arms) -> TULIP-2.",high
+P20,METREO,NCT02105961,NCT ID cited in curated dataset; official title 'Study MEA117113 ... COPD Patients Characterized by Eosinophil Level'; N=674.,high
+P07,GRADUATE I,NCT03444870,"One of two identical-design Phase 3 gantenerumab early-AD records (EudraCT 2017-001364-38). I/II assignment inferred from sequential EudraCT numbers only. | Confirmed by owner 2026-10-05: sponsor codes WN29922 = GRADUATE I (NCT03444870), WN39658 = GRADUATE II (NCT03443973)",high
+P07,GRADUATE II,NCT03443973,"Second identical-design Phase 3 gantenerumab early-AD record (EudraCT 2017-001365-24). I/II assignment inferred from sequential EudraCT numbers only. | Confirmed by owner 2026-10-05: sponsor codes WN29922 = GRADUATE I (NCT03444870), WN39658 = GRADUATE II (NCT03443973)",high
+P16,PIVOT IO-001,NCT03635983,"Phase 3 NKTR-214 (bempegaldesleukin) + nivolumab vs nivolumab, previously untreated unresectable/metastatic melanoma; N=783.",high
+P28,CIFFREO,NCT04281485,Only Phase 3 efficacy record for PF-06939926 (fordadistrogene movaparvovec) in Duchenne; N=114.,high

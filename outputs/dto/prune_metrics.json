@@ -1,0 +1,41 @@
+{
+ "auprc_by_trust_weight": {
+  "0.0": 0.9416055815191424,
+  "0.1": 0.9416055815191424,
+  "0.2": 0.9416055815191424
+ },
+ "auprc_corroboration": 0.04763959079680815,
+ "auprc_errors": 0.9416055815191424,
+ "auprc_learned": 0.9416055815191424,
+ "auprc_plausibility": 0.06072923449211911,
+ "auprc_plausibility_only": 0.9416055815191424,
+ "auprc_trust": 0.04763959079680815,
+ "error_base_rate": 0.031936695889787085,
+ "f1": 0.948529411764706,
+ "n_edges": 33838,
+ "n_hard_pruned": 0,
+ "n_injected": 1127,
+ "n_protected": 0,
+ "n_protected_below_threshold": 0,
+ "precision": 0.9791271347248577,
+ "pruned_by_predicate": {
+  "biolink:member_of": 0.0
+ },
+ "pruned_real_fraction": 0.0,
+ "recall": 0.9197860962566845,
+ "recall_by_predicate": {
+  "biolink:member_of": 0.917
+ },
+ "settings": {
+  "plausibility_by": "all",
+  "protect_curated_corroborated": false,
+  "svd_k": 32,
+  "trust_weight": 0.2,
+  "version": "v1"
+ },
+ "threshold": 0.21840055934008354,
+ "weights": {
+  "corroboration": 0.0,
+  "plausibility": 7.087720497949348
+ }
+}

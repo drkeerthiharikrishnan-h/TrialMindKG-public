@@ -1,0 +1,407 @@
+{
+ "page": "/",
+ "where": "",
+ "landed": "/",
+ "script_errors": 0,
+ "errors": [],
+ "api_calls": 19,
+ "api_calls_first": [
+  "GET /api/pharos/prediction_scale",
+  "GET /api/landing",
+  "GET /api/personas",
+  "GET /api/wording",
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/demo/pharos_demo_1",
+  "GET /api/pharos/compare/demo/pharos_demo_1",
+  "GET /api/pharos/explain/e2e7a534c72fd65f4",
+  "GET /api/pharos/demo/pharos_demo_2",
+  "GET /api/pharos/compare/demo/pharos_demo_2"
+ ],
+ "api_calls_last": [
+  "GET /api/stored_answers",
+  "GET /api/pharos/prediction_scale",
+  "GET /api/graph_numbers",
+  "GET /api/status",
+  "GET /api/pharos/demo_questions",
+  "GET /api/ask_quota",
+  "GET /api/attribution",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/status",
+  "GET /api/pharos/demo/pharos_demo_1",
+  "GET /api/pharos/compare/demo/pharos_demo_1",
+  "GET /api/pharos/explain/e2e7a534c72fd65f4",
+  "GET /api/pharos/demo/pharos_demo_2",
+  "GET /api/pharos/compare/demo/pharos_demo_2"
+ ],
+ "evals": [],
+ "axe": [],
+ "snapshots": [
+  {
+   "name": "demo1_physician",
+   "hash": "#pharos",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": {
+    "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "summary",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "PTGS2 is associated with rheumatoid arthritis, esophageal squamous cell carcinoma and duodenal ulcer (CTD, DrugCentral Indication); 3,705 diseases in all, 3,373 text-mined only.",
+    "confidence": "confidence: high",
+    "confidence_reason": "50 of 50 rows shown have curated or measured support, from 8 sources; pruned links are not counted. 3,655 more answers are not shown, 3,373 of them text-mined only.",
+    "points": [],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 16,
+    "rows": 50,
+    "evidence_chips": 215,
+    "first_chip": "CTD · curated kept 0.65",
+    "checks": [
+     "ok: tested-question shape check: passed",
+     "ok: query validation: the query passed validation"
+    ],
+    "abstain": ""
+   },
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "",
+    "raw": null,
+    "headings": []
+   },
+   "visible": {
+    "buttons": 58,
+    "links": 111,
+    "sections": 8,
+    "tables": 1
+   },
+   "headings": [
+    "Ask the Pharos graph a question",
+    "Graph of the answer 40 entities, 39 links",
+    "Summary",
+    "Evidence 50 rows, 215 links",
+    "What is not known",
+    "Downloads and the query"
+   ]
+  },
+  {
+   "name": "chip_side_panel",
+   "hash": "#pharos",
+   "persona": "physician_scientist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Physician-scientist: Targets by kind of evidence first, then what is predicted, then the failed trials behind them.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 4,
+   "programs": {
+    "cards": 0,
+    "first": "Anifrolumab — TULIP-1P19 Moderate–severe systemic lupus · AstraZeneca · 2018 Stated failure (program record)Phase III: SRI-4 primary endpoint missed. NCT:NCT02446912 · phase 3 · completed Drug: ANIFROLUMAB Target: Interferon alpha/beta receptor 1 (IFNAR1) 2015"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": {
+    "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "summary",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "PTGS2 is associated with rheumatoid arthritis, esophageal squamous cell carcinoma and duodenal ulcer (CTD, DrugCentral Indication); 3,705 diseases in all, 3,373 text-mined only.",
+    "confidence": "confidence: high",
+    "confidence_reason": "50 of 50 rows shown have curated or measured support, from 8 sources; pruned links are not counted. 3,655 more answers are not shown, 3,373 of them text-mined only.",
+    "points": [],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 16,
+    "rows": 50,
+    "evidence_chips": 215,
+    "first_chip": "CTD · curated kept 0.65",
+    "checks": [
+     "ok: tested-question shape check: passed",
+     "ok: query validation: the query passed validation"
+    ],
+    "abstain": ""
+   },
+   "report": null,
+   "drawer": {
+    "open": true,
+    "title": "Why this link",
+    "lead": "PTGS2NCBIGene:5743 is associated with rheumatoid arthritisMONDO:0008383",
+    "raw": "/api/pharos/explain/e2e7a534c72fd65f4",
+    "headings": [
+     "Independent check",
+     "Where it comes from",
+     "Measured values",
+     "The same pair in other sources (5)",
+     "Timeline",
+     "Raw record"
+    ]
+   },
+   "visible": {
+    "buttons": 60,
+    "links": 125,
+    "sections": 9,
+    "tables": 3
+   },
+   "headings": [
+    "Ask the Pharos graph a question",
+    "Graph of the answer 40 entities, 39 links",
+    "Summary",
+    "Evidence 50 rows, 215 links",
+    "What is not known",
+    "Downloads and the query"
+   ]
+  },
+  {
+   "name": "demo1_after_switch_to_comp_bio",
+   "hash": "#pharos",
+   "persona": "computational_biologist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Computational biologist / judge: The query, the checks and the numbers first; identifiers and BioLink terms everywhere.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 3,
+   "programs": {
+    "cards": 0,
+    "first": "Elafibranor — RESOLVE-ITP22 MASH/NASH · GENFIT · 2020 Stated failure (program record)Phase III interim analysis: NASH-resolution endpoint missed. RESOLVE-IT NCT:NCT02704403 · phase 3 · terminatedwhy stopped (registry): Study did not meet the predefined primary"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": {
+    "user": "Which diseases is the gene PTGS2 associated with, and which source says so?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "summary",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "PTGS2 is associated with rheumatoid arthritis, esophageal squamous cell carcinoma and duodenal ulcer (CTD, DrugCentral Indication); 3,705 diseases in all, 3,373 text-mined only.",
+    "confidence": "confidence: high",
+    "confidence_reason": "50 of 50 rows shown have curated or measured support, from 8 sources; pruned links are not counted. 3,655 more answers are not shown, 3,373 of them text-mined only.",
+    "points": [],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 16,
+    "rows": 50,
+    "evidence_chips": 215,
+    "first_chip": "CTD · curated kept 0.65",
+    "checks": [
+     "ok: tested-question shape check: passed",
+     "ok: query validation: the query passed validation"
+    ],
+    "abstain": ""
+   },
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "PTGS2NCBIGene:5743 is associated with rheumatoid arthritisMONDO:0008383",
+    "raw": "/api/pharos/explain/e2e7a534c72fd65f4",
+    "headings": [
+     "Independent check",
+     "Where it comes from",
+     "Measured values",
+     "The same pair in other sources (5)",
+     "Timeline",
+     "Raw record"
+    ]
+   },
+   "visible": {
+    "buttons": 57,
+    "links": 111,
+    "sections": 8,
+    "tables": 1
+   },
+   "headings": [
+    "Ask the Pharos graph a question",
+    "Graph of the answer 40 entities, 39 links",
+    "Summary",
+    "Evidence 50 rows, 215 links",
+    "What is not known",
+    "Downloads and the query"
+   ]
+  },
+  {
+   "name": "demo2_comp_bio",
+   "hash": "#pharos",
+   "persona": "computational_biologist",
+   "errors_so_far": 0,
+   "lens": "Ordered for Computational biologist / judge: The query, the checks and the numbers first; identifiers and BioLink terms everywhere.",
+   "start": {
+    "visible": false,
+    "example_tabs": 0,
+    "example_cards": 0
+   },
+   "main_examples": 3,
+   "programs": {
+    "cards": 0,
+    "first": "Elafibranor — RESOLVE-ITP22 MASH/NASH · GENFIT · 2020 Stated failure (program record)Phase III interim analysis: NASH-resolution endpoint missed. RESOLVE-IT NCT:NCT02704403 · phase 3 · terminatedwhy stopped (registry): Study did not meet the predefined primary"
+   },
+   "echo": {
+    "question": "",
+    "context_fields": []
+   },
+   "card": null,
+   "hovercard": {
+    "hidden": true,
+    "pinned": false,
+    "text": ""
+   },
+   "answer": {
+    "user": "Which compounds bind the protein encoded by PTGS2, and how strongly?",
+    "context_fields": [],
+    "pinned_bottom_line": true,
+    "stages": [
+     "question",
+     "bottomline",
+     "graph",
+     "summary",
+     "evidence",
+     "limits",
+     "downloads"
+    ],
+    "headline": "Best-supported compounds: 3-(4-fluorophenyl)-2-(4-methylsulfonylphenyl)-1H-indole, 3-(4-methoxyphenyl)-2-(4-methylsulfonylphenyl)-1H-indole and 4-(5-methyl-3-phenyl-1H-indol-2-yl)benzenesulfonamide (Pharos target-gene mapping, Pharos ligand activity); 2,008 compounds in all.",
+    "confidence": "confidence: high",
+    "confidence_reason": "20 of 20 rows shown have curated or measured support for every step, from 2 sources; pruned links are not counted. 1,988 more answers are not shown.",
+    "points": [],
+    "caveats": [
+     "Answer",
+     "Strength",
+     "Sources",
+     "What is not known",
+     "Bottom line",
+     "Suggested next step"
+    ],
+    "refs": 8,
+    "rows": 20,
+    "evidence_chips": 40,
+    "first_chip": "Pharos target-gene mapping · curated not scored",
+    "checks": [
+     "ok: tested-question shape check: passed",
+     "ok: query validation: the query passed validation"
+    ],
+    "abstain": ""
+   },
+   "report": null,
+   "drawer": {
+    "open": false,
+    "title": "Why this link",
+    "lead": "PTGS2NCBIGene:5743 is associated with rheumatoid arthritisMONDO:0008383",
+    "raw": "/api/pharos/explain/e2e7a534c72fd65f4",
+    "headings": [
+     "Independent check",
+     "Where it comes from",
+     "Measured values",
+     "The same pair in other sources (5)",
+     "Timeline",
+     "Raw record"
+    ]
+   },
+   "visible": {
+    "buttons": 45,
+    "links": 65,
+    "sections": 8,
+    "tables": 1
+   },
+   "headings": [
+    "Ask the Pharos graph a question",
+    "Graph of the answer 22 entities, 21 links",
+    "Summary",
+    "Evidence 20 rows, 21 links",
+    "What is not known",
+    "Downloads and the query"
+   ]
+  }
+ ]
+}
